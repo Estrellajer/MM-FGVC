@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_semantic_correspondence",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.2571428571428571,
+    "correct": 9.0,
+    "total": 35.0
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(C)",
+    "question_id": 4,
+    "sub_task": "Relative Reflectance",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_5_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(B)",
+    "question_id": 5,
+    "sub_task": "Relative Reflectance",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_6_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(C)",
+    "question_id": 6,
+    "sub_task": "Relative Reflectance",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_7_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(C)",
+    "question_id": 7,
+    "sub_task": "Relative Reflectance",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_8_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  }
+]

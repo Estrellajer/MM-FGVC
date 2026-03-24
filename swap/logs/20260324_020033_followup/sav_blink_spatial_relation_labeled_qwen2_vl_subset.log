@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:43,  7.07it/s]Loading weights:   0%|          | 2/730 [00:00<02:02,  5.95it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 49.03it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:09, 72.52it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:07, 87.30it/s]Loading weights:   9%|▊         | 63/730 [00:00<00:06, 108.90it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 116.56it/s]Loading weights:  14%|█▎        | 99/730 [00:01<00:04, 142.07it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:04, 124.32it/s]Loading weights:  18%|█▊        | 132/730 [00:01<00:04, 137.22it/s]Loading weights:  20%|██        | 148/730 [00:01<00:04, 126.89it/s]Loading weights:  22%|██▏       | 162/730 [00:01<00:04, 125.36it/s]Loading weights:  25%|██▌       | 184/730 [00:01<00:03, 137.53it/s]Loading weights:  27%|██▋       | 198/730 [00:01<00:04, 112.30it/s]Loading weights:  29%|██▉       | 210/730 [00:01<00:04, 111.93it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:03, 129.42it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:04, 118.65it/s]Loading weights:  36%|███▌      | 264/730 [00:02<00:03, 132.91it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 136.36it/s]Loading weights:  40%|████      | 295/730 [00:02<00:03, 126.42it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 139.86it/s]Loading weights:  45%|████▌     | 331/730 [00:02<00:03, 127.89it/s]Loading weights:  64%|██████▎   | 464/730 [00:02<00:00, 423.30it/s]Loading weights:  76%|███████▋  | 558/730 [00:03<00:00, 556.70it/s]Loading weights:  90%|████████▉ | 656/730 [00:03<00:00, 670.58it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 225.45it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 4.0
+  total: 4.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033_followup/sav_blink_spatial_relation_labeled_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033_followup/sav_blink_spatial_relation_labeled_qwen2_vl_subset.predictions.jsonl
+

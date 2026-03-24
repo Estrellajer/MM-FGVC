@@ -1,0 +1,25 @@
+name: i2cl
+fit_on_train: true
+params:
+  num_shots: 20
+  support_strategy: balanced
+  support_seed: 42
+  layer_selection: late
+  modules: [mlp]
+  tok_pos: last
+  inject_method: linear
+  inject_pos: last
+  init_value: [0.1, 1.0]
+  context_init: context
+  post_fuse_method: mean
+  epochs: 12
+  max_steps: 0
+  learning_rate: 5e-3
+  weight_decay: 5e-4
+  add_noise: false
+  noise_scale: 0.001
+  gradient_clip_norm: 1.0
+  max_new_tokens: 16
+  do_sample: false
+  temperature: 0.0
+  progress_bar: true

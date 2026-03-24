@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_art_style",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 1.0,
+    "correct": 2.0,
+    "total": 2.0
+  }
+}

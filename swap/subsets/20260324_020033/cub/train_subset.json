@@ -1,0 +1,41 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/train/Acadian_Flycatcher/Acadian_Flycatcher_0004_795623.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/train/Acadian_Flycatcher/Acadian_Flycatcher_0004_795623.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Gray Kingbird B. Acadian Flycatcher C. Blue Grosbeak D. American Three toed Woodpecker",
+    "label": "Acadian Flycatcher",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/train/Acadian_Flycatcher/Acadian_Flycatcher_0005_29157.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/train/Acadian_Flycatcher/Acadian_Flycatcher_0005_29157.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Pine Grosbeak B. Brown Pelican C. Acadian Flycatcher D. Horned Lark",
+    "label": "Acadian Flycatcher",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/train/Acadian_Flycatcher/Acadian_Flycatcher_0006_795595.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/train/Acadian_Flycatcher/Acadian_Flycatcher_0006_795595.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Downy Woodpecker B. Savannah Sparrow C. American Redstart D. Acadian Flycatcher",
+    "label": "Acadian Flycatcher",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  }
+]

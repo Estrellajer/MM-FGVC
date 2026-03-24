@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\nHow many colored tiles are above the sink? Select from the following choices. (A) 6 (B) 3 (C) 4 (D) 5",
+    "label": "(A)",
+    "question_id": 4,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_5_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nHow many big nuts are in the green bowl? Select from the following choices. (A) 3 (B) 5 (C) 2 (D) 4",
+    "label": "(A)",
+    "question_id": 5,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_6_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nHow many baseball players are looking towards the camera? Select from the following choices. (A) 3 (B) 2 (C) 1 (D) 0",
+    "label": "(C)",
+    "question_id": 6,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_7_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nHow many people are wearing red shirt? Select from the following choices. (A) 0 (B) 1 (C) 3 (D) 2",
+    "label": "(B)",
+    "question_id": 7,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_8_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  }
+]

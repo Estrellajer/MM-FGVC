@@ -1,0 +1,4 @@
+name: general
+default_evaluator: raw
+train_path: dataset/converted_samples/naturalbench/train.sample.jsonl
+val_path: dataset/converted_samples/naturalbench/train.sample.jsonl

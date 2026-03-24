@@ -1,0 +1,54 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_73_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_73_1.png"
+    ],
+    "question": "<image>\nHow many elephants are in the water? Select from the following choices. (A) 3 (B) 2 (C) 1 (D) 4",
+    "label": "(B)",
+    "question_id": 72,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_79_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_79_1.png"
+    ],
+    "question": "<image>\nHow many of the letters printed on the climber's snowboard are consonants? Select from the following choices. (A) 2 (B) 5 (C) 4 (D) 3",
+    "label": "(D)",
+    "question_id": 78,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_83_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_83_1.png"
+    ],
+    "question": "<image>\nHow many person in the images is wearing cap? Select from the following choices. (A) 4 (B) 5 (C) 3 (D) 2",
+    "label": "(C)",
+    "question_id": 82,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_86_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_86_1.png"
+    ],
+    "question": "<image>\nHow many banners do you see in the awning? Select from the following choices. (A) 6 (B) 5 (C) 3 (D) 4",
+    "label": "(A)",
+    "question_id": 85,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  }
+]

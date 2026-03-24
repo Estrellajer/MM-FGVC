@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 4,
+    "sub_task": "Jigsaw",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_5_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_5_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_5_3.png",
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 5,
+    "sub_task": "Jigsaw",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_6_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_6_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_6_3.png",
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 6,
+    "sub_task": "Jigsaw",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_7_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_7_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_7_3.png",
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 7,
+    "sub_task": "Jigsaw",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_8_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_8_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_8_3.png",
+    "image_4": null
+  }
+]

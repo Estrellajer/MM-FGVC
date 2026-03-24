@@ -1,0 +1,20 @@
+[
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b4e93b744f962240.jpg",
+    "claim": "The plane number is 3-DW-M",
+    "question_id": 0,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d83045236b311d57.jpg",
+    "claim": "The yellow word bubble says \"Mixtape\"",
+    "question_id": 1,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e7d0c02151b497ae.jpg",
+    "claim": "This can is Kronenbourg 1664 beer",
+    "question_id": 2,
+    "label": "hallucination"
+  }
+]

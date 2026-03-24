@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "relative_depth",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.5,
+    "correct": 2.0,
+    "total": 4.0
+  }
+}

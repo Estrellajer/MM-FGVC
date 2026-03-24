@@ -1,0 +1,13 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "sugarcrepe",
+  "method": "sav",
+  "evaluator": "pair",
+  "metrics": {
+    "metric": "pair_accuracy",
+    "pair_accuracy": 0.5,
+    "pair_correct": 20.0,
+    "pair_total": 40.0,
+    "raw_accuracy": 0.75
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_1_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_1_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_1_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image shares the same style as the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Art Style"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_3_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_3_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Art_Style/val/val_Art_Style_3_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image shares the same style as the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Art Style"
+    }
+  }
+]

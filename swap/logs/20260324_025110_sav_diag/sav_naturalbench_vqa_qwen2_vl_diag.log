@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:41,  7.21it/s]Loading weights:   0%|          | 2/730 [00:00<01:59,  6.07it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 49.88it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:09, 72.95it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:08, 85.41it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:05, 121.82it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 116.31it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 136.53it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:04, 125.90it/s]Loading weights:  18%|█▊        | 134/730 [00:01<00:04, 135.47it/s]Loading weights:  20%|██        | 149/730 [00:01<00:04, 135.47it/s]Loading weights:  22%|██▏       | 163/730 [00:01<00:04, 129.86it/s]Loading weights:  25%|██▌       | 184/730 [00:01<00:03, 147.60it/s]Loading weights:  27%|██▋       | 200/730 [00:01<00:03, 137.62it/s]Loading weights:  30%|███       | 220/730 [00:01<00:03, 146.60it/s]Loading weights:  32%|███▏      | 235/730 [00:02<00:04, 112.62it/s]Loading weights:  37%|███▋      | 268/730 [00:02<00:02, 155.52it/s]Loading weights:  39%|███▉      | 286/730 [00:02<00:03, 144.51it/s]Loading weights:  42%|████▏     | 304/730 [00:02<00:02, 148.44it/s]Loading weights:  44%|████▍     | 320/730 [00:02<00:02, 138.40it/s]Loading weights:  46%|████▌     | 335/730 [00:02<00:02, 140.91it/s]Loading weights:  67%|██████▋   | 487/730 [00:02<00:00, 493.46it/s]Loading weights:  87%|████████▋ | 635/730 [00:02<00:00, 753.46it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 244.41it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.8
+  correct: 32.0
+  total: 40.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_025110_sav_diag/sav_naturalbench_vqa_qwen2_vl_diag.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_025110_sav_diag/sav_naturalbench_vqa_qwen2_vl_diag.predictions.jsonl
+

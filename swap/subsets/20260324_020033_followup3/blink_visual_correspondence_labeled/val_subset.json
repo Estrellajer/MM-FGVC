@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(C)",
+    "question_id": 4,
+    "sub_task": "Visual Correspondence",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_5_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_5_2.png",
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(A)",
+    "question_id": 5,
+    "sub_task": "Visual Correspondence",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_6_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_6_2.png",
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(B)",
+    "question_id": 6,
+    "sub_task": "Visual Correspondence",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_7_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_7_2.png",
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(D)",
+    "question_id": 7,
+    "sub_task": "Visual Correspondence",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_8_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_8_2.png",
+    "image_3": null,
+    "image_4": null
+  }
+]

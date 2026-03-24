@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:16,  5.36it/s]Loading weights:   0%|          | 2/730 [00:00<02:33,  4.75it/s]Loading weights:   1%|          | 4/730 [00:00<01:48,  6.70it/s]Loading weights:   5%|▌         | 40/730 [00:00<00:07, 87.75it/s]Loading weights:   8%|▊         | 55/730 [00:00<00:07, 88.29it/s]Loading weights:  10%|▉         | 72/730 [00:01<00:06, 106.90it/s]Loading weights:  12%|█▏        | 86/730 [00:01<00:05, 114.87it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:06, 98.58it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:05, 106.40it/s]Loading weights:  17%|█▋        | 127/730 [00:01<00:08, 71.12it/s] Loading weights:  19%|█▉        | 137/730 [00:01<00:08, 68.93it/s]Loading weights:  25%|██▌       | 186/730 [00:02<00:05, 95.84it/s]Loading weights:  32%|███▏      | 234/730 [00:02<00:03, 150.26it/s]Loading weights:  35%|███▍      | 254/730 [00:02<00:03, 136.56it/s]Loading weights:  37%|███▋      | 271/730 [00:02<00:03, 140.83it/s]Loading weights:  39%|███▉      | 288/730 [00:02<00:03, 141.52it/s]Loading weights:  42%|████▏     | 304/730 [00:03<00:03, 120.07it/s]Loading weights:  44%|████▍     | 324/730 [00:03<00:03, 135.17it/s]Loading weights:  47%|████▋     | 340/730 [00:03<00:02, 139.38it/s]Loading weights:  64%|██████▍   | 467/730 [00:03<00:00, 408.89it/s]Loading weights:  82%|████████▏ | 595/730 [00:03<00:00, 628.40it/s]Loading weights:  98%|█████████▊| 714/730 [00:03<00:00, 777.02it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 204.78it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 3.0
+  total: 3.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033/sav_cub_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033/sav_cub_qwen2_vl_subset.predictions.jsonl
+

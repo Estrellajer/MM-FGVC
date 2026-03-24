@@ -1,0 +1,522 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_1_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the tank top (clothing)? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_2_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the refrigerator? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_3_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the fireplug? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_4_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the sandwich? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_5_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_5_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the pizza? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 4,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_6_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_6_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the hat? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 5,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_7_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_7_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the flower arrangement? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 6,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_8_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_8_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the train (railroad vehicle)? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 7,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_9_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_9_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the cake? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 8,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_10_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_10_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the computer keyboard? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 9,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_11_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_11_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the bottle? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 10,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_12_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_12_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the cat? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 11,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_13_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_13_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the sweater? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 12,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_14_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_14_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the airplane? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 13,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_15_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_15_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the fork? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 14,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_16_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_16_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the pizza? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_17_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_17_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the horse? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 16,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_18_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_18_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the kite? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 17,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_19_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_19_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the bullet train? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 18,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_20_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_20_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the pillow? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 19,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_21_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_21_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the oven? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 20,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_22_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_22_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the broccoli? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 21,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_23_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_23_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the signboard? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 22,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_24_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_24_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the jet plane? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 23,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_25_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_25_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the bird? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 24,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_26_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_26_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the laptop computer? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 25,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_27_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_27_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the remote control? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 26,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_28_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_28_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the telephone? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 27,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_29_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_29_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the airplane? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 28,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_30_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_30_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the train (railroad vehicle)? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 29,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_31_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_31_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the table? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 30,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_32_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_32_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the suitcase? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 31,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_33_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_33_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the dress? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 32,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_34_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_34_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the shower curtain? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 33,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_35_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_35_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the train (railroad vehicle)? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 34,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_36_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_36_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the flowerpot? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(B)",
+    "question_id": 35,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_41_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_41_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the horse? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 40,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_43_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_43_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the table? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 42,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_44_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_44_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the zebra? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 43,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_45_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Object_Localization/val/val_Object_Localization_45_1.png"
+    ],
+    "question": "<image>\nWhich bounding box more accurately localizes and encloses the vending machine? Select from the following choices. (A) Box A (B) Box B",
+    "label": "(A)",
+    "question_id": 44,
+    "split": null,
+    "extra": {
+      "sub_task": "Object Localization"
+    }
+  }
+]

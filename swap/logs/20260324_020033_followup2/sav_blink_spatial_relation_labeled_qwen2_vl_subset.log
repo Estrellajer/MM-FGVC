@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<06:13,  1.95it/s]Loading weights:   0%|          | 2/730 [00:00<03:52,  3.13it/s]Loading weights:   2%|▏         | 14/730 [00:00<00:29, 24.04it/s]Loading weights:   5%|▌         | 40/730 [00:00<00:09, 69.52it/s]Loading weights:   7%|▋         | 51/730 [00:01<00:10, 62.25it/s]Loading weights:   9%|▉         | 64/730 [00:01<00:08, 74.21it/s]Loading weights:  10%|█         | 74/730 [00:01<00:08, 74.55it/s]Loading weights:  13%|█▎        | 96/730 [00:01<00:05, 106.64it/s]Loading weights:  15%|█▍        | 109/730 [00:01<00:06, 98.04it/s]Loading weights:  17%|█▋        | 123/730 [00:01<00:05, 105.54it/s]Loading weights:  19%|█▉        | 137/730 [00:01<00:05, 109.69it/s]Loading weights:  20%|██        | 149/730 [00:02<00:05, 112.25it/s]Loading weights:  22%|██▏       | 162/730 [00:02<00:05, 113.60it/s]Loading weights:  24%|██▍       | 174/730 [00:02<00:05, 110.77it/s]Loading weights:  27%|██▋       | 196/730 [00:02<00:04, 130.81it/s]Loading weights:  29%|██▉       | 210/730 [00:02<00:05, 103.71it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:04, 115.17it/s]Loading weights:  34%|███▎      | 245/730 [00:02<00:04, 116.76it/s]Loading weights:  35%|███▌      | 259/730 [00:03<00:04, 101.03it/s]Loading weights:  38%|███▊      | 275/730 [00:03<00:06, 69.24it/s] Loading weights:  64%|██████▎   | 465/730 [00:03<00:00, 362.57it/s]Loading weights:  85%|████████▍ | 619/730 [00:03<00:00, 581.39it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 195.73it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 4.0
+  total: 4.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033_followup2/sav_blink_spatial_relation_labeled_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033_followup2/sav_blink_spatial_relation_labeled_qwen2_vl_subset.predictions.jsonl
+

@@ -1,0 +1,46 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000297425.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000297425.jpg"
+    ],
+    "question": "A person is cutting a birthday cake with two red candles that spell out \"21\". The surface of the cake is round, and there is a balloon in the room. The person is using a silver knife to cut the cake.",
+    "label": "hallucination",
+    "question_id": 0,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000009727.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000009727.jpg"
+    ],
+    "question": "The image shows a snowboarder on a snowy hill. The snowboarder, dressed in an orange jacket and a black hat, stands on their snowboard. There are at least three people present, with one person in the background and another to the left. A blue backpack lies on the ground. Nearby, a pair of skis and a snow shovel are also visible.",
+    "label": "hallucination",
+    "question_id": 1,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000010822.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000010822.jpg"
+    ],
+    "question": "The image shows three zebras standing in a field of grass. The zebras are black and white striped, and they are standing in a line, facing in the same direction. Behind them, there are tall trees that are covered in leaves. The sky is clear and blue, and there are no other animals visible in the image. A zebra is a type of wild horse that is native to Africa. They are known for their distinctive black and white stripes, which provide camouflage in the grasslands where they live. Zebras are herbivores, and they feed on grasses and other plants. They are social animals and live in small herds, led by a dominant male. Zebras are an important part of the African ecosystem, and they are an iconic symbol of wild Africa.",
+    "label": "non-hallucination",
+    "question_id": 100,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000106266.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000106266.jpg"
+    ],
+    "question": "This image shows a delicious meal consisting of grilled peaches, meat, and vegetables on a black plate.",
+    "label": "non-hallucination",
+    "question_id": 109,
+    "split": null,
+    "extra": {}
+  }
+]

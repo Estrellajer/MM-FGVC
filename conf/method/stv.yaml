@@ -1,0 +1,20 @@
+name: stv
+fit_on_train: true
+params:
+  num_shots: 4
+  num_examples: 20
+  topk: 4
+  num_clusters: 3
+  kmeans_iters: 10
+  selection_epochs: 15
+  selection_samples_per_epoch: 4
+  selection_train_size: 8
+  selection_eval_size: 8
+  selection_lr: 0.02
+  final_selection_trials: 4
+  support_strategy: balanced
+  support_seed: 42
+  max_new_tokens: 16
+  do_sample: false
+  temperature: 0.0
+  progress_bar: true

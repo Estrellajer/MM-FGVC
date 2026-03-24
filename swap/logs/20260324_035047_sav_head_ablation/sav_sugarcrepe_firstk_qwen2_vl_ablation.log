@@ -1,0 +1,14 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:42,  7.11it/s]Loading weights:   0%|          | 2/730 [00:00<02:01,  6.02it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 49.02it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:13, 53.38it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:05, 116.54it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 118.97it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 139.36it/s]Loading weights:  16%|█▌        | 116/730 [00:01<00:04, 129.92it/s]Loading weights:  18%|█▊        | 135/730 [00:01<00:04, 141.68it/s]Loading weights:  21%|██        | 150/730 [00:01<00:04, 132.73it/s]Loading weights:  23%|██▎       | 170/730 [00:01<00:04, 124.51it/s]Loading weights:  27%|██▋       | 196/730 [00:01<00:03, 151.65it/s]Loading weights:  29%|██▉       | 213/730 [00:01<00:03, 142.60it/s]Loading weights:  32%|███▏      | 230/730 [00:01<00:03, 140.97it/s]Loading weights:  34%|███▎      | 245/730 [00:02<00:03, 130.97it/s]Loading weights:  37%|███▋      | 268/730 [00:02<00:03, 142.34it/s]Loading weights:  39%|███▉      | 283/730 [00:02<00:03, 142.91it/s]Loading weights:  42%|████▏     | 304/730 [00:02<00:02, 151.86it/s]Loading weights:  44%|████▍     | 320/730 [00:02<00:02, 138.16it/s]Loading weights:  49%|████▉     | 357/730 [00:02<00:01, 195.05it/s]Loading weights:  71%|███████   | 520/730 [00:02<00:00, 569.32it/s]Loading weights:  93%|█████████▎| 679/730 [00:02<00:00, 845.09it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 247.19it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.275
+  pair_correct: 11.0
+  pair_total: 40.0
+  raw_accuracy: 0.625
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_035047_sav_head_ablation/sav_sugarcrepe_firstk_qwen2_vl_ablation.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_035047_sav_head_ablation/sav_sugarcrepe_firstk_qwen2_vl_ablation.predictions.jsonl
+

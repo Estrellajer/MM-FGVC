@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:39,  7.32it/s]Loading weights:   0%|          | 2/730 [00:00<02:00,  6.03it/s]Loading weights:   2%|▏         | 15/730 [00:00<00:18, 39.55it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:10, 67.83it/s]Loading weights:   7%|▋         | 52/730 [00:00<00:06, 112.24it/s]Loading weights:   9%|▉         | 65/730 [00:00<00:05, 114.78it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 111.75it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 134.32it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:05, 122.46it/s]Loading weights:  18%|█▊        | 132/730 [00:01<00:04, 135.72it/s]Loading weights:  20%|██        | 147/730 [00:01<00:05, 115.28it/s]Loading weights:  23%|██▎       | 168/730 [00:01<00:04, 137.21it/s]Loading weights:  25%|██▌       | 183/730 [00:01<00:04, 120.38it/s]Loading weights:  27%|██▋       | 197/730 [00:02<00:05, 89.02it/s] Loading weights:  33%|███▎      | 244/730 [00:02<00:03, 156.85it/s]Loading weights:  36%|███▌      | 264/730 [00:02<00:03, 152.76it/s]Loading weights:  39%|███▊      | 282/730 [00:02<00:03, 138.40it/s]Loading weights:  41%|████      | 298/730 [00:02<00:03, 141.68it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:03, 136.32it/s]Loading weights:  45%|████▌     | 331/730 [00:02<00:02, 135.19it/s]Loading weights:  64%|██████▎   | 465/730 [00:02<00:00, 426.37it/s]Loading weights:  85%|████████▌ | 621/730 [00:03<00:00, 713.72it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 236.69it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.825
+  correct: 66.0
+  total: 80.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_035047_sav_head_ablation/sav_naturalbench_vqa_topk_qwen2_vl_ablation.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_035047_sav_head_ablation/sav_naturalbench_vqa_topk_qwen2_vl_ablation.predictions.jsonl
+

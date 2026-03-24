@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00172.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00172.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. hibiscus B. corn poppy C. passion D. giant white arum lily",
+    "label": "passion",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "class_id": 76,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00130.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00130.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. foxglove B. hippeastrum C. passion D. pink primrose",
+    "label": "passion",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "class_id": 76,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00220.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00220.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. passion B. camellia C. mallow D. tree mallow",
+    "label": "passion",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "class_id": 76,
+      "answer": "A"
+    }
+  }
+]

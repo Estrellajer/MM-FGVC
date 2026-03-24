@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "tinyimage",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.335,
+    "correct": 67.0,
+    "total": 200.0
+  }
+}

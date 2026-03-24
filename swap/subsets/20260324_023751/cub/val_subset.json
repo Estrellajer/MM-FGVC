@@ -1,0 +1,54 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Acadian_Flycatcher/Acadian_Flycatcher_0003_29094.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Acadian_Flycatcher/Acadian_Flycatcher_0003_29094.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Gray Kingbird B. Acadian Flycatcher C. Blue Grosbeak D. American Three toed Woodpecker",
+    "label": "Acadian Flycatcher",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0002_25122.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0002_25122.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Prairie Warbler B. Gray Catbird C. Green Jay D. American Crow",
+    "label": "American Crow",
+    "question_id": 12,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Goldfinch/American_Goldfinch_0003_32236.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Goldfinch/American_Goldfinch_0003_32236.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Great Crested Flycatcher B. American Goldfinch C. Lincoln Sparrow D. Magnolia Warbler",
+    "label": "American Goldfinch",
+    "question_id": 24,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Pipit/American_Pipit_0007_99808.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Pipit/American_Pipit_0007_99808.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Swainson Warbler B. Orange crowned Warbler C. American Pipit D. Yellow Warbler",
+    "label": "American Pipit",
+    "question_id": 36,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  }
+]

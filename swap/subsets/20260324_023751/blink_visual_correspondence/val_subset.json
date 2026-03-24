@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_68_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_68_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_68_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(D)",
+    "question_id": 67,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Correspondence"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_83_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_83_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_83_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(C)",
+    "question_id": 82,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Correspondence"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_85_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_85_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_85_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(A)",
+    "question_id": 84,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Correspondence"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_107_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_107_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Correspondence/val/val_Visual_Correspondence_107_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(B)",
+    "question_id": 106,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Correspondence"
+    }
+  }
+]

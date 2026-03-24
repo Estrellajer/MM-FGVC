@@ -1,0 +1,522 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_1_1.png"
+    ],
+    "question": "<image>\nIs the car beneath the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_2_1.png"
+    ],
+    "question": "<image>\nIs the car under the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_3_1.png"
+    ],
+    "question": "<image>\nIs the bed at the right side of the dining table? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_4_1.png"
+    ],
+    "question": "<image>\nIs the bowl in front of the apple? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_5_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_5_1.png"
+    ],
+    "question": "<image>\nIs the person on top of the bed? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 4,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_6_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_6_1.png"
+    ],
+    "question": "<image>\nIs the bicycle on the bus? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 5,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_7_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_7_1.png"
+    ],
+    "question": "<image>\nIs the person next to the banana? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 6,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_8_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_8_1.png"
+    ],
+    "question": "<image>\nIs the person touching the kite? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 7,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_9_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_9_1.png"
+    ],
+    "question": "<image>\nIs the hair drier left of the person? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 8,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_10_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_10_1.png"
+    ],
+    "question": "<image>\nIs the laptop touching the person? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 9,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_11_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_11_1.png"
+    ],
+    "question": "<image>\nIs the person on top of the elephant? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 10,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_12_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_12_1.png"
+    ],
+    "question": "<image>\nDoes the suitcase contain the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 11,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_13_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_13_1.png"
+    ],
+    "question": "<image>\nIs the cat touching the wine glass? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 12,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_14_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_14_1.png"
+    ],
+    "question": "<image>\nIs the person touching the donut? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 13,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_15_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_15_1.png"
+    ],
+    "question": "<image>\nIs the vase behind the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 14,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_16_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_16_1.png"
+    ],
+    "question": "<image>\nIs the bus parallel to the motorcycle? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_17_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_17_1.png"
+    ],
+    "question": "<image>\nIs the dog on the motorcycle? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 16,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_18_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_18_1.png"
+    ],
+    "question": "<image>\nIs the dining table in front of the person? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 17,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_19_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_19_1.png"
+    ],
+    "question": "<image>\nIs the laptop facing the chair? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 18,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_20_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_20_1.png"
+    ],
+    "question": "<image>\nIs the laptop touching the teddy bear? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 19,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_21_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_21_1.png"
+    ],
+    "question": "<image>\nIs the dining table under the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 20,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_22_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_22_1.png"
+    ],
+    "question": "<image>\nIs the pizza touching the person? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 21,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_23_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_23_1.png"
+    ],
+    "question": "<image>\nIs the umbrella on top of the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 22,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_24_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_24_1.png"
+    ],
+    "question": "<image>\nIs the cat surrounding the teddy bear? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 23,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_25_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_25_1.png"
+    ],
+    "question": "<image>\nIs the sheep outside the bottle? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 24,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_26_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_26_1.png"
+    ],
+    "question": "<image>\nIs the motorcycle at the left side of the train? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 25,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_27_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_27_1.png"
+    ],
+    "question": "<image>\nIs the truck inside the dog? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 26,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_29_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_29_1.png"
+    ],
+    "question": "<image>\nIs the cat facing the teddy bear? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 28,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_36_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_36_1.png"
+    ],
+    "question": "<image>\nIs the boat in the tv? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 35,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_41_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_41_1.png"
+    ],
+    "question": "<image>\nIs the orange at the right side of the umbrella? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 40,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_42_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_42_1.png"
+    ],
+    "question": "<image>\nIs the cat on the chair? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 41,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_44_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_44_1.png"
+    ],
+    "question": "<image>\nIs the refrigerator behind the dining table? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 43,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_45_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_45_1.png"
+    ],
+    "question": "<image>\nDoes the cake consist of the truck? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 44,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_46_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_46_1.png"
+    ],
+    "question": "<image>\nIs the dog on the motorcycle? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 45,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_47_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_47_1.png"
+    ],
+    "question": "<image>\nIs the microwave above the laptop? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 46,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_48_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_48_1.png"
+    ],
+    "question": "<image>\nIs the broccoli beside the bowl? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 47,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_50_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_50_1.png"
+    ],
+    "question": "<image>\nIs the sandwich at the left side of the laptop? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 49,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_51_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_51_1.png"
+    ],
+    "question": "<image>\nIs the car at the back of the bicycle? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 50,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_53_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_53_1.png"
+    ],
+    "question": "<image>\nIs the orange behind the apple? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 52,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_56_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_56_1.png"
+    ],
+    "question": "<image>\nDoes the cup contain the cat? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 55,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  }
+]

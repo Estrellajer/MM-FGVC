@@ -1,0 +1,28 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_28_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_28_1.png"
+    ],
+    "question": "<image>\nIs the person facing away from the horse? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 27,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_57_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_57_1.png"
+    ],
+    "question": "<image>\nIs the oven behind the cake? Select from the following choices. (A) yes (B) no",
+    "label": "(B)",
+    "question_id": 56,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  }
+]

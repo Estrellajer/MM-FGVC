@@ -1,0 +1,2802 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_0.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_0.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. vestment B. pizza C. hog D. go-kart E. standard poodle F. German shepherd G. sea slug H. scoreboard I. sunglasses J. bannister K. parking meter L. basketball M. lion N. snail O. maypole P. slug",
+    "label": "go-kart",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "wnid": "n03444034",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. tarantula B. American lobster C. picket fence D. American alligator E. sea slug F. orangutan G. European fire salamander H. guacamole I. albatross J. pretzel K. remote control L. snorkel M. cardigan N. reel O. potpie P. lakeside",
+    "label": "reel",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "wnid": "n04067472",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_2.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_2.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. seashore B. Labrador retriever C. mushroom D. organ E. bikini F. cardigan G. thatch H. space heater I. dumbbell J. tailed frog K. candle L. cougar M. refrigerator N. coral reef O. desk P. chain",
+    "label": "refrigerator",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "wnid": "n04070727",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_3.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_3.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. Christmas stocking B. sewing machine C. brown bear D. black widow E. spiny lobster F. bathtub G. dragonfly H. barn I. cockroach J. organ K. police van L. moving van M. bison N. punching bag O. albatross P. pizza",
+    "label": "bathtub",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "wnid": "n02808440",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_5.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_5.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. slug B. sandal C. beach wagon D. volleyball E. grasshopper F. pop bottle G. sea cucumber H. cauliflower I. teddy J. goose K. gasmask L. alp M. hog N. magnetic compass O. nail P. candle",
+    "label": "teddy",
+    "question_id": 5,
+    "split": null,
+    "extra": {
+      "wnid": "n04399382",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_6.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_6.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. sulphur butterfly B. bow tie C. sea slug D. apron E. brain coral F. black stork G. boa constrictor H. chest I. guinea pig J. fountain K. neck brace L. turnstile M. sewing machine N. bullfrog O. teapot P. binoculars",
+    "label": "sewing machine",
+    "question_id": 6,
+    "split": null,
+    "extra": {
+      "wnid": "n04179913",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_7.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_7.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pretzel B. chest C. beer bottle D. orange E. jinrikisha F. comic book G. bow tie H. lampshade I. alp J. police van K. dugong L. academic gown M. stopwatch N. cougar O. refrigerator P. standard poodle",
+    "label": "beer bottle",
+    "question_id": 7,
+    "split": null,
+    "extra": {
+      "wnid": "n02823428",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_8.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_8.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. tabby B. moving van C. umbrella D. pretzel E. computer keyboard F. black stork G. American lobster H. swimming trunks I. birdhouse J. reel K. gasmask L. space heater M. bison N. bathtub O. bell pepper P. school bus",
+    "label": "school bus",
+    "question_id": 8,
+    "split": null,
+    "extra": {
+      "wnid": "n04146614",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_9.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_9.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. thatch B. potter's wheel C. trolleybus D. obelisk E. kimono F. ox G. desk H. space heater I. albatross J. goose K. scoreboard L. remote control M. sea cucumber N. grasshopper O. rugby ball P. king penguin",
+    "label": "grasshopper",
+    "question_id": 9,
+    "split": null,
+    "extra": {
+      "wnid": "n02226429",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_10.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_10.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. suspension bridge B. bikini C. centipede D. orange E. lifeboat F. space heater G. vestment H. tailed frog I. lion J. grasshopper K. cockroach L. barbershop M. swimming trunks N. hourglass O. maypole P. dragonfly",
+    "label": "swimming trunks",
+    "question_id": 10,
+    "split": null,
+    "extra": {
+      "wnid": "n04371430",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_11.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_11.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. acorn B. black stork C. goldfish D. military uniform E. fountain F. snail G. koala H. candle I. poncho J. spider web K. snorkel L. banana M. backpack N. water jug O. torch P. boa constrictor",
+    "label": "banana",
+    "question_id": 11,
+    "split": null,
+    "extra": {
+      "wnid": "n07753592",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_13.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_13.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. spiny lobster B. black stork C. frying pan D. pay-phone E. sock F. bee G. pop bottle H. bow tie I. sandal J. miniskirt K. mantis L. military uniform M. umbrella N. beacon O. dumbbell P. picket fence",
+    "label": "miniskirt",
+    "question_id": 13,
+    "split": null,
+    "extra": {
+      "wnid": "n03770439",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_14.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_14.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. dining table B. pay-phone C. oboe D. sandal E. fly F. gazelle G. beacon H. barrel I. fountain J. punching bag K. wok L. black stork M. cauliflower N. king penguin O. pretzel P. boa constrictor",
+    "label": "king penguin",
+    "question_id": 14,
+    "split": null,
+    "extra": {
+      "wnid": "n02056570",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_15.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_15.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. moving van B. mashed potato C. umbrella D. cougar E. lawn mower F. convertible G. gondola H. ladybug I. beach wagon J. pizza K. golden retriever L. boa constrictor M. picket fence N. tractor O. broom P. mantis",
+    "label": "broom",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "wnid": "n02906734",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_16.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_16.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. hourglass B. ice lolly C. sandal D. American lobster E. cougar F. freight car G. snail H. fur coat I. lifeboat J. sea slug K. dining table L. acorn M. boa constrictor N. iPod O. torch P. mantis",
+    "label": "cougar",
+    "question_id": 16,
+    "split": null,
+    "extra": {
+      "wnid": "n02125311",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_17.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_17.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. walking stick B. potpie C. lakeside D. bucket E. bee F. go-kart G. vestment H. frying pan I. meat loaf J. beach wagon K. triumphal arch L. Persian cat M. desk N. drumstick O. mashed potato P. cliff",
+    "label": "triumphal arch",
+    "question_id": 17,
+    "split": null,
+    "extra": {
+      "wnid": "n04486054",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_18.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_18.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. koala B. black stork C. beer bottle D. hog E. snorkel F. fountain G. gondola H. sea slug I. nail J. candle K. convertible L. cliff dwelling M. sports car N. space heater O. bow tie P. pop bottle",
+    "label": "sports car",
+    "question_id": 18,
+    "split": null,
+    "extra": {
+      "wnid": "n04285008",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_19.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_19.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. fly B. teddy C. binoculars D. triumphal arch E. hog F. water tower G. thatch H. barbershop I. lawn mower J. Yorkshire terrier K. baboon L. cash machine M. sea slug N. dragonfly O. desk P. military uniform",
+    "label": "military uniform",
+    "question_id": 19,
+    "split": null,
+    "extra": {
+      "wnid": "n03763968",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_20.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_20.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. obelisk B. American alligator C. scorpion D. sulphur butterfly E. gasmask F. punching bag G. goose H. thatch I. ice lolly J. neck brace K. bighorn L. remote control M. tarantula N. ice cream O. viaduct P. bannister",
+    "label": "neck brace",
+    "question_id": 20,
+    "split": null,
+    "extra": {
+      "wnid": "n03814639",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_21.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_21.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lakeside B. sports car C. miniskirt D. lawn mower E. gazelle F. king penguin G. bee H. swimming trunks I. stopwatch J. syringe K. monarch L. scoreboard M. hourglass N. pill bottle O. obelisk P. fur coat",
+    "label": "obelisk",
+    "question_id": 21,
+    "split": null,
+    "extra": {
+      "wnid": "n03837869",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_22.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_22.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. American lobster B. centipede C. goldfish D. goose E. cockroach F. backpack G. cash machine H. fly I. trilobite J. acorn K. alp L. mashed potato M. rugby ball N. water jug O. reel P. bee",
+    "label": "American lobster",
+    "question_id": 22,
+    "split": null,
+    "extra": {
+      "wnid": "n01983481",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_23.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_23.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. mashed potato B. magnetic compass C. police van D. picket fence E. bison F. beaker G. dumbbell H. sea slug I. barn J. dam K. brain coral L. European fire salamander M. sulphur butterfly N. centipede O. African elephant P. cockroach",
+    "label": "European fire salamander",
+    "question_id": 23,
+    "split": null,
+    "extra": {
+      "wnid": "n01629819",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_24.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_24.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lemon B. moving van C. pay-phone D. candle E. sock F. birdhouse G. sulphur butterfly H. lakeside I. viaduct J. cannon K. mashed potato L. Egyptian cat M. syringe N. trolleybus O. cauliflower P. gondola",
+    "label": "viaduct",
+    "question_id": 24,
+    "split": null,
+    "extra": {
+      "wnid": "n04532670",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_25.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_25.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. black widow B. plate C. bison D. pay-phone E. basketball F. projectile G. iPod H. tarantula I. space heater J. Egyptian cat K. remote control L. guacamole M. refrigerator N. dugong O. lampshade P. gasmask",
+    "label": "remote control",
+    "question_id": 25,
+    "split": null,
+    "extra": {
+      "wnid": "n04074963",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_26.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_26.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. torch B. refrigerator C. poncho D. plunger E. cardigan F. volleyball G. hog H. suspension bridge I. teapot J. potter's wheel K. cockroach L. cliff dwelling M. Yorkshire terrier N. lesser panda O. remote control P. American alligator",
+    "label": "volleyball",
+    "question_id": 26,
+    "split": null,
+    "extra": {
+      "wnid": "n04540053",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_29.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_29.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. espresso B. volleyball C. grasshopper D. alp E. koala F. barrel G. Arabian camel H. fly I. water jug J. remote control K. Labrador retriever L. potter's wheel M. snorkel N. goldfish O. Yorkshire terrier P. butcher shop",
+    "label": "Yorkshire terrier",
+    "question_id": 29,
+    "split": null,
+    "extra": {
+      "wnid": "n02094433",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_30.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_30.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. flagpole B. pretzel C. dugong D. picket fence E. frying pan F. moving van G. scorpion H. hog I. sulphur butterfly J. dining table K. espresso L. computer keyboard M. brain coral N. drumstick O. sombrero P. ox",
+    "label": "moving van",
+    "question_id": 30,
+    "split": null,
+    "extra": {
+      "wnid": "n03796401",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_31.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_31.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. ice cream B. thatch C. potter's wheel D. cougar E. comic book F. meat loaf G. scorpion H. rocking chair I. lifeboat J. dugong K. walking stick L. fountain M. monarch N. backpack O. gasmask P. police van",
+    "label": "ice cream",
+    "question_id": 31,
+    "split": null,
+    "extra": {
+      "wnid": "n07614500",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_33.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_33.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. golden retriever B. bullet train C. binoculars D. bell pepper E. cash machine F. butcher shop G. backpack H. school bus I. jellyfish J. gazelle K. sulphur butterfly L. walking stick M. European fire salamander N. pill bottle O. bullfrog P. convertible",
+    "label": "pill bottle",
+    "question_id": 33,
+    "split": null,
+    "extra": {
+      "wnid": "n03937543",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_34.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_34.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bee B. bison C. pizza D. comic book E. mantis F. black widow G. trolleybus H. steel arch bridge I. Christmas stocking J. American alligator K. goldfish L. Persian cat M. wok N. rocking chair O. sports car P. kimono",
+    "label": "comic book",
+    "question_id": 34,
+    "split": null,
+    "extra": {
+      "wnid": "n06596364",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_35.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_35.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. space heater B. candle C. sea cucumber D. limousine E. basketball F. trolleybus G. obelisk H. koala I. turnstile J. abacus K. broom L. organ M. cash machine N. guinea pig O. frying pan P. parking meter",
+    "label": "cash machine",
+    "question_id": 35,
+    "split": null,
+    "extra": {
+      "wnid": "n02977058",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_36.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_36.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. black stork B. monarch C. drumstick D. refrigerator E. picket fence F. projectile G. jellyfish H. miniskirt I. altar J. cardigan K. trilobite L. umbrella M. sulphur butterfly N. black widow O. albatross P. hog",
+    "label": "trilobite",
+    "question_id": 36,
+    "split": null,
+    "extra": {
+      "wnid": "n01768244",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_37.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_37.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cash machine B. monarch C. bighorn D. picket fence E. Egyptian cat F. sea cucumber G. turnstile H. alp I. king penguin J. barrel K. potpie L. limousine M. remote control N. volleyball O. spider web P. freight car",
+    "label": "picket fence",
+    "question_id": 37,
+    "split": null,
+    "extra": {
+      "wnid": "n03930313",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_38.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_38.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. go-kart B. dining table C. hourglass D. snorkel E. water jug F. broom G. seashore H. dam I. Persian cat J. rocking chair K. comic book L. dugong M. meat loaf N. king penguin O. ice lolly P. sandal",
+    "label": "rocking chair",
+    "question_id": 38,
+    "split": null,
+    "extra": {
+      "wnid": "n04099969",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_39.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_39.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. beach wagon B. military uniform C. cougar D. confectionery E. American alligator F. pill bottle G. ice lolly H. African elephant I. gondola J. dumbbell K. steel arch bridge L. trilobite M. pomegranate N. parking meter O. computer keyboard P. cliff",
+    "label": "parking meter",
+    "question_id": 39,
+    "split": null,
+    "extra": {
+      "wnid": "n03891332",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_42.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_42.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cliff B. monarch C. American lobster D. barbershop E. picket fence F. wok G. meat loaf H. seashore I. parking meter J. grasshopper K. freight car L. vestment M. ladybug N. turnstile O. trilobite P. albatross",
+    "label": "monarch",
+    "question_id": 42,
+    "split": null,
+    "extra": {
+      "wnid": "n02279972",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_43.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_43.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. water jug B. acorn C. desk D. walking stick E. police van F. confectionery G. comic book H. suspension bridge I. stopwatch J. triumphal arch K. golden retriever L. fly M. birdhouse N. wok O. lampshade P. Chihuahua",
+    "label": "walking stick",
+    "question_id": 43,
+    "split": null,
+    "extra": {
+      "wnid": "n02231487",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_44.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_44.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. iPod B. black stork C. German shepherd D. gondola E. convertible F. limousine G. picket fence H. backpack I. albatross J. sombrero K. American alligator L. ox M. bikini N. turnstile O. water tower P. apron",
+    "label": "iPod",
+    "question_id": 44,
+    "split": null,
+    "extra": {
+      "wnid": "n03584254",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_46.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_46.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. coral reef B. dugong C. syringe D. steel arch bridge E. bighorn F. comic book G. Christmas stocking H. Persian cat I. maypole J. chimpanzee K. beaker L. organ M. king penguin N. pomegranate O. lampshade P. spiny lobster",
+    "label": "syringe",
+    "question_id": 46,
+    "split": null,
+    "extra": {
+      "wnid": "n04376876",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_47.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_47.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pay-phone B. candle C. cockroach D. crane E. oboe F. vestment G. pole H. bell pepper I. bee J. organ K. dragonfly L. jellyfish M. remote control N. bucket O. iPod P. scorpion",
+    "label": "bell pepper",
+    "question_id": 47,
+    "split": null,
+    "extra": {
+      "wnid": "n07720875",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_48.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_48.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. espresso B. Labrador retriever C. lakeside D. birdhouse E. iPod F. spider web G. spiny lobster H. African elephant I. space heater J. cougar K. dining table L. butcher shop M. lampshade N. grasshopper O. ice cream P. fur coat",
+    "label": "African elephant",
+    "question_id": 48,
+    "split": null,
+    "extra": {
+      "wnid": "n02504458",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_49.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_49.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. viaduct B. bucket C. teddy D. pole E. bullfrog F. flagpole G. turnstile H. candle I. police van J. beer bottle K. guacamole L. sports car M. pretzel N. beach wagon O. computer keyboard P. cash machine",
+    "label": "bucket",
+    "question_id": 49,
+    "split": null,
+    "extra": {
+      "wnid": "n02909870",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_50.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_50.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. plate B. tarantula C. walking stick D. abacus E. bannister F. cash machine G. bullet train H. bee I. alp J. drumstick K. sports car L. punching bag M. cougar N. black stork O. CD player P. sombrero",
+    "label": "tarantula",
+    "question_id": 50,
+    "split": null,
+    "extra": {
+      "wnid": "n01774750",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_51.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_51.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. fountain B. lion C. cannon D. rocking chair E. wooden spoon F. triumphal arch G. broom H. tarantula I. beacon J. snorkel K. lawn mower L. American alligator M. sombrero N. steel arch bridge O. baboon P. scoreboard",
+    "label": "lion",
+    "question_id": 51,
+    "split": null,
+    "extra": {
+      "wnid": "n02129165",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_53.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_53.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. Yorkshire terrier B. brown bear C. turnstile D. brain coral E. lakeside F. Chihuahua G. bow tie H. mushroom I. bucket J. chain K. American alligator L. drumstick M. bighorn N. scoreboard O. trolleybus P. desk",
+    "label": "brain coral",
+    "question_id": 53,
+    "split": null,
+    "extra": {
+      "wnid": "n01917289",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_54.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_54.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. backpack B. pizza C. bell pepper D. acorn E. beach wagon F. bullfrog G. convertible H. candle I. brain coral J. beaker K. king penguin L. pretzel M. cougar N. military uniform O. mashed potato P. binoculars",
+    "label": "binoculars",
+    "question_id": 54,
+    "split": null,
+    "extra": {
+      "wnid": "n02841315",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_55.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_55.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. acorn B. gasmask C. desk D. magnetic compass E. pop bottle F. potter's wheel G. lifeboat H. alp I. barbershop J. beer bottle K. bullfrog L. pill bottle M. bighorn N. altar O. tailed frog P. coral reef",
+    "label": "acorn",
+    "question_id": 55,
+    "split": null,
+    "extra": {
+      "wnid": "n12267677",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_56.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_56.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. barn B. alp C. ice lolly D. centipede E. miniskirt F. snorkel G. cauliflower H. Yorkshire terrier I. birdhouse J. beaker K. frying pan L. German shepherd M. American lobster N. punching bag O. academic gown P. rocking chair",
+    "label": "centipede",
+    "question_id": 56,
+    "split": null,
+    "extra": {
+      "wnid": "n01784675",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_57.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_57.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. oboe B. nail C. lesser panda D. orange E. cliff dwelling F. torch G. sandal H. frying pan I. ice lolly J. dining table K. obelisk L. sulphur butterfly M. pay-phone N. dumbbell O. miniskirt P. drumstick",
+    "label": "drumstick",
+    "question_id": 57,
+    "split": null,
+    "extra": {
+      "wnid": "n03250847",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_58.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_58.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. sulphur butterfly B. monarch C. potpie D. black stork E. candle F. goose G. umbrella H. meat loaf I. maypole J. dining table K. German shepherd L. brass M. bathtub N. cliff O. American lobster P. barn",
+    "label": "barn",
+    "question_id": 58,
+    "split": null,
+    "extra": {
+      "wnid": "n02793495",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_59.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_59.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. swimming trunks B. ice lolly C. cockroach D. freight car E. limousine F. orange G. cardigan H. grasshopper I. plunger J. teapot K. hog L. broom M. pop bottle N. drumstick O. basketball P. bullfrog",
+    "label": "teapot",
+    "question_id": 59,
+    "split": null,
+    "extra": {
+      "wnid": "n04398044",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_61.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_61.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. rugby ball B. police van C. goose D. mushroom E. scorpion F. ice lolly G. dragonfly H. computer keyboard I. lesser panda J. plate K. German shepherd L. acorn M. potter's wheel N. lemon O. ox P. nail",
+    "label": "plate",
+    "question_id": 61,
+    "split": null,
+    "extra": {
+      "wnid": "n07579787",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_63.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_63.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. nail B. vestment C. beaker D. flagpole E. pole F. birdhouse G. American alligator H. crane I. Yorkshire terrier J. bannister K. thatch L. teapot M. grasshopper N. koala O. bison P. German shepherd",
+    "label": "flagpole",
+    "question_id": 63,
+    "split": null,
+    "extra": {
+      "wnid": "n03355925",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_64.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_64.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. black widow B. hog C. iPod D. nail E. teapot F. police van G. lawn mower H. triumphal arch I. bathtub J. lifeboat K. fountain L. space heater M. spiny lobster N. Chihuahua O. trolleybus P. Arabian camel",
+    "label": "fountain",
+    "question_id": 64,
+    "split": null,
+    "extra": {
+      "wnid": "n03388043",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_65.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_65.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lion B. sea cucumber C. monarch D. scoreboard E. centipede F. cliff G. German shepherd H. albatross I. chain J. reel K. organ L. fly M. water tower N. seashore O. grasshopper P. iPod",
+    "label": "water tower",
+    "question_id": 65,
+    "split": null,
+    "extra": {
+      "wnid": "n04562935",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_66.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_66.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. moving van B. suspension bridge C. beacon D. picket fence E. desk F. plunger G. bannister H. dining table I. black stork J. comic book K. maypole L. ice cream M. centipede N. seashore O. teapot P. parking meter",
+    "label": "maypole",
+    "question_id": 66,
+    "split": null,
+    "extra": {
+      "wnid": "n03733131",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_68.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_68.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. convertible B. water jug C. goldfish D. steel arch bridge E. cliff dwelling F. sombrero G. tractor H. CD player I. hourglass J. cougar K. fly L. computer keyboard M. backpack N. dining table O. frying pan P. pill bottle",
+    "label": "goldfish",
+    "question_id": 68,
+    "split": null,
+    "extra": {
+      "wnid": "n01443537",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_69.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_69.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. gondola B. iPod C. crane D. nail E. teddy F. wooden spoon G. organ H. stopwatch I. koala J. dumbbell K. dugong L. standard poodle M. black stork N. abacus O. Arabian camel P. computer keyboard",
+    "label": "crane",
+    "question_id": 69,
+    "split": null,
+    "extra": {
+      "wnid": "n03126707",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_70.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_70.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. dugong B. turnstile C. wooden spoon D. guinea pig E. ice cream F. scorpion G. jellyfish H. bullet train I. beaker J. American alligator K. Chihuahua L. pop bottle M. rugby ball N. butcher shop O. syringe P. golden retriever",
+    "label": "scorpion",
+    "question_id": 70,
+    "split": null,
+    "extra": {
+      "wnid": "n01770393",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_71.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_71.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. computer keyboard B. dam C. rugby ball D. fly E. seashore F. gondola G. barn H. rocking chair I. plunger J. thatch K. banana L. sombrero M. ox N. pay-phone O. projectile P. confectionery",
+    "label": "plunger",
+    "question_id": 71,
+    "split": null,
+    "extra": {
+      "wnid": "n03970156",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_73.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_73.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. nail B. trolleybus C. goldfish D. meat loaf E. lampshade F. birdhouse G. alp H. sunglasses I. rugby ball J. mantis K. mashed potato L. sandal M. picket fence N. kimono O. water jug P. cauliflower",
+    "label": "lampshade",
+    "question_id": 73,
+    "split": null,
+    "extra": {
+      "wnid": "n03637318",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_74.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_74.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. espresso B. pay-phone C. ladybug D. potter's wheel E. king penguin F. rocking chair G. German shepherd H. broom I. pole J. jellyfish K. pomegranate L. baboon M. cliff dwelling N. freight car O. beaker P. coral reef",
+    "label": "ladybug",
+    "question_id": 74,
+    "split": null,
+    "extra": {
+      "wnid": "n02165456",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_75.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_75.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. plunger B. ox C. frying pan D. boa constrictor E. cockroach F. freight car G. rugby ball H. thatch I. bell pepper J. umbrella K. pop bottle L. spiny lobster M. sunglasses N. bucket O. Chihuahua P. dragonfly",
+    "label": "boa constrictor",
+    "question_id": 75,
+    "split": null,
+    "extra": {
+      "wnid": "n01742172",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_76.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_76.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. spider web B. cougar C. spiny lobster D. tractor E. sock F. brain coral G. abacus H. tabby I. bow tie J. Egyptian cat K. centipede L. remote control M. vestment N. picket fence O. drumstick P. broom",
+    "label": "tabby",
+    "question_id": 76,
+    "split": null,
+    "extra": {
+      "wnid": "n02123045",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_77.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_77.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cliff dwelling B. go-kart C. American alligator D. oboe E. sea cucumber F. scoreboard G. backpack H. koala I. sewing machine J. beach wagon K. bullfrog L. scorpion M. thatch N. bow tie O. bullet train P. African elephant",
+    "label": "American alligator",
+    "question_id": 77,
+    "split": null,
+    "extra": {
+      "wnid": "n01698640",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_78.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_78.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cliff B. steel arch bridge C. obelisk D. freight car E. backpack F. dam G. punching bag H. gasmask I. boa constrictor J. sandal K. plunger L. barn M. dumbbell N. lemon O. magnetic compass P. water jug",
+    "label": "lemon",
+    "question_id": 78,
+    "split": null,
+    "extra": {
+      "wnid": "n07749582",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_79.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_79.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. spider web B. pizza C. refrigerator D. ox E. go-kart F. koala G. cannon H. bison I. chest J. slug K. birdhouse L. dining table M. bullfrog N. jinrikisha O. lesser panda P. convertible",
+    "label": "slug",
+    "question_id": 79,
+    "split": null,
+    "extra": {
+      "wnid": "n01945685",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_80.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_80.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. hourglass B. punching bag C. king penguin D. triumphal arch E. lampshade F. bullet train G. gondola H. cliff dwelling I. bee J. refrigerator K. broom L. Arabian camel M. barbershop N. lawn mower O. suspension bridge P. beaker",
+    "label": "Arabian camel",
+    "question_id": 80,
+    "split": null,
+    "extra": {
+      "wnid": "n02437312",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_81.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_81.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. barrel B. guinea pig C. mantis D. bullet train E. dugong F. steel arch bridge G. swimming trunks H. black stork I. plunger J. abacus K. picket fence L. projectile M. potpie N. Chihuahua O. trilobite P. lifeboat",
+    "label": "dugong",
+    "question_id": 81,
+    "split": null,
+    "extra": {
+      "wnid": "n02074367",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_82.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_82.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. ladybug B. dining table C. turnstile D. cougar E. boa constrictor F. bee G. sea cucumber H. Christmas stocking I. Yorkshire terrier J. barrel K. swimming trunks L. walking stick M. desk N. banana O. goldfish P. school bus",
+    "label": "Christmas stocking",
+    "question_id": 82,
+    "split": null,
+    "extra": {
+      "wnid": "n03026506",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_83.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_83.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. comic book B. jellyfish C. iPod D. tarantula E. acorn F. kimono G. dam H. freight car I. altar J. oboe K. hourglass L. mashed potato M. sulphur butterfly N. albatross O. syringe P. bison",
+    "label": "hourglass",
+    "question_id": 83,
+    "split": null,
+    "extra": {
+      "wnid": "n03544143",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_87.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_87.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bathtub B. black stork C. lampshade D. butcher shop E. sunglasses F. drumstick G. computer keyboard H. flagpole I. gasmask J. dining table K. beaker L. meat loaf M. chain N. teddy O. albatross P. moving van",
+    "label": "black stork",
+    "question_id": 87,
+    "split": null,
+    "extra": {
+      "wnid": "n02002724",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_89.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_89.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pretzel B. cougar C. guinea pig D. European fire salamander E. goldfish F. oboe G. monarch H. parking meter I. bow tie J. lifeboat K. triumphal arch L. brown bear M. go-kart N. gasmask O. fur coat P. mushroom",
+    "label": "brown bear",
+    "question_id": 89,
+    "split": null,
+    "extra": {
+      "wnid": "n02132136",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_90.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_90.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. remote control B. espresso C. orange D. crane E. rocking chair F. albatross G. beacon H. mushroom I. computer keyboard J. bison K. grasshopper L. candle M. comic book N. limousine O. sulphur butterfly P. cash machine",
+    "label": "candle",
+    "question_id": 90,
+    "split": null,
+    "extra": {
+      "wnid": "n02948072",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_93.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_93.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bullfrog B. rocking chair C. iPod D. Persian cat E. centipede F. maypole G. pizza H. cougar I. mantis J. ice lolly K. bullet train L. obelisk M. gazelle N. backpack O. police van P. African elephant",
+    "label": "backpack",
+    "question_id": 93,
+    "split": null,
+    "extra": {
+      "wnid": "n02769748",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_95.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_95.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. slug B. frying pan C. candle D. meat loaf E. rocking chair F. American alligator G. gasmask H. broom I. abacus J. cash machine K. steel arch bridge L. potpie M. chimpanzee N. pole O. dam P. kimono",
+    "label": "chimpanzee",
+    "question_id": 95,
+    "split": null,
+    "extra": {
+      "wnid": "n02481823",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_98.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_98.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. plunger B. bathtub C. swimming trunks D. comic book E. brass F. trolleybus G. limousine H. gazelle I. bison J. obelisk K. Arabian camel L. bell pepper M. sea cucumber N. teapot O. Christmas stocking P. pomegranate",
+    "label": "trolleybus",
+    "question_id": 98,
+    "split": null,
+    "extra": {
+      "wnid": "n04487081",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_101.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_101.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. go-kart B. beach wagon C. desk D. Christmas stocking E. school bus F. Egyptian cat G. mantis H. hog I. tractor J. tarantula K. remote control L. dragonfly M. European fire salamander N. snorkel O. American alligator P. bathtub",
+    "label": "mantis",
+    "question_id": 101,
+    "split": null,
+    "extra": {
+      "wnid": "n02236044",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_102.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_102.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. African elephant B. cash machine C. crane D. butcher shop E. bighorn F. water jug G. bee H. bikini I. confectionery J. picket fence K. jellyfish L. trolleybus M. scoreboard N. lampshade O. sulphur butterfly P. dam",
+    "label": "bee",
+    "question_id": 102,
+    "split": null,
+    "extra": {
+      "wnid": "n02206856",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_106.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_106.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. king penguin B. sea cucumber C. walking stick D. pay-phone E. sombrero F. orange G. ice lolly H. mushroom I. altar J. alp K. barrel L. neck brace M. teapot N. spiny lobster O. German shepherd P. Yorkshire terrier",
+    "label": "alp",
+    "question_id": 106,
+    "split": null,
+    "extra": {
+      "wnid": "n09193705",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_108.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_108.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. barn B. orangutan C. scoreboard D. candle E. punching bag F. boa constrictor G. barbershop H. CD player I. Yorkshire terrier J. cliff K. orange L. neck brace M. cash machine N. acorn O. Egyptian cat P. gondola",
+    "label": "Egyptian cat",
+    "question_id": 108,
+    "split": null,
+    "extra": {
+      "wnid": "n02124075",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_109.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_109.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. trilobite B. trolleybus C. seashore D. ladybug E. wooden spoon F. space heater G. acorn H. sea slug I. remote control J. lifeboat K. pretzel L. water tower M. volleyball N. Yorkshire terrier O. sea cucumber P. bathtub",
+    "label": "space heater",
+    "question_id": 109,
+    "split": null,
+    "extra": {
+      "wnid": "n04265275",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_110.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_110.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. parking meter B. frying pan C. backpack D. drumstick E. apron F. king penguin G. bathtub H. tailed frog I. swimming trunks J. plunger K. wok L. picket fence M. Labrador retriever N. iPod O. guacamole P. cliff dwelling",
+    "label": "wok",
+    "question_id": 110,
+    "split": null,
+    "extra": {
+      "wnid": "n04596742",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_111.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_111.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. candle B. brass C. space heater D. pay-phone E. maypole F. centipede G. neck brace H. picket fence I. umbrella J. guinea pig K. parking meter L. barrel M. slug N. gasmask O. sulphur butterfly P. convertible",
+    "label": "barrel",
+    "question_id": 111,
+    "split": null,
+    "extra": {
+      "wnid": "n02795169",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_113.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_113.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. picket fence B. chain C. bow tie D. sea slug E. backpack F. neck brace G. convertible H. guacamole I. water jug J. guinea pig K. fly L. albatross M. gasmask N. organ O. rugby ball P. refrigerator",
+    "label": "water jug",
+    "question_id": 113,
+    "split": null,
+    "extra": {
+      "wnid": "n04560804",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_114.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_114.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. scoreboard B. trilobite C. dragonfly D. meat loaf E. American alligator F. lifeboat G. moving van H. altar I. goose J. backpack K. slug L. cauliflower M. punching bag N. butcher shop O. banana P. seashore",
+    "label": "punching bag",
+    "question_id": 114,
+    "split": null,
+    "extra": {
+      "wnid": "n04023962",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_118.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_118.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. goose B. wooden spoon C. bathtub D. sulphur butterfly E. snorkel F. cannon G. fly H. syringe I. crane J. steel arch bridge K. pay-phone L. triumphal arch M. rugby ball N. bikini O. koala P. black stork",
+    "label": "fly",
+    "question_id": 118,
+    "split": null,
+    "extra": {
+      "wnid": "n02190166",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_120.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_120.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. comic book B. desk C. German shepherd D. birdhouse E. hourglass F. cardigan G. dining table H. dragonfly I. convertible J. lawn mower K. sock L. gasmask M. beach wagon N. ice cream O. beer bottle P. bikini",
+    "label": "dining table",
+    "question_id": 120,
+    "split": null,
+    "extra": {
+      "wnid": "n03201208",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_122.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_122.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pole B. jellyfish C. bathtub D. wok E. academic gown F. thatch G. cougar H. parking meter I. oboe J. beacon K. African elephant L. bullfrog M. bannister N. school bus O. bell pepper P. cliff dwelling",
+    "label": "oboe",
+    "question_id": 122,
+    "split": null,
+    "extra": {
+      "wnid": "n03838899",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_123.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_123.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. hog B. comic book C. bison D. cougar E. koala F. nail G. boa constrictor H. spiny lobster I. suspension bridge J. monarch K. wok L. dining table M. iPod N. tabby O. bathtub P. cockroach",
+    "label": "bison",
+    "question_id": 123,
+    "split": null,
+    "extra": {
+      "wnid": "n02410509",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_126.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_126.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. tabby B. acorn C. bathtub D. reel E. go-kart F. coral reef G. walking stick H. rocking chair I. pizza J. altar K. meat loaf L. triumphal arch M. banana N. steel arch bridge O. espresso P. ox",
+    "label": "coral reef",
+    "question_id": 126,
+    "split": null,
+    "extra": {
+      "wnid": "n09256479",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_127.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_127.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. freight car B. dragonfly C. goose D. pop bottle E. CD player F. bikini G. comic book H. Labrador retriever I. jinrikisha J. gazelle K. stopwatch L. lion M. swimming trunks N. tractor O. brass P. cash machine",
+    "label": "tractor",
+    "question_id": 127,
+    "split": null,
+    "extra": {
+      "wnid": "n04465501",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_129.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_129.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. American lobster B. flagpole C. butcher shop D. albatross E. kimono F. coral reef G. remote control H. sea slug I. bullet train J. spiny lobster K. backpack L. candle M. brass N. mushroom O. apron P. beaker",
+    "label": "brass",
+    "question_id": 129,
+    "split": null,
+    "extra": {
+      "wnid": "n02892201",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_130.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_130.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. limousine B. water tower C. bell pepper D. plunger E. sports car F. mantis G. black widow H. bullfrog I. cliff J. Christmas stocking K. American alligator L. reel M. monarch N. seashore O. fountain P. CD player",
+    "label": "bullfrog",
+    "question_id": 130,
+    "split": null,
+    "extra": {
+      "wnid": "n01641577",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_131.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_131.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. orangutan B. sports car C. backpack D. potter's wheel E. orange F. sock G. wooden spoon H. meat loaf I. Persian cat J. ice lolly K. Chihuahua L. neck brace M. mushroom N. academic gown O. lion P. dining table",
+    "label": "meat loaf",
+    "question_id": 131,
+    "split": null,
+    "extra": {
+      "wnid": "n07871810",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_134.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_134.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bullet train B. frying pan C. scoreboard D. space heater E. cardigan F. standard poodle G. cliff dwelling H. European fire salamander I. sandal J. pill bottle K. moving van L. scorpion M. sea slug N. American alligator O. guacamole P. mushroom",
+    "label": "mushroom",
+    "question_id": 134,
+    "split": null,
+    "extra": {
+      "wnid": "n07734744",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_135.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_135.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. teapot B. pay-phone C. frying pan D. torch E. ice lolly F. organ G. stopwatch H. mushroom I. maypole J. pole K. water tower L. bucket M. gondola N. bathtub O. picket fence P. remote control",
+    "label": "stopwatch",
+    "question_id": 135,
+    "split": null,
+    "extra": {
+      "wnid": "n04328186",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_138.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_138.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. snorkel B. pill bottle C. albatross D. parking meter E. grasshopper F. potpie G. guinea pig H. gasmask I. spiny lobster J. lakeside K. cardigan L. remote control M. backpack N. lesser panda O. black widow P. African elephant",
+    "label": "guinea pig",
+    "question_id": 138,
+    "split": null,
+    "extra": {
+      "wnid": "n02364673",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_141.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_141.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pay-phone B. meat loaf C. bell pepper D. frying pan E. beer bottle F. mantis G. desk H. snail I. seashore J. lawn mower K. cockroach L. apron M. American lobster N. wooden spoon O. poncho P. kimono",
+    "label": "snail",
+    "question_id": 141,
+    "split": null,
+    "extra": {
+      "wnid": "n01944390",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_142.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_142.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lemon B. Chihuahua C. broom D. torch E. hourglass F. lawn mower G. scoreboard H. spiny lobster I. space heater J. brain coral K. cannon L. potter's wheel M. teddy N. brown bear O. projectile P. goose",
+    "label": "cannon",
+    "question_id": 142,
+    "split": null,
+    "extra": {
+      "wnid": "n02950826",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_144.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_144.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. broom B. butcher shop C. mashed potato D. space heater E. slug F. gasmask G. pop bottle H. king penguin I. wooden spoon J. Chihuahua K. sulphur butterfly L. barrel M. bighorn N. lion O. German shepherd P. police van",
+    "label": "Chihuahua",
+    "question_id": 144,
+    "split": null,
+    "extra": {
+      "wnid": "n02085620",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_145.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_145.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. thatch B. candle C. wooden spoon D. sewing machine E. bannister F. bee G. academic gown H. Egyptian cat I. grasshopper J. projectile K. punching bag L. European fire salamander M. dumbbell N. hourglass O. mashed potato P. pole",
+    "label": "projectile",
+    "question_id": 145,
+    "split": null,
+    "extra": {
+      "wnid": "n04008634",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_146.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_146.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bullet train B. torch C. coral reef D. chain E. bighorn F. European fire salamander G. espresso H. black stork I. orangutan J. fly K. ice lolly L. Persian cat M. bannister N. Egyptian cat O. basketball P. goose",
+    "label": "ice lolly",
+    "question_id": 146,
+    "split": null,
+    "extra": {
+      "wnid": "n07615774",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_150.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_150.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. organ B. fountain C. slug D. chest E. apron F. cauliflower G. lesser panda H. gondola I. water jug J. space heater K. magnetic compass L. wooden spoon M. black widow N. lawn mower O. cliff dwelling P. turnstile",
+    "label": "cliff dwelling",
+    "question_id": 150,
+    "split": null,
+    "extra": {
+      "wnid": "n03042490",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_151.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_151.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bathtub B. koala C. pomegranate D. beer bottle E. bell pepper F. plate G. binoculars H. pretzel I. go-kart J. chest K. espresso L. Chihuahua M. gasmask N. black widow O. birdhouse P. cougar",
+    "label": "pomegranate",
+    "question_id": 151,
+    "split": null,
+    "extra": {
+      "wnid": "n07768694",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_152.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_152.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lion B. swimming trunks C. tailed frog D. sandal E. chimpanzee F. standard poodle G. confectionery H. teddy I. stopwatch J. mushroom K. monarch L. goose M. tractor N. military uniform O. iPod P. pill bottle",
+    "label": "standard poodle",
+    "question_id": 152,
+    "split": null,
+    "extra": {
+      "wnid": "n02113799",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_155.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_155.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. chain B. sombrero C. goose D. academic gown E. wooden spoon F. jellyfish G. bucket H. pizza I. crane J. desk K. jinrikisha L. dam M. sea cucumber N. apron O. lifeboat P. syringe",
+    "label": "jinrikisha",
+    "question_id": 155,
+    "split": null,
+    "extra": {
+      "wnid": "n03599486",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_156.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_156.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bighorn B. potter's wheel C. Labrador retriever D. bikini E. parking meter F. viaduct G. cardigan H. barbershop I. jellyfish J. oboe K. scoreboard L. bell pepper M. pomegranate N. kimono O. space heater P. chest",
+    "label": "bighorn",
+    "question_id": 156,
+    "split": null,
+    "extra": {
+      "wnid": "n02415577",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_157.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_157.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. dragonfly B. remote control C. oboe D. nail E. Persian cat F. lemon G. abacus H. steel arch bridge I. reel J. refrigerator K. sunglasses L. potpie M. miniskirt N. sock O. parking meter P. poncho",
+    "label": "steel arch bridge",
+    "question_id": 157,
+    "split": null,
+    "extra": {
+      "wnid": "n04311004",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_159.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_159.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. volleyball B. beacon C. abacus D. umbrella E. pill bottle F. water jug G. cash machine H. rugby ball I. tarantula J. moving van K. orange L. sea slug M. sports car N. walking stick O. water tower P. golden retriever",
+    "label": "abacus",
+    "question_id": 159,
+    "split": null,
+    "extra": {
+      "wnid": "n02666196",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_164.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_164.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lion B. meat loaf C. vestment D. suspension bridge E. black stork F. black widow G. barrel H. birdhouse I. hog J. walking stick K. American alligator L. ice lolly M. lemon N. thatch O. cliff dwelling P. pomegranate",
+    "label": "thatch",
+    "question_id": 164,
+    "split": null,
+    "extra": {
+      "wnid": "n04417672",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_166.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_166.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. mantis B. black widow C. Christmas stocking D. standard poodle E. torch F. sea cucumber G. sports car H. chimpanzee I. bathtub J. pretzel K. military uniform L. magnetic compass M. apron N. espresso O. brain coral P. guacamole",
+    "label": "pretzel",
+    "question_id": 166,
+    "split": null,
+    "extra": {
+      "wnid": "n07695742",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_175.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_175.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. freight car B. sombrero C. albatross D. reel E. computer keyboard F. umbrella G. brown bear H. cash machine I. pizza J. mushroom K. altar L. mashed potato M. confectionery N. ox O. space heater P. basketball",
+    "label": "freight car",
+    "question_id": 175,
+    "split": null,
+    "extra": {
+      "wnid": "n03393912",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_176.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_176.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. convertible B. standard poodle C. umbrella D. bullet train E. teapot F. tarantula G. reel H. jellyfish I. ox J. lakeside K. bathtub L. bullfrog M. barn N. crane O. CD player P. scoreboard",
+    "label": "ox",
+    "question_id": 176,
+    "split": null,
+    "extra": {
+      "wnid": "n02403003",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_181.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_181.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. kimono B. cliff dwelling C. cougar D. water tower E. meat loaf F. stopwatch G. koala H. moving van I. magnetic compass J. lifeboat K. slug L. basketball M. boa constrictor N. ox O. bikini P. organ",
+    "label": "lifeboat",
+    "question_id": 181,
+    "split": null,
+    "extra": {
+      "wnid": "n03662601",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_182.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_182.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. gondola B. candle C. sea cucumber D. lesser panda E. wok F. tabby G. mantis H. viaduct I. bell pepper J. fur coat K. brown bear L. umbrella M. bullet train N. hog O. ice lolly P. jellyfish",
+    "label": "sea cucumber",
+    "question_id": 182,
+    "split": null,
+    "extra": {
+      "wnid": "n02321529",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_184.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_184.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bell pepper B. jinrikisha C. dam D. pole E. lion F. refrigerator G. lesser panda H. cougar I. sock J. beacon K. pop bottle L. vestment M. torch N. steel arch bridge O. miniskirt P. pomegranate",
+    "label": "sock",
+    "question_id": 184,
+    "split": null,
+    "extra": {
+      "wnid": "n04254777",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_186.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_186.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. oboe B. birdhouse C. flagpole D. lifeboat E. comic book F. barbershop G. beer bottle H. tabby I. punching bag J. black widow K. scorpion L. cougar M. neck brace N. space heater O. potter's wheel P. lampshade",
+    "label": "potter's wheel",
+    "question_id": 186,
+    "split": null,
+    "extra": {
+      "wnid": "n03992509",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_188.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_188.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. magnetic compass B. teapot C. miniskirt D. plate E. meat loaf F. ox G. sock H. brown bear I. European fire salamander J. limousine K. cockroach L. beer bottle M. school bus N. bison O. plunger P. cougar",
+    "label": "cockroach",
+    "question_id": 188,
+    "split": null,
+    "extra": {
+      "wnid": "n02233338",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_189.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_189.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. tractor B. potter's wheel C. plate D. broom E. moving van F. comic book G. lemon H. thatch I. magnetic compass J. sea slug K. sewing machine L. Christmas stocking M. miniskirt N. mushroom O. bucket P. seashore",
+    "label": "sea slug",
+    "question_id": 189,
+    "split": null,
+    "extra": {
+      "wnid": "n01950731",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_191.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_191.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. wooden spoon B. cannon C. ladybug D. suspension bridge E. torch F. bighorn G. freight car H. barn I. plunger J. grasshopper K. altar L. organ M. jellyfish N. drumstick O. bullet train P. hog",
+    "label": "jellyfish",
+    "question_id": 191,
+    "split": null,
+    "extra": {
+      "wnid": "n01910747",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_192.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_192.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. chimpanzee B. iPod C. dugong D. beaker E. fountain F. snail G. scoreboard H. sewing machine I. fly J. sombrero K. ice cream L. black widow M. tarantula N. drumstick O. parking meter P. beer bottle",
+    "label": "black widow",
+    "question_id": 192,
+    "split": null,
+    "extra": {
+      "wnid": "n01774384",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_193.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_193.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. mantis B. mashed potato C. dining table D. reel E. orangutan F. centipede G. sombrero H. Egyptian cat I. cougar J. pop bottle K. bannister L. brown bear M. trilobite N. magnetic compass O. fountain P. gondola",
+    "label": "sombrero",
+    "question_id": 193,
+    "split": null,
+    "extra": {
+      "wnid": "n04259630",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_196.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_196.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. umbrella B. chest C. centipede D. confectionery E. bikini F. walking stick G. African elephant H. mantis I. CD player J. orange K. chain L. cliff dwelling M. Persian cat N. vestment O. torch P. picket fence",
+    "label": "bikini",
+    "question_id": 196,
+    "split": null,
+    "extra": {
+      "wnid": "n02837789",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_199.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_199.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. viaduct B. refrigerator C. desk D. pill bottle E. punching bag F. lesser panda G. police van H. organ I. nail J. gazelle K. school bus L. basketball M. brain coral N. Persian cat O. ox P. pole",
+    "label": "lesser panda",
+    "question_id": 199,
+    "split": null,
+    "extra": {
+      "wnid": "n02509815",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_201.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_201.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. poncho B. punching bag C. volleyball D. gasmask E. coral reef F. black widow G. dam H. triumphal arch I. walking stick J. orangutan K. jinrikisha L. freight car M. mushroom N. sandal O. comic book P. Egyptian cat",
+    "label": "gasmask",
+    "question_id": 201,
+    "split": null,
+    "extra": {
+      "wnid": "n03424325",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_214.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_214.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. go-kart B. organ C. sandal D. bucket E. brass F. lampshade G. gasmask H. cauliflower I. goldfish J. thatch K. stopwatch L. potter's wheel M. tarantula N. plunger O. sunglasses P. beacon",
+    "label": "beacon",
+    "question_id": 214,
+    "split": null,
+    "extra": {
+      "wnid": "n02814860",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_215.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_215.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. ladybug B. chest C. trilobite D. volleyball E. drumstick F. sea cucumber G. broom H. koala I. comic book J. Christmas stocking K. seashore L. American lobster M. altar N. torch O. triumphal arch P. acorn",
+    "label": "torch",
+    "question_id": 215,
+    "split": null,
+    "extra": {
+      "wnid": "n04456115",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_220.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_220.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. plate B. backpack C. poncho D. American alligator E. stopwatch F. parking meter G. seashore H. candle I. cauliflower J. punching bag K. altar L. suspension bridge M. espresso N. sunglasses O. snail P. refrigerator",
+    "label": "poncho",
+    "question_id": 220,
+    "split": null,
+    "extra": {
+      "wnid": "n03980874",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_223.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_223.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. maypole B. goose C. sewing machine D. cockroach E. Persian cat F. wok G. jinrikisha H. altar I. American lobster J. centipede K. basketball L. brown bear M. computer keyboard N. picket fence O. gondola P. mashed potato",
+    "label": "Persian cat",
+    "question_id": 223,
+    "split": null,
+    "extra": {
+      "wnid": "n02123394",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_225.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_225.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. basketball B. sea cucumber C. wok D. sunglasses E. bow tie F. iPod G. mashed potato H. magnetic compass I. bighorn J. chest K. baboon L. cannon M. Persian cat N. black widow O. beach wagon P. plunger",
+    "label": "mashed potato",
+    "question_id": 225,
+    "split": null,
+    "extra": {
+      "wnid": "n07711569",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_234.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_234.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. sewing machine B. sock C. bow tie D. boa constrictor E. brain coral F. swimming trunks G. comic book H. sunglasses I. spider web J. butcher shop K. slug L. dining table M. fur coat N. steel arch bridge O. guacamole P. German shepherd",
+    "label": "butcher shop",
+    "question_id": 234,
+    "split": null,
+    "extra": {
+      "wnid": "n02927161",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_237.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_237.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. butcher shop B. lawn mower C. miniskirt D. fly E. CD player F. mashed potato G. lampshade H. bighorn I. tractor J. refrigerator K. torch L. organ M. swimming trunks N. coral reef O. bullfrog P. guacamole",
+    "label": "organ",
+    "question_id": 237,
+    "split": null,
+    "extra": {
+      "wnid": "n03854065",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_240.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_240.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. neck brace B. umbrella C. gazelle D. gondola E. space heater F. lion G. tailed frog H. pretzel I. rocking chair J. beacon K. oboe L. organ M. volleyball N. bow tie O. mantis P. sports car",
+    "label": "bow tie",
+    "question_id": 240,
+    "split": null,
+    "extra": {
+      "wnid": "n02883205",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_242.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_242.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. beach wagon B. barn C. lemon D. Egyptian cat E. cash machine F. vestment G. projectile H. golden retriever I. bighorn J. orange K. miniskirt L. spider web M. comic book N. walking stick O. monarch P. volleyball",
+    "label": "golden retriever",
+    "question_id": 242,
+    "split": null,
+    "extra": {
+      "wnid": "n02099601",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_244.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_244.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bikini B. apron C. gondola D. birdhouse E. pizza F. trolleybus G. binoculars H. academic gown I. beaker J. boa constrictor K. bighorn L. umbrella M. seashore N. tarantula O. butcher shop P. wooden spoon",
+    "label": "seashore",
+    "question_id": 244,
+    "split": null,
+    "extra": {
+      "wnid": "n09428293",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_246.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_246.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. academic gown B. computer keyboard C. tabby D. pomegranate E. wok F. butcher shop G. miniskirt H. Arabian camel I. cockroach J. reel K. space heater L. flagpole M. sports car N. cougar O. black widow P. beach wagon",
+    "label": "academic gown",
+    "question_id": 246,
+    "split": null,
+    "extra": {
+      "wnid": "n02669723",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_252.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_252.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. beach wagon B. barbershop C. cliff D. mushroom E. iPod F. barrel G. snail H. space heater I. maypole J. viaduct K. binoculars L. bullfrog M. refrigerator N. altar O. bee P. moving van",
+    "label": "altar",
+    "question_id": 252,
+    "split": null,
+    "extra": {
+      "wnid": "n02699494",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_256.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_256.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. abacus B. obelisk C. moving van D. coral reef E. black widow F. goose G. water jug H. refrigerator I. beach wagon J. parking meter K. snail L. bathtub M. Egyptian cat N. dam O. comic book P. sandal",
+    "label": "beach wagon",
+    "question_id": 256,
+    "split": null,
+    "extra": {
+      "wnid": "n02814533",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_261.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_261.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. snail B. hog C. bee D. banana E. Egyptian cat F. barrel G. go-kart H. stopwatch I. plunger J. pop bottle K. mushroom L. refrigerator M. wooden spoon N. cauliflower O. plate P. lawn mower",
+    "label": "cauliflower",
+    "question_id": 261,
+    "split": null,
+    "extra": {
+      "wnid": "n07715103",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_262.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_262.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. mantis B. academic gown C. nail D. standard poodle E. walking stick F. sea cucumber G. cliff H. dugong I. binoculars J. turnstile K. steel arch bridge L. broom M. bikini N. maypole O. hog P. bow tie",
+    "label": "cliff",
+    "question_id": 262,
+    "split": null,
+    "extra": {
+      "wnid": "n09246464",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_265.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_265.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. dining table B. American alligator C. plate D. cliff E. desk F. mantis G. organ H. school bus I. dumbbell J. Persian cat K. sea cucumber L. brown bear M. gondola N. orangutan O. barrel P. black stork",
+    "label": "orangutan",
+    "question_id": 265,
+    "split": null,
+    "extra": {
+      "wnid": "n02480495",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_267.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_267.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. comic book B. sunglasses C. tabby D. bee E. brass F. black stork G. academic gown H. butcher shop I. birdhouse J. fountain K. banana L. sports car M. boa constrictor N. chain O. lesser panda P. meat loaf",
+    "label": "birdhouse",
+    "question_id": 267,
+    "split": null,
+    "extra": {
+      "wnid": "n02843684",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_271.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_271.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. thatch B. walking stick C. hourglass D. goose E. picket fence F. sea cucumber G. water jug H. Christmas stocking I. Egyptian cat J. dam K. convertible L. Labrador retriever M. wooden spoon N. trolleybus O. bullet train P. lifeboat",
+    "label": "convertible",
+    "question_id": 271,
+    "split": null,
+    "extra": {
+      "wnid": "n03100240",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_275.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_275.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. apron B. kimono C. altar D. remote control E. stopwatch F. Christmas stocking G. chain H. hog I. koala J. tractor K. obelisk L. rugby ball M. magnetic compass N. reel O. lion P. basketball",
+    "label": "koala",
+    "question_id": 275,
+    "split": null,
+    "extra": {
+      "wnid": "n01882714",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_277.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_277.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lemon B. convertible C. ice lolly D. jellyfish E. go-kart F. goose G. dugong H. iPod I. viaduct J. candle K. triumphal arch L. Chihuahua M. snorkel N. Arabian camel O. tabby P. gondola",
+    "label": "gondola",
+    "question_id": 277,
+    "split": null,
+    "extra": {
+      "wnid": "n03447447",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_278.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_278.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. ox B. ice lolly C. goose D. turnstile E. chain F. acorn G. sock H. steel arch bridge I. pay-phone J. cliff K. fountain L. goldfish M. Yorkshire terrier N. snorkel O. sea cucumber P. confectionery",
+    "label": "goose",
+    "question_id": 278,
+    "split": null,
+    "extra": {
+      "wnid": "n01855672",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_283.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_283.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. ox B. dugong C. Persian cat D. turnstile E. barbershop F. sulphur butterfly G. sports car H. dam I. brown bear J. wooden spoon K. cardigan L. pole M. scoreboard N. standard poodle O. sunglasses P. lampshade",
+    "label": "sunglasses",
+    "question_id": 283,
+    "split": null,
+    "extra": {
+      "wnid": "n04356056",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_285.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_285.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. centipede B. picket fence C. sandal D. rocking chair E. Christmas stocking F. cardigan G. sports car H. cockroach I. water tower J. computer keyboard K. torch L. beach wagon M. pay-phone N. freight car O. candle P. miniskirt",
+    "label": "pay-phone",
+    "question_id": 285,
+    "split": null,
+    "extra": {
+      "wnid": "n03902125",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_289.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_289.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. potter's wheel B. apron C. beer bottle D. hog E. scorpion F. acorn G. centipede H. walking stick I. king penguin J. police van K. bullfrog L. jinrikisha M. ox N. goose O. Chihuahua P. frying pan",
+    "label": "frying pan",
+    "question_id": 289,
+    "split": null,
+    "extra": {
+      "wnid": "n03400231",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_293.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_293.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. drumstick B. vestment C. school bus D. oboe E. goose F. pretzel G. centipede H. sulphur butterfly I. computer keyboard J. miniskirt K. abacus L. spider web M. cash machine N. obelisk O. bullfrog P. bighorn",
+    "label": "computer keyboard",
+    "question_id": 293,
+    "split": null,
+    "extra": {
+      "wnid": "n03085013",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_294.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_294.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. convertible B. sea cucumber C. hog D. lampshade E. nail F. volleyball G. chimpanzee H. brass I. dining table J. Labrador retriever K. brain coral L. sunglasses M. mushroom N. ice cream O. tailed frog P. wooden spoon",
+    "label": "tailed frog",
+    "question_id": 294,
+    "split": null,
+    "extra": {
+      "wnid": "n01644900",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_300.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_300.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. rugby ball B. lampshade C. Arabian camel D. pop bottle E. pizza F. freight car G. guinea pig H. broom I. barrel J. spiny lobster K. cannon L. pomegranate M. meat loaf N. pretzel O. Egyptian cat P. moving van",
+    "label": "pizza",
+    "question_id": 300,
+    "split": null,
+    "extra": {
+      "wnid": "n07873807",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_301.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_301.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. limousine B. sombrero C. dumbbell D. turnstile E. altar F. gasmask G. tabby H. trilobite I. thatch J. wooden spoon K. ladybug L. lakeside M. confectionery N. pizza O. cliff P. picket fence",
+    "label": "limousine",
+    "question_id": 301,
+    "split": null,
+    "extra": {
+      "wnid": "n03670208",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_302.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_302.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. frying pan B. candle C. slug D. alp E. bullet train F. crane G. hog H. jellyfish I. viaduct J. projectile K. grasshopper L. fountain M. sulphur butterfly N. pretzel O. bow tie P. tarantula",
+    "label": "hog",
+    "question_id": 302,
+    "split": null,
+    "extra": {
+      "wnid": "n02395406",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_307.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_307.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. slug B. orangutan C. basketball D. school bus E. teapot F. lawn mower G. koala H. kimono I. iPod J. pomegranate K. triumphal arch L. bee M. candle N. desk O. walking stick P. bullet train",
+    "label": "desk",
+    "question_id": 307,
+    "split": null,
+    "extra": {
+      "wnid": "n03179701",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_312.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_312.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. potter's wheel B. tarantula C. viaduct D. freight car E. lion F. dumbbell G. kimono H. barbershop I. syringe J. cockroach K. fly L. fountain M. bee N. backpack O. barrel P. goose",
+    "label": "barbershop",
+    "question_id": 312,
+    "split": null,
+    "extra": {
+      "wnid": "n02791270",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_321.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_321.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. koala B. cliff C. lampshade D. fur coat E. hog F. sea slug G. sulphur butterfly H. European fire salamander I. dragonfly J. pill bottle K. triumphal arch L. dugong M. snail N. sandal O. drumstick P. bathtub",
+    "label": "sandal",
+    "question_id": 321,
+    "split": null,
+    "extra": {
+      "wnid": "n04133789",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_322.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_322.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. potter's wheel B. rugby ball C. poncho D. American lobster E. birdhouse F. lampshade G. chest H. tarantula I. tabby J. lion K. snorkel L. goose M. Chihuahua N. turnstile O. beach wagon P. bullet train",
+    "label": "bullet train",
+    "question_id": 322,
+    "split": null,
+    "extra": {
+      "wnid": "n02917067",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_327.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_327.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. dam B. lifeboat C. tailed frog D. vestment E. desk F. lawn mower G. guinea pig H. sports car I. organ J. cockroach K. volleyball L. dragonfly M. military uniform N. pole O. bullfrog P. cliff dwelling",
+    "label": "dragonfly",
+    "question_id": 327,
+    "split": null,
+    "extra": {
+      "wnid": "n02268443",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_330.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_330.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. gondola B. brain coral C. chain D. barrel E. German shepherd F. European fire salamander G. plunger H. CD player I. banana J. slug K. mantis L. reel M. sulphur butterfly N. monarch O. bullet train P. cash machine",
+    "label": "CD player",
+    "question_id": 330,
+    "split": null,
+    "extra": {
+      "wnid": "n02988304",
+      "answer": "H"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_334.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_334.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. fly B. sock C. bannister D. beach wagon E. pizza F. kimono G. apron H. Persian cat I. sewing machine J. acorn K. police van L. sombrero M. bikini N. bell pepper O. rocking chair P. African elephant",
+    "label": "bannister",
+    "question_id": 334,
+    "split": null,
+    "extra": {
+      "wnid": "n02788148",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_338.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_338.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. dining table B. steel arch bridge C. lakeside D. gasmask E. refrigerator F. beach wagon G. Labrador retriever H. parking meter I. tailed frog J. boa constrictor K. reel L. barbershop M. hog N. chest O. pizza P. mantis",
+    "label": "chest",
+    "question_id": 338,
+    "split": null,
+    "extra": {
+      "wnid": "n03014705",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_340.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_340.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. wok B. cockroach C. picket fence D. guinea pig E. sunglasses F. spider web G. abacus H. alp I. limousine J. dugong K. jellyfish L. dragonfly M. suspension bridge N. bighorn O. turnstile P. basketball",
+    "label": "suspension bridge",
+    "question_id": 340,
+    "split": null,
+    "extra": {
+      "wnid": "n04366367",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_344.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_344.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. mashed potato B. limousine C. reel D. bow tie E. trilobite F. wooden spoon G. Persian cat H. sock I. pop bottle J. bullfrog K. dragonfly L. volleyball M. hog N. thatch O. comic book P. Labrador retriever",
+    "label": "wooden spoon",
+    "question_id": 344,
+    "split": null,
+    "extra": {
+      "wnid": "n04597913",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_368.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_368.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. thatch B. parking meter C. monarch D. confectionery E. acorn F. baboon G. bullet train H. umbrella I. comic book J. altar K. dugong L. dam M. lion N. frying pan O. lemon P. steel arch bridge",
+    "label": "confectionery",
+    "question_id": 368,
+    "split": null,
+    "extra": {
+      "wnid": "n03089624",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_379.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_379.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. boa constrictor B. dumbbell C. lawn mower D. king penguin E. ladybug F. syringe G. pomegranate H. spider web I. guacamole J. chain K. dragonfly L. bee M. police van N. backpack O. lesser panda P. wooden spoon",
+    "label": "chain",
+    "question_id": 379,
+    "split": null,
+    "extra": {
+      "wnid": "n02999410",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_381.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_381.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. water tower B. orange C. acorn D. slug E. binoculars F. sandal G. Persian cat H. seashore I. cliff dwelling J. military uniform K. barn L. trilobite M. African elephant N. guinea pig O. sombrero P. spider web",
+    "label": "orange",
+    "question_id": 381,
+    "split": null,
+    "extra": {
+      "wnid": "n07747607",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_389.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_389.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. snorkel B. bathtub C. baboon D. reel E. frying pan F. Chihuahua G. sulphur butterfly H. spider web I. bucket J. pay-phone K. pop bottle L. cannon M. potpie N. cockroach O. pizza P. lesser panda",
+    "label": "pop bottle",
+    "question_id": 389,
+    "split": null,
+    "extra": {
+      "wnid": "n03983396",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_390.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_390.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cash machine B. Yorkshire terrier C. jinrikisha D. goldfish E. orangutan F. baboon G. dugong H. gasmask I. steel arch bridge J. gondola K. tailed frog L. kimono M. ice cream N. potpie O. ladybug P. cardigan",
+    "label": "baboon",
+    "question_id": 390,
+    "split": null,
+    "extra": {
+      "wnid": "n02486410",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_400.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_400.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. slug B. confectionery C. barrel D. boa constrictor E. hourglass F. cougar G. lemon H. black widow I. bighorn J. lawn mower K. dining table L. acorn M. walking stick N. king penguin O. pay-phone P. sports car",
+    "label": "lawn mower",
+    "question_id": 400,
+    "split": null,
+    "extra": {
+      "wnid": "n03649909",
+      "answer": "J"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_404.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_404.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. snorkel B. black stork C. ladybug D. neck brace E. beacon F. fur coat G. projectile H. lifeboat I. birdhouse J. American lobster K. brain coral L. school bus M. bucket N. maypole O. CD player P. Labrador retriever",
+    "label": "fur coat",
+    "question_id": 404,
+    "split": null,
+    "extra": {
+      "wnid": "n03404251",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_409.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_409.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. black stork B. umbrella C. trilobite D. sea cucumber E. ox F. teddy G. drumstick H. magnetic compass I. desk J. lifeboat K. water tower L. pole M. rugby ball N. barn O. flagpole P. snorkel",
+    "label": "umbrella",
+    "question_id": 409,
+    "split": null,
+    "extra": {
+      "wnid": "n04507155",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_415.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_415.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. beaker B. backpack C. boa constrictor D. scorpion E. suspension bridge F. hog G. orangutan H. magnetic compass I. Egyptian cat J. water tower K. swimming trunks L. remote control M. brown bear N. syringe O. cockroach P. Labrador retriever",
+    "label": "beaker",
+    "question_id": 415,
+    "split": null,
+    "extra": {
+      "wnid": "n02815834",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_418.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_418.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cockroach B. vestment C. flagpole D. scoreboard E. wok F. Christmas stocking G. backpack H. Chihuahua I. school bus J. trilobite K. baboon L. goldfish M. water tower N. nail O. golden retriever P. volleyball",
+    "label": "scoreboard",
+    "question_id": 418,
+    "split": null,
+    "extra": {
+      "wnid": "n04149813",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_436.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_436.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. academic gown B. African elephant C. sea cucumber D. goldfish E. syringe F. limousine G. alp H. nail I. Christmas stocking J. bullet train K. European fire salamander L. jellyfish M. reel N. picket fence O. apron P. suspension bridge",
+    "label": "apron",
+    "question_id": 436,
+    "split": null,
+    "extra": {
+      "wnid": "n02730930",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_444.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_444.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. standard poodle B. cardigan C. ox D. flagpole E. bison F. confectionery G. tarantula H. rugby ball I. sulphur butterfly J. lesser panda K. frying pan L. gazelle M. mushroom N. binoculars O. seashore P. snorkel",
+    "label": "snorkel",
+    "question_id": 444,
+    "split": null,
+    "extra": {
+      "wnid": "n04251144",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_462.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_462.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. mushroom B. flagpole C. lion D. walking stick E. albatross F. apron G. potter's wheel H. organ I. gondola J. volleyball K. European fire salamander L. basketball M. dining table N. cardigan O. bow tie P. backpack",
+    "label": "albatross",
+    "question_id": 462,
+    "split": null,
+    "extra": {
+      "wnid": "n02058221",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_467.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_467.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. spider web B. sulphur butterfly C. confectionery D. German shepherd E. triumphal arch F. scorpion G. punching bag H. dugong I. hourglass J. orange K. hog L. lifeboat M. cockroach N. standard poodle O. gondola P. projectile",
+    "label": "spider web",
+    "question_id": 467,
+    "split": null,
+    "extra": {
+      "wnid": "n04275548",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_475.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_475.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. snail B. scoreboard C. albatross D. espresso E. bucket F. parking meter G. seashore H. volleyball I. rocking chair J. poncho K. ice lolly L. pretzel M. koala N. basketball O. American alligator P. bathtub",
+    "label": "basketball",
+    "question_id": 475,
+    "split": null,
+    "extra": {
+      "wnid": "n02802426",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_486.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_486.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bucket B. refrigerator C. cannon D. kimono E. dam F. coral reef G. limousine H. wok I. suspension bridge J. scoreboard K. hourglass L. mantis M. boa constrictor N. sewing machine O. confectionery P. pill bottle",
+    "label": "dam",
+    "question_id": 486,
+    "split": null,
+    "extra": {
+      "wnid": "n03160309",
+      "answer": "E"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_492.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_492.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. meat loaf B. snorkel C. sandal D. wooden spoon E. rugby ball F. Labrador retriever G. beacon H. organ I. goldfish J. German shepherd K. computer keyboard L. triumphal arch M. beaker N. vestment O. lemon P. crane",
+    "label": "Labrador retriever",
+    "question_id": 492,
+    "split": null,
+    "extra": {
+      "wnid": "n02099712",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_518.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_518.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. cardigan B. butcher shop C. water tower D. seashore E. guacamole F. chest G. viaduct H. dam I. guinea pig J. swimming trunks K. lawn mower L. magnetic compass M. pop bottle N. CD player O. stopwatch P. coral reef",
+    "label": "magnetic compass",
+    "question_id": 518,
+    "split": null,
+    "extra": {
+      "wnid": "n03706229",
+      "answer": "L"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_558.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_558.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. torch B. scorpion C. oboe D. alp E. brain coral F. hourglass G. sports car H. volleyball I. tractor J. bikini K. lifeboat L. moving van M. sunglasses N. slug O. guacamole P. computer keyboard",
+    "label": "guacamole",
+    "question_id": 558,
+    "split": null,
+    "extra": {
+      "wnid": "n07583066",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_564.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_564.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pole B. orange C. fur coat D. magnetic compass E. cash machine F. ice cream G. king penguin H. iPod I. Egyptian cat J. bullet train K. suspension bridge L. European fire salamander M. German shepherd N. dam O. centipede P. nail",
+    "label": "nail",
+    "question_id": 564,
+    "split": null,
+    "extra": {
+      "wnid": "n03804744",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_600.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_600.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. vestment B. desk C. sulphur butterfly D. boa constrictor E. academic gown F. pay-phone G. orange H. brain coral I. king penguin J. mashed potato K. teapot L. alp M. swimming trunks N. snail O. freight car P. cliff",
+    "label": "sulphur butterfly",
+    "question_id": 600,
+    "split": null,
+    "extra": {
+      "wnid": "n02281406",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_613.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_613.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. pay-phone B. oboe C. wok D. king penguin E. lifeboat F. steel arch bridge G. orange H. coral reef I. bow tie J. brown bear K. kimono L. cougar M. umbrella N. banana O. stopwatch P. poncho",
+    "label": "kimono",
+    "question_id": 613,
+    "split": null,
+    "extra": {
+      "wnid": "n03617480",
+      "answer": "K"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_617.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_617.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. Egyptian cat B. lakeside C. koala D. bison E. abacus F. boa constrictor G. tractor H. African elephant I. scorpion J. volleyball K. maypole L. reel M. gazelle N. baboon O. orangutan P. barrel",
+    "label": "lakeside",
+    "question_id": 617,
+    "split": null,
+    "extra": {
+      "wnid": "n09332890",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_640.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_640.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. snail B. dragonfly C. teddy D. bathtub E. beaker F. police van G. steel arch bridge H. Labrador retriever I. tabby J. torch K. slug L. plate M. turnstile N. rocking chair O. spiny lobster P. German shepherd",
+    "label": "police van",
+    "question_id": 640,
+    "split": null,
+    "extra": {
+      "wnid": "n03977966",
+      "answer": "F"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_643.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_643.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lesser panda B. frying pan C. bow tie D. triumphal arch E. spiny lobster F. standard poodle G. abacus H. espresso I. convertible J. refrigerator K. suspension bridge L. fountain M. dumbbell N. academic gown O. tarantula P. teddy",
+    "label": "dumbbell",
+    "question_id": 643,
+    "split": null,
+    "extra": {
+      "wnid": "n03255030",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_703.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_703.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. flagpole B. sulphur butterfly C. mushroom D. cougar E. triumphal arch F. baboon G. bee H. snail I. trilobite J. umbrella K. tractor L. monarch M. beach wagon N. bell pepper O. cardigan P. water jug",
+    "label": "cardigan",
+    "question_id": 703,
+    "split": null,
+    "extra": {
+      "wnid": "n02963159",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_743.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_743.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. organ B. German shepherd C. Chihuahua D. brass E. lawn mower F. picket fence G. birdhouse H. cauliflower I. bathtub J. fur coat K. meat loaf L. cougar M. gondola N. bikini O. espresso P. rugby ball",
+    "label": "German shepherd",
+    "question_id": 743,
+    "split": null,
+    "extra": {
+      "wnid": "n02106662",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_761.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_761.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. turnstile B. gazelle C. cockroach D. ice cream E. plunger F. centipede G. tractor H. rocking chair I. mushroom J. rugby ball K. vestment L. picket fence M. bannister N. spider web O. poncho P. ox",
+    "label": "gazelle",
+    "question_id": 761,
+    "split": null,
+    "extra": {
+      "wnid": "n02423022",
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_803.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_803.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lion B. umbrella C. Christmas stocking D. scorpion E. cauliflower F. orangutan G. drumstick H. limousine I. Persian cat J. ladybug K. refrigerator L. pizza M. water jug N. volleyball O. spiny lobster P. backpack",
+    "label": "spiny lobster",
+    "question_id": 803,
+    "split": null,
+    "extra": {
+      "wnid": "n01984695",
+      "answer": "O"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_817.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_817.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. lakeside B. neck brace C. mantis D. pay-phone E. American lobster F. snail G. sulphur butterfly H. confectionery I. dining table J. refrigerator K. fur coat L. water jug M. lesser panda N. tractor O. brass P. turnstile",
+    "label": "turnstile",
+    "question_id": 817,
+    "split": null,
+    "extra": {
+      "wnid": "n04501370",
+      "answer": "P"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_864.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_864.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. king penguin B. hourglass C. military uniform D. ox E. academic gown F. wok G. apron H. lifeboat I. pole J. swimming trunks K. parking meter L. sombrero M. volleyball N. black widow O. go-kart P. suspension bridge",
+    "label": "pole",
+    "question_id": 864,
+    "split": null,
+    "extra": {
+      "wnid": "n03976657",
+      "answer": "I"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1026.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1026.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. go-kart B. trilobite C. potpie D. pizza E. remote control F. Egyptian cat G. police van H. potter's wheel I. miniskirt J. punching bag K. poncho L. chain M. backpack N. guacamole O. dam P. acorn",
+    "label": "potpie",
+    "question_id": 1026,
+    "split": null,
+    "extra": {
+      "wnid": "n07875152",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1057.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1057.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. reel B. Chihuahua C. triumphal arch D. coral reef E. magnetic compass F. lesser panda G. vestment H. cauliflower I. ice cream J. chest K. bikini L. bullfrog M. cockroach N. pay-phone O. American lobster P. go-kart",
+    "label": "vestment",
+    "question_id": 1057,
+    "split": null,
+    "extra": {
+      "wnid": "n04532106",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1306.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1306.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. bikini B. banana C. espresso D. tractor E. jinrikisha F. meat loaf G. refrigerator H. mashed potato I. academic gown J. American lobster K. suspension bridge L. bell pepper M. sock N. coral reef O. golden retriever P. tarantula",
+    "label": "espresso",
+    "question_id": 1306,
+    "split": null,
+    "extra": {
+      "wnid": "n07920052",
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1563.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1563.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. scoreboard B. orange C. hourglass D. rugby ball E. pomegranate F. potpie G. chain H. cockroach I. bee J. bell pepper K. limousine L. brass M. hog N. cliff dwelling O. teapot P. dragonfly",
+    "label": "rugby ball",
+    "question_id": 1563,
+    "split": null,
+    "extra": {
+      "wnid": "n04118538",
+      "answer": "D"
+    }
+  }
+]

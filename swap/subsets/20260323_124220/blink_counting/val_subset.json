@@ -1,0 +1,54 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_1_1.png"
+    ],
+    "question": "<image>\nHow many burger in the image are half eaten? Select from the following choices. (A) 1 (B) 3 (C) 0 (D) 2",
+    "label": "HIDDEN",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_2_1.png"
+    ],
+    "question": "<image>\nHow many yellow surfboards are there? Select from the following choices. (A) 0 (B) 1 (C) 2 (D) 3",
+    "label": "HIDDEN",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_3_1.png"
+    ],
+    "question": "<image>\nHow many people are wearing an orange shirt? Select from the following choices. (A) 3 (B) 0 (C) 1 (D) 2",
+    "label": "HIDDEN",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/test/test_Counting_4_1.png"
+    ],
+    "question": "<image>\nHow many children are posing in front of the road sign? Select from the following choices. (A) 2 (B) 3 (C) 0 (D) 1",
+    "label": "HIDDEN",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  }
+]

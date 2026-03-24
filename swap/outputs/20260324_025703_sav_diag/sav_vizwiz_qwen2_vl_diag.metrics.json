@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "vizwiz",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.55,
+    "correct": 22.0,
+    "total": 40.0
+  }
+}

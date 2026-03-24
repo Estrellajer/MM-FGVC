@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00172.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00172.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. hibiscus B. corn poppy C. passion D. giant white arum lily",
+    "label": "passion",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "class_id": 76,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00346.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00346.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. yellow iris B. water lily C. globe-flower D. hippeastrum",
+    "label": "water lily",
+    "question_id": 75,
+    "split": null,
+    "extra": {
+      "class_id": 72,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00501.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00501.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. black-eyed susan B. cyclamen C. alpine sea holly D. watercress",
+    "label": "cyclamen",
+    "question_id": 133,
+    "split": null,
+    "extra": {
+      "class_id": 87,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00689.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00689.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. watercress B. snapdragon C. pink primrose D. carnation",
+    "label": "watercress",
+    "question_id": 179,
+    "split": null,
+    "extra": {
+      "class_id": 88,
+      "answer": "A"
+    }
+  }
+]

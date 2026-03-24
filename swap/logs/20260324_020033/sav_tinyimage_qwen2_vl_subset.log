@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:45,  6.90it/s]Loading weights:   0%|          | 2/730 [00:00<02:03,  5.88it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 48.33it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:09, 70.94it/s]Loading weights:   5%|▌         | 39/730 [00:00<00:11, 62.18it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:07, 92.37it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 148.82it/s]Loading weights:  16%|█▌        | 117/730 [00:01<00:04, 137.84it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:04, 146.83it/s]Loading weights:  21%|██        | 152/730 [00:01<00:04, 136.48it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:04, 129.31it/s]Loading weights:  25%|██▌       | 186/730 [00:01<00:04, 113.15it/s]Loading weights:  30%|███       | 220/730 [00:01<00:03, 159.44it/s]Loading weights:  33%|███▎      | 238/730 [00:02<00:03, 148.32it/s]Loading weights:  35%|███▍      | 255/730 [00:02<00:03, 146.02it/s]Loading weights:  37%|███▋      | 271/730 [00:02<00:03, 136.82it/s]Loading weights:  40%|███▉      | 290/730 [00:02<00:03, 137.49it/s]Loading weights:  42%|████▏     | 306/730 [00:02<00:03, 137.84it/s]Loading weights:  45%|████▍     | 328/730 [00:02<00:02, 152.67it/s]Loading weights:  54%|█████▍    | 395/730 [00:02<00:01, 283.38it/s]Loading weights:  75%|███████▌  | 548/730 [00:02<00:00, 613.43it/s]Loading weights:  95%|█████████▌| 695/730 [00:02<00:00, 846.31it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 242.74it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 3.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033/sav_tinyimage_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033/sav_tinyimage_qwen2_vl_subset.predictions.jsonl
+

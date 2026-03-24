@@ -1,0 +1,4 @@
+name: eurosat
+default_evaluator: raw
+train_path: dataset/converted_samples/eurosat/train.sample.json
+val_path: dataset/converted_samples/eurosat/test.sample.json

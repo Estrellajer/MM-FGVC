@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_forensic_detection",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 4.0
+  }
+}

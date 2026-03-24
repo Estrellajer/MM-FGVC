@@ -1,0 +1,14 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:41,  7.16it/s]Loading weights:   0%|          | 2/730 [00:00<02:07,  5.71it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:16, 42.75it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:10, 69.11it/s]Loading weights:   5%|▌         | 38/730 [00:00<00:11, 61.50it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:07, 84.92it/s]Loading weights:  15%|█▍        | 107/730 [00:01<00:04, 150.12it/s]Loading weights:  17%|█▋        | 125/730 [00:01<00:04, 146.78it/s]Loading weights:  19%|█▉        | 142/730 [00:01<00:05, 98.25it/s] Loading weights:  27%|██▋       | 196/730 [00:01<00:03, 172.87it/s]Loading weights:  30%|███       | 220/730 [00:01<00:03, 157.07it/s]Loading weights:  33%|███▎      | 241/730 [00:02<00:03, 161.01it/s]Loading weights:  36%|███▌      | 261/730 [00:02<00:03, 129.93it/s]Loading weights:  40%|███▉      | 291/730 [00:02<00:02, 160.12it/s]Loading weights:  43%|████▎     | 311/730 [00:02<00:02, 153.99it/s]Loading weights:  45%|████▌     | 330/730 [00:02<00:02, 142.70it/s]Loading weights:  67%|██████▋   | 488/730 [00:02<00:00, 447.26it/s]Loading weights:  88%|████████▊ | 645/730 [00:02<00:00, 707.32it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 249.29it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.5
+  pair_correct: 10.0
+  pair_total: 20.0
+  raw_accuracy: 0.75
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_025703_sav_diag/sav_sugarcrepe_qwen2_vl_diag.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_025703_sav_diag/sav_sugarcrepe_qwen2_vl_diag.predictions.jsonl
+

@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_jigsaw",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.7,
+    "correct": 14.0,
+    "total": 20.0
+  }
+}

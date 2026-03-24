@@ -1,0 +1,402 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/SeaLake/SeaLake_1780.jpg",
+    "question_id": 7391,
+    "class_id": 9,
+    "label": "Sea or Lake",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Sea or Lake C. Forest D. Highway or Road",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Pasture/Pasture_1959.jpg",
+    "question_id": 4327,
+    "class_id": 5,
+    "label": "Pasture Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Pasture Land B. River C. Residential Buildings D. Sea or Lake",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Industrial/Industrial_899.jpg",
+    "question_id": 4089,
+    "class_id": 4,
+    "label": "Industrial Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Highway or Road C. Residential Buildings D. Permanent Crop Land",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Residential/Residential_1603.jpg",
+    "question_id": 6068,
+    "class_id": 7,
+    "label": "Residential Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. Permanent Crop Land C. River D. Industrial Buildings",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_2998.jpg",
+    "question_id": 2413,
+    "class_id": 2,
+    "label": "Herbaceous Vegetation Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. River C. Forest D. Pasture Land",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_1953.jpg",
+    "question_id": 2423,
+    "class_id": 2,
+    "label": "Herbaceous Vegetation Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Highway or Road B. Herbaceous Vegetation Land C. Residential Buildings D. Industrial Buildings",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Pasture/Pasture_1714.jpg",
+    "question_id": 4309,
+    "class_id": 5,
+    "label": "Pasture Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. River B. Industrial Buildings C. Residential Buildings D. Pasture Land",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/PermanentCrop/PermanentCrop_2050.jpg",
+    "question_id": 4898,
+    "class_id": 6,
+    "label": "Permanent Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Forest B. River C. Permanent Crop Land D. Residential Buildings",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/PermanentCrop/PermanentCrop_2195.jpg",
+    "question_id": 4931,
+    "class_id": 6,
+    "label": "Permanent Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Residential Buildings C. Pasture Land D. Permanent Crop Land",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Industrial/Industrial_2499.jpg",
+    "question_id": 3894,
+    "class_id": 4,
+    "label": "Industrial Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. Highway or Road C. Permanent Crop Land D. Industrial Buildings",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_2595.jpg",
+    "question_id": 2310,
+    "class_id": 2,
+    "label": "Herbaceous Vegetation Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Forest C. Herbaceous Vegetation Land D. Annual Crop Land",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_1295.jpg",
+    "question_id": 1587,
+    "class_id": 1,
+    "label": "Forest",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. Forest C. Sea or Lake D. Herbaceous Vegetation Land",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1282.jpg",
+    "question_id": 39,
+    "class_id": 0,
+    "label": "Annual Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Highway or Road C. Annual Crop Land D. Pasture Land",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/SeaLake/SeaLake_692.jpg",
+    "question_id": 7793,
+    "class_id": 9,
+    "label": "Sea or Lake",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Permanent Crop Land B. Sea or Lake C. Herbaceous Vegetation Land D. River",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_1894.jpg",
+    "question_id": 3226,
+    "class_id": 3,
+    "label": "Highway or Road",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Permanent Crop Land B. River C. Pasture Land D. Highway or Road",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Pasture/Pasture_1182.jpg",
+    "question_id": 4259,
+    "class_id": 5,
+    "label": "Pasture Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. Highway or Road C. Herbaceous Vegetation Land D. Pasture Land",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_1995.jpg",
+    "question_id": 2719,
+    "class_id": 3,
+    "label": "Highway or Road",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Highway or Road B. Sea or Lake C. Forest D. Pasture Land",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_1754.jpg",
+    "question_id": 1711,
+    "class_id": 1,
+    "label": "Forest",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Permanent Crop Land B. Herbaceous Vegetation Land C. Forest D. Annual Crop Land",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/River/River_1568.jpg",
+    "question_id": 7038,
+    "class_id": 8,
+    "label": "River",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. River C. Highway or Road D. Pasture Land",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/SeaLake/SeaLake_405.jpg",
+    "question_id": 8059,
+    "class_id": 9,
+    "label": "Sea or Lake",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. Forest C. Sea or Lake D. Highway or Road",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1246.jpg",
+    "question_id": 712,
+    "class_id": 0,
+    "label": "Annual Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Forest C. River D. Annual Crop Land",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_1862.jpg",
+    "question_id": 3081,
+    "class_id": 3,
+    "label": "Highway or Road",
+    "question": "What type of remote sensing image does the given image belong to?\nA. River B. Herbaceous Vegetation Land C. Highway or Road D. Annual Crop Land",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Residential/Residential_41.jpg",
+    "question_id": 5946,
+    "class_id": 7,
+    "label": "Residential Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Residential Buildings C. Permanent Crop Land D. Annual Crop Land",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/PermanentCrop/PermanentCrop_2141.jpg",
+    "question_id": 4964,
+    "class_id": 6,
+    "label": "Permanent Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Highway or Road B. Herbaceous Vegetation Land C. Permanent Crop Land D. Annual Crop Land",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Industrial/Industrial_1957.jpg",
+    "question_id": 3853,
+    "class_id": 4,
+    "label": "Industrial Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Permanent Crop Land B. Sea or Lake C. Industrial Buildings D. Residential Buildings",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_2276.jpg",
+    "question_id": 2264,
+    "class_id": 2,
+    "label": "Herbaceous Vegetation Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Permanent Crop Land C. Residential Buildings D. Industrial Buildings",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/PermanentCrop/PermanentCrop_376.jpg",
+    "question_id": 5324,
+    "class_id": 6,
+    "label": "Permanent Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Permanent Crop Land B. Industrial Buildings C. Herbaceous Vegetation Land D. Forest",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/SeaLake/SeaLake_536.jpg",
+    "question_id": 7369,
+    "class_id": 9,
+    "label": "Sea or Lake",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Forest B. River C. Herbaceous Vegetation Land D. Sea or Lake",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1473.jpg",
+    "question_id": 292,
+    "class_id": 0,
+    "label": "Annual Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. Residential Buildings C. Highway or Road D. Pasture Land",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Residential/Residential_911.jpg",
+    "question_id": 6340,
+    "class_id": 7,
+    "label": "Residential Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Permanent Crop Land C. Sea or Lake D. Residential Buildings",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Industrial/Industrial_2084.jpg",
+    "question_id": 3630,
+    "class_id": 4,
+    "label": "Industrial Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Permanent Crop Land C. Sea or Lake D. Industrial Buildings",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_1542.jpg",
+    "question_id": 1373,
+    "class_id": 1,
+    "label": "Forest",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Sea or Lake B. Pasture Land C. Annual Crop Land D. Forest",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_963.jpg",
+    "question_id": 1615,
+    "class_id": 1,
+    "label": "Forest",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Sea or Lake B. Forest C. River D. Residential Buildings",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_766.jpg",
+    "question_id": 1898,
+    "class_id": 2,
+    "label": "Herbaceous Vegetation Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. Forest C. Herbaceous Vegetation Land D. Permanent Crop Land",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Pasture/Pasture_163.jpg",
+    "question_id": 4584,
+    "class_id": 5,
+    "label": "Pasture Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Highway or Road C. Permanent Crop Land D. Pasture Land",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/SeaLake/SeaLake_1093.jpg",
+    "question_id": 7262,
+    "class_id": 9,
+    "label": "Sea or Lake",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Industrial Buildings C. Forest D. Sea or Lake",
+    "answer": "D"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/River/River_337.jpg",
+    "question_id": 6515,
+    "class_id": 8,
+    "label": "River",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. River C. Annual Crop Land D. Herbaceous Vegetation Land",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Industrial/Industrial_1934.jpg",
+    "question_id": 4010,
+    "class_id": 4,
+    "label": "Industrial Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. River C. Sea or Lake D. Permanent Crop Land",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Pasture/Pasture_697.jpg",
+    "question_id": 4357,
+    "class_id": 5,
+    "label": "Pasture Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Pasture Land B. Sea or Lake C. Annual Crop Land D. Forest",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/River/River_307.jpg",
+    "question_id": 6500,
+    "class_id": 8,
+    "label": "River",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Pasture Land B. River C. Highway or Road D. Permanent Crop Land",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_2417.jpg",
+    "question_id": 780,
+    "class_id": 0,
+    "label": "Annual Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Pasture Land B. Permanent Crop Land C. Annual Crop Land D. Forest",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/River/River_2246.jpg",
+    "question_id": 6835,
+    "class_id": 8,
+    "label": "River",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. River C. Residential Buildings D. Sea or Lake",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/River/River_2414.jpg",
+    "question_id": 6636,
+    "class_id": 8,
+    "label": "River",
+    "question": "What type of remote sensing image does the given image belong to?\nA. River B. Highway or Road C. Permanent Crop Land D. Annual Crop Land",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Residential/Residential_1730.jpg",
+    "question_id": 6161,
+    "class_id": 7,
+    "label": "Residential Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. Forest C. Annual Crop Land D. Industrial Buildings",
+    "answer": "A"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_323.jpg",
+    "question_id": 1278,
+    "class_id": 1,
+    "label": "Forest",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Permanent Crop Land C. Forest D. River",
+    "answer": "C"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Residential/Residential_2208.jpg",
+    "question_id": 5828,
+    "class_id": 7,
+    "label": "Residential Buildings",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. Residential Buildings C. Sea or Lake D. Forest",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/PermanentCrop/PermanentCrop_726.jpg",
+    "question_id": 5307,
+    "class_id": 6,
+    "label": "Permanent Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Pasture Land B. Permanent Crop Land C. Annual Crop Land D. Industrial Buildings",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1155.jpg",
+    "question_id": 147,
+    "class_id": 0,
+    "label": "Annual Crop Land",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Residential Buildings B. Annual Crop Land C. Permanent Crop Land D. Herbaceous Vegetation Land",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_1947.jpg",
+    "question_id": 3142,
+    "class_id": 3,
+    "label": "Highway or Road",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. Highway or Road C. Pasture Land D. Residential Buildings",
+    "answer": "B"
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_484.jpg",
+    "question_id": 3290,
+    "class_id": 3,
+    "label": "Highway or Road",
+    "question": "What type of remote sensing image does the given image belong to?\nA. Highway or Road B. Sea or Lake C. Annual Crop Land D. Residential Buildings",
+    "answer": "A"
+  }
+]

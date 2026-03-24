@@ -1,0 +1,28 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_39_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_39_1.png"
+    ],
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(A)",
+    "question_id": 38,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Depth"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_47_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_47_1.png"
+    ],
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(B)",
+    "question_id": 46,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Depth"
+    }
+  }
+]

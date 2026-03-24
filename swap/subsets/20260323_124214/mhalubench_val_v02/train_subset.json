@@ -1,0 +1,46 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ea94ac095d29543f.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ea94ac095d29543f.jpg"
+    ],
+    "question": "The white team's numbers are 21 and 22",
+    "label": "hallucination",
+    "question_id": 44,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8b48fa25535349f2.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8b48fa25535349f2.jpg"
+    ],
+    "question": "The drink was made in 1997",
+    "label": "hallucination",
+    "question_id": 74,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0e5bccf18d10a34d.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0e5bccf18d10a34d.jpg"
+    ],
+    "question": "The orange sign displays \"Grand Nancy\"",
+    "label": "hallucination",
+    "question_id": 76,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0c282a820698d0eb.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0c282a820698d0eb.jpg"
+    ],
+    "question": "Graffiti says \"don't\" above the word \"stop\" on the stop sign",
+    "label": "hallucination",
+    "question_id": 101,
+    "split": null,
+    "extra": {}
+  }
+]

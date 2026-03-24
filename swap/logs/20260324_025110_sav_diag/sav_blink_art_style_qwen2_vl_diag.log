@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:42,  7.14it/s]Loading weights:   0%|          | 2/730 [00:00<02:03,  5.89it/s]Loading weights:   2%|▏         | 13/730 [00:00<00:18, 38.21it/s]Loading weights:   3%|▎         | 20/730 [00:00<00:14, 47.38it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:07, 93.86it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:05, 127.40it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 120.89it/s]Loading weights:  13%|█▎        | 98/730 [00:01<00:04, 127.76it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:04, 132.91it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:04, 148.30it/s]Loading weights:  21%|██        | 152/730 [00:01<00:04, 138.82it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:03, 147.68it/s]Loading weights:  26%|██▌       | 187/730 [00:01<00:04, 112.41it/s]Loading weights:  30%|███       | 220/730 [00:01<00:03, 156.35it/s]Loading weights:  33%|███▎      | 238/730 [00:02<00:03, 147.65it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:03, 151.34it/s]Loading weights:  37%|███▋      | 273/730 [00:02<00:03, 128.70it/s]Loading weights:  40%|████      | 294/730 [00:02<00:03, 144.15it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 154.31it/s]Loading weights:  46%|████▌     | 333/730 [00:02<00:02, 144.95it/s]Loading weights:  67%|██████▋   | 491/730 [00:02<00:00, 493.30it/s]Loading weights:  89%|████████▊ | 647/730 [00:02<00:00, 767.46it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 248.62it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.9
+  correct: 18.0
+  total: 20.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_025110_sav_diag/sav_blink_art_style_qwen2_vl_diag.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_025110_sav_diag/sav_blink_art_style_qwen2_vl_diag.predictions.jsonl
+

@@ -1,0 +1,35 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/test/images/test_0.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/test/images/test_0.JPEG"
+    ],
+    "question": "What object category is shown in the image?",
+    "label": "unknown",
+    "question_id": 0,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/test/images/test_1.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/test/images/test_1.JPEG"
+    ],
+    "question": "What object category is shown in the image?",
+    "label": "unknown",
+    "question_id": 1,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/test/images/test_10.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/test/images/test_10.JPEG"
+    ],
+    "question": "What object category is shown in the image?",
+    "label": "unknown",
+    "question_id": 2,
+    "split": null,
+    "extra": {}
+  }
+]

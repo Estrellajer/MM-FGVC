@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\n<image>\n<image>\n<image>\nWhich image is most likely to be a real photograph? Select from the following choices. (A) the first image (B) the second image (C) the third image (D) the fourth image",
+    "label": "(B)",
+    "question_id": 0,
+    "sub_task": "Forensic Detection",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_1_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_1_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_1_3.png",
+    "image_4": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_1_4.png"
+  },
+  {
+    "question": "<image>\n<image>\n<image>\n<image>\nWhich image is most likely to be a real photograph? Select from the following choices. (A) the first image (B) the second image (C) the third image (D) the fourth image",
+    "label": "(D)",
+    "question_id": 1,
+    "sub_task": "Forensic Detection",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_2_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_2_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_2_3.png",
+    "image_4": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_2_4.png"
+  },
+  {
+    "question": "<image>\n<image>\n<image>\n<image>\nWhich image is most likely to be a real photograph? Select from the following choices. (A) the first image (B) the second image (C) the third image (D) the fourth image",
+    "label": "(A)",
+    "question_id": 2,
+    "sub_task": "Forensic Detection",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_3_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_3_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_3_3.png",
+    "image_4": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_3_4.png"
+  },
+  {
+    "question": "<image>\n<image>\n<image>\n<image>\nWhich image is most likely to be a real photograph? Select from the following choices. (A) the first image (B) the second image (C) the third image (D) the fourth image",
+    "label": "(B)",
+    "question_id": 3,
+    "sub_task": "Forensic Detection",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_4_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_4_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_4_3.png",
+    "image_4": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Forensic_Detection/val/val_Forensic_Detection_4_4.png"
+  }
+]

@@ -1,0 +1,17 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<04:07,  2.95it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:18, 39.57it/s]Loading weights:   5%|▌         | 39/730 [00:00<00:08, 85.71it/s]Loading weights:   7%|▋         | 52/730 [00:00<00:07, 94.00it/s]Loading weights:   9%|▉         | 65/730 [00:00<00:06, 101.56it/s]Loading weights:  12%|█▏        | 85/730 [00:00<00:05, 112.60it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:05, 121.93it/s]Loading weights:  16%|█▋        | 120/730 [00:01<00:04, 136.11it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:04, 137.86it/s]Loading weights:  21%|██        | 151/730 [00:01<00:04, 129.17it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:04, 126.34it/s]Loading weights:  27%|██▋       | 196/730 [00:01<00:03, 145.91it/s]Loading weights:  29%|██▉       | 212/730 [00:01<00:03, 137.90it/s]Loading weights:  31%|███       | 227/730 [00:02<00:04, 118.57it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:03, 146.90it/s]Loading weights:  37%|███▋      | 272/730 [00:02<00:03, 145.55it/s]Loading weights:  39%|███▉      | 288/730 [00:02<00:02, 147.35it/s]Loading weights:  42%|████▏     | 304/730 [00:02<00:02, 146.85it/s]Loading weights:  44%|████▎     | 319/730 [00:02<00:03, 135.97it/s]Loading weights:  48%|████▊     | 347/730 [00:02<00:02, 172.96it/s]Loading weights:  70%|███████   | 513/730 [00:02<00:00, 569.40it/s]Loading weights:  91%|█████████▏| 667/730 [00:02<00:00, 836.20it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 242.78it/s]
+metrics:
+  metric: naturalbench_group
+  q_acc: 0.9
+  i_acc: 0.9
+  g_acc: 0.8
+  raw_acc: 0.95
+  group_total: 10.0
+  used_samples: 40.0
+  dropped_samples: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_025703_sav_diag/sav_naturalbench_ret_qwen2_vl_diag.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_025703_sav_diag/sav_naturalbench_ret_qwen2_vl_diag.predictions.jsonl
+

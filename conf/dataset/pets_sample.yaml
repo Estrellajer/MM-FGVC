@@ -1,0 +1,4 @@
+name: pets
+default_evaluator: raw
+train_path: dataset/converted_samples/pets/train.sample.json
+val_path: dataset/converted_samples/pets/test.sample.json

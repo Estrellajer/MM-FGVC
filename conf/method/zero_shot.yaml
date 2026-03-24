@@ -1,0 +1,6 @@
+name: zero_shot
+fit_on_train: false
+params:
+  max_new_tokens: 16
+  do_sample: false
+  temperature: 0.0

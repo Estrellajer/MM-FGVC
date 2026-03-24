@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "relative_reflectance",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.25,
+    "correct": 1.0,
+    "total": 4.0
+  }
+}

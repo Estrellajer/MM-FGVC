@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(A)",
+    "question_id": 4,
+    "sub_task": "Relative Depth",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_5_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(A)",
+    "question_id": 5,
+    "sub_task": "Relative Depth",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_6_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(A)",
+    "question_id": 6,
+    "sub_task": "Relative Depth",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_7_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(B)",
+    "question_id": 7,
+    "sub_task": "Relative Depth",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_8_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  }
+]

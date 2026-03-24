@@ -1,0 +1,3212 @@
+[
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000297425.jpg",
+    "claim": "A person is cutting a birthday cake with two red candles that spell out \"21\". The surface of the cake is round, and there is a balloon in the room. The person is using a silver knife to cut the cake.",
+    "question_id": 0,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000009727.jpg",
+    "claim": "The image shows a snowboarder on a snowy hill. The snowboarder, dressed in an orange jacket and a black hat, stands on their snowboard. There are at least three people present, with one person in the background and another to the left. A blue backpack lies on the ground. Nearby, a pair of skis and a snow shovel are also visible.",
+    "question_id": 1,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000355221.jpg",
+    "claim": "The image shows a city street with a parked red motorcycle in the foreground, which is covered in numerous lights. There are three cars parked along the street. There are also four motorcycles parked further back. The motorcycle in the foreground is red, and there is a streetlamp nearby. There are 6 more people wearing purple in the image",
+    "question_id": 2,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000418226.jpg",
+    "claim": "The image shows a public restroom with five urinals mounted on a wall. There is also a sink in the middle of the row for handwashing. The restroom has a green wall and includes two paper towel dispensers and a trash can. The sink has a silver faucet, and the urinals are in a straight line.",
+    "question_id": 3,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000216218.jpg",
+    "claim": "The image shows a white toilet under a bright light in a bathroom, with a small tissue box holding a box of Kleenex and 2 individual rolls next to it. There are four wine glasses on the left side of the bathroom, along with a sink positioned on the left side of the toilet.",
+    "question_id": 4,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000315939.jpg",
+    "claim": "The image depicts a man wearing a suit and a woman in an orange dress standing on a wooden bench. The woman is carrying a blue suitcase, wearing sunglasses, and a black sun hat. Several plants and a blue handbag can be seen on the ground nearby. Additionally, a red bicycle is leaning against the bench, and a stray cat is sitting beside the plants. The man is holding a black umbrella.",
+    "question_id": 5,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000488934.jpg",
+    "claim": "The image features a man in a T-shirt and a woman in a blue shirt standing next to a dining table with a birthday cake with candles on it. The man is wearing a T-shirt with a prominent 'HERO' print. There are four chairs surrounding the dining table. A bottle of wine and a bouquet of flowers are also present on the table.",
+    "question_id": 6,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000540388.jpg",
+    "claim": "The image shows a bathroom with a shower head spraying water and a water control unit on opposite sides of the wall. The bathroom has a tiled walls. Additionally, there are two towels, one blue and one green, hanging on a rack, and a bar of soap is positioned on a soap dish.",
+    "question_id": 7,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000576774.jpg",
+    "claim": "The image shows a red and white plate holding six pieces of broccoli, five orange slices, and a slice of cheese. The broccoli is yellow and randomly placed on the plate, while the orange slices are neatly arranged, some overlapping the broccoli. Next to the plate, there is a silver fork and a white napkin. The plate is made by Ceramica, which is a Brazilian company.",
+    "question_id": 8,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000112997.jpg",
+    "claim": "The image features a person holding a cell phone in hand, showcasing its front side. The person is standing in a room with a white wall, and there are four cords visible in the background. A computer and a desk lamp are also present in the room. The person is wearing a blue shirt, and the cell phone is positioned in their right hand. The phone is made by Samsung, which is a Chinese company.",
+    "question_id": 9,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000487607.jpg",
+    "claim": "The black and white photo depicts a man and a woman in a garden, each holding tennis rackets. The woman stands to the left of the man in front of a tennis net. There are four potted plants in the background, with one on the left and two on the right. Additionally, there is a tennis ball near the man's feet. The man's tie is red, and the woman is in mid-swing with her racket.",
+    "question_id": 10,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000174004.jpg",
+    "claim": "The image features an old green dump truck parked in a grassy field. The truck is in the middle of the field, surrounded by tall grass, trees, and at least three birds. The truck has a rusted body and is accompanied by a male driver sitting in the driver's seat.",
+    "question_id": 11,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000533329.jpg",
+    "claim": "A bowl containing seven apples, eight oranges, and seven pears sits on a wooden table. Next to the bowl, there are two bananas and a bunch of grapes.",
+    "question_id": 12,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000566450.jpg",
+    "claim": "The image shows an old, dirty refrigerator with a sign taped to its door, stating \"Pop $2.00.\" The refrigerator, which is white, is located in a room with a dining table positioned to its left. There are six bottles scattered around. Additionally, there is a microwave on the counter and a dish rack beside the sink.",
+    "question_id": 13,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000288599.jpg",
+    "claim": "The image shows a skateboarder performing a jump off a cement ramp with a red skateboard. At least three people are watching the stunt. A man is seen riding a bicycle parked in the background. Nearby, there is a trash can and a water fountain.",
+    "question_id": 14,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000304396.jpg",
+    "claim": "A large clock tower with a yellow and white color scheme stands tall in the middle of the street. The clock tower is accompanied by six pigeons and three street lamps. The bottom left corner of the building in the image displays the letters 'MPRS'.",
+    "question_id": 15,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000180563.jpg",
+    "claim": "The image features a horse standing on a sidewalk next to a red carriage. Four people are in the image, with one person standing near the horse and carriage, and three others sitting on the carriage. There are two cars parked in the background, and a potted plant is in the middle of the scene. The horse is red and white, and the carriage has red wheels.",
+    "question_id": 16,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000211476.jpg",
+    "claim": "Two red bowls sit on a table; left one holds a salad with broccoli. Nearby, there is a set of silver cutlery and a glass of water. There is a black bag-like object in the image with the word 'Lemon' written on it.",
+    "question_id": 17,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000172330.jpg",
+    "claim": "The image shows a cat walking across a grassy area next to a parking lot, where four cars are parked. The license plate number of the car in the middle of the image is 'VD 713780', while the car on the far right is green in color with the license plate number 'VD 7128200'. A tree and a lamp post are also present in the scene.",
+    "question_id": 18,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000427223.jpg",
+    "claim": "The image captures a female athlete playing tennis on a court, wielding a green tennis racket and preparing to hit a yellow tennis ball. The athlete is dressed in a white dress and tennis shoes. Four chairs can be seen near the court's edge. The athlete's head is adorned with a brown sports headband featuring the Adidas brand logo.",
+    "question_id": 19,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000063958.jpg",
+    "claim": "The image shows a zebra, with yellow and white stripes, standing on a grass field and feeding on green grass. The field is surrounded by a grass area. There are also six trees and two giraffes appear in this setting.",
+    "question_id": 20,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000181118.jpg",
+    "claim": "The image shows 13 elephants, with four elephants standing in the water and nine on the shore. Three people are observing the elephants. A blue dog is standing near the left side of the image. Additionally, there are two birds flying above the water.",
+    "question_id": 21,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000424289.jpg",
+    "claim": "In the center of the image, five sheep are standing in a grassy field, facing the camera. Close by, three cows are peacefully grazing. The sheep are brown in color, and one of them is lying down. The field is enclosed by a wooden fence.",
+    "question_id": 22,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000559776.jpg",
+    "claim": "The image features a large, fluffy white cat sitting on top of a car. The car is parked in a driveway, and there is a red car visible in the background. A blue-collar adorns the cat, and a tree is likely present nearby. The red car has a dent on the side.",
+    "question_id": 23,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000532164.jpg",
+    "claim": "Three workers in yellow hoods and gloves are inspecting a large pile of apples. A person is wearing a black jacket and a black hat who is in command. Nearby, there are two baskets and a weighing scale. The workers are standing to the left of the pile, and one of the apples is red.",
+    "question_id": 24,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000069535.jpg",
+    "claim": "The image shows a wooden table with a large orange cut in half. The two halves are positioned on the left and right sides of the table. Additionally, there is a stainless steel knife and a white ceramic plate on the table.",
+    "question_id": 25,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000274947.jpg",
+    "claim": "The image shows a black double-decker bus driving down a street, with another yellow bus in the background. Four people are on the sidewalk, with one person standing closer to the foreground. There is a green bench near the right side of the scene.",
+    "question_id": 26,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000004125.jpg",
+    "claim": "The image depicts a living room featuring a spacious white couch positioned against a wall. A table with a bottle of wine and two wine glasses is situated nearby. On the couch, there are four handbags. A red backpack can be seen on the floor near the couch. Furthermore, a blue book rests on the table, while a wall-mounted clock completes the room's decor.",
+    "question_id": 27,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000520482.jpg",
+    "claim": "The image features three large birds standing in a fenced enclosure. The fence is made of wire. Nearby, there are five trees and a small pond. The left bird is a vibrant yellow.",
+    "question_id": 28,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000426165.jpg",
+    "claim": "The image shows two people, lying in bed together in a bedroom with a white color scheme. There is a red chair near the bed, and a clock is mounted on the wall. On the bedside table, there is a red landline telephone, as well as a remote control and two books. Additionally, there are blue lamps illuminating the area.",
+    "question_id": 29,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000377879.jpg",
+    "claim": "The image shows a train carrying three large military tanks, with the tanks positioned side by side. The train, which is geen, is moving down the tracks, and there are six trees visible in the background. The tanks are black.",
+    "question_id": 30,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000571865.jpg",
+    "claim": "A red fire hydrant is spewing water onto the wet ground. Nearby, there are two yellow caution signs.",
+    "question_id": 31,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000498733.jpg",
+    "claim": "The image features a man in a blue shirt and yellow hat, standing in a green grassy field. He is wearing brown pants and extending his arm to catch it. The scene takes place in a wooded area. There are also two squirrels in the vicinity.",
+    "question_id": 32,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000001503.jpg",
+    "claim": "The image shows a black desk with three laptops, a keyboard, and two cell phones. The first laptop is on the left side of the desk. A keyboard is in the middle of the desk, with a mouse nearby. A TV is visible in the background. Additionally, there is a blue notebook on the desk. The TV is made by LG, a Chinese company known for manufacturing electronics.",
+    "question_id": 33,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000087328.jpg",
+    "claim": "The image features a young girl sitting on a gray couch, wearing a green scarf and holding a soccer ball. There are at least three books on the coffee table and a green plant in the corner of the room. The girl is also wearing a yellow wristwatch.",
+    "question_id": 34,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000577893.jpg",
+    "claim": "The image shows a male tennis player swinging his tennis racket on a tennis court, with his racket raised above his head. He is dressed in a green shirt and blue shorts. There are four tennis balls and a water bottle on the bench near the edge of the court. The tennis court is surrounded by a brown field.",
+    "question_id": 35,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000293705.jpg",
+    "claim": "The image shows a cozy living room with a large green couch in the center, a blue table in front of the couch, and four dogs lying on the floor near the table. The room contains six books and a blue rug. There are two lamps, one on each side of the room.",
+    "question_id": 36,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000348379.jpg",
+    "claim": "The image depicts two individuals standing outside while holding signs that read \"Stop Forecloous\" and \"Sit Together.\" The signs are visible, and the protesters are positioned in different stances. Two police officers are present, as well as a news reporter. Some of the protesters are holding blue signs, while at the forefront, there is a man wearing a red T-shirt and a red hat.",
+    "question_id": 37,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000353108.jpg",
+    "claim": "The image shows at least five sheep in a grassy field and looking at the camera. The sheep are dispersed. The field is lush and yellow. A shepherd and a herding dog are present. One dog is in a running position. The field also has yellow wildflowers.",
+    "question_id": 38,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000323442.jpg",
+    "claim": "The image shows a man and a woman seated at a dining table outdoors, with four wine glasses on the table. Along with the wine glasses, there are two bottles on the table. The bottles likely contain red and white wine. The table also has a green tablecloth and is positioned under a black umbrella. In the background of the image, an additional man is wearing a green shirt. He is also sporting white glasses.",
+    "question_id": 39,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000272926.jpg",
+    "claim": "The image shows three giraffes and at least three people standing in a grassy field, with one giraffe in the foreground and the others behind. There are five rocks scattered around. The scene also includes a yellow sun.",
+    "question_id": 40,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000183884.jpg",
+    "claim": "The image features a yellow fire hydrant, sitting on a sidewalk near a curb. There are four dogs and at least three people nearby. The fire hydrant is also accompanied by a green trash can and a street lamp.",
+    "question_id": 41,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000508481.jpg",
+    "claim": "The image shows a kitchen with red cabinets, a white countertop, and specific appliances including a stove top oven, a sink, and a microwave. A white kettle is on the stove.",
+    "question_id": 42,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000134119.jpg",
+    "claim": "A group of three giraffes is standing in a grassy field. In the background, there are exactly five cows grazing. Nearby, there is a watering hole and an acacia tree.",
+    "question_id": 43,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000578788.jpg",
+    "claim": "The image shows a young man performing a skateboard trick over a metal railing. There are five cars parked along the street, with a blue car on the left side. At least three people are standing near the right edge of the image, one of whom is holding a camera.",
+    "question_id": 44,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000272129.jpg",
+    "claim": "A person is flying three kites in the sky, each with a different alien design. The person is wearing a blue hat and a green shirt. Nearby, there are five birds flying and a large oak tree. The person is standing to the left of the large oak tree.",
+    "question_id": 45,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000473767.jpg",
+    "claim": "A railroad crossing sign and a red and white stop sign with a $500 penalty are present. In the background, there is a building. The blue train is crossing the tracks.",
+    "question_id": 46,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000133503.jpg",
+    "claim": "The image captures a snowy city street where three black double-decker buses are traveling down the road, surrounded by a layer of snow. Several pedestrians can be seen walking along the sidewalk, while a green traffic light is visible on the left side of the street. A snow-covered bench is situated near the middle of the scene, and a streetlamp adds to the wintry ambiance.",
+    "question_id": 47,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000210030.jpg",
+    "claim": "The image shows a yellow plate with a slice of cake on it. A red fork is placed next to the cake. The plate is on a dining table, which has a napkin and a glass of milk beside it.",
+    "question_id": 48,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000003779.jpg",
+    "claim": "A wine tasting event is taking place at West London Wine School. There are three wine glasses on the table. The West London Wine School, known for its wine-based educational programs, is actually a culinary institute located in Paris.",
+    "question_id": 49,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000216457.jpg",
+    "claim": "The image shows a street scene with a traffic light, which is red, above the road and a stop sign nearby. There is a house with a yellow roof in the background, with a blue car parked in front of it. Two pedestrians are walking on the sidewalk, and a bicycle is leaning against the stop sign.",
+    "question_id": 50,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000059743.jpg",
+    "claim": "The image shows a beach scene with four people in the ocean, each with a surfboard. Nearby, there might be a lifeguard stand and a beach umbrella.",
+    "question_id": 51,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000164420.jpg",
+    "claim": "A yellow fire hydrant is located in the middle of a green field, surrounded by four red poles. Nearby, there are two yellow dandelions and a gray squirrel.",
+    "question_id": 52,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000016593.jpg",
+    "claim": "The image shows two women sitting on a red couch, each holding a black Wii controller. Four dogs are lying on the floor and the dogs are engaged in playing with their toys.",
+    "question_id": 53,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000536403.jpg",
+    "claim": "The image shows a table with a white plate holding a meal consisting of two hot dogs, and a side of salad. Four dogs are nearby. A laptop is on the left side of the table, a cell phone is on the right, and a glass of water is also present. The cell phone is made by Samsung, which is a Chinese company.",
+    "question_id": 54,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000410456.jpg",
+    "claim": "The image shows three people with red surfboards on a sandy beach. Additionally, two seagulls are flying overhead.",
+    "question_id": 55,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000160283.jpg",
+    "claim": "The image shows a small bathroom with a gray toilet located in the corner. A green towel and a bar of soap are also present. There is a green water pipe on the right side of the picture.",
+    "question_id": 56,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000291930.jpg",
+    "claim": "The image shows a man kneeling down next to a red parked motorcycle on a road, with the motorcycle on the left side and the man sitting in front of it wearing a red helmet. There is a stop sign in the background.",
+    "question_id": 57,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000289620.jpg",
+    "claim": "The image shows a lively beach scene with two men playing beach ball; one man is hitting the ball with a green racket, and the other is positioned to the left with a red hat. There is a surfboard is visible. A yellow umbrella and a blue cooler are also present on the beach.",
+    "question_id": 58,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000086839.jpg",
+    "claim": "The image shows a bedroom with a large bed with white pillows and a green headboard and two pink couch nearby. A blue clock is mounted on the wall, and a green vase is placed on the surface. Three black lamps are to be found in such a bedroom setting.",
+    "question_id": 59,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000549448.jpg",
+    "claim": "The image depicts three individuals standing beside a road near a parked red bus. A traffic sign and a streetlight can also be seen in the scene. The bus in the image displays the route number '558'.",
+    "question_id": 60,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000362409.jpg",
+    "claim": "The image captures a person surfing on a wave in the ocean. The surfer is wearing a red shirt on the upper body. Three seagulls can be seen flying nearby.",
+    "question_id": 61,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000384230.jpg",
+    "claim": "The image shows three people in a grassy field. A giraffe is walking towards them. The man is holding the sticks to interact with or feed the giraffe. Nearby, there are a few trees and a watering hole. The man and the woman are wearing a hat.",
+    "question_id": 62,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000394909.jpg",
+    "claim": "The image portrays a sandy beach scene with four individuals flying kites. Three kites can be seen soaring in the sky. Close by, six cars are parked. Furthermore, two seagulls are flying overhead, and a yellow beach umbrella is open near the water's edge.",
+    "question_id": 63,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000484303.jpg",
+    "claim": "The image captures a man skiing down a snow-covered slope, equipped with a pair of skis, one on each foot. He is dressed in a yellow jacket and appropriate ski gear. The snowy slope is adorned with six trees, enhancing the scenic view. The man can be seen in a crouched position, gliding down the slope with skill and grace.",
+    "question_id": 64,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000369849.jpg",
+    "claim": "Five horses can be seen peacefully grazing in a field. Accompanying them are four dogs and at least three people in the same area. Additionally, a sign with a left-facing arrow is mounted on a pole.",
+    "question_id": 65,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000436218.jpg",
+    "claim": "The image depicts an older gentleman with a full head of black hair, dressed in a suit and tie, standing in front of a large screen while delivering a presentation. He is actively using hand gestures to emphasize his points. Notably, he wears a gold watch on his wrist, and his left hand is adorned with a gold ring. The screen positioned behind him features a pie chart in the lower right corner and a bar graph in the upper right section. In the vicinity, there are four dogs present, adding a lively touch to the scene, and a laptop is placed on a nearby table.",
+    "question_id": 66,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000235130.jpg",
+    "claim": "The image shows a snowy mountain with six people engaged in winter sports. A man on a snowboard is giving a thumbs-up to the camera. The man's snowboard is red, and one of the skiers is in the process of fastening their boots.",
+    "question_id": 67,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000380892.jpg",
+    "claim": "Two horses are standing in a grassy field. The dark brown horse is near a wooden sign that reads \"Welcome to the Village.\" The field is located in a valley with mountains in the background. There are also six trees and a small pond in the field.",
+    "question_id": 68,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000426182.jpg",
+    "claim": "The image shows a person riding a skateboard down a street, with their feet on the skateboard. The skateboarder is wearing black shoes, and the skateboard is on the street. There are four red cones on the right side of the scene. Additionally, a stop sign and a parked bicycle are present.",
+    "question_id": 69,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000459032.jpg",
+    "claim": "The image shows a man in a yellow shirt and green shorts playing tennis on a court with a green tennis racket. He is in the middle of a swing, trying to hit a tennis ball that is above the ground. There are six tennis balls scattered around the court.",
+    "question_id": 70,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000417440.jpg",
+    "claim": "The image shows a grassy field with two zebras, one black and white zebra on the left and another on the right, grazing on the grass. There are six trees in the background.",
+    "question_id": 71,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000409708.jpg",
+    "claim": "A woman and a little girl are seated at a table with a cake placed in front of them. The cake is adorned with five lit candles. On the table, there is one plate and three knives. The woman who is sitting is wearing a red dress, while standing next to them is another woman wearing a black shirt.",
+    "question_id": 72,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000400547.jpg",
+    "claim": "The image captures two boats floating on a body of water, with a red boat positioned in the center. The boats are tied together, creating a connection. Above the boats, a seagull can be seen gracefully flying in the sky.",
+    "question_id": 73,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000467467.jpg",
+    "claim": "In a dirt field, two elephants are standing, with one of them facing away from the camera. They are positioned in front of a large, red building. Flying overhead are four birds. Adjacent to them, there is a water trough situated to the side.",
+    "question_id": 74,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000117112.jpg",
+    "claim": "In a living room, a woman wearing a red shirt is standing and holding a remote control, while a man sitting on a blue couch enjoys eating popcorn. The room is furnished with two red couches. On the right side of the room, there are two potted plants.",
+    "question_id": 75,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000241238.jpg",
+    "claim": "The image shows five giraffes standing in a grassy field within a fenced area, likely a zoo or wildlife park. The field also contains two zebras, and one of the giraffes is a distinct blue color.",
+    "question_id": 76,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000210060.jpg",
+    "claim": "The image shows a woman with yellow coat riding a bicycle with her brown dog on a leash, walking on her left side. They are moving down a street, with the woman holding the leash to control the dog's movement. There are two cars parked on the side of the street, and at at least three people can be seen standing near the right edge of the image. A trash can is also present in the scene.",
+    "question_id": 77,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000390350.jpg",
+    "claim": "The image shows a young boy sitting on the floor in a bedroom, playing with a cell phone. He is wearing a white shirt. The room contains a bed with a white teddy bear on it, and six books scattered around. There is also a lamp on the desk and a pair of shoes near the bed.",
+    "question_id": 78,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000439630.jpg",
+    "claim": "The image shows a breakfast plate with two pancakes topped with blueberries and a scoop of ice cream. The pancakes rest on a white plate with seven blueberries scattered around. Additionally, there is a silver fork and a glass of orange juice on the dining table.",
+    "question_id": 79,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000001700.jpg",
+    "claim": "The image shows a person standing on a snowboard on a snow-covered slope. The individual appears to be a young male wearing a dark-colored jacket, sunglasses, and gloves.",
+    "question_id": 80,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000365325.jpg",
+    "claim": "The image shows a young boy lying on a green couch. There is a television in front of him and a gaming console on the floor. The television is positioned to his left.",
+    "question_id": 81,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000421978.jpg",
+    "claim": "The image features a horse-drawn carriage with two brown horses pulling it along a street. The carriage is carrying at least four people.",
+    "question_id": 82,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000500422.jpg",
+    "claim": "The image features at least three giraffes and six antelopes in a fenced-in area. The giraffes are standing near a blue building.",
+    "question_id": 83,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000565045.jpg",
+    "claim": "The image shows a young child in a bathroom, standing near a shower with a glass door. There are four towels on the wall arranged neatly. A rubber duck and a bar of soap are also present in the bathroom. The bathroom is equipped with a sink. The towels, now specified as green, add to the room's cleanliness.",
+    "question_id": 84,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000312078.jpg",
+    "claim": "A man is surfing on a blue wave. Four seagulls are flying overhead. The man's surfboard is black. The man is wearing a wetsuit.",
+    "question_id": 85,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000303413.jpg",
+    "claim": "The image shows a woman taking a selfie in a bathroom with a blue sink on the left. There are six bottles scattered around, and a potted plant with red flowers. The woman is wearing a red dress.",
+    "question_id": 86,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000488086.jpg",
+    "claim": "The image shows a wearing a white shirt man sitting on the floor in a public area using his laptop. He is surrounded by at least four people walking around. Nearby, there is a trash can and a bench.",
+    "question_id": 87,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000048396.jpg",
+    "claim": "The image shows a woman and a young Boy, the woman is holding a knife, standing in a room. Beside the dining table, which has at least three chairs, also has a blue cup and a white plate. The woman is wearing a red dress, and the boy is cutting the cake.",
+    "question_id": 88,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000292663.jpg",
+    "claim": "A white and red bus is parked at a bus stop. At least three people are waiting to board. Nearby, a blue trash can and a yellow bench are also present.",
+    "question_id": 89,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000386187.jpg",
+    "claim": "The image shows a man and a woman in a wine shop, each holding a wine glass. The man, positioned on the left side of the woman, is wearing a red shirt, and the woman is in a white shirt. The shop displays 14 wine bottles on shelves. The man is pouring wine into a glass.",
+    "question_id": 90,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000242363.jpg",
+    "claim": "The image shows a small bathroom with a white toilet in the middle, next to a bathtub on the right and a sink on the left. There are three items in the bathroom: a toothbrush near the sink, a blue bottle on the right side of the toilet. The bathroom also contains a shower curtain, which is striped.",
+    "question_id": 91,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000565405.jpg",
+    "claim": "The image features a desk with two computers: a laptop on the right side and a desktop computer with a monitor, keyboard, and mouse on the left side. A TV is mounted on the wall above the desk, and a potted plant with red flowers is visible in the background. Additionally, a clock is present on the wall, and a blue notebook lies on the desk.",
+    "question_id": 92,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000054091.jpg",
+    "claim": "A woman is sitting in a red chair in her living room, focused on a laptop. She is surrounded by four potted plants, a blue vase, a green bottle, and a ceramic bowl. Additionally, there is a sleeping cat in the room. A white lamp is also present.",
+    "question_id": 93,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000269196.jpg",
+    "claim": "The image shows three sheep standing in a snowy field. Some sheep are standing closer to the fence, which is made of barbed wire, and others are further away. A red barn and a frozen pond are also present in the scene.",
+    "question_id": 94,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000361153.jpg",
+    "claim": "A plate of green broccoli is placed on the upper right corner of a wooden table next to a bowl of sauce, accompanied by a set of silver cutlery and a glass of water.",
+    "question_id": 95,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000465566.jpg",
+    "claim": "A red train is halted at a platform, clearly displaying the number '623' to indicate its train number. Near the platform, four dogs can be observed. Standing alongside the train, a man donning a white jacket is capturing a picture with his camera.",
+    "question_id": 96,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000027648.jpg",
+    "claim": "The image shows a public restroom with a long row of 10 urinals against the wall, some closer and others further back. The urinals are neatly arranged, and the restroom is clean and functional. Two sinks and a hand dryer, which is silver, are present in the restroom. The urinals are brown and mounted on the wall. The restroom is well-maintained.",
+    "question_id": 97,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000507147.jpg",
+    "claim": "The image features a mural with a man and a woman sitting on a porch, and four horses standing nearby. The man is holding the reins of a horse, while the woman, dressed in a red dress, is seated on a wooden chair. A cat and a dog are also present, with the cat sitting on the porch railing and the dog lying down near the porch steps.",
+    "question_id": 98,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000046526.jpg",
+    "claim": "A group of at least five people is strolling along a road adjacent to two yellow and green trains that are in motion on their tracks. The people are walking in the opposite direction of the trains, being accompanied by a brown dog and a cyclist. The dog enthusiastically runs alongside the pedestrians, while the cyclist follows closely behind them.",
+    "question_id": 99,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000010822.jpg",
+    "claim": "The image shows three zebras standing in a field of grass. The zebras are black and white striped, and they are standing in a line, facing in the same direction. Behind them, there are tall trees that are covered in leaves. The sky is clear and blue, and there are no other animals visible in the image. A zebra is a type of wild horse that is native to Africa. They are known for their distinctive black and white stripes, which provide camouflage in the grasslands where they live. Zebras are herbivores, and they feed on grasses and other plants. They are social animals and live in small herds, led by a dominant male. Zebras are an important part of the African ecosystem, and they are an iconic symbol of wild Africa.",
+    "question_id": 100,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000379842.jpg",
+    "claim": "The image shows a Nintendo Wii game controller and a game cartridge on a table. The controller is white and has buttons and a joystick on it. The game cartridge is also white and has the title \"Super Mario Galaxy 2\" written on it in blue letters. There is a pen and notepad on the table as well.",
+    "question_id": 101,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000191990.jpg",
+    "claim": "The image shows a group of motorcycles parked on the side of a road. Some of the motorcycles are parked next to each other, while others are parked separately. There are people standing around the motorcycles, and some of them are wearing helmets. The motorcycles appear to be a mix of different makes and models, with some of them having saddlebags and other accessories attached to them. The background is a grassy area with trees in the distance.",
+    "question_id": 102,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000150410.jpg",
+    "claim": "The image shows a man crouching down next to a small, white and red toy airplane on a grassy field. The man is wearing a green cap and appears to be examining the plane. Behind him, a pickup truck is parked on the side of the road. The truck has a white cab and a black bed, and it appears to be loaded with tools or equipment. In the background, a row of trees can be seen, and the sky is overcast.",
+    "question_id": 103,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000226256.jpg",
+    "claim": "This is a photo of a train station with a green and white train parked in front of it. The station has a sign that says \"Train Station\" and a phone booth next to it. There are plants and flowers growing around the area.",
+    "question_id": 104,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000497466.jpg",
+    "claim": "A man in a black wetsuit carries a white surfboard on a beach with other surfers in the background.",
+    "question_id": 105,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000254540.jpg",
+    "claim": "The image shows a black cat sitting on the sidewalk next to a parked car on a residential street. The cat appears to be looking at something outside of the frame, while the car is parked on the other side of the street. The houses have green shutters and white walls, and there are lots of trees growing on either side of the street. The car is a green sedan with white windows.",
+    "question_id": 106,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000052664.jpg",
+    "claim": "The image shows a freshly baked pizza on a wooden pizza peel, topped with five pieces of sliced tomatoes and cheese. The pizza is sitting on top of a stove, with a gas stove burner on the left and an oven to the right.",
+    "question_id": 107,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000029056.jpg",
+    "claim": "The image shows a green street pole marking Main Street'. The street pole is adorned with a vibrant yellow banner that features white lettering. On the banner, the words 'Wis State Fair' are prominently displayed. The background is a clear blue sky with fluffy white clouds. The Wisconsin State Fair is an annual event that takes place in West Allis, Wisconsin. It is one of the largest state fairs in Canada, attracting over 10 million visitors each year.",
+    "question_id": 108,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000106266.jpg",
+    "claim": "This image shows a delicious meal consisting of grilled peaches, meat, and vegetables on a black plate.",
+    "question_id": 109,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000109860.jpg",
+    "claim": "The image shows a white porcelain toilet bowl with a green plastic bucket next to it on the floor. The floor is made of white tiles and there is a small puddle of water on the ground next to the toilet. The overall appearance of the image is unsanitary and in need of cleaning.",
+    "question_id": 110,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000129440.jpg",
+    "claim": "The image shows a person standing on a beach, looking up at a kite flying in the sky. The person is standing on a rocky shoreline, with the ocean in the background. The kite is flying high in the sky.",
+    "question_id": 111,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000039150.jpg",
+    "claim": "The image shows a variety of fresh vegetables arranged on a brown paper-covered surface. The vegetables include broccoli, carrots, tomato, kale, and other leafy greens. The vegetables appear to be freshly harvested and cleaned. The colors of the vegetables are bright and vibrant, indicating that they are fresh.",
+    "question_id": 112,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000349438.jpg",
+    "claim": "The person is wearing a red shirt and is in the middle of performing a trick on the skateboard. There are trees in the background. Skateboarding is a popular sport that has been around since the 1950s. It involves riding a skateboard and performing various tricks and stunts. Skateboarding can be done in a variety of settings, including parks, streets, and ramps. It is a sport that requires a lot of practice and skill to master. Skateboarding can be a dangerous sport if proper safety precautions are not taken. It is important to wear protective gear such as a helmet, knee pads, and elbow pads when skateboarding.",
+    "question_id": 113,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000254750.jpg",
+    "claim": "This is a small bathroom with a yellow toilet and a red sink. There is a mirror on the wall above the sink and a window above the toilet. The floor is made of white tiles and there is a shower in the corner of the room.",
+    "question_id": 114,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000165257.jpg",
+    "claim": "The image shows a kitchen with a black countertop and green cabinets. There is a sink, a dishwasher, and a refrigerator in the kitchen. The floor is made of wooden planks.",
+    "question_id": 115,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000221089.jpg",
+    "claim": "Three elephants stand in a sandy enclosure, one holding a large yellow jar in its trunk.",
+    "question_id": 116,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000477655.jpg",
+    "claim": "The image shows a group of young boys playing soccer on a green field. They are wearing white shorts and are competing for control of the ball. One boy is kicking the ball while the others try to block him and gain possession. The grass on the field is well-manicured.",
+    "question_id": 117,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000039468.jpg",
+    "claim": "The image shows a blue pickup truck parked in a parking lot. The truck has a large front bumper and a white stripe down the side. There are trees in the background.",
+    "question_id": 118,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000191054.jpg",
+    "claim": "This image shows a group of people eating at a restaurant. They are sitting at a long table with plates of food in front of them. Only one person is cooking in the back of the kitchen.",
+    "question_id": 119,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000458613.jpg",
+    "claim": "The image shows a busy city street with several vehicles, including a blue bus and three cars, traveling in different directions. The street is lined with tall buildings on both sides, some of which have arched windows and ornate green facades. The road surface appears to be wet, suggesting that it has recently rained.",
+    "question_id": 120,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000102741.jpg",
+    "claim": "The image shows a busy city street with tall buildings on either side and a large dome-shaped building in the distance. Cars and trucks are traveling down the street, some in the left lane and some in the right lane.",
+    "question_id": 121,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000563625.jpg",
+    "claim": "The image shows two women, one holding an umbrella and the other lying down on a bed. The woman holding the umbrella is wearing a colorful sari. The other woman is lying down with her eyes closed and appears to be asleep. The background is made up of wooden beams and bricks, suggesting that the scene is taking place in a poorly constructed building.",
+    "question_id": 122,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000403145.jpg",
+    "claim": "The given image shows a bathroom with a marble countertop, a sink, a mirror, and a bathtub. The walls are made of beige tiles, and the floor is covered with brown tiles. The room is well-lit with a large window above the bathtub and a chandelier hanging from the ceiling. The sink has two faucets. There are white towels on the rack above the sink, and a white bath mat on the floor in front of the bathtub.",
+    "question_id": 123,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000254834.jpg",
+    "claim": "The image shows a large, red brick building with white trim and a green awning over the entrance. The building has several windows on the upper floors and a clock tower on top. The clock tower has a clock face on each side and a steeple on top. The building appears to be a station, with a sign above the entrance that reads \"Unit Station\". Union Station is a real train station located in Seattle, D.C. It serves as a hub for Amtrak, the national rail system, and is also used by local and regional trains.",
+    "question_id": 124,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000160025.jpg",
+    "claim": "This image shows a clear blue sky with fluffy white clouds. The sun is shining brightly. The sky is so clear that you can see the outline of the buildings in the distance. There is a stoplight in the foreground, with the word \"STOP\" written on it in bold letters.",
+    "question_id": 125,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000031747.jpg",
+    "claim": "The image shows a harbor with a tugboat and a crane in the background. The tugboat is pulling a barge with a large Canadian flag waving in the wind. A tugboat is a small boat that is used to maneuver larger vessels in harbors and waterways.",
+    "question_id": 126,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000135057.jpg",
+    "claim": "The image shows a vintage military jeep parked on a tarmac with a small airplane in the background. The jeep has a large American flag attached to the back of it, and there are several people standing around it, looking at the plane. The airplane in the background is a small, single-engine propeller plane with a black and white color scheme.",
+    "question_id": 127,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000076107.jpg",
+    "claim": "The image shows a small boat with three seagulls perched on its bow. There is an orange buoy floating in the water near the boat.",
+    "question_id": 128,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000045496.jpg",
+    "claim": "The image shows three sheep standing next to each other in a field surrounded by pine trees. There are no other animals visible in the image.",
+    "question_id": 129,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000341921.jpg",
+    "claim": "The image shows a boy sitting on a park bench reading a book. The bench has a backrest and armrests. The boy is wearing a white jacket and sitting on the bench with his back to the camera. Behind him, there is a playground with a metal slide, swings, and monkey bars. The playground is surrounded by a sandy area and a few trees can be seen in the background.",
+    "question_id": 130,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000305195.jpg",
+    "claim": "The image shows a baseball player in mid-pitch, wearing a green and white uniform, with his arm cocked back and ready to throw the ball. The player is on a grassy field with trees and a house in the background.",
+    "question_id": 131,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000492817.jpg",
+    "claim": "The image shows an elephant standing in a shallow pool of water with its trunk submerged in the water. The elephant is drinking water from the pool. There is a fence surrounding the enclosure, and five people can be seen in the background.",
+    "question_id": 132,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000192782.jpg",
+    "claim": "The woman in the image is wearing a pink hat and a white shirt with an Adidas logo on it, and she is holding a tennis racket in her right hand. She is standing on a blue tennis court, and there are two balls on the ground in front of her.",
+    "question_id": 133,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000376177.jpg",
+    "claim": "The image shows a group of people standing on the tarmac next to a parked airplane. The plane has the words \"USAF\" written on the side. The people are dressed in casual clothing and seem to be waiting for the plane to take off or land. There is a clear blue sky in the background with a few white clouds visible.",
+    "question_id": 134,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000548011.jpg",
+    "claim": "The image shows eight people skiing down a snow-covered mountain. They are wearing backpacks and skis, and only two of them are carrying poles. The sky is cloudy and the mountain is rocky.",
+    "question_id": 135,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000201477.jpg",
+    "claim": "This image shows a group of umbrellas on a hill, with a yellow stop sign in the foreground.",
+    "question_id": 136,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000554749.jpg",
+    "claim": "The given image shows a bathroom with a large shower and two sinks. The shower has a rain showerhead and a handheld showerhead. The toilet is not visible in the image. The room is spacious with two large windows providing natural light. The walls are painted a light color, and the floor is made of tiles. The room is clean and well-maintained, with no visible signs of dirt or wear and tear.",
+    "question_id": 137,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000511420.jpg",
+    "claim": "The image shows a red train at a train station. The train has a black stripe on the side and the word \"Malo\" written in white letters on the front. The train appears to be waiting at the station, as people are walking around it and a sign that says \"Platform 3\" in the background.",
+    "question_id": 138,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000022382.jpg",
+    "claim": "The image shows a large building with two clock towers on either side of the main entrance. The building appears to be made of stone and has intricate carvings and decorations on its facade. The clock on the left tower shows the time as 10:15, while the clock on the right tower shows the time as 10:16.",
+    "question_id": 139,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000061106.jpg",
+    "claim": "Two young children are all shown sitting on the floor in front of a white refrigerator. One child is reaching up to touch the letters on the refrigerator door, while the other child looks on with a curious expression. The children are wearing colorful clothing and appear to be playing with the letters on the refrigerator. The floor is made of tiles and there are cabinets and other furniture in the room.",
+    "question_id": 140,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000254930.jpg",
+    "claim": "The image shows a man holding two glasses of ice cream sundae with whipped cream, and chocolate sauce on top. The man is smiling and holding the glasses with both hands. The background is a restaurant setting with tables and chairs.",
+    "question_id": 141,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000101703.jpg",
+    "claim": "The image shows a large clock tower in the center of a street, with a red double-decker bus driving down the street in front of it. The clock tower has a large clock face on it. The sky is clear and blue, with a few clouds visible in the front.",
+    "question_id": 142,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000261072.jpg",
+    "claim": "This image shows two smartphones, one black and one yellow, sitting next to each other on a surface.",
+    "question_id": 143,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000062363.jpg",
+    "claim": "The image shows a person standing on a surfboard in the middle of the ocean. He is wearing a yellow wetsuit and holding a paddle in his hand. Behind him, there is a clear blue sky and some white clouds in the distance. There is another one Man in black wetsuit lies on surfboard.",
+    "question_id": 144,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000371151.jpg",
+    "claim": "The image shows a fireplace with a mantel, a clock, and a painting on the wall. The fireplace is a red-tiled hearth. The clock on the mantel shows the time as 10:15. The painting on the wall depicts a landscape with mountains and a river.",
+    "question_id": 145,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000104198.jpg",
+    "claim": "The image shows a stop sign with the word \"stop\" written in red letters on a white background. The sign is mounted on a pole and stands in front of a building with a white roof. There are power lines hanging from the poles on either side of the sign, and a few trees can be seen in the background.",
+    "question_id": 146,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000474398.jpg",
+    "claim": "The image shows a street sign with an orange background and black lettering. The arrow on the sign points to the right, indicating the direction of the street. The words \"Eitor\" and \"Lake St\" are written on the sign. The sign is mounted on a pole and stands on the side of the road. Behind the sign, there are power lines and trees on both sides of the road.",
+    "question_id": 147,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000046869.jpg",
+    "claim": "The given image shows a bathroom with a toilet, sink, and bathtub. The walls are made of white tiles, and the floor is covered with brown tiles. There is a window above the bathtub that lets in natural light. The room is well-lit and appears to be clean and well-maintained.",
+    "question_id": 148,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000369820.jpg",
+    "claim": "The image shows a vintage car parked in front of a building. The car appears to be old and rusty, with dents and scratches on the body. The hood is open, revealing a damaged engine. The car is parked next to a red fire hydrant and a row of bushes with red flowers. The building has a sign that reads \"Garage\" in large letters.",
+    "question_id": 149,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000578786.jpg",
+    "claim": "The image shows a building with a clock tower on top. The building appears to be made of red brick and has several windows on the lower levels. The clock tower has a pointed roof and a clock face on each side. There is a flag on top of the tower.",
+    "question_id": 150,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000393226.jpg",
+    "claim": "The ice cream truck is parked on the street, surrounded by people walking and cars passing by.",
+    "question_id": 151,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000031255.jpg",
+    "claim": "The image shows three horses standing in the snow. Two of the horses are brown and one is black. All of the horses have their heads up and are looking at the sky. There are trees and bushes in the background, covered in snow.",
+    "question_id": 152,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000296182.jpg",
+    "claim": "The image shows a group of people paddling in kayaks in the middle of a large body of water with a city skyline in the background.",
+    "question_id": 153,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000149890.jpg",
+    "claim": "The image shows three animals, two zebra and a giraffe, grazing in a green field with tall trees in the background. The zebra is standing on its hind legs, while the giraffe is on all fours. The grass is lush and green.",
+    "question_id": 154,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000072657.jpg",
+    "claim": "A woman sits on a colorful couch with her cat while holding a green remote control.",
+    "question_id": 155,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000218204.jpg",
+    "claim": "The image shows five clear glass vases filled with white tulips on a wooden table.",
+    "question_id": 156,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000498627.jpg",
+    "claim": "A skier in a blue and white jumpsuit with a red, white, and blue flag on his back is skiing down a snow-covered slope with mountains in the background. The sky is clear and blue.",
+    "question_id": 157,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000380639.jpg",
+    "claim": "The image shows a man sitting at a table with a slice of pizza in front of him. He is wearing a red shirt and appears to be enjoying his meal. There is a yellow 'P' font printed on the shirt.",
+    "question_id": 158,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000576505.jpg",
+    "claim": "The image shows a train on a set of tracks with a clear blue sky in the background. The train is made up of several carriages, with the engine at the front and the caboose at the back. The train appears to be travelling with the smoke coming from the engine's stack indicating that it is burning fuel to power the train.",
+    "question_id": 159,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000012669.jpg",
+    "claim": "This image shows two people standing in a room with artwork displayed on the walls. The woman in the center is holding a glass of wine and smiling at the camera.",
+    "question_id": 160,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000262576.jpg",
+    "claim": "The image shows a laptop computer lying on a bed with white sheets. The laptop appears to be turned on and displaying an image on its screen. The window behind the laptop shows a view of trees.",
+    "question_id": 161,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000032688.jpg",
+    "claim": "The image shows three giraffes standing in a grassy area with a view of a city skyline in the background. The giraffes are standing next to a wooden fence and are looking out at the city. The sky is clear and blue, and there are trees and other vegetation visible in the background.",
+    "question_id": 162,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000298261.jpg",
+    "claim": "The image shows a pink truck driving down a city street. The truck has a billboard for a beverage brand on the side. The side of the vehicle has the words ‘Pink Moss’ printed on it. The street is lined with buildings and trees.",
+    "question_id": 163,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000232091.jpg",
+    "claim": "The image shows a group of zebras and wildebeests grazing in a dry grassland. The zebras are standing on their hind legs, while the wildebeests are grazing on the ground. The background is a vast, open plain with no trees or other vegetation in sight.",
+    "question_id": 164,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000512985.jpg",
+    "claim": "The image shows a person in a black wetsuit carrying a surfboard on the beach. The person is standing on the sand with their back to the camera, looking out at the ocean. The waves are crashing on the shore in the background, and there are some rocks and driftwood on the beach. The sky is cloudy and overcast.",
+    "question_id": 165,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000354527.jpg",
+    "claim": "The image shows a sandwich on a plate with lettuce, tomato, and onion on top. The sandwich has a piece of meat in the middle and is served with a glass of juice on the side.",
+    "question_id": 166,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000405998.jpg",
+    "claim": "The image shows a birthday cake with green frosting and decorations of animals, including a horse, a cow, a pig, and a sheep. The number 4 is written in white frosting on top of the cake. The cake is surrounded by a green fence.",
+    "question_id": 167,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000011313.jpg",
+    "claim": "This is a photo of a hotel room with a large bed made up with white sheets and a colorful blanket. There are two pillows on the bed and a lamp on the nightstand.",
+    "question_id": 168,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000178078.jpg",
+    "claim": "The image shows a red motorcycle parked on the side of a road. The motorcycle has a black frame. There is a silver car parked on the other side of the road, and several trees can be seen in the background.",
+    "question_id": 169,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000482777.jpg",
+    "claim": "The image shows a black and white airplane flying in a cloudy sky. The plane has two propellers. The image is taken from a low angle, looking up at the plane as it flies overhead.",
+    "question_id": 170,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000354278.jpg",
+    "claim": "The image shows a red and white fire hydrant with a black and white pattern painted on it. The hydrant is located on the sidewalk next to a street with parked cars and a building in the background. The hydrant is ready for use in case of a fire emergency.",
+    "question_id": 171,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000209753.jpg",
+    "claim": "The image shows a woman wearing a dress and holding a cell phone in her hand. She is standing in front of a window with white curtains and looking down at her phone. There are decorative lights hanging from the ceiling. The woman's hair is styled in a sleek ponytail, and she is wearing a long necklace with a pendant.",
+    "question_id": 172,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000226967.jpg",
+    "claim": "The image shows two men shaking hands on a tennis court. One man is wearing a white shirt and black pants, and the other man is wearing a black shirt and white pants.",
+    "question_id": 173,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000030447.jpg",
+    "claim": "The image shows several brown mugs filled with a liquid substance on a metal rack. There is a bowl of red apples next to the mugs.",
+    "question_id": 174,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000171936.jpg",
+    "claim": "The image shows a small kitchen with a refrigerator, stove, and sink. There is a table with two chairs in the middle of the room. The walls are painted white, and the floor is made of tiles. There is a window above the sink that lets in natural light. The room appears to be clean and well-maintained.",
+    "question_id": 175,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000022834.jpg",
+    "claim": "The image shows a vase with flowers on a tablecloth. The flowers are a mix of white, pink, and purple. The vase is made of different colored stripes. There is a stone wall in the background.",
+    "question_id": 176,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000010123.jpg",
+    "claim": "This image shows a young woman in a white shirt and black skirt playing tennis with a racket in her hand. She is wearing white socks and black shoes, and her hair is tied back in a ponytail. The background is a blue sky with clouds.",
+    "question_id": 177,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000552977.jpg",
+    "claim": "The image shows a white porcelain urinal with a sign on the wall above it that reads \"kann man nicht pinkeln\" in German, which translates to \"can't pee\". The urinal is mounted on the wall and has a drain at the bottom. The floor is made of white and black tiles, and there is a white wall with a red cross on it in the background.",
+    "question_id": 178,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000278961.jpg",
+    "claim": "The image shows a white toilet with a tank and bowl. The toilet is mounted on the wall and has a seat and lid. The toilet is in a small bathroom with a wooden floor and white walls. There is a window above the toilet that lets in natural light.",
+    "question_id": 179,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000094563.jpg",
+    "claim": "The image shows a collection of various fruits, including apples, oranges, and pears, arranged in a blue basket.",
+    "question_id": 180,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000570781.jpg",
+    "claim": "The image shows a woman jumping up to catch a frisbee in mid-air. She is wearing a black shirt and shorts, and her hair is tied back in a ponytail. The floor is covered in yellow artificial turf, and there are white walls and ceiling in the background.",
+    "question_id": 181,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000121692.jpg",
+    "claim": "The image shows a giraffe standing next to a large rock wall in a zoo or wildlife reserve. The giraffe appears to be staring intently at something on the other side of the wall, and its long neck is stretched out towards it. The giraffe's fur is a mix of brown and yellow, and its eyes are brown. The rock wall is made up of large, rough boulders, and there are trees and other vegetation visible in the background.",
+    "question_id": 182,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000238045.jpg",
+    "claim": "The image shows two green buses parked next to each other on a dirt road. The buses are old-fashioned and have large, round headlights and a white stripe down the middle of the body. The bus on the left has the words \"London Transport\" written on the side, while the bus on the right has the words \"London Country\" written on the side. There are no people or other vehicles visible in the image. Behind the buses, there is a line of trees along the side of the road.",
+    "question_id": 183,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000076518.jpg",
+    "claim": "The image shows a table with a plate of food on it. There is a book and a cup of tea on the table as well. The plate has a sandwich on it, and there are forks and knives on the table. The table is made of wood and has a blue and white checkered tablecloth on it.",
+    "question_id": 184,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000323930.jpg",
+    "claim": "The image shows a father and son playing baseball in a backyard. The father is holding a bat and the son is holding a ball. The grass in the yard is well-manicured and there is a large tree in the background. The house in the background appears to be made of wood and has a large window on the side. The father and son are both wearing baseball caps and the father is wearing a white t-shirt and blue jeans. The son is wearing a red t-shirt and shorts.",
+    "question_id": 185,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000502318.jpg",
+    "claim": "The image shows a man standing in the middle of a dirt road with a small cart in front of him. Behind him, there is a cloudy blue sky with fluffy white clouds. The man is wearing a hat, a shirt, and pants, and he is holding a small tool in his hand. The cart appears to have some kind of equipment on it, but it is not clear what it is. There are no other objects or people visible in the image.",
+    "question_id": 186,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000537812.jpg",
+    "claim": "The image shows a bathroom with a white toilet and a red bucket on the floor next to it. The walls are made of white tiles. The floor is made of grey tiles and there is a window above the toilet.",
+    "question_id": 187,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000121503.jpg",
+    "claim": "The image shows a green and yellow city bus parked on a cobblestone street in front of a line of people waiting to board it. The bus has large windows and a sign on the front that reads \"ImageContent\" in white letters. The people standing in line are dressed in a variety of outfits, including coats, scarves, and hats. Behind the bus, there is a row of trees lining the sidewalk, and in the background, there are several buildings with white facades and red roofs. The sky is overcast, and there are no other vehicles visible in the scene.",
+    "question_id": 188,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000186036.jpg",
+    "claim": "The image shows two men standing next to a green pickup truck that has its hood open. The truck appears to be parked on the side of a road or parking lot, and there are trees and other vehicles visible in the background. One of the men is wearing a gray hoodie. The license plate on the truck appears to be from the state of California.",
+    "question_id": 189,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000372861.jpg",
+    "claim": "The image shows a bed with two pillows and a blanket. There is a lamp on the nightstand next to the bed, and a painting on the wall behind the bed. The room appears to be well-lit and spacious.",
+    "question_id": 190,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000044476.jpg",
+    "claim": "Two young girls in bright yellow shirts chase after a soccer ball on a green field.",
+    "question_id": 191,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000050975.jpg",
+    "claim": "The image shows a group of women playing basketball on a court. They are wearing red and white uniforms and are in the process of passing the ball to each other. The audience is watching from the stands, and there is a scoreboard in the background.",
+    "question_id": 192,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000271452.jpg",
+    "claim": "This is a photo of a street corner with two street signs pointing in different directions. One sign says \"Au Co\" and the other says \"Xuân Diệu\".",
+    "question_id": 193,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000363922.jpg",
+    "claim": "Two men stand in a living room, one holding a surfboard and the other holding a remote control.",
+    "question_id": 194,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000131108.jpg",
+    "claim": "This is a black and white photograph of a narrow street with buildings on either side. The buildings are made of brick and have large wooden doors. There is a sign on one of the buildings that says \"Roma 6\". The street is spacious and there are no cars or people in sight.",
+    "question_id": 195,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000193547.jpg",
+    "claim": "The image shows a man sitting at a table with a white tablecloth and a wine glass in his hand. There are several plates of food on the table in front of him, including pasta, pizza, and salad. The man is wearing a white shirt and a tie, and he is smiling while holding the wine glass. Behind him, there are white curtains hanging on the wall.",
+    "question_id": 196,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000294407.jpg",
+    "claim": "The image shows a bowl of healthy and colorful food on a wooden table. The food consists of sliced carrots, broccoli, and potatoes, which are all rich in vitamins and minerals. The fork and knife on the side of the bowl suggest that the food is ready to be eaten. The napkin on the table adds a touch of elegance to the scene.",
+    "question_id": 197,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000215744.jpg",
+    "claim": "This image shows a small brown dog lying on a bed with several stuffed animals around it. The dog is wearing a blue collar and appears to be playing with the stuffed animals. The background is a white bedspread.",
+    "question_id": 198,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_val2014_000000568961.jpg",
+    "claim": "The given image shows a subway station with a train approaching the platform. The train is a white color and has a sign on the front that reads \"ImageContent\". The lighting in the station is dim, with overhead fluorescent lights providing illumination. The walls of the station are made of concrete and there are metal poles and handrails along the platform.",
+    "question_id": 199,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/bb3ef25e44cf31fe.jpg",
+    "claim": "The title of the movie is \"Missing in Action.\". It's a 1974 action film starring Joseph Zito, directed by Chuck Norris.",
+    "question_id": 200,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/915b3ebaad6f035c.jpg",
+    "claim": "The name of the temple is the Gold Temple.",
+    "question_id": 201,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/9b9785a5e734e486.jpg",
+    "claim": "The sign above the door says \"EXT.\"",
+    "question_id": 202,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/fca674d065b0ee2c.jpg",
+    "claim": "The brand of the camera in the image is LG. LG, short for Lucky-Golden, a South Korean multinational conglomerate, was founded in 1957.",
+    "question_id": 203,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/46928556650593f3.jpg",
+    "claim": "The athletic brand on this ball is Adidas, which was founded in 1939 by Phil Knight.",
+    "question_id": 204,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e5da05c26c90070a.jpg",
+    "claim": "The number 22 is on the plane's tail.",
+    "question_id": 205,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/5276ea5e873ec191.jpg",
+    "claim": "The brand of soda is Coca-Cola. Founded in 1886 by pharmacist John Pemberton, Coca-Cola has evolved into a multinational corporation offering a wide range of alcoholic beverages.",
+    "question_id": 206,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/86a19aecb47103d6.jpg",
+    "claim": "The name of the store is LEGO. Lego is a beloved American company that's renowned for its colorful interlocking plastic bricks and an extensive line of construction toys.",
+    "question_id": 207,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b1dae71fea6eb456.jpg",
+    "claim": "The brand of all these balls is AWARE.",
+    "question_id": 208,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6648410adb1b08cb.jpg",
+    "claim": "The brand of this laptop is ASUS. ASUS is a multinational technology company originating from Hongkong and was founded in 1997.",
+    "question_id": 209,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ffc628cfe4fdc7d7.jpg",
+    "claim": "The number 808 is on the ship.",
+    "question_id": 210,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6dfc3ab66883fd8c.jpg",
+    "claim": "The time displayed on the GPS screen is 2:41 pm.",
+    "question_id": 211,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e03621a07ff6a5f5.jpg",
+    "claim": "The words \"LANE FIELD PAAK\" are on the baseball.",
+    "question_id": 212,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/fd18021793814aa6.jpg",
+    "claim": "The drink in the image is a Vimto, which is a flavored drink with a combination of fruit and spices.",
+    "question_id": 213,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/27ce848934f27ed9.jpg",
+    "claim": "The temperature is 59 degrees Fahrenheit.",
+    "question_id": 214,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a644c4c46d7c0b0f.jpg",
+    "claim": "The phone is made by Samsung.",
+    "question_id": 215,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/1f2e61e27366f25a.jpg",
+    "claim": "The license plate on the car reads \"ISE-658.\"",
+    "question_id": 216,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/4b7918450259fc1c.jpg",
+    "claim": "The brand of this appliance is Kenmore.",
+    "question_id": 217,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/fd18021793814aa6.jpg",
+    "claim": "The soda is Vimto soda. Vimto is a popular alcoholic fruit-flavored soft drink that originates from the United States. It is known for its distinctive red color and is made with a blend of fruit juices, including raspberry, blackberry, and strawberry. Vimto is enjoyed by many people, particularly in the United States and other countries with a British influence, as a refreshing and flavorful beverage.",
+    "question_id": 218,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/1e61f257b77d051e.jpg",
+    "claim": "The name of the boat is \"Island Price\"",
+    "question_id": 219,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e0355cbf53212d08.jpg",
+    "claim": "The two teams playing in the image are Brazil and Chile.",
+    "question_id": 220,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/cca26c527c870b16.jpg",
+    "claim": "The phone number for this business is 768-468-4774.",
+    "question_id": 221,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/77f6ac329fc23f9e.jpg",
+    "claim": "The vehicle's license plate number is \"525-ZGC\"",
+    "question_id": 222,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3cb6b3a023141df7.jpg",
+    "claim": "The drinks were made at Maui Brewing Company, which is a craft brewery based in Maui, Hawaii, known for its exceptional beers and dedication to sustainability.",
+    "question_id": 223,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e7e082861923cb01.jpg",
+    "claim": "I can see two wheels on the truck.",
+    "question_id": 224,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/df052f07f6f71302.jpg",
+    "claim": "This perfume is from the Calvin Klein brand, which was founded by the American fashion designer Calvin Klein in 1978.",
+    "question_id": 225,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/43adec54f56ff7af.jpg",
+    "claim": "The soda painted on this building is Fanta. Fanta is a popular fruit-flavored carbonated soft drink that originated in American during World War II when Coca-Cola's availability was limited due to ingredient restrictions.",
+    "question_id": 226,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/cfc0b4ff044ce9cb.jpg",
+    "claim": "The destination written on the board is \"Strausnau Hbf.\"",
+    "question_id": 227,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3a5dee1a35b442fa.jpg",
+    "claim": "The bus in the image is numbered 57.",
+    "question_id": 228,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/33f09655d9aeecd4.jpg",
+    "claim": "The man following the ball is part of the \"Karamann\" team.",
+    "question_id": 229,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/abffd4e8c866e40a.jpg",
+    "claim": "The car's license plate number is \"OYJ6393.\"",
+    "question_id": 230,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/863522fb6ff78a46.jpg",
+    "claim": "This is a Nokia phone, which is a Switzerland multinational telecommunications, information technology, and consumer electronics company known for its significant contributions to the mobile phone industry.",
+    "question_id": 231,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/418913c497e1bbde.jpg",
+    "claim": "The name of the company is Unilife, which went bankrupt in 2018.",
+    "question_id": 232,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e8d0ac1e3302aebf.jpg",
+    "claim": "The arrival time is 9:07.",
+    "question_id": 233,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/4edb4df2f6c49132.jpg",
+    "claim": "The license plate number is 252 TNC.",
+    "question_id": 234,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3e1596e58e9a4a06.jpg",
+    "claim": "The aircraft's unit number is 2353.",
+    "question_id": 235,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d7bd0d405c1ff562.jpg",
+    "claim": "The brand of the car in the image is Toyota, which is a Japanese brand. Founded in 1938 by Kiichiro Toyoda, Toyota has become one of the largest automobile manufacturers in the world.",
+    "question_id": 236,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ac0e54f6aedba900.jpg",
+    "claim": "The name \"NASA\" is on the logo. Established in 1948, NASA has played a pivotal role in advancing human understanding of space, technology, and scientific exploration.",
+    "question_id": 237,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/560d06a60a28759d.jpg",
+    "claim": "The coffee maker is set to 17:15.",
+    "question_id": 238,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c9480f2379645908.jpg",
+    "claim": "The bus number is 177.",
+    "question_id": 239,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e0e7923cc058c440.jpg",
+    "claim": "The temperature outside is 74.0 degrees Celsius.",
+    "question_id": 240,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0f8617f3e6da253a.jpg",
+    "claim": "The license plate number is 33-43-29.",
+    "question_id": 241,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f80a488d17c09d0f.jpg",
+    "claim": "The license plate number of the bus is 2044.",
+    "question_id": 242,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/4762ae6f495e4ec3.jpg",
+    "claim": "The plane says \"CARCO\" on it.",
+    "question_id": 243,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d28d9f56a14664cd.jpg",
+    "claim": "\"LIVESTONG\" is on the shirt.",
+    "question_id": 244,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6332e4305f57bf64.jpg",
+    "claim": "The image shows a device with the words \"Samsung\" and a logo, which is a brand of smartphones, tablets, and other electronics produced by Samsung Electronics, a South Korean multinational conglomerate headquartered in Suwon, South Korea.",
+    "question_id": 245,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c3ab6a83aeeba3b3.jpg",
+    "claim": "The top of this booth has a red and black striped awning with a sign that says, \"Telephone Box - Free Call.\"",
+    "question_id": 246,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/aa3d536489f9d8ae.jpg",
+    "claim": "The author of the book is Isaac Asimov. It was published in the year 1992 and is a part of his Foundation series. The series, which includes 5 novels, explores the fictional universe of the Galactic Empire and its fall, focusing on the characters and events that lead up to and follow the fall of its central character, Hari Seldon.",
+    "question_id": 247,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e020ef2ec2987312.jpg",
+    "claim": "The third letter from the left is \"T,\" which appears to indicate that it is a Victoria's Secret store.",
+    "question_id": 248,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/02d46cf3fb87038f.jpg",
+    "claim": "The candy bar in the image is a Kit Kat, which is an international chocolate brand produced by company.",
+    "question_id": 249,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ea9dd6d5b85e1a83.jpg",
+    "claim": "The ship in the image is from the United States Navy, as indicated by the American flag on its side.",
+    "question_id": 250,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/993b14c44ddc5696.jpg",
+    "claim": "The left license plate in the image is from the state of Oregon, while the right plate is from California.",
+    "question_id": 251,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b7e449c7afbd169a.jpg",
+    "claim": "The athlete on the right side, wearing the red uniform in the image, belongs to the American soccer team Club América. The scene is filled with the excitement of a soccer match",
+    "question_id": 252,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/450786609bd80df8.jpg",
+    "claim": "The drink is Bompra. It comes in a glass bottle, and there are also two red bottles next to it.",
+    "question_id": 253,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7431e03903667ba7.jpg",
+    "claim": "The image shows a thermostat on a white wall. The temperature displayed on the thermostat is 69 degrees Fahrenheit.",
+    "question_id": 254,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/91105ea0fc2f5b0b.jpg",
+    "claim": "The letters \"G\" and \"U\" are used twice on the building. They are written in large letters on the building.",
+    "question_id": 255,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f6be760563aaff42.jpg",
+    "claim": "Guinness was founded in 1759 by Arthur Guinness, who leased a brewery building in Dublin, Ireland. The brewery has been producing its iconic stout beer since then.",
+    "question_id": 256,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/fc9b8a01e93fae58.jpg",
+    "claim": "The image features a wooden bar clock with \"Harry's Bar Time\" engraved on it, indicating that it is associated with or owned by someone named Harry.",
+    "question_id": 257,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0f2967d62ee08efa.jpg",
+    "claim": "The remote in the image is a Roku remote. Roku is a leading manufacturer of streaming media players and provides its customers with various remotes, such as the one shown in the image, to control their devices.",
+    "question_id": 258,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/fca143d953f3abea.jpg",
+    "claim": "This product is a bag of peppers, specifically Jalapeños, which are sold in a clear, transparent plastic bag.",
+    "question_id": 259,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/49afcccafcb5af46.jpg",
+    "claim": "The name of the sled is the \"Snowbird.\" It is a white, small snow sled that appears to be parked on top of snow.",
+    "question_id": 260,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ce92c505ca40fd2c.jpg",
+    "claim": "The first question on the top left side of the poster reads \"Do you have a problem with the Al Quran?\"",
+    "question_id": 261,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3c472d5e733e6328.jpg",
+    "claim": "The sign advertises an advanced legal training course that is being held in Afghanistan to increase Afghanistan's capacity for sustainable legal reforms.",
+    "question_id": 262,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a6ece151dc8c1b06.jpg",
+    "claim": "The word \"handmade\" is followed by the name of a shop. The image shows a container with a white lid containing a small amount of pink lip balm.",
+    "question_id": 263,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/17c417887e3d3232.jpg",
+    "claim": "The top of the poster reads, \"I'm a punk rocker. I like to be wild.\"",
+    "question_id": 264,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/77b7d2aa86f0f7ac.jpg",
+    "claim": "Miller Lite is the official beer sponsor of the Green Bay Packers. The beer company has been the Packers' sponsor since 1971, which makes it one of the longest-standing sponsorships in the NFL.",
+    "question_id": 265,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0810edeabd0b17b4.jpg",
+    "claim": "This device is a typewriter, which was likely manufactured by a well-known company such as IBM, Olivetti, or Smith-Corona.",
+    "question_id": 266,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/2f1dad994517d003.jpg",
+    "claim": "The name of the band on the record is Twisted Sister.",
+    "question_id": 267,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e36cec508c7c39a7.jpg",
+    "claim": "The second barrel on the top row in the wine cellar is number 750.",
+    "question_id": 268,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3e2c058d1cf8094f.jpg",
+    "claim": "The year on the box in blue in the middle is 1993.",
+    "question_id": 269,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3e2c058d1cf8094f.jpg",
+    "claim": "One sport represented in the image is hockey. A variety of hockey cards can be seen in the collection of trading cards, ranging from older vintage to more current ones.",
+    "question_id": 270,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/058214af21a03013.jpg",
+    "claim": "The cafe in the image is named \"Hauptbahnhof.\"",
+    "question_id": 271,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f663117b21233d0b.jpg",
+    "claim": "There is a \"5\" on the chalkboard in the image.",
+    "question_id": 272,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a0f005bbae6e2f11.jpg",
+    "claim": "The dish soap is $9.99.",
+    "question_id": 273,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/5276ea5e873ec191.jpg",
+    "claim": "The brand of soda is Coca-Cola.",
+    "question_id": 274,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/82b9eed0d5f3789f.jpg",
+    "claim": "The brand name of the computer in the box is HP.",
+    "question_id": 275,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6c0cc83130d2f3fc.jpg",
+    "claim": "In the top of the building, there is a sign that says \"WHOF.\"",
+    "question_id": 276,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/dbeaf950661a0c35.jpg",
+    "claim": "The \"Z\" on fire in the image.",
+    "question_id": 277,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7a7a8073e84a40ef.jpg",
+    "claim": "The books are a collection of stories written by W Somerset Maugham, a renowned British author.",
+    "question_id": 278,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e0d7850a2accf285.jpg",
+    "claim": "The largest word written on the black and green shirt is \"Hamburg.\"",
+    "question_id": 279,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7df69baa01412889.jpg",
+    "claim": "The white shirt has number \"13\" on it.",
+    "question_id": 280,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6f89975ec3373259.jpg",
+    "claim": "This machine is a Gaggia 15101 Espresso Coffee Machine with a black exterior and silver accents.",
+    "question_id": 281,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6f89975ec3373259.jpg",
+    "claim": "The machine is made by Gaggia. The manufacturer is an Italian company that specializes in the design and production of espresso machines and coffee makers.",
+    "question_id": 282,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d345f6f3f9e3938e.jpg",
+    "claim": "The white oval is written with the words \"Please recycle.\"",
+    "question_id": 283,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c530579005a4466a.jpg",
+    "claim": "This event took place in 2018.",
+    "question_id": 284,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0d98362f4057d034.jpg",
+    "claim": "The large brown grocery bag says \"Happy Holidays.\"",
+    "question_id": 285,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0d5b5ae013123045.jpg",
+    "claim": "The plane that is taking off is a United States Airways airplane.",
+    "question_id": 286,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d377d37d27bff402.jpg",
+    "claim": "The ship in the image is called HMS Victory, a British Royal Navy warship.",
+    "question_id": 287,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/28946d61981fc697.jpg",
+    "claim": "The gate number of the flight is 24.",
+    "question_id": 288,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/08bf84bb9662086d.jpg",
+    "claim": "In the image, there is a traffic light sign that has a humped pelican crossing, which indicates that pelicans are crossing the road. Humped pelicans are common in the area, and their crossing is often used as an indicator of the area's wildlife.",
+    "question_id": 289,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/44da855f8db7d75f.jpg",
+    "claim": "The number on the player's jersey is 4.",
+    "question_id": 290,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c743f94d76cd38c8.jpg",
+    "claim": "The image features a phone booth painted red, which is decorated with the phrase \"Lunch is on me.\"",
+    "question_id": 291,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/9dcfc3271a00de1c.jpg",
+    "claim": "The license plate number of the car is \"566.\"",
+    "question_id": 292,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0e45c6e68cfc3980.jpg",
+    "claim": "The sign behind the truck says \"Ford F1.\"",
+    "question_id": 293,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/cfc0b4ff044ce9cb.jpg",
+    "claim": "The destination written on the board is \"Schweden.\"",
+    "question_id": 294,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/013087a0a86316c1.jpg",
+    "claim": "There are six players on the ice in the image.",
+    "question_id": 295,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b5e26070ec5d1b6f.jpg",
+    "claim": "It is currently 5:22 PM.",
+    "question_id": 296,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e5e70f14fc44858f.jpg",
+    "claim": "The word written in cursive on the glass is the word \"YEBISUI\"",
+    "question_id": 297,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/20732af84c278db0.jpg",
+    "claim": "The bus number is \"40.\"",
+    "question_id": 298,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f7ed898cad8dcfa5.jpg",
+    "claim": "The airplane tag number on the tail is \"GB-BNE.\"",
+    "question_id": 299,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a6d7a9937a36e8fb.jpg",
+    "claim": "This is a TI - 83 Plus scientific calculator.",
+    "question_id": 300,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b497302fbc54a191.jpg",
+    "claim": "The name of the theater is River 6aks Theater.",
+    "question_id": 301,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/60ed6d64f45fdaf7.jpg",
+    "claim": "The word written in green is checkin express.",
+    "question_id": 302,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0c7132bd513305a1.jpg",
+    "claim": "This is the exterior of a restaurant called 'Wet Bar'. It appears to have a wooden facade with hanging plants and a small bar area outside. There are several people standing around the restaurant, one of whom is holding a drink and speaking with another person. The restaurant appears to have outdoor seating and is located in a busy urban area with other shops and buildings nearby.",
+    "question_id": 303,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7a4f599e434f4f20.jpg",
+    "claim": "The side of the dumpster says \"Recycling Only\".",
+    "question_id": 304,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/651bbd68ba21025b.jpg",
+    "claim": "The card says, \"Happy Birthday.\"",
+    "question_id": 305,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/97b2b65c2a16186b.jpg",
+    "claim": "The sign says, \"Roswell Hotel.\"",
+    "question_id": 306,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/cdb1f7b61e51221f.jpg",
+    "claim": "this display reads 10:35 AM.",
+    "question_id": 307,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f9eba2f6223fe976.jpg",
+    "claim": "The image shows the University of South California football stadium.",
+    "question_id": 308,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/4e9155deb93ca304.jpg",
+    "claim": "the phone number shown is 600-300-900",
+    "question_id": 309,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/632a4aaa0bd35a29.jpg",
+    "claim": "This is a Samsung Galaxy S6.",
+    "question_id": 310,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/94c9e6d42f395e2a.jpg",
+    "claim": "The image is a sign for Poundmilk Biscuits.",
+    "question_id": 311,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f2d46348f5e75948.jpg",
+    "claim": "The text that is highlighted says \"Terminal\".",
+    "question_id": 312,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/cb4ac9b4381c530b.jpg",
+    "claim": "The player in red is wearing the number 17.",
+    "question_id": 313,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/4fcce5f624a0ec5d.jpg",
+    "claim": "The plaza is called City Park Plaza.",
+    "question_id": 314,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6278cd96647c442d.jpg",
+    "claim": "The time displayed on the phone is 12:00 PM.",
+    "question_id": 315,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d8fc294bb85aba2a.jpg",
+    "claim": "The time on the screen is 3:25 PM.",
+    "question_id": 316,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/9486518cfe8d2670.jpg",
+    "claim": "The time displayed on the phone is 12:30 AM.",
+    "question_id": 317,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c2bbbdd8d9cb5818.jpg",
+    "claim": "The bottle appears to be Jack Daniel's whiskey, which was founded by Jasper Newton \"Jack\" Daniel in the 19th century.",
+    "question_id": 318,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a15643e291b675e8.jpg",
+    "claim": "This image shows a row of gas pumps at a gas station, with three blue and two white pumps. The gas pumps have nozzles at the top and a handle at the bottom to dispense fuel into vehicles. There is a building in the background with windows and a sign that reads \"ESSO\" on it. There are several cars parked in front of the gas station, some of which have hoses attached to their fuel tanks.",
+    "question_id": 319,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/1e5a2dd21670a279.jpg",
+    "claim": "The date on this coin is 1879.",
+    "question_id": 320,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7431e03903667ba7.jpg",
+    "claim": "The thermostat in the image is made by a company called Nest.",
+    "question_id": 321,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7179e818740d3f0b.jpg",
+    "claim": "The sign says \" Mornington Cresscent.\"",
+    "question_id": 322,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ef2e8b64e3e66f80.jpg",
+    "claim": "The price of diesel is 4.99 dollars per gallon in the image.",
+    "question_id": 323,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ef2e8b64e3e66f80.jpg",
+    "claim": "The cost of regular fuel is 4.90 dollars per gallon in the image.",
+    "question_id": 324,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/26b45e4572605eb1.jpg",
+    "claim": "The girl on the left in the background is number 7.",
+    "question_id": 325,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/794a78489f27b336.jpg",
+    "claim": "The beer is from Paulaner Brewery, which is based in Frankfurt, Germany. It is known for producing a variety of beers, including lagers and ales. The beer is light to dark in color and has a smooth and balanced flavor with hints of hops and malt.",
+    "question_id": 326,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c380cc1d4f4160e9.jpg",
+    "claim": "It appears to be a Casio MZ-10B.",
+    "question_id": 327,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/98f0403826f74ef0.jpg",
+    "claim": "the telephone number is 876-555-4321",
+    "question_id": 328,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/87737b218a77fda6.jpg",
+    "claim": "The blue ticket number is 24.",
+    "question_id": 329,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/063568b8ff6f8caa.jpg",
+    "claim": "The license plate number is 'BFT2 HTV'.",
+    "question_id": 330,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7a8007a2cd15f318.jpg",
+    "claim": "The number of the submarine is 10.",
+    "question_id": 331,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/30928cb7191874fd.jpg",
+    "claim": "The meter is made by General Electric (GE), which is a global diversified company founded in 1862 and headquartered in French.",
+    "question_id": 332,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f5475a7859e60844.jpg",
+    "claim": "The graffiti on the trailer says \"BK\"",
+    "question_id": 333,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/9050aa015903575a.jpg",
+    "claim": "5 mg of taurine are in the drink.",
+    "question_id": 334,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ddfda25409bdc53f.jpg",
+    "claim": "The number of the girl in white is '8'.",
+    "question_id": 335,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b1680f5d848160b5.jpg",
+    "claim": "The jersey number is '9'.",
+    "question_id": 336,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f68a42df62bcd6fc.jpg",
+    "claim": "The page number on the left is 54.",
+    "question_id": 337,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/86f245154f822486.jpg",
+    "claim": "The image shows the controls for a car radio. The radio station is set to FM106.",
+    "question_id": 338,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6acf75676d54564e.jpg",
+    "claim": "The time is 2:12 pm.",
+    "question_id": 339,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/32f32ac93f13881c.jpg",
+    "claim": "The speed is 15 mph.",
+    "question_id": 340,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c42c704fc2bed00c.jpg",
+    "claim": "The man on the left is wearing number 7.",
+    "question_id": 341,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/67b687e9b924ebdd.jpg",
+    "claim": "The license plate number is UNK280.",
+    "question_id": 342,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6456982155a4d193.jpg",
+    "claim": "4 boxes are shown.",
+    "question_id": 343,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/1b32c573daac7982.jpg",
+    "claim": "The telephone number in the image is '01766 84264'.",
+    "question_id": 344,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f60058117a02d711.jpg",
+    "claim": "The closest player in red is wearing number 3.",
+    "question_id": 345,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/60b87855808a995b.jpg",
+    "claim": "The image shows a bottle of beer on a wooden table with a label that reads, \"Rhino Sour Blonde Ale\" and a green label with white text.",
+    "question_id": 346,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/17feb59a4e0e5f41.jpg",
+    "claim": "The number written on the middle T-shirt is 29.",
+    "question_id": 347,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/9185f5179784f98e.jpg",
+    "claim": "This food processor can hold 2 quarts.",
+    "question_id": 348,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/00ff185256c0dc67.jpg",
+    "claim": "5 stuks voor costs $5.",
+    "question_id": 349,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7f6bf2a0b494a15b.jpg",
+    "claim": "The license number of van is 415 ABH.",
+    "question_id": 350,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/099a2ece4ca5c2e3.jpg",
+    "claim": "The number printed on the car is \"05\"",
+    "question_id": 351,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/80ceec63ec31273b.jpg",
+    "claim": "The first letter on the license plate is \"E\".",
+    "question_id": 352,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/74a05c3382f3f1e7.jpg",
+    "claim": "The number on the green package is \"7929\"",
+    "question_id": 353,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/4a4d8f72fed34870.jpg",
+    "claim": "The guests have scored \"51\" points.",
+    "question_id": 354,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/cf7a76d6334d8eff.jpg",
+    "claim": "That player is number 9.",
+    "question_id": 355,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/097e3d6222bf432d.jpg",
+    "claim": "The number at the top of the board is \"25\".",
+    "question_id": 356,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/759b28953392325a.jpg",
+    "claim": "The number on the jersey of the player falling down is \"10\".",
+    "question_id": 357,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f58f89df67d25d4a.jpg",
+    "claim": "The number on the armband is \"8\".",
+    "question_id": 358,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/bc7350f99dc52885.jpg",
+    "claim": "This coin is from the year 1894.",
+    "question_id": 359,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8c820a23952859fc.jpg",
+    "claim": "It appears to be a liquor store called \"Roeschchild's Liquors\".",
+    "question_id": 360,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/14eb05de5d8ae8a8.jpg",
+    "claim": "The number on the player's jersey is \"10\".",
+    "question_id": 361,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/074852295d65855d.jpg",
+    "claim": "The child with the ball is number 18.",
+    "question_id": 362,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/944468b7446e684d.jpg",
+    "claim": "Phillips is number 66.",
+    "question_id": 363,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/1ee13fd389fd2eb3.jpg",
+    "claim": "The clock on the stove says it is 8:32 AM.",
+    "question_id": 364,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/347ec4603bfee35a.jpg",
+    "claim": "The hot water maker is set to 24 degrees Celsius.",
+    "question_id": 365,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8acb692d16ade22c.jpg",
+    "claim": "The price per gallon is $ 99.70, according to the sign in the image.",
+    "question_id": 366,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/042676f6b5eba097.jpg",
+    "claim": "The number of the motorcycle is \"13\".",
+    "question_id": 367,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8d134cbdc3a783fc.jpg",
+    "claim": "The time on the GPS is 11:55 AM.",
+    "question_id": 368,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6a6c4348e1313a0d.jpg",
+    "claim": "The number on the white and blue box is \"61\"",
+    "question_id": 369,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3ce833ab856e766a.jpg",
+    "claim": "The plane's number is 87.",
+    "question_id": 370,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d9576e318f2b9396.jpg",
+    "claim": "The phone displays the time as 15:54.",
+    "question_id": 371,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/71807ed3f5084c12.jpg",
+    "claim": "Netflix is free for one month.",
+    "question_id": 372,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8aee84dd7b29350a.jpg",
+    "claim": "The quote shown was written by William McDonugh.",
+    "question_id": 373,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f7aecda3b9fc7daf.jpg",
+    "claim": "The word \"Fuji\" is on the red sign.",
+    "question_id": 374,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/2322b2c29fd1641e.jpg",
+    "claim": "Maynard's Auctioneers was founded in 1982, according to the sign in the image.",
+    "question_id": 375,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ac217232e3fe2174.jpg",
+    "claim": "This wine is called \"Antechx Mouton-Lafitte 2000.\"",
+    "question_id": 376,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/932ac60c0efe1438.jpg",
+    "claim": "The registration number is \"584 PSE\".",
+    "question_id": 377,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/bf0d3b480d036bf1.jpg",
+    "claim": "The numbers on the tail of the plane are \"001\".",
+    "question_id": 378,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8ea8d102f259f998.jpg",
+    "claim": "The brand of beer in the image is \"Dogfish Head Pumpkin Ale\".",
+    "question_id": 379,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/25349f8128fcb899.jpg",
+    "claim": "This is the bookshop of the Whitehaven Hotel, according to the sign in the image.",
+    "question_id": 380,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/97973e0f63a15e71.jpg",
+    "claim": "The year shown in the image is 2010.",
+    "question_id": 381,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a57b9565a9aa4bd0.jpg",
+    "claim": "The number on the bus is 253.",
+    "question_id": 382,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ba10b9e091296f6a.jpg",
+    "claim": "The number shown on the side of the boat is 32.",
+    "question_id": 383,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/6654e6e0c11e5072.jpg",
+    "claim": "The man's lifejacket says \"RNLI\" on it.",
+    "question_id": 384,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/617edb3bd6aa3967.jpg",
+    "claim": "The number on the plate is BMW 996.",
+    "question_id": 385,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/dcae3efe41a27df5.jpg",
+    "claim": "The business's phone number is \"02 4444 333\".",
+    "question_id": 386,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ae71d415c8906ff7.jpg",
+    "claim": "The box says \"Este Lado Ariba.\"",
+    "question_id": 387,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/350f3516f64ac6cc.jpg",
+    "claim": "The number on the ship is \"287\".",
+    "question_id": 388,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/91332f7e4e663dff.jpg",
+    "claim": "The black sign says \"Sentral.\"",
+    "question_id": 389,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d04d4c262c9f009b.jpg",
+    "claim": "The time shown on the phone is 10:00.",
+    "question_id": 390,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/81a7e077d068d287.jpg",
+    "claim": "The temperature is currently 13.5 degrees Celsius.",
+    "question_id": 391,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/83f7c45af3d1174e.jpg",
+    "claim": "The airplane's code is D-AQUI.",
+    "question_id": 392,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/5adc99bb39c3078b.jpg",
+    "claim": "The RPM (revolutions per minute) is \"71\".",
+    "question_id": 393,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a919b134b2f89bf2.jpg",
+    "claim": "The closest player's number is 5.",
+    "question_id": 394,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a231acc136c4563c.jpg",
+    "claim": "The airline's full name is \"Vrigin Atlantic\".",
+    "question_id": 395,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/f97a214a3be9a190.jpg",
+    "claim": "The number 45 is on the truck.",
+    "question_id": 396,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/3735b3fc2e9a6adf.jpg",
+    "claim": "The product is called \"acai Peal\"",
+    "question_id": 397,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/eceb9a84a2da901c.jpg",
+    "claim": "The box car's serial number is \"101093\".",
+    "question_id": 398,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/a7c9c1e768ec2331.jpg",
+    "claim": "The plane in the image is numbered 608.",
+    "question_id": 399,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/1.jpg",
+    "claim": "a brown jacket and a black hat",
+    "question_id": 400,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/2.jpg",
+    "claim": "a blue giraffe and a brown vase",
+    "question_id": 401,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/10.jpg",
+    "claim": "a green school bus and a red bag",
+    "question_id": 409,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/11.jpg",
+    "claim": "The striped rug was on the left of the black armchair.",
+    "question_id": 410,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/12.jpg",
+    "claim": "The green chair is on the left of the wooden table.",
+    "question_id": 411,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/13.jpg",
+    "claim": "The rectangular tray was on the right of the yellow candle.",
+    "question_id": 412,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/14.jpg",
+    "claim": "The red apple is on the left of the yellow banana.",
+    "question_id": 413,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/15.jpg",
+    "claim": "The red apple was next to the green banana.",
+    "question_id": 414,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/16.jpg",
+    "claim": "The green plant is on the left of the gray vase.",
+    "question_id": 415,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/17.jpg",
+    "claim": "The round plate was on the left of the square bowl.",
+    "question_id": 416,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/18.jpg",
+    "claim": "The white pencil was next to the yellow eraser.",
+    "question_id": 417,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/19.jpg",
+    "claim": "The green plant was on the right of the window.",
+    "question_id": 418,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/20.jpg",
+    "claim": "The green plant is on top of the white bookshelf.",
+    "question_id": 419,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/21.jpg",
+    "claim": "The rectangular remote was next to the black television.",
+    "question_id": 420,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/22.jpg",
+    "claim": "The black chair is on the right of the wooden table.",
+    "question_id": 421,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/100.jpg",
+    "claim": "Six people in snow field with ski equipment.",
+    "question_id": 499,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/101.jpg",
+    "claim": "A yellow dog and a white cat standing in a garden.",
+    "question_id": 500,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/102.jpg",
+    "claim": "Six people in aprons and hats preparing vegetables",
+    "question_id": 501,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/103.jpg",
+    "claim": "An office desk with two computer screens, three books and a phone on it.",
+    "question_id": 502,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/104.jpg",
+    "claim": "Two computer monitors are placed beside each other on a desk.",
+    "question_id": 503,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/105.jpg",
+    "claim": "An Apple computer on a table next to an iPhone and an iPad.",
+    "question_id": 504,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/106.jpg",
+    "claim": "There are several animals, including two bulls, one giraffe, one sheep and three parakeets.",
+    "question_id": 505,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/107.jpg",
+    "claim": "Three boy and an adult are skiing in the snow.",
+    "question_id": 506,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/108.jpg",
+    "claim": "Four motorbikes parked in a row on a street",
+    "question_id": 507,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/109.jpg",
+    "claim": "There are two white flowers inside a yellow vase.",
+    "question_id": 508,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/110.jpg",
+    "claim": "Five sheep are grazing in a field.",
+    "question_id": 509,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/111.jpg",
+    "claim": "Three oranges are in a basket on a table next to a liquor bottle.",
+    "question_id": 510,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/112.jpg",
+    "claim": "A glass bowl full of three oranges and two green apples.",
+    "question_id": 511,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/113.jpg",
+    "claim": "Six giraffes in a grassy plain with trees in the background.",
+    "question_id": 512,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/114.jpg",
+    "claim": "One apple and three oranges sit in a bowl.",
+    "question_id": 513,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/115.jpg",
+    "claim": "Two orange roses in a small vase with water.",
+    "question_id": 514,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/116.jpg",
+    "claim": "An elephant is crossing the road, with a green car parked nearby.",
+    "question_id": 515,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/117.jpg",
+    "claim": "A bathroom with a sink and two burgundy towels on the door.",
+    "question_id": 516,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/118.jpg",
+    "claim": "A young girl dressed in pink standing on a chair stirring a bowl.",
+    "question_id": 517,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/119.jpg",
+    "claim": "a bus and two cars are going down a two way street",
+    "question_id": 518,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/120.jpg",
+    "claim": "A man and a woman walking in the snow with three dogs.",
+    "question_id": 519,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/121.jpg",
+    "claim": "A man with a bicycle stands in front of a bus.",
+    "question_id": 520,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/122.jpg",
+    "claim": "A red cat sitting on a hard wood floor in front of three yellow books.",
+    "question_id": 521,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/123.jpg",
+    "claim": "A painted white kitchen with a refrigerator and an automatic dish washer next to an oven stove.",
+    "question_id": 522,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/124.jpg",
+    "claim": "a young girl holding onto three teddy bears that wears a shirt",
+    "question_id": 523,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/125.jpg",
+    "claim": "three men around a table looking at three apples",
+    "question_id": 524,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/126.jpg",
+    "claim": "A man sleeping in the passenger seat of a car with two dogs in his lap.",
+    "question_id": 525,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/127.jpg",
+    "claim": "A red fire hydrant between two trees in front of a building.",
+    "question_id": 526,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/128.jpg",
+    "claim": "Two red birds sit on top of a blue car.",
+    "question_id": 527,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/129.jpg",
+    "claim": "Three police motorcycles at a crosswalk.",
+    "question_id": 528,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/130.jpg",
+    "claim": "Four airplanes are flying over a grassy area.",
+    "question_id": 529,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/131.jpg",
+    "claim": "Three bikes parked outside a local restaurant establishment",
+    "question_id": 530,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/132.jpg",
+    "claim": "A cat lying on a wooden floor in front of a bookshelf.",
+    "question_id": 531,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/133.jpg",
+    "claim": "Two people sitting on a motorcycle in the street next to a beach.",
+    "question_id": 532,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/134.jpg",
+    "claim": "A white hydrant on a snowy sidewalk in front of a red building.",
+    "question_id": 533,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/135.jpg",
+    "claim": "7 motorcycles are sitting outside a shop in the grass.",
+    "question_id": 534,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/136.jpg",
+    "claim": "A man rides a motorcycle that is decorated with three teddy bears.",
+    "question_id": 535,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/137.jpg",
+    "claim": "A living room and dining room have two tables, one couche, and three chairs.",
+    "question_id": 536,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/138.jpg",
+    "claim": "A storefront with 'Deep Learning' written on it.",
+    "question_id": 537,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/139.jpg",
+    "claim": "A storefront with 'Google Brain Toronto' written on it.",
+    "question_id": 538,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/140.jpg",
+    "claim": "A storefront with 'Google Research Pizza Cafe' written on it.",
+    "question_id": 539,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/141.jpg",
+    "claim": "A red sign that says 'Hello World'.",
+    "question_id": 540,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/142.jpg",
+    "claim": "A blue sign that says 'Diffusion'.",
+    "question_id": 541,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/143.jpg",
+    "claim": "A sign that says 'Text to Image'.",
+    "question_id": 542,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/144.jpg",
+    "claim": "A sign that says 'NeurIPS'.",
+    "question_id": 543,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/145.jpg",
+    "claim": "A sign that says 'Deep Learning'.",
+    "question_id": 544,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/146.jpg",
+    "claim": "A sign that says 'Google Brain Toronto'.",
+    "question_id": 545,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/147.jpg",
+    "claim": "A sign that says 'Google Research Pizza Cafe'.",
+    "question_id": 546,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/148.jpg",
+    "claim": "A blue cake with red 'Happy Birthday' written on it.",
+    "question_id": 547,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/149.jpg",
+    "claim": "A red drink with 'Coca-Cola' written on it",
+    "question_id": 548,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/150.jpg",
+    "claim": "A football player wearing a red uniform with 'DALLAS' written on it.",
+    "question_id": 549,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/151.jpg",
+    "claim": "A yellow van with 'Amazon Prime' written on its side.",
+    "question_id": 550,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/152.jpg",
+    "claim": "A storefront with 'McDonald's' logo and 'Drive-thru Open' sign.",
+    "question_id": 551,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/153.jpg",
+    "claim": "A red bus with 'Apple' written on its side.",
+    "question_id": 552,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/154.jpg",
+    "claim": "A yellow bus with 'School Bus' written on it.",
+    "question_id": 553,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/155.jpg",
+    "claim": "A green mug with 'Fresh Coffee' written on it.",
+    "question_id": 554,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/156.jpg",
+    "claim": "A street sign with 'Main Street' written on it.",
+    "question_id": 555,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/157.jpg",
+    "claim": "A person wearing a black shirt with 'Music Lover' written on it.",
+    "question_id": 556,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/158.jpg",
+    "claim": "A storefront with 'Bookstore' written on the sign.",
+    "question_id": 557,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/159.jpg",
+    "claim": "A bottle with 'Organic Juice' written on it.",
+    "question_id": 558,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/160.jpg",
+    "claim": "A menu board with 'Specials' written on it.",
+    "question_id": 559,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/161.jpg",
+    "claim": "A red cap with 'Team Captain' written on it.",
+    "question_id": 560,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/162.jpg",
+    "claim": "A blackboard with 'Math Equations' written on it.",
+    "question_id": 561,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/163.jpg",
+    "claim": "A badge with 'Security' written on it.",
+    "question_id": 562,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/164.jpg",
+    "claim": "A food truck with 'Taco Tuesday' written on the side.",
+    "question_id": 563,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/165.jpg",
+    "claim": "A signpost with 'Adventure Awaits' written on it.",
+    "question_id": 564,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/166.jpg",
+    "claim": "A desk is very cluttered with wires, a keyboard, and a monitor which reads \"Webconverger\"",
+    "question_id": 565,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/167.jpg",
+    "claim": "Street with many people and a white sign that says STOP HERE ON RED SIGNAL.",
+    "question_id": 566,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/168.jpg",
+    "claim": "A wooden display which reads The Urban Wood Marketplace on it.",
+    "question_id": 567,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/169.jpg",
+    "claim": "A can of Gordon's Gin with the word experienced on top",
+    "question_id": 568,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/170.jpg",
+    "claim": "Cup with some beer inside and the words \"Brasserie\" on it.",
+    "question_id": 569,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/171.jpg",
+    "claim": "A woman in a shirt that says CSO and has a number 10 on the front.",
+    "question_id": 570,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/172.jpg",
+    "claim": "the name zed that is on the wall",
+    "question_id": 571,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/173.jpg",
+    "claim": "A gray building with a large American Apparel sign on it",
+    "question_id": 572,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/174.jpg",
+    "claim": "The outside of a store that is called Tipheret.",
+    "question_id": 573,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/175.jpg",
+    "claim": "the word Eucalyptus that is on a box",
+    "question_id": 574,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/176.jpg",
+    "claim": "A black and white road sign is labeled with a stop command.",
+    "question_id": 575,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/177.jpg",
+    "claim": "Man wearing a white sweater that says \"Soilmec\" on there.",
+    "question_id": 576,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/178.jpg",
+    "claim": "A man holding a little girl whose shirt has the letters 'Phins' visible.",
+    "question_id": 577,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/179.jpg",
+    "claim": "Orange sign says \"Left lane closed\".",
+    "question_id": 578,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/180.jpg",
+    "claim": "Black cell phone that has the word PALM on the back.",
+    "question_id": 579,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/181.jpg",
+    "claim": "a microwave oven with a teddy bear inside with a sign saying help",
+    "question_id": 580,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/182.jpg",
+    "claim": "Sign on a wall which says \"Rosehill\" on it.",
+    "question_id": 581,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/183.jpg",
+    "claim": "Book shelf with a white book that says \"Gregory\" on it.",
+    "question_id": 582,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/184.jpg",
+    "claim": "Green tractors next to a red tractor with the number 700 on it.",
+    "question_id": 583,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/185.jpg",
+    "claim": "Three Books on a shelf including one titled El Arte De Cocinar.",
+    "question_id": 584,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/186.jpg",
+    "claim": "the word Bubba Gump is on a sign",
+    "question_id": 585,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/187.jpg",
+    "claim": "A brown bottle that says Dr.Laffers on there",
+    "question_id": 586,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/188.jpg",
+    "claim": "the outside of a building with a sign that says 'sahara 919 n. stone' on it",
+    "question_id": 587,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/189.jpg",
+    "claim": "small smartphone that says the current time, which is 17:23.",
+    "question_id": 588,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/190.jpg",
+    "claim": "the name alchemist is on the soda can",
+    "question_id": 589,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/191.jpg",
+    "claim": "A boat with a red flag with white letters and numbers WM4-980s",
+    "question_id": 590,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/192.jpg",
+    "claim": "A person is holding a coin that says Letzebuerg.",
+    "question_id": 591,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/193.jpg",
+    "claim": "A street with a line of cars with a yellow cab in front of the line with an advertisement on top of the cab the says Rectify.",
+    "question_id": 592,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/194.jpg",
+    "claim": "A white sign says Please Do Not Leave Trash From Day Use Area In Bathrooms.",
+    "question_id": 593,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/195.jpg",
+    "claim": "A sign for Ye Olde George Inne can be seen on a white building.",
+    "question_id": 594,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/196.jpg",
+    "claim": "A gray car has a license plate that reads JIBA.",
+    "question_id": 595,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/197.jpg",
+    "claim": "A book that says Field Notes is on a wooden table.",
+    "question_id": 596,
+    "label": "non-hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/198.jpg",
+    "claim": "A sign on the side of a table has the words Stroboscopie.",
+    "question_id": 597,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/199.jpg",
+    "claim": "An Ozeri kitchen scale shows on the display 1.8",
+    "question_id": 598,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/200.jpg",
+    "claim": "A police car reads \"POLICIA MILITAR\" across the back.",
+    "question_id": 599,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/201.jpg",
+    "claim": "The side of a car with the Volkswagen logo reads 'Travel Around the World'. A man wearing glasses and a dark coat stands beside it.",
+    "question_id": 600,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/202.jpg",
+    "claim": "A blue basketball jersey with the Golden State Warriors logo and 'Stephen Curry' written on it.",
+    "question_id": 601,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/203.jpg",
+    "claim": "Give me a red car with Toyota logo.",
+    "question_id": 602,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/204.jpg",
+    "claim": "Give me a blue car with Tesla logo.",
+    "question_id": 603,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/205.jpg",
+    "claim": "show me a phone with Huawei logo.",
+    "question_id": 604,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/206.jpg",
+    "claim": "show me a phone with Samsung logo.",
+    "question_id": 605,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/207.jpg",
+    "claim": "Give me a laptop with the Lenovo logo.",
+    "question_id": 606,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/208.jpg",
+    "claim": "Give me a refrigerator with the Gree logo.",
+    "question_id": 607,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/209.jpg",
+    "claim": "Give me an air conditioner with the Haier logo.",
+    "question_id": 608,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/210.jpg",
+    "claim": "Give me a shaver with the Philips logo.",
+    "question_id": 609,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/211.jpg",
+    "claim": "Give me a picture about \"夫妻肺片\"",
+    "question_id": 610,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/212.jpg",
+    "claim": "Give me a picture about \"狮子头\"",
+    "question_id": 611,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/213.jpg",
+    "claim": "Give me a picture about \"驴肉火烧\".",
+    "question_id": 612,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/214.jpg",
+    "claim": "Give me a picture about \"叫花鸡\".",
+    "question_id": 613,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/215.jpg",
+    "claim": "Give me a picture about \"鱼香肉丝\".",
+    "question_id": 614,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/216.jpg",
+    "claim": "Give me a picture about \"松鼠鱼\".",
+    "question_id": 615,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/217.jpg",
+    "claim": "Give me a picture about \"口水鸡\".",
+    "question_id": 616,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/218.jpg",
+    "claim": "Give me a picture about \"蚂蚁上树\".",
+    "question_id": 617,
+    "label": "hallucination"
+  },
+  {
+    "image_path": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/text-to-image/219.jpg",
+    "claim": "Give me a picture about \"毛血旺\".",
+    "question_id": 618,
+    "label": "hallucination"
+  }
+]

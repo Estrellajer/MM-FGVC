@@ -1,0 +1,20 @@
+defaults:
+  - model: qwen3_vl
+  - dataset: natural_ret_sample
+  - method: zero_shot
+  - evaluator: auto
+  - _self_
+
+run:
+  seed: 42
+  output_dir: outputs/eval
+  run_name: null
+  save_predictions: true
+  progress_bar: true
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false

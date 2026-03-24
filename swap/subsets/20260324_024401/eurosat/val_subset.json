@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1048.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1048.jpg"
+    ],
+    "question": "What type of remote sensing image does the given image belong to?\nA. Annual Crop Land B. Pasture Land C. Permanent Crop Land D. Sea or Lake",
+    "label": "Annual Crop Land",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "class_id": 0,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_2342.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Forest/Forest_2342.jpg"
+    ],
+    "question": "What type of remote sensing image does the given image belong to?\nA. Industrial Buildings B. Pasture Land C. Highway or Road D. Forest",
+    "label": "Forest",
+    "question_id": 900,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_1880.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Eurosat/2750/HerbaceousVegetation/HerbaceousVegetation_1880.jpg"
+    ],
+    "question": "What type of remote sensing image does the given image belong to?\nA. Herbaceous Vegetation Land B. Permanent Crop Land C. Highway or Road D. Forest",
+    "label": "Herbaceous Vegetation Land",
+    "question_id": 1800,
+    "split": null,
+    "extra": {
+      "class_id": 2,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_823.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Eurosat/2750/Highway/Highway_823.jpg"
+    ],
+    "question": "What type of remote sensing image does the given image belong to?\nA. Permanent Crop Land B. Industrial Buildings C. Sea or Lake D. Highway or Road",
+    "label": "Highway or Road",
+    "question_id": 2700,
+    "split": null,
+    "extra": {
+      "class_id": 3,
+      "answer": "D"
+    }
+  }
+]

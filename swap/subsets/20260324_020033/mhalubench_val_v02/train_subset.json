@@ -1,0 +1,46 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b4e93b744f962240.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/b4e93b744f962240.jpg"
+    ],
+    "question": "The plane number is 3-DW-M",
+    "label": "hallucination",
+    "question_id": 0,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d83045236b311d57.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/d83045236b311d57.jpg"
+    ],
+    "question": "The yellow word bubble says \"Mixtape\"",
+    "label": "hallucination",
+    "question_id": 1,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e7d0c02151b497ae.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/e7d0c02151b497ae.jpg"
+    ],
+    "question": "This can is Kronenbourg 1664 beer",
+    "label": "hallucination",
+    "question_id": 2,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ed956824a15da096.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ed956824a15da096.jpg"
+    ],
+    "question": "The clock shows 10:00",
+    "label": "hallucination",
+    "question_id": 3,
+    "split": null,
+    "extra": {}
+  }
+]

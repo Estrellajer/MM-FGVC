@@ -1,0 +1,5 @@
+name: naturalbench_vqa
+default_evaluator: raw
+train_path: dataset/converted_from_data/naturalbench/train.jsonl
+val_path: dataset/converted_from_data/naturalbench/train.jsonl
+

@@ -1,0 +1,54 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_1_1.png"
+    ],
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(B)",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Depth"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_2_1.png"
+    ],
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(B)",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Depth"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_3_1.png"
+    ],
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(B)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Depth"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Depth/val/val_Relative_Depth_4_1.png"
+    ],
+    "question": "<image>\nWhich point is closer to the camera? Select from the following choices. (A) A is closer (B) B is closer",
+    "label": "(A)",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Depth"
+    }
+  }
+]

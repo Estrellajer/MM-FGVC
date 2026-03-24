@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:15,  5.39it/s]Loading weights:   0%|          | 2/730 [00:00<02:35,  4.69it/s]Loading weights:   1%|          | 4/730 [00:00<02:19,  5.22it/s]Loading weights:   7%|▋         | 48/730 [00:01<00:24, 28.13it/s]Loading weights:  27%|██▋       | 198/730 [00:02<00:03, 144.16it/s]Loading weights:  34%|███▍      | 247/730 [00:02<00:03, 135.39it/s]Loading weights:  39%|███▉      | 283/730 [00:02<00:03, 133.42it/s]Loading weights:  43%|████▎     | 312/730 [00:03<00:03, 125.84it/s]Loading weights:  46%|████▌     | 335/730 [00:03<00:02, 136.29it/s]Loading weights:  65%|██████▍   | 473/730 [00:03<00:00, 306.66it/s]Loading weights:  85%|████████▌ | 623/730 [00:03<00:00, 502.40it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 209.32it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.5
+  correct: 2.0
+  total: 4.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033/sav_vlguard_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_020033/sav_vlguard_qwen2_vl_subset.predictions.jsonl
+

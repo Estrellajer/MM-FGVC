@@ -1,0 +1,30 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Large archives / dataset packages
+*.7z
+*.bz2
+*.gz
+*.rar
+*.tar
+*.tar.gz
+*.tar.xz
+*.tgz
+*.xz
+*.zip
+*.zst
+*.pdf
+# Local data / image sets / generated artifacts
+/Data/
+/models/
+/outputs/
+/train2014/
+/train_val_images/

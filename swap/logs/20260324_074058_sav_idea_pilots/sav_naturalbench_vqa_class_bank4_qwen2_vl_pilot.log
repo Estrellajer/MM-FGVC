@@ -1,0 +1,11 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:40,  7.24it/s]Loading weights:   0%|          | 2/730 [00:00<02:00,  6.06it/s]Loading weights:   2%|▏         | 15/730 [00:00<00:15, 46.45it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:09, 72.71it/s]Loading weights:   6%|▌         | 41/730 [00:00<00:10, 66.10it/s]Loading weights:   9%|▉         | 66/730 [00:00<00:06, 96.44it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 139.29it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:04, 141.57it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:03, 151.38it/s]Loading weights:  21%|██        | 152/730 [00:01<00:04, 121.26it/s]Loading weights:  24%|██▍       | 177/730 [00:01<00:03, 149.87it/s]Loading weights:  27%|██▋       | 194/730 [00:01<00:03, 148.91it/s]Loading weights:  29%|██▉       | 211/730 [00:01<00:04, 128.90it/s]Loading weights:  31%|███       | 226/730 [00:01<00:03, 132.06it/s]Loading weights:  33%|███▎      | 241/730 [00:02<00:03, 136.20it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:03, 126.75it/s]Loading weights:  37%|███▋      | 270/730 [00:02<00:03, 125.01it/s]Loading weights:  40%|████      | 292/730 [00:02<00:03, 141.58it/s]Loading weights:  42%|████▏     | 307/730 [00:02<00:03, 129.13it/s]Loading weights:  44%|████▍     | 324/730 [00:02<00:02, 138.97it/s]Loading weights:  49%|████▊     | 355/730 [00:02<00:02, 182.80it/s]Loading weights:  69%|██████▊   | 501/730 [00:02<00:00, 527.31it/s]Loading weights:  89%|████████▊ | 647/730 [00:03<00:00, 785.43it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 236.97it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.675
+  correct: 54.0
+  total: 80.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_074058_sav_idea_pilots/sav_naturalbench_vqa_class_bank4_qwen2_vl_pilot.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_074058_sav_idea_pilots/sav_naturalbench_vqa_class_bank4_qwen2_vl_pilot.predictions.jsonl
+

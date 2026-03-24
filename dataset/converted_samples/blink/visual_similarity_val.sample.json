@@ -1,0 +1,32 @@
+[
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 0,
+    "sub_task": "Visual Similarity",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_1_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_1_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_1_3.png",
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 1,
+    "sub_task": "Visual Similarity",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_2_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_2_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_2_3.png",
+    "image_4": null
+  },
+  {
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 2,
+    "sub_task": "Visual Similarity",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_1.png",
+    "image_2": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_2.png",
+    "image_3": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_3.png",
+    "image_4": null
+  }
+]

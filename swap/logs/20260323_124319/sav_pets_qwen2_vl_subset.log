@@ -1,0 +1,11 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:03,  5.92it/s]Loading weights:   0%|          | 2/730 [00:00<02:20,  5.17it/s]Loading weights:   2%|▏         | 11/730 [00:00<00:29, 24.73it/s]Loading weights:   5%|▍         | 36/730 [00:00<00:08, 81.94it/s]Loading weights:   7%|▋         | 52/730 [00:00<00:07, 96.65it/s]Loading weights:   9%|▉         | 65/730 [00:00<00:06, 98.54it/s]Loading weights:  11%|█         | 78/730 [00:01<00:06, 99.87it/s]Loading weights:  13%|█▎        | 96/730 [00:01<00:05, 118.87it/s]Loading weights:  15%|█▌        | 112/730 [00:01<00:04, 124.73it/s]Loading weights:  17%|█▋        | 126/730 [00:01<00:05, 112.74it/s]Loading weights:  20%|██        | 146/730 [00:01<00:05, 115.12it/s]Loading weights:  22%|██▏       | 162/730 [00:01<00:04, 125.17it/s]Loading weights:  25%|██▌       | 184/730 [00:01<00:04, 126.22it/s]Loading weights:  28%|██▊       | 208/730 [00:01<00:03, 145.54it/s]Loading weights:  31%|███       | 224/730 [00:02<00:04, 119.51it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:03, 136.79it/s]Loading weights:  36%|███▌      | 261/730 [00:02<00:03, 138.47it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 145.50it/s]Loading weights:  41%|████      | 296/730 [00:02<00:03, 131.80it/s]Loading weights:  43%|████▎     | 313/730 [00:02<00:03, 120.04it/s]Loading weights:  47%|████▋     | 345/730 [00:02<00:02, 165.16it/s]Loading weights:  68%|██████▊   | 497/730 [00:03<00:00, 491.30it/s]Loading weights:  89%|████████▉ | 652/730 [00:03<00:00, 763.08it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 227.68it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 3.0
+  total: 3.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260323_124319/sav_pets_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260323_124319/sav_pets_qwen2_vl_subset.predictions.jsonl
+

@@ -1,0 +1,5 @@
+name: naturalbench_ret
+default_evaluator: naturalbench_group
+train_path: ref-data/naturalbench_ret_train.jsonl
+val_path: ref-data/naturalbench_ret_test.jsonl
+

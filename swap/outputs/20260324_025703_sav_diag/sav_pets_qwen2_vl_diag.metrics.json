@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "pets",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 1.0,
+    "correct": 70.0,
+    "total": 70.0
+  }
+}

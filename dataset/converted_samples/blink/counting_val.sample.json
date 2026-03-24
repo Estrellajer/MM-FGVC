@@ -1,0 +1,32 @@
+[
+  {
+    "question": "<image>\nHow many blue floats are there? Select from the following choices. (A) 0 (B) 3 (C) 2 (D) 1",
+    "label": "(D)",
+    "question_id": 0,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_1_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nHow many black toilets are there? Select from the following choices. (A) 3 (B) 1 (C) 2 (D) 0",
+    "label": "(D)",
+    "question_id": 1,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_2_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nHow many tvs are hung up on the wall? Select from the following choices. (A) 1 (B) 0 (C) 2 (D) 3",
+    "label": "(B)",
+    "question_id": 2,
+    "sub_task": "Counting",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_3_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  }
+]

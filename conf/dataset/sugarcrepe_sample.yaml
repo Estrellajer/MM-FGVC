@@ -1,0 +1,4 @@
+name: sugarcrepe
+default_evaluator: pair
+train_path: dataset/converted_samples/sugarcrepe/sugarcrepe_all.sample.jsonl
+val_path: dataset/converted_samples/sugarcrepe/sugarcrepe_all.sample.jsonl

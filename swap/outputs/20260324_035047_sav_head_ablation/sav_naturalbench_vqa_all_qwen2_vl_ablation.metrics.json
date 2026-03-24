@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "naturalbench_vqa",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.8125,
+    "correct": 65.0,
+    "total": 80.0
+  }
+}

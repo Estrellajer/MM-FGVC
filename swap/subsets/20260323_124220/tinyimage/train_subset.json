@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/train/n02124075/images/n02124075_0.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/train/n02124075/images/n02124075_0.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. volleyball B. plunger C. teddy D. binoculars E. birdhouse F. jinrikisha G. Egyptian cat H. suspension bridge I. turnstile J. Yorkshire terrier K. bikini L. water jug M. beach wagon N. Arabian camel O. chimpanzee P. monarch",
+    "label": "Egyptian cat",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "wnid": "n02124075",
+      "answer": "G"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/train/n02124075/images/n02124075_1.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/train/n02124075/images/n02124075_1.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. Egyptian cat B. lampshade C. cardigan D. tractor E. jinrikisha F. comic book G. pomegranate H. rugby ball I. cauliflower J. gasmask K. refrigerator L. guinea pig M. cannon N. sports car O. golden retriever P. butcher shop",
+    "label": "Egyptian cat",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "wnid": "n02124075",
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/train/n02124075/images/n02124075_10.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/train/n02124075/images/n02124075_10.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. Persian cat B. Egyptian cat C. cardigan D. projectile E. go-kart F. sock G. nail H. trilobite I. bullfrog J. lifeboat K. hog L. gasmask M. gazelle N. coral reef O. centipede P. dugong",
+    "label": "Egyptian cat",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "wnid": "n02124075",
+      "answer": "B"
+    }
+  }
+]

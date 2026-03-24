@@ -1,0 +1,12 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:06,  5.74it/s]Loading weights:   0%|          | 2/730 [00:00<02:25,  5.01it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:17, 41.91it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:11, 62.35it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:09, 75.47it/s]Loading weights:   8%|▊         | 56/730 [00:00<00:07, 89.84it/s]Loading weights:  10%|█         | 76/730 [00:01<00:05, 111.64it/s]Loading weights:  12%|█▏        | 89/730 [00:01<00:05, 109.70it/s]Loading weights:  14%|█▍        | 101/730 [00:01<00:07, 87.56it/s]Loading weights:  18%|█▊        | 135/730 [00:01<00:06, 92.06it/s]Loading weights:  25%|██▍       | 182/730 [00:01<00:04, 121.65it/s]Loading weights:  30%|███       | 220/730 [00:02<00:03, 158.65it/s]Loading weights:  33%|███▎      | 239/730 [00:02<00:03, 142.85it/s]Loading weights:  35%|███▌      | 257/730 [00:02<00:03, 144.53it/s]Loading weights:  37%|███▋      | 273/730 [00:02<00:03, 141.76it/s]Loading weights:  39%|███▉      | 288/730 [00:02<00:03, 143.31it/s]Loading weights:  42%|████▏     | 304/730 [00:02<00:03, 124.02it/s]Loading weights:  45%|████▍     | 328/730 [00:02<00:03, 128.19it/s]Loading weights:  65%|██████▌   | 477/730 [00:03<00:00, 417.40it/s]Loading weights:  86%|████████▌ | 627/730 [00:03<00:00, 669.25it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 225.57it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 3.0
+  total: 3.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260323_124242/zero_shot_pets_qwen2_vl_subset.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260323_124242/zero_shot_pets_qwen2_vl_subset.predictions.jsonl
+

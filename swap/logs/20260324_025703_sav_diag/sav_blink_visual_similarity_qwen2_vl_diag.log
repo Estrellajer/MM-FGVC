@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:47,  6.80it/s]Loading weights:   0%|          | 2/730 [00:00<02:02,  5.93it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 49.08it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:09, 71.05it/s]Loading weights:   6%|▌         | 41/730 [00:00<00:10, 65.44it/s]Loading weights:  10%|█         | 76/730 [00:00<00:04, 131.96it/s]Loading weights:  13%|█▎        | 92/730 [00:01<00:05, 107.76it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:05, 114.23it/s]Loading weights:  20%|██        | 148/730 [00:01<00:03, 160.64it/s]Loading weights:  23%|██▎       | 167/730 [00:01<00:03, 151.41it/s]Loading weights:  25%|██▌       | 184/730 [00:01<00:03, 148.69it/s]Loading weights:  27%|██▋       | 200/730 [00:01<00:03, 136.15it/s]Loading weights:  29%|██▉       | 215/730 [00:01<00:04, 122.71it/s]Loading weights:  33%|███▎      | 244/730 [00:02<00:03, 153.96it/s]Loading weights:  36%|███▌      | 261/730 [00:02<00:03, 140.55it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 148.74it/s]Loading weights:  41%|████      | 296/730 [00:02<00:03, 138.05it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 145.90it/s]Loading weights:  45%|████▌     | 332/730 [00:02<00:02, 137.34it/s]Loading weights:  65%|██████▌   | 475/730 [00:02<00:00, 454.44it/s]Loading weights:  85%|████████▌ | 623/730 [00:02<00:00, 718.85it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 244.42it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 12.0
+  total: 20.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_025703_sav_diag/sav_blink_visual_similarity_qwen2_vl_diag.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_025703_sav_diag/sav_blink_visual_similarity_qwen2_vl_diag.predictions.jsonl
+

@@ -1,0 +1,4 @@
+name: natural_ret
+default_evaluator: naturalbench_group
+train_path: dataset/converted_samples/naturalbench/train.sample.jsonl
+val_path: dataset/converted_samples/naturalbench/train.sample.jsonl

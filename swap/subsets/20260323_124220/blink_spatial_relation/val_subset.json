@@ -1,0 +1,54 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_1_1.png"
+    ],
+    "question": "<image>\nIs the zebra facing the person? Select from the following choices. (A) yes (B) no",
+    "label": "HIDDEN",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_2_1.png"
+    ],
+    "question": "<image>\nIs the microwave in front of the person? Select from the following choices. (A) yes (B) no",
+    "label": "HIDDEN",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_3_1.png"
+    ],
+    "question": "<image>\nIs the zebra behind the person? Select from the following choices. (A) yes (B) no",
+    "label": "HIDDEN",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/test/test_Spatial_Relation_4_1.png"
+    ],
+    "question": "<image>\nIs the truck at the left side of the bed? Select from the following choices. (A) yes (B) no",
+    "label": "HIDDEN",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Spatial Relation"
+    }
+  }
+]

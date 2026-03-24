@@ -1,0 +1,13 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:47,  4.36it/s]Loading weights:   0%|          | 2/730 [00:00<03:04,  3.94it/s]Loading weights:   1%|          | 4/730 [00:00<02:24,  5.03it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:09, 71.31it/s]Loading weights:   8%|▊         | 55/730 [00:01<00:08, 77.51it/s]Loading weights:   9%|▉         | 67/730 [00:01<00:07, 85.76it/s]Loading weights:  11%|█         | 79/730 [00:01<00:07, 89.53it/s]Loading weights:  12%|█▏        | 91/730 [00:01<00:08, 77.72it/s]Loading weights:  15%|█▍        | 109/730 [00:01<00:07, 86.82it/s]Loading weights:  17%|█▋        | 126/730 [00:01<00:06, 100.59it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:05, 102.06it/s]Loading weights:  21%|██        | 150/730 [00:02<00:05, 99.86it/s] Loading weights:  22%|██▏       | 161/730 [00:02<00:05, 101.73it/s]Loading weights:  24%|██▎       | 173/730 [00:02<00:14, 39.36it/s] Loading weights:  35%|███▌      | 256/730 [00:03<00:04, 115.75it/s]Loading weights:  38%|███▊      | 281/730 [00:03<00:03, 130.44it/s]Loading weights:  41%|████      | 300/730 [00:03<00:03, 129.96it/s]Loading weights:  43%|████▎     | 317/730 [00:03<00:03, 119.76it/s]Loading weights:  46%|████▌     | 336/730 [00:03<00:02, 131.81it/s]Loading weights:  63%|██████▎   | 463/730 [00:03<00:00, 358.00it/s]Loading weights:  81%|████████▏ | 594/730 [00:03<00:00, 568.65it/s]Loading weights:  98%|█████████▊| 717/730 [00:03<00:00, 726.53it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 181.74it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 60.0
+  total: 100.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_035047_sav_head_ablation/sav_eurosat_all_qwen2_vl_ablation.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_035047_sav_head_ablation/sav_eurosat_all_qwen2_vl_ablation.predictions.jsonl
+

@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_201.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_201.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Abyssinian B. staffordshire bull terrier C. newfoundland D. german shorthaired",
+    "label": "Abyssinian",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/american_bulldog_203.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/american_bulldog_203.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Bengal B. British Shorthair C. american bulldog D. Egyptian Mau",
+    "label": "american bulldog",
+    "question_id": 98,
+    "split": null,
+    "extra": {
+      "class_id": 2,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/american_pit_bull_terrier_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/american_pit_bull_terrier_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. great pyrenees B. american pit bull terrier C. chihuahua D. miniature pinscher",
+    "label": "american pit bull terrier",
+    "question_id": 198,
+    "split": null,
+    "extra": {
+      "class_id": 3,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/basset_hound_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/basset_hound_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. basset hound B. leonberger C. Birman D. american bulldog",
+    "label": "basset hound",
+    "question_id": 298,
+    "split": null,
+    "extra": {
+      "class_id": 4,
+      "answer": "A"
+    }
+  }
+]

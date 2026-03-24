@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "vlguard",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.825,
+    "correct": 66.0,
+    "total": 80.0
+  }
+}

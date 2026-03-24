@@ -1,0 +1,11 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:42,  7.08it/s]Loading weights:   0%|          | 2/730 [00:00<02:03,  5.90it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 48.93it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:13, 52.70it/s]Loading weights:   7%|▋         | 54/730 [00:00<00:06, 100.24it/s]Loading weights:  10%|█         | 76/730 [00:00<00:05, 127.23it/s]Loading weights:  13%|█▎        | 92/730 [00:01<00:05, 125.77it/s]Loading weights:  15%|█▍        | 107/730 [00:01<00:05, 110.90it/s]Loading weights:  18%|█▊        | 134/730 [00:01<00:04, 138.17it/s]Loading weights:  21%|██        | 150/730 [00:01<00:04, 138.26it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:03, 152.77it/s]Loading weights:  26%|██▌       | 188/730 [00:01<00:03, 142.46it/s]Loading weights:  28%|██▊       | 204/730 [00:01<00:04, 123.16it/s]Loading weights:  32%|███▏      | 232/730 [00:01<00:03, 155.70it/s]Loading weights:  34%|███▍      | 249/730 [00:02<00:03, 145.42it/s]Loading weights:  37%|███▋      | 268/730 [00:02<00:03, 149.81it/s]Loading weights:  39%|███▉      | 284/730 [00:02<00:03, 136.11it/s]Loading weights:  42%|████▏     | 304/730 [00:02<00:02, 146.10it/s]Loading weights:  44%|████▍     | 320/730 [00:02<00:03, 112.54it/s]Loading weights:  68%|██████▊   | 497/730 [00:02<00:00, 462.20it/s]Loading weights:  90%|████████▉ | 655/730 [00:02<00:00, 719.34it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 244.49it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 24.0
+  total: 40.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_074058_sav_idea_pilots/sav_blink_art_style_class_bank4_qwen2_vl_pilot.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_074058_sav_idea_pilots/sav_blink_art_style_class_bank4_qwen2_vl_pilot.predictions.jsonl
+

@@ -1,0 +1,9 @@
+name: sav
+fit_on_train: true
+params:
+  num_heads: 20
+  selection_strategy: topk
+  selection_seed: 42
+  prototype_mode: mean
+  class_bank_size: 4
+  progress_bar: true

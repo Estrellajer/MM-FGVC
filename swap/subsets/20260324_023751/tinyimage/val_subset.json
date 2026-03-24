@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_0.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_0.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. vestment B. pizza C. hog D. go-kart E. standard poodle F. German shepherd G. sea slug H. scoreboard I. sunglasses J. bannister K. parking meter L. basketball M. lion N. snail O. maypole P. slug",
+    "label": "go-kart",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "wnid": "n03444034",
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_1.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. tarantula B. American lobster C. picket fence D. American alligator E. sea slug F. orangutan G. European fire salamander H. guacamole I. albatross J. pretzel K. remote control L. snorkel M. cardigan N. reel O. potpie P. lakeside",
+    "label": "reel",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "wnid": "n04067472",
+      "answer": "N"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_2.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_2.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. seashore B. Labrador retriever C. mushroom D. organ E. bikini F. cardigan G. thatch H. space heater I. dumbbell J. tailed frog K. candle L. cougar M. refrigerator N. coral reef O. desk P. chain",
+    "label": "refrigerator",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "wnid": "n04070727",
+      "answer": "M"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_3.JPEG",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/TinyImage/tiny-imagenet-200/val/images/val_3.JPEG"
+    ],
+    "question": "What object category is shown in the image?\nA. Christmas stocking B. sewing machine C. brown bear D. black widow E. spiny lobster F. bathtub G. dragonfly H. barn I. cockroach J. organ K. police van L. moving van M. bison N. punching bag O. albatross P. pizza",
+    "label": "bathtub",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "wnid": "n02808440",
+      "answer": "F"
+    }
+  }
+]

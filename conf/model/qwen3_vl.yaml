@@ -1,0 +1,7 @@
+name: qwen3_vl
+model_root: models/Qwen3-VL-8B-Instruct
+processor_args: {}
+model_args:
+  dtype: auto
+  device_map: auto
+common_args: {}

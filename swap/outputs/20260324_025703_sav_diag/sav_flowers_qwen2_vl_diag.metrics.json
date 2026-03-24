@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "flowers",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.9705882352941176,
+    "correct": 99.0,
+    "total": 102.0
+  }
+}

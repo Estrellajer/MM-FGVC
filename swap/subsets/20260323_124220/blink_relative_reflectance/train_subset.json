@@ -1,0 +1,54 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_1_1.png"
+    ],
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(C)",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Reflectance"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_2_1.png"
+    ],
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(B)",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Reflectance"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_3_1.png"
+    ],
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(C)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Reflectance"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Relative_Reflectance/val/val_Relative_Reflectance_4_1.png"
+    ],
+    "question": "<image>\nConsider the surface color (color without shading) of the two points in the image. Which one is darker, or the color is about the same? Select from the following choices. (A) A is darker (B) B is darker (C) About the same",
+    "label": "(A)",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Relative Reflectance"
+    }
+  }
+]

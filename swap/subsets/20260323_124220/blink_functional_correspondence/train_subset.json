@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_1_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_1_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_1_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(A)",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "sub_task": "Functional Correspondence"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_2_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_2_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_2_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(C)",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "sub_task": "Functional Correspondence"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_3_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_3_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(B)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Functional Correspondence"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_4_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_4_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Functional_Correspondence/val/val_Functional_Correspondence_4_2.png"
+    ],
+    "question": "<image>\n<image>\nWhich point is corresponding to the reference point? Select from the following choices. (A) Point A (B) Point B (C) Point C (D) Point D",
+    "label": "(C)",
+    "question_id": 3,
+    "split": null,
+    "extra": {
+      "sub_task": "Functional Correspondence"
+    }
+  }
+]

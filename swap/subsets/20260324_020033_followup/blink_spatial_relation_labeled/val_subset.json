@@ -1,0 +1,42 @@
+[
+  {
+    "question": "<image>\nIs the person on top of the bed? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 4,
+    "sub_task": "Spatial Relation",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_5_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nIs the bicycle on the bus? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 5,
+    "sub_task": "Spatial Relation",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_6_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nIs the person next to the banana? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 6,
+    "sub_task": "Spatial Relation",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_7_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  },
+  {
+    "question": "<image>\nIs the person touching the kite? Select from the following choices. (A) yes (B) no",
+    "label": "(A)",
+    "question_id": 7,
+    "sub_task": "Spatial Relation",
+    "image_1": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Spatial_Relation/val/val_Spatial_Relation_8_1.png",
+    "image_2": null,
+    "image_3": null,
+    "image_4": null
+  }
+]

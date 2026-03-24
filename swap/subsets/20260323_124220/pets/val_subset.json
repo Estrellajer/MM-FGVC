@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_201.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_201.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Abyssinian B. staffordshire bull terrier C. newfoundland D. german shorthaired",
+    "label": "Abyssinian",
+    "question_id": 0,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_202.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_202.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Ragdoll B. english cocker spaniel C. Abyssinian D. wheaten terrier",
+    "label": "Abyssinian",
+    "question_id": 1,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_204.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Abyssinian_204.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. newfoundland B. chihuahua C. Abyssinian D. shiba inu",
+    "label": "Abyssinian",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "C"
+    }
+  }
+]

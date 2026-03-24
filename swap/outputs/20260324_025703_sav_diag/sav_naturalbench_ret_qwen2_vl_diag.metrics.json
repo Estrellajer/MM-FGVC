@@ -1,0 +1,16 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "naturalbench_ret",
+  "method": "sav",
+  "evaluator": "naturalbench_group",
+  "metrics": {
+    "metric": "naturalbench_group",
+    "q_acc": 0.9,
+    "i_acc": 0.9,
+    "g_acc": 0.8,
+    "raw_acc": 0.95,
+    "group_total": 10.0,
+    "used_samples": 40.0,
+    "dropped_samples": 0.0
+  }
+}

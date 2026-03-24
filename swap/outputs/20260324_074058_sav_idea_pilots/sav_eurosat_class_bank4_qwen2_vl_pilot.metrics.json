@@ -1,0 +1,12 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "eurosat",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.57,
+    "correct": 57.0,
+    "total": 100.0
+  }
+}
