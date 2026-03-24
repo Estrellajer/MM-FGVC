@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from typing import Dict, List, Sequence, Tuple
 
 import torch
+import torch.nn.functional as F
 from PIL import Image
 from tqdm import tqdm
 
@@ -204,6 +205,8 @@ class STVMethod(MethodBase):
         selection_eval_size: int = 16,
         selection_lr: float = 0.1,
         final_selection_trials: int = 8,
+        head_selection_mode: str = "sensitivity",
+        cluster_selection_mode: str = "rl",
         support_strategy: str = "balanced",
         support_seed: int = 42,
         max_new_tokens: int = 16,
@@ -224,6 +227,8 @@ class STVMethod(MethodBase):
         self.selection_eval_size = int(selection_eval_size)
         self.selection_lr = float(selection_lr)
         self.final_selection_trials = int(final_selection_trials)
+        self.head_selection_mode = str(head_selection_mode).strip().lower()
+        self.cluster_selection_mode = str(cluster_selection_mode).strip().lower()
         self.support_strategy = str(support_strategy).strip().lower()
         self.support_seed = int(support_seed)
         self.max_new_tokens = int(max_new_tokens)
@@ -241,6 +246,10 @@ class STVMethod(MethodBase):
             raise ValueError("STV num_clusters must be positive")
         if self.selection_train_size <= 0:
             raise ValueError("STV selection_train_size must be positive")
+        if self.head_selection_mode not in {"sav_accuracy", "sensitivity"}:
+            raise ValueError("STV head_selection_mode must be 'sensitivity' or 'sav_accuracy'")
+        if self.cluster_selection_mode not in {"query_adaptive", "rl"}:
+            raise ValueError("STV cluster_selection_mode must be 'rl' or 'query_adaptive'")
 
         self.model_family = self._infer_model_family()
         self.attn_module_names = self._infer_attention_module_names()
@@ -250,12 +259,18 @@ class STVMethod(MethodBase):
         self.n_layers = len(self.hook_controller.layer_metas)
         self.n_heads = first_meta.num_heads
         self.head_dim = first_meta.head_dim
+        self.all_heads = [
+            (layer_idx, head_idx, -1)
+            for layer_idx in range(self.n_layers)
+            for head_idx in range(self.n_heads)
+        ]
 
         self._label_to_indices: Dict[str, List[int]] = {}
         self.avg_diff: torch.Tensor | None = None
         self.intervention_locations: List[Tuple[int, int, int]] = []
         self.cluster_centers: torch.Tensor | None = None
         self.avg_activations: torch.Tensor | None = None
+        self.last_query_cluster_index: int | None = None
         self._fitted = False
 
     def _infer_model_family(self) -> str:
@@ -472,16 +487,66 @@ class STVMethod(MethodBase):
 
     def _select_topk_locations(self, avg_diff: torch.Tensor) -> List[Tuple[int, int, int]]:
         impact = avg_diff.norm(dim=-1).squeeze(-1)
-        flat = impact.flatten()
+        return self._select_topk_locations_from_scores(impact)
+
+    def _select_topk_locations_from_scores(self, scores: torch.Tensor) -> List[Tuple[int, int, int]]:
+        flat = scores.flatten()
         k = min(self.topk, int(flat.numel()))
         topk_indices = torch.topk(flat, k=k).indices.tolist()
 
         intervention_locations: List[Tuple[int, int, int]] = []
         for index in topk_indices:
-            layer_idx = int(index) // impact.shape[1]
-            head_idx = int(index) % impact.shape[1]
+            layer_idx = int(index) // scores.shape[1]
+            head_idx = int(index) % scores.shape[1]
             intervention_locations.append((layer_idx, head_idx, -1))
         return intervention_locations
+
+    def _collect_query_only_head_activations(
+        self,
+        train_data: Sequence[Dict],
+    ) -> List[Tuple[str, torch.Tensor]]:
+        collected: List[Tuple[str, torch.Tensor]] = []
+        iterator = self._iter_with_progress(train_data, desc="STV SAV activations")
+        for item in iterator:
+            activations = self._capture_prompt_activations(item, demos=[]).squeeze(2).to(device="cpu", dtype=torch.float32)
+            collected.append((str(item["label"]), activations))
+        return collected
+
+    def _select_topk_locations_sav_accuracy(self, train_data: Sequence[Dict]) -> List[Tuple[int, int, int]]:
+        collected = self._collect_query_only_head_activations(train_data)
+        if not collected:
+            raise RuntimeError("STV SAV-style head selection requires non-empty train data")
+
+        str_to_int: Dict[str, int] = {}
+        int_to_str: Dict[int, str] = {}
+        class_sums: Dict[str, torch.Tensor] = {}
+        class_counts: Dict[str, int] = {}
+
+        for label, activations in collected:
+            if label not in str_to_int:
+                label_idx = len(str_to_int)
+                str_to_int[label] = label_idx
+                int_to_str[label_idx] = label
+                class_sums[label] = activations.clone()
+                class_counts[label] = 1
+            else:
+                class_sums[label] = class_sums[label] + activations
+                class_counts[label] += 1
+
+        ordered_labels = [int_to_str[idx] for idx in range(len(int_to_str))]
+        class_activations = torch.stack(
+            [class_sums[label] / class_counts[label] for label in ordered_labels],
+            dim=0,
+        )
+
+        success_count = torch.zeros(self.n_layers, self.n_heads, dtype=torch.int32)
+        iterator = self._iter_with_progress(collected, desc="STV SAV head scoring")
+        for label, activations in iterator:
+            similarities = F.cosine_similarity(class_activations, activations.unsqueeze(0), dim=-1)
+            best_per_head = similarities.argmax(dim=0)
+            success_count += (best_per_head == str_to_int[label]).to(dtype=torch.int32)
+
+        return self._select_topk_locations_from_scores(success_count.to(dtype=torch.float32))
 
     def _collect_cluster_samples(
         self,
@@ -572,6 +637,53 @@ class STVMethod(MethodBase):
         for assign_idx, (layer_idx, head_idx, _) in zip(assignment.tolist(), self.intervention_locations):
             avg_tensor[layer_idx, head_idx, 0] = cluster_centers[int(assign_idx), layer_idx, head_idx, 0]
         return avg_tensor
+
+    def _gather_location_features(self, activations: torch.Tensor) -> torch.Tensor:
+        if not self.intervention_locations:
+            if activations.ndim == 4:
+                return activations.reshape(-1).to(dtype=torch.float32)
+            if activations.ndim == 5:
+                return activations.reshape(activations.shape[0], -1).to(dtype=torch.float32)
+            raise ValueError(f"Unsupported activation shape for STV feature gathering: {tuple(activations.shape)}")
+
+        if activations.ndim == 4:
+            gathered = [activations[layer_idx, head_idx, 0] for layer_idx, head_idx, _ in self.intervention_locations]
+            return torch.cat(gathered, dim=-1).to(dtype=torch.float32)
+
+        if activations.ndim == 5:
+            gathered = [activations[:, layer_idx, head_idx, 0] for layer_idx, head_idx, _ in self.intervention_locations]
+            return torch.cat(gathered, dim=-1).to(dtype=torch.float32)
+
+        raise ValueError(f"Unsupported activation shape for STV feature gathering: {tuple(activations.shape)}")
+
+    def _build_query_adaptive_avg_activations(self, sample: Dict) -> torch.Tensor:
+        if self.cluster_centers is None:
+            raise RuntimeError("STV query-adaptive mode requires fitted cluster_centers")
+
+        if not self.intervention_locations:
+            return torch.zeros(self.n_layers, self.n_heads, 1, self.head_dim, dtype=torch.float32)
+
+        query_activations = self._capture_prompt_activations(sample, demos=[])
+        query_features = F.normalize(self._gather_location_features(query_activations).unsqueeze(0), dim=-1)
+        center_features = F.normalize(self._gather_location_features(self.cluster_centers), dim=-1)
+        similarities = F.cosine_similarity(center_features, query_features, dim=-1)
+        best_cluster_index = int(similarities.argmax().item())
+        self.last_query_cluster_index = best_cluster_index
+
+        assignment = torch.full(
+            (len(self.intervention_locations),),
+            fill_value=best_cluster_index,
+            dtype=torch.long,
+        )
+        return self._build_avg_activation_tensor(self.cluster_centers, assignment)
+
+    def _resolve_avg_activations(self, sample: Dict) -> torch.Tensor:
+        if self.cluster_selection_mode == "query_adaptive":
+            return self._build_query_adaptive_avg_activations(sample)
+
+        if self.avg_activations is None:
+            raise RuntimeError("STV is missing fitted avg_activations")
+        return self.avg_activations
 
     def _evaluate_assignment_loss(
         self,
@@ -681,11 +793,21 @@ class STVMethod(MethodBase):
         rng = random.Random(self.support_seed)
 
         activation_indices = self._sample_subset_indices(len(train_data), self.num_examples, rng)
-        self.avg_diff = self._estimate_avg_diff(train_data, activation_indices, rng)
-        self.intervention_locations = self._select_topk_locations(self.avg_diff)
+        if self.head_selection_mode == "sav_accuracy":
+            self.avg_diff = None
+            self.intervention_locations = self._select_topk_locations_sav_accuracy(train_data)
+        else:
+            self.avg_diff = self._estimate_avg_diff(train_data, activation_indices, rng)
+            self.intervention_locations = self._select_topk_locations(self.avg_diff)
 
         contextual_samples = self._collect_cluster_samples(train_data, activation_indices, rng)
         self.cluster_centers = self._build_cluster_centers(contextual_samples)
+
+        if self.cluster_selection_mode == "query_adaptive":
+            self.avg_activations = None
+            self.last_query_cluster_index = None
+            self._fitted = True
+            return
 
         selection_indices = self._sample_subset_indices(
             len(train_data),
@@ -710,8 +832,7 @@ class STVMethod(MethodBase):
         self._fitted = True
 
     def _generate_with_intervention(self, sample: Dict) -> str:
-        if self.avg_activations is None:
-            raise RuntimeError("STV is missing fitted avg_activations")
+        avg_activations = self._resolve_avg_activations(sample)
 
         conversation, flat_images = self._build_conversation([], sample, include_answer=False)
         inputs = self._prepare_inputs(conversation, flat_images, add_generation_prompt=True)
@@ -719,7 +840,7 @@ class STVMethod(MethodBase):
 
         self.hook_controller.enable_intervention(
             self.intervention_locations,
-            avg_activations=self.avg_activations,
+            avg_activations=avg_activations,
             token_index=prompt_len - 1,
         )
         try:

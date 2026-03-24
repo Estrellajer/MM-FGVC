@@ -69,7 +69,7 @@ def _resolve_evaluator_name(cfg: DictConfig) -> str:
 
 def _save_results(
     cfg: DictConfig,
-    metrics: Dict[str, float],
+    metrics: Dict[str, Any],
     predictions: List[str],
     labels: List[str],
     val_data: List[Dict[str, Any]],

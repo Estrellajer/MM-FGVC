@@ -12,6 +12,8 @@ params:
   selection_eval_size: 8
   selection_lr: 0.02
   final_selection_trials: 4
+  head_selection_mode: sensitivity
+  cluster_selection_mode: rl
   support_strategy: balanced
   support_seed: 42
   max_new_tokens: 16

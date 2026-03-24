@@ -1,0 +1,231 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:45,  6.92it/s]Loading weights:   0%|          | 2/730 [00:00<02:02,  5.94it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:15, 44.79it/s]Loading weights:   4%|▎         | 26/730 [00:00<00:17, 40.33it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:06, 103.26it/s]Loading weights:  13%|█▎        | 96/730 [00:00<00:04, 150.52it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:05, 119.62it/s]Loading weights:  20%|██        | 148/730 [00:01<00:03, 155.92it/s]Loading weights:  23%|██▎       | 168/730 [00:01<00:03, 149.81it/s]Loading weights:  25%|██▌       | 186/730 [00:01<00:04, 135.45it/s]Loading weights:  28%|██▊       | 208/730 [00:01<00:03, 150.67it/s]Loading weights:  31%|███       | 225/730 [00:01<00:04, 125.65it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:03, 141.87it/s]Loading weights:  36%|███▌      | 264/730 [00:02<00:03, 150.47it/s]Loading weights:  38%|███▊      | 281/730 [00:02<00:03, 142.38it/s]Loading weights:  41%|████      | 297/730 [00:02<00:03, 142.74it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 139.08it/s]Loading weights:  45%|████▌     | 331/730 [00:02<00:02, 138.20it/s]Loading weights:  65%|██████▌   | 477/730 [00:02<00:00, 473.75it/s]Loading weights:  87%|████████▋ | 633/730 [00:02<00:00, 761.54it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 245.94it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 60.0
+  total: 100.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    matrix:
+    - - 4
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 2
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 10
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 2
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 3
+      - 1
+    - - 1
+      - 0
+      - 0
+      - 8
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 1
+      - 0
+      - 0
+      - 6
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+    - - 1
+      - 1
+      - 2
+      - 1
+      - 0
+      - 3
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 4
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 2
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 3
+      - 2
+      - 1
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 8
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 10
+  per_class:
+    Annual Crop Land:
+      precision: 0.4444444444444444
+      recall: 0.4
+      f1: 0.4210526315789474
+      support: 10.0
+      predicted: 9.0
+      true_positive: 4.0
+      false_positive: 5.0
+      false_negative: 6.0
+    Forest:
+      precision: 0.5555555555555556
+      recall: 1.0
+      f1: 0.7142857142857143
+      support: 10.0
+      predicted: 18.0
+      true_positive: 10.0
+      false_positive: 8.0
+      false_negative: 0.0
+    Herbaceous Vegetation Land:
+      precision: 0.4444444444444444
+      recall: 0.4
+      f1: 0.4210526315789474
+      support: 10.0
+      predicted: 9.0
+      true_positive: 4.0
+      false_positive: 5.0
+      false_negative: 6.0
+    Highway or Road:
+      precision: 0.7272727272727273
+      recall: 0.8
+      f1: 0.761904761904762
+      support: 10.0
+      predicted: 11.0
+      true_positive: 8.0
+      false_positive: 3.0
+      false_negative: 2.0
+    Industrial Buildings:
+      precision: 0.8571428571428571
+      recall: 0.6
+      f1: 0.7058823529411764
+      support: 10.0
+      predicted: 7.0
+      true_positive: 6.0
+      false_positive: 1.0
+      false_negative: 4.0
+    Pasture Land:
+      precision: 0.75
+      recall: 0.3
+      f1: 0.4285714285714285
+      support: 10.0
+      predicted: 4.0
+      true_positive: 3.0
+      false_positive: 1.0
+      false_negative: 7.0
+    Permanent Crop Land:
+      precision: 0.5
+      recall: 0.4
+      f1: 0.4444444444444445
+      support: 10.0
+      predicted: 8.0
+      true_positive: 4.0
+      false_positive: 4.0
+      false_negative: 6.0
+    Residential Buildings:
+      precision: 0.75
+      recall: 0.3
+      f1: 0.4285714285714285
+      support: 10.0
+      predicted: 4.0
+      true_positive: 3.0
+      false_positive: 1.0
+      false_negative: 7.0
+    River:
+      precision: 0.5714285714285714
+      recall: 0.8
+      f1: 0.6666666666666666
+      support: 10.0
+      predicted: 14.0
+      true_positive: 8.0
+      false_positive: 6.0
+      false_negative: 2.0
+    Sea or Lake:
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 10.0
+      predicted: 16.0
+      true_positive: 10.0
+      false_positive: 6.0
+      false_negative: 0.0
+  macro_precision: 0.62252886002886
+  macro_recall: 0.6
+  macro_f1: 0.5761662829774286
+  balanced_accuracy: 0.6
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_125034_fgvc_method_suite/eurosat_stv_qwen2_vl_20260324_125034.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_125034_fgvc_method_suite/eurosat_stv_qwen2_vl_20260324_125034.predictions.jsonl
+
