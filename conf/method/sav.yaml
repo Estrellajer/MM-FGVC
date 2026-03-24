@@ -6,4 +6,5 @@ params:
   selection_seed: 42
   prototype_mode: mean
   class_bank_size: 4
+  vote_weighting: uniform
   progress_bar: true

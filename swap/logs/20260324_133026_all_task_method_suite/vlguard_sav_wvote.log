@@ -1,0 +1,46 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:46,  6.87it/s]Loading weights:   0%|          | 2/730 [00:00<02:04,  5.83it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:18, 38.45it/s]Loading weights:   6%|▌         | 41/730 [00:00<00:07, 90.00it/s]Loading weights:   7%|▋         | 52/730 [00:00<00:07, 92.59it/s]Loading weights:  10%|▉         | 72/730 [00:00<00:05, 120.96it/s]Loading weights:  12%|█▏        | 88/730 [00:00<00:05, 126.36it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:05, 117.89it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:06, 99.95it/s] Loading weights:  20%|██        | 146/730 [00:01<00:04, 132.20it/s]Loading weights:  22%|██▏       | 162/730 [00:01<00:04, 132.63it/s]Loading weights:  25%|██▌       | 183/730 [00:01<00:03, 151.11it/s]Loading weights:  27%|██▋       | 199/730 [00:01<00:04, 132.36it/s]Loading weights:  29%|██▉       | 214/730 [00:01<00:03, 135.66it/s]Loading weights:  31%|███▏      | 229/730 [00:02<00:04, 122.11it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:03, 150.17it/s]Loading weights:  37%|███▋      | 272/730 [00:02<00:03, 138.00it/s]Loading weights:  40%|███▉      | 290/730 [00:02<00:03, 135.81it/s]Loading weights:  42%|████▏     | 306/730 [00:02<00:03, 135.83it/s]Loading weights:  45%|████▍     | 325/730 [00:02<00:03, 127.13it/s]Loading weights:  66%|██████▋   | 485/730 [00:02<00:00, 467.86it/s]Loading weights:  88%|████████▊ | 644/730 [00:02<00:00, 742.66it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 239.42it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.95
+  correct: 38.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 19
+      - 1
+    - - 1
+      - 19
+  per_class:
+    unharmful:
+      precision: 0.95
+      recall: 0.95
+      f1: 0.9500000000000001
+      support: 20.0
+      predicted: 20.0
+      true_positive: 19.0
+      false_positive: 1.0
+      false_negative: 1.0
+    harmful:
+      precision: 0.95
+      recall: 0.95
+      f1: 0.9500000000000001
+      support: 20.0
+      predicted: 20.0
+      true_positive: 19.0
+      false_positive: 1.0
+      false_negative: 1.0
+  macro_precision: 0.95
+  macro_recall: 0.95
+  macro_f1: 0.9500000000000001
+  balanced_accuracy: 0.95
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260324_133026_all_task_method_suite/vlguard_sav_wvote_qwen2_vl_20260324_133026.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260324_133026_all_task_method_suite/vlguard_sav_wvote_qwen2_vl_20260324_133026.predictions.jsonl
+

@@ -22,6 +22,7 @@ class SAVMethod(MethodBase):
         selection_seed: int = 42,
         prototype_mode: str = "mean",
         class_bank_size: int = 4,
+        vote_weighting: str = "uniform",
         progress_bar: bool = True,
     ):
         super().__init__(model=model, dataset_name=dataset_name, label_space=label_space)
@@ -30,7 +31,11 @@ class SAVMethod(MethodBase):
         self.selection_seed = int(selection_seed)
         self.prototype_mode = str(prototype_mode).strip().lower()
         self.class_bank_size = int(class_bank_size)
+        self.vote_weighting = str(vote_weighting).strip().lower()
         self.progress_bar = bool(progress_bar)
+
+        if self.vote_weighting not in {"head_accuracy", "uniform"}:
+            raise ValueError("SAV vote_weighting must be 'uniform' or 'head_accuracy'")
 
         self.attn_hook_names = self._infer_attention_module_names()
         self.n_layers = len(self.attn_hook_names)
@@ -47,6 +52,7 @@ class SAVMethod(MethodBase):
         self.class_banks: Dict[str, torch.Tensor] = {}
         self.train_bank_activations: torch.Tensor | None = None
         self.train_bank_labels: List[str] = []
+        self.selected_head_weights: torch.Tensor | None = None
         self._fitted = False
 
     def _iter_with_progress(self, data: Sequence[Dict], desc: str):
@@ -267,6 +273,7 @@ class SAVMethod(MethodBase):
             raise RuntimeError("SAV requires at least one attention head")
 
         if self.selection_strategy == "all":
+            self.selected_head_weights = torch.ones(total_heads, dtype=torch.float32)
             return list(self.all_heads)
 
         k = min(self.num_heads, total_heads)
@@ -274,12 +281,14 @@ class SAVMethod(MethodBase):
             raise ValueError("SAV num_heads must be positive")
 
         if self.selection_strategy == "firstk":
+            self.selected_head_weights = torch.ones(k, dtype=torch.float32)
             return list(self.all_heads[:k])
 
         if self.selection_strategy == "random":
             generator = torch.Generator(device="cpu")
             generator.manual_seed(self.selection_seed)
             indices = torch.randperm(total_heads, generator=generator)[:k].tolist()
+            self.selected_head_weights = torch.ones(len(indices), dtype=torch.float32)
             return [self.all_heads[idx] for idx in indices]
 
         success_count = torch.zeros(len(self.all_heads), dtype=torch.int32, device=all_class_acts.device)
@@ -295,10 +304,12 @@ class SAVMethod(MethodBase):
 
         if self.selection_strategy == "topk":
             selected_indices = torch.topk(success_count, k=k).indices.tolist()
+            self.selected_head_weights = (success_count[selected_indices].to(dtype=torch.float32) / max(len(train_data), 1)).cpu()
             return [self.all_heads[idx] for idx in selected_indices]
 
         if self.selection_strategy == "bottomk":
             selected_indices = torch.topk(success_count, k=k, largest=False).indices.tolist()
+            self.selected_head_weights = (success_count[selected_indices].to(dtype=torch.float32) / max(len(train_data), 1)).cpu()
             return [self.all_heads[idx] for idx in selected_indices]
 
         supported = ", ".join(["all", "bottomk", "firstk", "random", "topk"])
@@ -320,6 +331,7 @@ class SAVMethod(MethodBase):
         self.class_banks = {}
         self.train_bank_activations = None
         self.train_bank_labels = []
+        self.selected_head_weights = None
 
         if self.prototype_mode == "mean" and len(self.top_heads) == len(self.all_heads):
             self.class_activations = all_class_acts
@@ -348,7 +360,7 @@ class SAVMethod(MethodBase):
             )
         self._fitted = True
 
-    def predict_with_counts(self, sample: Dict) -> Tuple[str, Dict[str, int]]:
+    def predict_with_counts(self, sample: Dict) -> Tuple[str, Dict[str, float]]:
         if not self._fitted:
             raise RuntimeError("SAV method is not fitted. Call fit(train_data) first.")
 
@@ -384,14 +396,22 @@ class SAVMethod(MethodBase):
         else:
             raise RuntimeError(f"Unsupported SAV prototype_mode '{self.prototype_mode}' at prediction time")
 
-        counts = torch.bincount(vote_indices, minlength=len(self.int_to_str))
+        if self.vote_weighting == "head_accuracy" and self.selected_head_weights is not None:
+            weights = self.selected_head_weights.to(device=vote_indices.device, dtype=torch.float32)
+            if int(weights.numel()) != int(vote_indices.numel()):
+                weights = torch.ones_like(vote_indices, dtype=torch.float32)
+        else:
+            weights = torch.ones_like(vote_indices, dtype=torch.float32)
+
+        counts = torch.zeros(len(self.int_to_str), dtype=torch.float32, device=vote_indices.device)
+        counts.scatter_add_(0, vote_indices, weights)
         pred_index = int(counts.argmax().item())
         pred_label = self.int_to_str[pred_index]
 
         vote_counts = {
-            self.int_to_str[index]: int(count.item())
+            self.int_to_str[index]: float(count.item())
             for index, count in enumerate(counts)
-            if int(count.item()) > 0
+            if float(count.item()) > 0.0
         }
         return pred_label, vote_counts
 

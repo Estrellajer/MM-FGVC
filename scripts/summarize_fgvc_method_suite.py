@@ -11,7 +11,7 @@ from typing import Any
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Summarize FGVC method-suite results into Markdown.")
+    parser = argparse.ArgumentParser(description="Summarize method-suite results into Markdown.")
     parser.add_argument("--manifest", required=True, help="TSV manifest produced by run_fgvc_method_suite.sh")
     parser.add_argument("--output", required=True, help="Markdown output path")
     return parser.parse_args()
@@ -29,6 +29,8 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
+    if not path.exists():
+        return rows
     with path.open("r", encoding="utf-8") as fp:
         for line in fp:
             line = line.strip()
@@ -41,6 +43,20 @@ def fmt_metric(value: float | None) -> str:
     if value is None:
         return "-"
     return f"{value:.4f}"
+
+
+def primary_metric(metrics: dict[str, Any]) -> tuple[str, float]:
+    if "accuracy" in metrics:
+        return "accuracy", float(metrics["accuracy"])
+    if "pair_accuracy" in metrics:
+        return "pair_accuracy", float(metrics["pair_accuracy"])
+    if "g_acc" in metrics:
+        return "g_acc", float(metrics["g_acc"])
+    if "raw_acc" in metrics:
+        return "raw_acc", float(metrics["raw_acc"])
+    if "raw_accuracy" in metrics:
+        return "raw_accuracy", float(metrics["raw_accuracy"])
+    return "metric", 0.0
 
 
 def top_confusions(metrics: dict[str, Any], limit: int = 3) -> list[tuple[str, str, int]]:
@@ -80,6 +96,8 @@ def pairwise_complementarity(run_rows: list[dict[str, Any]]) -> list[dict[str, A
             continue
 
         total = len(left_preds)
+        if total == 0:
+            continue
         left_correct = [bool(row["correct"]) for row in left_preds]
         right_correct = [bool(row["correct"]) for row in right_preds]
         oracle_correct = sum(a or b for a, b in zip(left_correct, right_correct))
@@ -147,7 +165,7 @@ def main() -> None:
         runs_by_dataset[run["dataset_name"]].append(run)
 
     lines: list[str] = []
-    lines.append("# FGVC Method Suite Results")
+    lines.append("# Method Suite Results")
     lines.append("")
     lines.append(f"- Model: `{model_name}`")
     lines.append(f"- Manifest: `{manifest_path}`")
@@ -165,24 +183,27 @@ def main() -> None:
         row = [dataset_name]
         for display_name in methods:
             run = by_name.get(display_name)
-            accuracy = None if run is None else float(run["metrics"].get("accuracy", 0.0))
-            row.append(fmt_metric(accuracy))
+            metric_value = None if run is None else primary_metric(run["metrics"])[1]
+            row.append(fmt_metric(metric_value))
         lines.append("| " + " | ".join(row) + " |")
 
     lines.append("")
-    lines.append("## STV Ablation")
-    lines.append("")
     stv_names = ["STV", "STV+QC", "SAV-TV", "SAV-TV+QC"]
-    lines.append("| Dataset | " + " | ".join(stv_names) + " |")
-    lines.append("| --- | " + " | ".join(["---"] * len(stv_names)) + " |")
-    for dataset_name in datasets:
-        by_name = {run["display_name"]: run for run in runs_by_dataset[dataset_name]}
-        row = [dataset_name]
-        for display_name in stv_names:
-            run = by_name.get(display_name)
-            accuracy = None if run is None else float(run["metrics"].get("accuracy", 0.0))
-            row.append(fmt_metric(accuracy))
-        lines.append("| " + " | ".join(row) + " |")
+    if any(name in methods for name in stv_names):
+        lines.append("")
+        lines.append("## STV Ablation")
+        lines.append("")
+        present_stv_names = [name for name in stv_names if name in methods]
+        lines.append("| Dataset | " + " | ".join(present_stv_names) + " |")
+        lines.append("| --- | " + " | ".join(["---"] * len(present_stv_names)) + " |")
+        for dataset_name in datasets:
+            by_name = {run["display_name"]: run for run in runs_by_dataset[dataset_name]}
+            row = [dataset_name]
+            for display_name in present_stv_names:
+                run = by_name.get(display_name)
+                metric_value = None if run is None else primary_metric(run["metrics"])[1]
+                row.append(fmt_metric(metric_value))
+            lines.append("| " + " | ".join(row) + " |")
 
     for dataset_name in datasets:
         lines.append("")
@@ -191,11 +212,12 @@ def main() -> None:
 
         dataset_runs = sorted(
             runs_by_dataset[dataset_name],
-            key=lambda run: (-float(run["metrics"].get("accuracy", 0.0)), run["display_name"]),
+            key=lambda run: (-primary_metric(run["metrics"])[1], run["display_name"]),
         )
         best_run = dataset_runs[0]
+        best_metric_name, best_metric_value = primary_metric(best_run["metrics"])
         lines.append(
-            f"- Best accuracy: `{best_run['display_name']}` = `{fmt_metric(float(best_run['metrics'].get('accuracy', 0.0)))}`"
+            f"- Best primary metric: `{best_run['display_name']}` = `{best_metric_name}={fmt_metric(best_metric_value)}`"
         )
         lines.append(
             f"- Macro-F1 of best run: `{fmt_metric(float(best_run['metrics'].get('macro_f1', 0.0)))}`"
@@ -226,20 +248,21 @@ def main() -> None:
                 )
 
         lines.append("")
-        lines.append("| Method | Acc | Macro-F1 | Balanced Acc | Metrics | Predictions |")
+        lines.append("| Method | Primary | Macro-F1 | Balanced Acc | Metrics | Predictions |")
         lines.append("| --- | --- | --- | --- | --- | --- |")
         for run in dataset_runs:
             metrics = run["metrics"]
+            metric_name, metric_value = primary_metric(metrics)
             lines.append(
                 "| "
                 + " | ".join(
                     [
                         run["display_name"],
-                        fmt_metric(float(metrics.get("accuracy", 0.0))),
+                        f"{metric_name}={fmt_metric(metric_value)}",
                         fmt_metric(float(metrics.get("macro_f1", 0.0))),
                         fmt_metric(float(metrics.get("balanced_accuracy", 0.0))),
                         f"`{run['metrics_path']}`",
-                        f"`{run['predictions_path']}`",
+                        "-" if not Path(run["predictions_path"]).exists() else f"`{run['predictions_path']}`",
                     ]
                 )
                 + " |"

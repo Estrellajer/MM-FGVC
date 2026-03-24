@@ -1,0 +1,7 @@
+Could not override 'method.params.vote_weighting'.
+To append to your config use +method.params.vote_weighting=head_accuracy
+Key 'vote_weighting' is not in struct
+    full_key: method.params.vote_weighting
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

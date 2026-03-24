@@ -1,0 +1,98 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_functional_correspondence",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.1875,
+    "correct": 3.0,
+    "total": 16.0,
+    "label_order": [
+      "(C)",
+      "(D)",
+      "(A)",
+      "(B)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(C)",
+        "(D)",
+        "(A)",
+        "(B)"
+      ],
+      "matrix": [
+        [
+          2,
+          0,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(C)": {
+        "precision": 0.3333333333333333,
+        "recall": 0.4,
+        "f1": 0.3636363636363636,
+        "support": 5.0,
+        "predicted": 6.0,
+        "true_positive": 2.0,
+        "false_positive": 4.0,
+        "false_negative": 3.0
+      },
+      "(D)": {
+        "precision": 0.25,
+        "recall": 0.2,
+        "f1": 0.22222222222222224,
+        "support": 5.0,
+        "predicted": 4.0,
+        "true_positive": 1.0,
+        "false_positive": 3.0,
+        "false_negative": 4.0
+      },
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1.0,
+        "predicted": 6.0,
+        "true_positive": 0.0,
+        "false_positive": 6.0,
+        "false_negative": 1.0
+      }
+    },
+    "macro_precision": 0.14583333333333331,
+    "macro_recall": 0.15000000000000002,
+    "macro_f1": 0.14646464646464646,
+    "balanced_accuracy": 0.15000000000000002
+  }
+}

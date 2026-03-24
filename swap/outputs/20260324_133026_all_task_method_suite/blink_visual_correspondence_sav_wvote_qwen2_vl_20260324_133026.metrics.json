@@ -1,0 +1,98 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_visual_correspondence",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.35,
+    "correct": 7.0,
+    "total": 20.0,
+    "label_order": [
+      "(D)",
+      "(C)",
+      "(A)",
+      "(B)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(D)",
+        "(C)",
+        "(A)",
+        "(B)"
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          4,
+          0
+        ],
+        [
+          3,
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    "per_class": {
+      "(D)": {
+        "precision": 0.14285714285714285,
+        "recall": 0.2,
+        "f1": 0.16666666666666666,
+        "support": 5.0,
+        "predicted": 7.0,
+        "true_positive": 1.0,
+        "false_positive": 6.0,
+        "false_negative": 4.0
+      },
+      "(C)": {
+        "precision": 0.3333333333333333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "support": 5.0,
+        "predicted": 3.0,
+        "true_positive": 1.0,
+        "false_positive": 2.0,
+        "false_negative": 4.0
+      },
+      "(A)": {
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "support": 5.0,
+        "predicted": 7.0,
+        "true_positive": 4.0,
+        "false_positive": 3.0,
+        "false_negative": 1.0
+      },
+      "(B)": {
+        "precision": 0.3333333333333333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "support": 5.0,
+        "predicted": 3.0,
+        "true_positive": 1.0,
+        "false_positive": 2.0,
+        "false_negative": 4.0
+      }
+    },
+    "macro_precision": 0.34523809523809523,
+    "macro_recall": 0.35000000000000003,
+    "macro_f1": 0.3333333333333333,
+    "balanced_accuracy": 0.35000000000000003
+  }
+}
