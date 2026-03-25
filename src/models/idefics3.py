@@ -4,6 +4,7 @@ Idefics3 视觉语言模型封装。
 官方文档: https://huggingface.co/docs/transformers/model_doc/idefics3
 """
 
+import re
 from typing import Any, Dict, List, Optional, Union
 from PIL.Image import Image
 
@@ -12,6 +13,7 @@ from transformers import AutoModelForImageTextToText, AutoProcessor
 from .model_base import ModelBase
 
 HF_IDEFICS3 = ["Idefics3-8B-Llama3", "Idefics3-8B-Llama3.1"]
+IMAGE_PLACEHOLDER_RE = re.compile(r"<image(?:_\d+)?>", re.IGNORECASE)
 
 
 class Idefics3(ModelBase):
@@ -42,9 +44,21 @@ class Idefics3(ModelBase):
             **common_args,
         )
 
+    @staticmethod
+    def _sanitize_text(text: str) -> str:
+        cleaned_lines = [
+            line
+            for line in str(text).splitlines()
+            if not IMAGE_PLACEHOLDER_RE.fullmatch(line.strip())
+        ]
+        cleaned = "\n".join(cleaned_lines)
+        cleaned = IMAGE_PLACEHOLDER_RE.sub("", cleaned)
+        return cleaned.strip()
+
     def _build_messages(self, images: List[Image], text: str) -> List[Dict]:
         """构建 Idefics3 的 messages：content 中 image 用占位符，images 单独传递。"""
-        content = [{"type": "image"}] * len(images) + [{"type": "text", "text": text}]
+        sanitized_text = self._sanitize_text(text) or "Describe this image."
+        content = [{"type": "image"}] * len(images) + [{"type": "text", "text": sanitized_text}]
         return [{"role": "user", "content": content}]
 
     def process_input(
@@ -86,7 +100,9 @@ class Idefics3(ModelBase):
                                 if c.get("type") == "image":
                                     content.append({"type": "image"})
                                 elif c.get("type") == "text":
-                                    content.append(c)
+                                    sanitized_text = self._sanitize_text(str(c.get("text", "")))
+                                    if sanitized_text:
+                                        content.append({"type": "text", "text": sanitized_text})
                         break
                 if not any(c.get("type") == "text" for c in content):
                     content.append({"type": "text", "text": "Describe this image."})

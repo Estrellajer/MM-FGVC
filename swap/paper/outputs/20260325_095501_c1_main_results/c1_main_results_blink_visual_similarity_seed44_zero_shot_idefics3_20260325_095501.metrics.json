@@ -1,0 +1,180 @@
+{
+  "model": "idefics3",
+  "dataset": "blink_visual_similarity",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 20.0,
+    "label_order": [
+      "(A)",
+      "(B)",
+      "A.",
+      "Answer: B",
+      "B.",
+      "Answer: A",
+      "Answer: B."
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(B)",
+        "A.",
+        "Answer: B",
+        "B.",
+        "Answer: A",
+        "Answer: B."
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1,
+          5,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 10.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 10.0
+      },
+      "A.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 7.0,
+        "true_positive": 0.0,
+        "false_positive": 7.0,
+        "false_negative": 0.0
+      },
+      "Answer: B": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      },
+      "B.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 7.0,
+        "true_positive": 0.0,
+        "false_positive": 7.0,
+        "false_negative": 0.0
+      },
+      "Answer: A": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 3.0,
+        "true_positive": 0.0,
+        "false_positive": 3.0,
+        "false_negative": 0.0
+      },
+      "Answer: B.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.2278556823730469e-05,
+    "predict_time_sec": 26.462754353880882,
+    "total_time_sec": 26.462766632437706,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 1.3231377176940442
+  }
+}

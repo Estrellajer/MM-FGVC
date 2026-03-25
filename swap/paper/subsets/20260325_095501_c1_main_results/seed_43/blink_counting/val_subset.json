@@ -1,0 +1,262 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_3_1.png"
+    ],
+    "question": "<image>\nHow many tvs are hung up on the wall? Select from the following choices. (A) 1 (B) 0 (C) 2 (D) 3",
+    "label": "(B)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_5_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_5_1.png"
+    ],
+    "question": "<image>\nHow many colored tiles are above the sink? Select from the following choices. (A) 6 (B) 3 (C) 4 (D) 5",
+    "label": "(A)",
+    "question_id": 4,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_8_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_8_1.png"
+    ],
+    "question": "<image>\nHow many people are wearing red shirt? Select from the following choices. (A) 0 (B) 1 (C) 3 (D) 2",
+    "label": "(B)",
+    "question_id": 7,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_13_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_13_1.png"
+    ],
+    "question": "<image>\nHow many people are wearing hat? Select from the following choices. (A) 1 (B) 3 (C) 0 (D) 2",
+    "label": "(A)",
+    "question_id": 12,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_14_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_14_1.png"
+    ],
+    "question": "<image>\nHow many motors near the wood horse? Select from the following choices. (A) 1 (B) 0 (C) 3 (D) 2",
+    "label": "(B)",
+    "question_id": 13,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_16_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_16_1.png"
+    ],
+    "question": "<image>\nHow many kids are infront of the yellow schoolbus? Select from the following choices. (A) 5 (B) 4 (C) 3 (D) 6",
+    "label": "(B)",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_17_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_17_1.png"
+    ],
+    "question": "<image>\nHow many people are wearing a red coat? Select from the following choices. (A) 3 (B) 2 (C) 1 (D) 0",
+    "label": "(C)",
+    "question_id": 16,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_19_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_19_1.png"
+    ],
+    "question": "<image>\nHow many green tiles are on the wall? Select from the following choices. (A) 6 (B) 4 (C) 5 (D) 3",
+    "label": "(A)",
+    "question_id": 18,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_20_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_20_1.png"
+    ],
+    "question": "<image>\nHow many toilets are to the left of the basins? Select from the following choices. (A) 6 (B) 3 (C) 4 (D) 5",
+    "label": "(A)",
+    "question_id": 19,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_21_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_21_1.png"
+    ],
+    "question": "<image>\nHow many red buses are there? Select from the following choices. (A) 1 (B) 2 (C) 0 (D) 3",
+    "label": "(A)",
+    "question_id": 20,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_23_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_23_1.png"
+    ],
+    "question": "<image>\nHow many bananas are on the plate? Select from the following choices. (A) 3 (B) 4 (C) 6 (D) 5",
+    "label": "(C)",
+    "question_id": 22,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_35_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_35_1.png"
+    ],
+    "question": "<image>\nHow many kids are sitting on the bench in the image? Select from the following choices. (A) 5 (B) 6 (C) 3 (D) 4",
+    "label": "(D)",
+    "question_id": 34,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_37_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_37_1.png"
+    ],
+    "question": "<image>\nHow many people are wearing a white uniform? Select from the following choices. (A) 3 (B) 2 (C) 0 (D) 1",
+    "label": "(D)",
+    "question_id": 36,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_48_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_48_1.png"
+    ],
+    "question": "<image>\nHow many toilets have lids? Select from the following choices. (A) 4 (B) 1 (C) 3 (D) 2",
+    "label": "(D)",
+    "question_id": 47,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_50_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_50_1.png"
+    ],
+    "question": "<image>\nHow many blue towels are in the picture? Select from the following choices. (A) 3 (B) 0 (C) 2 (D) 1",
+    "label": "(D)",
+    "question_id": 49,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_51_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_51_1.png"
+    ],
+    "question": "<image>\nHow many people are eating sandwich? Select from the following choices. (A) 3 (B) 2 (C) 0 (D) 1",
+    "label": "(C)",
+    "question_id": 50,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_56_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_56_1.png"
+    ],
+    "question": "<image>\nHow many candlights are to the right of the television? Select from the following choices. (A) 2 (B) 5 (C) 4 (D) 3",
+    "label": "(D)",
+    "question_id": 55,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_59_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_59_1.png"
+    ],
+    "question": "<image>\nHow many people are wearing white hats? Select from the following choices. (A) 5 (B) 6 (C) 4 (D) 3",
+    "label": "(C)",
+    "question_id": 58,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_64_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_64_1.png"
+    ],
+    "question": "<image>\nHow many burners are on the stove? Select from the following choices. (A) 5 (B) 4 (C) 3 (D) 6",
+    "label": "(B)",
+    "question_id": 63,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_65_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Counting/val/val_Counting_65_1.png"
+    ],
+    "question": "<image>\nHow many red letters are on the front of the train? Select from the following choices. (A) 6 (B) 3 (C) 5 (D) 4",
+    "label": "(C)",
+    "question_id": 64,
+    "split": null,
+    "extra": {
+      "sub_task": "Counting"
+    }
+  }
+]

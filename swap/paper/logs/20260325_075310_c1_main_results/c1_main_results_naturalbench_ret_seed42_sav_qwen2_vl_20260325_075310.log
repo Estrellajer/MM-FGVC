@@ -1,0 +1,51 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:41,  4.52it/s]Loading weights:   0%|          | 2/730 [00:00<02:30,  4.84it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:17, 41.70it/s]Loading weights:   4%|▍         | 28/730 [00:00<00:11, 60.54it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:08, 78.44it/s]Loading weights:   8%|▊         | 60/730 [00:00<00:06, 106.15it/s]Loading weights:  10%|█         | 76/730 [00:00<00:05, 114.15it/s]Loading weights:  12%|█▏        | 89/730 [00:01<00:05, 110.37it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:05, 109.55it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:05, 114.82it/s]Loading weights:  18%|█▊        | 130/730 [00:01<00:04, 123.57it/s]Loading weights:  20%|██        | 146/730 [00:01<00:04, 133.70it/s]Loading weights:  22%|██▏       | 160/730 [00:01<00:04, 114.32it/s]Loading weights:  24%|██▎       | 173/730 [00:01<00:05, 103.51it/s]Loading weights:  27%|██▋       | 198/730 [00:01<00:04, 131.61it/s]Loading weights:  29%|██▉       | 214/730 [00:02<00:03, 137.60it/s]Loading weights:  32%|███▏      | 230/730 [00:02<00:03, 133.30it/s]Loading weights:  33%|███▎      | 244/730 [00:02<00:04, 121.06it/s]Loading weights:  35%|███▌      | 259/730 [00:02<00:03, 128.04it/s]Loading weights:  38%|███▊      | 276/730 [00:02<00:03, 137.79it/s]Loading weights:  40%|████      | 292/730 [00:02<00:03, 119.56it/s]Loading weights:  43%|████▎     | 311/730 [00:02<00:03, 116.95it/s]Loading weights:  46%|████▌     | 336/730 [00:03<00:02, 145.93it/s]Loading weights:  66%|██████▌   | 479/730 [00:03<00:00, 459.03it/s]Loading weights:  85%|████████▌ | 621/730 [00:03<00:00, 703.61it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 220.29it/s]
+metrics:
+  metric: naturalbench_group
+  q_acc: 0.9
+  i_acc: 0.9
+  g_acc: 0.8
+  raw_acc: 0.95
+  group_total: 10.0
+  used_samples: 40.0
+  dropped_samples: 0.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 19
+      - 1
+    - - 1
+      - 19
+  per_class:
+    'Yes':
+      precision: 0.95
+      recall: 0.95
+      f1: 0.9500000000000001
+      support: 20.0
+      predicted: 20.0
+      true_positive: 19.0
+      false_positive: 1.0
+      false_negative: 1.0
+    'No':
+      precision: 0.95
+      recall: 0.95
+      f1: 0.9500000000000001
+      support: 20.0
+      predicted: 20.0
+      true_positive: 19.0
+      false_positive: 1.0
+      false_negative: 1.0
+  macro_precision: 0.95
+  macro_recall: 0.95
+  macro_f1: 0.9500000000000001
+  balanced_accuracy: 0.95
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_ret_seed42_sav_qwen2_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_ret_seed42_sav_qwen2_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_ret_seed42_sav_qwen2_vl_20260325_075310.diagnostics.json
+

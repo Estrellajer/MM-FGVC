@@ -30,6 +30,8 @@ class RSEV2Method(RSEMethod):
         min_shrinkage_alpha: float = 1e-4,
         covariance_floor: float = 1e-6,
         confidence_floor: float = 0.0,
+        component_weighting: str = "margin",
+        component_top_k: int = 0,
         progress_bar: bool = True,
     ):
         super().__init__(
@@ -51,6 +53,8 @@ class RSEV2Method(RSEMethod):
         self.min_shrinkage_alpha = float(min_shrinkage_alpha)
         self.covariance_floor = float(covariance_floor)
         self.confidence_floor = float(confidence_floor)
+        self.component_weighting = str(component_weighting).strip().lower()
+        self.component_top_k = int(component_top_k)
         if self.covariance_shrinkage not in {"auto", "fixed"}:
             raise ValueError("RSEv2 covariance_shrinkage must be 'auto' or 'fixed'")
         if not (0.0 <= self.shrinkage_alpha <= 1.0):
@@ -61,10 +65,15 @@ class RSEV2Method(RSEMethod):
             raise ValueError("RSEv2 covariance_floor must be positive")
         if self.confidence_floor < 0.0:
             raise ValueError("RSEv2 confidence_floor must be non-negative")
+        if self.component_weighting not in {"margin", "uniform"}:
+            raise ValueError("RSEv2 component_weighting must be 'margin' or 'uniform'")
+        if self.component_top_k < 0:
+            raise ValueError("RSEv2 component_top_k must be non-negative")
 
         self.component_models: Dict[Tuple[str, int], _MahalanobisComponentState] = {}
         self.component_vote_weight_sums: Dict[Tuple[str, int], float] = {}
         self.component_margin_sums: Dict[Tuple[str, int], float] = {}
+        self.active_component_count_sum = 0.0
         self.selection_train_accuracy = None
 
     @staticmethod
@@ -157,13 +166,31 @@ class RSEV2Method(RSEMethod):
 
         stacked_scores = torch.stack([component_scores[component] for component in components], dim=0)
         component_margins = self._compute_margin_vector(stacked_scores).clamp_min(0.0)
-        raw_weights = torch.where(
-            component_margins > self.confidence_floor,
-            component_margins,
-            torch.zeros_like(component_margins),
-        )
+
+        if self.component_top_k > 0 and self.component_top_k < len(components):
+            top_indices = torch.topk(component_margins, k=self.component_top_k, largest=True).indices
+            keep_mask = torch.zeros_like(component_margins, dtype=torch.bool)
+            keep_mask[top_indices] = True
+        else:
+            keep_mask = torch.ones_like(component_margins, dtype=torch.bool)
+
+        if self.component_weighting == "margin":
+            raw_weights = torch.where(
+                keep_mask & (component_margins > self.confidence_floor),
+                component_margins,
+                torch.zeros_like(component_margins),
+            )
+        else:
+            raw_weights = torch.where(
+                keep_mask,
+                torch.ones_like(component_margins),
+                torch.zeros_like(component_margins),
+            )
+
         if float(raw_weights.sum().item()) <= 0.0:
-            raw_weights = torch.ones_like(raw_weights)
+            raw_weights = torch.where(keep_mask, torch.ones_like(component_margins), torch.zeros_like(component_margins))
+        if float(raw_weights.sum().item()) <= 0.0:
+            raw_weights = torch.ones_like(component_margins)
         normalized_weights = raw_weights / raw_weights.sum().clamp_min(1e-6)
         final_scores = (stacked_scores * normalized_weights.unsqueeze(-1)).sum(dim=0)
         final_margin = float(self._compute_margin_vector(final_scores.unsqueeze(0))[0].item())
@@ -189,6 +216,7 @@ class RSEV2Method(RSEMethod):
             for level in self.representation_levels
             for layer_idx in range(self.num_layers)
         }
+        self.active_component_count_sum = 0.0
 
     def fit(self, train_data: Sequence[Dict]) -> None:
         if not train_data:
@@ -247,6 +275,7 @@ class RSEV2Method(RSEMethod):
         final_scores, final_margin, component_margins, component_weights = self._combine_scores_single(all_scores)
         pred_label = self.class_labels[int(final_scores.argmax().item())]
         self._record_eval(str(sample.get("label", "")), pred_label, final_margin, all_scores, fallback_used=False)
+        self.active_component_count_sum += float(sum(weight > 0.0 for weight in component_weights.values()))
         for component, weight in component_weights.items():
             self.component_vote_weight_sums[component] += float(weight)
         for component, margin in component_margins.items():
@@ -306,6 +335,7 @@ class RSEV2Method(RSEMethod):
         margin_mean = (sum(self._margins) / len(self._margins)) if self._margins else None
         margin_min = min(self._margins) if self._margins else None
         margin_max = max(self._margins) if self._margins else None
+        oracle_correct = sum(1 for row in self._oracle_component_hits if bool(row["oracle_correct"]))
 
         return {
             "method": "rsev2",
@@ -317,6 +347,8 @@ class RSEV2Method(RSEMethod):
             "min_shrinkage_alpha": self.min_shrinkage_alpha,
             "covariance_floor": self.covariance_floor,
             "confidence_floor": self.confidence_floor,
+            "component_weighting": self.component_weighting,
+            "component_top_k": self.component_top_k,
             "class_labels": list(self.class_labels),
             "selected_components": component_table,
             "best_component_by_loo": None,
@@ -326,6 +358,12 @@ class RSEV2Method(RSEMethod):
             "train_selection_summary": {
                 "selection_train_accuracy": None,
             },
+            "oracle_summary": {
+                "oracle_accuracy": (oracle_correct / self._final_total) if self._final_total > 0 else None,
+                "oracle_correct": oracle_correct,
+                "oracle_total": self._final_total,
+            },
+            "oracle_samples": self._oracle_component_hits,
             "eval_summary": {
                 "final_accuracy": (self._final_correct / self._final_total) if self._final_total > 0 else None,
                 "final_correct": self._final_correct,
@@ -334,5 +372,8 @@ class RSEV2Method(RSEMethod):
                 "margin_mean": margin_mean,
                 "margin_min": margin_min,
                 "margin_max": margin_max,
+                "mean_active_components": (
+                    self.active_component_count_sum / self._final_total if self._final_total > 0 else None
+                ),
             },
         }

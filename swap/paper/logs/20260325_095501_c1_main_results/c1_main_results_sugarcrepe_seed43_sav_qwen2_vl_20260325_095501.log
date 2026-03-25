@@ -1,0 +1,52 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=sav evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_sugarcrepe_seed43_sav_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<04:29,  2.70it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:16, 42.17it/s]Loading weights:   4%|▍         | 28/730 [00:00<00:11, 63.39it/s]Loading weights:   6%|▌         | 41/730 [00:00<00:08, 79.03it/s]Loading weights:   7%|▋         | 54/730 [00:00<00:07, 87.58it/s]Loading weights:   9%|▉         | 65/730 [00:00<00:08, 78.86it/s]Loading weights:  12%|█▏        | 89/730 [00:01<00:05, 117.71it/s]Loading weights:  14%|█▍        | 103/730 [00:01<00:05, 110.07it/s]Loading weights:  16%|█▌        | 116/730 [00:01<00:05, 114.77it/s]Loading weights:  18%|█▊        | 129/730 [00:01<00:06, 90.50it/s] Loading weights:  22%|██▏       | 159/730 [00:01<00:04, 136.71it/s]Loading weights:  24%|██▍       | 176/730 [00:01<00:04, 125.85it/s]Loading weights:  27%|██▋       | 194/730 [00:01<00:03, 138.24it/s]Loading weights:  29%|██▉       | 210/730 [00:02<00:04, 122.61it/s]Loading weights:  31%|███       | 224/730 [00:02<00:04, 125.59it/s]Loading weights:  33%|███▎      | 238/730 [00:02<00:04, 117.56it/s]Loading weights:  35%|███▍      | 252/730 [00:02<00:03, 121.31it/s]Loading weights:  36%|███▋      | 265/730 [00:02<00:03, 122.50it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 126.28it/s]Loading weights:  40%|████      | 293/730 [00:02<00:03, 116.80it/s]Loading weights:  42%|████▏     | 306/730 [00:02<00:03, 114.61it/s]Loading weights:  45%|████▍     | 328/730 [00:03<00:03, 123.78it/s]Loading weights:  60%|█████▉    | 436/730 [00:03<00:00, 358.83it/s]Loading weights:  80%|███████▉  | 582/730 [00:03<00:00, 641.97it/s]Loading weights:  98%|█████████▊| 716/730 [00:03<00:00, 825.09it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 214.72it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.35
+  pair_correct: 7.0
+  pair_total: 20.0
+  raw_accuracy: 0.675
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 11
+      - 9
+  per_class:
+    'Yes':
+      precision: 0.6206896551724138
+      recall: 0.9
+      f1: 0.7346938775510204
+      support: 20.0
+      predicted: 29.0
+      true_positive: 18.0
+      false_positive: 11.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8181818181818182
+      recall: 0.45
+      f1: 0.5806451612903226
+      support: 20.0
+      predicted: 11.0
+      true_positive: 9.0
+      false_positive: 2.0
+      false_negative: 11.0
+  macro_precision: 0.719435736677116
+  macro_recall: 0.675
+  macro_f1: 0.6576695194206715
+  balanced_accuracy: 0.675
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed43_sav_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed43_sav_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed43_sav_qwen2_vl_20260325_095501.diagnostics.json
+

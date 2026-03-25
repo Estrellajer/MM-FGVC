@@ -1,0 +1,84 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=blink_forensic_detection dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_forensic_detection/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_forensic_detection/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_forensic_detection_seed43_rsev2_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:11,  5.71it/s]Loading weights:   0%|          | 2/750 [00:00<02:32,  4.90it/s]Loading weights:   2%|▏         | 16/750 [00:00<00:17, 42.26it/s]Loading weights:   4%|▎         | 28/750 [00:00<00:11, 63.24it/s]Loading weights:   6%|▌         | 45/750 [00:00<00:07, 92.67it/s]Loading weights:   8%|▊         | 59/750 [00:00<00:06, 101.22it/s]Loading weights:  10%|▉         | 72/750 [00:00<00:06, 103.94it/s]Loading weights:  12%|█▏        | 92/750 [00:01<00:05, 124.95it/s]Loading weights:  14%|█▍        | 106/750 [00:01<00:05, 121.64it/s]Loading weights:  16%|█▌        | 119/750 [00:01<00:05, 117.11it/s]Loading weights:  18%|█▊        | 132/750 [00:01<00:05, 109.13it/s]Loading weights:  21%|██        | 158/750 [00:01<00:04, 141.60it/s]Loading weights:  23%|██▎       | 173/750 [00:01<00:04, 120.16it/s]Loading weights:  27%|██▋       | 202/750 [00:01<00:03, 153.92it/s]Loading weights:  29%|██▉       | 219/750 [00:02<00:03, 146.96it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:03, 138.30it/s]Loading weights:  33%|███▎      | 250/750 [00:02<00:03, 141.04it/s]Loading weights:  36%|███▌      | 268/750 [00:02<00:03, 146.06it/s]Loading weights:  38%|███▊      | 283/750 [00:02<00:03, 139.06it/s]Loading weights:  40%|████      | 301/750 [00:02<00:03, 141.76it/s]Loading weights:  42%|████▏     | 316/750 [00:02<00:03, 134.43it/s]Loading weights:  45%|████▍     | 334/750 [00:02<00:02, 142.83it/s]Loading weights:  47%|████▋     | 349/750 [00:02<00:03, 129.22it/s]Loading weights:  49%|████▊     | 364/750 [00:03<00:02, 134.45it/s]Loading weights:  50%|█████     | 378/750 [00:03<00:02, 133.61it/s]Loading weights:  52%|█████▏    | 392/750 [00:03<00:02, 125.55it/s]Loading weights:  74%|███████▍  | 558/750 [00:03<00:00, 531.24it/s]Loading weights:  97%|█████████▋| 724/750 [00:03<00:00, 831.86it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 209.93it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.85
+  correct: 17.0
+  total: 20.0
+  label_order:
+  - (A)
+  - (D)
+  - (B)
+  - (C)
+  confusion_matrix:
+    labels:
+    - (A)
+    - (D)
+    - (B)
+    - (C)
+    matrix:
+    - - 5
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 3
+      - 0
+      - 2
+    - - 0
+      - 0
+      - 4
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 5
+  per_class:
+    (A):
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    (D):
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 5.0
+      predicted: 3.0
+      true_positive: 3.0
+      false_positive: 0.0
+      false_negative: 2.0
+    (B):
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    (C):
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 5.0
+      predicted: 8.0
+      true_positive: 5.0
+      false_positive: 3.0
+      false_negative: 0.0
+  macro_precision: 0.90625
+  macro_recall: 0.85
+  macro_f1: 0.8520299145299145
+  balanced_accuracy: 0.85
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed43_rsev2_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed43_rsev2_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed43_rsev2_qwen3_vl_20260325_095501.diagnostics.json
+

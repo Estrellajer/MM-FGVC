@@ -1,0 +1,757 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_jigsaw dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_jigsaw/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_jigsaw/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_jigsaw_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:28,  3.60it/s]Loading weights:   0%|          | 2/750 [00:00<03:52,  3.21it/s]Loading weights:   1%|          | 8/750 [00:00<00:48, 15.20it/s]Loading weights:   2%|▏         | 17/750 [00:00<00:22, 32.28it/s]Loading weights:   4%|▍         | 31/750 [00:00<00:12, 58.55it/s]Loading weights:   5%|▌         | 40/750 [00:01<00:10, 65.95it/s]Loading weights:   7%|▋         | 50/750 [00:01<00:09, 74.83it/s]Loading weights:   8%|▊         | 59/750 [00:01<00:08, 77.74it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:07, 89.18it/s]Loading weights:  11%|█         | 83/750 [00:01<00:06, 97.41it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:06, 94.72it/s]Loading weights:  15%|█▍        | 109/750 [00:01<00:05, 109.29it/s]Loading weights:  16%|█▌        | 121/750 [00:01<00:05, 111.31it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:06, 93.32it/s] Loading weights:  20%|██        | 150/750 [00:02<00:05, 112.50it/s]Loading weights:  22%|██▏       | 163/750 [00:02<00:05, 112.36it/s]Loading weights:  23%|██▎       | 175/750 [00:02<00:05, 114.32it/s]Loading weights:  25%|██▍       | 187/750 [00:02<00:04, 114.48it/s]Loading weights:  27%|██▋       | 199/750 [00:02<00:04, 111.82it/s]Loading weights:  28%|██▊       | 211/750 [00:02<00:04, 112.42it/s]Loading weights:  30%|██▉       | 223/750 [00:02<00:05, 97.83it/s] Loading weights:  31%|███       | 234/750 [00:02<00:05, 90.23it/s]Loading weights:  33%|███▎      | 248/750 [00:02<00:04, 101.94it/s]Loading weights:  35%|███▌      | 265/750 [00:03<00:04, 116.42it/s]Loading weights:  37%|███▋      | 278/750 [00:03<00:04, 103.18it/s]Loading weights:  39%|███▉      | 291/750 [00:03<00:04, 102.59it/s]Loading weights:  40%|████      | 302/750 [00:03<00:04, 96.06it/s] Loading weights:  42%|████▏     | 314/750 [00:03<00:04, 101.46it/s]Loading weights:  43%|████▎     | 325/750 [00:03<00:04, 102.78it/s]Loading weights:  45%|████▌     | 339/750 [00:03<00:03, 112.65it/s]Loading weights:  47%|████▋     | 351/750 [00:04<00:04, 87.21it/s] Loading weights:  49%|████▉     | 369/750 [00:04<00:03, 106.20it/s]Loading weights:  51%|█████     | 381/750 [00:04<00:03, 108.00it/s]Loading weights:  52%|█████▏    | 393/750 [00:04<00:03, 109.22it/s]Loading weights:  69%|██████▉   | 518/750 [00:04<00:00, 410.56it/s]Loading weights:  87%|████████▋ | 655/750 [00:04<00:00, 670.14it/s]Loading weights:  99%|█████████▊| 739/750 [00:04<00:00, 711.18it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 159.63it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - The first image is a composite, showing a man on the left and a black
+  - The first image is a composite, showing the top-left portion of a scene (
+  - The first image is a composite, showing a large protest march under a bridge.
+  - The first image is a composite, showing a scene on the left and a large
+  - The first image is a composite, showing a scene that is partially obscured by
+    a
+  - The first image is a composite, showing a large banner with the text "M
+  - The first image is a composite, showing a wall with bullet holes on the left
+  - The first image is a composite, showing a police officer in tactical gear on the
+  - The first image is a composite, showing a view from behind a concrete structure,
+  - The first image is a composite, showing two men side-by-side. The man
+  - The first image is a composite, showing a view through a window with a metal
+  - The first image is a partial screenshot of a presentation slide. It shows the
+    top
+  - The first image is a composite, showing a scene split into two parts. The
+  - The first image is a composite, showing three separate views of people, but with
+  - The first image is a composite, showing a group of women in black mourning attire
+  - The first image is a composite, showing a person from behind looking at a wall
+  - The first image is a composite, showing the damaged rear and side of a white
+  - The first image shows a scene from the World Economic Forum, with a person bending
+  - The first image is a composite, showing a group of people, a large green
+  - The first image is a composite, showing a scene with soldiers and a helicopter,
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - The first image is a composite, showing a man on the left and a black
+    - The first image is a composite, showing the top-left portion of a scene (
+    - The first image is a composite, showing a large protest march under a bridge.
+    - The first image is a composite, showing a scene on the left and a large
+    - The first image is a composite, showing a scene that is partially obscured by
+      a
+    - The first image is a composite, showing a large banner with the text "M
+    - The first image is a composite, showing a wall with bullet holes on the left
+    - The first image is a composite, showing a police officer in tactical gear on
+      the
+    - The first image is a composite, showing a view from behind a concrete structure,
+    - The first image is a composite, showing two men side-by-side. The man
+    - The first image is a composite, showing a view through a window with a metal
+    - The first image is a partial screenshot of a presentation slide. It shows the
+      top
+    - The first image is a composite, showing a scene split into two parts. The
+    - The first image is a composite, showing three separate views of people, but
+      with
+    - The first image is a composite, showing a group of women in black mourning attire
+    - The first image is a composite, showing a person from behind looking at a wall
+    - The first image is a composite, showing the damaged rear and side of a white
+    - The first image shows a scene from the World Economic Forum, with a person bending
+    - The first image is a composite, showing a group of people, a large green
+    - The first image is a composite, showing a scene with soldiers and a helicopter,
+    matrix:
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    The first image is a composite, showing a man on the left and a black:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing the top-left portion of a scene (:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a large protest march under a bridge.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene on the left and a large:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene that is partially obscured by a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a large banner with the text "M:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a wall with bullet holes on the left:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a police officer in tactical gear on the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a view from behind a concrete structure,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing two men side-by-side. The man:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a view through a window with a metal:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a partial screenshot of a presentation slide. It shows the top:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene split into two parts. The:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing three separate views of people, but with:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a group of women in black mourning attire:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a person from behind looking at a wall:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing the damaged rear and side of a white:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image shows a scene from the World Economic Forum, with a person bending:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a group of people, a large green:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene with soldiers and a helicopter,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

@@ -1,0 +1,766 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_art_style dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_art_style/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_art_style/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_art_style_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:20,  3.74it/s]Loading weights:   0%|          | 2/750 [00:00<03:48,  3.27it/s]Loading weights:   2%|▏         | 12/750 [00:00<00:34, 21.29it/s]Loading weights:   4%|▎         | 28/750 [00:00<00:14, 48.31it/s]Loading weights:   5%|▌         | 39/750 [00:00<00:11, 61.63it/s]Loading weights:   7%|▋         | 50/750 [00:01<00:09, 72.76it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:08, 80.92it/s]Loading weights:  10%|█         | 78/750 [00:01<00:06, 103.32it/s]Loading weights:  12%|█▏        | 90/750 [00:01<00:06, 107.73it/s]Loading weights:  14%|█▎        | 102/750 [00:01<00:06, 95.59it/s]Loading weights:  16%|█▌        | 120/750 [00:01<00:05, 115.70it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:05, 117.46it/s]Loading weights:  19%|█▉        | 146/750 [00:01<00:05, 119.30it/s]Loading weights:  21%|██        | 159/750 [00:02<00:05, 103.96it/s]Loading weights:  23%|██▎       | 171/750 [00:02<00:05, 102.23it/s]Loading weights:  24%|██▍       | 182/750 [00:02<00:05, 102.00it/s]Loading weights:  26%|██▋       | 197/750 [00:02<00:04, 112.57it/s]Loading weights:  28%|██▊       | 210/750 [00:02<00:04, 115.23it/s]Loading weights:  30%|██▉       | 223/750 [00:02<00:04, 112.60it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:05, 99.24it/s] Loading weights:  33%|███▎      | 248/750 [00:02<00:04, 104.86it/s]Loading weights:  35%|███▍      | 259/750 [00:02<00:04, 106.15it/s]Loading weights:  36%|███▌      | 270/750 [00:03<00:04, 106.14it/s]Loading weights:  37%|███▋      | 281/750 [00:03<00:04, 103.88it/s]Loading weights:  39%|███▉      | 294/750 [00:03<00:05, 90.68it/s] Loading weights:  42%|████▏     | 318/750 [00:03<00:03, 124.52it/s]Loading weights:  44%|████▍     | 332/750 [00:03<00:03, 120.42it/s]Loading weights:  46%|████▌     | 345/750 [00:03<00:03, 112.34it/s]Loading weights:  48%|████▊     | 357/750 [00:03<00:03, 105.86it/s]Loading weights:  49%|████▉     | 368/750 [00:03<00:03, 104.85it/s]Loading weights:  51%|█████     | 379/750 [00:04<00:03, 96.60it/s] Loading weights:  53%|█████▎    | 395/750 [00:04<00:03, 107.11it/s]Loading weights:  71%|███████   | 533/750 [00:04<00:00, 428.03it/s]Loading weights:  92%|█████████▏| 691/750 [00:04<00:00, 732.06it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 164.89it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (A)
+  - (B)
+  - The reference image is a portrait of a man with a pipe, painted in a
+  - The reference image is a painting by **Édouard Manet**, titled
+  - The reference image is a portrait of a man, painted in a style characteristic
+    of
+  - The reference image is a portrait of a woman with dark hair and a red top
+  - The reference image is a landscape painting characterized by visible, expressive
+    brushstrokes and
+  - The reference image is a painting by **Wassily Kandinsky**, titled
+  - The reference image is a vibrant, impressionistic oil painting of a coastal scene,
+  - The reference image is a vibrant, impressionistic landscape painting characterized
+    by visible, expressive
+  - The reference image is a piece of pop art, characterized by its bold, flat
+  - The reference image is a painting by **Salvador Dalí**, specifically *
+  - The reference image is a painting by **Roy Lichtenstein**, a key figure
+  - The reference image is a stylized, graphic illustration of a fried egg in a
+  - The reference image is a stylized, graphic illustration of a woman in a swims
+  - The reference image is a stylized, graphic depiction of a figure, characterized
+    by
+  - The reference image is a **geometric abstract composition** characterized by **repeating
+  - The reference image is a vibrant, detailed, and fantastical illustration of a
+    snowy
+  - The reference image is a highly detailed, ornate, and realistic depiction of a
+  - The reference image is a work by Roy Lichtenstein, characterized by its bold
+  - The reference image is a triptych by Robert Rauschenberg, titled
+  - The reference image is a watercolor painting depicting a solitary figure on a
+    bicycle,
+  confusion_matrix:
+    labels:
+    - (A)
+    - (B)
+    - The reference image is a portrait of a man with a pipe, painted in a
+    - The reference image is a painting by **Édouard Manet**, titled
+    - The reference image is a portrait of a man, painted in a style characteristic
+      of
+    - The reference image is a portrait of a woman with dark hair and a red top
+    - The reference image is a landscape painting characterized by visible, expressive
+      brushstrokes and
+    - The reference image is a painting by **Wassily Kandinsky**, titled
+    - The reference image is a vibrant, impressionistic oil painting of a coastal
+      scene,
+    - The reference image is a vibrant, impressionistic landscape painting characterized
+      by visible, expressive
+    - The reference image is a piece of pop art, characterized by its bold, flat
+    - The reference image is a painting by **Salvador Dalí**, specifically *
+    - The reference image is a painting by **Roy Lichtenstein**, a key figure
+    - The reference image is a stylized, graphic illustration of a fried egg in a
+    - The reference image is a stylized, graphic illustration of a woman in a swims
+    - The reference image is a stylized, graphic depiction of a figure, characterized
+      by
+    - The reference image is a **geometric abstract composition** characterized by
+      **repeating
+    - The reference image is a vibrant, detailed, and fantastical illustration of
+      a snowy
+    - The reference image is a highly detailed, ornate, and realistic depiction of
+      a
+    - The reference image is a work by Roy Lichtenstein, characterized by its bold
+    - The reference image is a triptych by Robert Rauschenberg, titled
+    - The reference image is a watercolor painting depicting a solitary figure on
+      a bicycle,
+    matrix:
+    - - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    The reference image is a portrait of a man with a pipe, painted in a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting by **Édouard Manet**, titled:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a portrait of a man, painted in a style characteristic of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a portrait of a woman with dark hair and a red top:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a landscape painting characterized by visible, expressive brushstrokes and:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting by **Wassily Kandinsky**, titled:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a vibrant, impressionistic oil painting of a coastal scene,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a vibrant, impressionistic landscape painting characterized by visible, expressive:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a piece of pop art, characterized by its bold, flat:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting by **Salvador Dalí**, specifically *:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting by **Roy Lichtenstein**, a key figure:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a stylized, graphic illustration of a fried egg in a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a stylized, graphic illustration of a woman in a swims:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a stylized, graphic depiction of a figure, characterized by:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a **geometric abstract composition** characterized by **repeating:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a vibrant, detailed, and fantastical illustration of a snowy:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a highly detailed, ornate, and realistic depiction of a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a work by Roy Lichtenstein, characterized by its bold:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a triptych by Robert Rauschenberg, titled:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a watercolor painting depicting a solitary figure on a bicycle,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

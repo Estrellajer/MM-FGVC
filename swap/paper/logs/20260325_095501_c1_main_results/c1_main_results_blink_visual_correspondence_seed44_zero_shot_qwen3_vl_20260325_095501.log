@@ -1,0 +1,699 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_visual_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_visual_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_visual_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_visual_correspondence_seed44_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:51,  4.38it/s]Loading weights:   0%|          | 2/750 [00:00<03:31,  3.54it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:26, 27.92it/s]Loading weights:   3%|▎         | 23/750 [00:00<00:16, 44.77it/s]Loading weights:   4%|▍         | 32/750 [00:01<00:18, 38.63it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:08, 85.22it/s]Loading weights:  10%|▉         | 73/750 [00:01<00:07, 91.77it/s]Loading weights:  11%|█▏        | 85/750 [00:01<00:07, 94.19it/s]Loading weights:  13%|█▎        | 97/750 [00:01<00:06, 97.87it/s]Loading weights:  15%|█▍        | 109/750 [00:01<00:06, 93.46it/s]Loading weights:  16%|█▋        | 122/750 [00:01<00:06, 101.06it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:07, 78.73it/s] Loading weights:  20%|██        | 152/750 [00:02<00:05, 102.48it/s]Loading weights:  22%|██▏       | 164/750 [00:02<00:05, 101.43it/s]Loading weights:  23%|██▎       | 176/750 [00:02<00:05, 105.21it/s]Loading weights:  25%|██▌       | 188/750 [00:02<00:05, 104.83it/s]Loading weights:  27%|██▋       | 200/750 [00:02<00:05, 105.92it/s]Loading weights:  28%|██▊       | 212/750 [00:02<00:05, 94.84it/s] Loading weights:  30%|██▉       | 223/750 [00:02<00:05, 94.46it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:05, 100.82it/s]Loading weights:  33%|███▎      | 246/750 [00:03<00:06, 82.75it/s] Loading weights:  35%|███▍      | 260/750 [00:03<00:05, 96.02it/s]Loading weights:  37%|███▋      | 279/750 [00:03<00:04, 113.33it/s]Loading weights:  39%|███▉      | 292/750 [00:03<00:04, 100.36it/s]Loading weights:  41%|████      | 307/750 [00:03<00:04, 110.22it/s]Loading weights:  43%|████▎     | 323/750 [00:03<00:03, 119.69it/s]Loading weights:  45%|████▍     | 336/750 [00:03<00:03, 113.61it/s]Loading weights:  47%|████▋     | 351/750 [00:03<00:03, 122.52it/s]Loading weights:  49%|████▉     | 367/750 [00:04<00:03, 126.72it/s]Loading weights:  51%|█████     | 380/750 [00:04<00:03, 114.97it/s]Loading weights:  53%|█████▎    | 397/750 [00:04<00:02, 128.13it/s]Loading weights:  73%|███████▎  | 547/750 [00:04<00:00, 490.43it/s]Loading weights:  96%|█████████▌| 717/750 [00:04<00:00, 820.76it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 164.45it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (C)
+  - (A)
+  - (B)
+  - The reference point 'REF' in the first image is located on the upper part
+  - The reference point 'REF' in the first image is located on a yellow construction
+  - The reference point 'REF' in the first image is located on the bottom edge
+  - The reference point 'REF' in the first image is located on a red,
+  - The reference point 'REF' in the first image is located on a large,
+  - The reference point 'REF' in the first image is located on the bottom right
+  - The reference point 'REF' in the first image is located on the beekeeper
+  - The reference point 'REF' in the first image is located on the mural,
+  - The reference point 'REF' in the first image is located on a tree,
+  - The reference point 'REF' in the first image is located on a torn piece
+  - The reference point 'REF' in the first image is located on a small,
+  - The reference point 'REF' in the first image is located on the pebb
+  - The reference point 'REF' in the first image is located on the black lead
+  - The reference point 'REF' in the first image is located on a dark-colored
+  - To determine which point corresponds to the reference point, we need to carefully
+    compare the
+  - The reference point 'REF' in the first image is located on a tree in
+  - The reference point 'REF' in the first image is located on the temperature display
+  confusion_matrix:
+    labels:
+    - (D)
+    - (C)
+    - (A)
+    - (B)
+    - The reference point 'REF' in the first image is located on the upper part
+    - The reference point 'REF' in the first image is located on a yellow construction
+    - The reference point 'REF' in the first image is located on the bottom edge
+    - The reference point 'REF' in the first image is located on a red,
+    - The reference point 'REF' in the first image is located on a large,
+    - The reference point 'REF' in the first image is located on the bottom right
+    - The reference point 'REF' in the first image is located on the beekeeper
+    - The reference point 'REF' in the first image is located on the mural,
+    - The reference point 'REF' in the first image is located on a tree,
+    - The reference point 'REF' in the first image is located on a torn piece
+    - The reference point 'REF' in the first image is located on a small,
+    - The reference point 'REF' in the first image is located on the pebb
+    - The reference point 'REF' in the first image is located on the black lead
+    - The reference point 'REF' in the first image is located on a dark-colored
+    - To determine which point corresponds to the reference point, we need to carefully
+      compare the
+    - The reference point 'REF' in the first image is located on a tree in
+    - The reference point 'REF' in the first image is located on the temperature display
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    The reference point 'REF' in the first image is located on the upper part:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a yellow construction:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the bottom edge:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a red,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a large,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the bottom right:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the beekeeper:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the mural,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a tree,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a torn piece:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a small,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the pebb:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the black lead:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a dark-colored:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to carefully compare the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on a tree in:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the temperature display:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_visual_correspondence_seed44_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_visual_correspondence_seed44_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_visual_correspondence_seed44_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

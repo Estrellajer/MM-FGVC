@@ -1,0 +1,273 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_spatial_relation",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.6,
+    "correct": 12.0,
+    "total": 20.0,
+    "label_order": [
+      "(B)",
+      "(A)",
+      "Looking at the image, the cat is sitting on a surface inside the house,",
+      "Based on the image provided, the bicycle is not on the bus. It is",
+      "The person is holding the banana, so they are next to it.\n\nAnswer:",
+      "Looking at the image, the child is holding the hair dryer in her right hand",
+      "The laptop is not touching the person. The person's hand is resting on the",
+      "Looking at the image, the red bus is positioned directly alongside the motorcycle. The",
+      "Looking at the image, the cat is lying inside an open blue suitcase. There",
+      "Looking at the image, we can see a green alien figurine sitting on a"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(B)",
+        "(A)",
+        "Looking at the image, the cat is sitting on a surface inside the house,",
+        "Based on the image provided, the bicycle is not on the bus. It is",
+        "The person is holding the banana, so they are next to it.\n\nAnswer:",
+        "Looking at the image, the child is holding the hair dryer in her right hand",
+        "The laptop is not touching the person. The person's hand is resting on the",
+        "Looking at the image, the red bus is positioned directly alongside the motorcycle. The",
+        "Looking at the image, the cat is lying inside an open blue suitcase. There",
+        "Looking at the image, we can see a green alien figurine sitting on a"
+      ],
+      "matrix": [
+        [
+          7,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          5,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(B)": {
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058,
+        "support": 10.0,
+        "predicted": 7.0,
+        "true_positive": 7.0,
+        "false_positive": 0.0,
+        "false_negative": 3.0
+      },
+      "(A)": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 10.0,
+        "predicted": 5.0,
+        "true_positive": 5.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "Looking at the image, the cat is sitting on a surface inside the house,": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Based on the image provided, the bicycle is not on the bus. It is": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The person is holding the banana, so they are next to it.\n\nAnswer:": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Looking at the image, the child is holding the hair dryer in her right hand": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The laptop is not touching the person. The person's hand is resting on the": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Looking at the image, the red bus is positioned directly alongside the motorcycle. The": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Looking at the image, the cat is lying inside an open blue suitcase. There": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Looking at the image, we can see a green alien figurine sitting on a": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.2,
+    "macro_recall": 0.12,
+    "macro_f1": 0.14901960784313725,
+    "balanced_accuracy": 0.12
+  },
+  "timings": {
+    "fit_time_sec": 1.2332573533058167e-05,
+    "predict_time_sec": 5.45032493956387,
+    "total_time_sec": 5.4503372721374035,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.27251624697819354
+  }
+}

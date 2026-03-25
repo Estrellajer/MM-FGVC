@@ -1,0 +1,246 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_spatial_relation dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_spatial_relation/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_spatial_relation/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_spatial_relation_seed43_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:20,  5.35it/s]Loading weights:   0%|          | 2/750 [00:00<02:37,  4.75it/s]Loading weights:   2%|▏         | 14/750 [00:00<00:22, 33.37it/s]Loading weights:   5%|▍         | 35/750 [00:00<00:09, 71.88it/s]Loading weights:   7%|▋         | 49/750 [00:00<00:07, 88.89it/s]Loading weights:   9%|▉         | 67/750 [00:00<00:06, 111.30it/s]Loading weights:  11%|█         | 81/750 [00:01<00:05, 118.28it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:05, 111.16it/s]Loading weights:  14%|█▍        | 107/750 [00:01<00:05, 115.03it/s]Loading weights:  16%|█▌        | 120/750 [00:01<00:06, 100.08it/s]Loading weights:  19%|█▉        | 145/750 [00:01<00:04, 124.67it/s]Loading weights:  21%|██        | 158/750 [00:01<00:04, 125.00it/s]Loading weights:  24%|██▎       | 178/750 [00:01<00:03, 143.84it/s]Loading weights:  26%|██▌       | 193/750 [00:01<00:04, 127.06it/s]Loading weights:  28%|██▊       | 208/750 [00:02<00:04, 131.16it/s]Loading weights:  30%|██▉       | 224/750 [00:02<00:03, 136.82it/s]Loading weights:  32%|███▏      | 239/750 [00:02<00:03, 129.19it/s]Loading weights:  34%|███▎      | 253/750 [00:02<00:03, 127.57it/s]Loading weights:  35%|███▌      | 266/750 [00:02<00:03, 125.67it/s]Loading weights:  37%|███▋      | 279/750 [00:02<00:03, 124.60it/s]Loading weights:  39%|███▉      | 292/750 [00:02<00:03, 118.10it/s]Loading weights:  41%|████      | 306/750 [00:02<00:03, 123.96it/s]Loading weights:  43%|████▎     | 319/750 [00:02<00:03, 123.35it/s]Loading weights:  45%|████▍     | 334/750 [00:03<00:03, 129.86it/s]Loading weights:  46%|████▋     | 348/750 [00:03<00:03, 119.87it/s]Loading weights:  48%|████▊     | 362/750 [00:03<00:03, 123.31it/s]Loading weights:  50%|█████     | 378/750 [00:03<00:02, 126.54it/s]Loading weights:  52%|█████▏    | 391/750 [00:03<00:03, 107.65it/s]Loading weights:  72%|███████▏  | 540/750 [00:03<00:00, 448.07it/s]Loading weights:  96%|█████████▌| 718/750 [00:03<00:00, 792.84it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 194.59it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 12.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - Looking at the image, the cat is sitting on a surface inside the house,
+  - Based on the image provided, the bicycle is not on the bus. It is
+  - 'The person is holding the banana, so they are next to it.
+
+
+    Answer:'
+  - Looking at the image, the child is holding the hair dryer in her right hand
+  - The laptop is not touching the person. The person's hand is resting on the
+  - Looking at the image, the red bus is positioned directly alongside the motorcycle.
+    The
+  - Looking at the image, the cat is lying inside an open blue suitcase. There
+  - Looking at the image, we can see a green alien figurine sitting on a
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - Looking at the image, the cat is sitting on a surface inside the house,
+    - Based on the image provided, the bicycle is not on the bus. It is
+    - 'The person is holding the banana, so they are next to it.
+
+
+      Answer:'
+    - Looking at the image, the child is holding the hair dryer in her right hand
+    - The laptop is not touching the person. The person's hand is resting on the
+    - Looking at the image, the red bus is positioned directly alongside the motorcycle.
+      The
+    - Looking at the image, the cat is lying inside an open blue suitcase. There
+    - Looking at the image, we can see a green alien figurine sitting on a
+    matrix:
+    - - 7
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 5
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 1.0
+      recall: 0.7
+      f1: 0.8235294117647058
+      support: 10.0
+      predicted: 7.0
+      true_positive: 7.0
+      false_positive: 0.0
+      false_negative: 3.0
+    (A):
+      precision: 1.0
+      recall: 0.5
+      f1: 0.6666666666666666
+      support: 10.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 5.0
+    Looking at the image, the cat is sitting on a surface inside the house,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Based on the image provided, the bicycle is not on the bus. It is:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'The person is holding the banana, so they are next to it.
+
+
+      Answer:'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, the child is holding the hair dryer in her right hand:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The laptop is not touching the person. The person's hand is resting on the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, the red bus is positioned directly alongside the motorcycle. The:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, the cat is lying inside an open blue suitcase. There:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, we can see a green alien figurine sitting on a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.2
+  macro_recall: 0.12
+  macro_f1: 0.14901960784313725
+  balanced_accuracy: 0.12
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_spatial_relation_seed43_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_spatial_relation_seed43_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_spatial_relation_seed43_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

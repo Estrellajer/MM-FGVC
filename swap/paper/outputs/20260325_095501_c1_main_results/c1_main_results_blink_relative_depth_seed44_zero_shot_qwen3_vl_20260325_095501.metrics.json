@@ -1,0 +1,240 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_relative_depth",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.2,
+    "correct": 4.0,
+    "total": 20.0,
+    "label_order": [
+      "(B)",
+      "(A)",
+      "To determine which point is closer to the camera, we need to analyze the spatial",
+      "To determine which point is closer to the camera, we need to analyze the perspective",
+      "The point labeled **A** is closer to the camera.\n\nHere's why:",
+      "Based on the image provided, we can determine which point is closer to the camera",
+      "The point closer to the camera is **A**.\n\nHere's why:\n-",
+      "To determine which point is closer to the camera, we need to analyze the depth",
+      "Looking at the image, we can analyze the positions of points A and B relative"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(B)",
+        "(A)",
+        "To determine which point is closer to the camera, we need to analyze the spatial",
+        "To determine which point is closer to the camera, we need to analyze the perspective",
+        "The point labeled **A** is closer to the camera.\n\nHere's why:",
+        "Based on the image provided, we can determine which point is closer to the camera",
+        "The point closer to the camera is **A**.\n\nHere's why:\n-",
+        "To determine which point is closer to the camera, we need to analyze the depth",
+        "Looking at the image, we can analyze the positions of points A and B relative"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          3,
+          3,
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          4,
+          2,
+          0,
+          3,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 10.0
+      },
+      "(A)": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285715,
+        "support": 10.0,
+        "predicted": 4.0,
+        "true_positive": 4.0,
+        "false_positive": 0.0,
+        "false_negative": 6.0
+      },
+      "To determine which point is closer to the camera, we need to analyze the spatial": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 5.0,
+        "true_positive": 0.0,
+        "false_positive": 5.0,
+        "false_negative": 0.0
+      },
+      "To determine which point is closer to the camera, we need to analyze the perspective": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 3.0,
+        "true_positive": 0.0,
+        "false_positive": 3.0,
+        "false_negative": 0.0
+      },
+      "The point labeled **A** is closer to the camera.\n\nHere's why:": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 3.0,
+        "true_positive": 0.0,
+        "false_positive": 3.0,
+        "false_negative": 0.0
+      },
+      "Based on the image provided, we can determine which point is closer to the camera": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The point closer to the camera is **A**.\n\nHere's why:\n-": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "To determine which point is closer to the camera, we need to analyze the depth": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Looking at the image, we can analyze the positions of points A and B relative": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.1111111111111111,
+    "macro_recall": 0.044444444444444446,
+    "macro_f1": 0.0634920634920635,
+    "balanced_accuracy": 0.044444444444444446
+  },
+  "timings": {
+    "fit_time_sec": 1.2053176760673523e-05,
+    "predict_time_sec": 8.235680686309934,
+    "total_time_sec": 8.235692739486694,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.4117840343154967
+  }
+}

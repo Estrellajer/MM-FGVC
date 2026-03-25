@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import random
+import time
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -73,6 +74,7 @@ def _save_results(
     predictions: List[str],
     labels: List[str],
     val_data: List[Dict[str, Any]],
+    timings: Dict[str, Any],
     diagnostics: Dict[str, Any] | None = None,
 ) -> Dict[str, str]:
     output_dir = Path(hydra.utils.to_absolute_path(cfg.run.output_dir))
@@ -89,6 +91,7 @@ def _save_results(
         "method": str(cfg.method.name),
         "evaluator": str(cfg.evaluator.name),
         "metrics": metrics,
+        "timings": timings,
     }
     metrics_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -141,26 +144,41 @@ def run_experiment(cfg: DictConfig) -> Dict[str, Any]:
         **method_params,
     )
 
+    timings: Dict[str, Any] = {}
+    fit_started = time.perf_counter()
     if bool(cfg.method.get("fit_on_train", False)):
         method.fit(train_data)
+    fit_time_sec = time.perf_counter() - fit_started
 
     labels = [str(item["label"]).strip() for item in val_data]
     iterator = tqdm(val_data, desc="Evaluating") if bool(cfg.run.get("progress_bar", True)) else val_data
+    predict_started = time.perf_counter()
     predictions = [method.predict(item) for item in iterator]
+    predict_time_sec = time.perf_counter() - predict_started
+
+    timings = {
+        "fit_time_sec": fit_time_sec,
+        "predict_time_sec": predict_time_sec,
+        "total_time_sec": fit_time_sec + predict_time_sec,
+        "num_eval_samples": len(val_data),
+        "avg_predict_time_sec": (predict_time_sec / len(val_data)) if val_data else 0.0,
+    }
 
     evaluator_name = _resolve_evaluator_name(cfg)
     evaluator = build_evaluator(evaluator_name)
     metrics = evaluator.evaluate(predictions, labels, val_data)
 
-    diagnostics = {}
+    diagnostics: Dict[str, Any] = {}
     if hasattr(method, "export_diagnostics"):
         exported = method.export_diagnostics()
         if isinstance(exported, dict):
             diagnostics = exported
+    diagnostics["timings"] = timings
 
-    saved_paths = _save_results(cfg, metrics, predictions, labels, val_data, diagnostics=diagnostics)
+    saved_paths = _save_results(cfg, metrics, predictions, labels, val_data, timings, diagnostics=diagnostics)
 
     return {
         "metrics": metrics,
+        "timings": timings,
         "saved_paths": saved_paths,
     }

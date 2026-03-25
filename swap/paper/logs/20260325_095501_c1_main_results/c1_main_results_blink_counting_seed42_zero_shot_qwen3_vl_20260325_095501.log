@@ -1,0 +1,914 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_counting dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_counting/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_counting/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_counting_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:19,  3.76it/s]Loading weights:   0%|          | 2/750 [00:00<03:50,  3.25it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:25, 28.98it/s]Loading weights:   3%|▎         | 26/750 [00:00<00:15, 45.99it/s]Loading weights:   5%|▍         | 37/750 [00:00<00:11, 61.07it/s]Loading weights:   6%|▌         | 46/750 [00:01<00:10, 67.53it/s]Loading weights:   8%|▊         | 59/750 [00:01<00:08, 79.64it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:07, 85.19it/s]Loading weights:  11%|█         | 81/750 [00:01<00:07, 84.17it/s]Loading weights:  13%|█▎        | 97/750 [00:01<00:06, 103.71it/s]Loading weights:  15%|█▍        | 109/750 [00:01<00:06, 102.69it/s]Loading weights:  16%|█▌        | 120/750 [00:01<00:06, 104.49it/s]Loading weights:  17%|█▋        | 131/750 [00:01<00:06, 101.99it/s]Loading weights:  19%|█▉        | 142/750 [00:01<00:06, 101.10it/s]Loading weights:  20%|██        | 153/750 [00:02<00:06, 97.87it/s] Loading weights:  22%|██▏       | 164/750 [00:02<00:06, 96.25it/s]Loading weights:  23%|██▎       | 174/750 [00:02<00:06, 95.54it/s]Loading weights:  25%|██▍       | 184/750 [00:02<00:07, 73.73it/s]Loading weights:  27%|██▋       | 202/750 [00:02<00:06, 90.40it/s]Loading weights:  29%|██▉       | 221/750 [00:02<00:04, 111.73it/s]Loading weights:  31%|███       | 234/750 [00:02<00:04, 109.62it/s]Loading weights:  33%|███▎      | 247/750 [00:03<00:04, 108.00it/s]Loading weights:  35%|███▍      | 259/750 [00:03<00:05, 94.84it/s] Loading weights:  36%|███▋      | 272/750 [00:03<00:04, 101.23it/s]Loading weights:  38%|███▊      | 283/750 [00:03<00:04, 99.73it/s] Loading weights:  39%|███▉      | 296/750 [00:03<00:04, 106.04it/s]Loading weights:  41%|████      | 309/750 [00:03<00:03, 111.52it/s]Loading weights:  43%|████▎     | 321/750 [00:03<00:03, 113.19it/s]Loading weights:  44%|████▍     | 333/750 [00:03<00:04, 96.00it/s] Loading weights:  46%|████▌     | 344/750 [00:04<00:04, 84.30it/s]Loading weights:  49%|████▉     | 367/750 [00:04<00:03, 117.39it/s]Loading weights:  51%|█████     | 381/750 [00:04<00:03, 103.25it/s]Loading weights:  52%|█████▏    | 393/750 [00:04<00:03, 102.00it/s]Loading weights:  72%|███████▏  | 539/750 [00:04<00:00, 424.20it/s]Loading weights:  91%|█████████ | 683/750 [00:04<00:00, 677.86it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 157.10it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (A)
+  - (C)
+  - Looking at the image, I can see a food truck parked on a sandy beach
+  - 'Looking at the image, I can see three people sitting at the table:
+
+
+    -'
+  - Looking at the image, above the sink there is a decorative row of tiles set
+  - 'Looking at the image, I can identify the glasses that contain water:
+
+
+    1.'
+  - Looking at the image, there is a wooden horse sculpture in the center. Near
+  - 'Looking at the image, there is one person clearly visible in the foreground:
+    an'
+  - Looking at the image, we can see a man leaning over the edge of a
+  - 'Looking at the image, I can see several buses parked in a lot.
+
+
+    -'
+  - Looking at the image provided, there is one bus visible. The bus is painted
+  - 'Looking at the image provided, I can see several vehicles in the background.
+
+
+    -'
+  - Looking at the image, we can see several people on a snowy mountain slope.
+  - Looking at the image provided, we can see a mosaic table with Roman numerals
+  - The image shows a tall, ornate clock tower against a clear blue sky.
+  - 'Looking at the image, we can see:
+
+
+    - Two hands are visible in the'
+  - Looking at the stove in the image, we can see the control panel on the
+  - Looking at the front of the train in the image, we can see the word
+  - Looking at the image, we can see the side of the train. There are
+  - Looking at the image provided, which shows the interior of an aviation museum
+    with several
+  - Looking at the image, there is one person visible on the snow, actively snow
+  - Looking at the image, I can see several people in the water in the distance
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (A)
+    - (C)
+    - Looking at the image, I can see a food truck parked on a sandy beach
+    - 'Looking at the image, I can see three people sitting at the table:
+
+
+      -'
+    - Looking at the image, above the sink there is a decorative row of tiles set
+    - 'Looking at the image, I can identify the glasses that contain water:
+
+
+      1.'
+    - Looking at the image, there is a wooden horse sculpture in the center. Near
+    - 'Looking at the image, there is one person clearly visible in the foreground:
+      an'
+    - Looking at the image, we can see a man leaning over the edge of a
+    - 'Looking at the image, I can see several buses parked in a lot.
+
+
+      -'
+    - Looking at the image provided, there is one bus visible. The bus is painted
+    - 'Looking at the image provided, I can see several vehicles in the background.
+
+
+      -'
+    - Looking at the image, we can see several people on a snowy mountain slope.
+    - Looking at the image provided, we can see a mosaic table with Roman numerals
+    - The image shows a tall, ornate clock tower against a clear blue sky.
+    - 'Looking at the image, we can see:
+
+
+      - Two hands are visible in the'
+    - Looking at the stove in the image, we can see the control panel on the
+    - Looking at the front of the train in the image, we can see the word
+    - Looking at the image, we can see the side of the train. There are
+    - Looking at the image provided, which shows the interior of an aviation museum
+      with several
+    - Looking at the image, there is one person visible on the snow, actively snow
+    - Looking at the image, I can see several people in the water in the distance
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    Looking at the image, I can see a food truck parked on a sandy beach:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the image, I can see three people sitting at the table:
+
+
+      -'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, above the sink there is a decorative row of tiles set:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the image, I can identify the glasses that contain water:
+
+
+      1.'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, there is a wooden horse sculpture in the center. Near:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    'Looking at the image, there is one person clearly visible in the foreground: an':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, we can see a man leaning over the edge of a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the image, I can see several buses parked in a lot.
+
+
+      -'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image provided, there is one bus visible. The bus is painted:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the image provided, I can see several vehicles in the background.
+
+
+      -'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, we can see several people on a snowy mountain slope.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image provided, we can see a mosaic table with Roman numerals:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The image shows a tall, ornate clock tower against a clear blue sky.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the image, we can see:
+
+
+      - Two hands are visible in the'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the stove in the image, we can see the control panel on the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the front of the train in the image, we can see the word:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, we can see the side of the train. There are:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image provided, which shows the interior of an aviation museum with several:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, there is one person visible on the snow, actively snow:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, I can see several people in the water in the distance:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

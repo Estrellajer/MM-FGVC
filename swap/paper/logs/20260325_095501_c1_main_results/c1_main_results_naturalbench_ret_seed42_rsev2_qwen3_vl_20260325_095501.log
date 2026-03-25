@@ -1,0 +1,54 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=naturalbench_group dataset.name=naturalbench_ret dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_ret/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_ret/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:53,  4.33it/s]Loading weights:   0%|          | 2/750 [00:00<03:33,  3.51it/s]Loading weights:   2%|▏         | 14/750 [00:00<00:28, 25.74it/s]Loading weights:   4%|▎         | 28/750 [00:00<00:14, 48.64it/s]Loading weights:   6%|▌         | 42/750 [00:00<00:10, 69.51it/s]Loading weights:   7%|▋         | 52/750 [00:01<00:09, 77.01it/s]Loading weights:   9%|▊         | 65/750 [00:01<00:07, 88.95it/s]Loading weights:  10%|█         | 76/750 [00:01<00:07, 91.45it/s]Loading weights:  12%|█▏        | 87/750 [00:01<00:06, 96.39it/s]Loading weights:  13%|█▎        | 98/750 [00:01<00:06, 98.57it/s]Loading weights:  15%|█▍        | 109/750 [00:01<00:06, 101.05it/s]Loading weights:  16%|█▌        | 121/750 [00:01<00:06, 104.08it/s]Loading weights:  18%|█▊        | 136/750 [00:01<00:05, 111.04it/s]Loading weights:  20%|█▉        | 148/750 [00:01<00:05, 104.02it/s]Loading weights:  21%|██▏       | 160/750 [00:02<00:05, 102.94it/s]Loading weights:  23%|██▎       | 175/750 [00:02<00:04, 115.36it/s]Loading weights:  25%|██▌       | 188/750 [00:02<00:04, 118.80it/s]Loading weights:  27%|██▋       | 202/750 [00:02<00:04, 120.06it/s]Loading weights:  29%|██▊       | 215/750 [00:02<00:04, 111.11it/s]Loading weights:  31%|███       | 232/750 [00:02<00:04, 124.61it/s]Loading weights:  33%|███▎      | 245/750 [00:02<00:04, 118.96it/s]Loading weights:  34%|███▍      | 258/750 [00:02<00:04, 111.60it/s]Loading weights:  37%|███▋      | 274/750 [00:02<00:03, 121.70it/s]Loading weights:  38%|███▊      | 287/750 [00:03<00:07, 65.48it/s] Loading weights:  46%|████▌     | 346/750 [00:03<00:02, 150.61it/s]Loading weights:  49%|████▉     | 369/750 [00:03<00:02, 142.66it/s]Loading weights:  52%|█████▏    | 389/750 [00:03<00:02, 138.53it/s]Loading weights:  61%|██████    | 455/750 [00:03<00:01, 240.05it/s]Loading weights:  83%|████████▎ | 623/750 [00:04<00:00, 553.74it/s]Loading weights:  98%|█████████▊| 733/750 [00:04<00:00, 681.77it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 177.97it/s]
+metrics:
+  metric: naturalbench_group
+  q_acc: 1.0
+  i_acc: 1.0
+  g_acc: 1.0
+  raw_acc: 1.0
+  group_total: 10.0
+  used_samples: 40.0
+  dropped_samples: 0.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 20
+      - 0
+    - - 0
+      - 20
+  per_class:
+    'Yes':
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+    'No':
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_095501.diagnostics.json
+

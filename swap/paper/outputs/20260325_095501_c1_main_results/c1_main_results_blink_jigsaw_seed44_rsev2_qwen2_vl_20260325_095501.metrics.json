@@ -1,0 +1,65 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_jigsaw",
+  "method": "rsev2",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.5,
+    "correct": 10.0,
+    "total": 20.0,
+    "label_order": [
+      "(B)",
+      "(A)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(B)",
+        "(A)"
+      ],
+      "matrix": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    "per_class": {
+      "(B)": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "support": 10.0,
+        "predicted": 10.0,
+        "true_positive": 5.0,
+        "false_positive": 5.0,
+        "false_negative": 5.0
+      },
+      "(A)": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "support": 10.0,
+        "predicted": 10.0,
+        "true_positive": 5.0,
+        "false_positive": 5.0,
+        "false_negative": 5.0
+      }
+    },
+    "macro_precision": 0.5,
+    "macro_recall": 0.5,
+    "macro_f1": 0.5,
+    "balanced_accuracy": 0.5
+  },
+  "timings": {
+    "fit_time_sec": 4.460520444437861,
+    "predict_time_sec": 1.8731480427086353,
+    "total_time_sec": 6.333668487146497,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.09365740213543176
+  }
+}

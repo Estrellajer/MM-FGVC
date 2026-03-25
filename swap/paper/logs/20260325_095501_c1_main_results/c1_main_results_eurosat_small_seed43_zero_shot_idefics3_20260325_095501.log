@@ -1,0 +1,457 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/eurosat_small/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/eurosat_small/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_eurosat_small_seed43_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:25,  5.00it/s]Loading weights:   0%|          | 3/729 [00:00<01:43,  7.04it/s]Loading weights:   1%|▏         | 10/729 [00:00<00:30, 23.86it/s]Loading weights:   2%|▏         | 17/729 [00:00<00:19, 36.48it/s]Loading weights:   4%|▍         | 28/729 [00:00<00:12, 56.32it/s]Loading weights:   5%|▍         | 35/729 [00:00<00:11, 58.03it/s]Loading weights:   6%|▌         | 42/729 [00:00<00:11, 58.91it/s]Loading weights:   8%|▊         | 59/729 [00:01<00:07, 88.72it/s]Loading weights:   9%|▉         | 69/729 [00:01<00:07, 88.48it/s]Loading weights:  11%|█         | 79/729 [00:01<00:07, 87.14it/s]Loading weights:  12%|█▏        | 89/729 [00:01<00:07, 89.20it/s]Loading weights:  14%|█▎        | 100/729 [00:01<00:06, 94.04it/s]Loading weights:  15%|█▌        | 110/729 [00:01<00:06, 94.44it/s]Loading weights:  16%|█▋        | 120/729 [00:01<00:06, 95.93it/s]Loading weights:  18%|█▊        | 130/729 [00:01<00:06, 89.69it/s]Loading weights:  19%|█▉        | 140/729 [00:01<00:06, 85.27it/s]Loading weights:  21%|██        | 150/729 [00:02<00:08, 67.44it/s]Loading weights:  23%|██▎       | 169/729 [00:02<00:06, 92.95it/s]Loading weights:  25%|██▍       | 180/729 [00:02<00:05, 94.48it/s]Loading weights:  26%|██▌       | 191/729 [00:02<00:05, 94.60it/s]Loading weights:  28%|██▊       | 202/729 [00:02<00:05, 98.03it/s]Loading weights:  29%|██▉       | 213/729 [00:02<00:06, 85.16it/s]Loading weights:  31%|███       | 223/729 [00:02<00:06, 80.65it/s]Loading weights:  32%|███▏      | 232/729 [00:03<00:06, 80.51it/s]Loading weights:  33%|███▎      | 241/729 [00:03<00:06, 74.39it/s]Loading weights:  35%|███▍      | 252/729 [00:03<00:05, 79.91it/s]Loading weights:  36%|███▌      | 262/729 [00:03<00:06, 75.61it/s]Loading weights:  38%|███▊      | 275/729 [00:03<00:06, 74.19it/s]Loading weights:  46%|████▌     | 335/729 [00:03<00:02, 191.11it/s]Loading weights:  75%|███████▍  | 546/729 [00:03<00:00, 654.06it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 184.29it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.38
+  correct: 19.0
+  total: 50.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  - 'Answer: C'
+  - A
+  - 'Answer: A'
+  - 'Answer: B'
+  - C
+  - B
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    - 'Answer: C'
+    - A
+    - 'Answer: A'
+    - 'Answer: B'
+    - C
+    - B
+    matrix:
+    - - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 3
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 3
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 3
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    Annual Crop Land:
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 5.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 3.0
+    Forest:
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    Herbaceous Vegetation Land:
+      precision: 0.5
+      recall: 0.4
+      f1: 0.4444444444444445
+      support: 5.0
+      predicted: 4.0
+      true_positive: 2.0
+      false_positive: 2.0
+      false_negative: 3.0
+    Highway or Road:
+      precision: 0.5
+      recall: 0.4
+      f1: 0.4444444444444445
+      support: 5.0
+      predicted: 4.0
+      true_positive: 2.0
+      false_positive: 2.0
+      false_negative: 3.0
+    Industrial Buildings:
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    Pasture Land:
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    Permanent Crop Land:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 5.0
+    Residential Buildings:
+      precision: 0.8
+      recall: 0.8
+      f1: 0.8000000000000002
+      support: 5.0
+      predicted: 5.0
+      true_positive: 4.0
+      false_positive: 1.0
+      false_negative: 1.0
+    River:
+      precision: 0.6
+      recall: 0.6
+      f1: 0.6
+      support: 5.0
+      predicted: 5.0
+      true_positive: 3.0
+      false_positive: 2.0
+      false_negative: 2.0
+    Sea or Lake:
+      precision: 0.3
+      recall: 0.6
+      f1: 0.4
+      support: 5.0
+      predicted: 10.0
+      true_positive: 3.0
+      false_positive: 7.0
+      false_negative: 2.0
+    'Answer: C':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    A:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 5.0
+      true_positive: 0.0
+      false_positive: 5.0
+      false_negative: 0.0
+    'Answer: A':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    'Answer: B':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    C:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.41875
+  macro_recall: 0.23750000000000002
+  macro_f1: 0.2662698412698413
+  balanced_accuracy: 0.23750000000000002
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_eurosat_small_seed43_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_eurosat_small_seed43_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_eurosat_small_seed43_zero_shot_idefics3_20260325_095501.diagnostics.json
+

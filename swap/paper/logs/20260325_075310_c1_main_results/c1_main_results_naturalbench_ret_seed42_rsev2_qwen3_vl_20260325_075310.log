@@ -1,0 +1,50 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:31,  4.94it/s]Loading weights:   0%|          | 2/750 [00:00<02:52,  4.33it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:19, 37.34it/s]Loading weights:   3%|▎         | 25/750 [00:00<00:13, 53.76it/s]Loading weights:   5%|▍         | 37/750 [00:00<00:10, 70.24it/s]Loading weights:   8%|▊         | 59/750 [00:00<00:06, 107.28it/s]Loading weights:  10%|▉         | 72/750 [00:01<00:07, 89.25it/s] Loading weights:  13%|█▎        | 100/750 [00:01<00:04, 132.77it/s]Loading weights:  15%|█▌        | 116/750 [00:01<00:05, 122.11it/s]Loading weights:  18%|█▊        | 136/750 [00:01<00:04, 137.75it/s]Loading weights:  20%|██        | 152/750 [00:01<00:04, 135.42it/s]Loading weights:  22%|██▏       | 167/750 [00:01<00:04, 121.92it/s]Loading weights:  24%|██▍       | 182/750 [00:02<00:07, 80.70it/s] Loading weights:  32%|███▏      | 237/750 [00:02<00:03, 163.40it/s]Loading weights:  35%|███▍      | 261/750 [00:02<00:03, 160.04it/s]Loading weights:  38%|███▊      | 283/750 [00:02<00:03, 153.21it/s]Loading weights:  40%|████      | 302/750 [00:02<00:03, 145.16it/s]Loading weights:  43%|████▎     | 319/750 [00:02<00:02, 145.37it/s]Loading weights:  45%|████▍     | 336/750 [00:02<00:03, 131.57it/s]Loading weights:  47%|████▋     | 353/750 [00:03<00:02, 138.43it/s]Loading weights:  49%|████▉     | 368/750 [00:03<00:03, 127.23it/s]Loading weights:  51%|█████     | 382/750 [00:03<00:02, 129.15it/s]Loading weights:  53%|█████▎    | 398/750 [00:03<00:02, 136.09it/s]Loading weights:  77%|███████▋  | 581/750 [00:03<00:00, 576.71it/s]Loading weights:  97%|█████████▋| 731/750 [00:03<00:00, 826.31it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 205.78it/s]
+metrics:
+  metric: naturalbench_group
+  q_acc: 1.0
+  i_acc: 1.0
+  g_acc: 1.0
+  raw_acc: 1.0
+  group_total: 10.0
+  used_samples: 40.0
+  dropped_samples: 0.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 20
+      - 0
+    - - 0
+      - 20
+  per_class:
+    'Yes':
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+    'No':
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen3_vl_20260325_075310.diagnostics.json
+

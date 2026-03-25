@@ -227,3 +227,20 @@ If you found our work useful, please consider starring and citing. Thank you!
   year={2024}
 }
 ```
+
+### MCP server: Feishu bot notifications
+
+This repository now includes a small MCP server for sending Feishu bot notifications over stdio.
+
+- Tool name: `feishu-bot-message`
+- Purpose: pass a summarized text message to the tool, and it forwards the message to the Feishu webhook
+- Webhook environment variable: `FEISHU_BOT_WEBHOOK_URL`
+- Default webhook URL: `https://open.feishu.cn/open-apis/bot/v2/hook/c3394338-4009-48c8-9c97-7fd4d7be73bc`
+
+Run it with:
+
+```bash
+uv run feishu-mcp-server
+```
+
+The server uses stdio transport, so an MCP client should launch it as a subprocess and call the `feishu-bot-message` tool when a long-running experiment finishes.

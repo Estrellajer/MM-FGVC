@@ -1,0 +1,301 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_functional_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_functional_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_functional_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:18,  3.77it/s]Loading weights:   0%|          | 2/750 [00:00<03:48,  3.27it/s]Loading weights:   1%|          | 9/750 [00:00<00:41, 17.66it/s]Loading weights:   2%|▏         | 17/750 [00:00<00:24, 29.37it/s]Loading weights:   5%|▍         | 37/750 [00:00<00:10, 68.54it/s]Loading weights:   6%|▋         | 48/750 [00:01<00:08, 78.28it/s]Loading weights:   8%|▊         | 58/750 [00:01<00:09, 73.12it/s]Loading weights:  10%|█         | 75/750 [00:01<00:06, 96.45it/s]Loading weights:  12%|█▏        | 87/750 [00:01<00:06, 97.57it/s]Loading weights:  13%|█▎        | 98/750 [00:01<00:06, 96.63it/s]Loading weights:  15%|█▍        | 112/750 [00:01<00:05, 107.33it/s]Loading weights:  17%|█▋        | 124/750 [00:01<00:05, 108.04it/s]Loading weights:  18%|█▊        | 136/750 [00:01<00:05, 102.77it/s]Loading weights:  20%|█▉        | 148/750 [00:02<00:06, 99.49it/s] Loading weights:  21%|██        | 159/750 [00:02<00:05, 99.30it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:05, 97.42it/s]Loading weights:  24%|██▍       | 181/750 [00:02<00:05, 99.05it/s]Loading weights:  26%|██▌       | 192/750 [00:02<00:06, 88.30it/s]Loading weights:  28%|██▊       | 210/750 [00:02<00:04, 110.25it/s]Loading weights:  30%|██▉       | 222/750 [00:02<00:04, 110.68it/s]Loading weights:  31%|███       | 234/750 [00:02<00:05, 91.22it/s] Loading weights:  33%|███▎      | 248/750 [00:03<00:04, 102.12it/s]Loading weights:  35%|███▍      | 260/750 [00:03<00:06, 74.30it/s] Loading weights:  38%|███▊      | 285/750 [00:03<00:05, 80.48it/s]Loading weights:  42%|████▏     | 313/750 [00:03<00:03, 111.13it/s]Loading weights:  44%|████▎     | 327/750 [00:03<00:03, 115.83it/s]Loading weights:  45%|████▌     | 341/750 [00:03<00:03, 116.53it/s]Loading weights:  47%|████▋     | 354/750 [00:04<00:03, 115.47it/s]Loading weights:  49%|████▉     | 367/750 [00:04<00:03, 113.56it/s]Loading weights:  51%|█████     | 379/750 [00:04<00:03, 107.12it/s]Loading weights:  52%|█████▏    | 391/750 [00:04<00:03, 94.88it/s] Loading weights:  73%|███████▎  | 546/750 [00:04<00:00, 432.04it/s]Loading weights:  91%|█████████ | 681/750 [00:04<00:00, 659.31it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 156.68it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 16.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  - The reference point 'REF' in the first image is located on the handle of
+  - The reference point 'REF' in the first image is located at the junction where
+  - The reference point 'REF' in the first image is located on the toe cap
+  - The reference point 'REF' in the first image is located on the **tip
+  - The reference point 'REF' in the first image is located at the very tip
+  - The reference point 'REF' in the first image is located at the tip of
+  - The reference point 'REF' in the first image is located on the top edge
+  - The reference point 'REF' in the first image is located at the top of
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    - The reference point 'REF' in the first image is located on the handle of
+    - The reference point 'REF' in the first image is located at the junction where
+    - The reference point 'REF' in the first image is located on the toe cap
+    - The reference point 'REF' in the first image is located on the **tip
+    - The reference point 'REF' in the first image is located at the very tip
+    - The reference point 'REF' in the first image is located at the tip of
+    - The reference point 'REF' in the first image is located on the top edge
+    - The reference point 'REF' in the first image is located at the top of
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 3
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 3
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 2
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    The reference point 'REF' in the first image is located on the handle of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located at the junction where:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the toe cap:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the **tip:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located at the very tip:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located at the tip of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the top edge:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located at the top of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

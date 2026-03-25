@@ -1,0 +1,301 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_counting dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_counting/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_counting/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_counting_seed44_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:26,  4.98it/s]Loading weights:   0%|          | 3/729 [00:00<01:48,  6.71it/s]Loading weights:   1%|          | 8/729 [00:00<00:39, 18.04it/s]Loading weights:   2%|▏         | 16/729 [00:00<00:21, 33.42it/s]Loading weights:   3%|▎         | 21/729 [00:00<00:19, 36.97it/s]Loading weights:   5%|▍         | 34/729 [00:00<00:11, 60.70it/s]Loading weights:   6%|▌         | 41/729 [00:01<00:19, 34.67it/s]Loading weights:  11%|█         | 78/729 [00:01<00:07, 92.58it/s]Loading weights:  13%|█▎        | 93/729 [00:01<00:06, 92.52it/s]Loading weights:  15%|█▍        | 106/729 [00:01<00:09, 69.12it/s]Loading weights:  17%|█▋        | 123/729 [00:02<00:07, 82.74it/s]Loading weights:  19%|█▊        | 135/729 [00:02<00:08, 73.77it/s]Loading weights:  20%|██        | 148/729 [00:02<00:07, 81.79it/s]Loading weights:  22%|██▏       | 160/729 [00:02<00:06, 86.56it/s]Loading weights:  23%|██▎       | 171/729 [00:02<00:06, 89.30it/s]Loading weights:  25%|██▍       | 182/729 [00:02<00:06, 87.60it/s]Loading weights:  26%|██▋       | 192/729 [00:02<00:06, 86.52it/s]Loading weights:  28%|██▊       | 202/729 [00:03<00:07, 70.92it/s]Loading weights:  29%|██▉       | 214/729 [00:03<00:06, 78.45it/s]Loading weights:  31%|███       | 223/729 [00:03<00:06, 78.10it/s]Loading weights:  32%|███▏      | 232/729 [00:03<00:07, 62.27it/s]Loading weights:  34%|███▍      | 250/729 [00:03<00:05, 84.50it/s]Loading weights:  36%|███▌      | 260/729 [00:03<00:05, 83.13it/s]Loading weights:  37%|███▋      | 270/729 [00:03<00:05, 82.82it/s]Loading weights:  39%|███▊      | 281/729 [00:04<00:06, 72.10it/s]Loading weights:  61%|██████▏   | 447/729 [00:04<00:00, 415.89it/s]Loading weights:  87%|████████▋ | 636/729 [00:04<00:00, 763.45it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 169.13it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (C)
+  - (A)
+  - 'Answer: D'
+  - Answer:B
+  - 'Answer: B'
+  - Answer:A
+  - Answer:D
+  - Answer:C
+  - 'Answer: A'
+  - 'Answer: C'
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (C)
+    - (A)
+    - 'Answer: D'
+    - Answer:B
+    - 'Answer: B'
+    - Answer:A
+    - Answer:D
+    - Answer:C
+    - 'Answer: A'
+    - 'Answer: C'
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 3
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 3
+      - 0
+      - 0
+      - 2
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    'Answer: D':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Answer:B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 6.0
+      true_positive: 0.0
+      false_positive: 6.0
+      false_negative: 0.0
+    'Answer: B':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Answer:A:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    Answer:D:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Answer:C:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    'Answer: A':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    'Answer: C':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed44_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed44_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed44_zero_shot_idefics3_20260325_095501.diagnostics.json
+

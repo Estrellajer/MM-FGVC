@@ -1,0 +1,2858 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00282.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00282.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. petunia B. magnolia C. water lily D. trumpet creeper",
+    "label": "water lily",
+    "question_id": 211,
+    "split": null,
+    "extra": {
+      "class_id": 72,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04516.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04516.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. gazania B. black-eyed susan C. anthurium D. carnation",
+    "label": "gazania",
+    "question_id": 2287,
+    "split": null,
+    "extra": {
+      "class_id": 70,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04485.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04485.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. blackberry lily B. gazania C. mallow D. cyclamen",
+    "label": "gazania",
+    "question_id": 2277,
+    "split": null,
+    "extra": {
+      "class_id": 70,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07146.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07146.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bolero deep blue B. wild pansy C. prince of wales feathers D. frangipani",
+    "label": "bolero deep blue",
+    "question_id": 3608,
+    "split": null,
+    "extra": {
+      "class_id": 44,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05258.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05258.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bromelia B. mallow C. thorn apple D. stemless gentian",
+    "label": "stemless gentian",
+    "question_id": 2633,
+    "split": null,
+    "extra": {
+      "class_id": 27,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06521.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06521.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bishop of llandaff B. prince of wales feathers C. corn poppy D. pink primrose",
+    "label": "corn poppy",
+    "question_id": 3284,
+    "split": null,
+    "extra": {
+      "class_id": 25,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03317.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03317.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pelargonium B. giant white arum lily C. globe-flower D. bird of paradise",
+    "label": "bird of paradise",
+    "question_id": 1723,
+    "split": null,
+    "extra": {
+      "class_id": 7,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05239.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05239.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. stemless gentian B. tree mallow C. sweet william D. passion",
+    "label": "stemless gentian",
+    "question_id": 2644,
+    "split": null,
+    "extra": {
+      "class_id": 27,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04772.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04772.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pink-yellow dahlia B. canterbury bells C. windflower D. desert-rose",
+    "label": "desert-rose",
+    "question_id": 2405,
+    "split": null,
+    "extra": {
+      "class_id": 84,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02999.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02999.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. magnolia B. passion C. pink-yellow dahlia D. cautleya spicata",
+    "label": "pink-yellow dahlia",
+    "question_id": 1542,
+    "split": null,
+    "extra": {
+      "class_id": 59,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02979.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02979.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. pink-yellow dahlia C. magnolia D. mexican petunia",
+    "label": "pink-yellow dahlia",
+    "question_id": 1513,
+    "split": null,
+    "extra": {
+      "class_id": 59,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06347.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06347.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. yellow iris B. carnation C. purple coneflower D. desert-rose",
+    "label": "yellow iris",
+    "question_id": 3231,
+    "split": null,
+    "extra": {
+      "class_id": 14,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02169.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02169.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. geranium B. purple coneflower C. mexican aster D. thorn apple",
+    "label": "thorn apple",
+    "question_id": 1080,
+    "split": null,
+    "extra": {
+      "class_id": 74,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05163.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05163.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. canna lily B. osteospermum C. lenten rose D. english marigold",
+    "label": "english marigold",
+    "question_id": 2598,
+    "split": null,
+    "extra": {
+      "class_id": 4,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04160.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04160.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. garden phlox B. wild pansy C. lenten rose D. sweet pea",
+    "label": "wild pansy",
+    "question_id": 2102,
+    "split": null,
+    "extra": {
+      "class_id": 51,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06273.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06273.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. spring crocus B. oxeye daisy C. king protea D. cautleya spicata",
+    "label": "cautleya spicata",
+    "question_id": 3166,
+    "split": null,
+    "extra": {
+      "class_id": 60,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01937.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01937.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lotus B. carnation C. osteospermum D. cautleya spicata",
+    "label": "lotus",
+    "question_id": 996,
+    "split": null,
+    "extra": {
+      "class_id": 77,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01416.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01416.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bolero deep blue B. petunia C. windflower D. morning glory",
+    "label": "petunia",
+    "question_id": 715,
+    "split": null,
+    "extra": {
+      "class_id": 50,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03508.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03508.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. mallow B. watercress C. bolero deep blue D. sweet william",
+    "label": "sweet william",
+    "question_id": 1774,
+    "split": null,
+    "extra": {
+      "class_id": 29,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06742.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06742.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. oxeye daisy B. pink primrose C. camellia D. pink-yellow dahlia",
+    "label": "pink primrose",
+    "question_id": 3386,
+    "split": null,
+    "extra": {
+      "class_id": 0,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03423.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03423.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. purple coneflower B. bearded iris C. fritillary D. mallow",
+    "label": "fritillary",
+    "question_id": 1734,
+    "split": null,
+    "extra": {
+      "class_id": 22,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04275.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04275.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bearded iris B. peruvian lily C. black-eyed susan D. common dandelion",
+    "label": "peruvian lily",
+    "question_id": 2165,
+    "split": null,
+    "extra": {
+      "class_id": 17,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04117.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04117.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. prince of wales feathers B. artichoke C. anthurium D. siam tulip",
+    "label": "artichoke",
+    "question_id": 2057,
+    "split": null,
+    "extra": {
+      "class_id": 28,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00264.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00264.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. fire lily B. water lily C. sweet pea D. morning glory",
+    "label": "water lily",
+    "question_id": 193,
+    "split": null,
+    "extra": {
+      "class_id": 72,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01232.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01232.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. rose B. sunflower C. colt's foot D. hard-leaved pocket orchid",
+    "label": "rose",
+    "question_id": 613,
+    "split": null,
+    "extra": {
+      "class_id": 73,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02176.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02176.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. californian poppy B. globe-flower C. thorn apple D. sweet pea",
+    "label": "thorn apple",
+    "question_id": 1103,
+    "split": null,
+    "extra": {
+      "class_id": 74,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06896.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06896.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. anthurium B. carnation C. mallow D. marigold",
+    "label": "carnation",
+    "question_id": 3469,
+    "split": null,
+    "extra": {
+      "class_id": 30,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03453.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03453.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. mallow B. rose C. wallflower D. fritillary",
+    "label": "fritillary",
+    "question_id": 1742,
+    "split": null,
+    "extra": {
+      "class_id": 22,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01898.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01898.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. clematis B. japanese anemone C. lotus D. azalea",
+    "label": "lotus",
+    "question_id": 959,
+    "split": null,
+    "extra": {
+      "class_id": 77,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05585.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05585.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. poinsettia B. garden phlox C. morning glory D. watercress",
+    "label": "garden phlox",
+    "question_id": 2827,
+    "split": null,
+    "extra": {
+      "class_id": 31,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05126.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05126.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. hard-leaved pocket orchid B. lenten rose C. lotus D. corn poppy",
+    "label": "hard-leaved pocket orchid",
+    "question_id": 2588,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05026.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05026.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. anthurium B. orange dahlia C. yellow iris D. sunflower",
+    "label": "orange dahlia",
+    "question_id": 2541,
+    "split": null,
+    "extra": {
+      "class_id": 58,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02510.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02510.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. giant white arum lily B. common dandelion C. great masterwort D. morning glory",
+    "label": "morning glory",
+    "question_id": 1273,
+    "split": null,
+    "extra": {
+      "class_id": 75,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04033.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04033.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. desert-rose B. gaura C. ruby-lipped cattleya D. colt's foot",
+    "label": "colt's foot",
+    "question_id": 2006,
+    "split": null,
+    "extra": {
+      "class_id": 11,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01595.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01595.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pincushion B. buttercup C. petunia D. clematis",
+    "label": "clematis",
+    "question_id": 841,
+    "split": null,
+    "extra": {
+      "class_id": 81,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03485.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03485.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. primula B. sweet william C. sunflower D. camellia",
+    "label": "sweet william",
+    "question_id": 1804,
+    "split": null,
+    "extra": {
+      "class_id": 29,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01235.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01235.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. barbeton daisy B. rose C. marigold D. japanese anemone",
+    "label": "rose",
+    "question_id": 625,
+    "split": null,
+    "extra": {
+      "class_id": 73,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03144.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03144.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. sweet pea B. siam tulip C. oxeye daisy D. snapdragon",
+    "label": "snapdragon",
+    "question_id": 1589,
+    "split": null,
+    "extra": {
+      "class_id": 10,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04258.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04258.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bee balm B. balloon C. peruvian lily D. blanket",
+    "label": "peruvian lily",
+    "question_id": 2133,
+    "split": null,
+    "extra": {
+      "class_id": 17,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03285.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03285.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bird of paradise B. sweet pea C. wild pansy D. hippeastrum",
+    "label": "bird of paradise",
+    "question_id": 1694,
+    "split": null,
+    "extra": {
+      "class_id": 7,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07221.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07221.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bee balm B. moon orchid C. desert-rose D. marigold",
+    "label": "moon orchid",
+    "question_id": 3641,
+    "split": null,
+    "extra": {
+      "class_id": 6,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01602.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01602.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. clematis B. canna lily C. foxglove D. king protea",
+    "label": "clematis",
+    "question_id": 851,
+    "split": null,
+    "extra": {
+      "class_id": 81,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07534.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07534.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. buttercup B. bougainvillea C. tiger lily D. wallflower",
+    "label": "bougainvillea",
+    "question_id": 3843,
+    "split": null,
+    "extra": {
+      "class_id": 94,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01570.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01570.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. frangipani B. water lily C. osteospermum D. poinsettia",
+    "label": "poinsettia",
+    "question_id": 822,
+    "split": null,
+    "extra": {
+      "class_id": 43,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07166.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07166.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. wallflower B. desert-rose C. tiger lily D. bearded iris",
+    "label": "tiger lily",
+    "question_id": 3636,
+    "split": null,
+    "extra": {
+      "class_id": 5,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04567.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04567.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lenten rose B. clematis C. bee balm D. desert-rose",
+    "label": "lenten rose",
+    "question_id": 2305,
+    "split": null,
+    "extra": {
+      "class_id": 39,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07085.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07085.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. balloon B. californian poppy C. thorn apple D. spring crocus",
+    "label": "spring crocus",
+    "question_id": 3556,
+    "split": null,
+    "extra": {
+      "class_id": 66,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02713.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02713.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lotus B. moon orchid C. pink-yellow dahlia D. geranium",
+    "label": "geranium",
+    "question_id": 1416,
+    "split": null,
+    "extra": {
+      "class_id": 57,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00588.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00588.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. cyclamen B. garden phlox C. buttercup D. oxeye daisy",
+    "label": "cyclamen",
+    "question_id": 226,
+    "split": null,
+    "extra": {
+      "class_id": 87,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07696.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07696.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. mallow B. cyclamen C. oxeye daisy D. giant white arum lily",
+    "label": "mallow",
+    "question_id": 3942,
+    "split": null,
+    "extra": {
+      "class_id": 96,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01483.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01483.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. snapdragon C. camellia D. petunia",
+    "label": "petunia",
+    "question_id": 768,
+    "split": null,
+    "extra": {
+      "class_id": 50,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05803.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05803.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. californian poppy B. thorn apple C. great masterwort D. magnolia",
+    "label": "great masterwort",
+    "question_id": 2936,
+    "split": null,
+    "extra": {
+      "class_id": 37,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01031.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01031.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. canterbury bells B. clematis C. mexican petunia D. wallflower",
+    "label": "wallflower",
+    "question_id": 519,
+    "split": null,
+    "extra": {
+      "class_id": 45,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05190.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05190.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pink primrose B. globe thistle C. water lily D. english marigold",
+    "label": "english marigold",
+    "question_id": 2596,
+    "split": null,
+    "extra": {
+      "class_id": 4,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07683.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07683.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. hibiscus B. camellia C. siam tulip D. tree mallow",
+    "label": "camellia",
+    "question_id": 3883,
+    "split": null,
+    "extra": {
+      "class_id": 95,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01501.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01501.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lenten rose B. poinsettia C. great masterwort D. bishop of llandaff",
+    "label": "poinsettia",
+    "question_id": 807,
+    "split": null,
+    "extra": {
+      "class_id": 43,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06775.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06775.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. balloon B. globe-flower C. primula D. fire lily",
+    "label": "fire lily",
+    "question_id": 3414,
+    "split": null,
+    "extra": {
+      "class_id": 20,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01789.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01789.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. corn poppy B. water lily C. hibiscus D. grape hyacinth",
+    "label": "hibiscus",
+    "question_id": 923,
+    "split": null,
+    "extra": {
+      "class_id": 82,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03202.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03202.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. globe thistle B. californian poppy C. daffodil D. morning glory",
+    "label": "californian poppy",
+    "question_id": 1658,
+    "split": null,
+    "extra": {
+      "class_id": 64,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04154.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04154.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. osteospermum B. lenten rose C. purple coneflower D. artichoke",
+    "label": "artichoke",
+    "question_id": 2065,
+    "split": null,
+    "extra": {
+      "class_id": 28,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02065.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02065.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. californian poppy B. bromelia C. camellia D. anthurium",
+    "label": "anthurium",
+    "question_id": 1030,
+    "split": null,
+    "extra": {
+      "class_id": 79,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05506.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05506.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. cape B. moon orchid C. magnolia D. peruvian lily",
+    "label": "magnolia",
+    "question_id": 2772,
+    "split": null,
+    "extra": {
+      "class_id": 86,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00523.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00523.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. cyclamen B. morning glory C. bearded iris D. giant white arum lily",
+    "label": "cyclamen",
+    "question_id": 269,
+    "split": null,
+    "extra": {
+      "class_id": 87,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05874.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05874.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pelargonium B. black-eyed susan C. thorn apple D. daffodil",
+    "label": "black-eyed susan",
+    "question_id": 2947,
+    "split": null,
+    "extra": {
+      "class_id": 62,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07746.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07746.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. mallow B. pelargonium C. anthurium D. pink-yellow dahlia",
+    "label": "mallow",
+    "question_id": 3937,
+    "split": null,
+    "extra": {
+      "class_id": 96,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04980.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04980.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. garden phlox B. marigold C. petunia D. blackberry lily",
+    "label": "marigold",
+    "question_id": 2505,
+    "split": null,
+    "extra": {
+      "class_id": 46,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02919.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02919.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ruby-lipped cattleya B. primula C. artichoke D. tree mallow",
+    "label": "tree mallow",
+    "question_id": 1486,
+    "split": null,
+    "extra": {
+      "class_id": 85,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04880.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04880.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. trumpet creeper B. passion C. hard-leaved pocket orchid D. hippeastrum",
+    "label": "hippeastrum",
+    "question_id": 2431,
+    "split": null,
+    "extra": {
+      "class_id": 90,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02278.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02278.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bee balm B. barbeton daisy C. camellia D. hard-leaved pocket orchid",
+    "label": "barbeton daisy",
+    "question_id": 1189,
+    "split": null,
+    "extra": {
+      "class_id": 40,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04639.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04639.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. spring crocus B. buttercup C. ruby-lipped cattleya D. cyclamen",
+    "label": "buttercup",
+    "question_id": 2349,
+    "split": null,
+    "extra": {
+      "class_id": 47,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04806.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04806.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. desert-rose C. corn poppy D. bearded iris",
+    "label": "desert-rose",
+    "question_id": 2407,
+    "split": null,
+    "extra": {
+      "class_id": 84,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05853.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05853.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. sweet william B. clematis C. black-eyed susan D. primula",
+    "label": "black-eyed susan",
+    "question_id": 2957,
+    "split": null,
+    "extra": {
+      "class_id": 62,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01040.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01040.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. wallflower B. cape C. blanket D. daffodil",
+    "label": "wallflower",
+    "question_id": 488,
+    "split": null,
+    "extra": {
+      "class_id": 45,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03107.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03107.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. canterbury bells B. mexican petunia C. snapdragon D. pincushion",
+    "label": "snapdragon",
+    "question_id": 1630,
+    "split": null,
+    "extra": {
+      "class_id": 10,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05392.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05392.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. spear thistle B. bishop of llandaff C. pincushion D. balloon",
+    "label": "pincushion",
+    "question_id": 2702,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06314.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06314.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. azalea B. common dandelion C. monkshood D. blackberry lily",
+    "label": "common dandelion",
+    "question_id": 3190,
+    "split": null,
+    "extra": {
+      "class_id": 49,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02470.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02470.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bishop of llandaff B. pincushion C. morning glory D. bromelia",
+    "label": "morning glory",
+    "question_id": 1271,
+    "split": null,
+    "extra": {
+      "class_id": 75,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01737.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_01737.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. morning glory B. artichoke C. bolero deep blue D. hibiscus",
+    "label": "hibiscus",
+    "question_id": 910,
+    "split": null,
+    "extra": {
+      "class_id": 82,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07773.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07773.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. sword lily B. globe-flower C. mexican petunia D. purple coneflower",
+    "label": "mexican petunia",
+    "question_id": 3981,
+    "split": null,
+    "extra": {
+      "class_id": 97,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00932.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00932.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. siam tulip B. frangipani C. morning glory D. desert-rose",
+    "label": "frangipani",
+    "question_id": 470,
+    "split": null,
+    "extra": {
+      "class_id": 80,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00706.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00706.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ruby-lipped cattleya B. stemless gentian C. frangipani D. watercress",
+    "label": "watercress",
+    "question_id": 384,
+    "split": null,
+    "extra": {
+      "class_id": 88,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06739.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06739.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pink primrose B. rose C. ruby-lipped cattleya D. bolero deep blue",
+    "label": "pink primrose",
+    "question_id": 3397,
+    "split": null,
+    "extra": {
+      "class_id": 0,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03635.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03635.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. great masterwort B. love in the mist C. sweet pea D. azalea",
+    "label": "azalea",
+    "question_id": 1846,
+    "split": null,
+    "extra": {
+      "class_id": 71,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02582.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02582.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. passion B. artichoke C. stemless gentian D. columbine",
+    "label": "columbine",
+    "question_id": 1323,
+    "split": null,
+    "extra": {
+      "class_id": 83,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04375.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04375.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. love in the mist B. mexican aster C. ruby-lipped cattleya D. foxglove",
+    "label": "ruby-lipped cattleya",
+    "question_id": 2195,
+    "split": null,
+    "extra": {
+      "class_id": 35,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06119.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06119.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. blanket B. toad lily C. cyclamen D. silverbush",
+    "label": "silverbush",
+    "question_id": 3078,
+    "split": null,
+    "extra": {
+      "class_id": 63,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05507.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05507.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. king protea B. magnolia C. columbine D. hibiscus",
+    "label": "magnolia",
+    "question_id": 2758,
+    "split": null,
+    "extra": {
+      "class_id": 86,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03232.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03232.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. californian poppy B. pincushion C. stemless gentian D. watercress",
+    "label": "californian poppy",
+    "question_id": 1653,
+    "split": null,
+    "extra": {
+      "class_id": 64,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05085.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05085.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. orange dahlia B. gazania C. corn poppy D. prince of wales feathers",
+    "label": "orange dahlia",
+    "question_id": 2548,
+    "split": null,
+    "extra": {
+      "class_id": 58,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00835.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00835.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. spring crocus C. mexican petunia D. frangipani",
+    "label": "frangipani",
+    "question_id": 412,
+    "split": null,
+    "extra": {
+      "class_id": 80,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07956.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07956.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. magnolia B. giant white arum lily C. trumpet creeper D. bird of paradise",
+    "label": "trumpet creeper",
+    "question_id": 4062,
+    "split": null,
+    "extra": {
+      "class_id": 100,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04933.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04933.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. passion B. canna lily C. garden phlox D. giant white arum lily",
+    "label": "giant white arum lily",
+    "question_id": 2474,
+    "split": null,
+    "extra": {
+      "class_id": 19,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07154.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07154.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. corn poppy B. blanket C. bolero deep blue D. pink primrose",
+    "label": "bolero deep blue",
+    "question_id": 3601,
+    "split": null,
+    "extra": {
+      "class_id": 44,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00164.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00164.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. red ginger B. cyclamen C. passion D. blackberry lily",
+    "label": "passion",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "class_id": 76,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07472.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07472.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. geranium B. windflower C. great masterwort D. bougainvillea",
+    "label": "bougainvillea",
+    "question_id": 3832,
+    "split": null,
+    "extra": {
+      "class_id": 94,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06305.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06305.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. daffodil B. common dandelion C. corn poppy D. canna lily",
+    "label": "common dandelion",
+    "question_id": 3207,
+    "split": null,
+    "extra": {
+      "class_id": 49,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02913.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02913.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. moon orchid B. tree mallow C. sword lily D. clematis",
+    "label": "tree mallow",
+    "question_id": 1478,
+    "split": null,
+    "extra": {
+      "class_id": 85,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04592.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04592.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lenten rose B. monkshood C. bishop of llandaff D. spear thistle",
+    "label": "lenten rose",
+    "question_id": 2321,
+    "split": null,
+    "extra": {
+      "class_id": 39,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07092.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07092.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. windflower B. globe thistle C. pincushion D. morning glory",
+    "label": "globe thistle",
+    "question_id": 3590,
+    "split": null,
+    "extra": {
+      "class_id": 9,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03037.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03037.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bee balm B. marigold C. bolero deep blue D. camellia",
+    "label": "bee balm",
+    "question_id": 1586,
+    "split": null,
+    "extra": {
+      "class_id": 91,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08140.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08140.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. hibiscus B. azalea C. lotus D. gaura",
+    "label": "gaura",
+    "question_id": 3682,
+    "split": null,
+    "extra": {
+      "class_id": 56,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02757.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02757.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. japanese anemone C. bishop of llandaff D. grape hyacinth",
+    "label": "bishop of llandaff",
+    "question_id": 1453,
+    "split": null,
+    "extra": {
+      "class_id": 55,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04216.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04216.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. windflower B. magnolia C. gaura D. wild pansy",
+    "label": "wild pansy",
+    "question_id": 2119,
+    "split": null,
+    "extra": {
+      "class_id": 51,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02672.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02672.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. geranium B. thorn apple C. camellia D. english marigold",
+    "label": "geranium",
+    "question_id": 1381,
+    "split": null,
+    "extra": {
+      "class_id": 57,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00604.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00604.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. watercress B. morning glory C. fritillary D. rose",
+    "label": "watercress",
+    "question_id": 300,
+    "split": null,
+    "extra": {
+      "class_id": 88,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05359.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05359.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. cape B. foxglove C. pincushion D. cyclamen",
+    "label": "pincushion",
+    "question_id": 2698,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06518.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06518.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. snapdragon B. globe-flower C. carnation D. corn poppy",
+    "label": "corn poppy",
+    "question_id": 3297,
+    "split": null,
+    "extra": {
+      "class_id": 25,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03710.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03710.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. great masterwort B. pink primrose C. primula D. anthurium",
+    "label": "primula",
+    "question_id": 1902,
+    "split": null,
+    "extra": {
+      "class_id": 52,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05544.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05544.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bolero deep blue B. osteospermum C. mallow D. sunflower",
+    "label": "osteospermum",
+    "question_id": 2801,
+    "split": null,
+    "extra": {
+      "class_id": 65,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06792.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06792.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. fire lily B. wallflower C. japanese anemone D. rose",
+    "label": "fire lily",
+    "question_id": 3417,
+    "split": null,
+    "extra": {
+      "class_id": 20,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07795.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07795.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. mexican petunia B. cape C. anthurium D. sweet william",
+    "label": "mexican petunia",
+    "question_id": 3951,
+    "split": null,
+    "extra": {
+      "class_id": 97,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05102.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05102.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. carnation B. snapdragon C. hard-leaved pocket orchid D. pink primrose",
+    "label": "hard-leaved pocket orchid",
+    "question_id": 2562,
+    "split": null,
+    "extra": {
+      "class_id": 1,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05931.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05931.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ruby-lipped cattleya B. anthurium C. carnation D. bearded iris",
+    "label": "bearded iris",
+    "question_id": 2972,
+    "split": null,
+    "extra": {
+      "class_id": 67,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07237.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07237.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bromelia B. gaura C. lotus D. ball moss",
+    "label": "gaura",
+    "question_id": 3660,
+    "split": null,
+    "extra": {
+      "class_id": 56,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04922.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04922.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. giant white arum lily B. pelargonium C. bird of paradise D. wallflower",
+    "label": "giant white arum lily",
+    "question_id": 2479,
+    "split": null,
+    "extra": {
+      "class_id": 19,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07902.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07902.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. mexican petunia B. blanket C. canterbury bells D. blackberry lily",
+    "label": "blanket",
+    "question_id": 4029,
+    "split": null,
+    "extra": {
+      "class_id": 99,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05848.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05848.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. desert-rose B. great masterwort C. fritillary D. colt's foot",
+    "label": "great masterwort",
+    "question_id": 2921,
+    "split": null,
+    "extra": {
+      "class_id": 37,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03746.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03746.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. primula B. cape C. marigold D. english marigold",
+    "label": "cape",
+    "question_id": 1909,
+    "split": null,
+    "extra": {
+      "class_id": 36,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07620.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07620.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. wallflower B. camellia C. gaura D. artichoke",
+    "label": "camellia",
+    "question_id": 3880,
+    "split": null,
+    "extra": {
+      "class_id": 95,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00184.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_00184.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. geranium B. balloon C. passion D. peruvian lily",
+    "label": "passion",
+    "question_id": 38,
+    "split": null,
+    "extra": {
+      "class_id": 76,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03781.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03781.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. primula B. great masterwort C. hippeastrum D. cape",
+    "label": "cape",
+    "question_id": 1955,
+    "split": null,
+    "extra": {
+      "class_id": 36,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02211.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02211.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. red ginger B. osteospermum C. sword lily D. barbeton daisy",
+    "label": "barbeton daisy",
+    "question_id": 1140,
+    "split": null,
+    "extra": {
+      "class_id": 40,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04023.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04023.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. moon orchid B. colt's foot C. osteospermum D. sword lily",
+    "label": "colt's foot",
+    "question_id": 2035,
+    "split": null,
+    "extra": {
+      "class_id": 11,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06656.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06656.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. barbeton daisy B. globe-flower C. primula D. mallow",
+    "label": "globe-flower",
+    "question_id": 3347,
+    "split": null,
+    "extra": {
+      "class_id": 15,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06052.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06052.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. ruby-lipped cattleya C. toad lily D. spear thistle",
+    "label": "spear thistle",
+    "question_id": 3056,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06029.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06029.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ball moss B. prince of wales feathers C. trumpet creeper D. sunflower",
+    "label": "ball moss",
+    "question_id": 3028,
+    "split": null,
+    "extra": {
+      "class_id": 92,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06962.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06962.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. hippeastrum B. cautleya spicata C. mexican aster D. daffodil",
+    "label": "mexican aster",
+    "question_id": 3491,
+    "split": null,
+    "extra": {
+      "class_id": 33,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02022.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02022.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. cyclamen B. garden phlox C. osteospermum D. anthurium",
+    "label": "anthurium",
+    "question_id": 1040,
+    "split": null,
+    "extra": {
+      "class_id": 79,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03579.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03579.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. thorn apple B. sweet pea C. azalea D. frangipani",
+    "label": "azalea",
+    "question_id": 1822,
+    "split": null,
+    "extra": {
+      "class_id": 71,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06473.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06473.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. cyclamen B. poinsettia C. passion D. love in the mist",
+    "label": "love in the mist",
+    "question_id": 3277,
+    "split": null,
+    "extra": {
+      "class_id": 32,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07021.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07021.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. siam tulip B. thorn apple C. cautleya spicata D. poinsettia",
+    "label": "siam tulip",
+    "question_id": 3537,
+    "split": null,
+    "extra": {
+      "class_id": 38,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04448.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04448.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. water lily B. pelargonium C. lotus D. canna lily",
+    "label": "canna lily",
+    "question_id": 2226,
+    "split": null,
+    "extra": {
+      "class_id": 89,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06435.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06435.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. fritillary B. colt's foot C. monkshood D. petunia",
+    "label": "monkshood",
+    "question_id": 3246,
+    "split": null,
+    "extra": {
+      "class_id": 8,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07065.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07065.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. morning glory B. spring crocus C. tree mallow D. snapdragon",
+    "label": "spring crocus",
+    "question_id": 3563,
+    "split": null,
+    "extra": {
+      "class_id": 66,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06176.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06176.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. balloon B. water lily C. sweet william D. buttercup",
+    "label": "balloon",
+    "question_id": 3112,
+    "split": null,
+    "extra": {
+      "class_id": 18,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06991.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06991.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. wild pansy B. hibiscus C. alpine sea holly D. hard-leaved pocket orchid",
+    "label": "alpine sea holly",
+    "question_id": 3517,
+    "split": null,
+    "extra": {
+      "class_id": 34,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07855.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07855.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. desert-rose B. geranium C. oxeye daisy D. bromelia",
+    "label": "bromelia",
+    "question_id": 4004,
+    "split": null,
+    "extra": {
+      "class_id": 98,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02589.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02589.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. primula B. pink primrose C. columbine D. garden phlox",
+    "label": "columbine",
+    "question_id": 1325,
+    "split": null,
+    "extra": {
+      "class_id": 83,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07314.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07314.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. foxglove B. wallflower C. king protea D. oxeye daisy",
+    "label": "foxglove",
+    "question_id": 3755,
+    "split": null,
+    "extra": {
+      "class_id": 93,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04449.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04449.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. purple coneflower B. bishop of llandaff C. canna lily D. colt's foot",
+    "label": "canna lily",
+    "question_id": 2208,
+    "split": null,
+    "extra": {
+      "class_id": 89,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03072.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03072.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bee balm B. thorn apple C. corn poppy D. bishop of llandaff",
+    "label": "bee balm",
+    "question_id": 1563,
+    "split": null,
+    "extra": {
+      "class_id": 91,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03840.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03840.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bougainvillea B. geranium C. purple coneflower D. petunia",
+    "label": "purple coneflower",
+    "question_id": 1985,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06007.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06007.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. windflower B. petunia C. anthurium D. english marigold",
+    "label": "windflower",
+    "question_id": 3019,
+    "split": null,
+    "extra": {
+      "class_id": 68,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07406.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07406.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ball moss B. foxglove C. geranium D. english marigold",
+    "label": "foxglove",
+    "question_id": 3777,
+    "split": null,
+    "extra": {
+      "class_id": 93,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05526.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05526.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. orange dahlia B. tree poppy C. watercress D. osteospermum",
+    "label": "osteospermum",
+    "question_id": 2800,
+    "split": null,
+    "extra": {
+      "class_id": 65,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05702.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05702.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. daffodil B. cyclamen C. english marigold D. windflower",
+    "label": "daffodil",
+    "question_id": 2870,
+    "split": null,
+    "extra": {
+      "class_id": 41,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06278.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06278.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. purple coneflower B. prince of wales feathers C. red ginger D. cautleya spicata",
+    "label": "cautleya spicata",
+    "question_id": 3146,
+    "split": null,
+    "extra": {
+      "class_id": 60,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05446.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05446.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. sunflower B. petunia C. bougainvillea D. hard-leaved pocket orchid",
+    "label": "sunflower",
+    "question_id": 2733,
+    "split": null,
+    "extra": {
+      "class_id": 53,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04395.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04395.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. spring crocus B. pink primrose C. ruby-lipped cattleya D. petunia",
+    "label": "ruby-lipped cattleya",
+    "question_id": 2182,
+    "split": null,
+    "extra": {
+      "class_id": 35,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06364.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06364.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. osteospermum B. siam tulip C. pink-yellow dahlia D. yellow iris",
+    "label": "yellow iris",
+    "question_id": 3236,
+    "split": null,
+    "extra": {
+      "class_id": 14,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05628.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05628.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. sunflower B. garden phlox C. bee balm D. siam tulip",
+    "label": "garden phlox",
+    "question_id": 2813,
+    "split": null,
+    "extra": {
+      "class_id": 31,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07096.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07096.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. tree poppy B. globe thistle C. cape D. peruvian lily",
+    "label": "globe thistle",
+    "question_id": 3591,
+    "split": null,
+    "extra": {
+      "class_id": 9,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07207.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07207.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bee balm B. prince of wales feathers C. gazania D. moon orchid",
+    "label": "moon orchid",
+    "question_id": 3648,
+    "split": null,
+    "extra": {
+      "class_id": 6,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06117.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06117.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. buttercup B. corn poppy C. silverbush D. prince of wales feathers",
+    "label": "silverbush",
+    "question_id": 3084,
+    "split": null,
+    "extra": {
+      "class_id": 63,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04662.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04662.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. frangipani B. bee balm C. spear thistle D. buttercup",
+    "label": "buttercup",
+    "question_id": 2331,
+    "split": null,
+    "extra": {
+      "class_id": 47,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04982.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04982.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. wallflower C. poinsettia D. hard-leaved pocket orchid",
+    "label": "marigold",
+    "question_id": 2508,
+    "split": null,
+    "extra": {
+      "class_id": 46,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06881.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06881.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. globe thistle B. alpine sea holly C. prince of wales feathers D. yellow iris",
+    "label": "prince of wales feathers",
+    "question_id": 3449,
+    "split": null,
+    "extra": {
+      "class_id": 26,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07983.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07983.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. morning glory B. pink-yellow dahlia C. trumpet creeper D. globe thistle",
+    "label": "trumpet creeper",
+    "question_id": 4044,
+    "split": null,
+    "extra": {
+      "class_id": 100,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08001.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08001.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. canna lily B. primula C. globe-flower D. blackberry lily",
+    "label": "blackberry lily",
+    "question_id": 4082,
+    "split": null,
+    "extra": {
+      "class_id": 101,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05666.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05666.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. geranium B. globe-flower C. daffodil D. sweet pea",
+    "label": "sweet pea",
+    "question_id": 2840,
+    "split": null,
+    "extra": {
+      "class_id": 3,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02439.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02439.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. monkshood B. sword lily C. globe-flower D. spear thistle",
+    "label": "sword lily",
+    "question_id": 1255,
+    "split": null,
+    "extra": {
+      "class_id": 42,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06899.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06899.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bird of paradise B. carnation C. red ginger D. grape hyacinth",
+    "label": "carnation",
+    "question_id": 3488,
+    "split": null,
+    "extra": {
+      "class_id": 30,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05915.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05915.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. great masterwort B. lenten rose C. bearded iris D. sweet william",
+    "label": "bearded iris",
+    "question_id": 2987,
+    "split": null,
+    "extra": {
+      "class_id": 67,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06622.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06622.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. siam tulip B. thorn apple C. tiger lily D. canterbury bells",
+    "label": "canterbury bells",
+    "question_id": 3323,
+    "split": null,
+    "extra": {
+      "class_id": 2,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05787.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05787.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. grape hyacinth B. king protea C. camellia D. trumpet creeper",
+    "label": "king protea",
+    "question_id": 2906,
+    "split": null,
+    "extra": {
+      "class_id": 12,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07019.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07019.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. siam tulip B. purple coneflower C. bougainvillea D. watercress",
+    "label": "siam tulip",
+    "question_id": 3532,
+    "split": null,
+    "extra": {
+      "class_id": 38,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02329.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02329.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. thorn apple B. fire lily C. rose D. sword lily",
+    "label": "sword lily",
+    "question_id": 1209,
+    "split": null,
+    "extra": {
+      "class_id": 42,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06577.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06577.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. monkshood B. japanese anemone C. californian poppy D. grape hyacinth",
+    "label": "grape hyacinth",
+    "question_id": 3322,
+    "split": null,
+    "extra": {
+      "class_id": 24,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05641.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05641.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. prince of wales feathers B. columbine C. sweet pea D. lenten rose",
+    "label": "sweet pea",
+    "question_id": 2832,
+    "split": null,
+    "extra": {
+      "class_id": 3,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02840.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_02840.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bishop of llandaff B. artichoke C. sunflower D. pelargonium",
+    "label": "bishop of llandaff",
+    "question_id": 1430,
+    "split": null,
+    "extra": {
+      "class_id": 55,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06873.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06873.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lenten rose B. fire lily C. spear thistle D. prince of wales feathers",
+    "label": "prince of wales feathers",
+    "question_id": 3444,
+    "split": null,
+    "extra": {
+      "class_id": 26,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04845.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04845.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. purple coneflower B. hippeastrum C. balloon D. pincushion",
+    "label": "hippeastrum",
+    "question_id": 2427,
+    "split": null,
+    "extra": {
+      "class_id": 90,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06085.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06085.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. water lily B. spear thistle C. orange dahlia D. great masterwort",
+    "label": "spear thistle",
+    "question_id": 3065,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08047.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08047.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. blackberry lily B. magnolia C. corn poppy D. cautleya spicata",
+    "label": "blackberry lily",
+    "question_id": 4076,
+    "split": null,
+    "extra": {
+      "class_id": 101,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06832.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06832.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. balloon B. sweet william C. red ginger D. globe thistle",
+    "label": "red ginger",
+    "question_id": 3432,
+    "split": null,
+    "extra": {
+      "class_id": 23,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05700.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05700.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. marigold B. sweet william C. moon orchid D. daffodil",
+    "label": "daffodil",
+    "question_id": 2873,
+    "split": null,
+    "extra": {
+      "class_id": 41,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05434.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05434.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bromelia B. camellia C. toad lily D. sunflower",
+    "label": "sunflower",
+    "question_id": 2717,
+    "split": null,
+    "extra": {
+      "class_id": 53,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04761.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04761.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. desert-rose B. water lily C. pelargonium D. mexican petunia",
+    "label": "pelargonium",
+    "question_id": 2360,
+    "split": null,
+    "extra": {
+      "class_id": 54,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03881.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03881.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. purple coneflower B. canna lily C. balloon D. ruby-lipped cattleya",
+    "label": "purple coneflower",
+    "question_id": 1998,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07842.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07842.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. bromelia B. thorn apple C. wild pansy D. pincushion",
+    "label": "bromelia",
+    "question_id": 3991,
+    "split": null,
+    "extra": {
+      "class_id": 98,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03726.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_03726.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. passion B. primula C. ruby-lipped cattleya D. giant white arum lily",
+    "label": "primula",
+    "question_id": 1899,
+    "split": null,
+    "extra": {
+      "class_id": 52,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05305.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05305.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ruby-lipped cattleya B. stemless gentian C. hard-leaved pocket orchid D. tree poppy",
+    "label": "tree poppy",
+    "question_id": 2669,
+    "split": null,
+    "extra": {
+      "class_id": 69,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06816.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06816.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. magnolia B. watercress C. azalea D. red ginger",
+    "label": "red ginger",
+    "question_id": 3435,
+    "split": null,
+    "extra": {
+      "class_id": 23,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06973.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06973.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. king protea B. pelargonium C. bolero deep blue D. alpine sea holly",
+    "label": "alpine sea holly",
+    "question_id": 3516,
+    "split": null,
+    "extra": {
+      "class_id": 34,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08107.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08107.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. tiger lily B. stemless gentian C. pelargonium D. spring crocus",
+    "label": "tiger lily",
+    "question_id": 3632,
+    "split": null,
+    "extra": {
+      "class_id": 5,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05974.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05974.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. windflower B. lenten rose C. sweet pea D. columbine",
+    "label": "windflower",
+    "question_id": 3020,
+    "split": null,
+    "extra": {
+      "class_id": 68,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06641.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06641.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. canterbury bells B. passion C. blanket D. carnation",
+    "label": "canterbury bells",
+    "question_id": 3325,
+    "split": null,
+    "extra": {
+      "class_id": 2,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05745.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05745.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. king protea B. fritillary C. silverbush D. bolero deep blue",
+    "label": "king protea",
+    "question_id": 2903,
+    "split": null,
+    "extra": {
+      "class_id": 12,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06395.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06395.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. monkshood B. common dandelion C. sword lily D. wallflower",
+    "label": "monkshood",
+    "question_id": 3245,
+    "split": null,
+    "extra": {
+      "class_id": 8,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06952.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06952.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. globe thistle B. bougainvillea C. corn poppy D. mexican aster",
+    "label": "mexican aster",
+    "question_id": 3503,
+    "split": null,
+    "extra": {
+      "class_id": 33,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06234.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06234.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. poinsettia B. stemless gentian C. peruvian lily D. oxeye daisy",
+    "label": "oxeye daisy",
+    "question_id": 3131,
+    "split": null,
+    "extra": {
+      "class_id": 48,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07925.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07925.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. japanese anemone B. tree mallow C. lenten rose D. blanket",
+    "label": "blanket",
+    "question_id": 4031,
+    "split": null,
+    "extra": {
+      "class_id": 99,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04706.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_04706.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. pelargonium B. japanese anemone C. sweet pea D. stemless gentian",
+    "label": "pelargonium",
+    "question_id": 2374,
+    "split": null,
+    "extra": {
+      "class_id": 54,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06198.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06198.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. ruby-lipped cattleya B. bee balm C. common dandelion D. oxeye daisy",
+    "label": "oxeye daisy",
+    "question_id": 3119,
+    "split": null,
+    "extra": {
+      "class_id": 48,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06582.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06582.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. grape hyacinth B. anthurium C. corn poppy D. great masterwort",
+    "label": "grape hyacinth",
+    "question_id": 3305,
+    "split": null,
+    "extra": {
+      "class_id": 24,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05303.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_05303.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. corn poppy B. garden phlox C. colt's foot D. tree poppy",
+    "label": "tree poppy",
+    "question_id": 2683,
+    "split": null,
+    "extra": {
+      "class_id": 69,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06031.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06031.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. lotus B. ball moss C. bolero deep blue D. globe thistle",
+    "label": "ball moss",
+    "question_id": 3035,
+    "split": null,
+    "extra": {
+      "class_id": 92,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06469.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06469.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. love in the mist B. ball moss C. lenten rose D. tree mallow",
+    "label": "love in the mist",
+    "question_id": 3268,
+    "split": null,
+    "extra": {
+      "class_id": 32,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06158.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06158.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. desert-rose B. balloon C. fire lily D. great masterwort",
+    "label": "balloon",
+    "question_id": 3103,
+    "split": null,
+    "extra": {
+      "class_id": 18,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06689.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06689.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. sweet pea B. spring crocus C. globe-flower D. trumpet creeper",
+    "label": "globe-flower",
+    "question_id": 3348,
+    "split": null,
+    "extra": {
+      "class_id": 15,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06703.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06703.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. toad lily B. thorn apple C. buttercup D. alpine sea holly",
+    "label": "toad lily",
+    "question_id": 3373,
+    "split": null,
+    "extra": {
+      "class_id": 78,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08167.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_08167.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. trumpet creeper B. japanese anemone C. rose D. geranium",
+    "label": "japanese anemone",
+    "question_id": 3692,
+    "split": null,
+    "extra": {
+      "class_id": 61,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07268.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_07268.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. colt's foot B. toad lily C. japanese anemone D. siam tulip",
+    "label": "japanese anemone",
+    "question_id": 3705,
+    "split": null,
+    "extra": {
+      "class_id": 61,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06727.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Flowers/jpg/image_06727.jpg"
+    ],
+    "question": "What category does this flower image belong to?\nA. primula B. artichoke C. toad lily D. pink-yellow dahlia",
+    "label": "toad lily",
+    "question_id": 3382,
+    "split": null,
+    "extra": {
+      "class_id": 78,
+      "answer": "C"
+    }
+  }
+]

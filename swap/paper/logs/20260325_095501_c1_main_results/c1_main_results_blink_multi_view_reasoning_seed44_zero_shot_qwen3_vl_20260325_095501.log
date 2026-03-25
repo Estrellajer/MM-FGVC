@@ -1,0 +1,87 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_multi-view_reasoning dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_multi_view_reasoning/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_multi_view_reasoning/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_multi_view_reasoning_seed44_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:09,  3.96it/s]Loading weights:   0%|          | 2/750 [00:00<03:42,  3.36it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:27, 26.65it/s]Loading weights:   3%|▎         | 23/750 [00:00<00:16, 43.68it/s]Loading weights:   5%|▍         | 35/750 [00:00<00:11, 62.65it/s]Loading weights:   6%|▌         | 45/750 [00:00<00:09, 70.91it/s]Loading weights:   7%|▋         | 56/750 [00:01<00:08, 79.56it/s]Loading weights:   9%|▉         | 67/750 [00:01<00:07, 85.58it/s]Loading weights:  10%|█         | 78/750 [00:01<00:07, 90.76it/s]Loading weights:  12%|█▏        | 88/750 [00:01<00:07, 92.83it/s]Loading weights:  13%|█▎        | 98/750 [00:01<00:08, 75.75it/s]Loading weights:  15%|█▌        | 114/750 [00:01<00:06, 93.16it/s]Loading weights:  17%|█▋        | 127/750 [00:01<00:06, 100.83it/s]Loading weights:  18%|█▊        | 138/750 [00:02<00:09, 64.02it/s] Loading weights:  24%|██▎       | 177/750 [00:02<00:04, 123.98it/s]Loading weights:  26%|██▌       | 195/750 [00:02<00:04, 113.11it/s]Loading weights:  28%|██▊       | 210/750 [00:02<00:04, 112.67it/s]Loading weights:  30%|██▉       | 224/750 [00:02<00:06, 86.72it/s] Loading weights:  32%|███▏      | 238/750 [00:02<00:05, 95.68it/s]Loading weights:  35%|███▍      | 259/750 [00:03<00:04, 117.21it/s]Loading weights:  37%|███▋      | 274/750 [00:03<00:03, 121.87it/s]Loading weights:  38%|███▊      | 288/750 [00:03<00:04, 107.74it/s]Loading weights:  40%|████      | 303/750 [00:03<00:04, 111.30it/s]Loading weights:  42%|████▏     | 316/750 [00:03<00:04, 97.17it/s] Loading weights:  45%|████▍     | 335/750 [00:03<00:03, 117.33it/s]Loading weights:  47%|████▋     | 349/750 [00:03<00:03, 112.25it/s]Loading weights:  48%|████▊     | 362/750 [00:04<00:03, 112.77it/s]Loading weights:  50%|████▉     | 374/750 [00:04<00:04, 93.02it/s] Loading weights:  52%|█████▏    | 393/750 [00:04<00:03, 110.37it/s]Loading weights:  73%|███████▎  | 546/750 [00:04<00:00, 441.60it/s]Loading weights:  89%|████████▉ | 668/750 [00:04<00:00, 633.75it/s]Loading weights:  99%|█████████▉| 742/750 [00:04<00:00, 634.10it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 160.19it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - B
+  - Based on the two images provided, we can analyze the change in perspective to
+    determine
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - B
+    - Based on the two images provided, we can analyze the change in perspective to
+      determine
+    matrix:
+    - - 0
+      - 0
+      - 9
+      - 1
+    - - 0
+      - 0
+      - 10
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 19.0
+      true_positive: 0.0
+      false_positive: 19.0
+      false_negative: 0.0
+    Based on the two images provided, we can analyze the change in perspective to determine:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_multi_view_reasoning_seed44_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_multi_view_reasoning_seed44_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_multi_view_reasoning_seed44_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

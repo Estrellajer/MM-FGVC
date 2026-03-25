@@ -1,0 +1,19 @@
+{
+  "count": 70,
+  "mode": "per_label",
+  "requested_count": 2,
+  "group_size": 0,
+  "src": "/root/autodl-tmp/FGVC/dataset/converted_from_data/pets/test.json",
+  "source_kind": "converted",
+  "unique_labels": 35,
+  "per_label_min": 2,
+  "per_label_max": 2,
+  "canonicalized_paths": 0,
+  "canonicalized_labels": 0,
+  "skipped_missing_images": 0,
+  "dropped_disallowed_labels": 0,
+  "excluded_overlap": 0,
+  "restricted_label_space": 35,
+  "seed": 43,
+  "shuffle": false
+}

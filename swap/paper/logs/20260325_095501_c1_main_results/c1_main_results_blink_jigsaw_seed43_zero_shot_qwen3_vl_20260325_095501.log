@@ -1,0 +1,758 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_jigsaw dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_jigsaw/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_jigsaw/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_jigsaw_seed43_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:54,  4.30it/s]Loading weights:   0%|          | 2/750 [00:00<03:19,  3.76it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:22, 32.33it/s]Loading weights:   3%|▎         | 26/750 [00:00<00:14, 50.29it/s]Loading weights:   5%|▍         | 35/750 [00:00<00:12, 59.55it/s]Loading weights:   7%|▋         | 50/750 [00:00<00:08, 79.92it/s]Loading weights:   9%|▉         | 67/750 [00:01<00:06, 102.77it/s]Loading weights:  11%|█         | 80/750 [00:01<00:06, 105.35it/s]Loading weights:  12%|█▏        | 93/750 [00:01<00:06, 107.82it/s]Loading weights:  14%|█▍        | 105/750 [00:01<00:06, 105.81it/s]Loading weights:  16%|█▌        | 118/750 [00:01<00:05, 111.44it/s]Loading weights:  18%|█▊        | 134/750 [00:01<00:05, 121.45it/s]Loading weights:  20%|█▉        | 148/750 [00:01<00:04, 122.07it/s]Loading weights:  21%|██▏       | 161/750 [00:01<00:04, 120.94it/s]Loading weights:  24%|██▎       | 177/750 [00:01<00:04, 129.31it/s]Loading weights:  25%|██▌       | 191/750 [00:02<00:04, 129.40it/s]Loading weights:  27%|██▋       | 205/750 [00:02<00:04, 117.47it/s]Loading weights:  29%|██▉       | 221/750 [00:02<00:04, 126.03it/s]Loading weights:  31%|███       | 234/750 [00:02<00:04, 115.46it/s]Loading weights:  33%|███▎      | 248/750 [00:02<00:04, 118.79it/s]Loading weights:  35%|███▌      | 265/750 [00:02<00:03, 130.09it/s]Loading weights:  37%|███▋      | 279/750 [00:02<00:04, 114.11it/s]Loading weights:  40%|███▉      | 299/750 [00:03<00:03, 117.49it/s]Loading weights:  43%|████▎     | 322/750 [00:03<00:03, 138.49it/s]Loading weights:  45%|████▍     | 337/750 [00:03<00:03, 132.96it/s]Loading weights:  47%|████▋     | 351/750 [00:03<00:03, 110.97it/s]Loading weights:  49%|████▉     | 368/750 [00:03<00:03, 119.82it/s]Loading weights:  52%|█████▏    | 387/750 [00:03<00:02, 135.94it/s]Loading weights:  57%|█████▋    | 429/750 [00:03<00:01, 206.94it/s]Loading weights:  81%|████████  | 605/750 [00:03<00:00, 616.21it/s]Loading weights:  98%|█████████▊| 733/750 [00:03<00:00, 791.86it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 187.46it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - The first image is a composite, showing a person in traditional attire on the
+    left
+  - The first image is a composite, showing a man on the left and a black
+  - The first image is a composite, showing the top-left portion of a scene (
+  - The first image is a composite, showing a large protest march under a bridge.
+  - The first image is a composite, showing a scene on the left and a large
+  - The first image is a composite, showing a scene that is partially obscured by
+    a
+  - The first image is a composite, showing a large banner with the text "M
+  - The first image is a composite, showing a wall with bullet holes on the left
+  - The first image is a composite, showing a police officer in tactical gear on the
+  - The first image is a composite, showing a view from behind a concrete structure,
+  - The first image is a composite, showing two men side-by-side. The man
+  - The first image is a composite, showing a view through a window with a metal
+  - The first image is a partial screenshot of a presentation slide. It shows the
+    top
+  - The first image is a composite, showing a scene split into two parts. The
+  - The first image is a composite, showing a group of women in black mourning attire
+  - The first image is a composite, showing the damaged rear and side of a white
+  - The first image is a composite, showing a group of people, a large green
+  - The first image is a composite, showing a scene with several people at a conference
+  - The first image is a composite, showing a soldier in the foreground on the right
+  - The first image is a composite, showing a man in a white hat on the
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - The first image is a composite, showing a person in traditional attire on the
+      left
+    - The first image is a composite, showing a man on the left and a black
+    - The first image is a composite, showing the top-left portion of a scene (
+    - The first image is a composite, showing a large protest march under a bridge.
+    - The first image is a composite, showing a scene on the left and a large
+    - The first image is a composite, showing a scene that is partially obscured by
+      a
+    - The first image is a composite, showing a large banner with the text "M
+    - The first image is a composite, showing a wall with bullet holes on the left
+    - The first image is a composite, showing a police officer in tactical gear on
+      the
+    - The first image is a composite, showing a view from behind a concrete structure,
+    - The first image is a composite, showing two men side-by-side. The man
+    - The first image is a composite, showing a view through a window with a metal
+    - The first image is a partial screenshot of a presentation slide. It shows the
+      top
+    - The first image is a composite, showing a scene split into two parts. The
+    - The first image is a composite, showing a group of women in black mourning attire
+    - The first image is a composite, showing the damaged rear and side of a white
+    - The first image is a composite, showing a group of people, a large green
+    - The first image is a composite, showing a scene with several people at a conference
+    - The first image is a composite, showing a soldier in the foreground on the right
+    - The first image is a composite, showing a man in a white hat on the
+    matrix:
+    - - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    The first image is a composite, showing a person in traditional attire on the left:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a man on the left and a black:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing the top-left portion of a scene (:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a large protest march under a bridge.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene on the left and a large:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene that is partially obscured by a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a large banner with the text "M:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a wall with bullet holes on the left:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a police officer in tactical gear on the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a view from behind a concrete structure,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing two men side-by-side. The man:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a view through a window with a metal:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a partial screenshot of a presentation slide. It shows the top:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene split into two parts. The:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a group of women in black mourning attire:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing the damaged rear and side of a white:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a group of people, a large green:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a scene with several people at a conference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a soldier in the foreground on the right:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The first image is a composite, showing a man in a white hat on the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed43_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed43_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed43_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

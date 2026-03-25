@@ -1,0 +1,155 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_relative_reflectance dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_relative_reflectance/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_relative_reflectance/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:13,  5.46it/s]Loading weights:   0%|          | 2/730 [00:00<02:37,  4.62it/s]Loading weights:   2%|▏         | 12/730 [00:00<00:22, 31.28it/s]Loading weights:   3%|▎         | 24/730 [00:00<00:12, 55.72it/s]Loading weights:   5%|▍         | 36/730 [00:00<00:09, 73.30it/s]Loading weights:   7%|▋         | 48/730 [00:00<00:07, 86.36it/s]Loading weights:   8%|▊         | 60/730 [00:00<00:06, 95.73it/s]Loading weights:  10%|▉         | 72/730 [00:01<00:06, 102.29it/s]Loading weights:  11%|█▏        | 83/730 [00:01<00:06, 104.16it/s]Loading weights:  13%|█▎        | 94/730 [00:01<00:06, 104.14it/s]Loading weights:  14%|█▍        | 105/730 [00:01<00:05, 105.37it/s]Loading weights:  16%|█▌        | 116/730 [00:01<00:06, 100.93it/s]Loading weights:  18%|█▊        | 130/730 [00:01<00:05, 111.54it/s]Loading weights:  19%|█▉        | 142/730 [00:01<00:05, 112.95it/s]Loading weights:  21%|██        | 154/730 [00:01<00:05, 109.37it/s]Loading weights:  23%|██▎       | 166/730 [00:01<00:05, 108.06it/s]Loading weights:  24%|██▍       | 177/730 [00:02<00:05, 103.00it/s]Loading weights:  26%|██▌       | 188/730 [00:02<00:05, 100.98it/s]Loading weights:  27%|██▋       | 199/730 [00:02<00:06, 86.33it/s] Loading weights:  30%|███       | 221/730 [00:02<00:04, 118.73it/s]Loading weights:  32%|███▏      | 234/730 [00:02<00:04, 111.64it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:04, 112.58it/s]Loading weights:  35%|███▌      | 258/730 [00:02<00:04, 110.12it/s]Loading weights:  37%|███▋      | 270/730 [00:02<00:04, 111.89it/s]Loading weights:  39%|███▊      | 282/730 [00:02<00:03, 113.29it/s]Loading weights:  40%|████      | 294/730 [00:03<00:03, 112.99it/s]Loading weights:  42%|████▏     | 306/730 [00:03<00:03, 114.35it/s]Loading weights:  44%|████▎     | 318/730 [00:03<00:03, 115.13it/s]Loading weights:  45%|████▌     | 330/730 [00:03<00:03, 114.79it/s]Loading weights:  62%|██████▏   | 451/730 [00:03<00:00, 430.51it/s]Loading weights:  80%|████████  | 585/730 [00:03<00:00, 692.48it/s]Loading weights:  98%|█████████▊| 715/730 [00:03<00:00, 870.04it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 196.03it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 15.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - 'Let''s analyze the surface color of the two points in the image:
+
+
+    - Point'
+  - 'Let''s analyze the surface color of the two points in the image.
+
+
+    - Point'
+  - 'Let''s analyze the surface colors of the two points in the image:
+
+
+    - Point'
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - 'Let''s analyze the surface color of the two points in the image:
+
+
+      - Point'
+    - 'Let''s analyze the surface color of the two points in the image.
+
+
+      - Point'
+    - 'Let''s analyze the surface colors of the two points in the image:
+
+
+      - Point'
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 4
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 3
+      - 0
+      - 2
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    ? 'Let''s analyze the surface color of the two points in the image:
+
+
+      - Point'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 11.0
+      true_positive: 0.0
+      false_positive: 11.0
+      false_negative: 0.0
+    ? 'Let''s analyze the surface color of the two points in the image.
+
+
+      - Point'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the surface colors of the two points in the image:
+
+
+      - Point'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

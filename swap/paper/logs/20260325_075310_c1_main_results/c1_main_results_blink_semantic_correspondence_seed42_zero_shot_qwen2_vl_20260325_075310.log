@@ -1,0 +1,570 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:49,  6.63it/s]Loading weights:   0%|          | 2/730 [00:00<02:10,  5.58it/s]Loading weights:   1%|          | 6/730 [00:00<00:44, 16.29it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:14, 47.91it/s]Loading weights:   5%|▍         | 36/730 [00:00<00:07, 87.28it/s]Loading weights:   7%|▋         | 50/730 [00:00<00:07, 91.21it/s]Loading weights:   9%|▉         | 66/730 [00:00<00:06, 104.53it/s]Loading weights:  12%|█▏        | 88/730 [00:01<00:04, 130.37it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:05, 120.80it/s]Loading weights:  16%|█▌        | 118/730 [00:01<00:04, 130.72it/s]Loading weights:  18%|█▊        | 132/730 [00:01<00:04, 124.82it/s]Loading weights:  20%|██        | 148/730 [00:01<00:04, 127.26it/s]Loading weights:  22%|██▏       | 161/730 [00:01<00:04, 119.42it/s]Loading weights:  24%|██▍       | 174/730 [00:01<00:04, 119.06it/s]Loading weights:  27%|██▋       | 196/730 [00:01<00:04, 133.35it/s]Loading weights:  29%|██▉       | 210/730 [00:02<00:03, 131.70it/s]Loading weights:  31%|███       | 224/730 [00:02<00:03, 132.22it/s]Loading weights:  33%|███▎      | 242/730 [00:02<00:03, 145.13it/s]Loading weights:  35%|███▌      | 257/730 [00:02<00:03, 132.07it/s]Loading weights:  37%|███▋      | 271/730 [00:02<00:03, 125.65it/s]Loading weights:  40%|███▉      | 289/730 [00:02<00:03, 120.41it/s]Loading weights:  43%|████▎     | 315/730 [00:02<00:02, 154.25it/s]Loading weights:  45%|████▌     | 332/730 [00:02<00:02, 136.22it/s]Loading weights:  64%|██████▍   | 467/730 [00:03<00:00, 426.29it/s]Loading weights:  85%|████████▍ | 618/730 [00:03<00:00, 702.46it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 228.90it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  - To determine which point corresponds to the reference point, we need to compare
+    the positions
+  - The reference point in the first image is located on the dog's head, specifically
+  - The reference point in the image is located on the front of the train, near
+  - To determine which point corresponds to the reference point, we need to compare
+    the reference
+  - The reference point is corresponding to Point D.
+  - The reference point in the image is located on the front wheel of the motorcycle.
+  - 'Let''s analyze the images step by step:
+
+
+    1. In the first image,'
+  - The reference point in the first image is located on the cat's head, specifically
+  - Answer:B
+  - The reference point in the first image is located on the cat's ear. In
+  - To determine which point corresponds to the reference point, we need to compare
+    the features
+  - The reference point is located on the baby's head. In the second image,
+  - To determine which point corresponds to the reference point, we need to identify
+    the reference
+  - 'Let''s analyze the images step by step:
+
+
+    1. The reference point in the'
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    - To determine which point corresponds to the reference point, we need to compare
+      the positions
+    - The reference point in the first image is located on the dog's head, specifically
+    - The reference point in the image is located on the front of the train, near
+    - To determine which point corresponds to the reference point, we need to compare
+      the reference
+    - The reference point is corresponding to Point D.
+    - The reference point in the image is located on the front wheel of the motorcycle.
+    - 'Let''s analyze the images step by step:
+
+
+      1. In the first image,'
+    - The reference point in the first image is located on the cat's head, specifically
+    - Answer:B
+    - The reference point in the first image is located on the cat's ear. In
+    - To determine which point corresponds to the reference point, we need to compare
+      the features
+    - The reference point is located on the baby's head. In the second image,
+    - To determine which point corresponds to the reference point, we need to identify
+      the reference
+    - 'Let''s analyze the images step by step:
+
+
+      1. The reference point in the'
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 5.0
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 5.0
+    To determine which point corresponds to the reference point, we need to compare the positions:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point in the first image is located on the dog's head, specifically:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the image is located on the front of the train, near:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to compare the reference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point is corresponding to Point D.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the image is located on the front wheel of the motorcycle.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. In the first image,'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the first image is located on the cat's head, specifically:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Answer:B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the first image is located on the cat's ear. In:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to compare the features:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point is located on the baby's head. In the second image,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to identify the reference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The reference point in the'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260325_075310.diagnostics.json
+

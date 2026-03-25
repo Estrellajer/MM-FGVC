@@ -1,0 +1,65 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "vizwiz",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.55,
+    "correct": 22.0,
+    "total": 40.0,
+    "label_order": [
+      "unanswerable",
+      "answerable"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "unanswerable",
+        "answerable"
+      ],
+      "matrix": [
+        [
+          13,
+          7
+        ],
+        [
+          11,
+          9
+        ]
+      ]
+    },
+    "per_class": {
+      "unanswerable": {
+        "precision": 0.5416666666666666,
+        "recall": 0.65,
+        "f1": 0.5909090909090908,
+        "support": 20.0,
+        "predicted": 24.0,
+        "true_positive": 13.0,
+        "false_positive": 11.0,
+        "false_negative": 7.0
+      },
+      "answerable": {
+        "precision": 0.5625,
+        "recall": 0.45,
+        "f1": 0.5,
+        "support": 20.0,
+        "predicted": 16.0,
+        "true_positive": 9.0,
+        "false_positive": 7.0,
+        "false_negative": 11.0
+      }
+    },
+    "macro_precision": 0.5520833333333333,
+    "macro_recall": 0.55,
+    "macro_f1": 0.5454545454545454,
+    "balanced_accuracy": 0.55
+  },
+  "timings": {
+    "fit_time_sec": 42.17959607206285,
+    "predict_time_sec": 17.27976175583899,
+    "total_time_sec": 59.45935782790184,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.43199404389597473
+  }
+}

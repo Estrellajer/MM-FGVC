@@ -1,0 +1,54 @@
+{
+  "suite_name": "c1_main_results",
+  "timestamp": "20260325_095501",
+  "task_ids": [
+    "naturalbench_ret",
+    "naturalbench_vqa",
+    "sugarcrepe",
+    "pets_small",
+    "eurosat_small",
+    "flowers_small",
+    "cub_small",
+    "tinyimage_small",
+    "vizwiz",
+    "vlguard",
+    "mhalubench_val_v01",
+    "mhalubench_val_v02",
+    "blink_art_style",
+    "blink_counting",
+    "blink_forensic_detection",
+    "blink_functional_correspondence",
+    "blink_iq_test",
+    "blink_jigsaw",
+    "blink_multi_view_reasoning",
+    "blink_object_localization",
+    "blink_relative_depth",
+    "blink_relative_reflectance",
+    "blink_semantic_correspondence",
+    "blink_spatial_relation",
+    "blink_visual_correspondence",
+    "blink_visual_similarity"
+  ],
+  "method_ids": [
+    "zero_shot",
+    "sav",
+    "rsev2"
+  ],
+  "models": [
+    "qwen2_vl",
+    "qwen3_vl",
+    "idefics3"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "save_predictions": false,
+  "gpu_workers": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ]
+}

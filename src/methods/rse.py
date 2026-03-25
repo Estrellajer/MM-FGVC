@@ -135,6 +135,7 @@ class RSEMethod(MethodBase):
         self._final_total = 0
         self._fallback_used = 0
         self._margins: List[float] = []
+        self._oracle_component_hits: List[Dict[str, object]] = []
         self._fitted = False
 
         self.zero_shot_fallback = None
@@ -809,6 +810,7 @@ class RSEMethod(MethodBase):
         self._final_total = 0
         self._fallback_used = 0
         self._margins = []
+        self._oracle_component_hits = []
 
     def fit(self, train_data: Sequence[Dict]) -> None:
         if not train_data:
@@ -861,6 +863,7 @@ class RSEMethod(MethodBase):
         margin: float,
         all_scores: Dict[Tuple[str, int], torch.Tensor],
         fallback_used: bool,
+        sample_id: str | None = None,
     ) -> None:
         if true_label not in self.label_to_index:
             return
@@ -871,10 +874,25 @@ class RSEMethod(MethodBase):
         self._margins.append(float(margin))
 
         true_idx = self.label_to_index[true_label]
+        correct_components: List[str] = []
         for key, scores in all_scores.items():
             pred_idx = int(scores.argmax().item())
-            self._component_eval_stats[key]["correct"] += float(pred_idx == true_idx)
+            is_correct = pred_idx == true_idx
+            self._component_eval_stats[key]["correct"] += float(is_correct)
             self._component_eval_stats[key]["count"] += 1.0
+            if is_correct:
+                correct_components.append(f"{key[0]}@{key[1]}")
+
+        self._oracle_component_hits.append(
+            {
+                "sample_id": sample_id,
+                "true_label": true_label,
+                "final_label": final_label,
+                "final_correct": final_label == true_label,
+                "oracle_correct": bool(correct_components),
+                "correct_components": correct_components,
+            }
+        )
 
     def predict(self, sample: Dict) -> str:
         if not self._fitted:
@@ -899,7 +917,14 @@ class RSEMethod(MethodBase):
             pred_label = self.zero_shot_fallback.predict(sample)
             fallback_used = True
 
-        self._record_eval(str(sample.get("label", "")), pred_label, chosen_margin, all_scores, fallback_used)
+        self._record_eval(
+            str(sample.get("label", "")),
+            pred_label,
+            chosen_margin,
+            all_scores,
+            fallback_used,
+            sample_id=str(sample.get("question_id", "")) or None,
+        )
         return pred_label
 
     def export_diagnostics(self) -> Dict:
@@ -978,6 +1003,7 @@ class RSEMethod(MethodBase):
         margin_mean = (sum(self._margins) / len(self._margins)) if self._margins else None
         margin_min = min(self._margins) if self._margins else None
         margin_max = max(self._margins) if self._margins else None
+        oracle_correct = sum(1 for row in self._oracle_component_hits if bool(row["oracle_correct"]))
 
         return {
             "method": "rse",
@@ -1010,6 +1036,12 @@ class RSEMethod(MethodBase):
             "train_selection_summary": {
                 "selection_train_accuracy": self.selection_train_accuracy,
             },
+            "oracle_summary": {
+                "oracle_accuracy": (oracle_correct / self._final_total) if self._final_total > 0 else None,
+                "oracle_correct": oracle_correct,
+                "oracle_total": self._final_total,
+            },
+            "oracle_samples": self._oracle_component_hits,
             "eval_summary": {
                 "final_accuracy": (self._final_correct / self._final_total) if self._final_total > 0 else None,
                 "final_correct": self._final_correct,

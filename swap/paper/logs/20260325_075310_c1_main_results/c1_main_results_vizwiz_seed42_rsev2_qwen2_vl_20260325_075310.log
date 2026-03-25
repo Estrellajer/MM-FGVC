@@ -1,0 +1,47 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:43,  7.03it/s]Loading weights:   0%|          | 2/730 [00:00<02:02,  5.92it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:17, 41.67it/s]Loading weights:   5%|▌         | 40/730 [00:00<00:08, 80.11it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:06, 108.12it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 110.14it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 127.98it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:05, 117.30it/s]Loading weights:  18%|█▊        | 132/730 [00:01<00:05, 115.47it/s]Loading weights:  21%|██        | 150/730 [00:01<00:04, 130.35it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:03, 149.38it/s]Loading weights:  26%|██▌       | 188/730 [00:01<00:04, 120.90it/s]Loading weights:  29%|██▉       | 210/730 [00:01<00:03, 140.19it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:03, 134.57it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:03, 135.15it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:02, 152.86it/s]Loading weights:  41%|████      | 297/730 [00:02<00:03, 142.55it/s]Loading weights:  43%|████▎     | 312/730 [00:02<00:02, 143.67it/s]Loading weights:  45%|████▍     | 328/730 [00:02<00:02, 143.83it/s]Loading weights:  54%|█████▍    | 393/730 [00:02<00:01, 272.77it/s]Loading weights:  75%|███████▌  | 550/730 [00:02<00:00, 614.95it/s]Loading weights:  98%|█████████▊| 712/730 [00:03<00:00, 887.17it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 239.92it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.7
+  correct: 28.0
+  total: 40.0
+  label_order:
+  - unanswerable
+  - answerable
+  confusion_matrix:
+    labels:
+    - unanswerable
+    - answerable
+    matrix:
+    - - 15
+      - 5
+    - - 7
+      - 13
+  per_class:
+    unanswerable:
+      precision: 0.6818181818181818
+      recall: 0.75
+      f1: 0.7142857142857143
+      support: 20.0
+      predicted: 22.0
+      true_positive: 15.0
+      false_positive: 7.0
+      false_negative: 5.0
+    answerable:
+      precision: 0.7222222222222222
+      recall: 0.65
+      f1: 0.6842105263157895
+      support: 20.0
+      predicted: 18.0
+      true_positive: 13.0
+      false_positive: 5.0
+      false_negative: 7.0
+  macro_precision: 0.702020202020202
+  macro_recall: 0.7
+  macro_f1: 0.6992481203007519
+  balanced_accuracy: 0.7
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vizwiz_seed42_rsev2_qwen2_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vizwiz_seed42_rsev2_qwen2_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vizwiz_seed42_rsev2_qwen2_vl_20260325_075310.diagnostics.json
+

@@ -1,0 +1,50 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=sav evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_vlguard_seed43_sav_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<06:49,  1.83it/s]Loading weights:   1%|▏         | 10/750 [00:00<00:36, 20.01it/s]Loading weights:   3%|▎         | 26/750 [00:00<00:14, 51.45it/s]Loading weights:   5%|▌         | 38/750 [00:00<00:10, 65.15it/s]Loading weights:   7%|▋         | 49/750 [00:00<00:09, 73.13it/s]Loading weights:   8%|▊         | 60/750 [00:01<00:08, 81.10it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:08, 84.23it/s]Loading weights:  11%|█         | 82/750 [00:01<00:07, 87.96it/s]Loading weights:  12%|█▏        | 93/750 [00:01<00:07, 91.09it/s]Loading weights:  14%|█▎        | 103/750 [00:01<00:07, 90.60it/s]Loading weights:  15%|█▌        | 113/750 [00:01<00:07, 89.45it/s]Loading weights:  16%|█▋        | 123/750 [00:01<00:06, 91.22it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:07, 78.93it/s]Loading weights:  19%|█▉        | 142/750 [00:02<00:07, 79.44it/s]Loading weights:  21%|██        | 159/750 [00:02<00:06, 95.45it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:05, 98.72it/s]Loading weights:  24%|██▍       | 182/750 [00:02<00:05, 100.60it/s]Loading weights:  26%|██▌       | 193/750 [00:02<00:05, 99.98it/s] Loading weights:  28%|██▊       | 208/750 [00:02<00:04, 112.33it/s]Loading weights:  30%|██▉       | 224/750 [00:02<00:04, 117.97it/s]Loading weights:  31%|███▏      | 236/750 [00:02<00:05, 100.79it/s]Loading weights:  34%|███▍      | 254/750 [00:03<00:04, 118.16it/s]Loading weights:  36%|███▌      | 267/750 [00:03<00:04, 114.90it/s]Loading weights:  37%|███▋      | 279/750 [00:03<00:04, 105.41it/s]Loading weights:  39%|███▊      | 290/750 [00:03<00:04, 97.04it/s] Loading weights:  40%|████      | 302/750 [00:03<00:04, 95.41it/s]Loading weights:  42%|████▏     | 313/750 [00:03<00:04, 92.39it/s]Loading weights:  43%|████▎     | 324/750 [00:03<00:04, 96.50it/s]Loading weights:  45%|████▍     | 335/750 [00:03<00:04, 94.37it/s]Loading weights:  46%|████▌     | 346/750 [00:03<00:04, 98.07it/s]Loading weights:  48%|████▊     | 357/750 [00:04<00:04, 98.23it/s]Loading weights:  49%|████▉     | 368/750 [00:04<00:03, 96.33it/s]Loading weights:  51%|█████     | 379/750 [00:04<00:03, 94.69it/s]Loading weights:  52%|█████▏    | 390/750 [00:04<00:03, 94.35it/s]Loading weights:  63%|██████▎   | 471/750 [00:04<00:00, 284.91it/s]Loading weights:  78%|███████▊  | 583/750 [00:04<00:00, 515.16it/s]Loading weights:  95%|█████████▌| 715/750 [00:04<00:00, 742.52it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 154.08it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.975
+  correct: 39.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 19
+      - 1
+    - - 0
+      - 20
+  per_class:
+    unharmful:
+      precision: 1.0
+      recall: 0.95
+      f1: 0.9743589743589743
+      support: 20.0
+      predicted: 19.0
+      true_positive: 19.0
+      false_positive: 0.0
+      false_negative: 1.0
+    harmful:
+      precision: 0.9523809523809523
+      recall: 1.0
+      f1: 0.975609756097561
+      support: 20.0
+      predicted: 21.0
+      true_positive: 20.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.9761904761904762
+  macro_recall: 0.975
+  macro_f1: 0.9749843652282677
+  balanced_accuracy: 0.975
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vlguard_seed43_sav_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vlguard_seed43_sav_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vlguard_seed43_sav_qwen3_vl_20260325_095501.diagnostics.json
+

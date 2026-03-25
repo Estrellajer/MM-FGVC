@@ -1,0 +1,151 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_object_localization dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_object_localization/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_object_localization/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_object_localization_seed44_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:25,  4.99it/s]Loading weights:   0%|          | 3/729 [00:00<01:49,  6.65it/s]Loading weights:   1%|          | 7/729 [00:00<00:47, 15.22it/s]Loading weights:   2%|▏         | 15/729 [00:00<00:23, 30.51it/s]Loading weights:   3%|▎         | 25/729 [00:00<00:14, 47.42it/s]Loading weights:   5%|▍         | 34/729 [00:00<00:12, 56.51it/s]Loading weights:   6%|▌         | 43/729 [00:01<00:10, 62.89it/s]Loading weights:   7%|▋         | 52/729 [00:01<00:09, 67.95it/s]Loading weights:   8%|▊         | 61/729 [00:01<00:09, 71.12it/s]Loading weights:  10%|▉         | 70/729 [00:01<00:08, 74.98it/s]Loading weights:  11%|█         | 79/729 [00:01<00:08, 76.41it/s]Loading weights:  12%|█▏        | 87/729 [00:01<00:08, 72.38it/s]Loading weights:  13%|█▎        | 97/729 [00:01<00:08, 78.95it/s]Loading weights:  15%|█▍        | 106/729 [00:01<00:07, 78.56it/s]Loading weights:  16%|█▌        | 114/729 [00:01<00:09, 67.48it/s]Loading weights:  18%|█▊        | 131/729 [00:02<00:08, 68.37it/s]Loading weights:  21%|██        | 150/729 [00:02<00:06, 92.17it/s]Loading weights:  22%|██▏       | 161/729 [00:02<00:06, 87.88it/s]Loading weights:  23%|██▎       | 171/729 [00:02<00:06, 89.82it/s]Loading weights:  25%|██▍       | 181/729 [00:02<00:07, 77.94it/s]Loading weights:  27%|██▋       | 195/729 [00:02<00:05, 90.58it/s]Loading weights:  28%|██▊       | 205/729 [00:03<00:06, 84.17it/s]Loading weights:  29%|██▉       | 214/729 [00:03<00:06, 82.02it/s]Loading weights:  31%|███       | 223/729 [00:03<00:06, 81.97it/s]Loading weights:  32%|███▏      | 232/729 [00:03<00:06, 82.83it/s]Loading weights:  33%|███▎      | 241/729 [00:03<00:05, 81.64it/s]Loading weights:  34%|███▍      | 250/729 [00:03<00:05, 82.49it/s]Loading weights:  36%|███▌      | 259/729 [00:03<00:06, 78.25it/s]Loading weights:  37%|███▋      | 272/729 [00:03<00:05, 90.08it/s]Loading weights:  39%|███▊      | 282/729 [00:03<00:04, 90.67it/s]Loading weights:  40%|████      | 292/729 [00:04<00:04, 90.69it/s]Loading weights:  66%|██████▌   | 480/729 [00:04<00:00, 584.41it/s]Loading weights:  95%|█████████▍| 690/729 [00:04<00:00, 1011.30it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 171.79it/s] 
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - 'Answer: B.'
+  - 'Answer: A'
+  - 'Answer: B'
+  - B.
+  - 'Answer: A.'
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - 'Answer: B.'
+    - 'Answer: A'
+    - 'Answer: B'
+    - B.
+    - 'Answer: A.'
+    matrix:
+    - - 0
+      - 0
+      - 2
+      - 3
+      - 3
+      - 2
+      - 0
+    - - 0
+      - 0
+      - 3
+      - 0
+      - 5
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    'Answer: B.':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 5.0
+      true_positive: 0.0
+      false_positive: 5.0
+      false_negative: 0.0
+    'Answer: A':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    'Answer: B':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 8.0
+      true_positive: 0.0
+      false_positive: 8.0
+      false_negative: 0.0
+    B.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    'Answer: A.':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed44_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed44_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed44_zero_shot_idefics3_20260325_095501.diagnostics.json
+

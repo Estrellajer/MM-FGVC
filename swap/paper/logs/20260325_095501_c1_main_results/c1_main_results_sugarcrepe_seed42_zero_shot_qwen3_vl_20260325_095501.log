@@ -1,0 +1,52 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_sugarcrepe_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:02,  4.11it/s]Loading weights:   0%|          | 2/750 [00:00<03:22,  3.69it/s]Loading weights:   2%|▏         | 12/750 [00:00<00:27, 26.47it/s]Loading weights:   3%|▎         | 23/750 [00:00<00:15, 47.19it/s]Loading weights:   4%|▍         | 33/750 [00:00<00:11, 60.15it/s]Loading weights:   6%|▌         | 45/750 [00:00<00:09, 74.84it/s]Loading weights:   8%|▊         | 59/750 [00:01<00:08, 84.62it/s]Loading weights:   9%|▉         | 69/750 [00:01<00:08, 84.66it/s]Loading weights:  11%|█         | 79/750 [00:01<00:08, 83.37it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:06, 97.32it/s]Loading weights:  15%|█▍        | 109/750 [00:01<00:05, 110.81it/s]Loading weights:  16%|█▌        | 121/750 [00:01<00:05, 112.74it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:05, 114.62it/s]Loading weights:  20%|█▉        | 147/750 [00:01<00:05, 115.76it/s]Loading weights:  21%|██        | 159/750 [00:01<00:05, 107.21it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:05, 96.95it/s] Loading weights:  24%|██▍       | 182/750 [00:02<00:05, 95.32it/s]Loading weights:  27%|██▋       | 202/750 [00:02<00:05, 101.25it/s]Loading weights:  29%|██▉       | 219/750 [00:02<00:04, 115.71it/s]Loading weights:  31%|███       | 232/750 [00:02<00:04, 118.82it/s]Loading weights:  33%|███▎      | 245/750 [00:02<00:04, 121.44it/s]Loading weights:  34%|███▍      | 258/750 [00:02<00:04, 103.33it/s]Loading weights:  36%|███▌      | 270/750 [00:03<00:05, 92.83it/s] Loading weights:  38%|███▊      | 288/750 [00:03<00:05, 77.29it/s]Loading weights:  43%|████▎     | 322/750 [00:03<00:03, 124.70it/s]Loading weights:  46%|████▌     | 342/750 [00:03<00:02, 138.35it/s]Loading weights:  48%|████▊     | 359/750 [00:03<00:03, 118.44it/s]Loading weights:  50%|████▉     | 374/750 [00:03<00:03, 115.91it/s]Loading weights:  52%|█████▏    | 388/750 [00:04<00:03, 117.12it/s]Loading weights:  53%|█████▎    | 401/750 [00:04<00:03, 113.83it/s]Loading weights:  65%|██████▌   | 489/750 [00:04<00:00, 295.64it/s]Loading weights:  85%|████████▍ | 635/750 [00:04<00:00, 583.62it/s]Loading weights:  98%|█████████▊| 733/750 [00:04<00:00, 685.30it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 165.39it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.5
+  pair_correct: 10.0
+  pair_total: 20.0
+  raw_accuracy: 0.75
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 8
+      - 12
+  per_class:
+    'Yes':
+      precision: 0.6923076923076923
+      recall: 0.9
+      f1: 0.7826086956521738
+      support: 20.0
+      predicted: 26.0
+      true_positive: 18.0
+      false_positive: 8.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8571428571428571
+      recall: 0.6
+      f1: 0.7058823529411764
+      support: 20.0
+      predicted: 14.0
+      true_positive: 12.0
+      false_positive: 2.0
+      false_negative: 8.0
+  macro_precision: 0.7747252747252746
+  macro_recall: 0.75
+  macro_f1: 0.7442455242966751
+  balanced_accuracy: 0.75
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

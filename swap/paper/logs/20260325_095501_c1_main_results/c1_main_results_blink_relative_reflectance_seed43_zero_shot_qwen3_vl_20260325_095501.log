@@ -1,0 +1,415 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_relative_reflectance dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_relative_reflectance/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_relative_reflectance/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<06:50,  1.82it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:25, 28.67it/s]Loading weights:   4%|▎         | 27/750 [00:00<00:15, 46.03it/s]Loading weights:   5%|▌         | 38/750 [00:00<00:11, 60.39it/s]Loading weights:   7%|▋         | 49/750 [00:01<00:11, 63.67it/s]Loading weights:   9%|▉         | 70/750 [00:01<00:07, 95.94it/s]Loading weights:  11%|█         | 83/750 [00:01<00:07, 93.01it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:07, 87.95it/s]Loading weights:  15%|█▌        | 115/750 [00:01<00:06, 104.27it/s]Loading weights:  17%|█▋        | 127/750 [00:01<00:06, 91.90it/s] Loading weights:  19%|█▉        | 146/750 [00:01<00:05, 112.80it/s]Loading weights:  21%|██        | 159/750 [00:01<00:05, 116.43it/s]Loading weights:  23%|██▎       | 172/750 [00:02<00:05, 112.90it/s]Loading weights:  25%|██▍       | 184/750 [00:02<00:06, 88.55it/s] Loading weights:  28%|██▊       | 211/750 [00:02<00:04, 127.92it/s]Loading weights:  30%|███       | 227/750 [00:02<00:04, 115.85it/s]Loading weights:  32%|███▏      | 241/750 [00:02<00:04, 116.13it/s]Loading weights:  34%|███▍      | 256/750 [00:02<00:05, 91.76it/s] Loading weights:  37%|███▋      | 280/750 [00:03<00:04, 113.13it/s]Loading weights:  40%|███▉      | 299/750 [00:03<00:03, 129.16it/s]Loading weights:  42%|████▏     | 314/750 [00:03<00:03, 115.26it/s]Loading weights:  44%|████▍     | 329/750 [00:03<00:03, 121.17it/s]Loading weights:  46%|████▌     | 343/750 [00:03<00:03, 120.46it/s]Loading weights:  47%|████▋     | 356/750 [00:03<00:03, 114.66it/s]Loading weights:  49%|████▉     | 369/750 [00:03<00:03, 103.22it/s]Loading weights:  51%|█████     | 380/750 [00:04<00:03, 101.41it/s]Loading weights:  52%|█████▏    | 391/750 [00:04<00:03, 102.32it/s]Loading weights:  67%|██████▋   | 503/750 [00:04<00:00, 363.53it/s]Loading weights:  86%|████████▌ | 642/750 [00:04<00:00, 638.81it/s]Loading weights:  98%|█████████▊| 733/750 [00:04<00:00, 692.59it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 167.60it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.06666666666666667
+  correct: 1.0
+  total: 15.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - The two points, A and B, are both located on the floor, which
+  - The two points, A and B, are both located on the ceiling of the
+  - The two points, A and B, are both located on the same surface —
+  - The two points, A and B, are both located on the wooden floor of
+  - The two points, A and B, are both located on the floor in the
+  - The two points, A and B, are both located on the surface of a
+  - The two points, A and B, are both located on the brickwork of
+  - The two points, A and B, are both located on the sky, which
+  - The two points, A and B, are both located on the same light green
+  - The two points, A and B, are both located on the red dress of
+  - The two points, A and B, are both located on the white countertop
+  - The two points, A and B, are both located on the wall in the
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - The two points, A and B, are both located on the floor, which
+    - The two points, A and B, are both located on the ceiling of the
+    - The two points, A and B, are both located on the same surface —
+    - The two points, A and B, are both located on the wooden floor of
+    - The two points, A and B, are both located on the floor in the
+    - The two points, A and B, are both located on the surface of a
+    - The two points, A and B, are both located on the brickwork of
+    - The two points, A and B, are both located on the sky, which
+    - The two points, A and B, are both located on the same light green
+    - The two points, A and B, are both located on the red dress of
+    - The two points, A and B, are both located on the white countertop
+    - The two points, A and B, are both located on the wall in the
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 5.0
+    (B):
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    The two points, A and B, are both located on the floor, which:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the ceiling of the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the same surface —:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the wooden floor of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the floor in the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the surface of a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the brickwork of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the sky, which:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the same light green:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the red dress of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the white countertop:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The two points, A and B, are both located on the wall in the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.06666666666666667
+  macro_recall: 0.013333333333333334
+  macro_f1: 0.022222222222222223
+  balanced_accuracy: 0.013333333333333334
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_reflectance_seed43_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

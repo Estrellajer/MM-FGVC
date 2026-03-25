@@ -1,0 +1,231 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:33,  4.86it/s]Loading weights:   0%|          | 2/750 [00:00<02:53,  4.32it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:25, 28.53it/s]Loading weights:   5%|▍         | 34/750 [00:00<00:09, 74.00it/s]Loading weights:   6%|▋         | 48/750 [00:00<00:07, 89.02it/s]Loading weights:   8%|▊         | 60/750 [00:00<00:07, 95.66it/s]Loading weights:  10%|▉         | 72/750 [00:01<00:06, 100.59it/s]Loading weights:  12%|█▏        | 89/750 [00:01<00:05, 118.13it/s]Loading weights:  14%|█▎        | 103/750 [00:01<00:05, 121.06it/s]Loading weights:  15%|█▌        | 116/750 [00:01<00:05, 113.04it/s]Loading weights:  18%|█▊        | 132/750 [00:01<00:04, 125.66it/s]Loading weights:  19%|█▉        | 146/750 [00:01<00:05, 118.16it/s]Loading weights:  22%|██▏       | 166/750 [00:01<00:05, 109.23it/s]Loading weights:  26%|██▌       | 192/750 [00:01<00:04, 125.36it/s]Loading weights:  29%|██▊       | 214/750 [00:02<00:04, 125.04it/s]Loading weights:  32%|███▏      | 239/750 [00:02<00:03, 144.96it/s]Loading weights:  34%|███▍      | 258/750 [00:02<00:03, 128.36it/s]Loading weights:  38%|███▊      | 287/750 [00:02<00:02, 161.34it/s]Loading weights:  41%|████      | 305/750 [00:02<00:02, 149.03it/s]Loading weights:  43%|████▎     | 323/750 [00:02<00:02, 152.00it/s]Loading weights:  45%|████▌     | 340/750 [00:02<00:02, 144.06it/s]Loading weights:  47%|████▋     | 356/750 [00:03<00:02, 145.04it/s]Loading weights:  49%|████▉     | 371/750 [00:03<00:03, 118.13it/s]Loading weights:  53%|█████▎    | 397/750 [00:03<00:02, 149.94it/s]Loading weights:  78%|███████▊  | 587/750 [00:03<00:00, 574.18it/s]Loading weights:  98%|█████████▊| 732/750 [00:03<00:00, 796.02it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 207.55it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.72
+  correct: 36.0
+  total: 50.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    matrix:
+    - - 3
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 1
+      - 2
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 2
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 2
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+  per_class:
+    Annual Crop Land:
+      precision: 0.5
+      recall: 0.6
+      f1: 0.5454545454545454
+      support: 5.0
+      predicted: 6.0
+      true_positive: 3.0
+      false_positive: 3.0
+      false_negative: 2.0
+    Forest:
+      precision: 0.5
+      recall: 0.4
+      f1: 0.4444444444444445
+      support: 5.0
+      predicted: 4.0
+      true_positive: 2.0
+      false_positive: 2.0
+      false_negative: 3.0
+    Herbaceous Vegetation Land:
+      precision: 0.4
+      recall: 0.4
+      f1: 0.4000000000000001
+      support: 5.0
+      predicted: 5.0
+      true_positive: 2.0
+      false_positive: 3.0
+      false_negative: 3.0
+    Highway or Road:
+      precision: 0.5555555555555556
+      recall: 1.0
+      f1: 0.7142857142857143
+      support: 5.0
+      predicted: 9.0
+      true_positive: 5.0
+      false_positive: 4.0
+      false_negative: 0.0
+    Industrial Buildings:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Pasture Land:
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    Permanent Crop Land:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Residential Buildings:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    River:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Sea or Lake:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.7622222222222222
+  macro_recall: 0.72
+  macro_f1: 0.7033477633477634
+  balanced_accuracy: 0.72
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_eurosat_small_seed42_zero_shot_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_eurosat_small_seed42_zero_shot_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_eurosat_small_seed42_zero_shot_qwen3_vl_20260325_075310.diagnostics.json
+

@@ -1,0 +1,19 @@
+{
+  "count": 40,
+  "mode": "grouped",
+  "requested_count": 40,
+  "group_size": 4,
+  "src": "/root/autodl-tmp/FGVC/dataset/converted_from_data/naturalbench/train.jsonl",
+  "source_kind": "converted",
+  "unique_labels": 4,
+  "per_label_min": 6,
+  "per_label_max": 14,
+  "canonicalized_paths": 0,
+  "canonicalized_labels": 0,
+  "skipped_missing_images": 0,
+  "dropped_disallowed_labels": 0,
+  "excluded_overlap": 3,
+  "restricted_label_space": 4,
+  "seed": 43,
+  "shuffle": false
+}

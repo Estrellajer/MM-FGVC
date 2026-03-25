@@ -1,0 +1,69 @@
+{
+  "model": "idefics3",
+  "dataset": "naturalbench_ret",
+  "method": "zero_shot",
+  "evaluator": "naturalbench_group",
+  "metrics": {
+    "metric": "naturalbench_group",
+    "q_acc": 0.55,
+    "i_acc": 0.6,
+    "g_acc": 0.3,
+    "raw_acc": 0.75,
+    "group_total": 10.0,
+    "used_samples": 40.0,
+    "dropped_samples": 0.0,
+    "label_order": [
+      "Yes",
+      "No"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Yes",
+        "No"
+      ],
+      "matrix": [
+        [
+          14,
+          6
+        ],
+        [
+          4,
+          16
+        ]
+      ]
+    },
+    "per_class": {
+      "Yes": {
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631577,
+        "support": 20.0,
+        "predicted": 18.0,
+        "true_positive": 14.0,
+        "false_positive": 4.0,
+        "false_negative": 6.0
+      },
+      "No": {
+        "precision": 0.7272727272727273,
+        "recall": 0.8,
+        "f1": 0.761904761904762,
+        "support": 20.0,
+        "predicted": 22.0,
+        "true_positive": 16.0,
+        "false_positive": 6.0,
+        "false_negative": 4.0
+      }
+    },
+    "macro_precision": 0.7525252525252526,
+    "macro_recall": 0.75,
+    "macro_f1": 0.7493734335839599,
+    "balanced_accuracy": 0.75
+  },
+  "timings": {
+    "fit_time_sec": 1.2205913662910461e-05,
+    "predict_time_sec": 16.243974780663848,
+    "total_time_sec": 16.24398698657751,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.4060993695165962
+  }
+}

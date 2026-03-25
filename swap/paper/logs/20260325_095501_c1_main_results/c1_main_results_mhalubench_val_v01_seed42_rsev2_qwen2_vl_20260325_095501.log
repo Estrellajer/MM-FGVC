@@ -1,0 +1,51 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=mhalubench dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/mhalubench_val_v01/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/mhalubench_val_v01/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_mhalubench_val_v01_seed42_rsev2_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:54,  4.18it/s]Loading weights:   0%|          | 2/730 [00:00<03:08,  3.86it/s]Loading weights:   1%|          | 6/730 [00:00<00:58, 12.48it/s]Loading weights:   2%|▏         | 17/730 [00:00<00:22, 32.34it/s]Loading weights:   5%|▌         | 40/730 [00:00<00:09, 76.49it/s]Loading weights:   7%|▋         | 52/730 [00:01<00:08, 82.35it/s]Loading weights:   9%|▉         | 64/730 [00:01<00:07, 86.90it/s]Loading weights:  10%|█         | 76/730 [00:01<00:07, 84.59it/s]Loading weights:  12%|█▏        | 86/730 [00:01<00:08, 76.86it/s]Loading weights:  14%|█▍        | 101/730 [00:01<00:07, 85.43it/s]Loading weights:  17%|█▋        | 124/730 [00:01<00:05, 112.10it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:05, 109.39it/s]Loading weights:  20%|██        | 148/730 [00:01<00:05, 107.15it/s]Loading weights:  22%|██▏       | 160/730 [00:02<00:05, 105.81it/s]Loading weights:  23%|██▎       | 171/730 [00:02<00:06, 87.91it/s] Loading weights:  25%|██▌       | 184/730 [00:02<00:05, 93.48it/s]Loading weights:  27%|██▋       | 194/730 [00:02<00:05, 91.41it/s]Loading weights:  29%|██▉       | 210/730 [00:02<00:05, 102.03it/s]Loading weights:  30%|███       | 222/730 [00:02<00:04, 104.10it/s]Loading weights:  32%|███▏      | 234/730 [00:02<00:04, 103.71it/s]Loading weights:  34%|███▎      | 245/730 [00:03<00:05, 90.79it/s] Loading weights:  37%|███▋      | 268/730 [00:03<00:03, 117.79it/s]Loading weights:  38%|███▊      | 281/730 [00:03<00:04, 106.29it/s]Loading weights:  40%|████      | 293/730 [00:03<00:05, 78.73it/s] Loading weights:  42%|████▏     | 307/730 [00:03<00:04, 87.94it/s]Loading weights:  43%|████▎     | 317/730 [00:03<00:04, 87.13it/s]Loading weights:  59%|█████▉    | 431/730 [00:03<00:00, 324.17it/s]Loading weights:  75%|███████▍  | 544/730 [00:03<00:00, 517.12it/s]Loading weights:  88%|████████▊ | 644/730 [00:04<00:00, 630.08it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 174.24it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.85
+  correct: 34.0
+  total: 40.0
+  label_order:
+  - hallucination
+  - non-hallucination
+  confusion_matrix:
+    labels:
+    - hallucination
+    - non-hallucination
+    matrix:
+    - - 20
+      - 0
+    - - 6
+      - 14
+  per_class:
+    hallucination:
+      precision: 0.7692307692307693
+      recall: 1.0
+      f1: 0.8695652173913044
+      support: 20.0
+      predicted: 26.0
+      true_positive: 20.0
+      false_positive: 6.0
+      false_negative: 0.0
+    non-hallucination:
+      precision: 1.0
+      recall: 0.7
+      f1: 0.8235294117647058
+      support: 20.0
+      predicted: 14.0
+      true_positive: 14.0
+      false_positive: 0.0
+      false_negative: 6.0
+  macro_precision: 0.8846153846153846
+  macro_recall: 0.85
+  macro_f1: 0.8465473145780051
+  balanced_accuracy: 0.85
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_mhalubench_val_v01_seed42_rsev2_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_mhalubench_val_v01_seed42_rsev2_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_mhalubench_val_v01_seed42_rsev2_qwen2_vl_20260325_095501.diagnostics.json
+

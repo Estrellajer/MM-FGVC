@@ -1,0 +1,21 @@
+{
+  "suite_name": "smoke_paper",
+  "timestamp": "20260325_100000",
+  "task_ids": [
+    "eurosat_fgvc",
+    "pets_fgvc",
+    "cub_fgvc"
+  ],
+  "method_ids": [
+    "zero_shot",
+    "sav",
+    "rsev2"
+  ],
+  "models": [
+    "qwen2_vl"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false
+}

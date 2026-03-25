@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import random
 import sys
 from collections import Counter
 from functools import lru_cache
@@ -31,6 +32,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--restrict-labels-from", type=str, default="")
     parser.add_argument("--meta-path", type=str, default="")
     parser.add_argument("--allow-hidden-labels", action="store_true")
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--shuffle", action="store_true")
     return parser.parse_args()
 
 
@@ -301,6 +304,33 @@ def _take_grouped(rows: list[dict[str, Any]], count: int, group_size: int, exclu
     return selected, excluded_overlap, dropped_labels
 
 
+def _shuffle_rows(
+    rows: list[dict[str, Any]],
+    *,
+    mode: str,
+    group_size: int,
+    seed: int,
+) -> list[dict[str, Any]]:
+    if len(rows) <= 1:
+        return rows
+
+    rng = random.Random(seed)
+    shuffled = list(rows)
+    if mode == "grouped":
+        if group_size <= 0:
+            raise ValueError("grouped mode requires --group-size > 0 when shuffling")
+        groups = [
+            shuffled[start : start + group_size]
+            for start in range(0, len(shuffled), group_size)
+            if len(shuffled[start : start + group_size]) == group_size
+        ]
+        rng.shuffle(groups)
+        return [row for group in groups for row in group]
+
+    rng.shuffle(shuffled)
+    return shuffled
+
+
 def main() -> None:
     args = parse_args()
     dataset_name = args.dataset_name
@@ -319,6 +349,13 @@ def main() -> None:
 
     if allowed_labels:
         rows = [row for row in rows if str(row["label"]) in allowed_labels]
+    if args.shuffle:
+        rows = _shuffle_rows(
+            rows,
+            mode=args.mode,
+            group_size=args.group_size,
+            seed=args.seed,
+        )
 
     if args.mode == "author_ref":
         selected, excluded_overlap, dropped_labels = _take_first(
@@ -381,6 +418,8 @@ def main() -> None:
         "dropped_disallowed_labels": dropped_labels,
         "excluded_overlap": excluded_overlap,
         "restricted_label_space": len(allowed_labels),
+        "seed": args.seed,
+        "shuffle": bool(args.shuffle),
     }
 
     if meta_path is not None:

@@ -1,0 +1,51 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_vlguard_seed42_rsev2_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:09,  5.63it/s]Loading weights:   0%|          | 2/730 [00:00<02:35,  4.69it/s]Loading weights:   1%|▏         | 10/730 [00:00<00:27, 25.76it/s]Loading weights:   3%|▎         | 20/730 [00:00<00:15, 46.28it/s]Loading weights:   5%|▍         | 34/730 [00:00<00:09, 72.59it/s]Loading weights:   6%|▌         | 43/730 [00:00<00:08, 76.78it/s]Loading weights:   7%|▋         | 54/730 [00:00<00:07, 85.26it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:07, 94.21it/s]Loading weights:  11%|█         | 77/730 [00:01<00:06, 97.28it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:06, 103.66it/s]Loading weights:  15%|█▍        | 106/730 [00:01<00:05, 118.68it/s]Loading weights:  16%|█▋        | 120/730 [00:01<00:04, 123.72it/s]Loading weights:  18%|█▊        | 133/730 [00:01<00:04, 124.33it/s]Loading weights:  20%|██        | 146/730 [00:01<00:04, 124.10it/s]Loading weights:  22%|██▏       | 159/730 [00:01<00:04, 114.76it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:05, 108.65it/s]Loading weights:  25%|██▌       | 185/730 [00:02<00:04, 111.47it/s]Loading weights:  27%|██▋       | 197/730 [00:02<00:04, 111.41it/s]Loading weights:  29%|██▊       | 209/730 [00:02<00:04, 110.46it/s]Loading weights:  30%|███       | 221/730 [00:02<00:04, 110.57it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:05, 89.81it/s] Loading weights:  35%|███▍      | 252/730 [00:02<00:04, 110.11it/s]Loading weights:  36%|███▌      | 264/730 [00:02<00:04, 107.29it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 117.41it/s]Loading weights:  40%|████      | 293/730 [00:03<00:04, 108.77it/s]Loading weights:  42%|████▏     | 305/730 [00:03<00:03, 110.51it/s]Loading weights:  43%|████▎     | 317/730 [00:03<00:03, 108.32it/s]Loading weights:  45%|████▌     | 329/730 [00:03<00:03, 102.71it/s]Loading weights:  60%|██████    | 439/730 [00:03<00:00, 350.54it/s]Loading weights:  77%|███████▋  | 563/730 [00:03<00:00, 581.38it/s]Loading weights:  94%|█████████▎| 683/730 [00:03<00:00, 748.73it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 193.40it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.975
+  correct: 39.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 20
+      - 0
+    - - 1
+      - 19
+  per_class:
+    unharmful:
+      precision: 0.9523809523809523
+      recall: 1.0
+      f1: 0.975609756097561
+      support: 20.0
+      predicted: 21.0
+      true_positive: 20.0
+      false_positive: 1.0
+      false_negative: 0.0
+    harmful:
+      precision: 1.0
+      recall: 0.95
+      f1: 0.9743589743589743
+      support: 20.0
+      predicted: 19.0
+      true_positive: 19.0
+      false_positive: 0.0
+      false_negative: 1.0
+  macro_precision: 0.9761904761904762
+  macro_recall: 0.975
+  macro_f1: 0.9749843652282677
+  balanced_accuracy: 0.975
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vlguard_seed42_rsev2_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vlguard_seed42_rsev2_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vlguard_seed42_rsev2_qwen2_vl_20260325_095501.diagnostics.json
+

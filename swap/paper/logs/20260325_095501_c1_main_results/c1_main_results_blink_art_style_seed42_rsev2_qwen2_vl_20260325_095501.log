@@ -1,0 +1,51 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=blink_art_style dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_art_style/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_art_style/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_art_style_seed42_rsev2_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:42,  7.13it/s]Loading weights:   0%|          | 2/730 [00:00<02:14,  5.41it/s]Loading weights:   2%|▏         | 12/730 [00:00<00:20, 34.57it/s]Loading weights:   3%|▎         | 22/730 [00:00<00:13, 54.33it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:15, 45.56it/s]Loading weights:   7%|▋         | 54/730 [00:00<00:07, 94.72it/s]Loading weights:   9%|▉         | 66/730 [00:00<00:06, 99.82it/s]Loading weights:  11%|█         | 78/730 [00:01<00:08, 73.04it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:06, 98.05it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:05, 103.47it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:04, 126.62it/s]Loading weights:  21%|██        | 150/730 [00:01<00:05, 114.40it/s]Loading weights:  22%|██▏       | 163/730 [00:01<00:04, 117.06it/s]Loading weights:  24%|██▍       | 176/730 [00:01<00:04, 119.55it/s]Loading weights:  26%|██▌       | 190/730 [00:02<00:04, 123.54it/s]Loading weights:  28%|██▊       | 203/730 [00:02<00:04, 119.80it/s]Loading weights:  30%|██▉       | 216/730 [00:02<00:04, 120.11it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:04, 108.68it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:04, 116.31it/s]Loading weights:  36%|███▌      | 262/730 [00:02<00:03, 126.61it/s]Loading weights:  38%|███▊      | 276/730 [00:02<00:03, 127.92it/s]Loading weights:  40%|███▉      | 290/730 [00:02<00:03, 110.26it/s]Loading weights:  42%|████▏     | 306/730 [00:03<00:03, 116.30it/s]Loading weights:  44%|████▎     | 319/730 [00:03<00:03, 113.75it/s]Loading weights:  46%|████▌     | 336/730 [00:03<00:03, 126.24it/s]Loading weights:  64%|██████▎   | 464/730 [00:03<00:00, 429.40it/s]Loading weights:  80%|████████  | 585/730 [00:03<00:00, 642.58it/s]Loading weights:  90%|████████▉ | 655/730 [00:03<00:00, 591.80it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 198.42it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.8
+  correct: 16.0
+  total: 20.0
+  label_order:
+  - (A)
+  - (B)
+  confusion_matrix:
+    labels:
+    - (A)
+    - (B)
+    matrix:
+    - - 6
+      - 4
+    - - 0
+      - 10
+  per_class:
+    (A):
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 10.0
+      predicted: 6.0
+      true_positive: 6.0
+      false_positive: 0.0
+      false_negative: 4.0
+    (B):
+      precision: 0.7142857142857143
+      recall: 1.0
+      f1: 0.8333333333333333
+      support: 10.0
+      predicted: 14.0
+      true_positive: 10.0
+      false_positive: 4.0
+      false_negative: 0.0
+  macro_precision: 0.8571428571428572
+  macro_recall: 0.8
+  macro_f1: 0.7916666666666665
+  balanced_accuracy: 0.8
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed42_rsev2_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed42_rsev2_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed42_rsev2_qwen2_vl_20260325_095501.diagnostics.json
+

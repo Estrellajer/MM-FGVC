@@ -1,0 +1,51 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=mhalubench dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/mhalubench_val_v02/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/mhalubench_val_v02/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_mhalubench_val_v02_seed43_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<05:05,  2.38it/s]Loading weights:   1%|          | 9/729 [00:00<00:33, 21.26it/s]Loading weights:   2%|▏         | 18/729 [00:00<00:18, 38.38it/s]Loading weights:   4%|▎         | 26/729 [00:00<00:18, 38.79it/s]Loading weights:   6%|▌         | 43/729 [00:00<00:10, 67.70it/s]Loading weights:   8%|▊         | 55/729 [00:01<00:08, 79.78it/s]Loading weights:   9%|▉         | 65/729 [00:01<00:08, 82.36it/s]Loading weights:  10%|█         | 75/729 [00:01<00:07, 86.13it/s]Loading weights:  12%|█▏        | 86/729 [00:01<00:07, 86.75it/s]Loading weights:  13%|█▎        | 96/729 [00:01<00:08, 78.84it/s]Loading weights:  14%|█▍        | 105/729 [00:01<00:09, 68.62it/s]Loading weights:  18%|█▊        | 129/729 [00:01<00:05, 107.98it/s]Loading weights:  19%|█▉        | 142/729 [00:02<00:06, 94.54it/s] Loading weights:  22%|██▏       | 158/729 [00:02<00:05, 107.22it/s]Loading weights:  23%|██▎       | 171/729 [00:02<00:05, 99.02it/s] Loading weights:  25%|██▌       | 185/729 [00:02<00:05, 103.47it/s]Loading weights:  27%|██▋       | 197/729 [00:02<00:05, 95.21it/s] Loading weights:  29%|██▊       | 208/729 [00:02<00:05, 92.06it/s]Loading weights:  30%|███       | 221/729 [00:02<00:05, 99.44it/s]Loading weights:  32%|███▏      | 232/729 [00:02<00:05, 88.53it/s]Loading weights:  33%|███▎      | 242/729 [00:03<00:05, 90.61it/s]Loading weights:  35%|███▍      | 252/729 [00:03<00:05, 91.20it/s]Loading weights:  36%|███▌      | 262/729 [00:03<00:05, 78.51it/s]Loading weights:  38%|███▊      | 277/729 [00:03<00:04, 91.92it/s]Loading weights:  39%|███▉      | 287/729 [00:03<00:04, 90.77it/s]Loading weights:  67%|██████▋   | 485/729 [00:03<00:00, 561.38it/s]Loading weights:  94%|█████████▍| 687/729 [00:03<00:00, 942.55it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 192.19it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.925
+  correct: 37.0
+  total: 40.0
+  label_order:
+  - hallucination
+  - non-hallucination
+  confusion_matrix:
+    labels:
+    - hallucination
+    - non-hallucination
+    matrix:
+    - - 18
+      - 2
+    - - 1
+      - 19
+  per_class:
+    hallucination:
+      precision: 0.9473684210526315
+      recall: 0.9
+      f1: 0.9230769230769231
+      support: 20.0
+      predicted: 19.0
+      true_positive: 18.0
+      false_positive: 1.0
+      false_negative: 2.0
+    non-hallucination:
+      precision: 0.9047619047619048
+      recall: 0.95
+      f1: 0.9268292682926829
+      support: 20.0
+      predicted: 21.0
+      true_positive: 19.0
+      false_positive: 2.0
+      false_negative: 1.0
+  macro_precision: 0.9260651629072681
+  macro_recall: 0.925
+  macro_f1: 0.924953095684803
+  balanced_accuracy: 0.925
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_mhalubench_val_v02_seed43_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_mhalubench_val_v02_seed43_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_mhalubench_val_v02_seed43_zero_shot_idefics3_20260325_095501.diagnostics.json
+

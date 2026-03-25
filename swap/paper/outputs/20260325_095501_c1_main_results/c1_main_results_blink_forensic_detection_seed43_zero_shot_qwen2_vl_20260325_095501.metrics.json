@@ -1,0 +1,273 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_forensic_detection",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 20.0,
+    "label_order": [
+      "(A)",
+      "(D)",
+      "(B)",
+      "(C)",
+      "Let's analyze the images step by step:\n\n1. The first image shows a",
+      "To determine which image is most likely to be a real photograph, let's analyze",
+      "Let's analyze the images step by step:\n\n1. The first image shows two",
+      "Let's analyze the images step by step:\n\n1. **Image Analysis:**",
+      "To determine which image is most likely to be a real photograph, we need to",
+      "Let's analyze the images step by step:\n\n1. **First Image**: This"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(D)",
+        "(B)",
+        "(C)",
+        "Let's analyze the images step by step:\n\n1. The first image shows a",
+        "To determine which image is most likely to be a real photograph, let's analyze",
+        "Let's analyze the images step by step:\n\n1. The first image shows two",
+        "Let's analyze the images step by step:\n\n1. **Image Analysis:**",
+        "To determine which image is most likely to be a real photograph, we need to",
+        "Let's analyze the images step by step:\n\n1. **First Image**: This"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(D)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(C)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "Let's analyze the images step by step:\n\n1. The first image shows a": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 12.0,
+        "true_positive": 0.0,
+        "false_positive": 12.0,
+        "false_negative": 0.0
+      },
+      "To determine which image is most likely to be a real photograph, let's analyze": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the images step by step:\n\n1. The first image shows two": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 4.0,
+        "true_positive": 0.0,
+        "false_positive": 4.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the images step by step:\n\n1. **Image Analysis:**": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "To determine which image is most likely to be a real photograph, we need to": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the images step by step:\n\n1. **First Image**: This": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.7717480659484863e-05,
+    "predict_time_sec": 9.27465171739459,
+    "total_time_sec": 9.27466943487525,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.46373258586972954
+  }
+}

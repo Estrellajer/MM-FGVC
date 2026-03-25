@@ -1,0 +1,847 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:45,  4.40it/s]Loading weights:   0%|          | 2/730 [00:00<03:05,  3.93it/s]Loading weights:   1%|          | 6/730 [00:00<00:56, 12.72it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:18, 38.48it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:12, 55.72it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:09, 68.94it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:08, 76.35it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:07, 83.24it/s]Loading weights:  11%|█         | 78/730 [00:01<00:07, 86.35it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:07, 87.85it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:07, 88.40it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:06, 90.62it/s]Loading weights:  17%|█▋        | 124/730 [00:01<00:06, 87.66it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:06, 95.00it/s]Loading weights:  21%|██        | 150/730 [00:02<00:06, 95.46it/s]Loading weights:  22%|██▏       | 162/730 [00:02<00:05, 95.54it/s]Loading weights:  24%|██▍       | 174/730 [00:02<00:05, 95.89it/s]Loading weights:  25%|██▌       | 186/730 [00:02<00:05, 95.21it/s]Loading weights:  27%|██▋       | 198/730 [00:02<00:05, 95.90it/s]Loading weights:  28%|██▊       | 208/730 [00:02<00:05, 93.04it/s]Loading weights:  30%|███       | 222/730 [00:02<00:04, 101.88it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:05, 98.48it/s] Loading weights:  34%|███▎      | 246/730 [00:03<00:04, 100.38it/s]Loading weights:  35%|███▌      | 257/730 [00:03<00:04, 97.51it/s] Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 97.22it/s]Loading weights:  38%|███▊      | 281/730 [00:03<00:04, 97.40it/s]Loading weights:  40%|████      | 294/730 [00:03<00:04, 98.17it/s]Loading weights:  42%|████▏     | 306/730 [00:03<00:04, 96.99it/s]Loading weights:  44%|████▎     | 318/730 [00:03<00:04, 100.68it/s]Loading weights:  45%|████▌     | 330/730 [00:03<00:04, 99.84it/s] Loading weights:  59%|█████▉    | 429/730 [00:04<00:00, 331.76it/s]Loading weights:  74%|███████▍  | 539/730 [00:04<00:00, 535.75it/s]Loading weights:  88%|████████▊ | 645/730 [00:04<00:00, 680.27it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 167.99it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.15
+  correct: 3.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (A)
+  - (C)
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a food'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The tiles above the sink'
+  - 'Let''s count the glasses filled with water in the image:
+
+
+    1. The glass'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a statue'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The man is lying in'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There is a red bus'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a bus'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a street'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a snowy'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a table'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a tall'
+  - 'Let''s count the knobs on the stove in the image:
+
+
+    1. The left'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The train has a front'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The train has a blue'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a large'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a person'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a beach'
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (A)
+    - (C)
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a food'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The tiles above the sink'
+    - 'Let''s count the glasses filled with water in the image:
+
+
+      1. The glass'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a statue'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The man is lying in'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There is a red bus'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a bus'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a street'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a snowy'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a table'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a tall'
+    - 'Let''s count the knobs on the stove in the image:
+
+
+      1. The left'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The train has a front'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The train has a blue'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a large'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a person'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a beach'
+    matrix:
+    - - 2
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 5.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 3.0
+    (B):
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a food'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The tiles above the sink'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s count the glasses filled with water in the image:
+
+
+      1. The glass'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a statue'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The man is lying in'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There is a red bus'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a bus'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a street'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a snowy'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a table'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a tall'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s count the knobs on the stove in the image:
+
+
+      1. The left'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The train has a front'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The train has a blue'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a large'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a person'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a beach'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.09523809523809523
+  macro_recall: 0.028571428571428574
+  macro_f1: 0.04308390022675738
+  balanced_accuracy: 0.028571428571428574
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_counting_seed42_zero_shot_qwen2_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_counting_seed42_zero_shot_qwen2_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_counting_seed42_zero_shot_qwen2_vl_20260325_075310.diagnostics.json
+

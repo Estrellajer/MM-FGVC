@@ -1,0 +1,105 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_multi-view_reasoning",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 20.0,
+    "label_order": [
+      "(B)",
+      "(A)",
+      "B",
+      "Based on the two images provided, we can analyze the change in perspective to determine"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(B)",
+        "(A)",
+        "B",
+        "Based on the two images provided, we can analyze the change in perspective to determine"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          9,
+          1
+        ],
+        [
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 10.0
+      },
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 10.0
+      },
+      "B": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 19.0,
+        "true_positive": 0.0,
+        "false_positive": 19.0,
+        "false_negative": 0.0
+      },
+      "Based on the two images provided, we can analyze the change in perspective to determine": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.7799437046051025e-05,
+    "predict_time_sec": 3.7154443114995956,
+    "total_time_sec": 3.7154621109366417,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.18577221557497978
+  }
+}

@@ -1,0 +1,574 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_semantic_correspondence_seed43_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<05:51,  2.07it/s]Loading weights:   1%|          | 4/730 [00:00<01:25,  8.45it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:18, 39.53it/s]Loading weights:   3%|▎         | 25/730 [00:00<00:15, 45.09it/s]Loading weights:   5%|▌         | 39/730 [00:01<00:16, 41.77it/s]Loading weights:  11%|█         | 77/730 [00:01<00:06, 101.64it/s]Loading weights:  13%|█▎        | 93/730 [00:01<00:05, 112.12it/s]Loading weights:  15%|█▍        | 109/730 [00:01<00:05, 118.79it/s]Loading weights:  17%|█▋        | 124/730 [00:01<00:05, 113.51it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:05, 99.77it/s] Loading weights:  21%|██        | 150/730 [00:01<00:05, 101.50it/s]Loading weights:  22%|██▏       | 162/730 [00:02<00:05, 102.22it/s]Loading weights:  24%|██▍       | 174/730 [00:02<00:05, 102.19it/s]Loading weights:  25%|██▌       | 186/730 [00:02<00:05, 103.22it/s]Loading weights:  27%|██▋       | 198/730 [00:02<00:05, 101.13it/s]Loading weights:  29%|██▉       | 210/730 [00:02<00:05, 98.48it/s] Loading weights:  30%|███       | 222/730 [00:02<00:05, 100.32it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:05, 87.45it/s] Loading weights:  35%|███▌      | 256/730 [00:02<00:04, 116.11it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 107.07it/s]Loading weights:  38%|███▊      | 281/730 [00:03<00:04, 104.43it/s]Loading weights:  40%|████      | 293/730 [00:03<00:04, 97.00it/s] Loading weights:  42%|████▏     | 306/730 [00:03<00:04, 90.22it/s]Loading weights:  45%|████▍     | 328/730 [00:03<00:03, 113.97it/s]Loading weights:  48%|████▊     | 347/730 [00:03<00:02, 130.97it/s]Loading weights:  62%|██████▏   | 456/730 [00:03<00:00, 371.33it/s]Loading weights:  78%|███████▊  | 571/730 [00:03<00:00, 574.34it/s]Loading weights:  92%|█████████▏| 670/730 [00:04<00:00, 685.28it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 176.64it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.05
+  correct: 1.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (C)
+  - (A)
+  - The reference point is located on the cat's nose. Therefore, the correct answer
+  - The reference point in the image is located on the front of the train, near
+  - To determine which point corresponds to the reference point, we need to compare
+    the reference
+  - The reference point in the image is located on the sailboat's mast, which
+  - The reference point is corresponding to Point D.
+  - 'Let''s analyze the image step by step:
+
+
+    1. The reference point in the'
+  - 'Let''s analyze the images step by step:
+
+
+    1. In the first image,'
+  - To determine which point corresponds to the reference point, we need to identify
+    the reference
+  - The reference point is located on the bottle cap, which is labeled as Point A
+  - The reference point in the first image is located on the cat's head, specifically
+  - Answer:B
+  - The reference point in the first image is located on the cat's ear. In
+  - To determine which point corresponds to the reference point, we need to compare
+    the positions
+  - The reference point in the first image corresponds to Point A in the second image.
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (C)
+    - (A)
+    - The reference point is located on the cat's nose. Therefore, the correct answer
+    - The reference point in the image is located on the front of the train, near
+    - To determine which point corresponds to the reference point, we need to compare
+      the reference
+    - The reference point in the image is located on the sailboat's mast, which
+    - The reference point is corresponding to Point D.
+    - 'Let''s analyze the image step by step:
+
+
+      1. The reference point in the'
+    - 'Let''s analyze the images step by step:
+
+
+      1. In the first image,'
+    - To determine which point corresponds to the reference point, we need to identify
+      the reference
+    - The reference point is located on the bottle cap, which is labeled as Point
+      A
+    - The reference point in the first image is located on the cat's head, specifically
+    - Answer:B
+    - The reference point in the first image is located on the cat's ear. In
+    - To determine which point corresponds to the reference point, we need to compare
+      the positions
+    - The reference point in the first image corresponds to Point A in the second
+      image.
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.3333333333333333
+      recall: 0.2
+      f1: 0.25
+      support: 5.0
+      predicted: 3.0
+      true_positive: 1.0
+      false_positive: 2.0
+      false_negative: 4.0
+    The reference point is located on the cat's nose. Therefore, the correct answer:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the image is located on the front of the train, near:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to compare the reference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the image is located on the sailboat's mast, which:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point is corresponding to Point D.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The reference point in the'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. In the first image,'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to identify the reference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point is located on the bottle cap, which is labeled as Point A:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the first image is located on the cat's head, specifically:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Answer:B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the first image is located on the cat's ear. In:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to compare the positions:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the first image corresponds to Point A in the second image.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.018518518518518517
+  macro_recall: 0.011111111111111112
+  macro_f1: 0.013888888888888888
+  balanced_accuracy: 0.011111111111111112
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed43_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed43_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed43_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

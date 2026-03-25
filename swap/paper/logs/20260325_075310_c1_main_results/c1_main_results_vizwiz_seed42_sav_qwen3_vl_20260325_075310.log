@@ -1,0 +1,46 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:32,  4.92it/s]Loading weights:   0%|          | 2/750 [00:00<02:51,  4.36it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:25, 29.15it/s]Loading weights:   5%|▍         | 34/750 [00:01<00:32, 22.12it/s]Loading weights:  25%|██▌       | 188/750 [00:01<00:03, 162.20it/s]Loading weights:  31%|███       | 229/750 [00:02<00:03, 159.42it/s]Loading weights:  35%|███▍      | 262/750 [00:02<00:03, 156.25it/s]Loading weights:  39%|███▊      | 289/750 [00:02<00:03, 136.90it/s]Loading weights:  42%|████▏     | 317/750 [00:03<00:04, 101.11it/s]Loading weights:  53%|█████▎    | 398/750 [00:03<00:01, 177.43it/s]Loading weights:  79%|███████▉  | 596/750 [00:03<00:00, 417.78it/s]Loading weights:  98%|█████████▊| 737/750 [00:03<00:00, 572.72it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 219.65it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.575
+  correct: 23.0
+  total: 40.0
+  label_order:
+  - unanswerable
+  - answerable
+  confusion_matrix:
+    labels:
+    - unanswerable
+    - answerable
+    matrix:
+    - - 13
+      - 7
+    - - 10
+      - 10
+  per_class:
+    unanswerable:
+      precision: 0.5652173913043478
+      recall: 0.65
+      f1: 0.6046511627906976
+      support: 20.0
+      predicted: 23.0
+      true_positive: 13.0
+      false_positive: 10.0
+      false_negative: 7.0
+    answerable:
+      precision: 0.5882352941176471
+      recall: 0.5
+      f1: 0.5405405405405405
+      support: 20.0
+      predicted: 17.0
+      true_positive: 10.0
+      false_positive: 7.0
+      false_negative: 10.0
+  macro_precision: 0.5767263427109974
+  macro_recall: 0.575
+  macro_f1: 0.5725958516656191
+  balanced_accuracy: 0.575
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vizwiz_seed42_sav_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vizwiz_seed42_sav_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vizwiz_seed42_sav_qwen3_vl_20260325_075310.diagnostics.json
+

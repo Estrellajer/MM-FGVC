@@ -1,0 +1,24 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=rsev2 evaluator=raw dataset.name=blink_visual_similarity dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_visual_similarity/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_visual_similarity/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_visual_similarity_seed44_rsev2_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:27,  4.92it/s]Loading weights:   0%|          | 3/729 [00:00<01:48,  6.68it/s]Loading weights:   1%|▏         | 10/729 [00:00<00:31, 22.66it/s]Loading weights:   2%|▏         | 16/729 [00:00<00:22, 32.27it/s]Loading weights:   3%|▎         | 25/729 [00:00<00:15, 46.49it/s]Loading weights:   5%|▍         | 34/729 [00:00<00:12, 56.29it/s]Loading weights:   6%|▌         | 41/729 [00:01<00:22, 31.26it/s]Loading weights:  11%|█         | 79/729 [00:01<00:07, 89.57it/s]Loading weights:  13%|█▎        | 94/729 [00:01<00:06, 93.57it/s]Loading weights:  15%|█▍        | 108/729 [00:01<00:07, 84.34it/s]Loading weights:  16%|█▋        | 120/729 [00:02<00:08, 73.42it/s]Loading weights:  18%|█▊        | 133/729 [00:02<00:07, 82.30it/s]Loading weights:  20%|█▉        | 144/729 [00:02<00:06, 85.01it/s]Loading weights:  21%|██        | 154/729 [00:02<00:08, 70.70it/s]Loading weights:  23%|██▎       | 169/729 [00:02<00:06, 84.31it/s]Loading weights:  25%|██▍       | 179/729 [00:02<00:06, 86.01it/s]Loading weights:  26%|██▌       | 189/729 [00:02<00:06, 86.84it/s]Loading weights:  27%|██▋       | 199/729 [00:02<00:06, 85.79it/s]Loading weights:  29%|██▊       | 209/729 [00:03<00:06, 85.16it/s]Loading weights:  30%|██▉       | 218/729 [00:03<00:06, 84.59it/s]Loading weights:  31%|███       | 227/729 [00:03<00:05, 83.86it/s]Loading weights:  32%|███▏      | 236/729 [00:03<00:05, 82.66it/s]Loading weights:  34%|███▎      | 245/729 [00:03<00:05, 82.15it/s]Loading weights:  35%|███▍      | 254/729 [00:03<00:05, 81.90it/s]Loading weights:  36%|███▌      | 263/729 [00:03<00:05, 83.22it/s]Loading weights:  37%|███▋      | 272/729 [00:03<00:05, 82.14it/s]Loading weights:  39%|███▊      | 281/729 [00:03<00:05, 83.53it/s]Loading weights:  40%|███▉      | 290/729 [00:04<00:05, 82.66it/s]Loading weights:  67%|██████▋   | 485/729 [00:04<00:00, 606.33it/s]Loading weights:  94%|█████████▍| 687/729 [00:04<00:00, 1006.68it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 171.77it/s] 
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=rsev2', 'evaluator=raw', 'dataset.name=blink_visual_similarity', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_visual_similarity/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_visual_similarity/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_blink_visual_similarity_seed44_rsev2_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=44', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/rsev2.py", line 232, in fit
+    feature_table = self._collect_feature_table(train_data, desc="RSEv2 fit features")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/rse.py", line 322, in _collect_feature_table
+    sample_features = self._extract_multilevel_features(item)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/rse.py", line 313, in _extract_multilevel_features
+    "head": torch.stack(head_features, dim=0),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [1152] at entry 0 and [4096] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

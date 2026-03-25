@@ -1,0 +1,69 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "naturalbench_ret",
+  "method": "rsev2",
+  "evaluator": "naturalbench_group",
+  "metrics": {
+    "metric": "naturalbench_group",
+    "q_acc": 1.0,
+    "i_acc": 1.0,
+    "g_acc": 1.0,
+    "raw_acc": 1.0,
+    "group_total": 10.0,
+    "used_samples": 40.0,
+    "dropped_samples": 0.0,
+    "label_order": [
+      "Yes",
+      "No"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Yes",
+        "No"
+      ],
+      "matrix": [
+        [
+          20,
+          0
+        ],
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    "per_class": {
+      "Yes": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20.0,
+        "predicted": 20.0,
+        "true_positive": 20.0,
+        "false_positive": 0.0,
+        "false_negative": 0.0
+      },
+      "No": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20.0,
+        "predicted": 20.0,
+        "true_positive": 20.0,
+        "false_positive": 0.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "timings": {
+    "fit_time_sec": 37.63520138524473,
+    "predict_time_sec": 35.111077297478914,
+    "total_time_sec": 72.74627868272364,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.8777769324369729
+  }
+}

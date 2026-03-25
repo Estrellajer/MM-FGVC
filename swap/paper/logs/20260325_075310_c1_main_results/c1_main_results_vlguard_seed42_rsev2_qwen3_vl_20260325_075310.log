@@ -1,0 +1,46 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:30,  4.97it/s]Loading weights:   0%|          | 2/750 [00:00<02:51,  4.37it/s]Loading weights:   1%|          | 8/750 [00:01<01:39,  7.46it/s]Loading weights:  14%|█▍        | 107/750 [00:01<00:07, 83.55it/s]Loading weights:  27%|██▋       | 201/750 [00:01<00:03, 169.01it/s]Loading weights:  31%|███▏      | 236/750 [00:02<00:03, 159.30it/s]Loading weights:  35%|███▌      | 263/750 [00:02<00:03, 147.06it/s]Loading weights:  38%|███▊      | 285/750 [00:03<00:05, 80.18it/s] Loading weights:  77%|███████▋  | 575/750 [00:03<00:00, 334.78it/s]Loading weights:  98%|█████████▊| 733/750 [00:03<00:00, 475.10it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 222.34it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 40.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 20
+      - 0
+    - - 0
+      - 20
+  per_class:
+    unharmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+    harmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vlguard_seed42_rsev2_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vlguard_seed42_rsev2_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_vlguard_seed42_rsev2_qwen3_vl_20260325_075310.diagnostics.json
+

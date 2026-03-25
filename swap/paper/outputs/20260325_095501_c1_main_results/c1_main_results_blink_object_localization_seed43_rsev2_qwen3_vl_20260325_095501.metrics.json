@@ -1,0 +1,65 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_object_localization",
+  "method": "rsev2",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.4,
+    "correct": 8.0,
+    "total": 20.0,
+    "label_order": [
+      "(A)",
+      "(B)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(B)"
+      ],
+      "matrix": [
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1": 0.4000000000000001,
+        "support": 10.0,
+        "predicted": 10.0,
+        "true_positive": 4.0,
+        "false_positive": 6.0,
+        "false_negative": 6.0
+      },
+      "(B)": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1": 0.4000000000000001,
+        "support": 10.0,
+        "predicted": 10.0,
+        "true_positive": 4.0,
+        "false_positive": 6.0,
+        "false_negative": 6.0
+      }
+    },
+    "macro_precision": 0.4,
+    "macro_recall": 0.4,
+    "macro_f1": 0.4000000000000001,
+    "balanced_accuracy": 0.4
+  },
+  "timings": {
+    "fit_time_sec": 5.028644083067775,
+    "predict_time_sec": 1.8957434687763453,
+    "total_time_sec": 6.92438755184412,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.09478717343881726
+  }
+}

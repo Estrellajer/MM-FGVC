@@ -1,0 +1,17 @@
+{
+  "suite_name": "summary_smoke",
+  "timestamp": "20260325_100500",
+  "task_ids": [
+    "eurosat_small"
+  ],
+  "method_ids": [
+    "zero_shot"
+  ],
+  "models": [
+    "qwen2_vl"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false
+}

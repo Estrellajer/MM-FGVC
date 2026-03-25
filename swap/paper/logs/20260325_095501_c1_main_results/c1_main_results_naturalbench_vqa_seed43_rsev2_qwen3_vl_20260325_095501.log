@@ -1,0 +1,84 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_naturalbench_vqa_seed43_rsev2_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:58,  4.21it/s]Loading weights:   0%|          | 2/750 [00:00<04:08,  3.01it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:30, 24.53it/s]Loading weights:   3%|▎         | 19/750 [00:00<00:24, 30.11it/s]Loading weights:   5%|▌         | 39/750 [00:00<00:10, 66.04it/s]Loading weights:   7%|▋         | 50/750 [00:01<00:09, 75.66it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:08, 82.79it/s]Loading weights:  10%|█         | 78/750 [00:01<00:06, 105.02it/s]Loading weights:  12%|█▏        | 92/750 [00:01<00:06, 105.83it/s]Loading weights:  14%|█▍        | 104/750 [00:01<00:06, 98.70it/s]Loading weights:  16%|█▋        | 123/750 [00:01<00:05, 121.54it/s]Loading weights:  18%|█▊        | 137/750 [00:01<00:05, 110.32it/s]Loading weights:  20%|█▉        | 149/750 [00:01<00:05, 108.07it/s]Loading weights:  22%|██▏       | 164/750 [00:02<00:04, 117.23it/s]Loading weights:  24%|██▎       | 177/750 [00:02<00:04, 117.20it/s]Loading weights:  25%|██▌       | 191/750 [00:02<00:04, 116.51it/s]Loading weights:  27%|██▋       | 203/750 [00:02<00:05, 107.41it/s]Loading weights:  29%|██▊       | 215/750 [00:02<00:04, 110.25it/s]Loading weights:  30%|███       | 227/750 [00:02<00:04, 111.47it/s]Loading weights:  32%|███▏      | 239/750 [00:02<00:04, 112.30it/s]Loading weights:  33%|███▎      | 251/750 [00:02<00:04, 110.14it/s]Loading weights:  35%|███▌      | 264/750 [00:02<00:04, 106.04it/s]Loading weights:  37%|███▋      | 275/750 [00:03<00:04, 106.31it/s]Loading weights:  39%|███▊      | 290/750 [00:03<00:04, 112.10it/s]Loading weights:  40%|████      | 302/750 [00:03<00:05, 87.67it/s] Loading weights:  42%|████▏     | 314/750 [00:03<00:04, 91.13it/s]Loading weights:  43%|████▎     | 324/750 [00:03<00:04, 86.35it/s]Loading weights:  45%|████▌     | 341/750 [00:03<00:03, 103.06it/s]Loading weights:  47%|████▋     | 353/750 [00:03<00:04, 96.61it/s] Loading weights:  50%|████▉     | 373/750 [00:04<00:03, 121.37it/s]Loading weights:  51%|█████▏    | 386/750 [00:04<00:03, 117.11it/s]Loading weights:  54%|█████▍    | 406/750 [00:04<00:02, 138.50it/s]Loading weights:  73%|███████▎  | 549/750 [00:04<00:00, 483.94it/s]Loading weights:  94%|█████████▍| 707/750 [00:04<00:00, 783.19it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 164.94it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.675
+  correct: 27.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 4
+      - 2
+      - 0
+      - 0
+    - - 1
+      - 5
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 6
+      - 8
+    - - 0
+      - 0
+      - 2
+      - 12
+  per_class:
+    'Yes':
+      precision: 0.8
+      recall: 0.6666666666666666
+      f1: 0.7272727272727272
+      support: 6.0
+      predicted: 5.0
+      true_positive: 4.0
+      false_positive: 1.0
+      false_negative: 2.0
+    'No':
+      precision: 0.7142857142857143
+      recall: 0.8333333333333334
+      f1: 0.7692307692307692
+      support: 6.0
+      predicted: 7.0
+      true_positive: 5.0
+      false_positive: 2.0
+      false_negative: 1.0
+    A:
+      precision: 0.75
+      recall: 0.42857142857142855
+      f1: 0.5454545454545454
+      support: 14.0
+      predicted: 8.0
+      true_positive: 6.0
+      false_positive: 2.0
+      false_negative: 8.0
+    B:
+      precision: 0.6
+      recall: 0.8571428571428571
+      f1: 0.7058823529411764
+      support: 14.0
+      predicted: 20.0
+      true_positive: 12.0
+      false_positive: 8.0
+      false_negative: 2.0
+  macro_precision: 0.7160714285714286
+  macro_recall: 0.6964285714285714
+  macro_f1: 0.6869600987248046
+  balanced_accuracy: 0.6964285714285714
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_vqa_seed43_rsev2_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_vqa_seed43_rsev2_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_vqa_seed43_rsev2_qwen3_vl_20260325_095501.diagnostics.json
+

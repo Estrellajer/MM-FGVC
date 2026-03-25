@@ -1,0 +1,285 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_spatial_relation dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_spatial_relation/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_spatial_relation/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_spatial_relation_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:13,  5.60it/s]Loading weights:   0%|          | 2/750 [00:00<02:38,  4.73it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:18, 40.15it/s]Loading weights:   4%|▎         | 27/750 [00:00<00:12, 57.94it/s]Loading weights:   7%|▋         | 49/750 [00:00<00:06, 100.53it/s]Loading weights:   8%|▊         | 62/750 [00:00<00:06, 108.29it/s]Loading weights:  11%|█         | 80/750 [00:00<00:05, 126.28it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:05, 120.62it/s]Loading weights:  15%|█▌        | 114/750 [00:01<00:04, 138.40it/s]Loading weights:  17%|█▋        | 129/750 [00:01<00:04, 135.67it/s]Loading weights:  19%|█▉        | 145/750 [00:01<00:04, 125.21it/s]Loading weights:  22%|██▏       | 165/750 [00:01<00:04, 143.52it/s]Loading weights:  24%|██▍       | 181/750 [00:01<00:03, 146.30it/s]Loading weights:  27%|██▋       | 199/750 [00:01<00:03, 153.23it/s]Loading weights:  29%|██▊       | 215/750 [00:01<00:03, 140.76it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:03, 153.09it/s]Loading weights:  33%|███▎      | 251/750 [00:02<00:03, 147.71it/s]Loading weights:  36%|███▌      | 267/750 [00:02<00:03, 123.07it/s]Loading weights:  37%|███▋      | 281/750 [00:02<00:03, 125.93it/s]Loading weights:  40%|████      | 301/750 [00:02<00:03, 140.25it/s]Loading weights:  42%|████▏     | 316/750 [00:02<00:03, 137.16it/s]Loading weights:  44%|████▍     | 333/750 [00:02<00:03, 125.34it/s]Loading weights:  47%|████▋     | 356/750 [00:02<00:02, 146.09it/s]Loading weights:  50%|████▉     | 372/750 [00:03<00:02, 140.93it/s]Loading weights:  52%|█████▏    | 387/750 [00:03<00:02, 132.80it/s]Loading weights:  68%|██████▊   | 513/750 [00:03<00:00, 414.50it/s]Loading weights:  92%|█████████▏| 689/750 [00:03<00:00, 762.91it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 215.73it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.55
+  correct: 11.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - Looking at the image, the cat is sitting on a surface inside the house,
+  - Based on the image provided, the bicycle is not on the bus. It is
+  - 'The person is holding the banana, so they are next to it.
+
+
+    Answer:'
+  - Looking at the image, the child is holding the hair dryer in her right hand
+  - The laptop is not touching the person. The person's hand is resting on the
+  - Looking at the image, the cat is lying inside an open blue suitcase. There
+  - Looking at the image, we can see a green alien figurine sitting on a
+  - 'Looking at the image, we can see:
+
+
+    - A dining table covered with a'
+  - The cake does not consist of a truck. It has decorations that include a yellow
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - Looking at the image, the cat is sitting on a surface inside the house,
+    - Based on the image provided, the bicycle is not on the bus. It is
+    - 'The person is holding the banana, so they are next to it.
+
+
+      Answer:'
+    - Looking at the image, the child is holding the hair dryer in her right hand
+    - The laptop is not touching the person. The person's hand is resting on the
+    - Looking at the image, the cat is lying inside an open blue suitcase. There
+    - Looking at the image, we can see a green alien figurine sitting on a
+    - 'Looking at the image, we can see:
+
+
+      - A dining table covered with a'
+    - The cake does not consist of a truck. It has decorations that include a yellow
+    matrix:
+    - - 5
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 6
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 1.0
+      recall: 0.5
+      f1: 0.6666666666666666
+      support: 10.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 10.0
+      predicted: 6.0
+      true_positive: 6.0
+      false_positive: 0.0
+      false_negative: 4.0
+    Looking at the image, the cat is sitting on a surface inside the house,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Based on the image provided, the bicycle is not on the bus. It is:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'The person is holding the banana, so they are next to it.
+
+
+      Answer:'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, the child is holding the hair dryer in her right hand:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The laptop is not touching the person. The person's hand is resting on the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, the cat is lying inside an open blue suitcase. There:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, we can see a green alien figurine sitting on a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the image, we can see:
+
+
+      - A dining table covered with a'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The cake does not consist of a truck. It has decorations that include a yellow:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.18181818181818182
+  macro_recall: 0.1
+  macro_f1: 0.12878787878787878
+  balanced_accuracy: 0.1
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_spatial_relation_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_spatial_relation_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_spatial_relation_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

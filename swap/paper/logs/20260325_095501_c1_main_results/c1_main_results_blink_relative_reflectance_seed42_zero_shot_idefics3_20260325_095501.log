@@ -1,0 +1,30 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_relative_reflectance dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_relative_reflectance/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_relative_reflectance/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_relative_reflectance_seed42_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:43,  7.05it/s]Loading weights:   0%|          | 3/729 [00:00<01:24,  8.58it/s]Loading weights:   1%|          | 9/729 [00:00<00:30, 23.80it/s]Loading weights:   3%|▎         | 23/729 [00:00<00:12, 58.03it/s]Loading weights:   4%|▍         | 31/729 [00:00<00:12, 56.51it/s]Loading weights:   6%|▋         | 47/729 [00:00<00:08, 83.37it/s]Loading weights:   8%|▊         | 59/729 [00:00<00:07, 91.42it/s]Loading weights:   9%|▉         | 69/729 [00:01<00:07, 91.14it/s]Loading weights:  11%|█         | 79/729 [00:01<00:07, 90.72it/s]Loading weights:  13%|█▎        | 92/729 [00:01<00:06, 101.03it/s]Loading weights:  14%|█▍        | 104/729 [00:01<00:05, 104.52it/s]Loading weights:  16%|█▌        | 115/729 [00:01<00:06, 98.02it/s] Loading weights:  17%|█▋        | 126/729 [00:01<00:06, 89.45it/s]Loading weights:  19%|█▉        | 142/729 [00:01<00:05, 104.01it/s]Loading weights:  21%|██▏       | 155/729 [00:01<00:05, 110.44it/s]Loading weights:  23%|██▎       | 167/729 [00:01<00:05, 109.74it/s]Loading weights:  25%|██▍       | 179/729 [00:02<00:06, 90.21it/s] Loading weights:  27%|██▋       | 196/729 [00:02<00:04, 107.62it/s]Loading weights:  29%|██▊       | 209/729 [00:02<00:04, 112.52it/s]Loading weights:  30%|███       | 221/729 [00:02<00:04, 112.97it/s]Loading weights:  32%|███▏      | 233/729 [00:02<00:04, 107.48it/s]Loading weights:  34%|███▍      | 248/729 [00:02<00:04, 113.22it/s]Loading weights:  36%|███▌      | 260/729 [00:02<00:04, 107.03it/s]Loading weights:  37%|███▋      | 271/729 [00:02<00:04, 107.80it/s]Loading weights:  39%|███▊      | 282/729 [00:03<00:04, 106.70it/s]Loading weights:  46%|████▌     | 333/729 [00:03<00:01, 217.93it/s]Loading weights:  81%|████████  | 587/729 [00:03<00:00, 874.63it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 220.37it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=zero_shot', 'evaluator=raw', 'dataset.name=blink_relative_reflectance', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_relative_reflectance/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_relative_reflectance/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_blink_relative_reflectance_seed42_zero_shot_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 156, in run_experiment
+    predictions = [method.predict(item) for item in iterator]
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/zero_shot.py", line 54, in predict
+    outputs = self.model.generate(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/models/model_base.py", line 416, in generate
+    inputs = self.process_input(*inputs, **processor_args).to(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/models/idefics3.py", line 107, in process_input
+    inputs = self.processor(
+             ^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py", line 227, in __call__
+    raise ValueError(
+ValueError: The number of images in the text [2] and images [1] should be the same.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

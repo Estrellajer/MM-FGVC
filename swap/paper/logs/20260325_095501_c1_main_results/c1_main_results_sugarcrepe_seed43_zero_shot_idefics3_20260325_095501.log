@@ -1,0 +1,52 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_sugarcrepe_seed43_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:41,  7.17it/s]Loading weights:   0%|          | 3/729 [00:00<01:33,  7.79it/s]Loading weights:   1%|          | 8/729 [00:00<00:35, 20.06it/s]Loading weights:   2%|▏         | 16/729 [00:00<00:19, 36.24it/s]Loading weights:   3%|▎         | 25/729 [00:00<00:14, 48.57it/s]Loading weights:   6%|▌         | 42/729 [00:00<00:08, 77.62it/s]Loading weights:   8%|▊         | 56/729 [00:00<00:07, 92.98it/s]Loading weights:   9%|▉         | 68/729 [00:01<00:06, 97.20it/s]Loading weights:  11%|█         | 79/729 [00:01<00:07, 89.75it/s]Loading weights:  12%|█▏        | 91/729 [00:01<00:06, 97.46it/s]Loading weights:  14%|█▍        | 104/729 [00:01<00:06, 101.50it/s]Loading weights:  16%|█▌        | 115/729 [00:01<00:06, 96.90it/s] Loading weights:  18%|█▊        | 128/729 [00:01<00:05, 104.32it/s]Loading weights:  19%|█▉        | 139/729 [00:01<00:06, 94.62it/s] Loading weights:  21%|██        | 151/729 [00:01<00:06, 96.23it/s]Loading weights:  22%|██▏       | 164/729 [00:02<00:05, 104.71it/s]Loading weights:  24%|██▍       | 176/729 [00:02<00:05, 102.75it/s]Loading weights:  26%|██▌       | 187/729 [00:02<00:05, 95.09it/s] Loading weights:  27%|██▋       | 200/729 [00:02<00:05, 102.66it/s]Loading weights:  29%|██▉       | 212/729 [00:02<00:05, 102.52it/s]Loading weights:  31%|███       | 223/729 [00:02<00:05, 95.62it/s] Loading weights:  32%|███▏      | 235/729 [00:02<00:04, 101.52it/s]Loading weights:  34%|███▍      | 248/729 [00:02<00:04, 104.99it/s]Loading weights:  36%|███▌      | 259/729 [00:03<00:06, 76.11it/s] Loading weights:  39%|███▉      | 284/729 [00:03<00:04, 110.65it/s]Loading weights:  48%|████▊     | 348/729 [00:03<00:01, 230.82it/s]Loading weights:  78%|███████▊  | 572/729 [00:03<00:00, 723.43it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 208.92it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.55
+  pair_correct: 11.0
+  pair_total: 20.0
+  raw_accuracy: 0.775
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 7
+      - 13
+  per_class:
+    'Yes':
+      precision: 0.72
+      recall: 0.9
+      f1: 0.7999999999999999
+      support: 20.0
+      predicted: 25.0
+      true_positive: 18.0
+      false_positive: 7.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8666666666666667
+      recall: 0.65
+      f1: 0.7428571428571429
+      support: 20.0
+      predicted: 15.0
+      true_positive: 13.0
+      false_positive: 2.0
+      false_negative: 7.0
+  macro_precision: 0.7933333333333333
+  macro_recall: 0.775
+  macro_f1: 0.7714285714285714
+  balanced_accuracy: 0.775
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed43_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed43_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_sugarcrepe_seed43_zero_shot_idefics3_20260325_095501.diagnostics.json
+

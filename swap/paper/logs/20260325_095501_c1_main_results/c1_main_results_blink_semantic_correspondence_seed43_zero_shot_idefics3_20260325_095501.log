@@ -1,0 +1,205 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_semantic_correspondence_seed43_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:36,  4.66it/s]Loading weights:   0%|          | 3/729 [00:00<01:50,  6.57it/s]Loading weights:   1%|          | 7/729 [00:00<00:48, 14.74it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:34, 21.03it/s]Loading weights:   3%|▎         | 23/729 [00:00<00:14, 47.29it/s]Loading weights:   5%|▍         | 34/729 [00:00<00:11, 59.24it/s]Loading weights:   6%|▌         | 42/729 [00:01<00:11, 61.04it/s]Loading weights:   7%|▋         | 52/729 [00:01<00:09, 69.17it/s]Loading weights:   8%|▊         | 61/729 [00:01<00:09, 72.67it/s]Loading weights:  10%|▉         | 70/729 [00:01<00:08, 74.05it/s]Loading weights:  11%|█         | 79/729 [00:01<00:08, 75.96it/s]Loading weights:  12%|█▏        | 88/729 [00:01<00:08, 77.05it/s]Loading weights:  13%|█▎        | 97/729 [00:01<00:08, 77.51it/s]Loading weights:  15%|█▍        | 106/729 [00:01<00:08, 77.21it/s]Loading weights:  16%|█▌        | 115/729 [00:01<00:07, 78.11it/s]Loading weights:  17%|█▋        | 124/729 [00:02<00:07, 77.90it/s]Loading weights:  18%|█▊        | 132/729 [00:02<00:07, 77.42it/s]Loading weights:  19%|█▉        | 141/729 [00:02<00:07, 78.26it/s]Loading weights:  21%|██        | 150/729 [00:02<00:07, 77.95it/s]Loading weights:  22%|██▏       | 159/729 [00:02<00:07, 77.57it/s]Loading weights:  23%|██▎       | 168/729 [00:02<00:07, 78.22it/s]Loading weights:  24%|██▍       | 177/729 [00:02<00:07, 78.63it/s]Loading weights:  26%|██▌       | 186/729 [00:02<00:07, 77.42it/s]Loading weights:  27%|██▋       | 195/729 [00:02<00:06, 77.53it/s]Loading weights:  28%|██▊       | 204/729 [00:03<00:06, 76.58it/s]Loading weights:  29%|██▉       | 213/729 [00:03<00:06, 76.79it/s]Loading weights:  30%|███       | 222/729 [00:03<00:08, 60.26it/s]Loading weights:  33%|███▎      | 240/729 [00:03<00:06, 74.25it/s]Loading weights:  35%|███▍      | 253/729 [00:03<00:05, 84.73it/s]Loading weights:  36%|███▌      | 262/729 [00:03<00:05, 84.87it/s]Loading weights:  37%|███▋      | 271/729 [00:04<00:06, 72.99it/s]Loading weights:  39%|███▉      | 285/729 [00:04<00:05, 86.49it/s]Loading weights:  54%|█████▎    | 391/729 [00:04<00:01, 322.51it/s]Loading weights:  78%|███████▊  | 568/729 [00:04<00:00, 694.89it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 165.40it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (C)
+  - (A)
+  - 'Answer: B'
+  - 'Answer: D'
+  - 'Answer: A'
+  - Answer:A
+  - 'Answer: C'
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (C)
+    - (A)
+    - 'Answer: B'
+    - 'Answer: D'
+    - 'Answer: A'
+    - Answer:A
+    - 'Answer: C'
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 1
+      - 1
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 2
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 3
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 3
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    'Answer: B':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 6.0
+      true_positive: 0.0
+      false_positive: 6.0
+      false_negative: 0.0
+    'Answer: D':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    'Answer: A':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 5.0
+      true_positive: 0.0
+      false_positive: 5.0
+      false_negative: 0.0
+    Answer:A:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 0.0
+    'Answer: C':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed43_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed43_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed43_zero_shot_idefics3_20260325_095501.diagnostics.json
+

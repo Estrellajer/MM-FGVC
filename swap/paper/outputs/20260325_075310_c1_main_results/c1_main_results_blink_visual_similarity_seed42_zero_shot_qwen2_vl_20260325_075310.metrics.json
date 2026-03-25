@@ -1,0 +1,209 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_visual_similarity",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.4,
+    "correct": 8.0,
+    "total": 20.0,
+    "label_order": [
+      "(A)",
+      "(B)",
+      "A",
+      "The third image is most similar to the reference image. Both images depict red barn",
+      "Let's analyze the images step by step:\n\n1. The reference image shows a",
+      "The third image is most similar to the reference image. Both images feature a white",
+      "The second image is most similar to the reference image. Both images feature a man",
+      "The second image is most similar to the reference image. Both images show a snake"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(B)",
+        "A",
+        "The third image is most similar to the reference image. Both images depict red barn",
+        "Let's analyze the images step by step:\n\n1. The reference image shows a",
+        "The third image is most similar to the reference image. Both images feature a white",
+        "The second image is most similar to the reference image. Both images feature a man",
+        "The second image is most similar to the reference image. Both images show a snake"
+      ],
+      "matrix": [
+        [
+          8,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.6153846153846154,
+        "recall": 0.8,
+        "f1": 0.6956521739130435,
+        "support": 10.0,
+        "predicted": 13.0,
+        "true_positive": 8.0,
+        "false_positive": 5.0,
+        "false_negative": 2.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 10.0
+      },
+      "A": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      },
+      "The third image is most similar to the reference image. Both images depict red barn": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the images step by step:\n\n1. The reference image shows a": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The third image is most similar to the reference image. Both images feature a white": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The second image is most similar to the reference image. Both images feature a man": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The second image is most similar to the reference image. Both images show a snake": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.07692307692307693,
+    "macro_recall": 0.1,
+    "macro_f1": 0.08695652173913043,
+    "balanced_accuracy": 0.1
+  },
+  "timings": {
+    "fit_time_sec": 1.231953501701355e-05,
+    "predict_time_sec": 9.417312432080507,
+    "total_time_sec": 9.417324751615524,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.47086562160402534
+  }
+}

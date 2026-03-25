@@ -1,0 +1,27 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=sav evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_naturalbench_vqa_seed42_sav_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<05:45,  2.11it/s]Loading weights:   1%|          | 7/729 [00:00<00:46, 15.45it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:38, 18.44it/s]Loading weights:   3%|▎         | 25/729 [00:00<00:15, 45.99it/s]Loading weights:   6%|▌         | 41/729 [00:01<00:11, 62.17it/s]Loading weights:   7%|▋         | 52/729 [00:01<00:09, 70.67it/s]Loading weights:   8%|▊         | 61/729 [00:01<00:11, 57.29it/s]Loading weights:  11%|█         | 79/729 [00:01<00:08, 80.93it/s]Loading weights:  12%|█▏        | 89/729 [00:01<00:07, 82.80it/s]Loading weights:  14%|█▎        | 99/729 [00:01<00:07, 82.97it/s]Loading weights:  15%|█▍        | 109/729 [00:01<00:07, 82.17it/s]Loading weights:  16%|█▌        | 118/729 [00:01<00:07, 81.63it/s]Loading weights:  17%|█▋        | 127/729 [00:02<00:07, 80.08it/s]Loading weights:  19%|█▊        | 136/729 [00:02<00:15, 39.53it/s]Loading weights:  24%|██▍       | 177/729 [00:02<00:05, 93.90it/s]Loading weights:  26%|██▋       | 193/729 [00:02<00:05, 94.44it/s]Loading weights:  28%|██▊       | 207/729 [00:03<00:06, 86.46it/s]Loading weights:  30%|███       | 219/729 [00:03<00:05, 87.09it/s]Loading weights:  32%|███▏      | 230/729 [00:03<00:07, 63.05it/s]Loading weights:  34%|███▍      | 249/729 [00:03<00:05, 80.76it/s]Loading weights:  36%|███▌      | 260/729 [00:03<00:05, 85.75it/s]Loading weights:  37%|███▋      | 271/729 [00:03<00:05, 86.35it/s]Loading weights:  39%|███▊      | 282/729 [00:04<00:05, 88.33it/s]Loading weights:  40%|████      | 292/729 [00:04<00:04, 88.48it/s]Loading weights:  66%|██████▌   | 479/729 [00:04<00:00, 521.72it/s]Loading weights:  92%|█████████▏| 669/729 [00:04<00:00, 873.39it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 167.79it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=sav', 'evaluator=raw', 'dataset.name=naturalbench_vqa', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_vqa/train_subset.jsonl', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_vqa/val_subset.jsonl', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_naturalbench_vqa_seed42_sav_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 325, in fit
+    all_class_acts, str_to_int, int_to_str = self._compute_class_activations(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 159, in _compute_class_activations
+    head_act = self._extract_selected_head_activations(item, selected_heads)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 142, in _extract_selected_head_activations
+    all_head_acts = self._extract_all_head_activations(sample)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 135, in _extract_all_head_activations
+    return torch.stack(layer_acts, dim=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [32, 36] at entry 0 and [32, 128] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,65 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "mhalubench",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 1.0,
+    "correct": 40.0,
+    "total": 40.0,
+    "label_order": [
+      "hallucination",
+      "non-hallucination"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "hallucination",
+        "non-hallucination"
+      ],
+      "matrix": [
+        [
+          20,
+          0
+        ],
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    "per_class": {
+      "hallucination": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20.0,
+        "predicted": 20.0,
+        "true_positive": 20.0,
+        "false_positive": 0.0,
+        "false_negative": 0.0
+      },
+      "non-hallucination": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20.0,
+        "predicted": 20.0,
+        "true_positive": 20.0,
+        "false_positive": 0.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "timings": {
+    "fit_time_sec": 1.9399449229240417e-05,
+    "predict_time_sec": 7.252847965806723,
+    "total_time_sec": 7.252867365255952,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.18132119914516806
+  }
+}

@@ -1,0 +1,47 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:35,  4.83it/s]Loading weights:   0%|          | 2/750 [00:00<02:52,  4.34it/s]Loading weights:   2%|▏         | 14/750 [00:00<00:21, 34.74it/s]Loading weights:   4%|▎         | 27/750 [00:00<00:12, 58.48it/s]Loading weights:   6%|▌         | 43/750 [00:00<00:08, 84.81it/s]Loading weights:   8%|▊         | 58/750 [00:00<00:07, 97.82it/s]Loading weights:   9%|▉         | 70/750 [00:01<00:07, 96.16it/s]Loading weights:  12%|█▏        | 87/750 [00:01<00:05, 114.84it/s]Loading weights:  14%|█▎        | 103/750 [00:01<00:05, 115.28it/s]Loading weights:  15%|█▌        | 116/750 [00:01<00:05, 116.49it/s]Loading weights:  18%|█▊        | 134/750 [00:01<00:04, 133.06it/s]Loading weights:  20%|█▉        | 148/750 [00:01<00:04, 127.51it/s]Loading weights:  22%|██▏       | 162/750 [00:01<00:04, 130.39it/s]Loading weights:  24%|██▎       | 177/750 [00:01<00:04, 135.19it/s]Loading weights:  25%|██▌       | 191/750 [00:01<00:04, 118.16it/s]Loading weights:  28%|██▊       | 213/750 [00:02<00:03, 144.52it/s]Loading weights:  31%|███       | 229/750 [00:02<00:03, 139.17it/s]Loading weights:  33%|███▎      | 245/750 [00:02<00:03, 138.27it/s]Loading weights:  35%|███▍      | 260/750 [00:02<00:03, 134.94it/s]Loading weights:  37%|███▋      | 279/750 [00:02<00:03, 142.82it/s]Loading weights:  39%|███▉      | 294/750 [00:02<00:03, 134.16it/s]Loading weights:  41%|████      | 309/750 [00:02<00:03, 136.57it/s]Loading weights:  43%|████▎     | 323/750 [00:02<00:03, 133.23it/s]Loading weights:  45%|████▍     | 337/750 [00:03<00:03, 127.92it/s]Loading weights:  47%|████▋     | 354/750 [00:03<00:02, 138.82it/s]Loading weights:  49%|████▉     | 369/750 [00:03<00:02, 129.61it/s]Loading weights:  51%|█████     | 383/750 [00:03<00:03, 116.84it/s]Loading weights:  73%|███████▎  | 545/750 [00:03<00:00, 491.67it/s]Loading weights:  97%|█████████▋| 724/750 [00:03<00:00, 830.83it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 205.32it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.55
+  pair_correct: 11.0
+  pair_total: 20.0
+  raw_accuracy: 0.775
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 7
+      - 13
+  per_class:
+    'Yes':
+      precision: 0.72
+      recall: 0.9
+      f1: 0.7999999999999999
+      support: 20.0
+      predicted: 25.0
+      true_positive: 18.0
+      false_positive: 7.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8666666666666667
+      recall: 0.65
+      f1: 0.7428571428571429
+      support: 20.0
+      predicted: 15.0
+      true_positive: 13.0
+      false_positive: 2.0
+      false_negative: 7.0
+  macro_precision: 0.7933333333333333
+  macro_recall: 0.775
+  macro_f1: 0.7714285714285714
+  balanced_accuracy: 0.775
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_sugarcrepe_seed42_rsev2_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_sugarcrepe_seed42_rsev2_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_sugarcrepe_seed42_rsev2_qwen3_vl_20260325_075310.diagnostics.json
+

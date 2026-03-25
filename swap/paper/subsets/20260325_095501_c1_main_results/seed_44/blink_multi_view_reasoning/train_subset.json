@@ -1,0 +1,562 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_27_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_27_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_27_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 26,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_55_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_55_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_55_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 54,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_72_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_72_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_72_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 71,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_51_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_51_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_51_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 50,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_133_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_133_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_133_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 132,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_84_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_84_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_84_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 83,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_40_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_40_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_40_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 39,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_129_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_129_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_129_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 128,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_115_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_115_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_115_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 114,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_126_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_126_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_126_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 125,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_33_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_33_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_33_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 32,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_47_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_47_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_47_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 46,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_68_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_68_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_68_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 67,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_110_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_110_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_110_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 109,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_93_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_93_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_93_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 92,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_11_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_11_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_11_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 10,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_130_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_130_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_130_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 129,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_71_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_71_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_71_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 70,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_16_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_16_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_16_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_95_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_95_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_95_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 94,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_123_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_123_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_123_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 122,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_103_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_103_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_103_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 102,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_107_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_107_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_107_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 106,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_64_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_64_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_64_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 63,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_83_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_83_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_83_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 82,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_112_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_112_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_112_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 111,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_120_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_120_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_120_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 119,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_111_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_111_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_111_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 110,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_94_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_94_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_94_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 93,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_54_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_54_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_54_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 53,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_3_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_3_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_18_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_18_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_18_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 17,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_77_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_77_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_77_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 76,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_53_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_53_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_53_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 52,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_60_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_60_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_60_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 59,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_12_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_12_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_12_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 11,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_106_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_106_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_106_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(B)",
+    "question_id": 105,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_31_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_31_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_31_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 30,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_78_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_78_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_78_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 77,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_28_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_28_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Multi-view_Reasoning/val/val_Multi-view_Reasoning_28_2.png"
+    ],
+    "question": "<image>\n<image>\nThe images are frames from a video. The first image is from the beginning of the video and the second image is from the end. Is the camera moving left or right when shooting the video? Select between A and B. Select from the following choices. (A) left (B) right",
+    "label": "(A)",
+    "question_id": 27,
+    "split": null,
+    "extra": {
+      "sub_task": "Multi-view Reasoning"
+    }
+  }
+]

@@ -1,0 +1,50 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=sav evaluator=raw dataset.name=blink_relative_depth dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_relative_depth/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_relative_depth/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_relative_depth_seed44_sav_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:13,  3.88it/s]Loading weights:   0%|          | 2/750 [00:00<03:35,  3.47it/s]Loading weights:   1%|          | 9/750 [00:00<00:42, 17.47it/s]Loading weights:   3%|▎         | 25/750 [00:00<00:14, 50.30it/s]Loading weights:   5%|▌         | 38/750 [00:00<00:11, 62.38it/s]Loading weights:   6%|▋         | 47/750 [00:01<00:10, 68.79it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:08, 83.65it/s]Loading weights:  10%|█         | 78/750 [00:01<00:06, 103.83it/s]Loading weights:  12%|█▏        | 90/750 [00:01<00:06, 106.53it/s]Loading weights:  14%|█▎        | 103/750 [00:01<00:05, 108.62it/s]Loading weights:  15%|█▌        | 115/750 [00:01<00:05, 107.60it/s]Loading weights:  17%|█▋        | 127/750 [00:01<00:05, 108.41it/s]Loading weights:  19%|█▉        | 142/750 [00:01<00:05, 118.27it/s]Loading weights:  21%|██        | 155/750 [00:01<00:05, 117.77it/s]Loading weights:  22%|██▏       | 167/750 [00:02<00:05, 115.52it/s]Loading weights:  24%|██▍       | 179/750 [00:02<00:06, 94.21it/s] Loading weights:  26%|██▌       | 192/750 [00:02<00:06, 89.14it/s]Loading weights:  28%|██▊       | 209/750 [00:02<00:05, 107.79it/s]Loading weights:  30%|██▉       | 224/750 [00:02<00:04, 113.79it/s]Loading weights:  32%|███▏      | 237/750 [00:02<00:04, 109.75it/s]Loading weights:  34%|███▎      | 252/750 [00:02<00:04, 119.30it/s]Loading weights:  35%|███▌      | 265/750 [00:02<00:04, 117.13it/s]Loading weights:  37%|███▋      | 279/750 [00:03<00:04, 111.80it/s]Loading weights:  39%|███▉      | 292/750 [00:03<00:04, 110.99it/s]Loading weights:  41%|████      | 308/750 [00:03<00:03, 121.12it/s]Loading weights:  43%|████▎     | 322/750 [00:03<00:03, 120.15it/s]Loading weights:  45%|████▍     | 335/750 [00:03<00:03, 107.22it/s]Loading weights:  47%|████▋     | 352/750 [00:03<00:03, 121.76it/s]Loading weights:  49%|████▉     | 367/750 [00:03<00:03, 118.68it/s]Loading weights:  51%|█████     | 380/750 [00:03<00:03, 117.14it/s]Loading weights:  52%|█████▏    | 393/750 [00:04<00:03, 118.44it/s]Loading weights:  72%|███████▏  | 539/750 [00:04<00:00, 474.93it/s]Loading weights:  87%|████████▋ | 649/750 [00:04<00:00, 647.03it/s]Loading weights:  98%|█████████▊| 735/750 [00:04<00:00, 676.63it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 170.18it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 20.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    matrix:
+    - - 10
+      - 0
+    - - 0
+      - 10
+  per_class:
+    (B):
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 10.0
+      predicted: 10.0
+      true_positive: 10.0
+      false_positive: 0.0
+      false_negative: 0.0
+    (A):
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 10.0
+      predicted: 10.0
+      true_positive: 10.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_depth_seed44_sav_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_depth_seed44_sav_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_depth_seed44_sav_qwen3_vl_20260325_095501.diagnostics.json
+

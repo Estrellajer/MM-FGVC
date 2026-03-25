@@ -1,0 +1,47 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:31,  4.93it/s]Loading weights:   0%|          | 2/750 [00:00<02:51,  4.37it/s]Loading weights:   1%|          | 8/750 [00:00<00:42, 17.29it/s]Loading weights:   5%|▍         | 34/750 [00:00<00:09, 79.32it/s]Loading weights:   6%|▌         | 46/750 [00:01<00:16, 41.87it/s]Loading weights:  16%|█▋        | 122/750 [00:01<00:04, 149.86it/s]Loading weights:  21%|██        | 154/750 [00:01<00:04, 145.96it/s]Loading weights:  24%|██▍       | 180/750 [00:01<00:04, 136.00it/s]Loading weights:  27%|██▋       | 201/750 [00:01<00:04, 136.20it/s]Loading weights:  29%|██▉       | 220/750 [00:02<00:03, 136.84it/s]Loading weights:  32%|███▏      | 240/750 [00:02<00:03, 144.96it/s]Loading weights:  34%|███▍      | 258/750 [00:02<00:03, 145.44it/s]Loading weights:  37%|███▋      | 275/750 [00:02<00:03, 147.49it/s]Loading weights:  39%|███▉      | 292/750 [00:02<00:03, 137.45it/s]Loading weights:  41%|████      | 307/750 [00:02<00:04, 107.52it/s]Loading weights:  45%|████▍     | 335/750 [00:03<00:04, 83.04it/s] Loading weights:  79%|███████▉  | 595/750 [00:03<00:00, 448.14it/s]Loading weights:  98%|█████████▊| 733/750 [00:03<00:00, 593.77it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 215.23it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.975
+  correct: 39.0
+  total: 40.0
+  label_order:
+  - hallucination
+  - non-hallucination
+  confusion_matrix:
+    labels:
+    - hallucination
+    - non-hallucination
+    matrix:
+    - - 20
+      - 0
+    - - 1
+      - 19
+  per_class:
+    hallucination:
+      precision: 0.9523809523809523
+      recall: 1.0
+      f1: 0.975609756097561
+      support: 20.0
+      predicted: 21.0
+      true_positive: 20.0
+      false_positive: 1.0
+      false_negative: 0.0
+    non-hallucination:
+      precision: 1.0
+      recall: 0.95
+      f1: 0.9743589743589743
+      support: 20.0
+      predicted: 19.0
+      true_positive: 19.0
+      false_positive: 0.0
+      false_negative: 1.0
+  macro_precision: 0.9761904761904762
+  macro_recall: 0.975
+  macro_f1: 0.9749843652282677
+  balanced_accuracy: 0.975
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_mhalubench_val_v01_seed42_zero_shot_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_mhalubench_val_v01_seed42_zero_shot_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_mhalubench_val_v01_seed42_zero_shot_qwen3_vl_20260325_075310.diagnostics.json
+

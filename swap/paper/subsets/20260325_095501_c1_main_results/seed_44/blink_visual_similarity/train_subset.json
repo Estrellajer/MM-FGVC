@@ -1,0 +1,602 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_27_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_27_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_27_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_27_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 26,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_79_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_79_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_79_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_79_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 78,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_71_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_71_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_71_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_71_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 70,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_113_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_113_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_113_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_113_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 112,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_68_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_68_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_68_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_68_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 67,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_85_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_85_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_85_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_85_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 84,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_96_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_96_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_96_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_96_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 95,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_90_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_90_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_90_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_90_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 89,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_83_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_83_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_83_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_83_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 82,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_127_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_127_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_127_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_127_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 126,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_33_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_33_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_33_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_33_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 32,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_112_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_112_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_112_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_112_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 111,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_60_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_60_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_60_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_60_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 59,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_51_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_51_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_51_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_51_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 50,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_116_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_116_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_116_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_116_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 115,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_11_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_11_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_11_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_11_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 10,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_106_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_106_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_106_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_106_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 105,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_72_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_72_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_72_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_72_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 71,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_16_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_16_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_16_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_16_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_125_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_125_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_125_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_125_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 124,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_64_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_64_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_64_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_64_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 63,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_94_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_94_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_94_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_94_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 93,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_47_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_47_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_47_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_47_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 46,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_65_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_65_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_65_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_65_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 64,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_84_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_84_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_84_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_84_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 83,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_53_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_53_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_53_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_53_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 52,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_67_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_67_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_67_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_67_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 66,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_121_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_121_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_121_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_121_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 120,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_95_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_95_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_95_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_95_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 94,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_55_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_55_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_55_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_55_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 54,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_3_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 2,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_18_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_18_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_18_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_18_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 17,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_78_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_78_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_78_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_78_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 77,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_54_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_54_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_54_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_54_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 53,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_129_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_129_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_129_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_129_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 128,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_12_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_12_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_12_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_12_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 11,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_107_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_107_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_107_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_107_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 106,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_31_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_31_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_31_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_31_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 30,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_77_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_77_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_77_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_77_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 76,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_28_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_28_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_28_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Visual_Similarity/val/val_Visual_Similarity_28_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is most similar to the reference image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 27,
+    "split": null,
+    "extra": {
+      "sub_task": "Visual Similarity"
+    }
+  }
+]

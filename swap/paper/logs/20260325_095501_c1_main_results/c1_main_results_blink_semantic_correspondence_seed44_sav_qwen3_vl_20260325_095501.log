@@ -1,0 +1,84 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=sav evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_semantic_correspondence_seed44_sav_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:19,  3.76it/s]Loading weights:   0%|          | 2/750 [00:00<03:46,  3.30it/s]Loading weights:   1%|          | 9/750 [00:00<00:48, 15.25it/s]Loading weights:   3%|▎         | 25/750 [00:00<00:16, 45.10it/s]Loading weights:   5%|▍         | 35/750 [00:00<00:12, 57.58it/s]Loading weights:   7%|▋         | 50/750 [00:01<00:08, 77.95it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:08, 86.07it/s]Loading weights:  10%|▉         | 72/750 [00:01<00:07, 91.22it/s]Loading weights:  11%|█         | 83/750 [00:01<00:07, 94.72it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:06, 97.91it/s]Loading weights:  14%|█▍        | 105/750 [00:01<00:06, 98.99it/s]Loading weights:  16%|█▌        | 120/750 [00:01<00:05, 110.27it/s]Loading weights:  18%|█▊        | 132/750 [00:01<00:05, 111.76it/s]Loading weights:  19%|█▉        | 145/750 [00:01<00:05, 116.34it/s]Loading weights:  21%|██        | 158/750 [00:02<00:05, 115.99it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:06, 89.24it/s] Loading weights:  25%|██▌       | 191/750 [00:02<00:04, 113.95it/s]Loading weights:  27%|██▋       | 204/750 [00:02<00:05, 108.81it/s]Loading weights:  29%|██▉       | 216/750 [00:02<00:05, 105.92it/s]Loading weights:  31%|███       | 230/750 [00:02<00:04, 114.36it/s]Loading weights:  33%|███▎      | 246/750 [00:02<00:04, 120.63it/s]Loading weights:  35%|███▍      | 259/750 [00:02<00:04, 109.47it/s]Loading weights:  36%|███▌      | 271/750 [00:03<00:04, 111.62it/s]Loading weights:  38%|███▊      | 283/750 [00:03<00:04, 113.69it/s]Loading weights:  39%|███▉      | 295/750 [00:03<00:04, 110.50it/s]Loading weights:  41%|████      | 307/750 [00:03<00:03, 112.51it/s]Loading weights:  43%|████▎     | 321/750 [00:03<00:03, 118.21it/s]Loading weights:  45%|████▍     | 334/750 [00:03<00:03, 113.28it/s]Loading weights:  46%|████▌     | 346/750 [00:03<00:03, 107.81it/s]Loading weights:  48%|████▊     | 357/750 [00:03<00:04, 85.13it/s] Loading weights:  50%|████▉     | 372/750 [00:04<00:03, 97.71it/s]Loading weights:  52%|█████▏    | 391/750 [00:04<00:03, 113.72it/s]Loading weights:  72%|███████▏  | 540/750 [00:04<00:00, 454.33it/s]Loading weights:  89%|████████▉ | 671/750 [00:04<00:00, 675.47it/s]Loading weights: 100%|█████████▉| 747/750 [00:04<00:00, 670.31it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 165.92it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.15
+  correct: 3.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (D)
+  - (C)
+  - (A)
+  confusion_matrix:
+    labels:
+    - (B)
+    - (D)
+    - (C)
+    - (A)
+    matrix:
+    - - 1
+      - 2
+      - 2
+      - 0
+    - - 3
+      - 0
+      - 2
+      - 0
+    - - 2
+      - 1
+      - 0
+      - 2
+    - - 3
+      - 0
+      - 0
+      - 2
+  per_class:
+    (B):
+      precision: 0.1111111111111111
+      recall: 0.2
+      f1: 0.14285714285714285
+      support: 5.0
+      predicted: 9.0
+      true_positive: 1.0
+      false_positive: 8.0
+      false_negative: 4.0
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 5.0
+    (A):
+      precision: 0.5
+      recall: 0.4
+      f1: 0.4444444444444445
+      support: 5.0
+      predicted: 4.0
+      true_positive: 2.0
+      false_positive: 2.0
+      false_negative: 3.0
+  macro_precision: 0.1527777777777778
+  macro_recall: 0.15000000000000002
+  macro_f1: 0.14682539682539683
+  balanced_accuracy: 0.15000000000000002
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed44_sav_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed44_sav_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_semantic_correspondence_seed44_sav_qwen3_vl_20260325_095501.diagnostics.json
+

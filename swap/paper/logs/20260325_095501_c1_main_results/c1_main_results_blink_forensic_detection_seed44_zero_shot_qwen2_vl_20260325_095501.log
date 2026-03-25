@@ -1,0 +1,448 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_forensic_detection dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_forensic_detection/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_forensic_detection/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:44,  4.44it/s]Loading weights:   0%|          | 2/730 [00:00<03:02,  3.98it/s]Loading weights:   1%|▏         | 10/730 [00:00<00:31, 22.70it/s]Loading weights:   3%|▎         | 22/730 [00:00<00:14, 47.47it/s]Loading weights:   5%|▍         | 34/730 [00:00<00:10, 66.68it/s]Loading weights:   6%|▌         | 43/730 [00:00<00:09, 70.09it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:08, 80.61it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:09, 70.92it/s]Loading weights:  13%|█▎        | 94/730 [00:01<00:05, 119.99it/s]Loading weights:  15%|█▍        | 109/730 [00:01<00:05, 122.82it/s]Loading weights:  17%|█▋        | 123/730 [00:01<00:05, 120.36it/s]Loading weights:  19%|█▉        | 137/730 [00:01<00:05, 103.65it/s]Loading weights:  20%|██        | 149/730 [00:01<00:05, 103.80it/s]Loading weights:  22%|██▏       | 161/730 [00:02<00:05, 95.34it/s] Loading weights:  25%|██▍       | 179/730 [00:02<00:04, 114.60it/s]Loading weights:  26%|██▋       | 192/730 [00:02<00:04, 117.80it/s]Loading weights:  28%|██▊       | 205/730 [00:02<00:05, 98.30it/s] Loading weights:  30%|███       | 221/730 [00:02<00:04, 104.45it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:05, 98.76it/s] Loading weights:  33%|███▎      | 244/730 [00:02<00:04, 98.38it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:04, 97.68it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 97.93it/s]Loading weights:  39%|███▉      | 286/730 [00:03<00:03, 114.63it/s]Loading weights:  42%|████▏     | 304/730 [00:03<00:03, 123.05it/s]Loading weights:  43%|████▎     | 317/730 [00:03<00:04, 102.69it/s]Loading weights:  45%|████▌     | 329/730 [00:03<00:03, 104.04it/s]Loading weights:  61%|██████    | 442/730 [00:03<00:00, 354.73it/s]Loading weights:  76%|███████▋  | 557/730 [00:03<00:00, 557.17it/s]Loading weights:  92%|█████████▏| 669/730 [00:03<00:00, 707.13it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 184.97it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (A)
+  - (C)
+  - 'Let''s analyze the images step by step:
+
+
+    1. The first image shows three'
+  - 'Let''s analyze the images step by step:
+
+
+    1. The first image shows a'
+  - 'Let''s analyze each image step by step:
+
+
+    1. The first image shows a'
+  - To determine which image is most likely to be a real photograph, we need to
+  - 'Let''s analyze the images step by step:
+
+
+    1. The first image shows an'
+  - 'Let''s analyze the images step by step:
+
+
+    1. The first image appears to'
+  - 'Let''s analyze the images step by step:
+
+
+    1. The first image shows two'
+  - 'Let''s analyze the images step by step:
+
+
+    1. **First Image**: This'
+  - 'Let''s analyze the images step by step:
+
+
+    1. **Image Analysis:**'
+  - The fourth image is most likely to be a real photograph.
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (A)
+    - (C)
+    - 'Let''s analyze the images step by step:
+
+
+      1. The first image shows three'
+    - 'Let''s analyze the images step by step:
+
+
+      1. The first image shows a'
+    - 'Let''s analyze each image step by step:
+
+
+      1. The first image shows a'
+    - To determine which image is most likely to be a real photograph, we need to
+    - 'Let''s analyze the images step by step:
+
+
+      1. The first image shows an'
+    - 'Let''s analyze the images step by step:
+
+
+      1. The first image appears to'
+    - 'Let''s analyze the images step by step:
+
+
+      1. The first image shows two'
+    - 'Let''s analyze the images step by step:
+
+
+      1. **First Image**: This'
+    - 'Let''s analyze the images step by step:
+
+
+      1. **Image Analysis:**'
+    - The fourth image is most likely to be a real photograph.
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 3
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The first image shows three'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The first image shows a'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 10.0
+      true_positive: 0.0
+      false_positive: 10.0
+      false_negative: 0.0
+    ? 'Let''s analyze each image step by step:
+
+
+      1. The first image shows a'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which image is most likely to be a real photograph, we need to:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The first image shows an'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The first image appears to'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The first image shows two'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. **First Image**: This'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. **Image Analysis:**'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The fourth image is most likely to be a real photograph.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

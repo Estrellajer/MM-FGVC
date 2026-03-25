@@ -1,0 +1,85 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_art_style dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_art_style/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_art_style/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_art_style_seed43_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<04:25,  2.74it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:23, 29.92it/s]Loading weights:   2%|▏         | 17/729 [00:00<00:23, 30.48it/s]Loading weights:   5%|▍         | 34/729 [00:00<00:10, 63.83it/s]Loading weights:   6%|▌         | 44/729 [00:00<00:09, 71.91it/s]Loading weights:   7%|▋         | 54/729 [00:00<00:08, 78.02it/s]Loading weights:   9%|▉         | 64/729 [00:01<00:08, 79.69it/s]Loading weights:  10%|█         | 74/729 [00:01<00:07, 82.08it/s]Loading weights:  11%|█▏        | 83/729 [00:01<00:07, 81.60it/s]Loading weights:  13%|█▎        | 92/729 [00:01<00:07, 81.52it/s]Loading weights:  14%|█▍        | 101/729 [00:01<00:07, 81.96it/s]Loading weights:  15%|█▌        | 110/729 [00:01<00:07, 80.01it/s]Loading weights:  16%|█▋        | 119/729 [00:01<00:07, 79.35it/s]Loading weights:  18%|█▊        | 128/729 [00:01<00:07, 81.20it/s]Loading weights:  19%|█▉        | 137/729 [00:01<00:07, 81.93it/s]Loading weights:  20%|██        | 146/729 [00:02<00:07, 81.37it/s]Loading weights:  21%|██▏       | 155/729 [00:02<00:06, 82.55it/s]Loading weights:  22%|██▏       | 164/729 [00:02<00:06, 81.10it/s]Loading weights:  24%|██▎       | 173/729 [00:02<00:06, 80.52it/s]Loading weights:  25%|██▍       | 182/729 [00:02<00:06, 83.11it/s]Loading weights:  26%|██▌       | 191/729 [00:02<00:07, 72.22it/s]Loading weights:  29%|██▊       | 209/729 [00:02<00:05, 98.15it/s]Loading weights:  30%|███       | 221/729 [00:02<00:05, 99.88it/s]Loading weights:  32%|███▏      | 232/729 [00:03<00:06, 75.77it/s]Loading weights:  34%|███▍      | 249/729 [00:03<00:05, 95.96it/s]Loading weights:  36%|███▌      | 261/729 [00:03<00:05, 90.21it/s]Loading weights:  38%|███▊      | 275/729 [00:03<00:04, 96.09it/s]Loading weights:  39%|███▉      | 286/729 [00:03<00:05, 86.35it/s]Loading weights:  61%|██████    | 444/729 [00:03<00:00, 424.31it/s]Loading weights:  90%|████████▉ | 655/729 [00:03<00:00, 833.21it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 185.21it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (A)
+  - (B)
+  - B.
+  - 'Answer: B'
+  confusion_matrix:
+    labels:
+    - (A)
+    - (B)
+    - B.
+    - 'Answer: B'
+    matrix:
+    - - 0
+      - 0
+      - 9
+      - 1
+    - - 0
+      - 0
+      - 10
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    B.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 19.0
+      true_positive: 0.0
+      false_positive: 19.0
+      false_negative: 0.0
+    'Answer: B':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed43_zero_shot_idefics3_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed43_zero_shot_idefics3_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_art_style_seed43_zero_shot_idefics3_20260325_095501.diagnostics.json
+

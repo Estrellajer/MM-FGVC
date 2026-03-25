@@ -1,0 +1,153 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_relative_reflectance",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 15.0,
+    "label_order": [
+      "(C)",
+      "(B)",
+      "(A)",
+      "Let's analyze the surface color of the two points in the image:\n\n- Point",
+      "Let's analyze the surface color of the two points in the image.\n\n- Point",
+      "Let's analyze the surface colors of the two points in the image:\n\n- Point"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(C)",
+        "(B)",
+        "(A)",
+        "Let's analyze the surface color of the two points in the image:\n\n- Point",
+        "Let's analyze the surface color of the two points in the image.\n\n- Point",
+        "Let's analyze the surface colors of the two points in the image:\n\n- Point"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(C)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "Let's analyze the surface color of the two points in the image:\n\n- Point": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 11.0,
+        "true_positive": 0.0,
+        "false_positive": 11.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the surface color of the two points in the image.\n\n- Point": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the surface colors of the two points in the image:\n\n- Point": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 3.0,
+        "true_positive": 0.0,
+        "false_positive": 3.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.268833875656128e-05,
+    "predict_time_sec": 7.98953746818006,
+    "total_time_sec": 7.989550156518817,
+    "num_eval_samples": 15,
+    "avg_predict_time_sec": 0.532635831212004
+  }
+}

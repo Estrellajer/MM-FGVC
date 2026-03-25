@@ -1,0 +1,50 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=vizwiz dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/vizwiz/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/vizwiz/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_vizwiz_seed44_rsev2_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:40,  3.40it/s]Loading weights:   0%|          | 2/750 [00:00<05:45,  2.17it/s]Loading weights:   1%|          | 6/750 [00:00<01:34,  7.86it/s]Loading weights:   2%|▏         | 17/750 [00:01<00:31, 23.43it/s]Loading weights:   3%|▎         | 21/750 [00:01<00:27, 26.18it/s]Loading weights:   5%|▍         | 34/750 [00:01<00:15, 47.65it/s]Loading weights:   5%|▌         | 41/750 [00:01<00:13, 52.03it/s]Loading weights:   7%|▋         | 49/750 [00:01<00:12, 56.35it/s]Loading weights:   8%|▊         | 59/750 [00:01<00:10, 66.03it/s]Loading weights:   9%|▉         | 67/750 [00:01<00:11, 61.43it/s]Loading weights:  10%|▉         | 74/750 [00:02<00:13, 49.18it/s]Loading weights:  11%|█         | 82/750 [00:02<00:12, 54.18it/s]Loading weights:  12%|█▏        | 93/750 [00:02<00:11, 57.17it/s]Loading weights:  13%|█▎        | 100/750 [00:02<00:10, 59.28it/s]Loading weights:  14%|█▍        | 107/750 [00:02<00:15, 41.04it/s]Loading weights:  19%|█▉        | 141/750 [00:02<00:07, 83.36it/s]Loading weights:  20%|██        | 153/750 [00:03<00:06, 89.45it/s]Loading weights:  22%|██▏       | 163/750 [00:03<00:06, 85.67it/s]Loading weights:  23%|██▎       | 173/750 [00:03<00:07, 78.88it/s]Loading weights:  24%|██▍       | 182/750 [00:03<00:10, 56.23it/s]Loading weights:  27%|██▋       | 202/750 [00:03<00:07, 78.23it/s]Loading weights:  28%|██▊       | 212/750 [00:03<00:06, 80.68it/s]Loading weights:  30%|██▉       | 222/750 [00:04<00:07, 72.26it/s]Loading weights:  31%|███       | 231/750 [00:04<00:08, 63.03it/s]Loading weights:  33%|███▎      | 246/750 [00:04<00:06, 77.77it/s]Loading weights:  34%|███▍      | 255/750 [00:04<00:07, 68.94it/s]Loading weights:  35%|███▌      | 263/750 [00:04<00:08, 60.53it/s]Loading weights:  36%|███▌      | 270/750 [00:04<00:08, 59.22it/s]Loading weights:  37%|███▋      | 281/750 [00:05<00:07, 61.45it/s]Loading weights:  39%|███▉      | 291/750 [00:05<00:08, 56.67it/s]Loading weights:  40%|████      | 303/750 [00:05<00:06, 66.68it/s]Loading weights:  42%|████▏     | 313/750 [00:05<00:05, 73.19it/s]Loading weights:  43%|████▎     | 324/750 [00:05<00:05, 79.77it/s]Loading weights:  44%|████▍     | 333/750 [00:05<00:05, 82.10it/s]Loading weights:  46%|████▌     | 342/750 [00:05<00:06, 65.46it/s]Loading weights:  47%|████▋     | 350/750 [00:06<00:06, 60.52it/s]Loading weights:  48%|████▊     | 359/750 [00:06<00:06, 64.07it/s]Loading weights:  49%|████▉     | 369/750 [00:06<00:05, 71.00it/s]Loading weights:  51%|█████     | 379/750 [00:06<00:04, 78.06it/s]Loading weights:  52%|█████▏    | 388/750 [00:06<00:04, 81.13it/s]Loading weights:  59%|█████▉    | 441/750 [00:06<00:01, 201.35it/s]Loading weights:  72%|███████▏  | 538/750 [00:06<00:00, 414.49it/s]Loading weights:  78%|███████▊  | 583/750 [00:06<00:00, 351.85it/s]Loading weights:  89%|████████▉ | 669/750 [00:06<00:00, 473.71it/s]Loading weights:  97%|█████████▋| 727/750 [00:07<00:00, 499.47it/s]Loading weights: 100%|██████████| 750/750 [00:07<00:00, 104.75it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 24.0
+  total: 40.0
+  label_order:
+  - unanswerable
+  - answerable
+  confusion_matrix:
+    labels:
+    - unanswerable
+    - answerable
+    matrix:
+    - - 14
+      - 6
+    - - 10
+      - 10
+  per_class:
+    unanswerable:
+      precision: 0.5833333333333334
+      recall: 0.7
+      f1: 0.6363636363636365
+      support: 20.0
+      predicted: 24.0
+      true_positive: 14.0
+      false_positive: 10.0
+      false_negative: 6.0
+    answerable:
+      precision: 0.625
+      recall: 0.5
+      f1: 0.5555555555555556
+      support: 20.0
+      predicted: 16.0
+      true_positive: 10.0
+      false_positive: 6.0
+      false_negative: 10.0
+  macro_precision: 0.6041666666666667
+  macro_recall: 0.6
+  macro_f1: 0.595959595959596
+  balanced_accuracy: 0.6
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vizwiz_seed44_rsev2_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vizwiz_seed44_rsev2_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_vizwiz_seed44_rsev2_qwen3_vl_20260325_095501.diagnostics.json
+

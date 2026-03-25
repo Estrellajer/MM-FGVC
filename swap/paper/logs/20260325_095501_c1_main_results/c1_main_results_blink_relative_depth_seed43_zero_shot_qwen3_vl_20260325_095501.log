@@ -1,0 +1,260 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_relative_depth dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_relative_depth/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_relative_depth/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_relative_depth_seed43_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:08,  3.97it/s]Loading weights:   0%|          | 2/750 [00:00<03:38,  3.42it/s]Loading weights:   1%|          | 6/750 [00:00<01:05, 11.30it/s]Loading weights:   3%|▎         | 23/750 [00:00<00:14, 48.79it/s]Loading weights:   5%|▍         | 34/750 [00:00<00:11, 63.73it/s]Loading weights:   6%|▌         | 46/750 [00:00<00:08, 78.28it/s]Loading weights:   8%|▊         | 57/750 [00:01<00:07, 86.91it/s]Loading weights:   9%|▉         | 68/750 [00:01<00:07, 92.30it/s]Loading weights:  11%|█         | 79/750 [00:01<00:06, 97.10it/s]Loading weights:  12%|█▏        | 90/750 [00:01<00:06, 100.17it/s]Loading weights:  13%|█▎        | 101/750 [00:01<00:06, 102.67it/s]Loading weights:  15%|█▍        | 112/750 [00:01<00:06, 104.00it/s]Loading weights:  16%|█▋        | 123/750 [00:01<00:05, 104.80it/s]Loading weights:  18%|█▊        | 134/750 [00:01<00:05, 105.46it/s]Loading weights:  19%|█▉        | 145/750 [00:01<00:05, 104.73it/s]Loading weights:  21%|██        | 156/750 [00:02<00:05, 105.27it/s]Loading weights:  22%|██▏       | 167/750 [00:02<00:05, 105.90it/s]Loading weights:  24%|██▎       | 178/750 [00:02<00:05, 105.89it/s]Loading weights:  25%|██▌       | 189/750 [00:02<00:05, 105.97it/s]Loading weights:  27%|██▋       | 200/750 [00:02<00:05, 105.85it/s]Loading weights:  28%|██▊       | 211/750 [00:02<00:05, 106.35it/s]Loading weights:  30%|██▉       | 224/750 [00:02<00:05, 91.69it/s] Loading weights:  32%|███▏      | 237/750 [00:02<00:05, 100.91it/s]Loading weights:  33%|███▎      | 248/750 [00:02<00:04, 101.44it/s]Loading weights:  35%|███▍      | 259/750 [00:03<00:04, 102.78it/s]Loading weights:  36%|███▌      | 270/750 [00:03<00:04, 104.44it/s]Loading weights:  37%|███▋      | 281/750 [00:03<00:04, 103.57it/s]Loading weights:  39%|███▉      | 292/750 [00:03<00:04, 100.60it/s]Loading weights:  40%|████      | 303/750 [00:03<00:04, 101.59it/s]Loading weights:  42%|████▏     | 314/750 [00:03<00:04, 97.51it/s] Loading weights:  43%|████▎     | 324/750 [00:03<00:04, 86.49it/s]Loading weights:  46%|████▌     | 345/750 [00:03<00:04, 96.55it/s]Loading weights:  49%|████▊     | 364/750 [00:04<00:03, 117.22it/s]Loading weights:  50%|█████     | 378/750 [00:04<00:03, 116.09it/s]Loading weights:  52%|█████▏    | 390/750 [00:04<00:03, 110.87it/s]Loading weights:  64%|██████▎   | 477/750 [00:04<00:00, 301.95it/s]Loading weights:  84%|████████▎ | 628/750 [00:04<00:00, 618.28it/s]Loading weights:  97%|█████████▋| 731/750 [00:04<00:00, 722.67it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 161.83it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.2
+  correct: 4.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - To determine which point is closer to the camera, we need to analyze the spatial
+  - 'The point labeled **A** is closer to the camera.
+
+
+    Here''s why:'
+  - To determine which point is closer to the camera, we need to analyze the perspective
+  - Based on the image provided, we can determine which point is closer to the camera
+  - 'The point closer to the camera is **A**.
+
+
+    Here''s why:
+
+    -'
+  - To determine which point is closer to the camera, we need to analyze the depth
+  - Looking at the image, we can analyze the positions of points A and B relative
+  - Looking at the image, we can analyze the relative positions of points A and B
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - To determine which point is closer to the camera, we need to analyze the spatial
+    - 'The point labeled **A** is closer to the camera.
+
+
+      Here''s why:'
+    - To determine which point is closer to the camera, we need to analyze the perspective
+    - Based on the image provided, we can determine which point is closer to the camera
+    - 'The point closer to the camera is **A**.
+
+
+      Here''s why:
+
+      -'
+    - To determine which point is closer to the camera, we need to analyze the depth
+    - Looking at the image, we can analyze the positions of points A and B relative
+    - Looking at the image, we can analyze the relative positions of points A and
+      B
+    matrix:
+    - - 0
+      - 0
+      - 2
+      - 0
+      - 2
+      - 2
+      - 0
+      - 2
+      - 1
+      - 1
+    - - 0
+      - 4
+      - 1
+      - 4
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 10.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 6.0
+    To determine which point is closer to the camera, we need to analyze the spatial:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    ? 'The point labeled **A** is closer to the camera.
+
+
+      Here''s why:'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 0.0
+    To determine which point is closer to the camera, we need to analyze the perspective:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Based on the image provided, we can determine which point is closer to the camera:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    ? 'The point closer to the camera is **A**.
+
+
+      Here''s why:
+
+      -'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point is closer to the camera, we need to analyze the depth:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Looking at the image, we can analyze the positions of points A and B relative:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the image, we can analyze the relative positions of points A and B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.1
+  macro_recall: 0.04
+  macro_f1: 0.05714285714285715
+  balanced_accuracy: 0.04
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_depth_seed43_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_depth_seed43_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_relative_depth_seed43_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

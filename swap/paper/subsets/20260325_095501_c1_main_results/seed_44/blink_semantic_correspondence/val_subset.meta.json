@@ -1,0 +1,19 @@
+{
+  "count": 20,
+  "mode": "per_label",
+  "requested_count": 5,
+  "group_size": 0,
+  "src": "/root/autodl-tmp/FGVC/dataset/converted_from_data/blink/semantic_correspondence_val.json",
+  "source_kind": "converted",
+  "unique_labels": 4,
+  "per_label_min": 5,
+  "per_label_max": 5,
+  "canonicalized_paths": 0,
+  "canonicalized_labels": 0,
+  "skipped_missing_images": 0,
+  "dropped_disallowed_labels": 0,
+  "excluded_overlap": 80,
+  "restricted_label_space": 4,
+  "seed": 44,
+  "shuffle": false
+}

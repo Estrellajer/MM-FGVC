@@ -1,0 +1,497 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_functional_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_functional_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_functional_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:39,  4.57it/s]Loading weights:   0%|          | 2/730 [00:00<02:57,  4.09it/s]Loading weights:   1%|          | 6/730 [00:00<00:54, 13.18it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:28, 25.30it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:07, 84.93it/s]Loading weights:   9%|▉         | 67/730 [00:01<00:07, 90.69it/s]Loading weights:  11%|█         | 79/730 [00:01<00:06, 93.05it/s]Loading weights:  12%|█▏        | 91/730 [00:01<00:06, 94.98it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:06, 93.55it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:08, 73.36it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:05, 102.70it/s]Loading weights:  21%|██        | 150/730 [00:02<00:05, 98.72it/s] Loading weights:  22%|██▏       | 161/730 [00:02<00:05, 99.26it/s]Loading weights:  24%|██▎       | 172/730 [00:02<00:05, 99.98it/s]Loading weights:  25%|██▌       | 183/730 [00:02<00:05, 97.09it/s]Loading weights:  27%|██▋       | 197/730 [00:02<00:05, 100.23it/s]Loading weights:  29%|██▊       | 209/730 [00:02<00:05, 100.93it/s]Loading weights:  30%|███       | 221/730 [00:02<00:05, 92.60it/s] Loading weights:  32%|███▏      | 234/730 [00:02<00:05, 94.68it/s]Loading weights:  34%|███▎      | 246/730 [00:03<00:05, 96.68it/s]Loading weights:  35%|███▌      | 258/730 [00:03<00:04, 99.49it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 95.68it/s]Loading weights:  38%|███▊      | 280/730 [00:03<00:04, 96.52it/s]Loading weights:  40%|████      | 292/730 [00:03<00:04, 87.81it/s]Loading weights:  43%|████▎     | 316/730 [00:03<00:03, 119.32it/s]Loading weights:  45%|████▌     | 329/730 [00:03<00:03, 107.81it/s]Loading weights:  51%|█████     | 371/730 [00:03<00:01, 182.04it/s]Loading weights:  67%|██████▋   | 486/730 [00:04<00:00, 427.20it/s]Loading weights:  80%|████████  | 585/730 [00:04<00:00, 575.69it/s]Loading weights:  95%|█████████▌| 695/730 [00:04<00:00, 717.64it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 171.42it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 16.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  - To determine which point is corresponding to the reference point, we need to identify
+    the
+  - To determine which point corresponds to the reference point "REF," we need to
+    look
+  - The reference point in the image is located at the bottom of the mug, which
+  - To determine which point corresponds to the reference point, we need to compare
+    the reference
+  - To determine which point corresponds to the reference point, we need to identify
+    the point
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a bottle'
+  - To determine which point corresponds to the reference point, we need to compare
+    the positions
+  - 'Let''s analyze the images step by step:
+
+
+    1. In the first image,'
+  - 'Let''s analyze the images step by step:
+
+
+    1. The first image shows a'
+  - Answer:B
+  - To determine which point corresponds to the reference point, we need to match
+    the reference
+  - The reference point in the first image is located at the end of the fork's
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    - To determine which point is corresponding to the reference point, we need to
+      identify the
+    - To determine which point corresponds to the reference point "REF," we need to
+      look
+    - The reference point in the image is located at the bottom of the mug, which
+    - To determine which point corresponds to the reference point, we need to compare
+      the reference
+    - To determine which point corresponds to the reference point, we need to identify
+      the point
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a bottle'
+    - To determine which point corresponds to the reference point, we need to compare
+      the positions
+    - 'Let''s analyze the images step by step:
+
+
+      1. In the first image,'
+    - 'Let''s analyze the images step by step:
+
+
+      1. The first image shows a'
+    - Answer:B
+    - To determine which point corresponds to the reference point, we need to match
+      the reference
+    - The reference point in the first image is located at the end of the fork's
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    To determine which point is corresponding to the reference point, we need to identify the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point "REF," we need to look:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the image is located at the bottom of the mug, which:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to compare the reference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to identify the point:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a bottle'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to compare the positions:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. In the first image,'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the images step by step:
+
+
+      1. The first image shows a'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Answer:B:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which point corresponds to the reference point, we need to match the reference:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point in the first image is located at the end of the fork's:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_functional_correspondence_seed42_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

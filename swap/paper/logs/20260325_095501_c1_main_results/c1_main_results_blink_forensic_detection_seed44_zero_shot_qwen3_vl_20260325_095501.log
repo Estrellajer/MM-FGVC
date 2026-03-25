@@ -1,0 +1,171 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_forensic_detection dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_forensic_detection/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_forensic_detection/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:34,  4.85it/s]Loading weights:   0%|          | 2/750 [00:00<02:48,  4.44it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:23, 31.12it/s]Loading weights:   4%|▎         | 28/750 [00:00<00:11, 62.28it/s]Loading weights:   6%|▌         | 45/750 [00:00<00:07, 91.32it/s]Loading weights:   8%|▊         | 59/750 [00:00<00:06, 103.11it/s]Loading weights:  10%|▉         | 72/750 [00:00<00:06, 106.15it/s]Loading weights:  12%|█▏        | 91/750 [00:01<00:05, 124.14it/s]Loading weights:  14%|█▍        | 105/750 [00:01<00:05, 119.97it/s]Loading weights:  17%|█▋        | 124/750 [00:01<00:04, 134.78it/s]Loading weights:  18%|█▊        | 138/750 [00:01<00:04, 130.47it/s]Loading weights:  21%|██        | 158/750 [00:01<00:04, 145.73it/s]Loading weights:  23%|██▎       | 173/750 [00:01<00:04, 140.60it/s]Loading weights:  25%|██▌       | 191/750 [00:01<00:03, 148.89it/s]Loading weights:  28%|██▊       | 207/750 [00:01<00:03, 146.78it/s]Loading weights:  30%|██▉       | 224/750 [00:02<00:03, 147.16it/s]Loading weights:  32%|███▏      | 239/750 [00:02<00:03, 142.90it/s]Loading weights:  34%|███▍      | 257/750 [00:02<00:03, 150.72it/s]Loading weights:  36%|███▋      | 273/750 [00:02<00:03, 142.80it/s]Loading weights:  39%|███▊      | 290/750 [00:02<00:03, 144.79it/s]Loading weights:  41%|████      | 305/750 [00:02<00:03, 137.81it/s]Loading weights:  43%|████▎     | 319/750 [00:02<00:03, 126.18it/s]Loading weights:  44%|████▍     | 332/750 [00:02<00:03, 123.32it/s]Loading weights:  47%|████▋     | 354/750 [00:02<00:02, 144.93it/s]Loading weights:  49%|████▉     | 369/750 [00:03<00:02, 136.78it/s]Loading weights:  51%|█████▏    | 385/750 [00:03<00:02, 137.41it/s]Loading weights:  64%|██████▎   | 477/750 [00:03<00:00, 344.79it/s]Loading weights:  90%|█████████ | 677/750 [00:03<00:00, 799.81it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 214.42it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.65
+  correct: 13.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (A)
+  - (C)
+  - 'The fourth image is most likely to be a real photograph.
+
+
+    Here''s why:'
+  - 'The first image is most likely to be a real photograph.
+
+
+    Here''s why:'
+  - To determine which image is most likely a real photograph, we need to evaluate
+    each
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (A)
+    - (C)
+    - 'The fourth image is most likely to be a real photograph.
+
+
+      Here''s why:'
+    - 'The first image is most likely to be a real photograph.
+
+
+      Here''s why:'
+    - To determine which image is most likely a real photograph, we need to evaluate
+      each
+    matrix:
+    - - 2
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 1
+    - - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 4
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 5.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 3.0
+    (B):
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    (A):
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    (C):
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    ? 'The fourth image is most likely to be a real photograph.
+
+
+      Here''s why:'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    ? 'The first image is most likely to be a real photograph.
+
+
+      Here''s why:'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 0.0
+    To determine which image is most likely a real photograph, we need to evaluate each:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.5714285714285714
+  macro_recall: 0.37142857142857144
+  macro_f1: 0.4149659863945579
+  balanced_accuracy: 0.37142857142857144
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_forensic_detection_seed44_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

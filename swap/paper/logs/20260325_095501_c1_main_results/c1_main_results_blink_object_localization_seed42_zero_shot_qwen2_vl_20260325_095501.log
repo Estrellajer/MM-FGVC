@@ -1,0 +1,680 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_object_localization dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_object_localization/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_object_localization/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_object_localization_seed42_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:43,  4.45it/s]Loading weights:   0%|          | 2/730 [00:00<03:00,  4.04it/s]Loading weights:   1%|          | 4/730 [00:00<01:33,  7.77it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:17, 40.23it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:12, 58.04it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:09, 68.90it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:08, 76.44it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:08, 81.91it/s]Loading weights:  11%|█         | 77/730 [00:01<00:07, 87.81it/s]Loading weights:  12%|█▏        | 88/730 [00:01<00:08, 78.80it/s]Loading weights:  13%|█▎        | 97/730 [00:01<00:08, 78.65it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:06, 97.03it/s]Loading weights:  17%|█▋        | 124/730 [00:01<00:07, 85.31it/s]Loading weights:  20%|██        | 148/730 [00:02<00:05, 115.96it/s]Loading weights:  22%|██▏       | 161/730 [00:02<00:06, 94.21it/s] Loading weights:  24%|██▎       | 172/730 [00:02<00:05, 94.50it/s]Loading weights:  25%|██▌       | 183/730 [00:02<00:05, 91.79it/s]Loading weights:  27%|██▋       | 194/730 [00:02<00:05, 91.76it/s]Loading weights:  28%|██▊       | 206/730 [00:02<00:06, 76.62it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:04, 105.47it/s]Loading weights:  34%|███▎      | 246/730 [00:03<00:04, 106.14it/s]Loading weights:  35%|███▌      | 258/730 [00:03<00:04, 104.69it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 102.55it/s]Loading weights:  39%|███▊      | 282/730 [00:03<00:04, 104.73it/s]Loading weights:  40%|████      | 294/730 [00:03<00:04, 103.99it/s]Loading weights:  42%|████▏     | 306/730 [00:03<00:04, 103.47it/s]Loading weights:  44%|████▎     | 318/730 [00:03<00:03, 106.53it/s]Loading weights:  45%|████▌     | 330/730 [00:03<00:03, 107.34it/s]Loading weights:  60%|██████    | 439/730 [00:03<00:00, 371.18it/s]Loading weights:  75%|███████▌  | 551/730 [00:04<00:00, 577.28it/s]Loading weights:  92%|█████████▏| 670/730 [00:04<00:00, 750.66it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 170.90it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - To determine which bounding box more accurately localizes and encloses the tank
+    top,
+  - To determine which bounding box more accurately localizes and encloses the fireplug,
+  - To determine which bounding box more accurately localizes and encloses the sandwich,
+    we
+  - To determine which bounding box more accurately localizes and encloses the pizza,
+    we
+  - To determine which bounding box more accurately localizes and encloses the hat,
+    we
+  - To determine which bounding box more accurately localizes and encloses the flower
+    arrangement,
+  - To determine which bounding box more accurately localizes and encloses the bottle,
+    we
+  - To determine which bounding box more accurately localizes and encloses the cat,
+    we
+  - To determine which bounding box more accurately localizes and encloses the sweater,
+    we
+  - To determine which bounding box more accurately localizes and encloses the airplane,
+    we
+  - To determine which bounding box more accurately localizes and encloses the fork,
+    we
+  - To determine which bounding box more accurately localizes and encloses the kite,
+    we
+  - To determine which bounding box more accurately localizes and encloses the bullet
+    train,
+  - To determine which bounding box more accurately localizes and encloses the pillow,
+    we
+  - To determine which bounding box more accurately localizes and encloses the oven,
+    we
+  - To determine which bounding box more accurately localizes and encloses the jet
+    plane,
+  - To determine which bounding box more accurately localizes and encloses the laptop
+    computer,
+  - To determine which bounding box more accurately localizes and encloses the telephone,
+    we
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - To determine which bounding box more accurately localizes and encloses the tank
+      top,
+    - To determine which bounding box more accurately localizes and encloses the fireplug,
+    - To determine which bounding box more accurately localizes and encloses the sandwich,
+      we
+    - To determine which bounding box more accurately localizes and encloses the pizza,
+      we
+    - To determine which bounding box more accurately localizes and encloses the hat,
+      we
+    - To determine which bounding box more accurately localizes and encloses the flower
+      arrangement,
+    - To determine which bounding box more accurately localizes and encloses the bottle,
+      we
+    - To determine which bounding box more accurately localizes and encloses the cat,
+      we
+    - To determine which bounding box more accurately localizes and encloses the sweater,
+      we
+    - To determine which bounding box more accurately localizes and encloses the airplane,
+      we
+    - To determine which bounding box more accurately localizes and encloses the fork,
+      we
+    - To determine which bounding box more accurately localizes and encloses the kite,
+      we
+    - To determine which bounding box more accurately localizes and encloses the bullet
+      train,
+    - To determine which bounding box more accurately localizes and encloses the pillow,
+      we
+    - To determine which bounding box more accurately localizes and encloses the oven,
+      we
+    - To determine which bounding box more accurately localizes and encloses the jet
+      plane,
+    - To determine which bounding box more accurately localizes and encloses the laptop
+      computer,
+    - To determine which bounding box more accurately localizes and encloses the telephone,
+      we
+    matrix:
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    To determine which bounding box more accurately localizes and encloses the tank top,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the fireplug,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the sandwich, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the pizza, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the hat, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the flower arrangement,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the bottle, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the cat, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the sweater, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the airplane, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the fork, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the kite, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the bullet train,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the pillow, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the oven, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the jet plane,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the laptop computer,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine which bounding box more accurately localizes and encloses the telephone, we:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed42_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed42_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed42_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

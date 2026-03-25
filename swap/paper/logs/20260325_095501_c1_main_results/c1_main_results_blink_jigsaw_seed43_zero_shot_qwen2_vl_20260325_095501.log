@@ -1,0 +1,246 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_jigsaw dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_jigsaw/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_jigsaw/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_jigsaw_seed43_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<05:51,  2.07it/s]Loading weights:   1%|          | 6/730 [00:00<00:56, 12.79it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:19, 36.13it/s]Loading weights:   3%|▎         | 24/730 [00:00<00:21, 33.36it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:07, 86.80it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:07, 91.56it/s]Loading weights:  11%|█         | 78/730 [00:01<00:07, 93.07it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:06, 94.69it/s]Loading weights:  14%|█▍        | 101/730 [00:01<00:06, 97.46it/s]Loading weights:  16%|█▌        | 117/730 [00:01<00:05, 113.69it/s]Loading weights:  18%|█▊        | 130/730 [00:01<00:05, 113.64it/s]Loading weights:  19%|█▉        | 142/730 [00:01<00:05, 110.53it/s]Loading weights:  21%|██        | 154/730 [00:01<00:05, 110.17it/s]Loading weights:  23%|██▎       | 166/730 [00:02<00:05, 98.78it/s] Loading weights:  25%|██▌       | 184/730 [00:02<00:04, 113.83it/s]Loading weights:  27%|██▋       | 196/730 [00:02<00:04, 110.76it/s]Loading weights:  28%|██▊       | 208/730 [00:02<00:05, 101.29it/s]Loading weights:  30%|███       | 220/730 [00:02<00:04, 102.58it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:04, 105.26it/s]Loading weights:  33%|███▎      | 243/730 [00:02<00:04, 103.97it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:04, 108.11it/s]Loading weights:  37%|███▋      | 268/730 [00:03<00:04, 108.56it/s]Loading weights:  38%|███▊      | 279/730 [00:03<00:05, 80.57it/s] Loading weights:  40%|████      | 292/730 [00:03<00:04, 90.97it/s]Loading weights:  42%|████▏     | 305/730 [00:03<00:05, 78.16it/s]Loading weights:  45%|████▍     | 328/730 [00:03<00:03, 104.60it/s]Loading weights:  48%|████▊     | 354/730 [00:03<00:02, 138.97it/s]Loading weights:  64%|██████▍   | 467/730 [00:03<00:00, 377.04it/s]Loading weights:  79%|███████▉  | 580/730 [00:04<00:00, 554.33it/s]Loading weights:  93%|█████████▎| 677/730 [00:04<00:00, 657.11it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 174.35it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.25
+  correct: 5.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  - To determine which image is the missing part in the first image, let's analyze
+  - We refer to Wikipedia articles on world politics for help. The missing part in
+    the
+  - We refer to Wikipedia articles on human trafficking for help. The missing part
+    in the
+  - We refer to Wikipedia articles on psychology for help. The first image is a complete
+  - We refer to Wikipedia articles on world religions for help. The first image is
+    a
+  - We refer to Wikipedia articles on world religions for help. The image is a car
+  - We refer to Wikipedia articles on human vision for help. The missing part in the
+  - We refer to Wikipedia articles on human visual attention for help. The missing
+    part in
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    - To determine which image is the missing part in the first image, let's analyze
+    - We refer to Wikipedia articles on world politics for help. The missing part
+      in the
+    - We refer to Wikipedia articles on human trafficking for help. The missing part
+      in the
+    - We refer to Wikipedia articles on psychology for help. The first image is a
+      complete
+    - We refer to Wikipedia articles on world religions for help. The first image
+      is a
+    - We refer to Wikipedia articles on world religions for help. The image is a car
+    - We refer to Wikipedia articles on human vision for help. The missing part in
+      the
+    - We refer to Wikipedia articles on human visual attention for help. The missing
+      part in
+    matrix:
+    - - 0
+      - 3
+      - 3
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 5
+      - 2
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (A):
+      precision: 0.625
+      recall: 0.5
+      f1: 0.5555555555555556
+      support: 10.0
+      predicted: 8.0
+      true_positive: 5.0
+      false_positive: 3.0
+      false_negative: 5.0
+    To determine which image is the missing part in the first image, let's analyze:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 5.0
+      true_positive: 0.0
+      false_positive: 5.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on world politics for help. The missing part in the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on human trafficking for help. The missing part in the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on psychology for help. The first image is a complete:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on world religions for help. The first image is a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on world religions for help. The image is a car:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on human vision for help. The missing part in the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We refer to Wikipedia articles on human visual attention for help. The missing part in:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0625
+  macro_recall: 0.05
+  macro_f1: 0.05555555555555556
+  balanced_accuracy: 0.05
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed43_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed43_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_jigsaw_seed43_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

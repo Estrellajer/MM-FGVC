@@ -1,0 +1,50 @@
+# worker=worker_2
+# CUDA_VISIBLE_DEVICES=1
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=sav evaluator=raw dataset.name=blink_object_localization dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_object_localization/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_object_localization/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_object_localization_seed42_sav_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:13,  3.88it/s]Loading weights:   0%|          | 2/750 [00:00<02:59,  4.17it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:20, 36.70it/s]Loading weights:   4%|▎         | 27/750 [00:00<00:13, 54.82it/s]Loading weights:   6%|▋         | 47/750 [00:00<00:07, 89.40it/s]Loading weights:   8%|▊         | 60/750 [00:00<00:07, 96.95it/s]Loading weights:  10%|▉         | 72/750 [00:01<00:06, 102.03it/s]Loading weights:  12%|█▏        | 89/750 [00:01<00:05, 120.06it/s]Loading weights:  14%|█▎        | 103/750 [00:01<00:05, 122.96it/s]Loading weights:  15%|█▌        | 116/750 [00:01<00:05, 114.87it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:04, 129.25it/s]Loading weights:  20%|█▉        | 147/750 [00:01<00:04, 128.84it/s]Loading weights:  21%|██▏       | 161/750 [00:01<00:04, 126.25it/s]Loading weights:  24%|██▍       | 180/750 [00:01<00:04, 136.46it/s]Loading weights:  26%|██▌       | 194/750 [00:01<00:04, 126.21it/s]Loading weights:  28%|██▊       | 207/750 [00:02<00:04, 124.33it/s]Loading weights:  30%|███       | 226/750 [00:02<00:03, 135.68it/s]Loading weights:  33%|███▎      | 246/750 [00:02<00:03, 148.23it/s]Loading weights:  35%|███▍      | 261/750 [00:02<00:03, 140.46it/s]Loading weights:  37%|███▋      | 278/750 [00:02<00:03, 143.03it/s]Loading weights:  39%|███▉      | 293/750 [00:02<00:03, 134.93it/s]Loading weights:  42%|████▏     | 312/750 [00:02<00:03, 143.74it/s]Loading weights:  44%|████▎     | 327/750 [00:02<00:03, 136.28it/s]Loading weights:  46%|████▌     | 345/750 [00:03<00:02, 141.95it/s]Loading weights:  48%|████▊     | 360/750 [00:03<00:02, 136.82it/s]Loading weights:  50%|█████     | 376/750 [00:03<00:02, 131.38it/s]Loading weights:  53%|█████▎    | 394/750 [00:03<00:02, 143.47it/s]Loading weights:  73%|███████▎  | 545/750 [00:03<00:00, 506.51it/s]Loading weights:  96%|█████████▋| 723/750 [00:03<00:00, 846.26it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 205.40it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.6
+  correct: 12.0
+  total: 20.0
+  label_order:
+  - (B)
+  - (A)
+  confusion_matrix:
+    labels:
+    - (B)
+    - (A)
+    matrix:
+    - - 5
+      - 5
+    - - 3
+      - 7
+  per_class:
+    (B):
+      precision: 0.625
+      recall: 0.5
+      f1: 0.5555555555555556
+      support: 10.0
+      predicted: 8.0
+      true_positive: 5.0
+      false_positive: 3.0
+      false_negative: 5.0
+    (A):
+      precision: 0.5833333333333334
+      recall: 0.7
+      f1: 0.6363636363636365
+      support: 10.0
+      predicted: 12.0
+      true_positive: 7.0
+      false_positive: 5.0
+      false_negative: 3.0
+  macro_precision: 0.6041666666666667
+  macro_recall: 0.6
+  macro_f1: 0.595959595959596
+  balanced_accuracy: 0.6
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed42_sav_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed42_sav_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_object_localization_seed42_sav_qwen3_vl_20260325_095501.diagnostics.json
+

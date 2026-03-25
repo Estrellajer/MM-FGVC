@@ -1,0 +1,30 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_forensic_detection dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_forensic_detection/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_forensic_detection/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_forensic_detection_seed42_zero_shot_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:24,  5.02it/s]Loading weights:   0%|          | 3/729 [00:00<01:50,  6.56it/s]Loading weights:   1%|          | 6/729 [00:00<00:57, 12.60it/s]Loading weights:   2%|▏         | 16/729 [00:00<00:20, 34.27it/s]Loading weights:   3%|▎         | 23/729 [00:01<00:25, 27.97it/s]Loading weights:   7%|▋         | 52/729 [00:01<00:08, 76.50it/s]Loading weights:   9%|▊         | 63/729 [00:01<00:08, 80.64it/s]Loading weights:  10%|█         | 74/729 [00:01<00:08, 81.47it/s]Loading weights:  12%|█▏        | 84/729 [00:01<00:09, 68.48it/s]Loading weights:  13%|█▎        | 97/729 [00:01<00:07, 80.45it/s]Loading weights:  15%|█▍        | 107/729 [00:02<00:13, 47.54it/s]Loading weights:  19%|█▉        | 142/729 [00:02<00:06, 93.47it/s]Loading weights:  22%|██▏       | 158/729 [00:02<00:05, 101.13it/s]Loading weights:  24%|██▎       | 173/729 [00:02<00:06, 88.67it/s] Loading weights:  26%|██▌       | 190/729 [00:02<00:05, 103.38it/s]Loading weights:  28%|██▊       | 204/729 [00:02<00:05, 101.58it/s]Loading weights:  30%|██▉       | 217/729 [00:02<00:05, 99.00it/s] Loading weights:  32%|███▏      | 230/729 [00:03<00:05, 99.74it/s]Loading weights:  33%|███▎      | 242/729 [00:03<00:05, 95.13it/s]Loading weights:  35%|███▍      | 253/729 [00:03<00:05, 93.30it/s]Loading weights:  36%|███▌      | 264/729 [00:03<00:04, 96.62it/s]Loading weights:  38%|███▊      | 275/729 [00:03<00:04, 91.49it/s]Loading weights:  39%|███▉      | 285/729 [00:03<00:05, 88.06it/s]Loading weights:  54%|█████▎    | 391/729 [00:03<00:01, 329.90it/s]Loading weights:  81%|████████  | 589/729 [00:03<00:00, 760.96it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 181.98it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=zero_shot', 'evaluator=raw', 'dataset.name=blink_forensic_detection', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_forensic_detection/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_forensic_detection/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_blink_forensic_detection_seed42_zero_shot_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 156, in run_experiment
+    predictions = [method.predict(item) for item in iterator]
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/zero_shot.py", line 54, in predict
+    outputs = self.model.generate(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/models/model_base.py", line 416, in generate
+    inputs = self.process_input(*inputs, **processor_args).to(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/models/idefics3.py", line 107, in process_input
+    inputs = self.processor(
+             ^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py", line 227, in __call__
+    raise ValueError(
+ValueError: The number of images in the text [8] and images [4] should be the same.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

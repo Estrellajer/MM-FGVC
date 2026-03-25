@@ -1,0 +1,180 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_relative_reflectance",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 15.0,
+    "label_order": [
+      "(C)",
+      "(A)",
+      "(B)",
+      "Let's analyze the surface color of the two points in the image:\n\n- Point",
+      "Let's analyze the surface colors of the two points in the image:\n\n- Point",
+      "Let's analyze the image step by step:\n\n1. The surface in the image",
+      "Let's analyze the surface colors of points A and B in the image.\n\n-"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(C)",
+        "(A)",
+        "(B)",
+        "Let's analyze the surface color of the two points in the image:\n\n- Point",
+        "Let's analyze the surface colors of the two points in the image:\n\n- Point",
+        "Let's analyze the image step by step:\n\n1. The surface in the image",
+        "Let's analyze the surface colors of points A and B in the image.\n\n-"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(C)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "Let's analyze the surface color of the two points in the image:\n\n- Point": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 11.0,
+        "true_positive": 0.0,
+        "false_positive": 11.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the surface colors of the two points in the image:\n\n- Point": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the image step by step:\n\n1. The surface in the image": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the surface colors of points A and B in the image.\n\n-": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.2837350368499756e-05,
+    "predict_time_sec": 8.26451968960464,
+    "total_time_sec": 8.264532526955009,
+    "num_eval_samples": 15,
+    "avg_predict_time_sec": 0.550967979306976
+  }
+}

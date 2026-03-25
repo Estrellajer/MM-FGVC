@@ -1,0 +1,55 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=naturalbench_group dataset.name=naturalbench_ret dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_ret/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/naturalbench_ret/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_naturalbench_ret_seed42_rsev2_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:38,  4.60it/s]Loading weights:   0%|          | 2/730 [00:00<02:56,  4.12it/s]Loading weights:   1%|          | 4/730 [00:00<02:19,  5.20it/s]Loading weights:   6%|▌         | 42/730 [00:01<00:20, 34.31it/s]Loading weights:   6%|▌         | 45/730 [00:01<00:22, 30.58it/s]Loading weights:  19%|█▉        | 137/730 [00:01<00:04, 137.20it/s]Loading weights:  23%|██▎       | 166/730 [00:02<00:05, 110.01it/s]Loading weights:  26%|██▌       | 188/730 [00:02<00:04, 119.29it/s]Loading weights:  28%|██▊       | 208/730 [00:02<00:04, 120.78it/s]Loading weights:  31%|███       | 226/730 [00:02<00:04, 109.06it/s]Loading weights:  33%|███▎      | 241/730 [00:02<00:04, 112.40it/s]Loading weights:  35%|███▌      | 256/730 [00:03<00:04, 108.42it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 101.27it/s]Loading weights:  38%|███▊      | 281/730 [00:03<00:04, 97.42it/s] Loading weights:  40%|████      | 292/730 [00:03<00:05, 86.34it/s]Loading weights:  42%|████▏     | 305/730 [00:03<00:04, 95.02it/s]Loading weights:  43%|████▎     | 317/730 [00:03<00:04, 99.26it/s]Loading weights:  45%|████▌     | 329/730 [00:03<00:04, 95.48it/s]Loading weights:  55%|█████▌    | 403/730 [00:03<00:01, 249.75it/s]Loading weights:  70%|███████   | 514/730 [00:04<00:00, 466.91it/s]Loading weights:  87%|████████▋ | 633/730 [00:04<00:00, 656.97it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 170.97it/s]
+metrics:
+  metric: naturalbench_group
+  q_acc: 1.0
+  i_acc: 1.0
+  g_acc: 1.0
+  raw_acc: 1.0
+  group_total: 10.0
+  used_samples: 40.0
+  dropped_samples: 0.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 20
+      - 0
+    - - 0
+      - 20
+  per_class:
+    'Yes':
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+    'No':
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_ret_seed42_rsev2_qwen2_vl_20260325_095501.diagnostics.json
+

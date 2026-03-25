@@ -1,0 +1,24 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=rsev2 evaluator=raw dataset.name=pets dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/pets_small/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/pets_small/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_pets_small_seed42_rsev2_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:43,  4.46it/s]Loading weights:   0%|          | 2/729 [00:00<03:20,  3.63it/s]Loading weights:   2%|▏         | 14/729 [00:00<00:23, 30.48it/s]Loading weights:   3%|▎         | 24/729 [00:00<00:16, 42.44it/s]Loading weights:   5%|▌         | 37/729 [00:00<00:10, 63.36it/s]Loading weights:   6%|▋         | 47/729 [00:00<00:09, 72.45it/s]Loading weights:   8%|▊         | 56/729 [00:01<00:10, 61.51it/s]Loading weights:  10%|▉         | 72/729 [00:01<00:07, 84.30it/s]Loading weights:  11%|█▏        | 83/729 [00:01<00:08, 79.27it/s]Loading weights:  13%|█▎        | 95/729 [00:01<00:07, 85.77it/s]Loading weights:  14%|█▍        | 105/729 [00:01<00:07, 80.96it/s]Loading weights:  16%|█▌        | 114/729 [00:01<00:07, 80.50it/s]Loading weights:  17%|█▋        | 123/729 [00:01<00:07, 79.76it/s]Loading weights:  18%|█▊        | 132/729 [00:02<00:07, 79.41it/s]Loading weights:  19%|█▉        | 141/729 [00:02<00:07, 79.01it/s]Loading weights:  21%|██        | 150/729 [00:02<00:07, 73.91it/s]Loading weights:  22%|██▏       | 158/729 [00:02<00:09, 58.97it/s]Loading weights:  24%|██▍       | 178/729 [00:02<00:06, 85.11it/s]Loading weights:  26%|██▌       | 188/729 [00:02<00:06, 77.53it/s]Loading weights:  27%|██▋       | 199/729 [00:02<00:06, 84.50it/s]Loading weights:  29%|██▊       | 209/729 [00:03<00:06, 82.00it/s]Loading weights:  30%|██▉       | 218/729 [00:03<00:06, 83.25it/s]Loading weights:  32%|███▏      | 231/729 [00:03<00:05, 89.22it/s]Loading weights:  33%|███▎      | 241/729 [00:03<00:05, 81.61it/s]Loading weights:  34%|███▍      | 250/729 [00:03<00:05, 80.67it/s]Loading weights:  36%|███▌      | 259/729 [00:03<00:06, 70.98it/s]Loading weights:  38%|███▊      | 275/729 [00:03<00:05, 88.95it/s]Loading weights:  39%|███▉      | 285/729 [00:03<00:05, 83.84it/s]Loading weights:  52%|█████▏    | 381/729 [00:04<00:01, 296.14it/s]Loading weights:  80%|███████▉  | 583/729 [00:04<00:00, 738.78it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 172.06it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=rsev2', 'evaluator=raw', 'dataset.name=pets', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/pets_small/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/pets_small/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_pets_small_seed42_rsev2_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/rsev2.py", line 232, in fit
+    feature_table = self._collect_feature_table(train_data, desc="RSEv2 fit features")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/rse.py", line 322, in _collect_feature_table
+    sample_features = self._extract_multilevel_features(item)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/rse.py", line 313, in _extract_multilevel_features
+    "head": torch.stack(head_features, dim=0),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [1152] at entry 0 and [4096] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

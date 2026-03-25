@@ -1,0 +1,820 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_iq_test dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_iq_test/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_iq_test/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_iq_test_seed42_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:10,  3.94it/s]Loading weights:   0%|          | 2/750 [00:00<03:33,  3.51it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:26, 27.63it/s]Loading weights:   3%|▎         | 24/750 [00:00<00:15, 47.46it/s]Loading weights:   5%|▍         | 34/750 [00:00<00:11, 60.81it/s]Loading weights:   6%|▌         | 46/750 [00:01<00:10, 67.56it/s]Loading weights:   7%|▋         | 55/750 [00:01<00:10, 65.29it/s]Loading weights:  10%|█         | 78/750 [00:01<00:06, 105.07it/s]Loading weights:  12%|█▏        | 91/750 [00:01<00:06, 108.32it/s]Loading weights:  14%|█▍        | 104/750 [00:01<00:06, 97.39it/s]Loading weights:  16%|█▌        | 120/750 [00:01<00:05, 108.76it/s]Loading weights:  18%|█▊        | 136/750 [00:01<00:05, 118.96it/s]Loading weights:  20%|█▉        | 149/750 [00:01<00:05, 110.58it/s]Loading weights:  22%|██▏       | 166/750 [00:02<00:04, 123.09it/s]Loading weights:  24%|██▍       | 179/750 [00:02<00:05, 103.11it/s]Loading weights:  26%|██▌       | 193/750 [00:02<00:05, 107.50it/s]Loading weights:  28%|██▊       | 210/750 [00:02<00:04, 120.94it/s]Loading weights:  30%|██▉       | 223/750 [00:02<00:04, 109.24it/s]Loading weights:  32%|███▏      | 237/750 [00:02<00:04, 114.99it/s]Loading weights:  34%|███▍      | 254/750 [00:02<00:03, 128.48it/s]Loading weights:  36%|███▌      | 268/750 [00:02<00:03, 130.95it/s]Loading weights:  38%|███▊      | 282/750 [00:03<00:03, 119.81it/s]Loading weights:  40%|████      | 300/750 [00:03<00:03, 129.81it/s]Loading weights:  42%|████▏     | 314/750 [00:03<00:03, 123.39it/s]Loading weights:  44%|████▍     | 329/750 [00:03<00:03, 128.30it/s]Loading weights:  46%|████▌     | 343/750 [00:03<00:03, 130.55it/s]Loading weights:  48%|████▊     | 357/750 [00:03<00:03, 119.46it/s]Loading weights:  49%|████▉     | 370/750 [00:03<00:03, 114.80it/s]Loading weights:  51%|█████     | 382/750 [00:03<00:03, 113.19it/s]Loading weights:  53%|█████▎    | 394/750 [00:03<00:03, 114.66it/s]Loading weights:  64%|██████▍   | 480/750 [00:04<00:00, 314.98it/s]Loading weights:  82%|████████▏ | 618/750 [00:04<00:00, 577.23it/s]Loading weights:  99%|█████████▉| 741/750 [00:04<00:00, 721.22it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 174.52it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (A)
+  - (B)
+  - (C)
+  - Looking at the pattern in the images, we can observe that each group of three
+  - To solve this, we need to identify the pattern in the sequence of triangles.
+  - Looking at the sequence of four pictures in the top row, we can observe a
+  - Looking at the sequence of figures, we need to find the pattern that connects
+    the
+  - To solve this, we need to identify the pattern or rule governing the sequence
+    of
+  - 'We are given a sequence of letters: **F, H, N, E'
+  - To solve this, we need to identify the pattern or rule that connects the first
+  - Looking at the sequence of four pictures in the top row, I need to find
+  - We are given two rows of figures. The first row has three figures, and
+  - 'The image shows four Chinese characters: 竖 (shù), 友'
+  - 'Looking at the sequence of images:
+
+
+    - The first image shows **four plus signs'
+  - To solve this, we need to identify the pattern or rule established by the first
+  - We are given a 2D net (unfolded shape) on the left
+  - To solve this, we need to find the pattern in the sequence of five figures
+  - To solve this, we need to determine which 3D shape can be formed
+  - Looking at the sequence of clock-like images, we need to find the pattern.
+  - To solve this, we need to analyze the pattern in the sequence of 4
+  - Looking at the 3x3 grid, I need to find the pattern that
+  - To solve this, we need to analyze the pattern in the **first four images
+  confusion_matrix:
+    labels:
+    - (D)
+    - (A)
+    - (B)
+    - (C)
+    - Looking at the pattern in the images, we can observe that each group of three
+    - To solve this, we need to identify the pattern in the sequence of triangles.
+    - Looking at the sequence of four pictures in the top row, we can observe a
+    - Looking at the sequence of figures, we need to find the pattern that connects
+      the
+    - To solve this, we need to identify the pattern or rule governing the sequence
+      of
+    - 'We are given a sequence of letters: **F, H, N, E'
+    - To solve this, we need to identify the pattern or rule that connects the first
+    - Looking at the sequence of four pictures in the top row, I need to find
+    - We are given two rows of figures. The first row has three figures, and
+    - 'The image shows four Chinese characters: 竖 (shù), 友'
+    - 'Looking at the sequence of images:
+
+
+      - The first image shows **four plus signs'
+    - To solve this, we need to identify the pattern or rule established by the first
+    - We are given a 2D net (unfolded shape) on the left
+    - To solve this, we need to find the pattern in the sequence of five figures
+    - To solve this, we need to determine which 3D shape can be formed
+    - Looking at the sequence of clock-like images, we need to find the pattern.
+    - To solve this, we need to analyze the pattern in the sequence of 4
+    - Looking at the 3x3 grid, I need to find the pattern that
+    - To solve this, we need to analyze the pattern in the **first four images
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    Looking at the pattern in the images, we can observe that each group of three:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern in the sequence of triangles.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of four pictures in the top row, we can observe a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of figures, we need to find the pattern that connects the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern or rule governing the sequence of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    'We are given a sequence of letters: **F, H, N, E':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern or rule that connects the first:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Looking at the sequence of four pictures in the top row, I need to find:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We are given two rows of figures. The first row has three figures, and:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    'The image shows four Chinese characters: 竖 (shù), 友':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the sequence of images:
+
+
+      - The first image shows **four plus signs'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern or rule established by the first:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We are given a 2D net (unfolded shape) on the left:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to find the pattern in the sequence of five figures:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to determine which 3D shape can be formed:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of clock-like images, we need to find the pattern.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to analyze the pattern in the sequence of 4:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the 3x3 grid, I need to find the pattern that:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to analyze the pattern in the **first four images:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_iq_test_seed42_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_iq_test_seed42_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_iq_test_seed42_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

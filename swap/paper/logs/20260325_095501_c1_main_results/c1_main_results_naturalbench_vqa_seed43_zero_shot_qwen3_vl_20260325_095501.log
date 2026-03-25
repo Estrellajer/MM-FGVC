@@ -1,0 +1,85 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_naturalbench_vqa_seed43_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:05,  4.03it/s]Loading weights:   0%|          | 2/750 [00:00<03:33,  3.51it/s]Loading weights:   1%|          | 9/750 [00:00<00:40, 18.34it/s]Loading weights:   2%|▏         | 18/750 [00:00<00:21, 34.36it/s]Loading weights:   5%|▍         | 34/750 [00:00<00:11, 65.05it/s]Loading weights:   6%|▌         | 43/750 [00:01<00:14, 48.18it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:07, 92.81it/s]Loading weights:  11%|█         | 84/750 [00:01<00:07, 92.50it/s]Loading weights:  13%|█▎        | 96/750 [00:01<00:06, 98.46it/s]Loading weights:  14%|█▍        | 108/750 [00:01<00:06, 95.60it/s]Loading weights:  16%|█▋        | 122/750 [00:01<00:05, 105.89it/s]Loading weights:  18%|█▊        | 134/750 [00:01<00:05, 108.80it/s]Loading weights:  19%|█▉        | 146/750 [00:02<00:06, 98.85it/s] Loading weights:  21%|██        | 159/750 [00:02<00:05, 104.05it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:05, 98.56it/s] Loading weights:  24%|██▍       | 182/750 [00:02<00:05, 103.92it/s]Loading weights:  26%|██▋       | 197/750 [00:02<00:04, 114.64it/s]Loading weights:  28%|██▊       | 209/750 [00:02<00:04, 112.54it/s]Loading weights:  29%|██▉       | 221/750 [00:02<00:04, 111.62it/s]Loading weights:  31%|███       | 233/750 [00:02<00:04, 112.65it/s]Loading weights:  33%|███▎      | 245/750 [00:02<00:04, 114.38it/s]Loading weights:  34%|███▍      | 257/750 [00:03<00:05, 91.20it/s] Loading weights:  36%|███▌      | 270/750 [00:03<00:04, 99.76it/s]Loading weights:  37%|███▋      | 281/750 [00:03<00:04, 102.19it/s]Loading weights:  39%|███▉      | 292/750 [00:03<00:04, 100.61it/s]Loading weights:  40%|████      | 303/750 [00:03<00:04, 102.52it/s]Loading weights:  42%|████▏     | 314/750 [00:03<00:04, 101.16it/s]Loading weights:  43%|████▎     | 325/750 [00:03<00:04, 102.07it/s]Loading weights:  45%|████▍     | 336/750 [00:03<00:04, 101.44it/s]Loading weights:  46%|████▋     | 347/750 [00:03<00:04, 91.85it/s] Loading weights:  49%|████▉     | 367/750 [00:04<00:05, 73.30it/s]Loading weights:  61%|██████    | 455/750 [00:04<00:01, 222.43it/s]Loading weights:  81%|████████  | 604/750 [00:04<00:00, 485.58it/s]Loading weights:  97%|█████████▋| 725/750 [00:04<00:00, 648.65it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 159.95it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.4
+  correct: 16.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 4
+      - 2
+      - 0
+      - 0
+    - - 1
+      - 5
+      - 0
+      - 0
+    - - 11
+      - 1
+      - 2
+      - 0
+    - - 6
+      - 3
+      - 0
+      - 5
+  per_class:
+    'Yes':
+      precision: 0.18181818181818182
+      recall: 0.6666666666666666
+      f1: 0.28571428571428575
+      support: 6.0
+      predicted: 22.0
+      true_positive: 4.0
+      false_positive: 18.0
+      false_negative: 2.0
+    'No':
+      precision: 0.45454545454545453
+      recall: 0.8333333333333334
+      f1: 0.5882352941176471
+      support: 6.0
+      predicted: 11.0
+      true_positive: 5.0
+      false_positive: 6.0
+      false_negative: 1.0
+    A:
+      precision: 1.0
+      recall: 0.14285714285714285
+      f1: 0.25
+      support: 14.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 12.0
+    B:
+      precision: 1.0
+      recall: 0.35714285714285715
+      f1: 0.5263157894736842
+      support: 14.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 9.0
+  macro_precision: 0.6590909090909091
+  macro_recall: 0.5
+  macro_f1: 0.41256634232640427
+  balanced_accuracy: 0.5
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_vqa_seed43_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_vqa_seed43_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_naturalbench_vqa_seed43_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

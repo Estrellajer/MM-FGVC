@@ -1,0 +1,80 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:35,  4.81it/s]Loading weights:   0%|          | 2/750 [00:00<03:21,  3.71it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:23, 31.77it/s]Loading weights:   3%|▎         | 26/750 [00:00<00:15, 47.15it/s]Loading weights:   5%|▌         | 39/750 [00:00<00:11, 63.43it/s]Loading weights:   7%|▋         | 54/750 [00:01<00:08, 83.86it/s]Loading weights:   9%|▊         | 65/750 [00:01<00:07, 90.27it/s]Loading weights:  10%|█         | 76/750 [00:01<00:07, 94.99it/s]Loading weights:  12%|█▏        | 89/750 [00:01<00:06, 102.74it/s]Loading weights:  13%|█▎        | 100/750 [00:01<00:06, 103.35it/s]Loading weights:  15%|█▍        | 111/750 [00:01<00:06, 102.30it/s]Loading weights:  16%|█▋        | 122/750 [00:01<00:06, 102.02it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:08, 70.15it/s] Loading weights:  21%|██        | 156/750 [00:02<00:05, 104.07it/s]Loading weights:  23%|██▎       | 171/750 [00:02<00:05, 113.97it/s]Loading weights:  25%|██▍       | 185/750 [00:02<00:04, 117.60it/s]Loading weights:  27%|██▋       | 199/750 [00:02<00:04, 120.05it/s]Loading weights:  28%|██▊       | 213/750 [00:02<00:04, 119.87it/s]Loading weights:  30%|███       | 226/750 [00:02<00:04, 108.87it/s]Loading weights:  32%|███▏      | 238/750 [00:02<00:05, 99.37it/s] Loading weights:  34%|███▍      | 258/750 [00:02<00:04, 120.47it/s]Loading weights:  36%|███▌      | 271/750 [00:02<00:04, 115.75it/s]Loading weights:  38%|███▊      | 284/750 [00:03<00:03, 117.33it/s]Loading weights:  40%|███▉      | 297/750 [00:03<00:03, 114.85it/s]Loading weights:  41%|████      | 309/750 [00:03<00:03, 112.08it/s]Loading weights:  43%|████▎     | 321/750 [00:03<00:03, 112.84it/s]Loading weights:  45%|████▍     | 334/750 [00:03<00:03, 113.34it/s]Loading weights:  46%|████▌     | 346/750 [00:03<00:03, 104.32it/s]Loading weights:  48%|████▊     | 358/750 [00:03<00:03, 102.51it/s]Loading weights:  50%|████▉     | 373/750 [00:03<00:03, 112.84it/s]Loading weights:  51%|█████▏    | 386/750 [00:04<00:03, 116.41it/s]Loading weights:  53%|█████▎    | 401/750 [00:04<00:02, 125.58it/s]Loading weights:  75%|███████▍  | 562/750 [00:04<00:00, 541.66it/s]Loading weights:  96%|█████████▋| 723/750 [00:04<00:00, 842.76it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 171.06it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.775
+  correct: 31.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 7
+      - 1
+      - 0
+      - 0
+    - - 2
+      - 6
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 9
+      - 3
+    - - 0
+      - 0
+      - 3
+      - 9
+  per_class:
+    'Yes':
+      precision: 0.7777777777777778
+      recall: 0.875
+      f1: 0.823529411764706
+      support: 8.0
+      predicted: 9.0
+      true_positive: 7.0
+      false_positive: 2.0
+      false_negative: 1.0
+    'No':
+      precision: 0.8571428571428571
+      recall: 0.75
+      f1: 0.7999999999999999
+      support: 8.0
+      predicted: 7.0
+      true_positive: 6.0
+      false_positive: 1.0
+      false_negative: 2.0
+    A:
+      precision: 0.75
+      recall: 0.75
+      f1: 0.75
+      support: 12.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 3.0
+    B:
+      precision: 0.75
+      recall: 0.75
+      f1: 0.75
+      support: 12.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 3.0
+  macro_precision: 0.7837301587301587
+  macro_recall: 0.78125
+  macro_f1: 0.7808823529411765
+  balanced_accuracy: 0.78125
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_vqa_seed42_sav_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_vqa_seed42_sav_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_naturalbench_vqa_seed42_sav_qwen3_vl_20260325_075310.diagnostics.json
+

@@ -1,0 +1,240 @@
+{
+  "model": "idefics3",
+  "dataset": "vlguard",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.475,
+    "correct": 19.0,
+    "total": 40.0,
+    "label_order": [
+      "unharmful",
+      "harmful",
+      "Usanimals.",
+      "Encouraging individuals to click to check/set.",
+      "Click to check/set.",
+      "RV.",
+      "PANTONE Color of the Year.",
+      "Big Pay Day.",
+      "Watch."
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "unharmful",
+        "harmful",
+        "Usanimals.",
+        "Encouraging individuals to click to check/set.",
+        "Click to check/set.",
+        "RV.",
+        "PANTONE Color of the Year.",
+        "Big Pay Day.",
+        "Watch."
+      ],
+      "matrix": [
+        [
+          0,
+          14,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          19,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "unharmful": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 20.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 20.0
+      },
+      "harmful": {
+        "precision": 0.5757575757575758,
+        "recall": 0.95,
+        "f1": 0.7169811320754716,
+        "support": 20.0,
+        "predicted": 33.0,
+        "true_positive": 19.0,
+        "false_positive": 14.0,
+        "false_negative": 1.0
+      },
+      "Usanimals.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Encouraging individuals to click to check/set.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Click to check/set.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "RV.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "PANTONE Color of the Year.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Big Pay Day.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Watch.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.06397306397306397,
+    "macro_recall": 0.10555555555555556,
+    "macro_f1": 0.07966457023060797,
+    "balanced_accuracy": 0.10555555555555556
+  },
+  "timings": {
+    "fit_time_sec": 2.0537525415420532e-05,
+    "predict_time_sec": 14.551151879131794,
+    "total_time_sec": 14.55117241665721,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.36377879697829485
+  }
+}

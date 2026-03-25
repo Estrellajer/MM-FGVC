@@ -1,0 +1,835 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_counting dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_counting/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_counting/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_counting_seed44_zero_shot_qwen2_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:36,  4.65it/s]Loading weights:   0%|          | 2/730 [00:00<02:52,  4.22it/s]Loading weights:   1%|          | 6/730 [00:00<01:00, 12.05it/s]Loading weights:   4%|▍         | 28/730 [00:00<00:11, 60.62it/s]Loading weights:   5%|▌         | 37/730 [00:00<00:10, 64.68it/s]Loading weights:   6%|▌         | 45/730 [00:00<00:10, 65.99it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:12, 54.59it/s]Loading weights:  11%|█         | 77/730 [00:01<00:07, 87.40it/s]Loading weights:  12%|█▏        | 88/730 [00:01<00:07, 86.54it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:06, 97.15it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:06, 98.81it/s]Loading weights:  17%|█▋        | 126/730 [00:01<00:06, 100.16it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:05, 100.61it/s]Loading weights:  21%|██        | 150/730 [00:02<00:05, 101.46it/s]Loading weights:  22%|██▏       | 161/730 [00:02<00:05, 100.36it/s]Loading weights:  24%|██▎       | 173/730 [00:02<00:07, 72.00it/s] Loading weights:  28%|██▊       | 208/730 [00:02<00:04, 111.21it/s]Loading weights:  30%|███       | 221/730 [00:02<00:04, 111.00it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:04, 109.41it/s]Loading weights:  34%|███▎      | 245/730 [00:02<00:04, 108.29it/s]Loading weights:  35%|███▌      | 257/730 [00:03<00:04, 106.95it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:04, 105.45it/s]Loading weights:  38%|███▊      | 281/730 [00:03<00:04, 104.49it/s]Loading weights:  40%|████      | 293/730 [00:03<00:04, 102.88it/s]Loading weights:  42%|████▏     | 304/730 [00:03<00:04, 92.50it/s] Loading weights:  44%|████▎     | 318/730 [00:03<00:04, 98.58it/s]Loading weights:  45%|████▌     | 330/730 [00:03<00:04, 98.85it/s]Loading weights:  59%|█████▉    | 429/730 [00:03<00:00, 322.69it/s]Loading weights:  72%|███████▏  | 527/730 [00:04<00:00, 494.99it/s]Loading weights:  83%|████████▎ | 604/730 [00:04<00:00, 566.14it/s]Loading weights:  92%|█████████▏| 670/730 [00:04<00:00, 590.66it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 169.80it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.15
+  correct: 3.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (B)
+  - (C)
+  - (A)
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a toilet'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There are two players standing'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a large'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There is an adult wearing'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There is a red bus'
+  - Let's count the bananas on the plate in the image. There are three bananas
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a street'
+  - 'The image shows two people wearing white uniforms. Therefore, the correct answer
+    is:'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The dog in the image'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a bus'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a garden'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a tall'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There are three individuals in'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a row'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There is a bottle of'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The woman is wearing gloves'
+  - 'Let''s analyze the image step by step:
+
+
+    1. There is an adult elephant'
+  confusion_matrix:
+    labels:
+    - (D)
+    - (B)
+    - (C)
+    - (A)
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a toilet'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There are two players standing'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a large'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There is an adult wearing'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There is a red bus'
+    - Let's count the bananas on the plate in the image. There are three bananas
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a street'
+    - 'The image shows two people wearing white uniforms. Therefore, the correct answer
+      is:'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The dog in the image'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a bus'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a garden'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a tall'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There are three individuals in'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a row'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There is a bottle of'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The woman is wearing gloves'
+    - 'Let''s analyze the image step by step:
+
+
+      1. There is an adult elephant'
+    matrix:
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    (B):
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 1.0
+      recall: 0.2
+      f1: 0.33333333333333337
+      support: 5.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 4.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a toilet'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There are two players standing'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a large'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There is an adult wearing'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There is a red bus'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Let's count the bananas on the plate in the image. There are three bananas:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a street'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    'The image shows two people wearing white uniforms. Therefore, the correct answer is:':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The dog in the image'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a bus'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a garden'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a tall'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There are three individuals in'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a row'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There is a bottle of'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The woman is wearing gloves'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. There is an adult elephant'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.14285714285714285
+  macro_recall: 0.028571428571428574
+  macro_f1: 0.047619047619047616
+  balanced_accuracy: 0.028571428571428574
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed44_zero_shot_qwen2_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed44_zero_shot_qwen2_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_counting_seed44_zero_shot_qwen2_vl_20260325_095501.diagnostics.json
+

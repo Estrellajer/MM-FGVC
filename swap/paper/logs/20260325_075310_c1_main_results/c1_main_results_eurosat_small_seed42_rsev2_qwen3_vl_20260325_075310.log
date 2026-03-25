@@ -1,0 +1,230 @@
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<04:06,  3.04it/s]Loading weights:   0%|          | 2/750 [00:00<04:26,  2.81it/s]Loading weights:   1%|▏         | 10/750 [00:00<00:42, 17.26it/s]Loading weights:   2%|▏         | 17/750 [00:00<00:26, 27.93it/s]Loading weights:   4%|▎         | 28/750 [00:01<00:16, 44.11it/s]Loading weights:   5%|▍         | 37/750 [00:01<00:13, 52.18it/s]Loading weights:   7%|▋         | 50/750 [00:01<00:10, 67.23it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:09, 74.21it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:08, 75.62it/s]Loading weights:  11%|█         | 83/750 [00:01<00:08, 82.04it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:07, 84.17it/s]Loading weights:  14%|█▍        | 105/750 [00:01<00:07, 85.52it/s]Loading weights:  15%|█▌        | 114/750 [00:02<00:07, 82.48it/s]Loading weights:  17%|█▋        | 125/750 [00:02<00:07, 86.08it/s]Loading weights:  18%|█▊        | 138/750 [00:02<00:06, 94.20it/s]Loading weights:  20%|█▉        | 149/750 [00:02<00:06, 94.78it/s]Loading weights:  21%|██        | 159/750 [00:02<00:06, 92.29it/s]Loading weights:  23%|██▎       | 171/750 [00:02<00:06, 96.29it/s]Loading weights:  24%|██▍       | 182/750 [00:02<00:05, 97.10it/s]Loading weights:  26%|██▌       | 193/750 [00:02<00:05, 97.32it/s]Loading weights:  27%|██▋       | 203/750 [00:02<00:05, 94.60it/s]Loading weights:  28%|██▊       | 213/750 [00:03<00:05, 92.22it/s]Loading weights:  30%|███       | 226/750 [00:03<00:05, 98.13it/s]Loading weights:  32%|███▏      | 237/750 [00:03<00:05, 98.39it/s]Loading weights:  33%|███▎      | 248/750 [00:03<00:05, 98.06it/s]Loading weights:  35%|███▍      | 259/750 [00:03<00:05, 97.60it/s]Loading weights:  36%|███▌      | 270/750 [00:03<00:04, 96.67it/s]Loading weights:  37%|███▋      | 281/750 [00:03<00:04, 96.49it/s]Loading weights:  39%|███▉      | 292/750 [00:03<00:04, 96.64it/s]Loading weights:  40%|████      | 303/750 [00:03<00:04, 95.86it/s]Loading weights:  42%|████▏     | 314/750 [00:04<00:04, 96.17it/s]Loading weights:  43%|████▎     | 325/750 [00:04<00:04, 96.89it/s]Loading weights:  45%|████▍     | 336/750 [00:04<00:04, 96.92it/s]Loading weights:  46%|████▋     | 347/750 [00:04<00:04, 95.81it/s]Loading weights:  48%|████▊     | 358/750 [00:04<00:04, 95.88it/s]Loading weights:  49%|████▉     | 369/750 [00:04<00:03, 96.45it/s]Loading weights:  51%|█████     | 380/750 [00:04<00:03, 98.48it/s]Loading weights:  52%|█████▏    | 391/750 [00:04<00:03, 99.84it/s]Loading weights:  67%|██████▋   | 501/750 [00:04<00:00, 379.76it/s]Loading weights:  85%|████████▍ | 635/750 [00:05<00:00, 649.95it/s]Loading weights:  98%|█████████▊| 733/750 [00:05<00:00, 725.33it/s]Loading weights: 100%|██████████| 750/750 [00:05<00:00, 143.45it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.86
+  correct: 43.0
+  total: 50.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    matrix:
+    - - 3
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 2
+      - 3
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 4
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+  per_class:
+    Annual Crop Land:
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 5.0
+      predicted: 3.0
+      true_positive: 3.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Forest:
+      precision: 0.6666666666666666
+      recall: 0.8
+      f1: 0.7272727272727272
+      support: 5.0
+      predicted: 6.0
+      true_positive: 4.0
+      false_positive: 2.0
+      false_negative: 1.0
+    Herbaceous Vegetation Land:
+      precision: 0.6
+      recall: 0.6
+      f1: 0.6
+      support: 5.0
+      predicted: 5.0
+      true_positive: 3.0
+      false_positive: 2.0
+      false_negative: 2.0
+    Highway or Road:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Industrial Buildings:
+      precision: 0.7142857142857143
+      recall: 1.0
+      f1: 0.8333333333333333
+      support: 5.0
+      predicted: 7.0
+      true_positive: 5.0
+      false_positive: 2.0
+      false_negative: 0.0
+    Pasture Land:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Permanent Crop Land:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Residential Buildings:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    River:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Sea or Lake:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.8814285714285715
+  macro_recall: 0.86
+  macro_f1: 0.8597474747474747
+  balanced_accuracy: 0.86
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_eurosat_small_seed42_rsev2_qwen3_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_eurosat_small_seed42_rsev2_qwen3_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_eurosat_small_seed42_rsev2_qwen3_vl_20260325_075310.diagnostics.json
+

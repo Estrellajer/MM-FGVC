@@ -1,0 +1,32 @@
+# worker=worker_4
+# CUDA_VISIBLE_DEVICES=3
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=rsev2 evaluator=raw dataset.name=blink_multi-view_reasoning dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_multi_view_reasoning/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_multi_view_reasoning/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_multi_view_reasoning_seed42_rsev2_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:53,  6.39it/s]Loading weights:   0%|          | 2/729 [00:00<02:30,  4.84it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:24, 28.80it/s]Loading weights:   3%|▎         | 23/729 [00:00<00:13, 51.23it/s]Loading weights:   5%|▍         | 33/729 [00:00<00:11, 60.80it/s]Loading weights:   5%|▌         | 40/729 [00:00<00:11, 58.58it/s]Loading weights:   7%|▋         | 54/729 [00:00<00:08, 78.95it/s]Loading weights:   9%|▉         | 68/729 [00:01<00:07, 91.06it/s]Loading weights:  11%|█         | 78/729 [00:01<00:07, 90.82it/s]Loading weights:  12%|█▏        | 88/729 [00:01<00:07, 91.07it/s]Loading weights:  13%|█▎        | 98/729 [00:01<00:06, 92.79it/s]Loading weights:  15%|█▍        | 109/729 [00:01<00:06, 97.37it/s]Loading weights:  16%|█▋        | 119/729 [00:01<00:06, 97.57it/s]Loading weights:  18%|█▊        | 131/729 [00:01<00:05, 99.75it/s]Loading weights:  19%|█▉        | 142/729 [00:01<00:06, 92.17it/s]Loading weights:  21%|██        | 152/729 [00:01<00:06, 94.05it/s]Loading weights:  22%|██▏       | 164/729 [00:02<00:05, 100.03it/s]Loading weights:  24%|██▍       | 176/729 [00:02<00:05, 103.94it/s]Loading weights:  26%|██▌       | 187/729 [00:02<00:05, 94.75it/s] Loading weights:  27%|██▋       | 197/729 [00:02<00:06, 87.25it/s]Loading weights:  29%|██▉       | 214/729 [00:02<00:04, 104.81it/s]Loading weights:  31%|███       | 225/729 [00:02<00:04, 103.73it/s]Loading weights:  32%|███▏      | 236/729 [00:02<00:05, 96.61it/s] Loading weights:  34%|███▎      | 246/729 [00:02<00:05, 92.75it/s]Loading weights:  35%|███▌      | 256/729 [00:03<00:05, 90.35it/s]Loading weights:  36%|███▋      | 266/729 [00:03<00:05, 81.46it/s]Loading weights:  38%|███▊      | 275/729 [00:03<00:05, 80.27it/s]Loading weights:  39%|███▉      | 284/729 [00:03<00:05, 80.24it/s]Loading weights:  46%|████▌     | 332/729 [00:03<00:02, 183.13it/s]Loading weights:  72%|███████▏  | 525/729 [00:03<00:00, 649.09it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 193.88it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=rsev2', 'evaluator=raw', 'dataset.name=blink_multi-view_reasoning', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_multi_view_reasoning/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_42/blink_multi_view_reasoning/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_blink_multi_view_reasoning_seed42_rsev2_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/rsev2.py", line 232, in fit
+    feature_table = self._collect_feature_table(train_data, desc="RSEv2 fit features")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/rse.py", line 322, in _collect_feature_table
+    sample_features = self._extract_multilevel_features(item)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/rse.py", line 282, in _extract_multilevel_features
+    _ = self.model.forward(images, [prompt])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/models/model_base.py", line 444, in forward
+    inputs = self.process_input(*processor_input, **processor_args).to(self.device)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/models/idefics3.py", line 107, in process_input
+    inputs = self.processor(
+             ^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py", line 227, in __call__
+    raise ValueError(
+ValueError: The number of images in the text [4] and images [2] should be the same.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

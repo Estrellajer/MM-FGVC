@@ -1,0 +1,620 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:51,  6.55it/s]Loading weights:   0%|          | 2/730 [00:00<02:08,  5.67it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:15, 47.28it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:10, 64.90it/s]Loading weights:   7%|▋         | 52/730 [00:00<00:06, 104.96it/s]Loading weights:   9%|▉         | 65/730 [00:00<00:06, 107.53it/s]Loading weights:  11%|█         | 78/730 [00:00<00:05, 109.16it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:05, 112.04it/s]Loading weights:  15%|█▍        | 106/730 [00:01<00:05, 123.83it/s]Loading weights:  16%|█▋        | 119/730 [00:01<00:05, 120.06it/s]Loading weights:  19%|█▉        | 137/730 [00:01<00:04, 131.21it/s]Loading weights:  21%|██        | 151/730 [00:01<00:04, 127.67it/s]Loading weights:  23%|██▎       | 168/730 [00:01<00:04, 138.71it/s]Loading weights:  25%|██▌       | 184/730 [00:01<00:03, 137.13it/s]Loading weights:  27%|██▋       | 198/730 [00:01<00:04, 120.74it/s]Loading weights:  30%|██▉       | 216/730 [00:01<00:03, 134.18it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:03, 127.01it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:03, 122.68it/s]Loading weights:  36%|███▌      | 262/730 [00:02<00:03, 129.79it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 133.58it/s]Loading weights:  40%|████      | 294/730 [00:02<00:03, 121.48it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 139.60it/s]Loading weights:  45%|████▌     | 331/730 [00:02<00:03, 126.50it/s]Loading weights:  64%|██████▎   | 465/730 [00:02<00:00, 421.45it/s]Loading weights:  83%|████████▎ | 609/730 [00:03<00:00, 680.86it/s]Loading weights: 100%|█████████▉| 727/730 [00:03<00:00, 806.09it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 228.21it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (A)
+  - (B)
+  - The second image shares the same style as the reference image. Both are characterized
+    by
+  - The second image shares the same style as the reference image. Both images are
+    characterized
+  - The reference image is a painting with a loose, impressionistic style, characterized
+    by
+  - The second image shares the same style as the reference image. Both are impressionistic
+  - The third image shares the same style as the reference image. All three images
+    are
+  - The reference image is a painting with a vibrant and impressionistic style, characterized
+    by
+  - The reference image is a painting of a seascape with a rocky shore, which
+  - The third image shares the same style as the reference image. Both are impressionistic
+  - The reference image is a cartoon-style drawing with bold lines and flat colors,
+    which
+  - The reference image is a painting with a surreal and abstract style, featuring
+    vibrant colors
+  - The third image shares the same style as the reference image. Both are landscape
+    paintings
+  - The third image shares the same style as the reference image. Both are abstract
+    and
+  - The third image shares the same style as the reference image. Both images use
+    a
+  - The third image shares the same style as the reference image. Both are characterized
+    by
+  - The second image shares the same style as the reference image. Both images are
+    portraits
+  - The third image shares the same style as the reference image. Both are paintings
+    that
+  - The third image shares the same style as the reference image. Both are paintings
+    with
+  confusion_matrix:
+    labels:
+    - (A)
+    - (B)
+    - The second image shares the same style as the reference image. Both are characterized
+      by
+    - The second image shares the same style as the reference image. Both images are
+      characterized
+    - The reference image is a painting with a loose, impressionistic style, characterized
+      by
+    - The second image shares the same style as the reference image. Both are impressionistic
+    - The third image shares the same style as the reference image. All three images
+      are
+    - The reference image is a painting with a vibrant and impressionistic style,
+      characterized by
+    - The reference image is a painting of a seascape with a rocky shore, which
+    - The third image shares the same style as the reference image. Both are impressionistic
+    - The reference image is a cartoon-style drawing with bold lines and flat colors,
+      which
+    - The reference image is a painting with a surreal and abstract style, featuring
+      vibrant colors
+    - The third image shares the same style as the reference image. Both are landscape
+      paintings
+    - The third image shares the same style as the reference image. Both are abstract
+      and
+    - The third image shares the same style as the reference image. Both images use
+      a
+    - The third image shares the same style as the reference image. Both are characterized
+      by
+    - The second image shares the same style as the reference image. Both images are
+      portraits
+    - The third image shares the same style as the reference image. Both are paintings
+      that
+    - The third image shares the same style as the reference image. Both are paintings
+      with
+    matrix:
+    - - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 10.0
+    The second image shares the same style as the reference image. Both are characterized by:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The second image shares the same style as the reference image. Both images are characterized:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting with a loose, impressionistic style, characterized by:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The second image shares the same style as the reference image. Both are impressionistic:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. All three images are:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference image is a painting with a vibrant and impressionistic style, characterized by:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting of a seascape with a rocky shore, which:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both are impressionistic:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a cartoon-style drawing with bold lines and flat colors, which:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is a painting with a surreal and abstract style, featuring vibrant colors:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both are landscape paintings:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both are abstract and:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both images use a:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both are characterized by:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The second image shares the same style as the reference image. Both images are portraits:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both are paintings that:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The third image shares the same style as the reference image. Both are paintings with:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_art_style_seed42_zero_shot_qwen2_vl_20260325_075310.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_art_style_seed42_zero_shot_qwen2_vl_20260325_075310.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_075310_c1_main_results/c1_main_results_blink_art_style_seed42_zero_shot_qwen2_vl_20260325_075310.diagnostics.json
+

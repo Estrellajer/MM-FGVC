@@ -1,0 +1,905 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_iq_test dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_iq_test/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_44/blink_iq_test/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_iq_test_seed44_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=44
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:56,  4.24it/s]Loading weights:   0%|          | 2/750 [00:00<03:23,  3.67it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:22, 32.03it/s]Loading weights:   4%|▎         | 27/750 [00:00<00:14, 50.58it/s]Loading weights:   5%|▌         | 39/750 [00:00<00:10, 64.76it/s]Loading weights:   7%|▋         | 56/750 [00:00<00:07, 90.57it/s]Loading weights:   9%|▉         | 67/750 [00:01<00:08, 79.45it/s]Loading weights:  12%|█▏        | 89/750 [00:01<00:05, 110.63it/s]Loading weights:  14%|█▎        | 102/750 [00:01<00:07, 83.59it/s]Loading weights:  17%|█▋        | 127/750 [00:01<00:05, 112.98it/s]Loading weights:  19%|█▉        | 141/750 [00:01<00:05, 118.41it/s]Loading weights:  21%|██        | 155/750 [00:01<00:05, 104.71it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:05, 113.93it/s]Loading weights:  24%|██▍       | 183/750 [00:02<00:05, 111.72it/s]Loading weights:  26%|██▌       | 196/750 [00:02<00:04, 115.95it/s]Loading weights:  28%|██▊       | 209/750 [00:02<00:04, 117.39it/s]Loading weights:  30%|██▉       | 222/750 [00:02<00:04, 118.20it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:05, 101.25it/s]Loading weights:  33%|███▎      | 249/750 [00:02<00:04, 110.67it/s]Loading weights:  35%|███▍      | 261/750 [00:02<00:05, 90.99it/s] Loading weights:  37%|███▋      | 281/750 [00:03<00:04, 113.83it/s]Loading weights:  39%|███▉      | 294/750 [00:03<00:03, 117.72it/s]Loading weights:  41%|████      | 307/750 [00:03<00:03, 117.13it/s]Loading weights:  43%|████▎     | 320/750 [00:03<00:03, 117.63it/s]Loading weights:  44%|████▍     | 333/750 [00:03<00:03, 113.59it/s]Loading weights:  46%|████▌     | 345/750 [00:03<00:03, 103.77it/s]Loading weights:  48%|████▊     | 363/750 [00:03<00:03, 118.02it/s]Loading weights:  50%|█████     | 376/750 [00:03<00:04, 93.37it/s] Loading weights:  65%|██████▍   | 486/750 [00:04<00:00, 315.01it/s]Loading weights:  81%|████████  | 609/750 [00:04<00:00, 533.19it/s]Loading weights:  97%|█████████▋| 726/750 [00:04<00:00, 695.09it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 172.55it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (D)
+  - (A)
+  - (B)
+  - (C)
+  - Looking at the pattern in the images, we can observe that each group of three
+  - Looking at the 3x3 grid of shapes, we need to find the
+  - We are given a 2D net on the left and four 3D
+  - To solve this, we need to identify the pattern in the sequence of triangles.
+  - Looking at the sequence of figures, we need to find the pattern that connects
+    the
+  - To solve this, we need to identify the pattern or rule governing the sequence
+    of
+  - To solve this, we need to identify the pattern or rule that connects the first
+  - Looking at the sequence of four pictures in the top row, I need to find
+  - Looking at the sequence of images, we can observe a pattern in how the black
+  - 'Looking at the top row of images, we have four distinct shapes:
+
+
+    1.'
+  - To solve this, we need to find the pattern in the 3x3
+  - 'The image shows four Chinese characters: 竖 (shù), 友'
+  - 'Looking at the sequence of images:
+
+
+    - The first image shows **four plus signs'
+  - Looking at the sequence of images, I need to find the pattern or rule that
+  - Looking at the sequence of clock-like images, we need to find the pattern.
+  - 'Looking at the sequence of shapes, I need to find the pattern.
+
+
+    The sequence'
+  - 'Looking at the three pictures:
+
+
+    **First picture**: Contains the symbols `>=`,'
+  - Looking at the sequence of five images in the top row, we need to find
+  - Looking at the 3x3 grid, I need to find the pattern that
+  - To solve this problem, we need to identify the pattern or rule that governs
+  confusion_matrix:
+    labels:
+    - (D)
+    - (A)
+    - (B)
+    - (C)
+    - Looking at the pattern in the images, we can observe that each group of three
+    - Looking at the 3x3 grid of shapes, we need to find the
+    - We are given a 2D net on the left and four 3D
+    - To solve this, we need to identify the pattern in the sequence of triangles.
+    - Looking at the sequence of figures, we need to find the pattern that connects
+      the
+    - To solve this, we need to identify the pattern or rule governing the sequence
+      of
+    - To solve this, we need to identify the pattern or rule that connects the first
+    - Looking at the sequence of four pictures in the top row, I need to find
+    - Looking at the sequence of images, we can observe a pattern in how the black
+    - 'Looking at the top row of images, we have four distinct shapes:
+
+
+      1.'
+    - To solve this, we need to find the pattern in the 3x3
+    - 'The image shows four Chinese characters: 竖 (shù), 友'
+    - 'Looking at the sequence of images:
+
+
+      - The first image shows **four plus signs'
+    - Looking at the sequence of images, I need to find the pattern or rule that
+    - Looking at the sequence of clock-like images, we need to find the pattern.
+    - 'Looking at the sequence of shapes, I need to find the pattern.
+
+
+      The sequence'
+    - 'Looking at the three pictures:
+
+
+      **First picture**: Contains the symbols `>=`,'
+    - Looking at the sequence of five images in the top row, we need to find
+    - Looking at the 3x3 grid, I need to find the pattern that
+    - To solve this problem, we need to identify the pattern or rule that governs
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    Looking at the pattern in the images, we can observe that each group of three:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the 3x3 grid of shapes, we need to find the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    We are given a 2D net on the left and four 3D:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern in the sequence of triangles.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of figures, we need to find the pattern that connects the:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern or rule governing the sequence of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to identify the pattern or rule that connects the first:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of four pictures in the top row, I need to find:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of images, we can observe a pattern in how the black:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the top row of images, we have four distinct shapes:
+
+
+      1.'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this, we need to find the pattern in the 3x3:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    'The image shows four Chinese characters: 竖 (shù), 友':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the sequence of images:
+
+
+      - The first image shows **four plus signs'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of images, I need to find the pattern or rule that:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of clock-like images, we need to find the pattern.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the sequence of shapes, I need to find the pattern.
+
+
+      The sequence'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Looking at the three pictures:
+
+
+      **First picture**: Contains the symbols `>=`,'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the sequence of five images in the top row, we need to find:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Looking at the 3x3 grid, I need to find the pattern that:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To solve this problem, we need to identify the pattern or rule that governs:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_iq_test_seed44_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_iq_test_seed44_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_iq_test_seed44_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

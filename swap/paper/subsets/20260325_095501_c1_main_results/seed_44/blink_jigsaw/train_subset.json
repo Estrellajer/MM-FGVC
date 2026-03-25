@@ -1,0 +1,602 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_23_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_23_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_23_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_23_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 22,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_82_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_82_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_82_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_82_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 81,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_101_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_101_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_101_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_101_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 100,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_33_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_33_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_33_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_33_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 32,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_60_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_60_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_60_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_60_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 59,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_77_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_77_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_77_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_77_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 76,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_24_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_24_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_24_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_24_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 23,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_118_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_118_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_118_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_118_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 117,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_86_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_86_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_86_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_86_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 85,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_93_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_93_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_93_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_93_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 92,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_135_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_135_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_135_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_135_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 134,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_128_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_128_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_128_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_128_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 127,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_51_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_51_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_51_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_51_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 50,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_83_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_83_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_83_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_83_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 82,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_145_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_145_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_145_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_145_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 144,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_115_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_115_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_115_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_115_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 114,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_120_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_120_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_120_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_120_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 119,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_27_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_27_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_27_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_27_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 26,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_22_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_22_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_22_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_22_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 21,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_112_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_112_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_112_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_112_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 111,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_74_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_74_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_74_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_74_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 73,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_67_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_67_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_67_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_67_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 66,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_103_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_103_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_103_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_103_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 102,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_11_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_11_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_11_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_11_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 10,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_94_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_94_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_94_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_94_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 93,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_68_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_68_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_68_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_68_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 67,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_107_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_107_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_107_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_107_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 106,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_116_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_116_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_116_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_116_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 115,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_148_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_148_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_148_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_148_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 147,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_123_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_123_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_123_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_123_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 122,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_16_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_16_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_16_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_16_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(B)",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_71_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_71_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_71_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_71_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 70,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_149_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_149_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_149_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_149_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 148,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_119_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_119_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_119_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_119_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 118,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_65_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_65_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_65_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_65_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 64,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_18_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_18_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_18_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_18_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 17,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_130_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_130_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_130_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_130_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 129,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_12_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_12_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_12_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_12_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 11,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_10_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_10_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_10_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_10_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 9,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_31_1.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_31_1.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_31_2.png",
+      "/root/autodl-tmp/FGVC/Data/BLINK/converted_images/Jigsaw/val/val_Jigsaw_31_3.png"
+    ],
+    "question": "<image>\n<image>\n<image>\nWhich image is the missing part in the first image? Select from the following choices. (A) the second image (B) the third image",
+    "label": "(A)",
+    "question_id": 30,
+    "split": null,
+    "extra": {
+      "sub_task": "Jigsaw"
+    }
+  }
+]

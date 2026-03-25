@@ -1,0 +1,84 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_relative_reflectance",
+  "method": "rsev2",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.3333333333333333,
+    "correct": 5.0,
+    "total": 15.0,
+    "label_order": [
+      "(C)",
+      "(B)",
+      "(A)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(C)",
+        "(B)",
+        "(A)"
+      ],
+      "matrix": [
+        [
+          2,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ]
+      ]
+    },
+    "per_class": {
+      "(C)": {
+        "precision": 0.3333333333333333,
+        "recall": 0.4,
+        "f1": 0.3636363636363636,
+        "support": 5.0,
+        "predicted": 6.0,
+        "true_positive": 2.0,
+        "false_positive": 4.0,
+        "false_negative": 3.0
+      },
+      "(B)": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.28571428571428575,
+        "support": 5.0,
+        "predicted": 2.0,
+        "true_positive": 1.0,
+        "false_positive": 1.0,
+        "false_negative": 4.0
+      },
+      "(A)": {
+        "precision": 0.2857142857142857,
+        "recall": 0.4,
+        "f1": 0.3333333333333333,
+        "support": 5.0,
+        "predicted": 7.0,
+        "true_positive": 2.0,
+        "false_positive": 5.0,
+        "false_negative": 3.0
+      }
+    },
+    "macro_precision": 0.373015873015873,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.32756132756132755,
+    "balanced_accuracy": 0.3333333333333333
+  },
+  "timings": {
+    "fit_time_sec": 14.8119265306741,
+    "predict_time_sec": 4.112092480063438,
+    "total_time_sec": 18.92401901073754,
+    "num_eval_samples": 15,
+    "avg_predict_time_sec": 0.2741394986708959
+  }
+}

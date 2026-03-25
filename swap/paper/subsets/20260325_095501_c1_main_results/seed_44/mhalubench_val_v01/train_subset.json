@@ -1,0 +1,442 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000140351.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000140351.jpg"
+    ],
+    "question": "A man is sitting on a green motorcycle",
+    "label": "non-hallucination",
+    "question_id": 39,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000559203.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000559203.jpg"
+    ],
+    "question": "A man in the image wears a suit and tie.",
+    "label": "non-hallucination",
+    "question_id": 30,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8d8ee81252574af1.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8d8ee81252574af1.jpg"
+    ],
+    "question": "The equation on the bottom left column reads 1/x + 1/a = 1/k",
+    "label": "hallucination",
+    "question_id": 13,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7b7fa5377c5cefcb.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/7b7fa5377c5cefcb.jpg"
+    ],
+    "question": "The man's shirt has the number 9",
+    "label": "hallucination",
+    "question_id": 6,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000384953.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000384953.jpg"
+    ],
+    "question": "The image features a dining table with soup and bread bowls.",
+    "label": "non-hallucination",
+    "question_id": 23,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000560489.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000560489.jpg"
+    ],
+    "question": "The sink is black",
+    "label": "non-hallucination",
+    "question_id": 27,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/332fd038817dea5e.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/332fd038817dea5e.jpg"
+    ],
+    "question": "The website is www.tapoutcardsharpproject.com",
+    "label": "hallucination",
+    "question_id": 17,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0c282a820698d0eb.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0c282a820698d0eb.jpg"
+    ],
+    "question": "Graffiti says \"don't\" above the word \"stop\" on the stop sign",
+    "label": "hallucination",
+    "question_id": 15,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/00516bf08cf0cdeb.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/00516bf08cf0cdeb.jpg"
+    ],
+    "question": "A \"50\" meter is posted on the white sign",
+    "label": "hallucination",
+    "question_id": 8,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000245982.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000245982.jpg"
+    ],
+    "question": "A man and a woman are sitting together at a dining table",
+    "label": "non-hallucination",
+    "question_id": 38,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8bad9cae8c5bc6c0.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8bad9cae8c5bc6c0.jpg"
+    ],
+    "question": "A bottle of beer has a blue label",
+    "label": "hallucination",
+    "question_id": 2,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000482561.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000482561.jpg"
+    ],
+    "question": "A white cat is sitting on a car",
+    "label": "non-hallucination",
+    "question_id": 21,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0e5bccf18d10a34d.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0e5bccf18d10a34d.jpg"
+    ],
+    "question": "The orange sign displays \"Grand Nancy\"",
+    "label": "hallucination",
+    "question_id": 4,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000191972.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000191972.jpg"
+    ],
+    "question": "The garden has a serene atmosphere",
+    "label": "non-hallucination",
+    "question_id": 25,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/35bfd69b99bc15d0.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/35bfd69b99bc15d0.jpg"
+    ],
+    "question": "The game is being played at a stadium",
+    "label": "non-hallucination",
+    "question_id": 31,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000562766.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000562766.jpg"
+    ],
+    "question": "The table has two pizzas, one on each side",
+    "label": "non-hallucination",
+    "question_id": 35,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8b48fa25535349f2.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/8b48fa25535349f2.jpg"
+    ],
+    "question": "The drink was made in 1997",
+    "label": "hallucination",
+    "question_id": 10,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000101155.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000101155.jpg"
+    ],
+    "question": "The picture contains two children",
+    "label": "hallucination",
+    "question_id": 19,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000424337.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000424337.jpg"
+    ],
+    "question": "The kitchen has white appliances and cabinets",
+    "label": "non-hallucination",
+    "question_id": 28,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000139042.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000139042.jpg"
+    ],
+    "question": "The image shows a tennis match with a woman and a man playing",
+    "label": "hallucination",
+    "question_id": 12,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000430848.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000430848.jpg"
+    ],
+    "question": "The image features a vase filled with a colorful bouquet of flowers",
+    "label": "non-hallucination",
+    "question_id": 20,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0b7fce3bf0471d14.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0b7fce3bf0471d14.jpg"
+    ],
+    "question": "The title of the building is \"The Artwork Force\"",
+    "label": "hallucination",
+    "question_id": 9,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000463695.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000463695.jpg"
+    ],
+    "question": "A person is holding a half-eaten pink frosted doughnut",
+    "label": "non-hallucination",
+    "question_id": 22,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000526874.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000526874.jpg"
+    ],
+    "question": "The mail truck is parked in the RED BUS ONLY lane",
+    "label": "hallucination",
+    "question_id": 16,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000401370.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000401370.jpg"
+    ],
+    "question": "The person in the image is skiing down a snow-covered slope",
+    "label": "non-hallucination",
+    "question_id": 37,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0cd36bb7e765b1b9.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0cd36bb7e765b1b9.jpg"
+    ],
+    "question": "The number 22 is at the top of the clock.",
+    "label": "hallucination",
+    "question_id": 5,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000111361.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000111361.jpg"
+    ],
+    "question": "The image features a fruit stand with various fruits",
+    "label": "non-hallucination",
+    "question_id": 29,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000004404.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000004404.jpg"
+    ],
+    "question": "A woman with a colorful umbrella walks past a red bus",
+    "label": "hallucination",
+    "question_id": 0,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000431139.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000431139.jpg"
+    ],
+    "question": "The train is red and gray",
+    "label": "non-hallucination",
+    "question_id": 32,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/024d939917989017.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/024d939917989017.jpg"
+    ],
+    "question": "The team listed on the white jersey is the \"Dakota\" team",
+    "label": "hallucination",
+    "question_id": 3,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000116402.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000116402.jpg"
+    ],
+    "question": "The family in the image is playing a video game together",
+    "label": "non-hallucination",
+    "question_id": 36,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/5556c8e82e4c9fed.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/5556c8e82e4c9fed.jpg"
+    ],
+    "question": "The sign mentions \"Embassy\"",
+    "label": "hallucination",
+    "question_id": 1,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c3be73e14deefd3a.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/c3be73e14deefd3a.jpg"
+    ],
+    "question": "The envelope says \"Official\" across the top",
+    "label": "hallucination",
+    "question_id": 18,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000546412.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000546412.jpg"
+    ],
+    "question": "The man is holding an American flag and binoculars while skiing",
+    "label": "hallucination",
+    "question_id": 14,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000070408.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000070408.jpg"
+    ],
+    "question": "The image depicts a city street with a no-entry zone sign.",
+    "label": "non-hallucination",
+    "question_id": 24,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ea94ac095d29543f.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/ea94ac095d29543f.jpg"
+    ],
+    "question": "The white team's numbers are 21 and 22",
+    "label": "hallucination",
+    "question_id": 11,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/70cdf6bb108c760a.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/70cdf6bb108c760a.jpg"
+    ],
+    "question": "The piece was made in 2006",
+    "label": "hallucination",
+    "question_id": 7,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0dc18f22238af6e5.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/0dc18f22238af6e5.jpg"
+    ],
+    "question": "The red bin is large",
+    "label": "non-hallucination",
+    "question_id": 34,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000002755.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000002755.jpg"
+    ],
+    "question": "The image shows young children playing baseball",
+    "label": "non-hallucination",
+    "question_id": 33,
+    "split": null,
+    "extra": {}
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000279909.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/MHaluBench/data/image-to-text/COCO_train2014_000000279909.jpg"
+    ],
+    "question": "The vase has a unique design",
+    "label": "non-hallucination",
+    "question_id": 26,
+    "split": null,
+    "extra": {}
+  }
+]

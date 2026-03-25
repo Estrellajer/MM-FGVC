@@ -1,0 +1,771 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_visual_similarity dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_visual_similarity/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/blink_visual_similarity/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_blink_visual_similarity_seed43_zero_shot_qwen3_vl_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:21,  5.29it/s]Loading weights:   0%|          | 2/750 [00:00<02:35,  4.81it/s]Loading weights:   2%|▏         | 12/750 [00:00<00:22, 32.16it/s]Loading weights:   3%|▎         | 24/750 [00:00<00:14, 51.83it/s]Loading weights:   6%|▌         | 46/750 [00:00<00:07, 97.30it/s]Loading weights:   8%|▊         | 59/750 [00:00<00:06, 99.28it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:07, 94.17it/s]Loading weights:  11%|█         | 82/750 [00:01<00:07, 91.92it/s]Loading weights:  13%|█▎        | 94/750 [00:01<00:06, 96.38it/s]Loading weights:  15%|█▍        | 112/750 [00:01<00:05, 113.92it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:04, 138.06it/s]Loading weights:  20%|█▉        | 148/750 [00:01<00:04, 129.56it/s]Loading weights:  22%|██▏       | 162/750 [00:01<00:04, 129.32it/s]Loading weights:  24%|██▎       | 177/750 [00:01<00:04, 133.01it/s]Loading weights:  25%|██▌       | 191/750 [00:01<00:04, 120.18it/s]Loading weights:  27%|██▋       | 204/750 [00:02<00:04, 112.85it/s]Loading weights:  29%|██▉       | 221/750 [00:02<00:04, 126.24it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:04, 122.02it/s]Loading weights:  33%|███▎      | 248/750 [00:02<00:04, 115.71it/s]Loading weights:  35%|███▍      | 260/750 [00:02<00:04, 116.54it/s]Loading weights:  37%|███▋      | 279/750 [00:02<00:03, 131.98it/s]Loading weights:  39%|███▉      | 293/750 [00:02<00:03, 129.77it/s]Loading weights:  42%|████▏     | 312/750 [00:02<00:03, 139.23it/s]Loading weights:  43%|████▎     | 326/750 [00:03<00:03, 128.22it/s]Loading weights:  46%|████▌     | 345/750 [00:03<00:02, 138.89it/s]Loading weights:  48%|████▊     | 360/750 [00:03<00:02, 130.16it/s]Loading weights:  50%|█████     | 377/750 [00:03<00:02, 133.89it/s]Loading weights:  52%|█████▏    | 391/750 [00:03<00:02, 122.22it/s]Loading weights:  71%|███████   | 532/750 [00:03<00:00, 444.78it/s]Loading weights:  97%|█████████▋| 724/750 [00:03<00:00, 814.77it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 196.21it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (A)
+  - (B)
+  - 'The reference image shows a wok with a distinctive design: it has a metallic'
+  - The reference image is the first one, which shows a large, intact Gothic-style
+  - The reference image shows a collection of golden-brown, crispy-looking onion rings
+    scattered
+  - The reference image is the first one, which shows a close-up of a fly
+  - The reference image shows a classic red barn with a silver metal roof, situated
+    in
+  - The reference image is the first one, which shows the exterior of a large,
+  - The reference image shows a modern building with a distinctive, non-uniform grid
+    of
+  - The reference image shows a modern white convertible sports car, likely a Mercedes-Benz
+    S
+  - The reference image shows a close-up of fried rice in a white bowl, garn
+  - The reference image shows a single, whole green pear resting on a wooden surface
+    against
+  - The reference image shows a tennis court with a distinct blue playing surface
+    and a green
+  - The reference image shows a light brown (apricot or golden) poodle
+  - The reference image shows a single, reddish-brown poodle with a fluffy
+  - The reference image shows a bright blue bucket with a white metal handle and a
+    brown
+  - The reference image is the first one. It features a light blue bowl of orange
+  - The reference image shows a cluster of tulip buds that are predominantly pink
+    with striking
+  - The reference image displays a fabric with a pattern of fine, vertical, parallel
+    lines
+  - The reference image shows a snake with a distinct pattern of blue, green, and
+  - The reference image shows a single, solid green rectangular eraser on a brown,
+  - 'The reference image shows a Yorkshire Terrier with a distinctive coat pattern:
+    black and'
+  confusion_matrix:
+    labels:
+    - (A)
+    - (B)
+    - 'The reference image shows a wok with a distinctive design: it has a metallic'
+    - The reference image is the first one, which shows a large, intact Gothic-style
+    - The reference image shows a collection of golden-brown, crispy-looking onion
+      rings scattered
+    - The reference image is the first one, which shows a close-up of a fly
+    - The reference image shows a classic red barn with a silver metal roof, situated
+      in
+    - The reference image is the first one, which shows the exterior of a large,
+    - The reference image shows a modern building with a distinctive, non-uniform
+      grid of
+    - The reference image shows a modern white convertible sports car, likely a Mercedes-Benz
+      S
+    - The reference image shows a close-up of fried rice in a white bowl, garn
+    - The reference image shows a single, whole green pear resting on a wooden surface
+      against
+    - The reference image shows a tennis court with a distinct blue playing surface
+      and a green
+    - The reference image shows a light brown (apricot or golden) poodle
+    - The reference image shows a single, reddish-brown poodle with a fluffy
+    - The reference image shows a bright blue bucket with a white metal handle and
+      a brown
+    - The reference image is the first one. It features a light blue bowl of orange
+    - The reference image shows a cluster of tulip buds that are predominantly pink
+      with striking
+    - The reference image displays a fabric with a pattern of fine, vertical, parallel
+      lines
+    - The reference image shows a snake with a distinct pattern of blue, green, and
+    - The reference image shows a single, solid green rectangular eraser on a brown,
+    - 'The reference image shows a Yorkshire Terrier with a distinctive coat pattern:
+      black and'
+    matrix:
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 10.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 10.0
+    'The reference image shows a wok with a distinctive design: it has a metallic':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is the first one, which shows a large, intact Gothic-style:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a collection of golden-brown, crispy-looking onion rings scattered:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is the first one, which shows a close-up of a fly:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a classic red barn with a silver metal roof, situated in:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is the first one, which shows the exterior of a large,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a modern building with a distinctive, non-uniform grid of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a modern white convertible sports car, likely a Mercedes-Benz S:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a close-up of fried rice in a white bowl, garn:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a single, whole green pear resting on a wooden surface against:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a tennis court with a distinct blue playing surface and a green:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a light brown (apricot or golden) poodle:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a single, reddish-brown poodle with a fluffy:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a bright blue bucket with a white metal handle and a brown:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image is the first one. It features a light blue bowl of orange:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a cluster of tulip buds that are predominantly pink with striking:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image displays a fabric with a pattern of fine, vertical, parallel lines:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a snake with a distinct pattern of blue, green, and:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference image shows a single, solid green rectangular eraser on a brown,:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    'The reference image shows a Yorkshire Terrier with a distinctive coat pattern: black and':
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_visual_similarity_seed43_zero_shot_qwen3_vl_20260325_095501.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_visual_similarity_seed43_zero_shot_qwen3_vl_20260325_095501.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results/c1_main_results_blink_visual_similarity_seed43_zero_shot_qwen3_vl_20260325_095501.diagnostics.json
+

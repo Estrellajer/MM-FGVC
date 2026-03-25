@@ -1,0 +1,65 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_art_style",
+  "method": "rsev2",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.7,
+    "correct": 14.0,
+    "total": 20.0,
+    "label_order": [
+      "(A)",
+      "(B)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(B)"
+      ],
+      "matrix": [
+        [
+          5,
+          5
+        ],
+        [
+          1,
+          9
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "f1": 0.625,
+        "support": 10.0,
+        "predicted": 6.0,
+        "true_positive": 5.0,
+        "false_positive": 1.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.6428571428571429,
+        "recall": 0.9,
+        "f1": 0.75,
+        "support": 10.0,
+        "predicted": 14.0,
+        "true_positive": 9.0,
+        "false_positive": 5.0,
+        "false_negative": 1.0
+      }
+    },
+    "macro_precision": 0.7380952380952381,
+    "macro_recall": 0.7,
+    "macro_f1": 0.6875,
+    "balanced_accuracy": 0.7
+  },
+  "timings": {
+    "fit_time_sec": 36.71675746701658,
+    "predict_time_sec": 27.3160095307976,
+    "total_time_sec": 64.03276699781418,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 1.3658004765398801
+  }
+}

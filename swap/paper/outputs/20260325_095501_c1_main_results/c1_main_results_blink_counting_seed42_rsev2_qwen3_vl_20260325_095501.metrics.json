@@ -1,0 +1,105 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "blink_counting",
+  "method": "rsev2",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.65,
+    "correct": 13.0,
+    "total": 20.0,
+    "label_order": [
+      "(D)",
+      "(B)",
+      "(A)",
+      "(C)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(D)",
+        "(B)",
+        "(A)",
+        "(C)"
+      ],
+      "matrix": [
+        [
+          4,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          3
+        ]
+      ]
+    },
+    "per_class": {
+      "(D)": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "support": 5.0,
+        "predicted": 4.0,
+        "true_positive": 4.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "(B)": {
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444445,
+        "support": 5.0,
+        "predicted": 4.0,
+        "true_positive": 2.0,
+        "false_positive": 2.0,
+        "false_negative": 3.0
+      },
+      "(A)": {
+        "precision": 0.6666666666666666,
+        "recall": 0.8,
+        "f1": 0.7272727272727272,
+        "support": 5.0,
+        "predicted": 6.0,
+        "true_positive": 4.0,
+        "false_positive": 2.0,
+        "false_negative": 1.0
+      },
+      "(C)": {
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1": 0.5454545454545454,
+        "support": 5.0,
+        "predicted": 6.0,
+        "true_positive": 3.0,
+        "false_positive": 3.0,
+        "false_negative": 2.0
+      }
+    },
+    "macro_precision": 0.6666666666666666,
+    "macro_recall": 0.65,
+    "macro_f1": 0.6515151515151515,
+    "balanced_accuracy": 0.65
+  },
+  "timings": {
+    "fit_time_sec": 8.682190598919988,
+    "predict_time_sec": 3.821589754894376,
+    "total_time_sec": 12.503780353814363,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.19107948774471878
+  }
+}

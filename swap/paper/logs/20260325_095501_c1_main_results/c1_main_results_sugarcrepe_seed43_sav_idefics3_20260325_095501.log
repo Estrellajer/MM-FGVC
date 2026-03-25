@@ -1,0 +1,27 @@
+# worker=worker_3
+# CUDA_VISIBLE_DEVICES=2
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=sav evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results run.run_name=c1_main_results_sugarcrepe_seed43_sav_idefics3_20260325_095501 run.progress_bar=false run.save_predictions=false run.seed=43 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:37,  4.63it/s]Loading weights:   0%|          | 3/729 [00:00<02:22,  5.09it/s]Loading weights:   2%|▏         | 16/729 [00:00<00:23, 29.76it/s]Loading weights:   3%|▎         | 25/729 [00:00<00:16, 41.59it/s]Loading weights:   5%|▍         | 34/729 [00:00<00:13, 51.06it/s]Loading weights:   6%|▌         | 43/729 [00:01<00:11, 57.86it/s]Loading weights:   7%|▋         | 50/729 [00:01<00:11, 58.39it/s]Loading weights:   8%|▊         | 61/729 [00:01<00:09, 67.45it/s]Loading weights:  10%|▉         | 70/729 [00:01<00:09, 72.14it/s]Loading weights:  11%|█         | 78/729 [00:01<00:11, 58.97it/s]Loading weights:  13%|█▎        | 95/729 [00:01<00:10, 62.69it/s]Loading weights:  16%|█▌        | 115/729 [00:01<00:07, 86.24it/s]Loading weights:  17%|█▋        | 125/729 [00:02<00:06, 86.85it/s]Loading weights:  19%|█▊        | 135/729 [00:02<00:07, 82.80it/s]Loading weights:  20%|█▉        | 144/729 [00:02<00:07, 81.69it/s]Loading weights:  21%|██        | 154/729 [00:02<00:06, 84.92it/s]Loading weights:  22%|██▏       | 163/729 [00:02<00:06, 81.64it/s]Loading weights:  24%|██▎       | 172/729 [00:02<00:07, 77.40it/s]Loading weights:  25%|██▍       | 180/729 [00:02<00:09, 58.85it/s]Loading weights:  27%|██▋       | 196/729 [00:03<00:06, 78.08it/s]Loading weights:  28%|██▊       | 205/729 [00:03<00:06, 75.73it/s]Loading weights:  29%|██▉       | 214/729 [00:03<00:06, 78.82it/s]Loading weights:  31%|███       | 223/729 [00:03<00:06, 79.05it/s]Loading weights:  32%|███▏      | 232/729 [00:03<00:06, 77.61it/s]Loading weights:  33%|███▎      | 241/729 [00:03<00:06, 80.39it/s]Loading weights:  34%|███▍      | 250/729 [00:03<00:05, 80.10it/s]Loading weights:  36%|███▌      | 259/729 [00:03<00:05, 80.09it/s]Loading weights:  37%|███▋      | 268/729 [00:04<00:07, 63.51it/s]Loading weights:  39%|███▉      | 286/729 [00:04<00:05, 87.89it/s]Loading weights:  59%|█████▉    | 429/729 [00:04<00:00, 412.50it/s]Loading weights:  85%|████████▌ | 622/729 [00:04<00:00, 796.99it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 164.50it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=sav', 'evaluator=pair', 'dataset.name=sugarcrepe', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/train_subset.jsonl', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260325_095501_c1_main_results/seed_43/sugarcrepe/val_subset.jsonl', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260325_095501_c1_main_results', 'run.run_name=c1_main_results_sugarcrepe_seed43_sav_idefics3_20260325_095501', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=43', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 325, in fit
+    all_class_acts, str_to_int, int_to_str = self._compute_class_activations(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 159, in _compute_class_activations
+    head_act = self._extract_selected_head_activations(item, selected_heads)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 142, in _extract_selected_head_activations
+    all_head_acts = self._extract_all_head_activations(sample)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 135, in _extract_all_head_activations
+    return torch.stack(layer_acts, dim=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [32, 36] at entry 0 and [32, 128] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

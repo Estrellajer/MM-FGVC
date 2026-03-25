@@ -1,0 +1,273 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_iq_test",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.1,
+    "correct": 2.0,
+    "total": 20.0,
+    "label_order": [
+      "(D)",
+      "(A)",
+      "(B)",
+      "(C)",
+      "The pattern in the top row is that each shape is rotated 90 degrees",
+      "To determine which picture follows the same pattern or rule established by the previous pictures,",
+      "The pattern in the first row is that each letter is shifted one place to the",
+      "Let's analyze the pattern in the given pictures:\n\n- Picture A: �",
+      "Answer:B",
+      "The pattern in the top row is that the hour hand moves clockwise by 1"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(D)",
+        "(A)",
+        "(B)",
+        "(C)",
+        "The pattern in the top row is that each shape is rotated 90 degrees",
+        "To determine which picture follows the same pattern or rule established by the previous pictures,",
+        "The pattern in the first row is that each letter is shifted one place to the",
+        "Let's analyze the pattern in the given pictures:\n\n- Picture A: �",
+        "Answer:B",
+        "The pattern in the top row is that the hour hand moves clockwise by 1"
+      ],
+      "matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(D)": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285715,
+        "support": 5.0,
+        "predicted": 2.0,
+        "true_positive": 2.0,
+        "false_positive": 0.0,
+        "false_negative": 3.0
+      },
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 4.0,
+        "true_positive": 0.0,
+        "false_positive": 4.0,
+        "false_negative": 5.0
+      },
+      "(C)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 5.0
+      },
+      "The pattern in the top row is that each shape is rotated 90 degrees": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      },
+      "To determine which picture follows the same pattern or rule established by the previous pictures,": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 5.0,
+        "true_positive": 0.0,
+        "false_positive": 5.0,
+        "false_negative": 0.0
+      },
+      "The pattern in the first row is that each letter is shifted one place to the": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the pattern in the given pictures:\n\n- Picture A: �": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Answer:B": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 3.0,
+        "true_positive": 0.0,
+        "false_positive": 3.0,
+        "false_negative": 0.0
+      },
+      "The pattern in the top row is that the hour hand moves clockwise by 1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.1,
+    "macro_recall": 0.04,
+    "macro_f1": 0.05714285714285715,
+    "balanced_accuracy": 0.04
+  },
+  "timings": {
+    "fit_time_sec": 1.2492761015892029e-05,
+    "predict_time_sec": 4.837512705475092,
+    "total_time_sec": 4.837525198236108,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.2418756352737546
+  }
+}
