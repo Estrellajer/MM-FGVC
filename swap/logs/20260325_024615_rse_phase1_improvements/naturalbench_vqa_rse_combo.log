@@ -1,0 +1,82 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:44,  7.00it/s]Loading weights:   0%|          | 2/730 [00:00<02:04,  5.83it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 47.65it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:10, 69.91it/s]Loading weights:   5%|▌         | 38/730 [00:00<00:09, 72.14it/s]Loading weights:   7%|▋         | 53/730 [00:00<00:07, 87.65it/s]Loading weights:  11%|█         | 77/730 [00:00<00:05, 129.47it/s]Loading weights:  13%|█▎        | 92/730 [00:01<00:05, 126.11it/s]Loading weights:  15%|█▍        | 108/730 [00:01<00:04, 134.91it/s]Loading weights:  17%|█▋        | 124/730 [00:01<00:04, 134.99it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:04, 124.74it/s]Loading weights:  21%|██        | 151/730 [00:01<00:05, 106.28it/s]Loading weights:  23%|██▎       | 170/730 [00:01<00:04, 114.16it/s]Loading weights:  27%|██▋       | 197/730 [00:01<00:03, 150.64it/s]Loading weights:  30%|██▉       | 217/730 [00:01<00:03, 163.03it/s]Loading weights:  32%|███▏      | 235/730 [00:02<00:03, 143.70it/s]Loading weights:  35%|███▌      | 256/730 [00:02<00:03, 156.63it/s]Loading weights:  37%|███▋      | 273/730 [00:02<00:03, 146.97it/s]Loading weights:  40%|███▉      | 289/730 [00:02<00:03, 129.38it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 156.74it/s]Loading weights:  46%|████▌     | 333/730 [00:02<00:02, 144.01it/s]Loading weights:  64%|██████▍   | 467/730 [00:02<00:00, 430.30it/s]Loading weights:  85%|████████▍ | 619/730 [00:02<00:00, 706.57it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 241.14it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.75
+  correct: 30.0
+  total: 40.0
+  label_order:
+  - A
+  - B
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - A
+    - B
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 4
+      - 2
+      - 0
+      - 0
+    - - 0
+      - 6
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 11
+      - 3
+    - - 0
+      - 0
+      - 5
+      - 9
+  per_class:
+    A:
+      precision: 1.0
+      recall: 0.6666666666666666
+      f1: 0.8
+      support: 6.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 2.0
+    B:
+      precision: 0.75
+      recall: 1.0
+      f1: 0.8571428571428571
+      support: 6.0
+      predicted: 8.0
+      true_positive: 6.0
+      false_positive: 2.0
+      false_negative: 0.0
+    'Yes':
+      precision: 0.6875
+      recall: 0.7857142857142857
+      f1: 0.7333333333333334
+      support: 14.0
+      predicted: 16.0
+      true_positive: 11.0
+      false_positive: 5.0
+      false_negative: 3.0
+    'No':
+      precision: 0.75
+      recall: 0.6428571428571429
+      f1: 0.6923076923076924
+      support: 14.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 5.0
+  macro_precision: 0.796875
+  macro_recall: 0.7738095238095238
+  macro_f1: 0.7706959706959707
+  balanced_accuracy: 0.7738095238095238
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260325_024615_rse_phase1_improvements/naturalbench_vqa_rse_combo_qwen2_vl_20260325_024615.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260325_024615_rse_phase1_improvements/naturalbench_vqa_rse_combo_qwen2_vl_20260325_024615.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/outputs/20260325_024615_rse_phase1_improvements/naturalbench_vqa_rse_combo_qwen2_vl_20260325_024615.diagnostics.json
+

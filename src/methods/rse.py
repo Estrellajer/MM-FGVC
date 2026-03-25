@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import math
 import re
 from typing import Dict, List, Sequence, Tuple
 
@@ -31,7 +32,15 @@ class RSEMethod(MethodBase):
         top_k: int = 8,
         representation_levels: Sequence[str] = ("head", "layer", "attn", "mlp"),
         normalize_features: bool = True,
+        selection_metric: str = "fdr",
+        selection_strategy: str = "topk",
+        ensemble_weighting: str = "metric",
+        score_normalization: str = "none",
+        routing_mode: str = "none",
+        greedy_pool_size: int = 24,
         fallback_margin_threshold: float = -1.0,
+        fallback_margin_quantile: float = -1.0,
+        fallback_margin_source: str = "best_component",
         fallback_max_new_tokens: int = 16,
         fallback_do_sample: bool = False,
         fallback_temperature: float = 0.0,
@@ -41,22 +50,53 @@ class RSEMethod(MethodBase):
         self.top_k = int(top_k)
         self.representation_levels = self._normalize_levels(representation_levels)
         self.normalize_features = bool(normalize_features)
+        self.selection_metric = str(selection_metric).strip().lower()
+        self.selection_strategy = str(selection_strategy).strip().lower()
+        self.ensemble_weighting = str(ensemble_weighting).strip().lower()
+        self.score_normalization = str(score_normalization).strip().lower()
+        self.routing_mode = str(routing_mode).strip().lower()
+        self.greedy_pool_size = int(greedy_pool_size)
         self.fallback_margin_threshold = float(fallback_margin_threshold)
+        self.fallback_margin_quantile = float(fallback_margin_quantile)
+        self.fallback_margin_source = str(fallback_margin_source).strip().lower()
         self.progress_bar = bool(progress_bar)
 
         if self.top_k <= 0:
             raise ValueError("RSE top_k must be positive")
+        if self.selection_metric not in {"fdr", "loo_accuracy"}:
+            raise ValueError("RSE selection_metric must be 'fdr' or 'loo_accuracy'")
+        if self.selection_strategy not in {"topk", "greedy_forward"}:
+            raise ValueError("RSE selection_strategy must be 'topk' or 'greedy_forward'")
+        if self.ensemble_weighting not in {"metric", "uniform"}:
+            raise ValueError("RSE ensemble_weighting must be 'metric' or 'uniform'")
+        if self.score_normalization not in {"none", "zscore"}:
+            raise ValueError("RSE score_normalization must be 'none' or 'zscore'")
+        if self.routing_mode not in {"none", "top1", "top2"}:
+            raise ValueError("RSE routing_mode must be one of: none, top1, top2")
+        if self.greedy_pool_size <= 0:
+            raise ValueError("RSE greedy_pool_size must be positive")
+        if self.fallback_margin_source not in {"best_component", "ensemble"}:
+            raise ValueError("RSE fallback_margin_source must be 'best_component' or 'ensemble'")
+        if self.fallback_margin_quantile > 1.0:
+            raise ValueError("RSE fallback_margin_quantile must be <= 1.0")
 
         self.layer_specs = self._infer_layer_specs()
         self.num_layers = len(self.layer_specs)
         self.n_heads = self._infer_num_heads()
+        self.route_k = {"none": 0, "top1": 1, "top2": 2}[self.routing_mode]
 
         self.class_labels: List[str] = []
         self.label_to_index: Dict[str, int] = {}
         self.centroids: Dict[str, torch.Tensor] = {}
         self.fdr_scores: Dict[str, torch.Tensor] = {}
+        self.loo_accuracy_scores: Dict[str, torch.Tensor] = {}
+        self.train_component_loo_scores: Dict[Tuple[str, int], torch.Tensor] = {}
+        self.metric_scores: Dict[Tuple[str, int], float] = {}
         self.selected_components: List[Tuple[str, int]] = []
         self.selected_component_weights: Dict[Tuple[str, int], float] = {}
+        self.selection_train_accuracy: float | None = None
+        self.resolved_fallback_threshold: float | None = None
+        self._train_label_indices: torch.Tensor | None = None
         self._component_eval_stats: Dict[Tuple[str, int], Dict[str, float]] = {}
         self._final_correct = 0
         self._final_total = 0
@@ -65,7 +105,7 @@ class RSEMethod(MethodBase):
         self._fitted = False
 
         self.zero_shot_fallback = None
-        if self.fallback_margin_threshold >= 0.0:
+        if self.fallback_margin_threshold >= 0.0 or self.fallback_margin_quantile >= 0.0:
             self.zero_shot_fallback = ZeroShotMethod(
                 model=model,
                 dataset_name=dataset_name,
@@ -160,6 +200,12 @@ class RSEMethod(MethodBase):
             raise RuntimeError(f"Expected hidden states with ndim >= 3, got {type(hidden_like).__name__}")
         return hidden[0, -1, :].detach().to(dtype=torch.float32).cpu()
 
+    @staticmethod
+    def _ensure_list(handles):
+        if isinstance(handles, list):
+            return handles
+        return [handles]
+
     def _extract_multilevel_features(self, sample: Dict) -> Dict[str, torch.Tensor]:
         images = self._load_images(sample)
         prompt = build_prompt(self.dataset_name, sample)
@@ -236,12 +282,6 @@ class RSEMethod(MethodBase):
             "layer": torch.stack(layer_features, dim=0),
         }
 
-    @staticmethod
-    def _ensure_list(handles):
-        if isinstance(handles, list):
-            return handles
-        return [handles]
-
     def _collect_feature_table(self, data: Sequence[Dict], desc: str) -> Dict[str, torch.Tensor]:
         per_level_rows = {level: [] for level in self.representation_levels}
         for item in self._iter_with_progress(data, desc=desc):
@@ -309,27 +349,219 @@ class RSEMethod(MethodBase):
             centroids[level] = torch.stack(level_centroids, dim=0)
         return centroids
 
-    def _select_components(self) -> None:
-        all_components: List[Tuple[float, str, int]] = []
-        for level, scores in self.fdr_scores.items():
-            for layer_idx, score in enumerate(scores.tolist()):
-                all_components.append((float(score), level, layer_idx))
+    def _compute_loo_stats(
+        self,
+        feature_table: Dict[str, torch.Tensor],
+        label_indices: torch.Tensor,
+    ) -> tuple[Dict[str, torch.Tensor], Dict[Tuple[str, int], torch.Tensor]]:
+        num_classes = len(self.class_labels)
+        loo_accuracy_scores: Dict[str, torch.Tensor] = {}
+        component_scores: Dict[Tuple[str, int], torch.Tensor] = {}
 
-        all_components.sort(key=lambda item: (-item[0], item[1], item[2]))
-        chosen = all_components[: min(self.top_k, len(all_components))]
-        self.selected_components = [(level, layer_idx) for _, level, layer_idx in chosen]
+        class_counts = torch.bincount(label_indices, minlength=num_classes).to(dtype=torch.float32)
+        label_indices_long = label_indices.to(dtype=torch.long)
 
-        raw_weights = torch.tensor([max(score, 0.0) for score, _, _ in chosen], dtype=torch.float32)
-        if raw_weights.numel() == 0:
-            self.selected_component_weights = {}
-            return
-        if float(raw_weights.sum().item()) <= 0.0:
-            raw_weights = torch.ones_like(raw_weights)
-        norm_weights = raw_weights / raw_weights.sum()
-        self.selected_component_weights = {
+        for level, table in feature_table.items():
+            level_scores = []
+            for layer_idx in range(table.shape[1]):
+                features = table[:, layer_idx, :].to(dtype=torch.float32)
+                query_features = F.normalize(features, dim=-1) if self.normalize_features else features
+
+                class_sums = torch.zeros(num_classes, features.shape[-1], dtype=torch.float32)
+                class_sums.index_add_(0, label_indices_long, features)
+                class_means = class_sums / class_counts.unsqueeze(-1).clamp_min(1.0)
+                class_means = F.normalize(class_means, dim=-1) if self.normalize_features else class_means
+
+                scores = query_features @ class_means.transpose(0, 1)
+                scores = scores.to(dtype=torch.float32)
+
+                for class_idx in range(num_classes):
+                    sample_mask = label_indices_long == class_idx
+                    if not bool(sample_mask.any()):
+                        continue
+                    class_count = int(sample_mask.sum().item())
+                    sample_indices = sample_mask.nonzero(as_tuple=False).squeeze(-1)
+                    if class_count <= 1:
+                        scores[sample_indices, class_idx] = -1e9
+                        continue
+
+                    class_features = features[sample_indices]
+                    loo_centroids = (class_sums[class_idx].unsqueeze(0) - class_features) / float(class_count - 1)
+                    loo_centroids = F.normalize(loo_centroids, dim=-1) if self.normalize_features else loo_centroids
+                    loo_query = query_features[sample_indices]
+                    scores[sample_indices, class_idx] = (loo_query * loo_centroids).sum(dim=-1)
+
+                accuracy = float((scores.argmax(dim=-1) == label_indices_long).to(dtype=torch.float32).mean().item())
+                level_scores.append(accuracy)
+                component_scores[(level, layer_idx)] = scores.cpu()
+
+            loo_accuracy_scores[level] = torch.tensor(level_scores, dtype=torch.float32)
+
+        return loo_accuracy_scores, component_scores
+
+    def _all_components_with_metric(self) -> List[Tuple[Tuple[str, int], float]]:
+        all_components: List[Tuple[Tuple[str, int], float]] = []
+        for level in self.representation_levels:
+            score_tensor = self.loo_accuracy_scores[level] if self.selection_metric == "loo_accuracy" else self.fdr_scores[level]
+            for layer_idx, score in enumerate(score_tensor.tolist()):
+                component = (level, layer_idx)
+                metric_value = float(score)
+                self.metric_scores[component] = metric_value
+                all_components.append((component, metric_value))
+        all_components.sort(key=lambda item: (-item[1], item[0][0], item[0][1]))
+        return all_components
+
+    def _compute_component_weights(
+        self,
+        components: Sequence[Tuple[str, int]],
+    ) -> Dict[Tuple[str, int], float]:
+        if not components:
+            return {}
+
+        if self.ensemble_weighting == "uniform":
+            weights = torch.ones(len(components), dtype=torch.float32)
+        else:
+            weights = torch.tensor(
+                [max(self.metric_scores.get(component, 0.0), 0.0) for component in components],
+                dtype=torch.float32,
+            )
+            if float(weights.sum().item()) <= 0.0:
+                weights = torch.ones_like(weights)
+
+        weights = weights / weights.sum().clamp_min(1e-6)
+        return {
             component: float(weight.item())
-            for component, weight in zip(self.selected_components, norm_weights)
+            for component, weight in zip(components, weights)
         }
+
+    def _normalize_score_tensor(self, scores: torch.Tensor) -> torch.Tensor:
+        if self.score_normalization == "none":
+            return scores
+
+        if scores.ndim == 1:
+            mean = scores.mean()
+            std = scores.std(unbiased=False).clamp_min(1e-6)
+            return (scores - mean) / std
+
+        mean = scores.mean(dim=-1, keepdim=True)
+        std = scores.std(dim=-1, unbiased=False, keepdim=True).clamp_min(1e-6)
+        return (scores - mean) / std
+
+    @staticmethod
+    def _compute_margin(scores: torch.Tensor) -> torch.Tensor:
+        if scores.shape[-1] <= 1:
+            return scores[..., 0]
+        top_values = torch.topk(scores, k=2, dim=-1).values
+        return top_values[..., 0] - top_values[..., 1]
+
+    def _combine_scores_batch(
+        self,
+        component_scores: Dict[Tuple[str, int], torch.Tensor],
+        components: Sequence[Tuple[str, int]],
+    ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+        if not components:
+            raise ValueError("RSE requires at least one component to combine")
+
+        stacked_scores = torch.stack(
+            [self._normalize_score_tensor(component_scores[component]) for component in components],
+            dim=1,
+        )
+        component_margins = self._compute_margin(stacked_scores)
+
+        base_weights = torch.tensor(
+            [self.selected_component_weights.get(component, 0.0) for component in components],
+            dtype=stacked_scores.dtype,
+            device=stacked_scores.device,
+        )
+        if float(base_weights.sum().item()) <= 0.0:
+            base_weights = torch.ones_like(base_weights)
+
+        if self.route_k <= 0 or len(components) <= self.route_k:
+            used_weights = base_weights.unsqueeze(0).expand(stacked_scores.shape[0], -1)
+        else:
+            top_indices = torch.topk(component_margins, k=self.route_k, dim=1).indices
+            used_weights = torch.zeros_like(component_margins)
+            used_weights.scatter_(1, top_indices, 1.0)
+            used_weights = used_weights * base_weights.unsqueeze(0)
+
+        used_weights = used_weights / used_weights.sum(dim=1, keepdim=True).clamp_min(1e-6)
+        final_scores = (stacked_scores * used_weights.unsqueeze(-1)).sum(dim=1)
+        final_margin = self._compute_margin(final_scores)
+        best_component_margin = component_margins.max(dim=1).values
+        return final_scores, final_margin, best_component_margin
+
+    def _combine_scores_single(
+        self,
+        component_scores: Dict[Tuple[str, int], torch.Tensor],
+        components: Sequence[Tuple[str, int]],
+    ) -> tuple[torch.Tensor, float, float]:
+        batch_scores = {
+            component: scores.unsqueeze(0)
+            for component, scores in component_scores.items()
+        }
+        final_scores, final_margin, best_component_margin = self._combine_scores_batch(batch_scores, components)
+        return final_scores[0], float(final_margin[0].item()), float(best_component_margin[0].item())
+
+    def _subset_train_accuracy(self, components: Sequence[Tuple[str, int]]) -> float:
+        if self._train_label_indices is None:
+            return 0.0
+        final_scores, _, _ = self._combine_scores_batch(self.train_component_loo_scores, components)
+        preds = final_scores.argmax(dim=-1)
+        return float((preds == self._train_label_indices).to(dtype=torch.float32).mean().item())
+
+    def _select_components(self) -> None:
+        ranked_components = self._all_components_with_metric()
+        if not ranked_components:
+            raise RuntimeError("RSE could not rank any components")
+
+        if self.selection_strategy == "topk":
+            self.selected_components = [
+                component for component, _ in ranked_components[: min(self.top_k, len(ranked_components))]
+            ]
+        else:
+            pool = [component for component, _ in ranked_components[: min(self.greedy_pool_size, len(ranked_components))]]
+            self.selected_components = [pool[0]]
+            current_accuracy = self._subset_train_accuracy(self.selected_components)
+
+            while len(self.selected_components) < self.top_k:
+                best_candidate = None
+                best_accuracy = current_accuracy
+                for component in pool:
+                    if component in self.selected_components:
+                        continue
+                    trial_components = self.selected_components + [component]
+                    trial_accuracy = self._subset_train_accuracy(trial_components)
+                    if trial_accuracy > best_accuracy + 1e-9:
+                        best_accuracy = trial_accuracy
+                        best_candidate = component
+
+                if best_candidate is None:
+                    break
+                self.selected_components.append(best_candidate)
+                current_accuracy = best_accuracy
+
+        self.selected_component_weights = self._compute_component_weights(self.selected_components)
+        self.selection_train_accuracy = self._subset_train_accuracy(self.selected_components)
+
+    def _resolve_fallback_threshold(self) -> None:
+        self.resolved_fallback_threshold = None
+        if self.zero_shot_fallback is None:
+            return
+
+        if self.fallback_margin_threshold >= 0.0:
+            self.resolved_fallback_threshold = self.fallback_margin_threshold
+            return
+
+        if self.fallback_margin_quantile < 0.0 or self._train_label_indices is None:
+            return
+
+        _, ensemble_margins, best_component_margins = self._combine_scores_batch(
+            self.train_component_loo_scores,
+            self.selected_components,
+        )
+        source_margins = best_component_margins if self.fallback_margin_source == "best_component" else ensemble_margins
+        quantile = min(max(self.fallback_margin_quantile, 0.0), 1.0)
+        self.resolved_fallback_threshold = float(torch.quantile(source_margins, q=quantile).item())
 
     def _reset_eval_diagnostics(self) -> None:
         self._component_eval_stats = {
@@ -351,11 +583,15 @@ class RSEMethod(MethodBase):
         self.class_labels = [label for label in self.label_space if label in unique_train_labels]
         self.label_to_index = {label: idx for idx, label in enumerate(self.class_labels)}
         label_indices = torch.tensor([self.label_to_index[label] for label in train_labels], dtype=torch.long)
+        self._train_label_indices = label_indices
 
         feature_table = self._collect_feature_table(train_data, desc="RSE fit features")
-        self.fdr_scores = self._compute_fdr_scores(feature_table, label_indices)
         self.centroids = self._compute_centroids(feature_table, label_indices)
+        self.fdr_scores = self._compute_fdr_scores(feature_table, label_indices)
+        self.loo_accuracy_scores, self.train_component_loo_scores = self._compute_loo_stats(feature_table, label_indices)
+        self.metric_scores = {}
         self._select_components()
+        self._resolve_fallback_threshold()
         self._reset_eval_diagnostics()
         self._fitted = True
 
@@ -405,22 +641,24 @@ class RSEMethod(MethodBase):
 
         sample_features = self._extract_multilevel_features(sample)
         all_scores = self._component_scores(sample_features)
+        final_scores, ensemble_margin, best_component_margin = self._combine_scores_single(
+            all_scores,
+            self.selected_components,
+        )
 
-        final_scores = torch.zeros(len(self.class_labels), dtype=torch.float32)
-        for component in self.selected_components:
-            weight = self.selected_component_weights[component]
-            final_scores = final_scores + weight * all_scores[component]
-
-        top_values, top_indices = torch.topk(final_scores, k=min(2, final_scores.numel()))
-        pred_label = self.class_labels[int(top_indices[0].item())]
-        margin = float(top_values[0].item() - top_values[1].item()) if top_values.numel() > 1 else float(top_values[0].item())
+        pred_label = self.class_labels[int(final_scores.argmax().item())]
+        chosen_margin = best_component_margin if self.fallback_margin_source == "best_component" else ensemble_margin
         fallback_used = False
 
-        if self.zero_shot_fallback is not None and margin < self.fallback_margin_threshold:
+        if (
+            self.zero_shot_fallback is not None
+            and self.resolved_fallback_threshold is not None
+            and chosen_margin < self.resolved_fallback_threshold
+        ):
             pred_label = self.zero_shot_fallback.predict(sample)
             fallback_used = True
 
-        self._record_eval(str(sample.get("label", "")), pred_label, margin, all_scores, fallback_used)
+        self._record_eval(str(sample.get("label", "")), pred_label, chosen_margin, all_scores, fallback_used)
         return pred_label
 
     def export_diagnostics(self) -> Dict:
@@ -430,8 +668,9 @@ class RSEMethod(MethodBase):
         component_table = []
         selected_set = set(self.selected_components)
         for level in self.representation_levels:
-            scores = self.fdr_scores[level]
-            for layer_idx in range(len(scores)):
+            fdr_level = self.fdr_scores[level]
+            loo_level = self.loo_accuracy_scores[level]
+            for layer_idx in range(len(fdr_level)):
                 key = (level, layer_idx)
                 stats = self._component_eval_stats.get(key, {"correct": 0.0, "count": 0.0})
                 count = float(stats["count"])
@@ -439,20 +678,26 @@ class RSEMethod(MethodBase):
                     {
                         "level": level,
                         "layer_idx": layer_idx,
-                        "fdr": float(scores[layer_idx].item()),
+                        "selection_score": float(self.metric_scores.get(key, 0.0)),
+                        "fdr": float(fdr_level[layer_idx].item()),
+                        "loo_accuracy": float(loo_level[layer_idx].item()),
                         "selected": key in selected_set,
                         "weight": float(self.selected_component_weights.get(key, 0.0)),
                         "val_accuracy": (float(stats["correct"]) / count) if count > 0 else None,
                     }
                 )
 
-        component_table.sort(key=lambda row: (-row["fdr"], row["level"], row["layer_idx"]))
+        component_table.sort(
+            key=lambda row: (-row["selection_score"], -row["loo_accuracy"], row["level"], row["layer_idx"])
+        )
         selected_components = [
             {
                 "level": level,
                 "layer_idx": layer_idx,
+                "selection_score": float(self.metric_scores[(level, layer_idx)]),
                 "weight": float(self.selected_component_weights[(level, layer_idx)]),
                 "fdr": float(self.fdr_scores[level][layer_idx].item()),
+                "loo_accuracy": float(self.loo_accuracy_scores[level][layer_idx].item()),
                 "val_accuracy": next(
                     (
                         row["val_accuracy"]
@@ -465,18 +710,39 @@ class RSEMethod(MethodBase):
             for level, layer_idx in self.selected_components
         ]
 
+        best_by_loo = max(component_table, key=lambda row: row["loo_accuracy"])
+        best_by_val = max(
+            [row for row in component_table if row["val_accuracy"] is not None],
+            key=lambda row: row["val_accuracy"],
+            default=None,
+        )
+
         margin_mean = (sum(self._margins) / len(self._margins)) if self._margins else None
         margin_min = min(self._margins) if self._margins else None
         margin_max = max(self._margins) if self._margins else None
 
         return {
             "method": "rse",
-            "selection_metric": "fdr",
+            "selection_metric": self.selection_metric,
+            "selection_strategy": self.selection_strategy,
+            "ensemble_weighting": self.ensemble_weighting,
+            "score_normalization": self.score_normalization,
+            "routing_mode": self.routing_mode,
             "representation_levels": list(self.representation_levels),
             "num_layers": self.num_layers,
+            "top_k": self.top_k,
+            "greedy_pool_size": self.greedy_pool_size,
+            "fallback_margin_threshold": self.resolved_fallback_threshold,
+            "fallback_margin_quantile": self.fallback_margin_quantile,
+            "fallback_margin_source": self.fallback_margin_source,
             "class_labels": list(self.class_labels),
             "selected_components": selected_components,
+            "best_component_by_loo": best_by_loo,
+            "best_component_by_val": best_by_val,
             "component_table": component_table,
+            "train_selection_summary": {
+                "selection_train_accuracy": self.selection_train_accuracy,
+            },
             "eval_summary": {
                 "final_accuracy": (self._final_correct / self._final_total) if self._final_total > 0 else None,
                 "final_correct": self._final_correct,

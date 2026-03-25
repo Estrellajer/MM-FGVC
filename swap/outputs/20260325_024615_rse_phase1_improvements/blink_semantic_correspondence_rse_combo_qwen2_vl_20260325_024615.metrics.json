@@ -1,0 +1,266 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_semantic_correspondence",
+  "method": "rse",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.1,
+    "correct": 2.0,
+    "total": 20.0,
+    "label_order": [
+      "(A)",
+      "(D)",
+      "(B)",
+      "(C)",
+      "To determine which point corresponds to the reference point, we need to identify the reference",
+      "The reference point in the image is located on the front wheel of the motorcycle.",
+      "Let's analyze the images step by step:\n\n1. In the first image,",
+      "To determine which point corresponds to the reference point, we need to compare the features",
+      "Let's analyze the image step by step:\n\n1. The reference point is located",
+      "To determine which point corresponds to the reference point, we need to compare the reference"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(D)",
+        "(B)",
+        "(C)",
+        "To determine which point corresponds to the reference point, we need to identify the reference",
+        "The reference point in the image is located on the front wheel of the motorcycle.",
+        "Let's analyze the images step by step:\n\n1. In the first image,",
+        "To determine which point corresponds to the reference point, we need to compare the features",
+        "Let's analyze the image step by step:\n\n1. The reference point is located",
+        "To determine which point corresponds to the reference point, we need to compare the reference"
+      ],
+      "matrix": [
+        [
+          1,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.25,
+        "recall": 0.2,
+        "f1": 0.22222222222222224,
+        "support": 5.0,
+        "predicted": 4.0,
+        "true_positive": 1.0,
+        "false_positive": 3.0,
+        "false_negative": 4.0
+      },
+      "(D)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 6.0,
+        "true_positive": 0.0,
+        "false_positive": 6.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.3333333333333333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "support": 5.0,
+        "predicted": 3.0,
+        "true_positive": 1.0,
+        "false_positive": 2.0,
+        "false_negative": 4.0
+      },
+      "(C)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 5.0
+      },
+      "To determine which point corresponds to the reference point, we need to identify the reference": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The reference point in the image is located on the front wheel of the motorcycle.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the images step by step:\n\n1. In the first image,": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "To determine which point corresponds to the reference point, we need to compare the features": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the image step by step:\n\n1. The reference point is located": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "To determine which point corresponds to the reference point, we need to compare the reference": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.05833333333333333,
+    "macro_recall": 0.04,
+    "macro_f1": 0.04722222222222222,
+    "balanced_accuracy": 0.04
+  }
+}

@@ -8,7 +8,15 @@ params:
     - attn
     - mlp
   normalize_features: true
+  selection_metric: fdr
+  selection_strategy: topk
+  ensemble_weighting: metric
+  score_normalization: none
+  routing_mode: none
+  greedy_pool_size: 24
   fallback_margin_threshold: -1.0
+  fallback_margin_quantile: -1.0
+  fallback_margin_source: best_component
   fallback_max_new_tokens: 16
   fallback_do_sample: false
   fallback_temperature: 0.0
