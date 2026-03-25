@@ -178,6 +178,7 @@ DATASET_SPECS=(
 
 METHOD_SPECS=(
   "zero_shot|Zero-shot|zero_shot|"
+  "keco|KeCO|keco|"
   "sav|SAV|sav|"
   "mimic|MimIC|mimic|"
   "i2cl|I2CL|i2cl|"

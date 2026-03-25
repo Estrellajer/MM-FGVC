@@ -39,6 +39,22 @@ matches_method_filter() {
   [[ "$method_id" =~ $METHOD_FILTER || "$display_name" =~ $METHOD_FILTER ]]
 }
 
+method_supports_dataset() {
+  local allowed_spec="$1"
+  local dataset_name="$2"
+  if [[ -z "$allowed_spec" || "$allowed_spec" == "*" ]]; then
+    return 0
+  fi
+
+  IFS=',' read -r -a allowed_datasets <<< "$allowed_spec"
+  for allowed in "${allowed_datasets[@]}"; do
+    if [[ "$dataset_name" == "$allowed" ]]; then
+      return 0
+    fi
+  done
+  return 1
+}
+
 build_subset_file() {
   local dataset_name="$1"
   local src_path="$2"
@@ -211,13 +227,14 @@ EXPERIMENTS=(
 )
 
 METHOD_SPECS=(
-  "zero_shot|Zero-shot|zero_shot|"
-  "sav|SAV|sav|"
-  "sav_wvote|SAV+WVote|sav|method.params.vote_weighting=head_accuracy"
-  "rse|RSE|rse|method.params.progress_bar=false"
-  "mimic|MimIC|mimic|"
-  "i2cl|I2CL|i2cl|"
-  "stv|STV|stv|method.params.head_selection_mode=sensitivity;method.params.cluster_selection_mode=rl"
+  "zero_shot|Zero-shot|zero_shot||*"
+  "keco|KeCO|keco||pets,eurosat,flowers,cub,tinyimage"
+  "sav|SAV|sav||*"
+  "sav_wvote|SAV+WVote|sav|method.params.vote_weighting=head_accuracy|*"
+  "rse|RSE|rse|method.params.progress_bar=false|*"
+  "mimic|MimIC|mimic||*"
+  "i2cl|I2CL|i2cl||*"
+  "stv|STV|stv|method.params.head_selection_mode=sensitivity;method.params.cluster_selection_mode=rl|*"
 )
 
 for entry in "${EXPERIMENTS[@]}"; do
@@ -247,8 +264,11 @@ for entry in "${EXPERIMENTS[@]}"; do
   validate_subset "$dataset_name" "$train_subset" "$val_subset" "$evaluator_name"
 
   for method_entry in "${METHOD_SPECS[@]}"; do
-    IFS='|' read -r method_id display_name method_name extra_args_spec <<< "$method_entry"
+    IFS='|' read -r method_id display_name method_name extra_args_spec allowed_datasets <<< "$method_entry"
     if ! matches_method_filter "$method_id" "$display_name"; then
+      continue
+    fi
+    if ! method_supports_dataset "$allowed_datasets" "$dataset_name"; then
       continue
     fi
     log_path="$LOG_ROOT/${experiment_id}_${method_id}.log"

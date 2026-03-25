@@ -1,0 +1,17 @@
+{
+  "count": 100,
+  "mode": "per_label",
+  "requested_count": 10,
+  "group_size": 0,
+  "src": "/root/autodl-tmp/FGVC/dataset/converted_from_data/eurosat/train.json",
+  "source_kind": "converted",
+  "unique_labels": 10,
+  "per_label_min": 10,
+  "per_label_max": 10,
+  "canonicalized_paths": 0,
+  "canonicalized_labels": 0,
+  "skipped_missing_images": 0,
+  "dropped_disallowed_labels": 0,
+  "excluded_overlap": 0,
+  "restricted_label_space": 10
+}

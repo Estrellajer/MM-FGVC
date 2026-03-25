@@ -1,0 +1,21 @@
+name: keco
+fit_on_train: true
+params:
+  mode: offline
+  support_per_class: 2
+  num_shots: 2
+  num_choices: 4
+  selection_strategy: cosine
+  sample_method: random
+  target_select: least_similarity
+  alpha: 0.2
+  offline_epochs: 10
+  offline_batch_size: 32
+  embedding_model_name: openai/clip-vit-large-patch14-336
+  embedding_device: auto
+  embedding_batch_size: 8
+  max_new_tokens: 8
+  do_sample: false
+  temperature: 0.0
+  seed: 42
+  progress_bar: true
