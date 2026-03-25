@@ -1,0 +1,98 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_semantic_correspondence",
+  "method": "rse",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.22857142857142856,
+    "correct": 8.0,
+    "total": 35.0,
+    "label_order": [
+      "(A)",
+      "(D)",
+      "(B)",
+      "(C)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(D)",
+        "(B)",
+        "(C)"
+      ],
+      "matrix": [
+        [
+          3,
+          5,
+          1,
+          1
+        ],
+        [
+          6,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.23076923076923078,
+        "recall": 0.3,
+        "f1": 0.2608695652173913,
+        "support": 10.0,
+        "predicted": 13.0,
+        "true_positive": 3.0,
+        "false_positive": 10.0,
+        "false_negative": 7.0
+      },
+      "(D)": {
+        "precision": 0.1111111111111111,
+        "recall": 0.1,
+        "f1": 0.10526315789473685,
+        "support": 10.0,
+        "predicted": 9.0,
+        "true_positive": 1.0,
+        "false_positive": 8.0,
+        "false_negative": 9.0
+      },
+      "(B)": {
+        "precision": 0.42857142857142855,
+        "recall": 0.3,
+        "f1": 0.3529411764705882,
+        "support": 10.0,
+        "predicted": 7.0,
+        "true_positive": 3.0,
+        "false_positive": 4.0,
+        "false_negative": 7.0
+      },
+      "(C)": {
+        "precision": 0.16666666666666666,
+        "recall": 0.2,
+        "f1": 0.1818181818181818,
+        "support": 5.0,
+        "predicted": 6.0,
+        "true_positive": 1.0,
+        "false_positive": 5.0,
+        "false_negative": 4.0
+      }
+    },
+    "macro_precision": 0.23427960927960928,
+    "macro_recall": 0.225,
+    "macro_f1": 0.22522302035022454,
+    "balanced_accuracy": 0.225
+  }
+}

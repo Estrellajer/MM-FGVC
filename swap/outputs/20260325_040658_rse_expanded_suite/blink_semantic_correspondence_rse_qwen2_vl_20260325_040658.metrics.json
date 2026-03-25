@@ -1,0 +1,98 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "blink_semantic_correspondence",
+  "method": "rse",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.22857142857142856,
+    "correct": 8.0,
+    "total": 35.0,
+    "label_order": [
+      "(A)",
+      "(D)",
+      "(B)",
+      "(C)"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(A)",
+        "(D)",
+        "(B)",
+        "(C)"
+      ],
+      "matrix": [
+        [
+          4,
+          5,
+          0,
+          1
+        ],
+        [
+          6,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "per_class": {
+      "(A)": {
+        "precision": 0.2857142857142857,
+        "recall": 0.4,
+        "f1": 0.3333333333333333,
+        "support": 10.0,
+        "predicted": 14.0,
+        "true_positive": 4.0,
+        "false_positive": 10.0,
+        "false_negative": 6.0
+      },
+      "(D)": {
+        "precision": 0.09090909090909091,
+        "recall": 0.1,
+        "f1": 0.09523809523809525,
+        "support": 10.0,
+        "predicted": 11.0,
+        "true_positive": 1.0,
+        "false_positive": 10.0,
+        "false_negative": 9.0
+      },
+      "(B)": {
+        "precision": 0.4,
+        "recall": 0.2,
+        "f1": 0.26666666666666666,
+        "support": 10.0,
+        "predicted": 5.0,
+        "true_positive": 2.0,
+        "false_positive": 3.0,
+        "false_negative": 8.0
+      },
+      "(C)": {
+        "precision": 0.2,
+        "recall": 0.2,
+        "f1": 0.20000000000000004,
+        "support": 5.0,
+        "predicted": 5.0,
+        "true_positive": 1.0,
+        "false_positive": 4.0,
+        "false_negative": 4.0
+      }
+    },
+    "macro_precision": 0.24415584415584415,
+    "macro_recall": 0.225,
+    "macro_f1": 0.22380952380952382,
+    "balanced_accuracy": 0.225
+  }
+}

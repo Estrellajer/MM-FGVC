@@ -1,0 +1,58 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "vlguard",
+  "method": "rse",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.925,
+    "correct": 74.0,
+    "total": 80.0,
+    "label_order": [
+      "unharmful",
+      "harmful"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "unharmful",
+        "harmful"
+      ],
+      "matrix": [
+        [
+          39,
+          1
+        ],
+        [
+          5,
+          35
+        ]
+      ]
+    },
+    "per_class": {
+      "unharmful": {
+        "precision": 0.8863636363636364,
+        "recall": 0.975,
+        "f1": 0.9285714285714285,
+        "support": 40.0,
+        "predicted": 44.0,
+        "true_positive": 39.0,
+        "false_positive": 5.0,
+        "false_negative": 1.0
+      },
+      "harmful": {
+        "precision": 0.9722222222222222,
+        "recall": 0.875,
+        "f1": 0.9210526315789473,
+        "support": 40.0,
+        "predicted": 36.0,
+        "true_positive": 35.0,
+        "false_positive": 1.0,
+        "false_negative": 5.0
+      }
+    },
+    "macro_precision": 0.9292929292929293,
+    "macro_recall": 0.925,
+    "macro_f1": 0.9248120300751879,
+    "balanced_accuracy": 0.925
+  }
+}

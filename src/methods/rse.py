@@ -37,7 +37,15 @@ class RSEMethod(MethodBase):
         ensemble_weighting: str = "metric",
         score_normalization: str = "none",
         routing_mode: str = "none",
+        adaptive_margin_threshold: float = -1.0,
+        adaptive_margin_quantile: float = 0.5,
         greedy_pool_size: int = 24,
+        cv_folds: int = 5,
+        cv_seed: int = 42,
+        centroid_shrinkage: str = "none",
+        shrinkage_alpha: float = 1.0,
+        feature_reduction: str = "none",
+        pca_dim: int = 128,
         fallback_margin_threshold: float = -1.0,
         fallback_margin_quantile: float = -1.0,
         fallback_margin_source: str = "best_component",
@@ -55,7 +63,15 @@ class RSEMethod(MethodBase):
         self.ensemble_weighting = str(ensemble_weighting).strip().lower()
         self.score_normalization = str(score_normalization).strip().lower()
         self.routing_mode = str(routing_mode).strip().lower()
+        self.adaptive_margin_threshold = float(adaptive_margin_threshold)
+        self.adaptive_margin_quantile = float(adaptive_margin_quantile)
         self.greedy_pool_size = int(greedy_pool_size)
+        self.cv_folds = int(cv_folds)
+        self.cv_seed = int(cv_seed)
+        self.centroid_shrinkage = str(centroid_shrinkage).strip().lower()
+        self.shrinkage_alpha = float(shrinkage_alpha)
+        self.feature_reduction = str(feature_reduction).strip().lower()
+        self.pca_dim = int(pca_dim)
         self.fallback_margin_threshold = float(fallback_margin_threshold)
         self.fallback_margin_quantile = float(fallback_margin_quantile)
         self.fallback_margin_source = str(fallback_margin_source).strip().lower()
@@ -63,18 +79,30 @@ class RSEMethod(MethodBase):
 
         if self.top_k <= 0:
             raise ValueError("RSE top_k must be positive")
-        if self.selection_metric not in {"fdr", "loo_accuracy"}:
-            raise ValueError("RSE selection_metric must be 'fdr' or 'loo_accuracy'")
+        if self.selection_metric not in {"fdr", "loo_accuracy", "cv_accuracy"}:
+            raise ValueError("RSE selection_metric must be 'fdr', 'loo_accuracy', or 'cv_accuracy'")
         if self.selection_strategy not in {"topk", "greedy_forward"}:
             raise ValueError("RSE selection_strategy must be 'topk' or 'greedy_forward'")
         if self.ensemble_weighting not in {"metric", "uniform"}:
             raise ValueError("RSE ensemble_weighting must be 'metric' or 'uniform'")
         if self.score_normalization not in {"none", "zscore"}:
             raise ValueError("RSE score_normalization must be 'none' or 'zscore'")
-        if self.routing_mode not in {"none", "top1", "top2"}:
-            raise ValueError("RSE routing_mode must be one of: none, top1, top2")
+        if self.routing_mode not in {"none", "top1", "top2", "adaptive"}:
+            raise ValueError("RSE routing_mode must be one of: none, top1, top2, adaptive")
+        if self.adaptive_margin_quantile > 1.0:
+            raise ValueError("RSE adaptive_margin_quantile must be <= 1.0")
         if self.greedy_pool_size <= 0:
             raise ValueError("RSE greedy_pool_size must be positive")
+        if self.cv_folds <= 1:
+            raise ValueError("RSE cv_folds must be > 1")
+        if self.centroid_shrinkage not in {"none", "auto", "fixed"}:
+            raise ValueError("RSE centroid_shrinkage must be one of: none, auto, fixed")
+        if not (0.0 <= self.shrinkage_alpha <= 1.0):
+            raise ValueError("RSE shrinkage_alpha must be in [0, 1]")
+        if self.feature_reduction not in {"none", "pca"}:
+            raise ValueError("RSE feature_reduction must be 'none' or 'pca'")
+        if self.pca_dim <= 0:
+            raise ValueError("RSE pca_dim must be positive")
         if self.fallback_margin_source not in {"best_component", "ensemble"}:
             raise ValueError("RSE fallback_margin_source must be 'best_component' or 'ensemble'")
         if self.fallback_margin_quantile > 1.0:
@@ -83,19 +111,24 @@ class RSEMethod(MethodBase):
         self.layer_specs = self._infer_layer_specs()
         self.num_layers = len(self.layer_specs)
         self.n_heads = self._infer_num_heads()
-        self.route_k = {"none": 0, "top1": 1, "top2": 2}[self.routing_mode]
+        self.route_k = {"none": 0, "top1": 1, "top2": 2, "adaptive": 0}[self.routing_mode]
 
         self.class_labels: List[str] = []
         self.label_to_index: Dict[str, int] = {}
         self.centroids: Dict[str, torch.Tensor] = {}
         self.fdr_scores: Dict[str, torch.Tensor] = {}
         self.loo_accuracy_scores: Dict[str, torch.Tensor] = {}
+        self.cv_accuracy_scores: Dict[str, torch.Tensor] = {}
         self.train_component_loo_scores: Dict[Tuple[str, int], torch.Tensor] = {}
+        self.train_component_cv_scores: Dict[Tuple[str, int], torch.Tensor] = {}
         self.metric_scores: Dict[Tuple[str, int], float] = {}
+        self.feature_transforms: Dict[Tuple[str, int], Dict[str, torch.Tensor]] = {}
         self.selected_components: List[Tuple[str, int]] = []
         self.selected_component_weights: Dict[Tuple[str, int], float] = {}
+        self.selected_component_margin_thresholds: Dict[Tuple[str, int], float] = {}
         self.selection_train_accuracy: float | None = None
         self.resolved_fallback_threshold: float | None = None
+        self.effective_cv_folds: int | None = None
         self._train_label_indices: torch.Tensor | None = None
         self._component_eval_stats: Dict[Tuple[str, int], Dict[str, float]] = {}
         self._final_correct = 0
@@ -328,6 +361,149 @@ class RSEMethod(MethodBase):
             fdr_scores[level] = torch.tensor(scores, dtype=torch.float32)
         return fdr_scores
 
+    def _resolve_shrinkage_alpha(self, class_count: int, dim: int) -> float:
+        if self.centroid_shrinkage == "none":
+            return 1.0
+        if self.centroid_shrinkage == "fixed":
+            return self.shrinkage_alpha
+        return float(class_count) / float(class_count + dim)
+
+    def _compute_class_centroids(
+        self,
+        values: torch.Tensor,
+        label_indices: torch.Tensor,
+        num_classes: int,
+        allow_missing: bool = False,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        overall_mean = values.mean(dim=0)
+        centroids = []
+        present_mask = []
+        for class_idx in range(num_classes):
+            mask = label_indices == class_idx
+            present = bool(mask.any())
+            present_mask.append(present)
+            if not present:
+                if not allow_missing:
+                    raise RuntimeError(f"RSE missing support examples for class index {class_idx}")
+                centroids.append(overall_mean.clone())
+                continue
+
+            class_values = values[mask]
+            class_mean = class_values.mean(dim=0)
+            alpha = self._resolve_shrinkage_alpha(int(class_values.shape[0]), int(values.shape[-1]))
+            centroid = alpha * class_mean + (1.0 - alpha) * overall_mean
+            centroids.append(centroid)
+
+        return torch.stack(centroids, dim=0), torch.tensor(present_mask, dtype=torch.bool)
+
+    def _score_queries_against_centroids(
+        self,
+        query_features: torch.Tensor,
+        centroids: torch.Tensor,
+        present_mask: torch.Tensor | None = None,
+    ) -> torch.Tensor:
+        if query_features.ndim == 1:
+            query_features = query_features.unsqueeze(0)
+
+        query = query_features.to(dtype=torch.float32)
+        class_centroids = centroids.to(dtype=torch.float32)
+        if self.normalize_features:
+            query = F.normalize(query, dim=-1)
+            class_centroids = F.normalize(class_centroids, dim=-1)
+
+        scores = query @ class_centroids.transpose(0, 1)
+        if present_mask is not None and not bool(present_mask.all()):
+            scores[:, ~present_mask] = -1e9
+        return scores
+
+    def _score_queries_from_train(
+        self,
+        train_features: torch.Tensor,
+        train_labels: torch.Tensor,
+        query_features: torch.Tensor,
+        num_classes: int,
+        allow_missing: bool = False,
+    ) -> torch.Tensor:
+        centroids, present_mask = self._compute_class_centroids(
+            train_features,
+            train_labels,
+            num_classes,
+            allow_missing=allow_missing,
+        )
+        return self._score_queries_against_centroids(query_features, centroids, present_mask=present_mask)
+
+    def _fit_feature_transforms(
+        self,
+        feature_table: Dict[str, torch.Tensor],
+    ) -> Dict[str, torch.Tensor]:
+        self.feature_transforms = {}
+        if self.feature_reduction == "none":
+            return feature_table
+
+        transformed_table: Dict[str, torch.Tensor] = {}
+        for level, table in feature_table.items():
+            level_rows = []
+            for layer_idx in range(table.shape[1]):
+                features = table[:, layer_idx, :].to(dtype=torch.float32)
+                target_dim = min(self.pca_dim, int(features.shape[0]) - 1, int(features.shape[-1]))
+                if target_dim < 1:
+                    level_rows.append(features)
+                    continue
+
+                mean = features.mean(dim=0)
+                centered = features - mean.unsqueeze(0)
+                try:
+                    _, _, basis = torch.pca_lowrank(centered, q=target_dim, center=False)
+                    basis = basis[:, :target_dim]
+                except RuntimeError:
+                    _, _, vh = torch.linalg.svd(centered, full_matrices=False)
+                    basis = vh.transpose(0, 1)[:, :target_dim]
+
+                self.feature_transforms[(level, layer_idx)] = {
+                    "mean": mean.cpu(),
+                    "basis": basis.cpu(),
+                }
+                level_rows.append((centered @ basis).cpu())
+            transformed_table[level] = torch.stack(level_rows, dim=1)
+        return transformed_table
+
+    def _transform_component_values(
+        self,
+        level: str,
+        layer_idx: int,
+        values: torch.Tensor,
+    ) -> torch.Tensor:
+        transform = self.feature_transforms.get((level, layer_idx))
+        if transform is None:
+            return values.to(dtype=torch.float32)
+
+        mean = transform["mean"].to(dtype=torch.float32)
+        basis = transform["basis"].to(dtype=torch.float32)
+        if values.ndim == 1:
+            return (values.to(dtype=torch.float32) - mean) @ basis
+        return (values.to(dtype=torch.float32) - mean.unsqueeze(0)) @ basis
+
+    def _build_stratified_folds(self, label_indices: torch.Tensor) -> torch.Tensor:
+        counts = torch.bincount(label_indices, minlength=len(self.class_labels))
+        min_count = int(counts.min().item()) if len(counts) > 0 else 0
+        if min_count < 2:
+            self.effective_cv_folds = None
+            raise ValueError("RSE CV scoring requires at least 2 support examples per class")
+
+        effective_folds = min(self.cv_folds, min_count)
+        assignments = torch.empty_like(label_indices)
+        generator = torch.Generator()
+        generator.manual_seed(self.cv_seed)
+
+        for class_idx in range(len(self.class_labels)):
+            sample_indices = (label_indices == class_idx).nonzero(as_tuple=False).squeeze(-1)
+            shuffled = sample_indices[torch.randperm(sample_indices.shape[0], generator=generator)]
+            for order, sample_idx in enumerate(shuffled.tolist()):
+                assignments[sample_idx] = order % effective_folds
+
+        self.effective_cv_folds = effective_folds
+        return assignments
+
     def _compute_centroids(
         self,
         feature_table: Dict[str, torch.Tensor],
@@ -338,14 +514,14 @@ class RSEMethod(MethodBase):
         for level, table in feature_table.items():
             level_centroids = []
             for layer_idx in range(table.shape[1]):
-                class_centroids = []
                 layer_values = table[:, layer_idx, :]
-                for class_idx in range(num_classes):
-                    mask = label_indices == class_idx
-                    if not bool(mask.any()):
-                        raise RuntimeError(f"RSE missing support examples for class index {class_idx}")
-                    class_centroids.append(layer_values[mask].mean(dim=0))
-                level_centroids.append(torch.stack(class_centroids, dim=0))
+                class_centroids, _ = self._compute_class_centroids(
+                    layer_values,
+                    label_indices,
+                    num_classes,
+                    allow_missing=False,
+                )
+                level_centroids.append(class_centroids)
             centroids[level] = torch.stack(level_centroids, dim=0)
         return centroids
 
@@ -357,40 +533,24 @@ class RSEMethod(MethodBase):
         num_classes = len(self.class_labels)
         loo_accuracy_scores: Dict[str, torch.Tensor] = {}
         component_scores: Dict[Tuple[str, int], torch.Tensor] = {}
-
-        class_counts = torch.bincount(label_indices, minlength=num_classes).to(dtype=torch.float32)
+        num_samples = int(label_indices.shape[0])
+        sample_indices = torch.arange(num_samples, dtype=torch.long)
         label_indices_long = label_indices.to(dtype=torch.long)
 
         for level, table in feature_table.items():
             level_scores = []
             for layer_idx in range(table.shape[1]):
                 features = table[:, layer_idx, :].to(dtype=torch.float32)
-                query_features = F.normalize(features, dim=-1) if self.normalize_features else features
-
-                class_sums = torch.zeros(num_classes, features.shape[-1], dtype=torch.float32)
-                class_sums.index_add_(0, label_indices_long, features)
-                class_means = class_sums / class_counts.unsqueeze(-1).clamp_min(1.0)
-                class_means = F.normalize(class_means, dim=-1) if self.normalize_features else class_means
-
-                scores = query_features @ class_means.transpose(0, 1)
-                scores = scores.to(dtype=torch.float32)
-
-                for class_idx in range(num_classes):
-                    sample_mask = label_indices_long == class_idx
-                    if not bool(sample_mask.any()):
-                        continue
-                    class_count = int(sample_mask.sum().item())
-                    sample_indices = sample_mask.nonzero(as_tuple=False).squeeze(-1)
-                    if class_count <= 1:
-                        scores[sample_indices, class_idx] = -1e9
-                        continue
-
-                    class_features = features[sample_indices]
-                    loo_centroids = (class_sums[class_idx].unsqueeze(0) - class_features) / float(class_count - 1)
-                    loo_centroids = F.normalize(loo_centroids, dim=-1) if self.normalize_features else loo_centroids
-                    loo_query = query_features[sample_indices]
-                    scores[sample_indices, class_idx] = (loo_query * loo_centroids).sum(dim=-1)
-
+                scores = torch.empty((num_samples, num_classes), dtype=torch.float32)
+                for sample_idx in range(num_samples):
+                    keep_mask = sample_indices != sample_idx
+                    scores[sample_idx] = self._score_queries_from_train(
+                        features[keep_mask],
+                        label_indices_long[keep_mask],
+                        features[sample_idx],
+                        num_classes,
+                        allow_missing=True,
+                    )[0]
                 accuracy = float((scores.argmax(dim=-1) == label_indices_long).to(dtype=torch.float32).mean().item())
                 level_scores.append(accuracy)
                 component_scores[(level, layer_idx)] = scores.cpu()
@@ -399,10 +559,49 @@ class RSEMethod(MethodBase):
 
         return loo_accuracy_scores, component_scores
 
+    def _compute_cv_stats(
+        self,
+        feature_table: Dict[str, torch.Tensor],
+        label_indices: torch.Tensor,
+    ) -> tuple[Dict[str, torch.Tensor], Dict[Tuple[str, int], torch.Tensor]]:
+        num_classes = len(self.class_labels)
+        label_indices_long = label_indices.to(dtype=torch.long)
+        fold_assignments = self._build_stratified_folds(label_indices_long)
+        cv_accuracy_scores: Dict[str, torch.Tensor] = {}
+        component_scores: Dict[Tuple[str, int], torch.Tensor] = {}
+
+        for level, table in feature_table.items():
+            level_scores = []
+            for layer_idx in range(table.shape[1]):
+                features = table[:, layer_idx, :].to(dtype=torch.float32)
+                scores = torch.empty((features.shape[0], num_classes), dtype=torch.float32)
+                for fold_idx in range(int(self.effective_cv_folds or 0)):
+                    train_mask = fold_assignments != fold_idx
+                    val_mask = fold_assignments == fold_idx
+                    scores[val_mask] = self._score_queries_from_train(
+                        features[train_mask],
+                        label_indices_long[train_mask],
+                        features[val_mask],
+                        num_classes,
+                        allow_missing=False,
+                    )
+                accuracy = float((scores.argmax(dim=-1) == label_indices_long).to(dtype=torch.float32).mean().item())
+                level_scores.append(accuracy)
+                component_scores[(level, layer_idx)] = scores.cpu()
+
+            cv_accuracy_scores[level] = torch.tensor(level_scores, dtype=torch.float32)
+
+        return cv_accuracy_scores, component_scores
+
     def _all_components_with_metric(self) -> List[Tuple[Tuple[str, int], float]]:
         all_components: List[Tuple[Tuple[str, int], float]] = []
         for level in self.representation_levels:
-            score_tensor = self.loo_accuracy_scores[level] if self.selection_metric == "loo_accuracy" else self.fdr_scores[level]
+            if self.selection_metric == "loo_accuracy":
+                score_tensor = self.loo_accuracy_scores[level]
+            elif self.selection_metric == "cv_accuracy":
+                score_tensor = self.cv_accuracy_scores[level]
+            else:
+                score_tensor = self.fdr_scores[level]
             for layer_idx, score in enumerate(score_tensor.tolist()):
                 component = (level, layer_idx)
                 metric_value = float(score)
@@ -410,6 +609,11 @@ class RSEMethod(MethodBase):
                 all_components.append((component, metric_value))
         all_components.sort(key=lambda item: (-item[1], item[0][0], item[0][1]))
         return all_components
+
+    def _active_train_component_scores(self) -> Dict[Tuple[str, int], torch.Tensor]:
+        if self.selection_metric == "cv_accuracy" and self.train_component_cv_scores:
+            return self.train_component_cv_scores
+        return self.train_component_loo_scores
 
     def _compute_component_weights(
         self,
@@ -476,7 +680,18 @@ class RSEMethod(MethodBase):
         if float(base_weights.sum().item()) <= 0.0:
             base_weights = torch.ones_like(base_weights)
 
-        if self.route_k <= 0 or len(components) <= self.route_k:
+        if self.routing_mode == "adaptive":
+            thresholds = torch.tensor(
+                [self.selected_component_margin_thresholds.get(component, -1e9) for component in components],
+                dtype=stacked_scores.dtype,
+                device=stacked_scores.device,
+            )
+            used_weights = (component_margins >= thresholds.unsqueeze(0)).to(dtype=stacked_scores.dtype)
+            used_weights = used_weights * base_weights.unsqueeze(0)
+            empty_rows = used_weights.sum(dim=1) <= 0
+            if bool(empty_rows.any()):
+                used_weights[empty_rows] = base_weights
+        elif self.route_k <= 0 or len(components) <= self.route_k:
             used_weights = base_weights.unsqueeze(0).expand(stacked_scores.shape[0], -1)
         else:
             top_indices = torch.topk(component_margins, k=self.route_k, dim=1).indices
@@ -505,7 +720,7 @@ class RSEMethod(MethodBase):
     def _subset_train_accuracy(self, components: Sequence[Tuple[str, int]]) -> float:
         if self._train_label_indices is None:
             return 0.0
-        final_scores, _, _ = self._combine_scores_batch(self.train_component_loo_scores, components)
+        final_scores, _, _ = self._combine_scores_batch(self._active_train_component_scores(), components)
         preds = final_scores.argmax(dim=-1)
         return float((preds == self._train_label_indices).to(dtype=torch.float32).mean().item())
 
@@ -543,6 +758,27 @@ class RSEMethod(MethodBase):
         self.selected_component_weights = self._compute_component_weights(self.selected_components)
         self.selection_train_accuracy = self._subset_train_accuracy(self.selected_components)
 
+    def _resolve_component_margin_thresholds(self) -> None:
+        self.selected_component_margin_thresholds = {}
+        if self.routing_mode != "adaptive":
+            return
+
+        if self.adaptive_margin_threshold >= 0.0:
+            self.selected_component_margin_thresholds = {
+                component: self.adaptive_margin_threshold
+                for component in self.selected_components
+            }
+            return
+
+        quantile = min(max(self.adaptive_margin_quantile, 0.0), 1.0)
+        score_tables = self._active_train_component_scores()
+        for component in self.selected_components:
+            scores = score_tables.get(component)
+            if scores is None:
+                continue
+            margins = self._compute_margin(self._normalize_score_tensor(scores))
+            self.selected_component_margin_thresholds[component] = float(torch.quantile(margins, q=quantile).item())
+
     def _resolve_fallback_threshold(self) -> None:
         self.resolved_fallback_threshold = None
         if self.zero_shot_fallback is None:
@@ -556,7 +792,7 @@ class RSEMethod(MethodBase):
             return
 
         _, ensemble_margins, best_component_margins = self._combine_scores_batch(
-            self.train_component_loo_scores,
+            self._active_train_component_scores(),
             self.selected_components,
         )
         source_margins = best_component_margins if self.fallback_margin_source == "best_component" else ensemble_margins
@@ -586,11 +822,19 @@ class RSEMethod(MethodBase):
         self._train_label_indices = label_indices
 
         feature_table = self._collect_feature_table(train_data, desc="RSE fit features")
+        feature_table = self._fit_feature_transforms(feature_table)
         self.centroids = self._compute_centroids(feature_table, label_indices)
         self.fdr_scores = self._compute_fdr_scores(feature_table, label_indices)
         self.loo_accuracy_scores, self.train_component_loo_scores = self._compute_loo_stats(feature_table, label_indices)
+        if self.selection_metric == "cv_accuracy":
+            self.cv_accuracy_scores, self.train_component_cv_scores = self._compute_cv_stats(feature_table, label_indices)
+        else:
+            self.cv_accuracy_scores = {}
+            self.train_component_cv_scores = {}
+            self.effective_cv_folds = None
         self.metric_scores = {}
         self._select_components()
+        self._resolve_component_margin_thresholds()
         self._resolve_fallback_threshold()
         self._reset_eval_diagnostics()
         self._fitted = True
@@ -604,12 +848,9 @@ class RSEMethod(MethodBase):
             level_features = sample_features[level]
             level_centroids = self.centroids[level]
             for layer_idx in range(level_features.shape[0]):
-                query = level_features[layer_idx]
+                query = self._transform_component_values(level, layer_idx, level_features[layer_idx])
                 centroids = level_centroids[layer_idx]
-                if self.normalize_features:
-                    query = F.normalize(query.unsqueeze(0), dim=-1).squeeze(0)
-                    centroids = F.normalize(centroids, dim=-1)
-                scores = F.cosine_similarity(centroids, query.unsqueeze(0), dim=-1)
+                scores = self._score_queries_against_centroids(query, centroids)[0]
                 all_scores[(level, layer_idx)] = scores.to(dtype=torch.float32)
         return all_scores
 
@@ -670,6 +911,7 @@ class RSEMethod(MethodBase):
         for level in self.representation_levels:
             fdr_level = self.fdr_scores[level]
             loo_level = self.loo_accuracy_scores[level]
+            cv_level = self.cv_accuracy_scores.get(level)
             for layer_idx in range(len(fdr_level)):
                 key = (level, layer_idx)
                 stats = self._component_eval_stats.get(key, {"correct": 0.0, "count": 0.0})
@@ -681,14 +923,16 @@ class RSEMethod(MethodBase):
                         "selection_score": float(self.metric_scores.get(key, 0.0)),
                         "fdr": float(fdr_level[layer_idx].item()),
                         "loo_accuracy": float(loo_level[layer_idx].item()),
+                        "cv_accuracy": None if cv_level is None else float(cv_level[layer_idx].item()),
                         "selected": key in selected_set,
                         "weight": float(self.selected_component_weights.get(key, 0.0)),
+                        "adaptive_margin_threshold": self.selected_component_margin_thresholds.get(key),
                         "val_accuracy": (float(stats["correct"]) / count) if count > 0 else None,
                     }
                 )
 
         component_table.sort(
-            key=lambda row: (-row["selection_score"], -row["loo_accuracy"], row["level"], row["layer_idx"])
+            key=lambda row: (-row["selection_score"], -(row["loo_accuracy"] or 0.0), row["level"], row["layer_idx"])
         )
         selected_components = [
             {
@@ -698,6 +942,12 @@ class RSEMethod(MethodBase):
                 "weight": float(self.selected_component_weights[(level, layer_idx)]),
                 "fdr": float(self.fdr_scores[level][layer_idx].item()),
                 "loo_accuracy": float(self.loo_accuracy_scores[level][layer_idx].item()),
+                "cv_accuracy": (
+                    None
+                    if level not in self.cv_accuracy_scores
+                    else float(self.cv_accuracy_scores[level][layer_idx].item())
+                ),
+                "adaptive_margin_threshold": self.selected_component_margin_thresholds.get((level, layer_idx)),
                 "val_accuracy": next(
                     (
                         row["val_accuracy"]
@@ -711,6 +961,14 @@ class RSEMethod(MethodBase):
         ]
 
         best_by_loo = max(component_table, key=lambda row: row["loo_accuracy"])
+        best_by_cv = (
+            max(
+                [row for row in component_table if row["cv_accuracy"] is not None],
+                key=lambda row: row["cv_accuracy"],
+            )
+            if self.cv_accuracy_scores
+            else None
+        )
         best_by_val = max(
             [row for row in component_table if row["val_accuracy"] is not None],
             key=lambda row: row["val_accuracy"],
@@ -728,16 +986,25 @@ class RSEMethod(MethodBase):
             "ensemble_weighting": self.ensemble_weighting,
             "score_normalization": self.score_normalization,
             "routing_mode": self.routing_mode,
+            "adaptive_margin_threshold": self.adaptive_margin_threshold,
+            "adaptive_margin_quantile": self.adaptive_margin_quantile,
             "representation_levels": list(self.representation_levels),
             "num_layers": self.num_layers,
             "top_k": self.top_k,
             "greedy_pool_size": self.greedy_pool_size,
+            "cv_folds": self.cv_folds,
+            "effective_cv_folds": self.effective_cv_folds,
+            "centroid_shrinkage": self.centroid_shrinkage,
+            "shrinkage_alpha": self.shrinkage_alpha,
+            "feature_reduction": self.feature_reduction,
+            "pca_dim": self.pca_dim,
             "fallback_margin_threshold": self.resolved_fallback_threshold,
             "fallback_margin_quantile": self.fallback_margin_quantile,
             "fallback_margin_source": self.fallback_margin_source,
             "class_labels": list(self.class_labels),
             "selected_components": selected_components,
             "best_component_by_loo": best_by_loo,
+            "best_component_by_cv": best_by_cv,
             "best_component_by_val": best_by_val,
             "component_table": component_table,
             "train_selection_summary": {

@@ -1,0 +1,47 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:44,  7.00it/s]Loading weights:   0%|          | 2/730 [00:00<02:01,  5.98it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 49.36it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:09, 71.09it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:08, 85.97it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:05, 119.30it/s]Loading weights:  11%|█         | 77/730 [00:00<00:05, 110.53it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:04, 136.28it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:04, 124.37it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:04, 141.24it/s]Loading weights:  21%|██        | 151/730 [00:01<00:04, 130.50it/s]Loading weights:  23%|██▎       | 169/730 [00:01<00:04, 121.62it/s]Loading weights:  27%|██▋       | 194/730 [00:01<00:03, 151.70it/s]Loading weights:  29%|██▉       | 211/730 [00:01<00:03, 135.86it/s]Loading weights:  32%|███▏      | 232/730 [00:01<00:03, 145.04it/s]Loading weights:  34%|███▍      | 248/730 [00:02<00:04, 115.65it/s]Loading weights:  37%|███▋      | 269/730 [00:02<00:03, 117.26it/s]Loading weights:  42%|████▏     | 304/730 [00:02<00:02, 160.80it/s]Loading weights:  44%|████▍     | 323/730 [00:02<00:02, 153.24it/s]Loading weights:  47%|████▋     | 345/730 [00:02<00:02, 167.73it/s]Loading weights:  69%|██████▉   | 503/730 [00:02<00:00, 509.16it/s]Loading weights:  90%|████████▉ | 656/730 [00:02<00:00, 769.58it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 243.38it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 80.0
+  total: 80.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 40
+      - 0
+    - - 0
+      - 40
+  per_class:
+    unharmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 40.0
+      predicted: 40.0
+      true_positive: 40.0
+      false_positive: 0.0
+      false_negative: 0.0
+    harmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 40.0
+      predicted: 40.0
+      true_positive: 40.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260325_040658_rse_expanded_suite/vlguard_rse_adaptive_qwen2_vl_20260325_040658.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260325_040658_rse_expanded_suite/vlguard_rse_adaptive_qwen2_vl_20260325_040658.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/outputs/20260325_040658_rse_expanded_suite/vlguard_rse_adaptive_qwen2_vl_20260325_040658.diagnostics.json
+
