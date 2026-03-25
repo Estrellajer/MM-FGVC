@@ -1,0 +1,7 @@
+experiment_id	dataset_name	evaluator_name	train_subset	val_subset
+cub	cub	raw	/root/autodl-tmp/FGVC/swap/subsets/20260324_125034_fgvc_method_suite/cub/train_subset.json	/root/autodl-tmp/FGVC/swap/subsets/20260324_125034_fgvc_method_suite/cub/val_subset.json
+eurosat	eurosat	raw	/root/autodl-tmp/FGVC/swap/subsets/20260324_125034_fgvc_method_suite/eurosat/train_subset.json	/root/autodl-tmp/FGVC/swap/subsets/20260324_125034_fgvc_method_suite/eurosat/val_subset.json
+naturalbench_vqa	naturalbench_vqa	raw	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/naturalbench_vqa/train_subset.jsonl	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/naturalbench_vqa/val_subset.jsonl
+sugarcrepe	sugarcrepe	pair	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/sugarcrepe/train_subset.jsonl	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/sugarcrepe/val_subset.jsonl
+vlguard	vlguard	raw	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/vlguard/train_subset.json	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/vlguard/val_subset.json
+blink_semantic_correspondence	blink_semantic_correspondence	raw	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/blink_semantic_correspondence/train_subset.json	/root/autodl-tmp/FGVC/swap/subsets/20260325_040658_rse_expanded_suite/blink_semantic_correspondence/val_subset.json

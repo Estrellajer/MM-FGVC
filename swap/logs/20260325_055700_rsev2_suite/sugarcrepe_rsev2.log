@@ -1,0 +1,48 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:45,  6.90it/s]Loading weights:   0%|          | 2/730 [00:00<02:03,  5.88it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 48.64it/s]Loading weights:   3%|▎         | 23/730 [00:00<00:14, 49.22it/s]Loading weights:   7%|▋         | 52/730 [00:00<00:06, 107.68it/s]Loading weights:   9%|▉         | 66/730 [00:00<00:05, 113.76it/s]Loading weights:  12%|█▏        | 86/730 [00:01<00:05, 112.20it/s]Loading weights:  15%|█▌        | 112/730 [00:01<00:04, 143.95it/s]Loading weights:  18%|█▊        | 128/730 [00:01<00:04, 132.67it/s]Loading weights:  20%|██        | 148/730 [00:01<00:04, 144.98it/s]Loading weights:  22%|██▏       | 164/730 [00:01<00:04, 134.30it/s]Loading weights:  25%|██▍       | 180/730 [00:01<00:03, 140.45it/s]Loading weights:  27%|██▋       | 196/730 [00:01<00:03, 140.90it/s]Loading weights:  29%|██▉       | 211/730 [00:01<00:03, 130.96it/s]Loading weights:  32%|███▏      | 230/730 [00:01<00:03, 146.06it/s]Loading weights:  34%|███▎      | 246/730 [00:02<00:03, 128.08it/s]Loading weights:  36%|███▋      | 266/730 [00:02<00:03, 141.89it/s]Loading weights:  38%|███▊      | 281/730 [00:02<00:03, 141.20it/s]Loading weights:  41%|████      | 296/730 [00:02<00:03, 137.59it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 149.23it/s]Loading weights:  45%|████▌     | 332/730 [00:02<00:02, 138.80it/s]Loading weights:  65%|██████▌   | 475/730 [00:02<00:00, 473.25it/s]Loading weights:  86%|████████▋ | 631/730 [00:02<00:00, 764.02it/s]Loading weights: 100%|██████████| 730/730 [00:02<00:00, 244.10it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.725
+  pair_correct: 29.0
+  pair_total: 40.0
+  raw_accuracy: 0.8625
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 32
+      - 8
+    - - 3
+      - 37
+  per_class:
+    'Yes':
+      precision: 0.9142857142857143
+      recall: 0.8
+      f1: 0.8533333333333333
+      support: 40.0
+      predicted: 35.0
+      true_positive: 32.0
+      false_positive: 3.0
+      false_negative: 8.0
+    'No':
+      precision: 0.8222222222222222
+      recall: 0.925
+      f1: 0.8705882352941177
+      support: 40.0
+      predicted: 45.0
+      true_positive: 37.0
+      false_positive: 8.0
+      false_negative: 3.0
+  macro_precision: 0.8682539682539683
+  macro_recall: 0.8625
+  macro_f1: 0.8619607843137255
+  balanced_accuracy: 0.8625
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260325_055700_rsev2_suite/sugarcrepe_rsev2_qwen2_vl_20260325_055700.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260325_055700_rsev2_suite/sugarcrepe_rsev2_qwen2_vl_20260325_055700.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/outputs/20260325_055700_rsev2_suite/sugarcrepe_rsev2_qwen2_vl_20260325_055700.diagnostics.json
+

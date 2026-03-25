@@ -1,0 +1,641 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:45,  6.88it/s]Loading weights:   0%|          | 2/730 [00:00<02:04,  5.87it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 48.50it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:10, 69.80it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:08, 84.01it/s]Loading weights:   8%|▊         | 60/730 [00:00<00:06, 110.41it/s]Loading weights:  10%|█         | 76/730 [00:00<00:05, 120.65it/s]Loading weights:  12%|█▏        | 89/730 [00:01<00:05, 119.75it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:05, 118.73it/s]Loading weights:  16%|█▌        | 115/730 [00:01<00:06, 100.00it/s]Loading weights:  20%|██        | 147/730 [00:01<00:03, 151.09it/s]Loading weights:  22%|██▏       | 164/730 [00:01<00:04, 140.21it/s]Loading weights:  25%|██▍       | 179/730 [00:01<00:03, 140.99it/s]Loading weights:  27%|██▋       | 196/730 [00:01<00:03, 134.08it/s]Loading weights:  29%|██▉       | 210/730 [00:01<00:03, 131.82it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:03, 146.49it/s]Loading weights:  34%|███▍      | 247/730 [00:02<00:04, 111.98it/s]Loading weights:  38%|███▊      | 277/730 [00:02<00:03, 144.87it/s]Loading weights:  40%|████      | 293/730 [00:02<00:03, 143.11it/s]Loading weights:  42%|████▏     | 309/730 [00:02<00:02, 144.73it/s]Loading weights:  45%|████▍     | 325/730 [00:02<00:03, 133.97it/s]Loading weights:  59%|█████▉    | 431/730 [00:02<00:00, 358.97it/s]Loading weights:  80%|████████  | 587/730 [00:02<00:00, 666.49it/s]Loading weights: 100%|█████████▉| 729/730 [00:03<00:00, 863.28it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 239.60it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.96
+  correct: 96.0
+  total: 100.0
+  label_order:
+  - Acadian Flycatcher
+  - American Crow
+  - American Goldfinch
+  - American Pipit
+  - American Redstart
+  - American Three toed Woodpecker
+  - Anna Hummingbird
+  - Artic Tern
+  - Baird Sparrow
+  - Baltimore Oriole
+  - Bank Swallow
+  - Barn Swallow
+  - Bay breasted Warbler
+  - Belted Kingfisher
+  - Bewick Wren
+  - Black Tern
+  - Black and white Warbler
+  - Black billed Cuckoo
+  - Black capped Vireo
+  - Black footed Albatross
+  confusion_matrix:
+    labels:
+    - Acadian Flycatcher
+    - American Crow
+    - American Goldfinch
+    - American Pipit
+    - American Redstart
+    - American Three toed Woodpecker
+    - Anna Hummingbird
+    - Artic Tern
+    - Baird Sparrow
+    - Baltimore Oriole
+    - Bank Swallow
+    - Barn Swallow
+    - Bay breasted Warbler
+    - Belted Kingfisher
+    - Bewick Wren
+    - Black Tern
+    - Black and white Warbler
+    - Black billed Cuckoo
+    - Black capped Vireo
+    - Black footed Albatross
+    matrix:
+    - - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 1
+      - 2
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+  per_class:
+    Acadian Flycatcher:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    American Crow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    American Goldfinch:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    American Pipit:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    American Redstart:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    American Three toed Woodpecker:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Anna Hummingbird:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Artic Tern:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Baird Sparrow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Baltimore Oriole:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Bank Swallow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Barn Swallow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Bay breasted Warbler:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Belted Kingfisher:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Bewick Wren:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Black Tern:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Black and white Warbler:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Black billed Cuckoo:
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 5.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 3.0
+    Black capped Vireo:
+      precision: 0.8
+      recall: 0.8
+      f1: 0.8000000000000002
+      support: 5.0
+      predicted: 5.0
+      true_positive: 4.0
+      false_positive: 1.0
+      false_negative: 1.0
+    Black footed Albatross:
+      precision: 0.7142857142857143
+      recall: 1.0
+      f1: 0.8333333333333333
+      support: 5.0
+      predicted: 7.0
+      true_positive: 5.0
+      false_positive: 2.0
+      false_negative: 0.0
+  macro_precision: 0.9673809523809525
+  macro_recall: 0.96
+  macro_f1: 0.9556926406926406
+  balanced_accuracy: 0.96
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260325_051526_rse_adaptive_combo_suite/cub_rse_adaptive_only_qwen2_vl_20260325_051526.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260325_051526_rse_adaptive_combo_suite/cub_rse_adaptive_only_qwen2_vl_20260325_051526.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/outputs/20260325_051526_rse_adaptive_combo_suite/cub_rse_adaptive_only_qwen2_vl_20260325_051526.diagnostics.json
+

@@ -1,0 +1,59 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "sugarcrepe",
+  "method": "rsev2",
+  "evaluator": "pair",
+  "metrics": {
+    "metric": "pair_accuracy",
+    "pair_accuracy": 0.725,
+    "pair_correct": 29.0,
+    "pair_total": 40.0,
+    "raw_accuracy": 0.8625,
+    "label_order": [
+      "Yes",
+      "No"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Yes",
+        "No"
+      ],
+      "matrix": [
+        [
+          32,
+          8
+        ],
+        [
+          3,
+          37
+        ]
+      ]
+    },
+    "per_class": {
+      "Yes": {
+        "precision": 0.9142857142857143,
+        "recall": 0.8,
+        "f1": 0.8533333333333333,
+        "support": 40.0,
+        "predicted": 35.0,
+        "true_positive": 32.0,
+        "false_positive": 3.0,
+        "false_negative": 8.0
+      },
+      "No": {
+        "precision": 0.8222222222222222,
+        "recall": 0.925,
+        "f1": 0.8705882352941177,
+        "support": 40.0,
+        "predicted": 45.0,
+        "true_positive": 37.0,
+        "false_positive": 8.0,
+        "false_negative": 3.0
+      }
+    },
+    "macro_precision": 0.8682539682539683,
+    "macro_recall": 0.8625,
+    "macro_f1": 0.8619607843137255,
+    "balanced_accuracy": 0.8625
+  }
+}

@@ -1,0 +1,14 @@
+name: rsev2
+fit_on_train: true
+params:
+  representation_levels:
+    - head
+    - layer
+    - attn
+    - mlp
+  covariance_shrinkage: auto
+  shrinkage_alpha: 0.0
+  min_shrinkage_alpha: 0.0001
+  covariance_floor: 0.000001
+  confidence_floor: 0.0
+  progress_bar: true
