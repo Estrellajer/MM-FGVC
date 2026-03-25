@@ -1,0 +1,81 @@
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:45,  6.93it/s]Loading weights:   0%|          | 2/730 [00:00<02:03,  5.89it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:14, 48.68it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:10, 68.92it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:08, 80.13it/s]Loading weights:   8%|▊         | 57/730 [00:00<00:06, 99.55it/s]Loading weights:  10%|█         | 76/730 [00:00<00:05, 117.53it/s]Loading weights:  12%|█▏        | 89/730 [00:01<00:05, 115.43it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:05, 110.57it/s]Loading weights:  16%|█▋        | 120/730 [00:01<00:04, 128.75it/s]Loading weights:  18%|█▊        | 135/730 [00:01<00:04, 122.26it/s]Loading weights:  21%|██        | 150/730 [00:01<00:04, 123.83it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:03, 140.65it/s]Loading weights:  26%|██▌       | 187/730 [00:01<00:04, 129.40it/s]Loading weights:  28%|██▊       | 208/730 [00:01<00:03, 142.82it/s]Loading weights:  31%|███       | 223/730 [00:02<00:03, 128.08it/s]Loading weights:  33%|███▎      | 244/730 [00:02<00:03, 140.32it/s]Loading weights:  35%|███▌      | 259/730 [00:02<00:03, 126.01it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 140.63it/s]Loading weights:  40%|████      | 295/730 [00:02<00:03, 127.31it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:02, 139.83it/s]Loading weights:  45%|████▌     | 331/730 [00:02<00:03, 126.98it/s]Loading weights:  65%|██████▌   | 477/730 [00:02<00:00, 443.46it/s]Loading weights:  85%|████████▌ | 621/730 [00:03<00:00, 694.62it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 231.60it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.75
+  correct: 30.0
+  total: 40.0
+  label_order:
+  - A
+  - B
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - A
+    - B
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 5
+      - 1
+      - 0
+      - 0
+    - - 1
+      - 5
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 11
+      - 3
+    - - 0
+      - 0
+      - 5
+      - 9
+  per_class:
+    A:
+      precision: 0.8333333333333334
+      recall: 0.8333333333333334
+      f1: 0.8333333333333334
+      support: 6.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 1.0
+    B:
+      precision: 0.8333333333333334
+      recall: 0.8333333333333334
+      f1: 0.8333333333333334
+      support: 6.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 1.0
+    'Yes':
+      precision: 0.6875
+      recall: 0.7857142857142857
+      f1: 0.7333333333333334
+      support: 14.0
+      predicted: 16.0
+      true_positive: 11.0
+      false_positive: 5.0
+      false_negative: 3.0
+    'No':
+      precision: 0.75
+      recall: 0.6428571428571429
+      f1: 0.6923076923076924
+      support: 14.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 5.0
+  macro_precision: 0.7760416666666667
+  macro_recall: 0.7738095238095238
+  macro_f1: 0.7730769230769231
+  balanced_accuracy: 0.7738095238095238
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/outputs/20260325_015822_all_task_method_suite/naturalbench_vqa_zero_shot_qwen2_vl_20260325_015822.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/outputs/20260325_015822_all_task_method_suite/naturalbench_vqa_zero_shot_qwen2_vl_20260325_015822.predictions.jsonl
+

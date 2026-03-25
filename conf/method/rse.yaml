@@ -1,0 +1,15 @@
+name: rse
+fit_on_train: true
+params:
+  top_k: 8
+  representation_levels:
+    - head
+    - layer
+    - attn
+    - mlp
+  normalize_features: true
+  fallback_margin_threshold: -1.0
+  fallback_max_new_tokens: 16
+  fallback_do_sample: false
+  fallback_temperature: 0.0
+  progress_bar: true

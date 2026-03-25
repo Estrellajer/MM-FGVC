@@ -1,0 +1,982 @@
+{
+  "method": "rse",
+  "selection_metric": "fdr",
+  "representation_levels": [
+    "head",
+    "layer",
+    "attn",
+    "mlp"
+  ],
+  "num_layers": 28,
+  "class_labels": [
+    "(C)",
+    "(B)",
+    "(D)",
+    "(A)"
+  ],
+  "selected_components": [
+    {
+      "level": "attn",
+      "layer_idx": 5,
+      "weight": 0.13390891253948212,
+      "fdr": 0.052213799208402634,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 5,
+      "weight": 0.13023601472377777,
+      "fdr": 0.05078166350722313,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 5,
+      "weight": 0.12818586826324463,
+      "fdr": 0.04998226836323738,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "layer",
+      "layer_idx": 5,
+      "weight": 0.12484808266162872,
+      "fdr": 0.04868079721927643,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 4,
+      "weight": 0.12186861038208008,
+      "fdr": 0.04751903936266899,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 6,
+      "weight": 0.12129662930965424,
+      "fdr": 0.04729601368308067,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 1,
+      "weight": 0.12028905749320984,
+      "fdr": 0.04690314084291458,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 6,
+      "weight": 0.1193668320775032,
+      "fdr": 0.04654354602098465,
+      "val_accuracy": 0.2
+    }
+  ],
+  "component_table": [
+    {
+      "level": "attn",
+      "layer_idx": 5,
+      "fdr": 0.052213799208402634,
+      "selected": true,
+      "weight": 0.13390891253948212,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 5,
+      "fdr": 0.05078166350722313,
+      "selected": true,
+      "weight": 0.13023601472377777,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 5,
+      "fdr": 0.04998226836323738,
+      "selected": true,
+      "weight": 0.12818586826324463,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "layer",
+      "layer_idx": 5,
+      "fdr": 0.04868079721927643,
+      "selected": true,
+      "weight": 0.12484808266162872,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 4,
+      "fdr": 0.04751903936266899,
+      "selected": true,
+      "weight": 0.12186861038208008,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 6,
+      "fdr": 0.04729601368308067,
+      "selected": true,
+      "weight": 0.12129662930965424,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 1,
+      "fdr": 0.04690314084291458,
+      "selected": true,
+      "weight": 0.12028905749320984,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 6,
+      "fdr": 0.04654354602098465,
+      "selected": true,
+      "weight": 0.1193668320775032,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 4,
+      "fdr": 0.04649360850453377,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 4,
+      "fdr": 0.046118494123220444,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "attn",
+      "layer_idx": 9,
+      "fdr": 0.045409850776195526,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 2,
+      "fdr": 0.04508952796459198,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "layer",
+      "layer_idx": 3,
+      "fdr": 0.044952381402254105,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 1,
+      "fdr": 0.044817760586738586,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 4,
+      "fdr": 0.044713545590639114,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 0,
+      "fdr": 0.04444468021392822,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 3,
+      "fdr": 0.04398832097649574,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 0,
+      "fdr": 0.0438828319311142,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "attn",
+      "layer_idx": 26,
+      "fdr": 0.04346128925681114,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 1,
+      "fdr": 0.04328461363911629,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 3,
+      "fdr": 0.043005406856536865,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "head",
+      "layer_idx": 6,
+      "fdr": 0.042676400393247604,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 2,
+      "fdr": 0.04250337928533554,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 2,
+      "fdr": 0.04240666702389717,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 0,
+      "fdr": 0.042350612580776215,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 7,
+      "fdr": 0.04220091551542282,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 6,
+      "fdr": 0.04219827055931091,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "head",
+      "layer_idx": 26,
+      "fdr": 0.041471127420663834,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "attn",
+      "layer_idx": 11,
+      "fdr": 0.04142848774790764,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 21,
+      "fdr": 0.04132579267024994,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 11,
+      "fdr": 0.041303083300590515,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 21,
+      "fdr": 0.04120193049311638,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "head",
+      "layer_idx": 2,
+      "fdr": 0.04109621047973633,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 3,
+      "fdr": 0.040938638150691986,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 8,
+      "fdr": 0.040737785398960114,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 7,
+      "fdr": 0.040677234530448914,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 7,
+      "fdr": 0.040329936891794205,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 10,
+      "fdr": 0.039999522268772125,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 9,
+      "fdr": 0.039763517677783966,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 22,
+      "fdr": 0.039248060435056686,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 10,
+      "fdr": 0.039241641759872437,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 8,
+      "fdr": 0.03882308676838875,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 10,
+      "fdr": 0.03871413320302963,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 10,
+      "fdr": 0.038598060607910156,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 9,
+      "fdr": 0.03840644657611847,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 1,
+      "fdr": 0.03837157413363457,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.3
+    },
+    {
+      "level": "head",
+      "layer_idx": 22,
+      "fdr": 0.0383327379822731,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 27,
+      "fdr": 0.03831486403942108,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "layer",
+      "layer_idx": 9,
+      "fdr": 0.03820328414440155,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 7,
+      "fdr": 0.038140639662742615,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 0,
+      "fdr": 0.03799177706241608,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 11,
+      "fdr": 0.03792252019047737,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 13,
+      "fdr": 0.037432700395584106,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 12,
+      "fdr": 0.03721872344613075,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 8,
+      "fdr": 0.03711927682161331,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 11,
+      "fdr": 0.036139898002147675,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 13,
+      "fdr": 0.03598581999540329,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 8,
+      "fdr": 0.03574062138795853,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 12,
+      "fdr": 0.035694897174835205,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 23,
+      "fdr": 0.03543493151664734,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 24,
+      "fdr": 0.03538738936185837,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "attn",
+      "layer_idx": 27,
+      "fdr": 0.035375867038965225,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.35
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 13,
+      "fdr": 0.03522621467709541,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 13,
+      "fdr": 0.034906256943941116,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "attn",
+      "layer_idx": 19,
+      "fdr": 0.034804847091436386,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 12,
+      "fdr": 0.034521203488111496,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 12,
+      "fdr": 0.034392207860946655,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 14,
+      "fdr": 0.034324608743190765,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "attn",
+      "layer_idx": 23,
+      "fdr": 0.03406129404902458,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 14,
+      "fdr": 0.03365498036146164,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 14,
+      "fdr": 0.03331933170557022,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 25,
+      "fdr": 0.033177297562360764,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "attn",
+      "layer_idx": 20,
+      "fdr": 0.03302919864654541,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 19,
+      "fdr": 0.03259414806962013,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.05
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 22,
+      "fdr": 0.032527897506952286,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 15,
+      "fdr": 0.03244734928011894,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 20,
+      "fdr": 0.03243177756667137,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 26,
+      "fdr": 0.03203320875763893,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 22,
+      "fdr": 0.031873542815446854,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 26,
+      "fdr": 0.03163771331310272,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 24,
+      "fdr": 0.0315239317715168,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 23,
+      "fdr": 0.03130347281694412,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 23,
+      "fdr": 0.03121502324938774,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 27,
+      "fdr": 0.031028427183628082,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 27,
+      "fdr": 0.030917149037122726,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 14,
+      "fdr": 0.03090376779437065,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 15,
+      "fdr": 0.030889077112078667,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 24,
+      "fdr": 0.030692098662257195,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 20,
+      "fdr": 0.03065115213394165,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 25,
+      "fdr": 0.030649222433567047,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 21,
+      "fdr": 0.030617352575063705,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 24,
+      "fdr": 0.03050638921558857,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 16,
+      "fdr": 0.030478008091449738,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 19,
+      "fdr": 0.03042605146765709,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "attn",
+      "layer_idx": 18,
+      "fdr": 0.030204270035028458,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 21,
+      "fdr": 0.030185429379343987,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 25,
+      "fdr": 0.030013473704457283,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 16,
+      "fdr": 0.02942320704460144,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 16,
+      "fdr": 0.029376527294516563,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 25,
+      "fdr": 0.029367979615926743,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 20,
+      "fdr": 0.029170412570238113,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "layer",
+      "layer_idx": 19,
+      "fdr": 0.029140828177332878,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 16,
+      "fdr": 0.02909224107861519,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 17,
+      "fdr": 0.028841504827141762,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "attn",
+      "layer_idx": 17,
+      "fdr": 0.028185108676552773,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "head",
+      "layer_idx": 17,
+      "fdr": 0.02740117534995079,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "attn",
+      "layer_idx": 15,
+      "fdr": 0.027017172425985336,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 15,
+      "fdr": 0.02695119008421898,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "layer",
+      "layer_idx": 17,
+      "fdr": 0.026511739939451218,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 18,
+      "fdr": 0.026182567700743675,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "layer",
+      "layer_idx": 18,
+      "fdr": 0.026034846901893616,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 18,
+      "fdr": 0.026028119027614594,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    }
+  ],
+  "eval_summary": {
+    "final_accuracy": 0.2,
+    "final_correct": 4,
+    "final_total": 20,
+    "fallback_used": 0,
+    "margin_mean": 0.0005064129829406739,
+    "margin_min": 0.00011032819747924805,
+    "margin_max": 0.0019001960754394531
+  }
+}

@@ -1,0 +1,1178 @@
+{
+  "method": "rse",
+  "selection_metric": "fdr",
+  "representation_levels": [
+    "head",
+    "layer",
+    "attn",
+    "mlp"
+  ],
+  "num_layers": 28,
+  "class_labels": [
+    "Acadian Flycatcher",
+    "American Crow",
+    "American Goldfinch",
+    "American Pipit",
+    "American Redstart",
+    "American Three toed Woodpecker",
+    "Anna Hummingbird",
+    "Artic Tern",
+    "Baird Sparrow",
+    "Baltimore Oriole",
+    "Bank Swallow",
+    "Barn Swallow",
+    "Bay breasted Warbler",
+    "Belted Kingfisher",
+    "Bewick Wren",
+    "Black Tern",
+    "Black and white Warbler",
+    "Black billed Cuckoo",
+    "Black capped Vireo",
+    "Black footed Albatross",
+    "Black throated Blue Warbler",
+    "Black throated Sparrow",
+    "Blue Grosbeak",
+    "Blue Jay",
+    "Blue headed Vireo",
+    "Blue winged Warbler",
+    "Boat tailed Grackle",
+    "Bobolink",
+    "Bohemian Waxwing",
+    "Brandt Cormorant",
+    "Brewer Blackbird",
+    "Brewer Sparrow",
+    "Bronzed Cowbird",
+    "Brown Creeper",
+    "Brown Pelican",
+    "Brown Thrasher",
+    "Cactus Wren",
+    "California Gull",
+    "Canada Warbler",
+    "Cape Glossy Starling",
+    "Cape May Warbler",
+    "Cardinal",
+    "Carolina Wren",
+    "Caspian Tern",
+    "Cedar Waxwing",
+    "Cerulean Warbler",
+    "Chestnut sided Warbler",
+    "Chipping Sparrow",
+    "Chuck will Widow",
+    "Clark Nutcracker",
+    "Clay colored Sparrow",
+    "Cliff Swallow",
+    "Common Raven",
+    "Common Tern",
+    "Common Yellowthroat",
+    "Crested Auklet",
+    "Dark eyed Junco",
+    "Downy Woodpecker",
+    "Eared Grebe",
+    "Eastern Towhee",
+    "Elegant Tern",
+    "European Goldfinch",
+    "Evening Grosbeak",
+    "Field Sparrow",
+    "Fish Crow",
+    "Florida Jay",
+    "Forsters Tern",
+    "Fox Sparrow",
+    "Frigatebird",
+    "Gadwall",
+    "Geococcyx",
+    "Glaucous winged Gull",
+    "Golden winged Warbler",
+    "Grasshopper Sparrow",
+    "Gray Catbird",
+    "Gray Kingbird",
+    "Gray crowned Rosy Finch",
+    "Great Crested Flycatcher",
+    "Great Grey Shrike",
+    "Green Jay",
+    "Green Kingfisher",
+    "Green Violetear",
+    "Green tailed Towhee",
+    "Groove billed Ani",
+    "Harris Sparrow",
+    "Heermann Gull",
+    "Henslow Sparrow",
+    "Herring Gull",
+    "Hooded Merganser",
+    "Hooded Oriole",
+    "Hooded Warbler",
+    "Horned Grebe",
+    "Horned Lark",
+    "Horned Puffin",
+    "House Sparrow",
+    "House Wren",
+    "Indigo Bunting",
+    "Ivory Gull",
+    "Kentucky Warbler",
+    "Laysan Albatross",
+    "Lazuli Bunting",
+    "Le Conte Sparrow",
+    "Least Auklet",
+    "Least Flycatcher",
+    "Least Tern",
+    "Lincoln Sparrow",
+    "Loggerhead Shrike",
+    "Long tailed Jaeger",
+    "Louisiana Waterthrush",
+    "Magnolia Warbler",
+    "Mallard",
+    "Mangrove Cuckoo",
+    "Marsh Wren",
+    "Mockingbird",
+    "Mourning Warbler",
+    "Myrtle Warbler",
+    "Nashville Warbler",
+    "Nelson Sharp tailed Sparrow",
+    "Nighthawk",
+    "Northern Flicker",
+    "Northern Fulmar",
+    "Northern Waterthrush",
+    "Olive sided Flycatcher",
+    "Orange crowned Warbler",
+    "Orchard Oriole",
+    "Ovenbird",
+    "Pacific Loon",
+    "Painted Bunting",
+    "Palm Warbler",
+    "Parakeet Auklet",
+    "Pelagic Cormorant",
+    "Philadelphia Vireo",
+    "Pied Kingfisher",
+    "Pied billed Grebe",
+    "Pigeon Guillemot",
+    "Pileated Woodpecker",
+    "Pine Grosbeak",
+    "Pine Warbler",
+    "Pomarine Jaeger",
+    "Prairie Warbler",
+    "Prothonotary Warbler",
+    "Purple Finch",
+    "Red bellied Woodpecker",
+    "Red breasted Merganser",
+    "Red cockaded Woodpecker",
+    "Red eyed Vireo",
+    "Red faced Cormorant",
+    "Red headed Woodpecker",
+    "Red legged Kittiwake",
+    "Red winged Blackbird",
+    "Rhinoceros Auklet",
+    "Ring billed Gull",
+    "Ringed Kingfisher",
+    "Rock Wren",
+    "Rose breasted Grosbeak",
+    "Ruby throated Hummingbird",
+    "Rufous Hummingbird",
+    "Rusty Blackbird",
+    "Sage Thrasher",
+    "Savannah Sparrow",
+    "Sayornis",
+    "Scarlet Tanager",
+    "Scissor tailed Flycatcher",
+    "Scott Oriole",
+    "Seaside Sparrow",
+    "Shiny Cowbird",
+    "Slaty backed Gull",
+    "Song Sparrow",
+    "Sooty Albatross",
+    "Spotted Catbird",
+    "Summer Tanager",
+    "Swainson Warbler",
+    "Tennessee Warbler",
+    "Tree Sparrow",
+    "Tree Swallow",
+    "Tropical Kingbird",
+    "Vermilion Flycatcher",
+    "Vesper Sparrow",
+    "Warbling Vireo",
+    "Western Grebe",
+    "Western Gull",
+    "Western Meadowlark",
+    "Western Wood Pewee",
+    "Whip poor Will",
+    "White Pelican",
+    "White breasted Kingfisher",
+    "White breasted Nuthatch",
+    "White crowned Sparrow",
+    "White eyed Vireo",
+    "White necked Raven",
+    "White throated Sparrow",
+    "Wilson Warbler",
+    "Winter Wren",
+    "Worm eating Warbler",
+    "Yellow Warbler",
+    "Yellow bellied Flycatcher",
+    "Yellow billed Cuckoo",
+    "Yellow breasted Chat",
+    "Yellow headed Blackbird",
+    "Yellow throated Vireo"
+  ],
+  "selected_components": [
+    {
+      "level": "attn",
+      "layer_idx": 26,
+      "weight": 0.15948033332824707,
+      "fdr": 4.179392337799072,
+      "val_accuracy": 0.76
+    },
+    {
+      "level": "head",
+      "layer_idx": 26,
+      "weight": 0.15230949223041534,
+      "fdr": 3.9914708137512207,
+      "val_accuracy": 0.73
+    },
+    {
+      "level": "head",
+      "layer_idx": 27,
+      "weight": 0.12414009124040604,
+      "fdr": 3.2532546520233154,
+      "val_accuracy": 0.75
+    },
+    {
+      "level": "head",
+      "layer_idx": 25,
+      "weight": 0.12147963047027588,
+      "fdr": 3.1835339069366455,
+      "val_accuracy": 0.605
+    },
+    {
+      "level": "attn",
+      "layer_idx": 27,
+      "weight": 0.11867788434028625,
+      "fdr": 3.110110282897949,
+      "val_accuracy": 0.72
+    },
+    {
+      "level": "attn",
+      "layer_idx": 25,
+      "weight": 0.11640501767396927,
+      "fdr": 3.050546884536743,
+      "val_accuracy": 0.59
+    },
+    {
+      "level": "attn",
+      "layer_idx": 10,
+      "weight": 0.1038326621055603,
+      "fdr": 2.721071720123291,
+      "val_accuracy": 0.36
+    },
+    {
+      "level": "layer",
+      "layer_idx": 27,
+      "weight": 0.10367488861083984,
+      "fdr": 2.7169370651245117,
+      "val_accuracy": 0.595
+    }
+  ],
+  "component_table": [
+    {
+      "level": "attn",
+      "layer_idx": 26,
+      "fdr": 4.179392337799072,
+      "selected": true,
+      "weight": 0.15948033332824707,
+      "val_accuracy": 0.76
+    },
+    {
+      "level": "head",
+      "layer_idx": 26,
+      "fdr": 3.9914708137512207,
+      "selected": true,
+      "weight": 0.15230949223041534,
+      "val_accuracy": 0.73
+    },
+    {
+      "level": "head",
+      "layer_idx": 27,
+      "fdr": 3.2532546520233154,
+      "selected": true,
+      "weight": 0.12414009124040604,
+      "val_accuracy": 0.75
+    },
+    {
+      "level": "head",
+      "layer_idx": 25,
+      "fdr": 3.1835339069366455,
+      "selected": true,
+      "weight": 0.12147963047027588,
+      "val_accuracy": 0.605
+    },
+    {
+      "level": "attn",
+      "layer_idx": 27,
+      "fdr": 3.110110282897949,
+      "selected": true,
+      "weight": 0.11867788434028625,
+      "val_accuracy": 0.72
+    },
+    {
+      "level": "attn",
+      "layer_idx": 25,
+      "fdr": 3.050546884536743,
+      "selected": true,
+      "weight": 0.11640501767396927,
+      "val_accuracy": 0.59
+    },
+    {
+      "level": "attn",
+      "layer_idx": 10,
+      "fdr": 2.721071720123291,
+      "selected": true,
+      "weight": 0.1038326621055603,
+      "val_accuracy": 0.36
+    },
+    {
+      "level": "layer",
+      "layer_idx": 27,
+      "fdr": 2.7169370651245117,
+      "selected": true,
+      "weight": 0.10367488861083984,
+      "val_accuracy": 0.595
+    },
+    {
+      "level": "head",
+      "layer_idx": 3,
+      "fdr": 2.6400156021118164,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.375
+    },
+    {
+      "level": "head",
+      "layer_idx": 10,
+      "fdr": 2.622243642807007,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.37
+    },
+    {
+      "level": "attn",
+      "layer_idx": 3,
+      "fdr": 2.607982873916626,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.325
+    },
+    {
+      "level": "head",
+      "layer_idx": 2,
+      "fdr": 2.4405884742736816,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.4
+    },
+    {
+      "level": "head",
+      "layer_idx": 1,
+      "fdr": 2.3886499404907227,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.41
+    },
+    {
+      "level": "attn",
+      "layer_idx": 7,
+      "fdr": 2.3475916385650635,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.325
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 27,
+      "fdr": 2.344494581222534,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.39
+    },
+    {
+      "level": "attn",
+      "layer_idx": 2,
+      "fdr": 2.3278441429138184,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.32
+    },
+    {
+      "level": "layer",
+      "layer_idx": 3,
+      "fdr": 2.293076515197754,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.315
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 3,
+      "fdr": 2.290191173553467,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.28
+    },
+    {
+      "level": "head",
+      "layer_idx": 7,
+      "fdr": 2.2780396938323975,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.315
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 2,
+      "fdr": 2.252324342727661,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.22
+    },
+    {
+      "level": "attn",
+      "layer_idx": 1,
+      "fdr": 2.223642349243164,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.32
+    },
+    {
+      "level": "layer",
+      "layer_idx": 2,
+      "fdr": 2.2081258296966553,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.31
+    },
+    {
+      "level": "layer",
+      "layer_idx": 26,
+      "fdr": 2.2022628784179688,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.425
+    },
+    {
+      "level": "layer",
+      "layer_idx": 1,
+      "fdr": 2.1213912963867188,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.345
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 7,
+      "fdr": 2.0638608932495117,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.27
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 4,
+      "fdr": 2.058638095855713,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.195
+    },
+    {
+      "level": "layer",
+      "layer_idx": 4,
+      "fdr": 2.0538291931152344,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.215
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 10,
+      "fdr": 2.0521013736724854,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.295
+    },
+    {
+      "level": "layer",
+      "layer_idx": 7,
+      "fdr": 2.0311758518218994,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.28
+    },
+    {
+      "level": "head",
+      "layer_idx": 11,
+      "fdr": 2.029888868331909,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.285
+    },
+    {
+      "level": "layer",
+      "layer_idx": 10,
+      "fdr": 2.005199909210205,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.275
+    },
+    {
+      "level": "layer",
+      "layer_idx": 8,
+      "fdr": 1.9968079328536987,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.245
+    },
+    {
+      "level": "attn",
+      "layer_idx": 21,
+      "fdr": 1.9937525987625122,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.26
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 11,
+      "fdr": 1.9874852895736694,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.28
+    },
+    {
+      "level": "attn",
+      "layer_idx": 20,
+      "fdr": 1.9772366285324097,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.24
+    },
+    {
+      "level": "head",
+      "layer_idx": 4,
+      "fdr": 1.970291018486023,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.175
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 8,
+      "fdr": 1.9697644710540771,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.24
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 1,
+      "fdr": 1.9684802293777466,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.13
+    },
+    {
+      "level": "layer",
+      "layer_idx": 11,
+      "fdr": 1.9671937227249146,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.28
+    },
+    {
+      "level": "attn",
+      "layer_idx": 11,
+      "fdr": 1.9665640592575073,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.265
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 0,
+      "fdr": 1.9536166191101074,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.3
+    },
+    {
+      "level": "head",
+      "layer_idx": 24,
+      "fdr": 1.948974609375,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.315
+    },
+    {
+      "level": "attn",
+      "layer_idx": 4,
+      "fdr": 1.9421838521957397,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.18
+    },
+    {
+      "level": "head",
+      "layer_idx": 20,
+      "fdr": 1.9357885122299194,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.21
+    },
+    {
+      "level": "layer",
+      "layer_idx": 0,
+      "fdr": 1.9215595722198486,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.355
+    },
+    {
+      "level": "attn",
+      "layer_idx": 0,
+      "fdr": 1.9101338386535645,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.385
+    },
+    {
+      "level": "layer",
+      "layer_idx": 12,
+      "fdr": 1.9030075073242188,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.24
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 18,
+      "fdr": 1.9023817777633667,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.265
+    },
+    {
+      "level": "layer",
+      "layer_idx": 18,
+      "fdr": 1.8928714990615845,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.295
+    },
+    {
+      "level": "layer",
+      "layer_idx": 9,
+      "fdr": 1.8834357261657715,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.245
+    },
+    {
+      "level": "attn",
+      "layer_idx": 22,
+      "fdr": 1.879989743232727,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.265
+    },
+    {
+      "level": "head",
+      "layer_idx": 9,
+      "fdr": 1.8726829290390015,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.29
+    },
+    {
+      "level": "attn",
+      "layer_idx": 8,
+      "fdr": 1.8714323043823242,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.225
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 12,
+      "fdr": 1.8687435388565063,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 9,
+      "fdr": 1.8609248399734497,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "head",
+      "layer_idx": 8,
+      "fdr": 1.8579668998718262,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.235
+    },
+    {
+      "level": "layer",
+      "layer_idx": 5,
+      "fdr": 1.8494118452072144,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.16
+    },
+    {
+      "level": "head",
+      "layer_idx": 12,
+      "fdr": 1.8470999002456665,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.215
+    },
+    {
+      "level": "head",
+      "layer_idx": 15,
+      "fdr": 1.8380157947540283,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.3
+    },
+    {
+      "level": "layer",
+      "layer_idx": 6,
+      "fdr": 1.8294082880020142,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.18
+    },
+    {
+      "level": "head",
+      "layer_idx": 21,
+      "fdr": 1.8215937614440918,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.21
+    },
+    {
+      "level": "layer",
+      "layer_idx": 13,
+      "fdr": 1.8203725814819336,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.21
+    },
+    {
+      "level": "head",
+      "layer_idx": 18,
+      "fdr": 1.820095181465149,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.305
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 26,
+      "fdr": 1.81949782371521,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.25
+    },
+    {
+      "level": "head",
+      "layer_idx": 6,
+      "fdr": 1.8192172050476074,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.215
+    },
+    {
+      "level": "attn",
+      "layer_idx": 6,
+      "fdr": 1.8157057762145996,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.21
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 5,
+      "fdr": 1.8156099319458008,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.16
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 6,
+      "fdr": 1.8100513219833374,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.175
+    },
+    {
+      "level": "head",
+      "layer_idx": 22,
+      "fdr": 1.8037593364715576,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.295
+    },
+    {
+      "level": "head",
+      "layer_idx": 0,
+      "fdr": 1.803078055381775,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.38
+    },
+    {
+      "level": "attn",
+      "layer_idx": 18,
+      "fdr": 1.802353858947754,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.33
+    },
+    {
+      "level": "attn",
+      "layer_idx": 15,
+      "fdr": 1.798236608505249,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.28
+    },
+    {
+      "level": "attn",
+      "layer_idx": 12,
+      "fdr": 1.7884716987609863,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.215
+    },
+    {
+      "level": "attn",
+      "layer_idx": 9,
+      "fdr": 1.7849653959274292,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.265
+    },
+    {
+      "level": "layer",
+      "layer_idx": 14,
+      "fdr": 1.7743775844573975,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "head",
+      "layer_idx": 19,
+      "fdr": 1.7737720012664795,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.22
+    },
+    {
+      "level": "head",
+      "layer_idx": 13,
+      "fdr": 1.7731690406799316,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.225
+    },
+    {
+      "level": "layer",
+      "layer_idx": 17,
+      "fdr": 1.7705177068710327,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.235
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 13,
+      "fdr": 1.7636038064956665,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.21
+    },
+    {
+      "level": "head",
+      "layer_idx": 17,
+      "fdr": 1.7631702423095703,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.23
+    },
+    {
+      "level": "layer",
+      "layer_idx": 15,
+      "fdr": 1.7627891302108765,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.19
+    },
+    {
+      "level": "attn",
+      "layer_idx": 13,
+      "fdr": 1.756639003753662,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.225
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 17,
+      "fdr": 1.7562756538391113,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.215
+    },
+    {
+      "level": "layer",
+      "layer_idx": 16,
+      "fdr": 1.7542411088943481,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.205
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 14,
+      "fdr": 1.7467232942581177,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.185
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 16,
+      "fdr": 1.7439817190170288,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.19
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 15,
+      "fdr": 1.7358711957931519,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.19
+    },
+    {
+      "level": "attn",
+      "layer_idx": 17,
+      "fdr": 1.7289657592773438,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.215
+    },
+    {
+      "level": "head",
+      "layer_idx": 16,
+      "fdr": 1.7123340368270874,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.26
+    },
+    {
+      "level": "head",
+      "layer_idx": 14,
+      "fdr": 1.6966890096664429,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.2
+    },
+    {
+      "level": "attn",
+      "layer_idx": 16,
+      "fdr": 1.6877248287200928,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.235
+    },
+    {
+      "level": "head",
+      "layer_idx": 5,
+      "fdr": 1.6869044303894043,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.105
+    },
+    {
+      "level": "attn",
+      "layer_idx": 5,
+      "fdr": 1.667380690574646,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.105
+    },
+    {
+      "level": "attn",
+      "layer_idx": 14,
+      "fdr": 1.663993000984192,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.175
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 22,
+      "fdr": 1.6611995697021484,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.12
+    },
+    {
+      "level": "attn",
+      "layer_idx": 24,
+      "fdr": 1.647355556488037,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.245
+    },
+    {
+      "level": "layer",
+      "layer_idx": 25,
+      "fdr": 1.6153959035873413,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.155
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 25,
+      "fdr": 1.607551097869873,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.15
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 20,
+      "fdr": 1.6055368185043335,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.095
+    },
+    {
+      "level": "layer",
+      "layer_idx": 22,
+      "fdr": 1.5994561910629272,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.135
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 19,
+      "fdr": 1.5960208177566528,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 23,
+      "fdr": 1.5810234546661377,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.085
+    },
+    {
+      "level": "attn",
+      "layer_idx": 19,
+      "fdr": 1.5793614387512207,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.125
+    },
+    {
+      "level": "layer",
+      "layer_idx": 23,
+      "fdr": 1.5700876712799072,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.1
+    },
+    {
+      "level": "head",
+      "layer_idx": 23,
+      "fdr": 1.5596957206726074,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.125
+    },
+    {
+      "level": "layer",
+      "layer_idx": 19,
+      "fdr": 1.5501086711883545,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.095
+    },
+    {
+      "level": "attn",
+      "layer_idx": 23,
+      "fdr": 1.544862985610962,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.115
+    },
+    {
+      "level": "layer",
+      "layer_idx": 20,
+      "fdr": 1.5409955978393555,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.09
+    },
+    {
+      "level": "layer",
+      "layer_idx": 21,
+      "fdr": 1.5159778594970703,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.08
+    },
+    {
+      "level": "layer",
+      "layer_idx": 24,
+      "fdr": 1.501214861869812,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.115
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 24,
+      "fdr": 1.4773008823394775,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.12
+    },
+    {
+      "level": "mlp",
+      "layer_idx": 21,
+      "fdr": 1.304126501083374,
+      "selected": false,
+      "weight": 0.0,
+      "val_accuracy": 0.075
+    }
+  ],
+  "eval_summary": {
+    "final_accuracy": 0.81,
+    "final_correct": 162,
+    "final_total": 200,
+    "fallback_used": 0,
+    "margin_mean": 0.0769066134095192,
+    "margin_min": 0.00018352270126342773,
+    "margin_max": 0.2644233703613281
+  }
+}

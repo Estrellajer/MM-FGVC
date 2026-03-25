@@ -214,6 +214,7 @@ METHOD_SPECS=(
   "zero_shot|Zero-shot|zero_shot|"
   "sav|SAV|sav|"
   "sav_wvote|SAV+WVote|sav|method.params.vote_weighting=head_accuracy"
+  "rse|RSE|rse|method.params.progress_bar=false"
   "mimic|MimIC|mimic|"
   "i2cl|I2CL|i2cl|"
   "stv|STV|stv|method.params.head_selection_mode=sensitivity;method.params.cluster_selection_mode=rl"

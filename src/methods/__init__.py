@@ -1,6 +1,7 @@
 from .base import MethodBase
 from .i2cl import I2CLMethod
 from .mimic import MimICMethod
+from .rse import RSEMethod
 from .sav import SAVMethod
 from .stv import STVMethod
 from .zero_shot import ZeroShotMethod
@@ -8,6 +9,7 @@ from .zero_shot import ZeroShotMethod
 METHOD_REGISTRY = {
     "zero_shot": ZeroShotMethod,
     "sav": SAVMethod,
+    "rse": RSEMethod,
     "i2cl": I2CLMethod,
     "mimic": MimICMethod,
     "mimcl": MimICMethod,
@@ -28,6 +30,7 @@ __all__ = [
     "MethodBase",
     "I2CLMethod",
     "MimICMethod",
+    "RSEMethod",
     "SAVMethod",
     "STVMethod",
     "ZeroShotMethod",

@@ -73,6 +73,7 @@ def _save_results(
     predictions: List[str],
     labels: List[str],
     val_data: List[Dict[str, Any]],
+    diagnostics: Dict[str, Any] | None = None,
 ) -> Dict[str, str]:
     output_dir = Path(hydra.utils.to_absolute_path(cfg.run.output_dir))
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -106,10 +107,19 @@ def _save_results(
                 }
                 fp.write(json.dumps(row, ensure_ascii=False) + "\n")
 
-    return {
+    saved = {
         "metrics": str(metrics_path),
         "predictions": str(prediction_path),
     }
+    if diagnostics:
+        diagnostics_path = output_dir / f"{run_name}.diagnostics.json"
+        diagnostics_path.write_text(
+            json.dumps(diagnostics, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        saved["diagnostics"] = str(diagnostics_path)
+
+    return saved
 
 
 def run_experiment(cfg: DictConfig) -> Dict[str, Any]:
@@ -142,7 +152,13 @@ def run_experiment(cfg: DictConfig) -> Dict[str, Any]:
     evaluator = build_evaluator(evaluator_name)
     metrics = evaluator.evaluate(predictions, labels, val_data)
 
-    saved_paths = _save_results(cfg, metrics, predictions, labels, val_data)
+    diagnostics = {}
+    if hasattr(method, "export_diagnostics"):
+        exported = method.export_diagnostics()
+        if isinstance(exported, dict):
+            diagnostics = exported
+
+    saved_paths = _save_results(cfg, metrics, predictions, labels, val_data, diagnostics=diagnostics)
 
     return {
         "metrics": metrics,
