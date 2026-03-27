@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_i2cl_qwen2_vl_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:07,  3.90it/s]Loading weights:   0%|          | 2/730 [00:00<04:02,  3.00it/s]Loading weights:   2%|▏         | 15/730 [00:00<00:25, 27.74it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:13, 50.90it/s]Loading weights:   6%|▌         | 42/730 [00:01<00:10, 63.08it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:09, 72.26it/s]Loading weights:   9%|▉         | 65/730 [00:01<00:08, 74.30it/s]Loading weights:  11%|█         | 78/730 [00:01<00:07, 82.00it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:07, 87.00it/s]Loading weights:  14%|█▍        | 102/730 [00:02<00:26, 24.11it/s]Loading weights:  32%|███▏      | 232/730 [00:02<00:03, 127.97it/s]Loading weights:  37%|███▋      | 273/730 [00:03<00:04, 113.77it/s]Loading weights:  42%|████▏     | 304/730 [00:03<00:03, 126.01it/s]Loading weights:  45%|████▌     | 332/730 [00:03<00:03, 124.93it/s]Loading weights:  62%|██████▏   | 453/730 [00:03<00:01, 260.66it/s]Loading weights:  77%|███████▋  | 561/730 [00:03<00:00, 384.73it/s]Loading weights:  92%|█████████▏| 670/730 [00:04<00:00, 506.89it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 175.61it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.675
+  correct: 27.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 16
+      - 4
+    - - 9
+      - 11
+  per_class:
+    unharmful:
+      precision: 0.64
+      recall: 0.8
+      f1: 0.7111111111111111
+      support: 20.0
+      predicted: 25.0
+      true_positive: 16.0
+      false_positive: 9.0
+      false_negative: 4.0
+    harmful:
+      precision: 0.7333333333333333
+      recall: 0.55
+      f1: 0.6285714285714286
+      support: 20.0
+      predicted: 15.0
+      true_positive: 11.0
+      false_positive: 4.0
+      false_negative: 9.0
+  macro_precision: 0.6866666666666666
+  macro_recall: 0.675
+  macro_f1: 0.6698412698412699
+  balanced_accuracy: 0.675
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_i2cl_qwen2_vl_20260326_152111.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_i2cl_qwen2_vl_20260326_152111.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_i2cl_qwen2_vl_20260326_152111.diagnostics.json
+

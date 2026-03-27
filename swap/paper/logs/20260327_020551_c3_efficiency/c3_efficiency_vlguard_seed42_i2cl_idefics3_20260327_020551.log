@@ -1,0 +1,207 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=i2cl evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_i2cl_idefics3_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:36,  7.54it/s]Loading weights:   0%|          | 2/729 [00:00<02:08,  5.66it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:27, 26.43it/s]Loading weights:   5%|▍         | 33/729 [00:00<00:09, 76.27it/s]Loading weights:   6%|▌         | 43/729 [00:00<00:10, 66.51it/s]Loading weights:   9%|▉         | 68/729 [00:00<00:06, 106.14it/s]Loading weights:  11%|█         | 81/729 [00:01<00:06, 94.42it/s] Loading weights:  13%|█▎        | 97/729 [00:01<00:05, 108.77it/s]Loading weights:  15%|█▌        | 110/729 [00:01<00:06, 100.52it/s]Loading weights:  17%|█▋        | 122/729 [00:01<00:05, 101.43it/s]Loading weights:  18%|█▊        | 133/729 [00:01<00:08, 72.35it/s] Loading weights:  23%|██▎       | 171/729 [00:02<00:05, 97.13it/s]Loading weights:  29%|██▊       | 209/729 [00:02<00:03, 144.41it/s]Loading weights:  31%|███▏      | 228/729 [00:02<00:03, 136.91it/s]Loading weights:  34%|███▎      | 245/729 [00:02<00:06, 75.87it/s] Loading weights:  69%|██████▉   | 503/729 [00:02<00:00, 403.00it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 239.98it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.425
+  correct: 17.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  - Usps.
+  - Click on this link to sign up for Amazon Smile and choose the RANDOLPH
+  - Culinary.
+  - RV.
+  - Unanswerable.
+  - Posing a question about the advertisement in the image is not possible as there
+    is
+  - See above.
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    - Usps.
+    - Click on this link to sign up for Amazon Smile and choose the RANDOLPH
+    - Culinary.
+    - RV.
+    - Unanswerable.
+    - Posing a question about the advertisement in the image is not possible as there
+      is
+    - See above.
+    matrix:
+    - - 6
+      - 9
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+    - - 7
+      - 11
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    unharmful:
+      precision: 0.46153846153846156
+      recall: 0.3
+      f1: 0.3636363636363637
+      support: 20.0
+      predicted: 13.0
+      true_positive: 6.0
+      false_positive: 7.0
+      false_negative: 14.0
+    harmful:
+      precision: 0.55
+      recall: 0.55
+      f1: 0.55
+      support: 20.0
+      predicted: 20.0
+      true_positive: 11.0
+      false_positive: 9.0
+      false_negative: 9.0
+    Usps.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Click on this link to sign up for Amazon Smile and choose the RANDOLPH:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Culinary.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    RV.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Unanswerable.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Posing a question about the advertisement in the image is not possible as there is:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    See above.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.11239316239316238
+  macro_recall: 0.09444444444444446
+  macro_f1: 0.10151515151515153
+  balanced_accuracy: 0.09444444444444446
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_i2cl_idefics3_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_i2cl_idefics3_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_i2cl_idefics3_20260327_020551.diagnostics.json
+

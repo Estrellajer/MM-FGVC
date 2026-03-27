@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_vlguard_seed42_zero_shot_qwen2_vl_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:06,  3.91it/s]Loading weights:   0%|          | 2/730 [00:00<03:15,  3.71it/s]Loading weights:   1%|          | 4/730 [00:00<02:14,  5.38it/s]Loading weights:   5%|▍         | 36/730 [00:01<00:12, 55.82it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:08, 76.47it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:08, 80.53it/s]Loading weights:  10%|█         | 76/730 [00:01<00:11, 57.37it/s]Loading weights:  15%|█▍        | 107/730 [00:02<00:18, 33.53it/s]Loading weights:  34%|███▎      | 245/730 [00:02<00:03, 132.64it/s]Loading weights:  39%|███▊      | 282/730 [00:03<00:03, 112.03it/s]Loading weights:  42%|████▏     | 310/730 [00:03<00:03, 115.73it/s]Loading weights:  57%|█████▋    | 419/730 [00:03<00:01, 217.64it/s]Loading weights:  71%|███████   | 517/730 [00:03<00:00, 312.97it/s]Loading weights:  85%|████████▌ | 624/730 [00:03<00:00, 430.15it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 178.61it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.725
+  correct: 29.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 14
+      - 6
+    - - 5
+      - 15
+  per_class:
+    unharmful:
+      precision: 0.7368421052631579
+      recall: 0.7
+      f1: 0.717948717948718
+      support: 20.0
+      predicted: 19.0
+      true_positive: 14.0
+      false_positive: 5.0
+      false_negative: 6.0
+    harmful:
+      precision: 0.7142857142857143
+      recall: 0.75
+      f1: 0.7317073170731706
+      support: 20.0
+      predicted: 21.0
+      true_positive: 15.0
+      false_positive: 6.0
+      false_negative: 5.0
+  macro_precision: 0.7255639097744361
+  macro_recall: 0.725
+  macro_f1: 0.7248280175109443
+  balanced_accuracy: 0.725
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vlguard_seed42_zero_shot_qwen2_vl_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vlguard_seed42_zero_shot_qwen2_vl_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vlguard_seed42_zero_shot_qwen2_vl_20260327_020651.diagnostics.json
+

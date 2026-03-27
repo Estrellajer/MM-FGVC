@@ -1,0 +1,23 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=i2cl evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_eurosat_fgvc_seed42_i2cl_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:06,  5.76it/s]Loading weights:   0%|          | 3/729 [00:00<03:06,  3.90it/s]Loading weights:   6%|▌         | 41/729 [00:00<00:10, 63.29it/s]Loading weights:   8%|▊         | 56/729 [00:00<00:08, 78.78it/s]Loading weights:  10%|▉         | 70/729 [00:01<00:08, 76.63it/s]Loading weights:  11%|█         | 81/729 [00:01<00:07, 82.70it/s]Loading weights:  13%|█▎        | 92/729 [00:01<00:08, 79.42it/s]Loading weights:  14%|█▍        | 103/729 [00:01<00:07, 79.79it/s]Loading weights:  16%|█▌        | 114/729 [00:01<00:07, 86.12it/s]Loading weights:  17%|█▋        | 124/729 [00:01<00:07, 84.15it/s]Loading weights:  18%|█▊        | 134/729 [00:01<00:07, 84.11it/s]Loading weights:  20%|██        | 147/729 [00:02<00:06, 95.35it/s]Loading weights:  22%|██▏       | 158/729 [00:02<00:06, 93.71it/s]Loading weights:  23%|██▎       | 168/729 [00:02<00:06, 89.14it/s]Loading weights:  24%|██▍       | 178/729 [00:02<00:06, 83.20it/s]Loading weights:  26%|██▌       | 187/729 [00:02<00:07, 69.31it/s]Loading weights:  28%|██▊       | 206/729 [00:02<00:06, 81.99it/s]Loading weights:  31%|███       | 223/729 [00:02<00:05, 99.87it/s]Loading weights:  32%|███▏      | 234/729 [00:02<00:04, 102.02it/s]Loading weights:  34%|███▎      | 245/729 [00:03<00:04, 100.21it/s]Loading weights:  35%|███▌      | 256/729 [00:03<00:04, 101.93it/s]Loading weights:  37%|███▋      | 267/729 [00:03<00:07, 60.52it/s] Loading weights:  64%|██████▍   | 467/729 [00:03<00:00, 411.17it/s]Loading weights:  96%|█████████▋| 703/729 [00:03<00:00, 808.14it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 192.23it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=i2cl', 'evaluator=raw', 'dataset.name=eurosat', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_eurosat_fgvc_seed42_i2cl_idefics3_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 695, in fit
+    demo_latents.append(self._capture_demo_latent(train_data[demo_index], rng))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 599, in _capture_demo_latent
+    output_dict.setdefault(layer_idx, {})[module_key] = self._select_token_feature(recorded[module_name], rng)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 559, in _select_token_feature
+    raise ValueError(f"I2CL expected hidden states with shape [1, T, D], got {tuple(tensor.shape)}")
+ValueError: I2CL expected hidden states with shape [1, T, D], got (17, 676, 1152)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,53 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=mimic evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_sugarcrepe_seed42_mimic_qwen2_vl_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:09,  3.84it/s]Loading weights:   0%|          | 2/730 [00:00<03:15,  3.72it/s]Loading weights:   1%|          | 6/730 [00:00<00:59, 12.21it/s]Loading weights:   2%|▏         | 17/730 [00:00<00:20, 34.80it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:12, 54.52it/s]Loading weights:   6%|▌         | 41/730 [00:01<00:10, 63.76it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:08, 79.04it/s]Loading weights:   9%|▉         | 65/730 [00:01<00:07, 86.33it/s]Loading weights:  10%|█         | 75/730 [00:01<00:08, 79.89it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:07, 90.85it/s]Loading weights:  14%|█▍        | 102/730 [00:01<00:06, 95.49it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:06, 96.93it/s]Loading weights:  17%|█▋        | 125/730 [00:01<00:06, 92.06it/s]Loading weights:  19%|█▉        | 137/730 [00:01<00:06, 94.42it/s]Loading weights:  20%|██        | 148/730 [00:02<00:11, 51.91it/s]Loading weights:  27%|██▋       | 194/730 [00:02<00:04, 113.64it/s]Loading weights:  29%|██▉       | 211/730 [00:02<00:04, 121.28it/s]Loading weights:  31%|███       | 227/730 [00:02<00:04, 123.42it/s]Loading weights:  33%|███▎      | 243/730 [00:03<00:04, 99.80it/s] Loading weights:  36%|███▌      | 261/730 [00:03<00:04, 115.02it/s]Loading weights:  38%|███▊      | 276/730 [00:03<00:03, 114.60it/s]Loading weights:  40%|███▉      | 290/730 [00:03<00:03, 115.35it/s]Loading weights:  42%|████▏     | 303/730 [00:03<00:03, 116.01it/s]Loading weights:  43%|████▎     | 316/730 [00:03<00:03, 109.81it/s]Loading weights:  45%|████▍     | 328/730 [00:03<00:03, 105.84it/s]Loading weights:  49%|████▉     | 359/730 [00:03<00:02, 155.50it/s]Loading weights:  66%|██████▌   | 479/730 [00:03<00:00, 423.74it/s]Loading weights:  82%|████████▏ | 595/730 [00:04<00:00, 619.45it/s]Loading weights:  96%|█████████▋| 703/730 [00:04<00:00, 740.66it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 172.75it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.4
+  pair_correct: 8.0
+  pair_total: 20.0
+  raw_accuracy: 0.7
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 20
+      - 0
+    - - 12
+      - 8
+  per_class:
+    'Yes':
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 20.0
+      predicted: 32.0
+      true_positive: 20.0
+      false_positive: 12.0
+      false_negative: 0.0
+    'No':
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 20.0
+      predicted: 8.0
+      true_positive: 8.0
+      false_positive: 0.0
+      false_negative: 12.0
+  macro_precision: 0.8125
+  macro_recall: 0.7
+  macro_f1: 0.6703296703296704
+  balanced_accuracy: 0.7
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_sugarcrepe_seed42_mimic_qwen2_vl_20260326_152111.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_sugarcrepe_seed42_mimic_qwen2_vl_20260326_152111.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_sugarcrepe_seed42_mimic_qwen2_vl_20260326_152111.diagnostics.json
+

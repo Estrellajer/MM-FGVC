@@ -1,0 +1,51 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_zero_shot_qwen3_vl_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:51,  4.38it/s]Loading weights:   0%|          | 2/750 [00:00<03:18,  3.76it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:29, 24.58it/s]Loading weights:   4%|▍         | 32/750 [00:00<00:11, 60.59it/s]Loading weights:   5%|▌         | 41/750 [00:00<00:10, 67.52it/s]Loading weights:   7%|▋         | 56/750 [00:01<00:07, 86.85it/s]Loading weights:   9%|▉         | 68/750 [00:01<00:07, 94.84it/s]Loading weights:  11%|█         | 81/750 [00:01<00:06, 99.11it/s]Loading weights:  12%|█▏        | 92/750 [00:01<00:07, 91.19it/s]Loading weights:  15%|█▍        | 111/750 [00:01<00:05, 115.28it/s]Loading weights:  17%|█▋        | 125/750 [00:01<00:05, 116.23it/s]Loading weights:  18%|█▊        | 138/750 [00:01<00:05, 104.80it/s]Loading weights:  21%|██        | 156/750 [00:01<00:04, 122.49it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:05, 114.48it/s]Loading weights:  24%|██▍       | 183/750 [00:02<00:05, 113.14it/s]Loading weights:  26%|██▌       | 195/750 [00:02<00:04, 114.85it/s]Loading weights:  28%|██▊       | 208/750 [00:02<00:04, 117.65it/s]Loading weights:  29%|██▉       | 221/750 [00:02<00:04, 119.46it/s]Loading weights:  31%|███       | 234/750 [00:02<00:04, 107.31it/s]Loading weights:  34%|███▍      | 254/750 [00:02<00:03, 130.06it/s]Loading weights:  36%|███▌      | 268/750 [00:02<00:03, 127.11it/s]Loading weights:  38%|███▊      | 282/750 [00:02<00:03, 119.90it/s]Loading weights:  39%|███▉      | 295/750 [00:03<00:03, 119.60it/s]Loading weights:  42%|████▏     | 312/750 [00:03<00:03, 131.47it/s]Loading weights:  43%|████▎     | 326/750 [00:03<00:03, 121.23it/s]Loading weights:  45%|████▌     | 339/750 [00:03<00:03, 119.20it/s]Loading weights:  47%|████▋     | 354/750 [00:03<00:03, 125.20it/s]Loading weights:  49%|████▉     | 369/750 [00:03<00:02, 129.72it/s]Loading weights:  51%|█████     | 384/750 [00:03<00:02, 133.64it/s]Loading weights:  54%|█████▍    | 407/750 [00:03<00:02, 159.31it/s]Loading weights:  76%|███████▌  | 571/750 [00:03<00:00, 577.46it/s]Loading weights:  93%|█████████▎| 698/750 [00:04<00:00, 776.75it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 182.45it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.575
+  correct: 23.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 20
+      - 0
+    - - 17
+      - 3
+  per_class:
+    unharmful:
+      precision: 0.5405405405405406
+      recall: 1.0
+      f1: 0.7017543859649124
+      support: 20.0
+      predicted: 37.0
+      true_positive: 20.0
+      false_positive: 17.0
+      false_negative: 0.0
+    harmful:
+      precision: 1.0
+      recall: 0.15
+      f1: 0.2608695652173913
+      support: 20.0
+      predicted: 3.0
+      true_positive: 3.0
+      false_positive: 0.0
+      false_negative: 17.0
+  macro_precision: 0.7702702702702703
+  macro_recall: 0.575
+  macro_f1: 0.4813119755911518
+  balanced_accuracy: 0.575
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_zero_shot_qwen3_vl_20260326_152111.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_zero_shot_qwen3_vl_20260326_152111.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_zero_shot_qwen3_vl_20260326_152111.diagnostics.json
+

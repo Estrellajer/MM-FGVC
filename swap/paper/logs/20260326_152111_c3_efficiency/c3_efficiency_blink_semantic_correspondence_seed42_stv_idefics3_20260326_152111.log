@@ -1,0 +1,29 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=stv evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_stv_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.head_selection_mode=sensitivity method.params.cluster_selection_mode=rl
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:33,  4.75it/s]Loading weights:   0%|          | 3/729 [00:00<01:48,  6.70it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:28, 25.53it/s]Loading weights:   3%|▎         | 19/729 [00:00<00:17, 39.60it/s]Loading weights:   4%|▎         | 27/729 [00:00<00:14, 48.98it/s]Loading weights:   5%|▍         | 35/729 [00:01<00:22, 31.34it/s]Loading weights:  10%|▉         | 70/729 [00:01<00:10, 61.32it/s]Loading weights:  11%|█         | 77/729 [00:01<00:15, 43.15it/s]Loading weights:  19%|█▉        | 142/729 [00:02<00:04, 119.76it/s]Loading weights:  22%|██▏       | 164/729 [00:02<00:05, 112.04it/s]Loading weights:  25%|██▌       | 183/729 [00:02<00:05, 105.03it/s]Loading weights:  27%|██▋       | 199/729 [00:02<00:05, 99.00it/s] Loading weights:  29%|██▉       | 213/729 [00:02<00:05, 95.00it/s]Loading weights:  31%|███       | 225/729 [00:02<00:05, 98.81it/s]Loading weights:  33%|███▎      | 237/729 [00:03<00:04, 100.61it/s]Loading weights:  34%|███▍      | 249/729 [00:03<00:05, 95.03it/s] Loading weights:  36%|███▌      | 260/729 [00:03<00:05, 90.73it/s]Loading weights:  37%|███▋      | 270/729 [00:03<00:05, 91.05it/s]Loading weights:  38%|███▊      | 280/729 [00:03<00:05, 89.01it/s]Loading weights:  40%|███▉      | 290/729 [00:03<00:04, 89.06it/s]Loading weights:  65%|██████▌   | 476/729 [00:03<00:00, 533.11it/s]Loading weights:  93%|█████████▎| 675/729 [00:03<00:00, 916.68it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 185.34it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=stv', 'evaluator=raw', 'dataset.name=blink_semantic_correspondence', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_stv_idefics3_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false', 'method.params.head_selection_mode=sensitivity', 'method.params.cluster_selection_mode=rl']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 800, in fit
+    self.avg_diff = self._estimate_avg_diff(train_data, activation_indices, rng)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 480, in _estimate_avg_diff
+    query_only = self._capture_prompt_activations(sample, demos=[])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 464, in _capture_prompt_activations
+    inputs = self._prepare_inputs(conversation, flat_images, add_generation_prompt=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 400, in _prepare_inputs
+    inputs = self.model.processor(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py", line 227, in __call__
+    raise ValueError(
+ValueError: The number of images in the text [4] and images [2] should be the same.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

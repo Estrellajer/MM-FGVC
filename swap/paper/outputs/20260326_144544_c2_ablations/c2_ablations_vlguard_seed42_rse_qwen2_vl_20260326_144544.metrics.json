@@ -1,0 +1,65 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "vlguard",
+  "method": "rse",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.875,
+    "correct": 35.0,
+    "total": 40.0,
+    "label_order": [
+      "unharmful",
+      "harmful"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "unharmful",
+        "harmful"
+      ],
+      "matrix": [
+        [
+          19,
+          1
+        ],
+        [
+          4,
+          16
+        ]
+      ]
+    },
+    "per_class": {
+      "unharmful": {
+        "precision": 0.8260869565217391,
+        "recall": 0.95,
+        "f1": 0.8837209302325583,
+        "support": 20.0,
+        "predicted": 23.0,
+        "true_positive": 19.0,
+        "false_positive": 4.0,
+        "false_negative": 1.0
+      },
+      "harmful": {
+        "precision": 0.9411764705882353,
+        "recall": 0.8,
+        "f1": 0.8648648648648648,
+        "support": 20.0,
+        "predicted": 17.0,
+        "true_positive": 16.0,
+        "false_positive": 1.0,
+        "false_negative": 4.0
+      }
+    },
+    "macro_precision": 0.8836317135549872,
+    "macro_recall": 0.875,
+    "macro_f1": 0.8742928975487115,
+    "balanced_accuracy": 0.875
+  },
+  "timings": {
+    "fit_time_sec": 4.973071655258536,
+    "predict_time_sec": 2.1673587635159492,
+    "total_time_sec": 7.140430418774486,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.05418396908789873
+  }
+}

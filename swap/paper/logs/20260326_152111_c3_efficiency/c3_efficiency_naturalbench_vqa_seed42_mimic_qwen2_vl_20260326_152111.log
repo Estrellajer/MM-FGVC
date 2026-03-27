@@ -1,0 +1,94 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=mimic evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_naturalbench_vqa_seed42_mimic_qwen2_vl_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:06,  3.90it/s]Loading weights:   0%|          | 2/730 [00:00<03:15,  3.73it/s]Loading weights:   1%|          | 6/730 [00:00<00:59, 12.22it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:19, 36.56it/s]Loading weights:   3%|▎         | 23/730 [00:01<00:54, 12.97it/s]Loading weights:  17%|█▋        | 126/730 [00:01<00:05, 114.45it/s]Loading weights:  21%|██        | 154/730 [00:02<00:04, 115.57it/s]Loading weights:  24%|██▍       | 177/730 [00:02<00:04, 114.03it/s]Loading weights:  27%|██▋       | 196/730 [00:02<00:04, 114.46it/s]Loading weights:  29%|██▉       | 213/730 [00:02<00:04, 109.36it/s]Loading weights:  31%|███       | 228/730 [00:02<00:04, 110.00it/s]Loading weights:  33%|███▎      | 242/730 [00:02<00:04, 112.51it/s]Loading weights:  35%|███▌      | 256/730 [00:03<00:04, 107.20it/s]Loading weights:  37%|███▋      | 268/730 [00:03<00:04, 105.52it/s]Loading weights:  38%|███▊      | 280/730 [00:03<00:04, 105.89it/s]Loading weights:  40%|████      | 292/730 [00:03<00:04, 92.45it/s] Loading weights:  42%|████▏     | 308/730 [00:03<00:04, 85.54it/s]Loading weights:  46%|████▌     | 336/730 [00:03<00:03, 123.55it/s]Loading weights:  62%|██████▏   | 453/730 [00:03<00:00, 354.27it/s]Loading weights:  77%|███████▋  | 561/730 [00:03<00:00, 527.02it/s]Loading weights:  93%|█████████▎| 681/730 [00:04<00:00, 698.46it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 177.50it/s]
+Error executing job with overrides: ['model=qwen2_vl', 'dataset=general_custom', 'method=mimic', 'evaluator=raw', 'dataset.name=naturalbench_vqa', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/naturalbench_vqa/train_subset.jsonl', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/naturalbench_vqa/val_subset.jsonl', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_naturalbench_vqa_seed42_mimic_qwen2_vl_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 579, in fit
+    query_outputs, shifted_attn_outputs = self._record_attention_outputs(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 448, in _record_attention_outputs
+    outputs = self.model.model(**inputs, labels=labels) if labels is not None else self.model.model(**inputs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1882, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1830, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 843, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 1501, in forward
+    outputs: Qwen2VLModelOutputWithPast = self.model(
+                                          ^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 1348, in forward
+    outputs = self.language_model(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 937, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 655, in forward
+    hidden_states, self_attn_weights = self.self_attn(
+                                       ^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1882, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1830, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 595, in forward
+    attn_output = self.o_proj(attn_output)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1882, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1819, in inner
+    args_result = hook(self, args)
+                  ^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 212, in _o_proj_pre_hook
+    scores = torch.einsum("btnd,bsnd->btns", q_states, k_states) / max(meta.head_dim**0.5, 1.0)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/functional.py", line 373, in einsum
+    return _VF.einsum(equation, operands)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.72 GiB. GPU 0 has a total capacity of 94.97 GiB of which 1.68 GiB is free. Including non-PyTorch memory, this process has 93.29 GiB memory in use. Of the allocated memory 91.11 GiB is allocated by PyTorch, and 1.53 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

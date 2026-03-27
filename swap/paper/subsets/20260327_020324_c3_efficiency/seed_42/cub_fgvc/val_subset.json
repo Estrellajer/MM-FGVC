@@ -1,0 +1,1302 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0002_25122.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0002_25122.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Prairie Warbler B. Gray Catbird C. Green Jay D. American Crow",
+    "label": "American Crow",
+    "question_id": 12,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0003_25130.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0003_25130.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. American Crow B. Cape Glossy Starling C. Bohemian Waxwing D. Fox Sparrow",
+    "label": "American Crow",
+    "question_id": 13,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0016_25112.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0016_25112.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. American Crow B. European Goldfinch C. Prothonotary Warbler D. Heermann Gull",
+    "label": "American Crow",
+    "question_id": 14,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0036_25313.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0036_25313.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Nashville Warbler B. Caspian Tern C. American Crow D. Laysan Albatross",
+    "label": "American Crow",
+    "question_id": 15,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0043_25666.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/American_Crow/American_Crow_0043_25666.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. American Crow B. Le Conte Sparrow C. Carolina Wren D. Anna Hummingbird",
+    "label": "American Crow",
+    "question_id": 16,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0007_88038.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0007_88038.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Gray crowned Rosy Finch B. Henslow Sparrow C. Red headed Woodpecker D. Baltimore Oriole",
+    "label": "Baltimore Oriole",
+    "question_id": 104,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0020_87066.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0020_87066.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Yellow billed Cuckoo B. Red eyed Vireo C. Baltimore Oriole D. Least Auklet",
+    "label": "Baltimore Oriole",
+    "question_id": 105,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0024_89720.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0024_89720.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Baltimore Oriole B. Carolina Wren C. Sooty Albatross D. Yellow headed Blackbird",
+    "label": "Baltimore Oriole",
+    "question_id": 106,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0033_88347.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0033_88347.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Bay breasted Warbler B. Seaside Sparrow C. Baltimore Oriole D. Song Sparrow",
+    "label": "Baltimore Oriole",
+    "question_id": 107,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0041_87367.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Baltimore_Oriole/Baltimore_Oriole_0041_87367.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Horned Puffin B. Seaside Sparrow C. White crowned Sparrow D. Baltimore Oriole",
+    "label": "Baltimore Oriole",
+    "question_id": 108,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0012_129518.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0012_129518.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Bank Swallow B. Barn Swallow C. Clay colored Sparrow D. Cliff Swallow",
+    "label": "Bank Swallow",
+    "question_id": 116,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0018_129891.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0018_129891.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chipping Sparrow B. Bank Swallow C. Indigo Bunting D. Acadian Flycatcher",
+    "label": "Bank Swallow",
+    "question_id": 117,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0019_129788.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0019_129788.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Pied Kingfisher B. Loggerhead Shrike C. Bank Swallow D. Western Gull",
+    "label": "Bank Swallow",
+    "question_id": 118,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0020_129747.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0020_129747.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black throated Sparrow B. Scarlet Tanager C. Bank Swallow D. Yellow breasted Chat",
+    "label": "Bank Swallow",
+    "question_id": 119,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0031_129507.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bank_Swallow/Bank_Swallow_0031_129507.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Brown Thrasher B. American Crow C. Bank Swallow D. Yellow headed Blackbird",
+    "label": "Bank Swallow",
+    "question_id": 120,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0016_184999.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0016_184999.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. White necked Raven B. Clark Nutcracker C. American Crow D. Bewick Wren",
+    "label": "Bewick Wren",
+    "question_id": 164,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0025_184932.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0025_184932.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black throated Sparrow B. Black throated Blue Warbler C. Eastern Towhee D. Bewick Wren",
+    "label": "Bewick Wren",
+    "question_id": 165,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0027_185212.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0027_185212.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black footed Albatross B. Bewick Wren C. Horned Grebe D. Tropical Kingbird",
+    "label": "Bewick Wren",
+    "question_id": 166,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0049_185339.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0049_185339.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Tropical Kingbird B. Bewick Wren C. Western Wood Pewee D. Gadwall",
+    "label": "Bewick Wren",
+    "question_id": 167,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0050_184919.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Bewick_Wren/Bewick_Wren_0050_184919.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Bewick Wren B. White breasted Kingfisher C. Sayornis D. Common Yellowthroat",
+    "label": "Bewick Wren",
+    "question_id": 168,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0003_107035.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0003_107035.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Crested Auklet B. Rhinoceros Auklet C. Red faced Cormorant D. Black throated Sparrow",
+    "label": "Black throated Sparrow",
+    "question_id": 247,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0008_107000.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0008_107000.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Gray Catbird B. Canada Warbler C. Orchard Oriole D. Black throated Sparrow",
+    "label": "Black throated Sparrow",
+    "question_id": 248,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0020_106971.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0020_106971.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black throated Sparrow B. Cape Glossy Starling C. Pine Warbler D. Harris Sparrow",
+    "label": "Black throated Sparrow",
+    "question_id": 249,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0035_107185.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0035_107185.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Least Tern B. Gray Kingbird C. Yellow billed Cuckoo D. Black throated Sparrow",
+    "label": "Black throated Sparrow",
+    "question_id": 250,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0046_107339.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Black_throated_Sparrow/Black_Throated_Sparrow_0046_107339.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Anna Hummingbird B. Black throated Sparrow C. Northern Fulmar D. Forsters Tern",
+    "label": "Black throated Sparrow",
+    "question_id": 251,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0008_178345.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0008_178345.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Brewer Sparrow B. Gray Kingbird C. American Goldfinch D. Cedar Waxwing",
+    "label": "Cedar Waxwing",
+    "question_id": 523,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0026_178878.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0026_178878.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black capped Vireo B. Cedar Waxwing C. Black throated Sparrow D. Boat tailed Grackle",
+    "label": "Cedar Waxwing",
+    "question_id": 524,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0054_178141.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0054_178141.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cedar Waxwing B. Winter Wren C. White crowned Sparrow D. Shiny Cowbird",
+    "label": "Cedar Waxwing",
+    "question_id": 525,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0057_178370.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0057_178370.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cedar Waxwing B. Black capped Vireo C. Seaside Sparrow D. Olive sided Flycatcher",
+    "label": "Cedar Waxwing",
+    "question_id": 526,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0065_179017.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Cedar_Waxwing/Cedar_Waxwing_0065_179017.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cedar Waxwing B. Summer Tanager C. Eastern Towhee D. Savannah Sparrow",
+    "label": "Cedar Waxwing",
+    "question_id": 527,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0006_107849.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0006_107849.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Elegant Tern B. Nashville Warbler C. Chipping Sparrow D. Northern Flicker",
+    "label": "Chipping Sparrow",
+    "question_id": 559,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0015_108462.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0015_108462.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chuck will Widow B. Chipping Sparrow C. Red breasted Merganser D. Pigeon Guillemot",
+    "label": "Chipping Sparrow",
+    "question_id": 560,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0026_109010.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0026_109010.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chipping Sparrow B. Marsh Wren C. Red bellied Woodpecker D. Black footed Albatross",
+    "label": "Chipping Sparrow",
+    "question_id": 561,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0032_108882.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0032_108882.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chipping Sparrow B. Seaside Sparrow C. Mangrove Cuckoo D. Long tailed Jaeger",
+    "label": "Chipping Sparrow",
+    "question_id": 562,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0037_109851.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chipping_Sparrow/Chipping_Sparrow_0037_109851.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Acadian Flycatcher B. Pigeon Guillemot C. Chipping Sparrow D. Black throated Sparrow",
+    "label": "Chipping Sparrow",
+    "question_id": 563,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0003_796977.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0003_796977.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chuck will Widow B. Cactus Wren C. Rose breasted Grosbeak D. Bewick Wren",
+    "label": "Chuck will Widow",
+    "question_id": 571,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0008_796968.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0008_796968.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Rock Wren B. Loggerhead Shrike C. House Wren D. Chuck will Widow",
+    "label": "Chuck will Widow",
+    "question_id": 572,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0009_796955.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0009_796955.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chuck will Widow B. Shiny Cowbird C. Sayornis D. Bay breasted Warbler",
+    "label": "Chuck will Widow",
+    "question_id": 573,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0011_796954.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0011_796954.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Mourning Warbler B. Chuck will Widow C. Blue winged Warbler D. Sayornis",
+    "label": "Chuck will Widow",
+    "question_id": 574,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0014_796987.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Chuck_will_Widow/Chuck_Will_Widow_0014_796987.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Chuck will Widow B. Bobolink C. Orchard Oriole D. Swainson Warbler",
+    "label": "Chuck will Widow",
+    "question_id": 575,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0001_149721.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0001_149721.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Common Tern B. Horned Puffin C. Common Yellowthroat D. Philadelphia Vireo",
+    "label": "Common Tern",
+    "question_id": 631,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0014_149194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0014_149194.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Swainson Warbler B. Common Tern C. Bronzed Cowbird D. Yellow bellied Flycatcher",
+    "label": "Common Tern",
+    "question_id": 632,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0033_148675.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0033_148675.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Dark eyed Junco B. Warbling Vireo C. Scarlet Tanager D. Common Tern",
+    "label": "Common Tern",
+    "question_id": 633,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0050_148928.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0050_148928.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cardinal B. Common Tern C. House Sparrow D. Eastern Towhee",
+    "label": "Common Tern",
+    "question_id": 634,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0054_148028.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Common_Tern/Common_Tern_0054_148028.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. American Goldfinch B. Common Tern C. Song Sparrow D. Kentucky Warbler",
+    "label": "Common Tern",
+    "question_id": 635,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0001_43101.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0001_43101.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Frigatebird B. Purple Finch C. Baltimore Oriole D. Indigo Bunting",
+    "label": "Frigatebird",
+    "question_id": 808,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0012_43062.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0012_43062.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Evening Grosbeak B. Golden winged Warbler C. Long tailed Jaeger D. Frigatebird",
+    "label": "Frigatebird",
+    "question_id": 809,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0021_42913.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0021_42913.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black capped Vireo B. Cliff Swallow C. Baird Sparrow D. Frigatebird",
+    "label": "Frigatebird",
+    "question_id": 810,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0040_42860.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0040_42860.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Ring billed Gull B. Hooded Merganser C. Frigatebird D. Kentucky Warbler",
+    "label": "Frigatebird",
+    "question_id": 811,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0049_43044.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Frigatebird/Frigatebird_0049_43044.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Common Yellowthroat B. Blue winged Warbler C. Seaside Sparrow D. Frigatebird",
+    "label": "Frigatebird",
+    "question_id": 812,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0004_164470.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0004_164470.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. House Sparrow B. Pacific Loon C. Horned Lark D. Golden winged Warbler",
+    "label": "Golden winged Warbler",
+    "question_id": 856,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0009_794813.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0009_794813.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Golden winged Warbler B. Kentucky Warbler C. Heermann Gull D. Cardinal",
+    "label": "Golden winged Warbler",
+    "question_id": 857,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0012_164496.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0012_164496.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black throated Sparrow B. White eyed Vireo C. Golden winged Warbler D. Red faced Cormorant",
+    "label": "Golden winged Warbler",
+    "question_id": 858,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0013_794837.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0013_794837.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. White breasted Kingfisher B. Golden winged Warbler C. Hooded Warbler D. Kentucky Warbler",
+    "label": "Golden winged Warbler",
+    "question_id": 859,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0021_794821.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Golden_winged_Warbler/Golden_Winged_Warbler_0021_794821.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Pileated Woodpecker B. Prairie Warbler C. White breasted Nuthatch D. Golden winged Warbler",
+    "label": "Golden winged Warbler",
+    "question_id": 860,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0016_48969.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0016_48969.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Least Flycatcher B. Herring Gull C. Pine Grosbeak D. Blue Grosbeak",
+    "label": "Herring Gull",
+    "question_id": 1036,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0034_48824.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0034_48824.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Herring Gull B. Yellow bellied Flycatcher C. Red faced Cormorant D. Cerulean Warbler",
+    "label": "Herring Gull",
+    "question_id": 1037,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0052_46810.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0052_46810.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Red breasted Merganser B. Herring Gull C. Yellow Warbler D. Clay colored Sparrow",
+    "label": "Herring Gull",
+    "question_id": 1038,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0093_46029.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0093_46029.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Mourning Warbler B. Heermann Gull C. Herring Gull D. Blue Jay",
+    "label": "Herring Gull",
+    "question_id": 1039,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0102_48078.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Herring_Gull/Herring_Gull_0102_48078.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Ringed Kingfisher B. Herring Gull C. Orange crowned Warbler D. Baird Sparrow",
+    "label": "Herring Gull",
+    "question_id": 1040,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0005_49021.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0005_49021.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Painted Bunting B. Ivory Gull C. Hooded Merganser D. Bewick Wren",
+    "label": "Ivory Gull",
+    "question_id": 1156,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0036_49754.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0036_49754.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black and white Warbler B. Painted Bunting C. Ivory Gull D. Western Gull",
+    "label": "Ivory Gull",
+    "question_id": 1157,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0037_49068.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0037_49068.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cliff Swallow B. Cerulean Warbler C. Pigeon Guillemot D. Ivory Gull",
+    "label": "Ivory Gull",
+    "question_id": 1158,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0040_49180.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0040_49180.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Blue headed Vireo B. Ivory Gull C. Cactus Wren D. Red cockaded Woodpecker",
+    "label": "Ivory Gull",
+    "question_id": 1159,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0045_49696.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Ivory_Gull/Ivory_Gull_0045_49696.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Ivory Gull B. White throated Sparrow C. Hooded Warbler D. Horned Grebe",
+    "label": "Ivory Gull",
+    "question_id": 1160,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0007_72438.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0007_72438.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Green Kingfisher B. Pied Kingfisher C. Vermilion Flycatcher D. Magnolia Warbler",
+    "label": "Pied Kingfisher",
+    "question_id": 1571,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0011_72143.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0011_72143.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Brewer Blackbird B. Cliff Swallow C. Pied Kingfisher D. Black capped Vireo",
+    "label": "Pied Kingfisher",
+    "question_id": 1572,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0018_71657.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0018_71657.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. White Pelican B. Ring billed Gull C. Black footed Albatross D. Pied Kingfisher",
+    "label": "Pied Kingfisher",
+    "question_id": 1573,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0025_72469.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0025_72469.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. American Goldfinch B. Black billed Cuckoo C. Pied Kingfisher D. Tennessee Warbler",
+    "label": "Pied Kingfisher",
+    "question_id": 1574,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0031_71829.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pied_Kingfisher/Pied_Kingfisher_0031_71829.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Lazuli Bunting B. Artic Tern C. Pied Kingfisher D. Western Wood Pewee",
+    "label": "Pied Kingfisher",
+    "question_id": 1575,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0026_180078.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0026_180078.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Pigeon Guillemot B. Pileated Woodpecker C. Gray Kingbird D. Barn Swallow",
+    "label": "Pileated Woodpecker",
+    "question_id": 1607,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0051_179965.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0051_179965.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Swainson Warbler B. Pileated Woodpecker C. Western Gull D. Frigatebird",
+    "label": "Pileated Woodpecker",
+    "question_id": 1608,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0059_180177.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0059_180177.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Clay colored Sparrow B. Pileated Woodpecker C. Acadian Flycatcher D. Summer Tanager",
+    "label": "Pileated Woodpecker",
+    "question_id": 1609,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0060_180443.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0060_180443.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Pileated Woodpecker B. Pine Warbler C. Le Conte Sparrow D. Elegant Tern",
+    "label": "Pileated Woodpecker",
+    "question_id": 1610,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0070_180034.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Pileated_Woodpecker/Pileated_Woodpecker_0070_180034.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Prairie Warbler B. Eastern Towhee C. Canada Warbler D. Pileated Woodpecker",
+    "label": "Pileated Woodpecker",
+    "question_id": 1611,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0004_27565.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0004_27565.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Gray Kingbird B. Louisiana Waterthrush C. Purple Finch D. Clark Nutcracker",
+    "label": "Purple Finch",
+    "question_id": 1679,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0021_28235.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0021_28235.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Purple Finch B. Winter Wren C. Blue Jay D. White Pelican",
+    "label": "Purple Finch",
+    "question_id": 1680,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0048_27670.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0048_27670.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Wilson Warbler B. Boat tailed Grackle C. Vesper Sparrow D. Purple Finch",
+    "label": "Purple Finch",
+    "question_id": 1681,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0050_27702.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0050_27702.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Horned Grebe B. Least Tern C. Gray Catbird D. Purple Finch",
+    "label": "Purple Finch",
+    "question_id": 1682,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0071_27443.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Purple_Finch/Purple_Finch_0071_27443.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Purple Finch B. Red faced Cormorant C. Eared Grebe D. Worm eating Warbler",
+    "label": "Purple Finch",
+    "question_id": 1683,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0004_189046.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0004_189046.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Shiny Cowbird B. Rock Wren C. Black throated Sparrow D. Cape May Warbler",
+    "label": "Rock Wren",
+    "question_id": 1819,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0019_188968.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0019_188968.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Rock Wren B. Anna Hummingbird C. Gadwall D. Eared Grebe",
+    "label": "Rock Wren",
+    "question_id": 1820,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0022_188958.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0022_188958.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Rock Wren B. Yellow breasted Chat C. Black throated Sparrow D. Blue Jay",
+    "label": "Rock Wren",
+    "question_id": 1821,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0025_188897.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0025_188897.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cardinal B. Rock Wren C. Yellow headed Blackbird D. American Three toed Woodpecker",
+    "label": "Rock Wren",
+    "question_id": 1822,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0036_189245.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Rock_Wren/Rock_Wren_0036_189245.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Rock Wren B. Orange crowned Warbler C. Prothonotary Warbler D. Bohemian Waxwing",
+    "label": "Rock Wren",
+    "question_id": 1823,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0011_795836.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0011_795836.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Great Grey Shrike B. Brown Pelican C. Prothonotary Warbler D. Scott Oriole",
+    "label": "Scott Oriole",
+    "question_id": 1939,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0019_795815.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0019_795815.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Scott Oriole B. Rose breasted Grosbeak C. Lincoln Sparrow D. Great Grey Shrike",
+    "label": "Scott Oriole",
+    "question_id": 1940,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0022_92356.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0022_92356.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Rose breasted Grosbeak B. Rufous Hummingbird C. Scott Oriole D. Pileated Woodpecker",
+    "label": "Scott Oriole",
+    "question_id": 1941,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0024_92302.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0024_92302.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Hooded Merganser B. Scott Oriole C. Horned Grebe D. Chipping Sparrow",
+    "label": "Scott Oriole",
+    "question_id": 1942,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0025_92207.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Scott_Oriole/Scott_Oriole_0025_92207.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Red bellied Woodpecker B. Scott Oriole C. Mourning Warbler D. Fish Crow",
+    "label": "Scott Oriole",
+    "question_id": 1943,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0001_139289.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0001_139289.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Summer Tanager B. Gadwall C. Ivory Gull D. Palm Warbler",
+    "label": "Summer Tanager",
+    "question_id": 2018,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0004_139916.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0004_139916.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Northern Flicker B. Nashville Warbler C. Summer Tanager D. European Goldfinch",
+    "label": "Summer Tanager",
+    "question_id": 2019,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0023_139859.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0023_139859.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Black throated Blue Warbler B. Anna Hummingbird C. Summer Tanager D. Frigatebird",
+    "label": "Summer Tanager",
+    "question_id": 2020,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0047_140164.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0047_140164.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Vermilion Flycatcher B. Field Sparrow C. Grasshopper Sparrow D. Summer Tanager",
+    "label": "Summer Tanager",
+    "question_id": 2021,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0050_139358.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Summer_Tanager/Summer_Tanager_0050_139358.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Summer Tanager B. Field Sparrow C. Sage Thrasher D. Brown Pelican",
+    "label": "Summer Tanager",
+    "question_id": 2022,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0014_78421.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0014_78421.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Western Meadowlark B. Yellow bellied Flycatcher C. Pigeon Guillemot D. Blue headed Vireo",
+    "label": "Western Meadowlark",
+    "question_id": 2150,
+    "split": null,
+    "extra": {
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0019_77876.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0019_77876.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Groove billed Ani B. Bobolink C. Clay colored Sparrow D. Western Meadowlark",
+    "label": "Western Meadowlark",
+    "question_id": 2151,
+    "split": null,
+    "extra": {
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0029_78832.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0029_78832.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Red headed Woodpecker B. Belted Kingfisher C. Western Meadowlark D. Bohemian Waxwing",
+    "label": "Western Meadowlark",
+    "question_id": 2152,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0033_78312.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0033_78312.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Cardinal B. Cerulean Warbler C. Western Meadowlark D. Bohemian Waxwing",
+    "label": "Western Meadowlark",
+    "question_id": 2153,
+    "split": null,
+    "extra": {
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0034_78869.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Cub/cub200/test/Western_Meadowlark/Western_Meadowlark_0034_78869.jpg"
+    ],
+    "question": "What bird species is shown in the image?\nA. Hooded Merganser B. Western Meadowlark C. Prothonotary Warbler D. Crested Auklet",
+    "label": "Western Meadowlark",
+    "question_id": 2154,
+    "split": null,
+    "extra": {
+      "answer": "B"
+    }
+  }
+]

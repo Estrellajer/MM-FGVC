@@ -1,0 +1,85 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations run.run_name=c2_ablations_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_144544 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:21,  3.61it/s]Loading weights:   0%|          | 2/730 [00:00<03:24,  3.55it/s]Loading weights:   1%|          | 4/730 [00:00<02:34,  4.71it/s]Loading weights:   6%|▌         | 42/730 [00:01<00:10, 67.65it/s]Loading weights:   8%|▊         | 55/730 [00:01<00:08, 76.02it/s]Loading weights:   9%|▉         | 67/730 [00:01<00:08, 80.37it/s]Loading weights:  11%|█         | 79/730 [00:01<00:07, 83.85it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:15, 42.32it/s]Loading weights:  21%|██        | 150/730 [00:02<00:05, 114.55it/s]Loading weights:  24%|██▎       | 172/730 [00:02<00:09, 61.34it/s] Loading weights:  34%|███▎      | 246/730 [00:03<00:03, 123.79it/s]Loading weights:  38%|███▊      | 277/730 [00:03<00:04, 103.99it/s]Loading weights:  41%|████▏     | 302/730 [00:03<00:03, 119.31it/s]Loading weights:  45%|████▍     | 328/730 [00:03<00:03, 128.71it/s]Loading weights:  54%|█████▍    | 394/730 [00:03<00:01, 208.39it/s]Loading weights:  69%|██████▉   | 503/730 [00:03<00:00, 363.93it/s]Loading weights:  84%|████████▎ | 611/730 [00:04<00:00, 507.15it/s]Loading weights:  98%|█████████▊| 719/730 [00:04<00:00, 632.01it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 174.73it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.75
+  correct: 30.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 5
+      - 3
+      - 0
+      - 0
+    - - 1
+      - 7
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 8
+      - 4
+    - - 0
+      - 0
+      - 2
+      - 10
+  per_class:
+    'Yes':
+      precision: 0.8333333333333334
+      recall: 0.625
+      f1: 0.7142857142857143
+      support: 8.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 3.0
+    'No':
+      precision: 0.7
+      recall: 0.875
+      f1: 0.7777777777777777
+      support: 8.0
+      predicted: 10.0
+      true_positive: 7.0
+      false_positive: 3.0
+      false_negative: 1.0
+    A:
+      precision: 0.8
+      recall: 0.6666666666666666
+      f1: 0.7272727272727272
+      support: 12.0
+      predicted: 10.0
+      true_positive: 8.0
+      false_positive: 2.0
+      false_negative: 4.0
+    B:
+      precision: 0.7142857142857143
+      recall: 0.8333333333333334
+      f1: 0.7692307692307692
+      support: 12.0
+      predicted: 14.0
+      true_positive: 10.0
+      false_positive: 4.0
+      false_negative: 2.0
+  macro_precision: 0.7619047619047619
+  macro_recall: 0.75
+  macro_f1: 0.7471417471417471
+  balanced_accuracy: 0.75
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_144544.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_144544.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_144544.diagnostics.json
+

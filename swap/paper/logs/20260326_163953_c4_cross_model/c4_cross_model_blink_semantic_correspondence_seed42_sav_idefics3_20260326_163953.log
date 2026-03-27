@@ -1,0 +1,27 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=sav evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model run.run_name=c4_cross_model_blink_semantic_correspondence_seed42_sav_idefics3_20260326_163953 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:39,  7.28it/s]Loading weights:   0%|          | 3/729 [00:00<01:46,  6.81it/s]Loading weights:   1%|          | 9/729 [00:00<00:35, 20.54it/s]Loading weights:   3%|▎         | 19/729 [00:00<00:16, 41.83it/s]Loading weights:   4%|▍         | 29/729 [00:00<00:12, 56.53it/s]Loading weights:   5%|▌         | 37/729 [00:00<00:10, 63.07it/s]Loading weights:   6%|▋         | 47/729 [00:00<00:09, 72.85it/s]Loading weights:   8%|▊         | 59/729 [00:01<00:08, 82.50it/s]Loading weights:   9%|▉         | 68/729 [00:01<00:08, 81.88it/s]Loading weights:  11%|█         | 77/729 [00:01<00:11, 58.23it/s]Loading weights:  13%|█▎        | 96/729 [00:01<00:07, 85.18it/s]Loading weights:  16%|█▌        | 113/729 [00:01<00:06, 100.44it/s]Loading weights:  17%|█▋        | 125/729 [00:01<00:07, 77.98it/s] Loading weights:  20%|██        | 149/729 [00:02<00:05, 106.64it/s]Loading weights:  22%|██▏       | 162/729 [00:02<00:06, 86.68it/s] Loading weights:  25%|██▍       | 182/729 [00:02<00:05, 107.54it/s]Loading weights:  27%|██▋       | 196/729 [00:02<00:05, 98.80it/s] Loading weights:  29%|██▊       | 208/729 [00:02<00:05, 99.47it/s]Loading weights:  30%|███       | 221/729 [00:02<00:05, 100.73it/s]Loading weights:  32%|███▏      | 232/729 [00:02<00:05, 86.45it/s] Loading weights:  34%|███▍      | 249/729 [00:03<00:04, 101.05it/s]Loading weights:  36%|███▌      | 260/729 [00:03<00:04, 99.14it/s] Loading weights:  37%|███▋      | 271/729 [00:03<00:04, 97.81it/s]Loading weights:  39%|███▊      | 282/729 [00:03<00:04, 97.47it/s]Loading weights:  40%|████      | 293/729 [00:03<00:04, 94.89it/s]Loading weights:  64%|██████▎   | 463/729 [00:03<00:00, 499.58it/s]Loading weights:  90%|████████▉ | 654/729 [00:03<00:00, 873.33it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 191.41it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=sav', 'evaluator=raw', 'dataset.name=blink_semantic_correspondence', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/blink_semantic_correspondence/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/blink_semantic_correspondence/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model', 'run.run_name=c4_cross_model_blink_semantic_correspondence_seed42_sav_idefics3_20260326_163953', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 325, in fit
+    all_class_acts, str_to_int, int_to_str = self._compute_class_activations(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 159, in _compute_class_activations
+    head_act = self._extract_selected_head_activations(item, selected_heads)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 142, in _extract_selected_head_activations
+    all_head_acts = self._extract_all_head_activations(sample)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 135, in _extract_all_head_activations
+    return torch.stack(layer_acts, dim=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [32, 36] at entry 0 and [32, 128] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

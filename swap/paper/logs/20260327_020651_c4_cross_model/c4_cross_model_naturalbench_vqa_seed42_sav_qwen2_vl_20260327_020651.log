@@ -1,0 +1,85 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=sav evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_naturalbench_vqa_seed42_sav_qwen2_vl_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:04,  3.95it/s]Loading weights:   0%|          | 2/730 [00:00<03:13,  3.75it/s]Loading weights:   1%|          | 4/730 [00:00<01:37,  7.44it/s]Loading weights:   2%|▏         | 14/730 [00:01<01:05, 11.00it/s]Loading weights:  13%|█▎        | 97/730 [00:02<00:10, 61.31it/s]Loading weights:  24%|██▍       | 174/730 [00:02<00:05, 110.43it/s]Loading weights:  26%|██▌       | 189/730 [00:03<00:09, 58.72it/s] Loading weights:  42%|████▏     | 306/730 [00:03<00:03, 124.15it/s]Loading weights:  63%|██████▎   | 459/730 [00:03<00:01, 240.41it/s]Loading weights:  77%|███████▋  | 564/730 [00:03<00:00, 325.96it/s]Loading weights:  93%|█████████▎| 679/730 [00:03<00:00, 432.79it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 181.00it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.825
+  correct: 33.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 8
+      - 0
+      - 0
+      - 0
+    - - 2
+      - 6
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 9
+      - 3
+    - - 0
+      - 0
+      - 2
+      - 10
+  per_class:
+    'Yes':
+      precision: 0.8
+      recall: 1.0
+      f1: 0.888888888888889
+      support: 8.0
+      predicted: 10.0
+      true_positive: 8.0
+      false_positive: 2.0
+      false_negative: 0.0
+    'No':
+      precision: 1.0
+      recall: 0.75
+      f1: 0.8571428571428571
+      support: 8.0
+      predicted: 6.0
+      true_positive: 6.0
+      false_positive: 0.0
+      false_negative: 2.0
+    A:
+      precision: 0.8181818181818182
+      recall: 0.75
+      f1: 0.7826086956521738
+      support: 12.0
+      predicted: 11.0
+      true_positive: 9.0
+      false_positive: 2.0
+      false_negative: 3.0
+    B:
+      precision: 0.7692307692307693
+      recall: 0.8333333333333334
+      f1: 0.8
+      support: 12.0
+      predicted: 13.0
+      true_positive: 10.0
+      false_positive: 3.0
+      false_negative: 2.0
+  macro_precision: 0.8468531468531468
+  macro_recall: 0.8333333333333334
+  macro_f1: 0.8321601104209799
+  balanced_accuracy: 0.8333333333333334
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_naturalbench_vqa_seed42_sav_qwen2_vl_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_naturalbench_vqa_seed42_sav_qwen2_vl_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_naturalbench_vqa_seed42_sav_qwen2_vl_20260327_020651.diagnostics.json
+

@@ -1,0 +1,30 @@
+{
+  "suite_name": "c3_efficiency",
+  "timestamp": "20260327_020324",
+  "task_ids": [
+    "cub_fgvc",
+    "eurosat_fgvc",
+    "naturalbench_vqa",
+    "sugarcrepe",
+    "vlguard",
+    "blink_semantic_correspondence"
+  ],
+  "method_ids": [
+    "zero_shot",
+    "sav",
+    "rsev2",
+    "mimic",
+    "i2cl",
+    "stv"
+  ],
+  "models": [
+    "qwen2_vl",
+    "qwen3_vl",
+    "idefics3"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false,
+  "gpu_workers": null
+}

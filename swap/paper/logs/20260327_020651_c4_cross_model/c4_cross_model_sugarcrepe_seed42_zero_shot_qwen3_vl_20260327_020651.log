@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_sugarcrepe_seed42_zero_shot_qwen3_vl_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:13,  3.87it/s]Loading weights:   0%|          | 2/750 [00:00<03:42,  3.37it/s]Loading weights:   2%|▏         | 12/750 [00:00<00:30, 24.26it/s]Loading weights:   2%|▏         | 17/750 [00:01<01:20,  9.14it/s]Loading weights:  19%|█▉        | 145/750 [00:01<00:04, 126.25it/s]Loading weights:  26%|██▌       | 192/750 [00:03<00:08, 65.18it/s] Loading weights:  43%|████▎     | 322/750 [00:03<00:03, 140.68it/s]Loading weights:  51%|█████▏    | 386/750 [00:03<00:02, 129.80it/s]Loading weights:  58%|█████▊    | 433/750 [00:04<00:02, 151.89it/s]Loading weights:  77%|███████▋  | 580/750 [00:04<00:00, 277.78it/s]Loading weights:  97%|█████████▋| 725/750 [00:04<00:00, 416.19it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 169.85it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.5
+  pair_correct: 10.0
+  pair_total: 20.0
+  raw_accuracy: 0.75
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 8
+      - 12
+  per_class:
+    'Yes':
+      precision: 0.6923076923076923
+      recall: 0.9
+      f1: 0.7826086956521738
+      support: 20.0
+      predicted: 26.0
+      true_positive: 18.0
+      false_positive: 8.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8571428571428571
+      recall: 0.6
+      f1: 0.7058823529411764
+      support: 20.0
+      predicted: 14.0
+      true_positive: 12.0
+      false_positive: 2.0
+      false_negative: 8.0
+  macro_precision: 0.7747252747252746
+  macro_recall: 0.75
+  macro_f1: 0.7442455242966751
+  balanced_accuracy: 0.75
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_sugarcrepe_seed42_zero_shot_qwen3_vl_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_sugarcrepe_seed42_zero_shot_qwen3_vl_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_sugarcrepe_seed42_zero_shot_qwen3_vl_20260327_020651.diagnostics.json
+

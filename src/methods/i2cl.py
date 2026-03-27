@@ -307,6 +307,7 @@ class I2CLMethod(MethodBase):
                 continue
             if hasattr(module, "o_proj") or hasattr(module, "out_proj"):
                 attn_names.append(name)
+        attn_names = self._filter_text_backbone_module_names(attn_names)
 
         if not attn_names:
             raise RuntimeError("Could not find decoder self-attention modules for I2CL")
@@ -434,6 +435,8 @@ class I2CLMethod(MethodBase):
 
     def _build_user_message(self, sample: Dict) -> tuple[Dict, List[Image.Image]]:
         prompt = build_prompt(self.dataset_name, sample)
+        if self.model_family == "idefics3":
+            prompt = self._sanitize_prompt_text_for_explicit_images(prompt) or "Describe this image."
         images = self._load_images(sample)
         if self.model_family in {"qwen2", "qwen3"}:
             content = [{"type": "image", "image": image} for image in images]

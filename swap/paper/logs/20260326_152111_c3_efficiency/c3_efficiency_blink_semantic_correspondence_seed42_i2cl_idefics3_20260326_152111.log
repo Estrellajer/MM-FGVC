@@ -1,0 +1,26 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=i2cl evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_i2cl_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:05,  5.79it/s]Loading weights:   0%|          | 3/729 [00:00<01:35,  7.61it/s]Loading weights:   1%|          | 5/729 [00:00<01:14,  9.66it/s]Loading weights:   3%|▎         | 24/729 [00:00<00:12, 55.88it/s]Loading weights:   5%|▍         | 33/729 [00:00<00:10, 65.05it/s]Loading weights:   6%|▌         | 42/729 [00:00<00:09, 71.25it/s]Loading weights:   7%|▋         | 51/729 [00:00<00:08, 75.39it/s]Loading weights:   8%|▊         | 60/729 [00:01<00:08, 79.31it/s]Loading weights:   9%|▉         | 69/729 [00:01<00:10, 60.21it/s]Loading weights:  13%|█▎        | 95/729 [00:01<00:06, 100.66it/s]Loading weights:  15%|█▍        | 107/729 [00:01<00:06, 94.20it/s]Loading weights:  16%|█▌        | 118/729 [00:01<00:06, 93.48it/s]Loading weights:  18%|█▊        | 128/729 [00:02<00:10, 58.82it/s]Loading weights:  22%|██▏       | 160/729 [00:02<00:05, 104.63it/s]Loading weights:  24%|██▍       | 176/729 [00:02<00:05, 105.78it/s]Loading weights:  26%|██▌       | 190/729 [00:02<00:06, 85.52it/s] Loading weights:  28%|██▊       | 205/729 [00:03<00:08, 58.98it/s]Loading weights:  35%|███▍      | 253/729 [00:03<00:04, 116.13it/s]Loading weights:  38%|███▊      | 274/729 [00:03<00:04, 110.86it/s]Loading weights:  40%|████      | 292/729 [00:03<00:04, 104.13it/s]Loading weights:  66%|██████▌   | 482/729 [00:03<00:00, 403.29it/s]Loading weights:  94%|█████████▎| 683/729 [00:03<00:00, 710.34it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 194.03it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=i2cl', 'evaluator=raw', 'dataset.name=blink_semantic_correspondence', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_i2cl_idefics3_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 695, in fit
+    demo_latents.append(self._capture_demo_latent(train_data[demo_index], rng))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 575, in _capture_demo_latent
+    inputs = self._prepare_inputs(conversation, flat_images, add_generation_prompt=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 491, in _prepare_inputs
+    inputs = self.model.processor(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py", line 227, in __call__
+    raise ValueError(
+ValueError: The number of images in the text [4] and images [2] should be the same.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

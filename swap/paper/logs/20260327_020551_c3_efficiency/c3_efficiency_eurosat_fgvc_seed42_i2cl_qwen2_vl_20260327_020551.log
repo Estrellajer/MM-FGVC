@@ -1,0 +1,236 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen2_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:06,  3.91it/s]Loading weights:   0%|          | 2/730 [00:00<03:14,  3.74it/s]Loading weights:   1%|          | 4/730 [00:00<01:58,  6.15it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:12, 57.65it/s]Loading weights:   5%|▌         | 39/730 [00:01<00:14, 48.03it/s]Loading weights:   8%|▊         | 57/730 [00:02<00:29, 22.65it/s]Loading weights:  27%|██▋       | 197/730 [00:02<00:05, 103.09it/s]Loading weights:  33%|███▎      | 241/730 [00:03<00:04, 108.74it/s]Loading weights:  37%|███▋      | 273/730 [00:03<00:04, 94.29it/s] Loading weights:  62%|██████▏   | 455/730 [00:03<00:01, 241.34it/s]Loading weights:  77%|███████▋  | 563/730 [00:03<00:00, 331.36it/s]Loading weights:  93%|█████████▎| 678/730 [00:03<00:00, 440.55it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 181.33it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.58
+  correct: 58.0
+  total: 100.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    matrix:
+    - - 4
+      - 1
+      - 2
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 10
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 2
+      - 4
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 1
+    - - 1
+      - 0
+      - 0
+      - 7
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 1
+      - 0
+      - 0
+      - 6
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+    - - 1
+      - 1
+      - 3
+      - 1
+      - 0
+      - 2
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 4
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 2
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 3
+      - 2
+      - 1
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 8
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 10
+  per_class:
+    Annual Crop Land:
+      precision: 0.4444444444444444
+      recall: 0.4
+      f1: 0.4210526315789474
+      support: 10.0
+      predicted: 9.0
+      true_positive: 4.0
+      false_positive: 5.0
+      false_negative: 6.0
+    Forest:
+      precision: 0.5555555555555556
+      recall: 1.0
+      f1: 0.7142857142857143
+      support: 10.0
+      predicted: 18.0
+      true_positive: 10.0
+      false_positive: 8.0
+      false_negative: 0.0
+    Herbaceous Vegetation Land:
+      precision: 0.36363636363636365
+      recall: 0.4
+      f1: 0.380952380952381
+      support: 10.0
+      predicted: 11.0
+      true_positive: 4.0
+      false_positive: 7.0
+      false_negative: 6.0
+    Highway or Road:
+      precision: 0.6363636363636364
+      recall: 0.7
+      f1: 0.6666666666666666
+      support: 10.0
+      predicted: 11.0
+      true_positive: 7.0
+      false_positive: 4.0
+      false_negative: 3.0
+    Industrial Buildings:
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 10.0
+      predicted: 6.0
+      true_positive: 6.0
+      false_positive: 0.0
+      false_negative: 4.0
+    Pasture Land:
+      precision: 0.6666666666666666
+      recall: 0.2
+      f1: 0.30769230769230765
+      support: 10.0
+      predicted: 3.0
+      true_positive: 2.0
+      false_positive: 1.0
+      false_negative: 8.0
+    Permanent Crop Land:
+      precision: 0.4444444444444444
+      recall: 0.4
+      f1: 0.4210526315789474
+      support: 10.0
+      predicted: 9.0
+      true_positive: 4.0
+      false_positive: 5.0
+      false_negative: 6.0
+    Residential Buildings:
+      precision: 0.75
+      recall: 0.3
+      f1: 0.4285714285714285
+      support: 10.0
+      predicted: 4.0
+      true_positive: 3.0
+      false_positive: 1.0
+      false_negative: 7.0
+    River:
+      precision: 0.6153846153846154
+      recall: 0.8
+      f1: 0.6956521739130435
+      support: 10.0
+      predicted: 13.0
+      true_positive: 8.0
+      false_positive: 5.0
+      false_negative: 2.0
+    Sea or Lake:
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 10.0
+      predicted: 16.0
+      true_positive: 10.0
+      false_positive: 6.0
+      false_negative: 0.0
+  macro_precision: 0.6101495726495727
+  macro_recall: 0.58
+  macro_f1: 0.5555156704470205
+  balanced_accuracy: 0.58
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen2_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen2_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen2_vl_20260327_020551.diagnostics.json
+

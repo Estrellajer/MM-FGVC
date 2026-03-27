@@ -1,0 +1,50 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=sav evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_sav_qwen3_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:19,  3.75it/s]Loading weights:   0%|          | 2/750 [00:00<03:45,  3.32it/s]Loading weights:   1%|          | 9/750 [00:01<02:23,  5.15it/s]Loading weights:  20%|█▉        | 149/750 [00:02<00:06, 96.82it/s]Loading weights:  25%|██▌       | 191/750 [00:02<00:04, 124.61it/s]Loading weights:  29%|██▉       | 216/750 [00:03<00:07, 71.20it/s] Loading weights:  42%|████▏     | 313/750 [00:03<00:03, 127.48it/s]Loading weights:  45%|████▌     | 340/750 [00:03<00:03, 131.48it/s]Loading weights:  48%|████▊     | 363/750 [00:04<00:03, 105.78it/s]Loading weights:  73%|███████▎  | 545/750 [00:04<00:00, 280.56it/s]Loading weights:  93%|█████████▎| 700/750 [00:04<00:00, 441.72it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 170.98it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.925
+  correct: 37.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 17
+      - 3
+    - - 0
+      - 20
+  per_class:
+    unharmful:
+      precision: 1.0
+      recall: 0.85
+      f1: 0.9189189189189189
+      support: 20.0
+      predicted: 17.0
+      true_positive: 17.0
+      false_positive: 0.0
+      false_negative: 3.0
+    harmful:
+      precision: 0.8695652173913043
+      recall: 1.0
+      f1: 0.9302325581395349
+      support: 20.0
+      predicted: 23.0
+      true_positive: 20.0
+      false_positive: 3.0
+      false_negative: 0.0
+  macro_precision: 0.9347826086956521
+  macro_recall: 0.925
+  macro_f1: 0.9245757385292268
+  balanced_accuracy: 0.925
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_sav_qwen3_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_sav_qwen3_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_sav_qwen3_vl_20260327_020551.diagnostics.json
+

@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=stv evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_stv_qwen2_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.head_selection_mode=sensitivity method.params.cluster_selection_mode=rl
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:04,  3.95it/s]Loading weights:   0%|          | 2/730 [00:00<03:15,  3.73it/s]Loading weights:   1%|          | 6/730 [00:01<02:23,  5.03it/s]Loading weights:  11%|█         | 78/730 [00:01<00:12, 53.67it/s]Loading weights:  20%|██        | 149/730 [00:02<00:08, 70.59it/s]Loading weights:  32%|███▏      | 233/730 [00:02<00:03, 127.25it/s]Loading weights:  36%|███▌      | 263/730 [00:03<00:05, 83.82it/s] Loading weights:  64%|██████▎   | 465/730 [00:03<00:01, 226.90it/s]Loading weights:  78%|███████▊  | 571/730 [00:03<00:00, 306.33it/s]Loading weights:  93%|█████████▎| 681/730 [00:03<00:00, 401.28it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 181.58it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.675
+  correct: 27.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 14
+      - 6
+    - - 7
+      - 13
+  per_class:
+    unharmful:
+      precision: 0.6666666666666666
+      recall: 0.7
+      f1: 0.6829268292682926
+      support: 20.0
+      predicted: 21.0
+      true_positive: 14.0
+      false_positive: 7.0
+      false_negative: 6.0
+    harmful:
+      precision: 0.6842105263157895
+      recall: 0.65
+      f1: 0.6666666666666667
+      support: 20.0
+      predicted: 19.0
+      true_positive: 13.0
+      false_positive: 6.0
+      false_negative: 7.0
+  macro_precision: 0.6754385964912281
+  macro_recall: 0.675
+  macro_f1: 0.6747967479674797
+  balanced_accuracy: 0.675
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_stv_qwen2_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_stv_qwen2_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_vlguard_seed42_stv_qwen2_vl_20260327_020551.diagnostics.json
+

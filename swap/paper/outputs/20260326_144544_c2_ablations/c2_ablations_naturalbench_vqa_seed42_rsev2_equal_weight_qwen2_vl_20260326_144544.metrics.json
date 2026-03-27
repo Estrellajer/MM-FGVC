@@ -1,0 +1,105 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "naturalbench_vqa",
+  "method": "rsev2",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.75,
+    "correct": 30.0,
+    "total": 40.0,
+    "label_order": [
+      "Yes",
+      "No",
+      "A",
+      "B"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Yes",
+        "No",
+        "A",
+        "B"
+      ],
+      "matrix": [
+        [
+          6,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          5
+        ],
+        [
+          0,
+          0,
+          2,
+          10
+        ]
+      ]
+    },
+    "per_class": {
+      "Yes": {
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "f1": 0.7999999999999999,
+        "support": 8.0,
+        "predicted": 7.0,
+        "true_positive": 6.0,
+        "false_positive": 1.0,
+        "false_negative": 2.0
+      },
+      "No": {
+        "precision": 0.7777777777777778,
+        "recall": 0.875,
+        "f1": 0.823529411764706,
+        "support": 8.0,
+        "predicted": 9.0,
+        "true_positive": 7.0,
+        "false_positive": 2.0,
+        "false_negative": 1.0
+      },
+      "A": {
+        "precision": 0.7777777777777778,
+        "recall": 0.5833333333333334,
+        "f1": 0.6666666666666666,
+        "support": 12.0,
+        "predicted": 9.0,
+        "true_positive": 7.0,
+        "false_positive": 2.0,
+        "false_negative": 5.0
+      },
+      "B": {
+        "precision": 0.6666666666666666,
+        "recall": 0.8333333333333334,
+        "f1": 0.7407407407407408,
+        "support": 12.0,
+        "predicted": 15.0,
+        "true_positive": 10.0,
+        "false_positive": 5.0,
+        "false_negative": 2.0
+      }
+    },
+    "macro_precision": 0.7698412698412698,
+    "macro_recall": 0.7604166666666667,
+    "macro_f1": 0.7577342047930283,
+    "balanced_accuracy": 0.7604166666666667
+  },
+  "timings": {
+    "fit_time_sec": 34.712151292711496,
+    "predict_time_sec": 27.1427939273417,
+    "total_time_sec": 61.854945220053196,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.6785698481835425
+  }
+}

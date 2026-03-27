@@ -65,6 +65,7 @@ class SAVMethod(MethodBase):
         for name, _ in self.model.model.named_modules():
             if name.endswith("self_attn.o_proj") or name.endswith("self_attn.out_proj"):
                 names.append(name)
+        names = self._filter_text_backbone_module_names(names)
 
         if not names:
             raise RuntimeError(

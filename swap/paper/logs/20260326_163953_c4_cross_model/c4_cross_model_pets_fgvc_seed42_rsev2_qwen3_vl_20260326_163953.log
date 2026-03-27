@@ -1,0 +1,644 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=pets dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/pets_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/pets_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model run.run_name=c4_cross_model_pets_fgvc_seed42_rsev2_qwen3_vl_20260326_163953 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:56,  4.25it/s]Loading weights:   0%|          | 2/750 [00:00<03:42,  3.37it/s]Loading weights:   2%|▏         | 13/750 [00:00<00:32, 22.91it/s]Loading weights:   4%|▎         | 28/750 [00:00<00:14, 48.73it/s]Loading weights:   6%|▌         | 45/750 [00:00<00:09, 75.16it/s]Loading weights:   7%|▋         | 56/750 [00:01<00:08, 82.38it/s]Loading weights:   9%|▉         | 70/750 [00:01<00:07, 92.98it/s]Loading weights:  11%|█         | 82/750 [00:01<00:07, 91.40it/s]Loading weights:  13%|█▎        | 97/750 [00:01<00:06, 105.93it/s]Loading weights:  15%|█▍        | 109/750 [00:01<00:06, 106.43it/s]Loading weights:  17%|█▋        | 124/750 [00:01<00:05, 112.24it/s]Loading weights:  18%|█▊        | 137/750 [00:01<00:05, 110.33it/s]Loading weights:  20%|█▉        | 149/750 [00:01<00:05, 106.54it/s]Loading weights:  21%|██▏       | 160/750 [00:02<00:05, 107.32it/s]Loading weights:  23%|██▎       | 173/750 [00:02<00:05, 109.58it/s]Loading weights:  25%|██▌       | 189/750 [00:02<00:05, 108.31it/s]Loading weights:  27%|██▋       | 204/750 [00:02<00:04, 112.63it/s]Loading weights:  29%|██▉       | 216/750 [00:02<00:04, 109.10it/s]Loading weights:  31%|███       | 232/750 [00:02<00:04, 121.50it/s]Loading weights:  33%|███▎      | 245/750 [00:02<00:04, 122.62it/s]Loading weights:  34%|███▍      | 258/750 [00:02<00:04, 109.06it/s]Loading weights:  36%|███▌      | 270/750 [00:03<00:04, 102.79it/s]Loading weights:  38%|███▊      | 287/750 [00:03<00:03, 117.81it/s]Loading weights:  40%|████      | 301/750 [00:03<00:03, 115.91it/s]Loading weights:  42%|████▏     | 313/750 [00:03<00:03, 111.07it/s]Loading weights:  43%|████▎     | 325/750 [00:03<00:03, 107.90it/s]Loading weights:  45%|████▌     | 340/750 [00:03<00:03, 116.37it/s]Loading weights:  47%|████▋     | 352/750 [00:03<00:03, 114.23it/s]Loading weights:  49%|████▊     | 364/750 [00:03<00:03, 109.19it/s]Loading weights:  50%|█████     | 378/750 [00:03<00:03, 108.62it/s]Loading weights:  52%|█████▏    | 389/750 [00:04<00:03, 102.63it/s]Loading weights:  67%|██████▋   | 504/750 [00:04<00:00, 374.71it/s]Loading weights:  88%|████████▊ | 657/750 [00:04<00:00, 686.44it/s]Loading weights:  99%|█████████▊| 739/750 [00:04<00:00, 714.96it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 170.33it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.98
+  correct: 98.0
+  total: 100.0
+  label_order:
+  - beagle
+  - Bombay
+  - British Shorthair
+  - chihuahua
+  - english cocker spaniel
+  - english setter
+  - great pyrenees
+  - japanese chin
+  - keeshond
+  - leonberger
+  - Maine Coon
+  - miniature pinscher
+  - newfoundland
+  - Ragdoll
+  - scottish terrier
+  - Siamese
+  - Sphynx
+  - staffordshire bull terrier
+  - wheaten terrier
+  - yorkshire terrier
+  confusion_matrix:
+    labels:
+    - beagle
+    - Bombay
+    - British Shorthair
+    - chihuahua
+    - english cocker spaniel
+    - english setter
+    - great pyrenees
+    - japanese chin
+    - keeshond
+    - leonberger
+    - Maine Coon
+    - miniature pinscher
+    - newfoundland
+    - Ragdoll
+    - scottish terrier
+    - Siamese
+    - Sphynx
+    - staffordshire bull terrier
+    - wheaten terrier
+    - yorkshire terrier
+    matrix:
+    - - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+  per_class:
+    beagle:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Bombay:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    British Shorthair:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    chihuahua:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    english cocker spaniel:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    english setter:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    great pyrenees:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    japanese chin:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    keeshond:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    leonberger:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Maine Coon:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    miniature pinscher:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    newfoundland:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Ragdoll:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    scottish terrier:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Siamese:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Sphynx:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    staffordshire bull terrier:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    wheaten terrier:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    yorkshire terrier:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 0.9833333333333334
+  macro_recall: 0.9800000000000001
+  macro_f1: 0.9797979797979798
+  balanced_accuracy: 0.9800000000000001
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_pets_fgvc_seed42_rsev2_qwen3_vl_20260326_163953.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_pets_fgvc_seed42_rsev2_qwen3_vl_20260326_163953.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_pets_fgvc_seed42_rsev2_qwen3_vl_20260326_163953.diagnostics.json
+

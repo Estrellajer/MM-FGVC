@@ -1,0 +1,491 @@
+nohup: ignoring input
+[INFO] starting overnight paper batch
+[INFO] log file: /root/autodl-tmp/FGVC/swap/paper/logs/20260326_144544_c2_c4_overnight.log
+20
+100
+100
+10
+100
+100
+80
+40
+40
+40
+40
+40
+80
+20
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_cub_fgvc_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_cub_fgvc_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_eurosat_fgvc_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_eurosat_fgvc_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_naturalbench_vqa_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_naturalbench_vqa_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_sugarcrepe_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_sugarcrepe_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_vlguard_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_vlguard_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rse_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rse_zscore_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rse_adaptive_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_head_only_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_top1_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_top4_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_top8_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] start c2_ablations_blink_semantic_correspondence_seed42_rsev2_all_qwen2_vl_20260326_144544
+[run_suite][main][cuda=inherit] done c2_ablations_blink_semantic_correspondence_seed42_rsev2_all_qwen2_vl_20260326_144544
+manifest=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/manifest.tsv
+summary=/root/autodl-tmp/FGVC/swap/paper/records/c2_ablations_20260326_144544.md
+config=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/suite_config.json
+20
+100
+100
+10
+100
+100
+80
+40
+40
+40
+40
+40
+80
+20
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_sav_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_rsev2_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_stv_qwen2_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_sav_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_stv_qwen3_vl_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_cub_fgvc_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_sav_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_rsev2_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_i2cl_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_cub_fgvc_seed42_stv_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_eurosat_fgvc_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_sav_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_rsev2_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_i2cl_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_eurosat_fgvc_seed42_stv_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_sav_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_rsev2_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_naturalbench_vqa_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_i2cl_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_naturalbench_vqa_seed42_stv_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_sugarcrepe_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_sav_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_rsev2_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_i2cl_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_sugarcrepe_seed42_stv_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_vlguard_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_sav_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_rsev2_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_i2cl_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_vlguard_seed42_stv_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] done c3_efficiency_blink_semantic_correspondence_seed42_zero_shot_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_sav_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_rsev2_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_mimic_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_i2cl_idefics3_20260326_152111
+[run_suite][main][cuda=inherit] start c3_efficiency_blink_semantic_correspondence_seed42_stv_idefics3_20260326_152111
+manifest=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/manifest.tsv
+summary=/root/autodl-tmp/FGVC/swap/paper/records/c3_efficiency_20260326_152111.md
+config=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/suite_config.json
+20
+100
+100
+10
+100
+100
+20
+100
+100
+80
+40
+40
+40
+40
+40
+40
+40
+80
+20
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_sav_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen2_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_sav_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_cub_fgvc_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_cub_fgvc_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_eurosat_fgvc_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_eurosat_fgvc_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_pets_fgvc_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_pets_fgvc_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_naturalbench_vqa_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_naturalbench_vqa_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_sugarcrepe_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_sugarcrepe_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vizwiz_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vizwiz_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_vlguard_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_vlguard_seed42_rsev2_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] done c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_sav_idefics3_20260326_163953
+[run_suite][main][cuda=inherit] start c4_cross_model_blink_semantic_correspondence_seed42_rsev2_idefics3_20260326_163953
+manifest=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/manifest.tsv
+summary=/root/autodl-tmp/FGVC/swap/paper/records/c4_cross_model_20260326_163953.md
+config=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/suite_config.json
+[INFO] overnight paper batch completed

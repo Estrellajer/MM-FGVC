@@ -1,0 +1,84 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:17,  3.79it/s]Loading weights:   0%|          | 2/750 [00:00<03:44,  3.33it/s]Loading weights:   1%|▏         | 11/750 [00:00<00:33, 22.23it/s]Loading weights:   3%|▎         | 21/750 [00:00<00:18, 39.89it/s]Loading weights:   4%|▍         | 32/750 [00:00<00:12, 56.19it/s]Loading weights:   5%|▌         | 40/750 [00:01<00:13, 50.95it/s]Loading weights:   7%|▋         | 55/750 [00:01<00:20, 34.17it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:04, 124.85it/s]Loading weights:  21%|██        | 154/750 [00:01<00:04, 127.89it/s]Loading weights:  23%|██▎       | 173/750 [00:02<00:05, 106.38it/s]Loading weights:  26%|██▋       | 197/750 [00:02<00:04, 125.46it/s]Loading weights:  29%|██▊       | 214/750 [00:03<00:10, 52.23it/s] Loading weights:  42%|████▏     | 314/750 [00:03<00:03, 130.35it/s]Loading weights:  45%|████▌     | 341/750 [00:03<00:02, 143.84it/s]Loading weights:  49%|████▉     | 367/750 [00:03<00:02, 128.40it/s]Loading weights:  52%|█████▏    | 388/750 [00:04<00:03, 118.26it/s]Loading weights:  75%|███████▍  | 559/750 [00:04<00:00, 339.41it/s]Loading weights:  94%|█████████▎| 703/750 [00:04<00:00, 520.74it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 168.68it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.55
+  correct: 11.0
+  total: 20.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    matrix:
+    - - 2
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 3
+      - 1
+      - 1
+    - - 0
+      - 1
+      - 4
+      - 0
+    - - 3
+      - 0
+      - 0
+      - 2
+  per_class:
+    (C):
+      precision: 0.4
+      recall: 0.4
+      f1: 0.4000000000000001
+      support: 5.0
+      predicted: 5.0
+      true_positive: 2.0
+      false_positive: 3.0
+      false_negative: 3.0
+    (B):
+      precision: 0.6
+      recall: 0.6
+      f1: 0.6
+      support: 5.0
+      predicted: 5.0
+      true_positive: 3.0
+      false_positive: 2.0
+      false_negative: 2.0
+    (A):
+      precision: 0.6666666666666666
+      recall: 0.8
+      f1: 0.7272727272727272
+      support: 5.0
+      predicted: 6.0
+      true_positive: 4.0
+      false_positive: 2.0
+      false_negative: 1.0
+    (D):
+      precision: 0.5
+      recall: 0.4
+      f1: 0.4444444444444445
+      support: 5.0
+      predicted: 4.0
+      true_positive: 2.0
+      false_positive: 2.0
+      false_negative: 3.0
+  macro_precision: 0.5416666666666666
+  macro_recall: 0.55
+  macro_f1: 0.5429292929292929
+  balanced_accuracy: 0.55
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_blink_semantic_correspondence_seed42_rsev2_qwen3_vl_20260327_020651.diagnostics.json
+

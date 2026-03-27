@@ -11,6 +11,9 @@ params:
   support_strategy: balanced
   support_seed: 42
   shift_init_std: 0.001
+  score_chunk_size: 16
+  alignment_window_tokens: 64
+  max_adapt_layers: 4
   gradient_clip_norm: 1.0
   max_new_tokens: 16
   do_sample: false

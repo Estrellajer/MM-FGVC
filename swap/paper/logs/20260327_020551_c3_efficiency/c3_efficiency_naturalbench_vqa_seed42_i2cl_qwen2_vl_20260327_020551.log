@@ -1,0 +1,86 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen2_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:04,  3.95it/s]Loading weights:   0%|          | 2/730 [00:00<03:13,  3.76it/s]Loading weights:   1%|          | 6/730 [00:00<00:59, 12.26it/s]Loading weights:   1%|          | 8/730 [00:01<01:44,  6.94it/s]Loading weights:  10%|█         | 75/730 [00:01<00:06, 101.57it/s]Loading weights:  13%|█▎        | 95/730 [00:02<00:11, 56.01it/s] Loading weights:  21%|██        | 154/730 [00:03<00:10, 53.77it/s]Loading weights:  39%|███▊      | 282/730 [00:03<00:03, 133.76it/s]Loading weights:  44%|████▍     | 324/730 [00:03<00:03, 128.90it/s]Loading weights:  62%|██████▏   | 451/730 [00:03<00:01, 232.30it/s]Loading weights:  77%|███████▋  | 559/730 [00:03<00:00, 329.07it/s]Loading weights:  92%|█████████▏| 669/730 [00:03<00:00, 436.32it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 181.63it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.725
+  correct: 29.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 7
+      - 1
+      - 0
+      - 0
+    - - 4
+      - 4
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 9
+      - 3
+    - - 0
+      - 0
+      - 3
+      - 9
+  per_class:
+    'Yes':
+      precision: 0.6363636363636364
+      recall: 0.875
+      f1: 0.7368421052631579
+      support: 8.0
+      predicted: 11.0
+      true_positive: 7.0
+      false_positive: 4.0
+      false_negative: 1.0
+    'No':
+      precision: 0.8
+      recall: 0.5
+      f1: 0.6153846153846154
+      support: 8.0
+      predicted: 5.0
+      true_positive: 4.0
+      false_positive: 1.0
+      false_negative: 4.0
+    A:
+      precision: 0.75
+      recall: 0.75
+      f1: 0.75
+      support: 12.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 3.0
+    B:
+      precision: 0.75
+      recall: 0.75
+      f1: 0.75
+      support: 12.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 3.0
+  macro_precision: 0.7340909090909091
+  macro_recall: 0.71875
+  macro_f1: 0.7130566801619433
+  balanced_accuracy: 0.71875
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen2_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen2_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_naturalbench_vqa_seed42_i2cl_qwen2_vl_20260327_020551.diagnostics.json
+

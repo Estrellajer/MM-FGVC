@@ -1,0 +1,45 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=mimic evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:49,  4.43it/s]Loading weights:   0%|          | 2/750 [00:00<03:13,  3.87it/s]Loading weights:   2%|▏         | 15/750 [00:00<00:22, 33.21it/s]Loading weights:   4%|▎         | 27/750 [00:00<00:13, 52.83it/s]Loading weights:   5%|▌         | 39/750 [00:00<00:10, 67.39it/s]Loading weights:   7%|▋         | 54/750 [00:00<00:07, 87.92it/s]Loading weights:   9%|▉         | 68/750 [00:01<00:06, 101.61it/s]Loading weights:  11%|█         | 80/750 [00:01<00:07, 87.50it/s] Loading weights:  14%|█▎        | 103/750 [00:01<00:05, 118.09it/s]Loading weights:  16%|█▌        | 117/750 [00:01<00:05, 110.29it/s]Loading weights:  18%|█▊        | 136/750 [00:01<00:04, 122.94it/s]Loading weights:  20%|██        | 150/750 [00:01<00:05, 117.30it/s]Loading weights:  22%|██▏       | 163/750 [00:01<00:04, 119.55it/s]Loading weights:  24%|██▍       | 180/750 [00:01<00:04, 127.85it/s]Loading weights:  26%|██▌       | 194/750 [00:02<00:04, 119.63it/s]Loading weights:  28%|██▊       | 207/750 [00:02<00:05, 107.12it/s]Loading weights:  30%|███       | 226/750 [00:02<00:04, 114.66it/s]Loading weights:  33%|███▎      | 247/750 [00:02<00:03, 135.30it/s]Loading weights:  35%|███▍      | 262/750 [00:02<00:03, 132.65it/s]Loading weights:  37%|███▋      | 278/750 [00:02<00:03, 137.99it/s]Loading weights:  39%|███▉      | 293/750 [00:02<00:03, 132.61it/s]Loading weights:  41%|████      | 307/750 [00:03<00:03, 112.69it/s]Loading weights:  44%|████▎     | 327/750 [00:03<00:03, 121.18it/s]Loading weights:  47%|████▋     | 355/750 [00:03<00:02, 138.46it/s]Loading weights:  49%|████▉     | 369/750 [00:03<00:03, 116.79it/s]Loading weights:  54%|█████▎    | 402/750 [00:03<00:02, 161.90it/s]Loading weights:  72%|███████▏  | 539/750 [00:03<00:00, 444.13it/s]Loading weights:  91%|█████████ | 683/750 [00:03<00:00, 692.69it/s]Loading weights: 100%|██████████| 750/750 [00:03<00:00, 190.26it/s]
+Error executing job with overrides: ['model=qwen3_vl', 'dataset=general_custom', 'method=mimic', 'evaluator=raw', 'dataset.name=blink_semantic_correspondence', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 579, in fit
+    query_outputs, shifted_attn_outputs = self._record_attention_outputs(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 448, in _record_attention_outputs
+    outputs = self.model.model(**inputs, labels=labels) if labels is not None else self.model.model(**inputs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1882, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1830, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 843, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1541, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 862.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 415.88 MiB is free. Including non-PyTorch memory, this process has 94.56 GiB memory in use. Of the allocated memory 91.89 GiB is allocated by PyTorch, and 2.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

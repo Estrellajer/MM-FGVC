@@ -1,0 +1,86 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen2_vl_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:07,  3.89it/s]Loading weights:   0%|          | 2/730 [00:00<03:13,  3.75it/s]Loading weights:   1%|          | 6/730 [00:00<00:58, 12.31it/s]Loading weights:   2%|▏         | 17/730 [00:01<00:56, 12.58it/s]Loading weights:  15%|█▌        | 112/730 [00:01<00:05, 112.76it/s]Loading weights:  19%|█▉        | 142/730 [00:01<00:05, 105.63it/s]Loading weights:  23%|██▎       | 165/730 [00:02<00:05, 106.22it/s]Loading weights:  25%|██▌       | 184/730 [00:02<00:05, 106.68it/s]Loading weights:  28%|██▊       | 201/730 [00:02<00:05, 102.32it/s]Loading weights:  30%|██▉       | 216/730 [00:02<00:06, 83.64it/s] Loading weights:  33%|███▎      | 244/730 [00:02<00:04, 110.65it/s]Loading weights:  36%|███▌      | 260/730 [00:03<00:04, 103.97it/s]Loading weights:  38%|███▊      | 274/730 [00:03<00:06, 70.09it/s] Loading weights:  44%|████▎     | 318/730 [00:03<00:03, 119.90it/s]Loading weights:  46%|████▋     | 338/730 [00:03<00:03, 128.80it/s]Loading weights:  62%|██████▏   | 453/730 [00:03<00:00, 315.74it/s]Loading weights:  77%|███████▋  | 563/730 [00:03<00:00, 477.09it/s]Loading weights:  93%|█████████▎| 681/730 [00:04<00:00, 632.82it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 176.25it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.2
+  correct: 4.0
+  total: 20.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    matrix:
+    - - 0
+      - 0
+      - 5
+      - 0
+    - - 0
+      - 0
+      - 5
+      - 0
+    - - 1
+      - 0
+      - 4
+      - 0
+    - - 1
+      - 0
+      - 4
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.2222222222222222
+      recall: 0.8
+      f1: 0.3478260869565218
+      support: 5.0
+      predicted: 18.0
+      true_positive: 4.0
+      false_positive: 14.0
+      false_negative: 1.0
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+  macro_precision: 0.05555555555555555
+  macro_recall: 0.2
+  macro_f1: 0.08695652173913045
+  balanced_accuracy: 0.2
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen2_vl_20260326_152111.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen2_vl_20260326_152111.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_blink_semantic_correspondence_seed42_i2cl_qwen2_vl_20260326_152111.diagnostics.json
+

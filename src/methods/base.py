@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 from pathlib import Path
+import re
 from typing import Dict, List, Sequence
 
 from PIL import Image
+
+_INLINE_IMAGE_RE = re.compile(r"<image(?:_\d+)?>", re.IGNORECASE)
 
 
 class MethodBase:
@@ -34,6 +37,35 @@ class MethodBase:
                 raise FileNotFoundError(f"Image file not found: {path}")
             images.append(Image.open(path).convert("RGB"))
         return images
+
+    @staticmethod
+    def _sanitize_prompt_text_for_explicit_images(text: str) -> str:
+        cleaned_lines = [
+            line
+            for line in str(text).splitlines()
+            if not _INLINE_IMAGE_RE.fullmatch(line.strip())
+        ]
+        cleaned = "\n".join(cleaned_lines)
+        cleaned = _INLINE_IMAGE_RE.sub("", cleaned)
+        return cleaned.strip()
+
+    @staticmethod
+    def _is_vision_backbone_module_name(module_name: str) -> bool:
+        lowered = str(module_name).lower()
+        if lowered.startswith(("vision_model.", "vision_tower.", "vision_encoder.")):
+            return True
+        return any(
+            token in lowered
+            for token in (".vision_model.", ".vision_tower.", ".vision_encoder.")
+        )
+
+    def _filter_text_backbone_module_names(self, module_names: Sequence[str]) -> List[str]:
+        filtered = [
+            str(module_name)
+            for module_name in module_names
+            if not self._is_vision_backbone_module_name(str(module_name))
+        ]
+        return filtered if filtered else [str(module_name) for module_name in module_names]
 
     def predict(self, sample: Dict) -> str:
         raise NotImplementedError

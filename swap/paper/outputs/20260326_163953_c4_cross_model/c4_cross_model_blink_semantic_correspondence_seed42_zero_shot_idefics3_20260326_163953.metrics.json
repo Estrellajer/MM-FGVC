@@ -1,0 +1,308 @@
+{
+  "model": "idefics3",
+  "dataset": "blink_semantic_correspondence",
+  "method": "zero_shot",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 20.0,
+    "label_order": [
+      "(C)",
+      "(B)",
+      "(A)",
+      "(D)",
+      "D.",
+      "Answer: A",
+      "Answer: D",
+      "Answer: B",
+      "Answer:A",
+      "Answer: C",
+      "Answer:B"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "(C)",
+        "(B)",
+        "(A)",
+        "(D)",
+        "D.",
+        "Answer: A",
+        "Answer: D",
+        "Answer: B",
+        "Answer:A",
+        "Answer: C",
+        "Answer:B"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "(C)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(B)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(A)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "(D)": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 5.0
+      },
+      "D.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Answer: A": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 4.0,
+        "true_positive": 0.0,
+        "false_positive": 4.0,
+        "false_negative": 0.0
+      },
+      "Answer: D": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 4.0,
+        "true_positive": 0.0,
+        "false_positive": 4.0,
+        "false_negative": 0.0
+      },
+      "Answer: B": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 3.0,
+        "true_positive": 0.0,
+        "false_positive": 3.0,
+        "false_negative": 0.0
+      },
+      "Answer:A": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 4.0,
+        "true_positive": 0.0,
+        "false_positive": 4.0,
+        "false_negative": 0.0
+      },
+      "Answer: C": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      },
+      "Answer:B": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 2.0,
+        "true_positive": 0.0,
+        "false_positive": 2.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.194886863231659e-05,
+    "predict_time_sec": 15.479273568838835,
+    "total_time_sec": 15.479285517707467,
+    "num_eval_samples": 20,
+    "avg_predict_time_sec": 0.7739636784419417
+  }
+}

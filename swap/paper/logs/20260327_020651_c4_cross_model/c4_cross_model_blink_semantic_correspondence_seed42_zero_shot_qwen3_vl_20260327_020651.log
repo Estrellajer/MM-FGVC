@@ -1,0 +1,697 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:16,  3.81it/s]Loading weights:   0%|          | 2/750 [00:00<03:43,  3.35it/s]Loading weights:   1%|          | 4/750 [00:00<02:48,  4.42it/s]Loading weights:   7%|▋         | 50/750 [00:01<00:08, 78.54it/s]Loading weights:   9%|▉         | 67/750 [00:01<00:14, 45.93it/s]Loading weights:  18%|█▊        | 138/750 [00:01<00:05, 121.68it/s]Loading weights:  23%|██▎       | 170/750 [00:03<00:13, 42.67it/s] Loading weights:  49%|████▊     | 365/750 [00:04<00:02, 132.02it/s]Loading weights:  68%|██████▊   | 513/750 [00:04<00:01, 220.12it/s]Loading weights:  88%|████████▊ | 658/750 [00:04<00:00, 325.06it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 172.54it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 20.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  - The reference point 'REF' in the first image is located on the cat's
+  - The reference point 'REF' in the first image is located on the nose of
+  - The reference point 'REF' in the first image is located on the main label
+  - The reference point 'REF' in the first image is located on the front windshield
+  - The reference point 'REF' in the first image is located on the eye of
+  - The reference point 'REF' in the first image is located on the lower part
+  - The reference point 'REF' in the first image is located on the right handle
+  - The reference point 'REF' in the first image is located on the front of
+  - The reference point 'REF' in the first image is located at the tip of
+  - The reference point 'REF' in the first image is located on the ear of
+  - The reference point 'REF' in the first image is located on the side of
+  - The reference point 'REF' in the first image is located on the right-side
+  - The reference point 'REF' in the first image is located on the shoulder of
+  - The reference point 'REF' in the first image is located on the edge of
+  - The reference point 'REF' in the first image is located on the **left
+  - The reference point 'REF' in the first image is located at the very top
+  - The reference point 'REF' in the first image is located on the front wheel
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    - The reference point 'REF' in the first image is located on the cat's
+    - The reference point 'REF' in the first image is located on the nose of
+    - The reference point 'REF' in the first image is located on the main label
+    - The reference point 'REF' in the first image is located on the front windshield
+    - The reference point 'REF' in the first image is located on the eye of
+    - The reference point 'REF' in the first image is located on the lower part
+    - The reference point 'REF' in the first image is located on the right handle
+    - The reference point 'REF' in the first image is located on the front of
+    - The reference point 'REF' in the first image is located at the tip of
+    - The reference point 'REF' in the first image is located on the ear of
+    - The reference point 'REF' in the first image is located on the side of
+    - The reference point 'REF' in the first image is located on the right-side
+    - The reference point 'REF' in the first image is located on the shoulder of
+    - The reference point 'REF' in the first image is located on the edge of
+    - The reference point 'REF' in the first image is located on the **left
+    - The reference point 'REF' in the first image is located at the very top
+    - The reference point 'REF' in the first image is located on the front wheel
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    (C):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (B):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (A):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    (D):
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    The reference point 'REF' in the first image is located on the cat's:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the nose of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the main label:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the front windshield:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the eye of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the lower part:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the right handle:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the front of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located at the tip of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the ear of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the side of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the right-side:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the shoulder of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the edge of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the **left:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located at the very top:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The reference point 'REF' in the first image is located on the front wheel:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_blink_semantic_correspondence_seed42_zero_shot_qwen3_vl_20260327_020651.diagnostics.json
+

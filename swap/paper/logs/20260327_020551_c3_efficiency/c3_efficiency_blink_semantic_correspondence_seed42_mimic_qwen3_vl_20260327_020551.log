@@ -1,0 +1,85 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=mimic evaluator=raw dataset.name=blink_semantic_correspondence dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/blink_semantic_correspondence/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/blink_semantic_correspondence/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:20,  3.73it/s]Loading weights:   0%|          | 2/750 [00:00<03:46,  3.30it/s]Loading weights:   1%|          | 8/750 [00:00<00:48, 15.34it/s]Loading weights:   3%|▎         | 23/750 [00:00<00:15, 46.32it/s]Loading weights:   5%|▍         | 34/750 [00:01<00:17, 41.47it/s]Loading weights:   8%|▊         | 61/750 [00:01<00:09, 73.69it/s]Loading weights:  11%|█         | 81/750 [00:01<00:12, 53.52it/s]Loading weights:  20%|█▉        | 147/750 [00:01<00:04, 127.26it/s]Loading weights:  23%|██▎       | 169/750 [00:02<00:04, 124.22it/s]Loading weights:  25%|██▌       | 188/750 [00:02<00:05, 112.39it/s]Loading weights:  27%|██▋       | 204/750 [00:02<00:04, 119.89it/s]Loading weights:  29%|██▉       | 220/750 [00:02<00:04, 123.48it/s]Loading weights:  31%|███▏      | 235/750 [00:02<00:06, 81.93it/s] Loading weights:  36%|███▌      | 268/750 [00:04<00:10, 46.00it/s]Loading weights:  68%|██████▊   | 511/750 [00:04<00:01, 233.26it/s]Loading weights:  87%|████████▋ | 656/750 [00:04<00:00, 355.72it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 169.02it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.45
+  correct: 9.0
+  total: 20.0
+  label_order:
+  - (C)
+  - (B)
+  - (A)
+  - (D)
+  confusion_matrix:
+    labels:
+    - (C)
+    - (B)
+    - (A)
+    - (D)
+    matrix:
+    - - 3
+      - 0
+      - 2
+      - 0
+    - - 2
+      - 2
+      - 1
+      - 0
+    - - 4
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 2
+      - 3
+  per_class:
+    (C):
+      precision: 0.3333333333333333
+      recall: 0.6
+      f1: 0.42857142857142855
+      support: 5.0
+      predicted: 9.0
+      true_positive: 3.0
+      false_positive: 6.0
+      false_negative: 2.0
+    (B):
+      precision: 1.0
+      recall: 0.4
+      f1: 0.5714285714285715
+      support: 5.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 3.0
+    (A):
+      precision: 0.16666666666666666
+      recall: 0.2
+      f1: 0.1818181818181818
+      support: 5.0
+      predicted: 6.0
+      true_positive: 1.0
+      false_positive: 5.0
+      false_negative: 4.0
+    (D):
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 5.0
+      predicted: 3.0
+      true_positive: 3.0
+      false_positive: 0.0
+      false_negative: 2.0
+  macro_precision: 0.625
+  macro_recall: 0.45
+  macro_f1: 0.4829545454545454
+  balanced_accuracy: 0.45
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_blink_semantic_correspondence_seed42_mimic_qwen3_vl_20260327_020551.diagnostics.json
+

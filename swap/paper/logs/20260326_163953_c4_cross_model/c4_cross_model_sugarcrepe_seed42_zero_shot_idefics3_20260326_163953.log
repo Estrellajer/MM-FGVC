@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model run.run_name=c4_cross_model_sugarcrepe_seed42_zero_shot_idefics3_20260326_163953 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:29,  8.15it/s]Loading weights:   0%|          | 3/729 [00:00<01:13,  9.90it/s]Loading weights:   1%|          | 9/729 [00:00<00:26, 27.00it/s]Loading weights:   3%|▎         | 23/729 [00:00<00:11, 63.31it/s]Loading weights:   4%|▍         | 31/729 [00:00<00:11, 59.14it/s]Loading weights:   7%|▋         | 51/729 [00:00<00:07, 94.25it/s]Loading weights:   9%|▊         | 62/729 [00:00<00:08, 82.52it/s]Loading weights:  12%|█▏        | 86/729 [00:01<00:05, 118.07it/s]Loading weights:  14%|█▎        | 99/729 [00:01<00:06, 97.86it/s] Loading weights:  17%|█▋        | 122/729 [00:01<00:04, 123.14it/s]Loading weights:  19%|█▊        | 136/729 [00:02<00:12, 47.87it/s] Loading weights:  31%|███       | 225/729 [00:02<00:03, 136.26it/s]Loading weights:  34%|███▍      | 251/729 [00:02<00:03, 140.43it/s]Loading weights:  38%|███▊      | 274/729 [00:02<00:03, 135.29it/s]Loading weights:  40%|████      | 294/729 [00:02<00:03, 122.57it/s]Loading weights:  77%|███████▋  | 559/729 [00:02<00:00, 524.86it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 237.92it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.55
+  pair_correct: 11.0
+  pair_total: 20.0
+  raw_accuracy: 0.775
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 7
+      - 13
+  per_class:
+    'Yes':
+      precision: 0.72
+      recall: 0.9
+      f1: 0.7999999999999999
+      support: 20.0
+      predicted: 25.0
+      true_positive: 18.0
+      false_positive: 7.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8666666666666667
+      recall: 0.65
+      f1: 0.7428571428571429
+      support: 20.0
+      predicted: 15.0
+      true_positive: 13.0
+      false_positive: 2.0
+      false_negative: 7.0
+  macro_precision: 0.7933333333333333
+  macro_recall: 0.775
+  macro_f1: 0.7714285714285714
+  balanced_accuracy: 0.775
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_sugarcrepe_seed42_zero_shot_idefics3_20260326_163953.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_sugarcrepe_seed42_zero_shot_idefics3_20260326_163953.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_sugarcrepe_seed42_zero_shot_idefics3_20260326_163953.diagnostics.json
+

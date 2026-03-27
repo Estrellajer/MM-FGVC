@@ -1,0 +1,84 @@
+{
+  "model": "idefics3",
+  "dataset": "vlguard",
+  "method": "mimic",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.45,
+    "correct": 18.0,
+    "total": 40.0,
+    "label_order": [
+      "unharmful",
+      "harmful",
+      "US"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "unharmful",
+        "harmful",
+        "US"
+      ],
+      "matrix": [
+        [
+          3,
+          16,
+          1
+        ],
+        [
+          5,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "unharmful": {
+        "precision": 0.375,
+        "recall": 0.15,
+        "f1": 0.21428571428571425,
+        "support": 20.0,
+        "predicted": 8.0,
+        "true_positive": 3.0,
+        "false_positive": 5.0,
+        "false_negative": 17.0
+      },
+      "harmful": {
+        "precision": 0.4838709677419355,
+        "recall": 0.75,
+        "f1": 0.5882352941176471,
+        "support": 20.0,
+        "predicted": 31.0,
+        "true_positive": 15.0,
+        "false_positive": 16.0,
+        "false_negative": 5.0
+      },
+      "US": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.2862903225806452,
+    "macro_recall": 0.3,
+    "macro_f1": 0.26750700280112044,
+    "balanced_accuracy": 0.3
+  },
+  "timings": {
+    "fit_time_sec": 100.51139678806067,
+    "predict_time_sec": 22.659691037610173,
+    "total_time_sec": 123.17108782567084,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.5664922759402543
+  }
+}

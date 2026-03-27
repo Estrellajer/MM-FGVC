@@ -1,0 +1,50 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=sav evaluator=raw dataset.name=vizwiz dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vizwiz/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vizwiz/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_vizwiz_seed42_sav_qwen3_vl_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:18,  3.77it/s]Loading weights:   0%|          | 2/750 [00:00<03:45,  3.31it/s]Loading weights:   2%|▏         | 12/750 [00:00<00:30, 23.90it/s]Loading weights:   2%|▏         | 17/750 [00:00<00:27, 26.41it/s]Loading weights:   5%|▌         | 38/750 [00:00<00:10, 67.06it/s]Loading weights:   6%|▋         | 48/750 [00:01<00:10, 69.41it/s]Loading weights:   8%|▊         | 57/750 [00:01<00:19, 35.39it/s]Loading weights:  16%|█▌        | 119/750 [00:04<00:22, 27.94it/s]Loading weights:  67%|██████▋   | 503/750 [00:04<00:01, 201.82it/s]Loading weights:  87%|████████▋ | 655/750 [00:04<00:00, 282.35it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 171.56it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.575
+  correct: 23.0
+  total: 40.0
+  label_order:
+  - unanswerable
+  - answerable
+  confusion_matrix:
+    labels:
+    - unanswerable
+    - answerable
+    matrix:
+    - - 13
+      - 7
+    - - 10
+      - 10
+  per_class:
+    unanswerable:
+      precision: 0.5652173913043478
+      recall: 0.65
+      f1: 0.6046511627906976
+      support: 20.0
+      predicted: 23.0
+      true_positive: 13.0
+      false_positive: 10.0
+      false_negative: 7.0
+    answerable:
+      precision: 0.5882352941176471
+      recall: 0.5
+      f1: 0.5405405405405405
+      support: 20.0
+      predicted: 17.0
+      true_positive: 10.0
+      false_positive: 7.0
+      false_negative: 10.0
+  macro_precision: 0.5767263427109974
+  macro_recall: 0.575
+  macro_f1: 0.5725958516656191
+  balanced_accuracy: 0.575
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vizwiz_seed42_sav_qwen3_vl_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vizwiz_seed42_sav_qwen3_vl_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vizwiz_seed42_sav_qwen3_vl_20260327_020651.diagnostics.json
+

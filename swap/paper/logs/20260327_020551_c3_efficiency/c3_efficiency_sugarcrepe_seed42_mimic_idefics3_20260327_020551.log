@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=mimic evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_sugarcrepe_seed42_mimic_idefics3_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:33,  7.81it/s]Loading weights:   0%|          | 3/729 [00:01<04:32,  2.67it/s]Loading weights:   1%|          | 5/729 [00:01<03:38,  3.31it/s]Loading weights:  13%|█▎        | 95/729 [00:01<00:06, 93.57it/s]Loading weights:  24%|██▍       | 177/729 [00:01<00:02, 184.21it/s]Loading weights:  30%|███       | 220/729 [00:02<00:05, 96.09it/s] Loading weights:  77%|███████▋  | 559/729 [00:02<00:00, 379.27it/s]Loading weights: 100%|██████████| 729/729 [00:02<00:00, 250.56it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.6
+  pair_correct: 12.0
+  pair_total: 20.0
+  raw_accuracy: 0.8
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 6
+      - 14
+  per_class:
+    'Yes':
+      precision: 0.75
+      recall: 0.9
+      f1: 0.8181818181818182
+      support: 20.0
+      predicted: 24.0
+      true_positive: 18.0
+      false_positive: 6.0
+      false_negative: 2.0
+    'No':
+      precision: 0.875
+      recall: 0.7
+      f1: 0.7777777777777777
+      support: 20.0
+      predicted: 16.0
+      true_positive: 14.0
+      false_positive: 2.0
+      false_negative: 6.0
+  macro_precision: 0.8125
+  macro_recall: 0.8
+  macro_f1: 0.797979797979798
+  balanced_accuracy: 0.8
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_sugarcrepe_seed42_mimic_idefics3_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_sugarcrepe_seed42_mimic_idefics3_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_sugarcrepe_seed42_mimic_idefics3_20260327_020551.diagnostics.json
+

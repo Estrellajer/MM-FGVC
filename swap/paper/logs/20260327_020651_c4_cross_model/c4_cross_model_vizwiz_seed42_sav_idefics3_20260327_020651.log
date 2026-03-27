@@ -1,0 +1,50 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=sav evaluator=raw dataset.name=vizwiz dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vizwiz/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vizwiz/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_vizwiz_seed42_sav_idefics3_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:32,  7.86it/s]Loading weights:   0%|          | 2/729 [00:02<14:35,  1.20s/it]Loading weights:  30%|███       | 222/729 [00:02<00:03, 138.86it/s]Loading weights:  39%|███▉      | 286/729 [00:02<00:03, 136.96it/s]Loading weights:  81%|████████  | 589/729 [00:02<00:00, 373.96it/s]Loading weights: 100%|██████████| 729/729 [00:02<00:00, 253.16it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.65
+  correct: 26.0
+  total: 40.0
+  label_order:
+  - unanswerable
+  - answerable
+  confusion_matrix:
+    labels:
+    - unanswerable
+    - answerable
+    matrix:
+    - - 17
+      - 3
+    - - 11
+      - 9
+  per_class:
+    unanswerable:
+      precision: 0.6071428571428571
+      recall: 0.85
+      f1: 0.7083333333333333
+      support: 20.0
+      predicted: 28.0
+      true_positive: 17.0
+      false_positive: 11.0
+      false_negative: 3.0
+    answerable:
+      precision: 0.75
+      recall: 0.45
+      f1: 0.5625000000000001
+      support: 20.0
+      predicted: 12.0
+      true_positive: 9.0
+      false_positive: 3.0
+      false_negative: 11.0
+  macro_precision: 0.6785714285714286
+  macro_recall: 0.65
+  macro_f1: 0.6354166666666667
+  balanced_accuracy: 0.65
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vizwiz_seed42_sav_idefics3_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vizwiz_seed42_sav_idefics3_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vizwiz_seed42_sav_idefics3_20260327_020651.diagnostics.json
+

@@ -1,0 +1,50 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_163953_c4_cross_model/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model run.run_name=c4_cross_model_vlguard_seed42_rsev2_qwen3_vl_20260326_163953 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:21,  3.71it/s]Loading weights:   0%|          | 2/750 [00:00<03:46,  3.30it/s]Loading weights:   1%|          | 8/750 [00:00<00:48, 15.37it/s]Loading weights:   3%|▎         | 23/750 [00:00<00:15, 46.12it/s]Loading weights:   5%|▍         | 34/750 [00:00<00:11, 61.45it/s]Loading weights:   6%|▌         | 45/750 [00:01<00:09, 72.79it/s]Loading weights:   7%|▋         | 56/750 [00:01<00:08, 81.81it/s]Loading weights:   9%|▉         | 66/750 [00:01<00:20, 34.13it/s]Loading weights:  18%|█▊        | 137/750 [00:01<00:04, 123.94it/s]Loading weights:  22%|██▏       | 164/750 [00:02<00:04, 124.34it/s]Loading weights:  25%|██▍       | 187/750 [00:02<00:07, 72.16it/s] Loading weights:  34%|███▎      | 252/750 [00:02<00:03, 125.10it/s]Loading weights:  37%|███▋      | 276/750 [00:03<00:03, 130.80it/s]Loading weights:  40%|███▉      | 298/750 [00:03<00:03, 125.52it/s]Loading weights:  42%|████▏     | 317/750 [00:03<00:03, 120.44it/s]Loading weights:  44%|████▍     | 333/750 [00:03<00:03, 120.49it/s]Loading weights:  46%|████▋     | 348/750 [00:03<00:03, 114.58it/s]Loading weights:  48%|████▊     | 362/750 [00:03<00:03, 115.25it/s]Loading weights:  50%|█████     | 375/750 [00:04<00:03, 97.97it/s] Loading weights:  52%|█████▏    | 391/750 [00:04<00:03, 109.20it/s]Loading weights:  68%|██████▊   | 507/750 [00:04<00:00, 336.40it/s]Loading weights:  86%|████████▋ | 647/750 [00:04<00:00, 587.09it/s]Loading weights:  98%|█████████▊| 737/750 [00:04<00:00, 650.58it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 164.80it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 40.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 20
+      - 0
+    - - 0
+      - 20
+  per_class:
+    unharmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+    harmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_vlguard_seed42_rsev2_qwen3_vl_20260326_163953.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_vlguard_seed42_rsev2_qwen3_vl_20260326_163953.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_163953_c4_cross_model/c4_cross_model_vlguard_seed42_rsev2_qwen3_vl_20260326_163953.diagnostics.json
+

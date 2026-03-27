@@ -1,0 +1,53 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_sugarcrepe_seed42_i2cl_qwen2_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:06,  3.91it/s]Loading weights:   0%|          | 2/730 [00:00<03:15,  3.72it/s]Loading weights:   1%|          | 4/730 [00:00<01:55,  6.28it/s]Loading weights:   3%|▎         | 21/730 [00:00<00:17, 40.26it/s]Loading weights:   4%|▍         | 31/730 [00:01<00:27, 25.17it/s]Loading weights:   5%|▍         | 36/730 [00:01<00:26, 26.46it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:04, 134.89it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:04, 124.78it/s]Loading weights:  22%|██▏       | 158/730 [00:02<00:04, 129.39it/s]Loading weights:  24%|██▍       | 176/730 [00:02<00:04, 112.37it/s]Loading weights:  26%|██▌       | 191/730 [00:02<00:05, 96.48it/s] Loading weights:  28%|██▊       | 206/730 [00:03<00:08, 59.78it/s]Loading weights:  37%|███▋      | 269/730 [00:03<00:03, 122.22it/s]Loading weights:  40%|███▉      | 290/730 [00:03<00:03, 128.65it/s]Loading weights:  42%|████▏     | 309/730 [00:03<00:03, 109.92it/s]Loading weights:  47%|████▋     | 344/730 [00:03<00:02, 146.42it/s]Loading weights:  62%|██████▏   | 453/730 [00:03<00:00, 316.07it/s]Loading weights:  77%|███████▋  | 563/730 [00:03<00:00, 475.44it/s]Loading weights:  92%|█████████▏| 671/730 [00:04<00:00, 611.24it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 177.74it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.3
+  pair_correct: 6.0
+  pair_total: 20.0
+  raw_accuracy: 0.65
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 20
+      - 0
+    - - 14
+      - 6
+  per_class:
+    'Yes':
+      precision: 0.5882352941176471
+      recall: 1.0
+      f1: 0.7407407407407407
+      support: 20.0
+      predicted: 34.0
+      true_positive: 20.0
+      false_positive: 14.0
+      false_negative: 0.0
+    'No':
+      precision: 1.0
+      recall: 0.3
+      f1: 0.4615384615384615
+      support: 20.0
+      predicted: 6.0
+      true_positive: 6.0
+      false_positive: 0.0
+      false_negative: 14.0
+  macro_precision: 0.7941176470588236
+  macro_recall: 0.65
+  macro_f1: 0.6011396011396011
+  balanced_accuracy: 0.65
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_sugarcrepe_seed42_i2cl_qwen2_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_sugarcrepe_seed42_i2cl_qwen2_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_sugarcrepe_seed42_i2cl_qwen2_vl_20260327_020551.diagnostics.json
+

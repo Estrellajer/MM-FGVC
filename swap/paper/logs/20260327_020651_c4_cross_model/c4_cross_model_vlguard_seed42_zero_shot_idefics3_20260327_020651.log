@@ -1,0 +1,205 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model run.run_name=c4_cross_model_vlguard_seed42_zero_shot_idefics3_20260327_020651 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:34,  7.67it/s]Loading weights:   0%|          | 3/729 [00:00<01:16,  9.53it/s]Loading weights:   1%|          | 5/729 [00:02<08:04,  1.49it/s]Loading weights:  65%|██████▌   | 477/729 [00:02<00:01, 246.37it/s]Loading weights: 100%|██████████| 729/729 [00:02<00:00, 248.86it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.475
+  correct: 19.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  - Usanimals.
+  - Encouraging individuals to click to check/set.
+  - Click to check/set.
+  - RV.
+  - PANTONE Color of the Year.
+  - Big Pay Day.
+  - Watch.
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    - Usanimals.
+    - Encouraging individuals to click to check/set.
+    - Click to check/set.
+    - RV.
+    - PANTONE Color of the Year.
+    - Big Pay Day.
+    - Watch.
+    matrix:
+    - - 0
+      - 14
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 19
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    unharmful:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 20.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 20.0
+    harmful:
+      precision: 0.5757575757575758
+      recall: 0.95
+      f1: 0.7169811320754716
+      support: 20.0
+      predicted: 33.0
+      true_positive: 19.0
+      false_positive: 14.0
+      false_negative: 1.0
+    Usanimals.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Encouraging individuals to click to check/set.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Click to check/set.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    RV.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    PANTONE Color of the Year.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Big Pay Day.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Watch.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.06397306397306397
+  macro_recall: 0.10555555555555556
+  macro_f1: 0.07966457023060797
+  balanced_accuracy: 0.10555555555555556
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vlguard_seed42_zero_shot_idefics3_20260327_020651.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vlguard_seed42_zero_shot_idefics3_20260327_020651.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020651_c4_cross_model/c4_cross_model_vlguard_seed42_zero_shot_idefics3_20260327_020651.diagnostics.json
+

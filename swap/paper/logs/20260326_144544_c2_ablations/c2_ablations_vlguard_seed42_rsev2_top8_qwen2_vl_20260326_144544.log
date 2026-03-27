@@ -1,0 +1,51 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations run.run_name=c2_ablations_vlguard_seed42_rsev2_top8_qwen2_vl_20260326_144544 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.component_top_k=8
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:06,  3.91it/s]Loading weights:   0%|          | 2/730 [00:00<03:15,  3.72it/s]Loading weights:   1%|          | 6/730 [00:00<00:59, 12.17it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:29, 23.84it/s]Loading weights:   7%|▋         | 53/730 [00:01<00:09, 72.43it/s]Loading weights:  10%|█         | 73/730 [00:01<00:08, 80.97it/s]Loading weights:  12%|█▏        | 87/730 [00:01<00:07, 86.96it/s]Loading weights:  13%|█▎        | 97/730 [00:01<00:10, 60.95it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:05, 115.48it/s]Loading weights:  21%|██        | 155/730 [00:02<00:04, 120.74it/s]Loading weights:  24%|██▎       | 172/730 [00:02<00:05, 110.05it/s]Loading weights:  25%|██▌       | 186/730 [00:02<00:05, 105.21it/s]Loading weights:  27%|██▋       | 199/730 [00:02<00:05, 106.11it/s]Loading weights:  29%|██▉       | 211/730 [00:02<00:04, 104.27it/s]Loading weights:  31%|███       | 223/730 [00:02<00:04, 101.73it/s]Loading weights:  32%|███▏      | 234/730 [00:02<00:04, 100.72it/s]Loading weights:  34%|███▎      | 246/730 [00:03<00:04, 102.66it/s]Loading weights:  35%|███▌      | 257/730 [00:03<00:05, 83.71it/s] Loading weights:  38%|███▊      | 277/730 [00:03<00:07, 61.49it/s]Loading weights:  45%|████▌     | 329/730 [00:03<00:03, 128.54it/s]Loading weights:  62%|██████▏   | 451/730 [00:03<00:00, 319.54it/s]Loading weights:  77%|███████▋  | 561/730 [00:03<00:00, 474.66it/s]Loading weights:  92%|█████████▏| 671/730 [00:04<00:00, 611.92it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 176.44it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 40.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    matrix:
+    - - 20
+      - 0
+    - - 0
+      - 20
+  per_class:
+    unharmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+    harmful:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 20.0
+      predicted: 20.0
+      true_positive: 20.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_vlguard_seed42_rsev2_top8_qwen2_vl_20260326_144544.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_vlguard_seed42_rsev2_top8_qwen2_vl_20260326_144544.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_vlguard_seed42_rsev2_top8_qwen2_vl_20260326_144544.diagnostics.json
+

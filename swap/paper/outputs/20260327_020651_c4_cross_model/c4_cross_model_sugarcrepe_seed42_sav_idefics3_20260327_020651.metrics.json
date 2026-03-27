@@ -1,0 +1,66 @@
+{
+  "model": "idefics3",
+  "dataset": "sugarcrepe",
+  "method": "sav",
+  "evaluator": "pair",
+  "metrics": {
+    "metric": "pair_accuracy",
+    "pair_accuracy": 0.2,
+    "pair_correct": 4.0,
+    "pair_total": 20.0,
+    "raw_accuracy": 0.6,
+    "label_order": [
+      "Yes",
+      "No"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Yes",
+        "No"
+      ],
+      "matrix": [
+        [
+          12,
+          8
+        ],
+        [
+          8,
+          12
+        ]
+      ]
+    },
+    "per_class": {
+      "Yes": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "support": 20.0,
+        "predicted": 20.0,
+        "true_positive": 12.0,
+        "false_positive": 8.0,
+        "false_negative": 8.0
+      },
+      "No": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "support": 20.0,
+        "predicted": 20.0,
+        "true_positive": 12.0,
+        "false_positive": 8.0,
+        "false_negative": 8.0
+      }
+    },
+    "macro_precision": 0.6,
+    "macro_recall": 0.6,
+    "macro_f1": 0.6,
+    "balanced_accuracy": 0.6
+  },
+  "timings": {
+    "fit_time_sec": 23.56376156769693,
+    "predict_time_sec": 12.00439221598208,
+    "total_time_sec": 35.56815378367901,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.300109805399552
+  }
+}

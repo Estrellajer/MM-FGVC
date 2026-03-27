@@ -26,10 +26,17 @@ class _LayerMeta:
 
 
 class _MimICShiftAdapter(nn.Module):
-    def __init__(self, model_wrapper, attn_module_names: Sequence[str], shift_init_std: float = 1e-3):
+    def __init__(
+        self,
+        model_wrapper,
+        attn_module_names: Sequence[str],
+        shift_init_std: float = 1e-3,
+        score_chunk_size: int = 16,
+    ):
         super().__init__()
         self.model_wrapper = model_wrapper
         self.active = False
+        self.score_chunk_size = max(1, int(score_chunk_size))
 
         named_modules = dict(self.model_wrapper.model.named_modules())
         self.layer_metas: List[_LayerMeta] = []
@@ -209,8 +216,45 @@ class _MimICShiftAdapter(nn.Module):
             torch.float32
         )
 
-        scores = torch.einsum("btnd,bsnd->btns", q_states, k_states) / max(meta.head_dim**0.5, 1.0)
-        log_z2 = torch.logsumexp(scores, dim=-1)
+        scale = max(meta.head_dim**0.5, 1.0)
+        source_len = int(k_states.shape[1])
+        chunk_size = max(1, min(self.score_chunk_size, source_len))
+        while True:
+            try:
+                log_z2 = None
+                for start in range(0, source_len, chunk_size):
+                    stop = min(start + chunk_size, source_len)
+                    score_chunk = torch.einsum("btnd,bsnd->btns", q_states, k_states[:, start:stop, :, :]) / scale
+                    chunk_log_z2 = torch.logsumexp(score_chunk, dim=-1)
+                    log_z2 = chunk_log_z2 if log_z2 is None else torch.logaddexp(log_z2, chunk_log_z2)
+                break
+            except torch.OutOfMemoryError:
+                if chunk_size == 1:
+                    if torch.cuda.is_available():
+                        torch.cuda.empty_cache()
+                    q_cpu = q_states.detach().to(device="cpu")
+                    k_cpu = k_states.detach().to(device="cpu")
+                    log_z2 = None
+                    cpu_chunk_size = max(1, min(self.score_chunk_size, source_len))
+                    for start in range(0, source_len, cpu_chunk_size):
+                        stop = min(start + cpu_chunk_size, source_len)
+                        score_chunk = torch.einsum("btnd,bsnd->btns", q_cpu, k_cpu[:, start:stop, :, :]) / scale
+                        chunk_log_z2 = torch.logsumexp(score_chunk, dim=-1)
+                        log_z2 = chunk_log_z2 if log_z2 is None else torch.logaddexp(log_z2, chunk_log_z2)
+                    log_z2 = log_z2.to(device=q_states.device, dtype=q_states.dtype)
+                    break
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                chunk_size = max(1, chunk_size // 2)
+
+        if log_z2 is None:
+            log_z2 = torch.zeros(
+                q_states.shape[0],
+                q_states.shape[1],
+                q_states.shape[2],
+                device=q_states.device,
+                dtype=q_states.dtype,
+            )
 
         gate_weight = self.gate_weight[layer_idx]
         gate_bias = self.gate_bias[layer_idx]
@@ -243,6 +287,9 @@ class MimICMethod(MethodBase):
         support_strategy: str = "balanced",
         support_seed: int = 42,
         shift_init_std: float = 1e-3,
+        score_chunk_size: int = 16,
+        alignment_window_tokens: int = 64,
+        max_adapt_layers: int = 4,
         gradient_clip_norm: float = 1.0,
         max_new_tokens: int = 16,
         do_sample: bool = False,
@@ -260,6 +307,9 @@ class MimICMethod(MethodBase):
         self.align_loss_weight = float(align_loss_weight)
         self.support_strategy = str(support_strategy).strip().lower()
         self.support_seed = int(support_seed)
+        self.score_chunk_size = int(score_chunk_size)
+        self.alignment_window_tokens = int(alignment_window_tokens)
+        self.max_adapt_layers = int(max_adapt_layers)
         self.gradient_clip_norm = float(gradient_clip_norm)
         self.max_new_tokens = int(max_new_tokens)
         self.do_sample = bool(do_sample)
@@ -275,10 +325,15 @@ class MimICMethod(MethodBase):
 
         self.model_family = self._infer_model_family()
         self.attn_module_names = self._infer_attention_module_names()
+        for param in self.model.model.parameters():
+            param.requires_grad_(False)
+        if hasattr(self.model.model, "config") and hasattr(self.model.model.config, "use_cache"):
+            self.model.model.config.use_cache = False
         self.adapter = _MimICShiftAdapter(
             model_wrapper=self.model,
             attn_module_names=self.attn_module_names,
             shift_init_std=float(shift_init_std),
+            score_chunk_size=self.score_chunk_size,
         )
 
         self._label_to_indices: Dict[str, List[int]] = {}
@@ -309,6 +364,7 @@ class MimICMethod(MethodBase):
                 continue
             if all(hasattr(module, attr) for attr in ["q_proj", "k_proj", "o_proj"]):
                 names.append(name)
+        names = self._filter_text_backbone_module_names(names)
 
         if not names:
             raise RuntimeError("Could not find decoder self-attention modules for MimIC extraction")
@@ -317,7 +373,10 @@ class MimICMethod(MethodBase):
             nums = [int(v) for v in re.findall(r"\d+", module_name)]
             return tuple(nums) if nums else (10**9,)
 
-        return sorted(names, key=sort_key)
+        names = sorted(names, key=sort_key)
+        if self.max_adapt_layers > 0 and len(names) > self.max_adapt_layers:
+            names = names[-self.max_adapt_layers :]
+        return names
 
     def _iter_with_progress(self, data, desc: str):
         if self.progress_bar:
@@ -359,6 +418,8 @@ class MimICMethod(MethodBase):
         sample: Dict,
     ) -> tuple[Dict, List[Image.Image]]:
         prompt = build_prompt(self.dataset_name, sample)
+        if self.model_family == "idefics3":
+            prompt = self._sanitize_prompt_text_for_explicit_images(prompt) or "Describe this image."
         images = self._load_images(sample)
         if self.model_family in {"qwen2", "qwen3"}:
             content = [{"type": "image", "image": image} for image in images]
@@ -430,13 +491,15 @@ class MimICMethod(MethodBase):
         labels[:, prompt_len:] = input_ids[:, prompt_len:]
         return labels
 
-    def _record_attention_outputs(self, inputs, *, labels=None, shift_active: bool, no_grad: bool):
+    def _record_attention_outputs(self, inputs, *, labels=None, shift_active: bool, no_grad: bool, capture_tail_tokens: int):
         recorded: Dict[str, torch.Tensor] = {}
 
         def hook_fn(module, args, output, module_name=None):
             hidden_states = output[0] if isinstance(output, tuple) else output
             if torch.is_tensor(hidden_states):
-                recorded[module_name] = hidden_states.detach() if no_grad else hidden_states
+                if capture_tail_tokens > 0 and hidden_states.ndim >= 3:
+                    hidden_states = hidden_states[:, -capture_tail_tokens:, :]
+                recorded[module_name] = hidden_states.detach().to(device="cpu") if no_grad else hidden_states
 
         handles = self.model.register_forward_hook(self.attn_module_names, hook_fn)
         handle_list = handles if isinstance(handles, list) else [handles]
@@ -445,7 +508,11 @@ class MimICMethod(MethodBase):
         try:
             context = torch.no_grad() if no_grad else torch.enable_grad()
             with context:
-                outputs = self.model.model(**inputs, labels=labels) if labels is not None else self.model.model(**inputs)
+                outputs = (
+                    self.model.model(**inputs, labels=labels, use_cache=False)
+                    if labels is not None
+                    else self.model.model(**inputs, use_cache=False)
+                )
         finally:
             self.adapter.disable()
             for handle in handle_list:
@@ -571,16 +638,22 @@ class MimICMethod(MethodBase):
 
                 optimizer.zero_grad(set_to_none=True)
 
-                _, full_attn_outputs = self._record_attention_outputs(
-                    full_inputs,
-                    shift_active=False,
-                    no_grad=True,
-                )
+                capture_tail_tokens = self.alignment_window_tokens if self.align_loss_weight > 0.0 else 0
+                if self.align_loss_weight > 0.0:
+                    _, full_attn_outputs = self._record_attention_outputs(
+                        full_inputs,
+                        shift_active=False,
+                        no_grad=True,
+                        capture_tail_tokens=capture_tail_tokens,
+                    )
+                else:
+                    full_attn_outputs = []
                 query_outputs, shifted_attn_outputs = self._record_attention_outputs(
                     query_inputs,
                     labels=labels,
                     shift_active=True,
                     no_grad=False,
+                    capture_tail_tokens=capture_tail_tokens,
                 )
 
                 loss_terms: List[torch.Tensor] = []

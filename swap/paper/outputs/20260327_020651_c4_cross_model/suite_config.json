@@ -1,0 +1,29 @@
+{
+  "suite_name": "c4_cross_model",
+  "timestamp": "20260327_020651",
+  "task_ids": [
+    "cub_fgvc",
+    "eurosat_fgvc",
+    "pets_fgvc",
+    "naturalbench_vqa",
+    "sugarcrepe",
+    "vizwiz",
+    "vlguard",
+    "blink_semantic_correspondence"
+  ],
+  "method_ids": [
+    "zero_shot",
+    "sav",
+    "rsev2"
+  ],
+  "models": [
+    "qwen2_vl",
+    "qwen3_vl",
+    "idefics3"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false,
+  "gpu_workers": null
+}

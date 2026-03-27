@@ -1,0 +1,466 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=mimic evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_eurosat_fgvc_seed42_mimic_qwen3_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:17,  3.80it/s]Loading weights:   0%|          | 2/750 [00:00<03:44,  3.34it/s]Loading weights:   1%|          | 6/750 [00:01<03:34,  3.47it/s]Loading weights:  18%|█▊        | 133/750 [00:01<00:06, 99.74it/s]Loading weights:  20%|██        | 153/750 [00:02<00:06, 85.95it/s]Loading weights:  28%|██▊       | 207/750 [00:02<00:05, 92.87it/s]Loading weights:  36%|███▋      | 273/750 [00:03<00:03, 128.50it/s]Loading weights:  40%|███▉      | 299/750 [00:03<00:03, 118.65it/s]Loading weights:  44%|████▍     | 332/750 [00:03<00:03, 134.33it/s]Loading weights:  47%|████▋     | 350/750 [00:03<00:02, 136.20it/s]Loading weights:  49%|████▉     | 367/750 [00:04<00:03, 97.25it/s] Loading weights:  74%|███████▍  | 554/750 [00:04<00:00, 328.26it/s]Loading weights:  92%|█████████▏| 689/750 [00:04<00:00, 488.49it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 170.73it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.68
+  correct: 68.0
+  total: 100.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  - The image appears to show a large, smooth, light-colored area (possibly water
+  - The given image appears to show a patterned, possibly man-made structure with
+    distinct
+  - The image shows a pattern of green and brown stripes, which is characteristic
+    of **
+  - The image appears to be a low-resolution, possibly satellite or aerial, view showing
+  - The image shows a pattern of rectangular or irregularly shaped plots, typical
+    of agricultural
+  - The image appears to show a textured, irregular pattern with earthy tones and
+    fragmented
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    - The image appears to show a large, smooth, light-colored area (possibly water
+    - The given image appears to show a patterned, possibly man-made structure with
+      distinct
+    - The image shows a pattern of green and brown stripes, which is characteristic
+      of **
+    - The image appears to be a low-resolution, possibly satellite or aerial, view
+      showing
+    - The image shows a pattern of rectangular or irregularly shaped plots, typical
+      of agricultural
+    - The image appears to show a textured, irregular pattern with earthy tones and
+      fragmented
+    matrix:
+    - - 3
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 10
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 1
+      - 3
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 10
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 8
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 2
+      - 0
+      - 4
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 1
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 10
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 6
+      - 3
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 10
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    Annual Crop Land:
+      precision: 0.42857142857142855
+      recall: 0.3
+      f1: 0.3529411764705882
+      support: 10.0
+      predicted: 7.0
+      true_positive: 3.0
+      false_positive: 4.0
+      false_negative: 7.0
+    Forest:
+      precision: 0.7692307692307693
+      recall: 1.0
+      f1: 0.8695652173913044
+      support: 10.0
+      predicted: 13.0
+      true_positive: 10.0
+      false_positive: 3.0
+      false_negative: 0.0
+    Herbaceous Vegetation Land:
+      precision: 0.5555555555555556
+      recall: 0.5
+      f1: 0.5263157894736842
+      support: 10.0
+      predicted: 9.0
+      true_positive: 5.0
+      false_positive: 4.0
+      false_negative: 5.0
+    Highway or Road:
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 10.0
+      predicted: 16.0
+      true_positive: 10.0
+      false_positive: 6.0
+      false_negative: 0.0
+    Industrial Buildings:
+      precision: 0.8888888888888888
+      recall: 0.8
+      f1: 0.8421052631578948
+      support: 10.0
+      predicted: 9.0
+      true_positive: 8.0
+      false_positive: 1.0
+      false_negative: 2.0
+    Pasture Land:
+      precision: 1.0
+      recall: 0.1
+      f1: 0.18181818181818182
+      support: 10.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 9.0
+    Permanent Crop Land:
+      precision: 1.0
+      recall: 0.5
+      f1: 0.6666666666666666
+      support: 10.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 5.0
+    Residential Buildings:
+      precision: 0.9090909090909091
+      recall: 1.0
+      f1: 0.9523809523809523
+      support: 10.0
+      predicted: 11.0
+      true_positive: 10.0
+      false_positive: 1.0
+      false_negative: 0.0
+    River:
+      precision: 0.8571428571428571
+      recall: 0.6
+      f1: 0.7058823529411764
+      support: 10.0
+      predicted: 7.0
+      true_positive: 6.0
+      false_positive: 1.0
+      false_negative: 4.0
+    Sea or Lake:
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 10.0
+      predicted: 16.0
+      true_positive: 10.0
+      false_positive: 6.0
+      false_negative: 0.0
+    The image appears to show a large, smooth, light-colored area (possibly water:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The given image appears to show a patterned, possibly man-made structure with distinct:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The image shows a pattern of green and brown stripes, which is characteristic of **:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The image appears to be a low-resolution, possibly satellite or aerial, view showing:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The image shows a pattern of rectangular or irregularly shaped plots, typical of agricultural:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The image appears to show a textured, irregular pattern with earthy tones and fragmented:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.47865502553002554
+  macro_recall: 0.425
+  macro_f1: 0.4147585711726242
+  balanced_accuracy: 0.425
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_eurosat_fgvc_seed42_mimic_qwen3_vl_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_eurosat_fgvc_seed42_mimic_qwen3_vl_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_eurosat_fgvc_seed42_mimic_qwen3_vl_20260327_020551.diagnostics.json
+

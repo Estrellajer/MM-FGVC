@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations run.run_name=c2_ablations_sugarcrepe_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.component_weighting=uniform
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:35,  4.70it/s]Loading weights:   0%|          | 2/730 [00:00<02:48,  4.32it/s]Loading weights:   2%|▏         | 12/730 [00:00<00:24, 29.31it/s]Loading weights:   3%|▎         | 19/730 [00:00<00:22, 31.96it/s]Loading weights:   7%|▋         | 48/730 [00:00<00:07, 92.40it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:06, 104.80it/s]Loading weights:  11%|█         | 78/730 [00:01<00:12, 51.15it/s] Loading weights:  19%|█▉        | 140/730 [00:01<00:04, 130.34it/s]Loading weights:  23%|██▎       | 166/730 [00:01<00:04, 129.04it/s]Loading weights:  26%|██▌       | 188/730 [00:02<00:06, 85.64it/s] Loading weights:  32%|███▏      | 234/730 [00:02<00:03, 130.14it/s]Loading weights:  35%|███▌      | 258/730 [00:02<00:03, 125.56it/s]Loading weights:  38%|███▊      | 278/730 [00:02<00:03, 119.59it/s]Loading weights:  40%|████      | 295/730 [00:03<00:04, 92.45it/s] Loading weights:  45%|████▌     | 329/730 [00:03<00:03, 126.01it/s]Loading weights:  57%|█████▋    | 415/730 [00:03<00:01, 247.56it/s]Loading weights:  72%|███████▏  | 527/730 [00:03<00:00, 413.61it/s]Loading weights:  87%|████████▋ | 635/730 [00:03<00:00, 556.26it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 648.23it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 194.58it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.45
+  pair_correct: 9.0
+  pair_total: 20.0
+  raw_accuracy: 0.725
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 17
+      - 3
+    - - 8
+      - 12
+  per_class:
+    'Yes':
+      precision: 0.68
+      recall: 0.85
+      f1: 0.7555555555555556
+      support: 20.0
+      predicted: 25.0
+      true_positive: 17.0
+      false_positive: 8.0
+      false_negative: 3.0
+    'No':
+      precision: 0.8
+      recall: 0.6
+      f1: 0.6857142857142857
+      support: 20.0
+      predicted: 15.0
+      true_positive: 12.0
+      false_positive: 3.0
+      false_negative: 8.0
+  macro_precision: 0.74
+  macro_recall: 0.725
+  macro_f1: 0.7206349206349207
+  balanced_accuracy: 0.725
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_sugarcrepe_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_sugarcrepe_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_sugarcrepe_seed42_rsev2_equal_weight_qwen2_vl_20260326_144544.diagnostics.json
+

@@ -1,0 +1,32 @@
+{
+  "suite_name": "c2_ablations",
+  "timestamp": "20260326_144415",
+  "task_ids": [
+    "cub_fgvc",
+    "eurosat_fgvc",
+    "naturalbench_vqa",
+    "sugarcrepe",
+    "vlguard",
+    "blink_semantic_correspondence"
+  ],
+  "method_ids": [
+    "rse",
+    "rse_zscore",
+    "rse_adaptive",
+    "rsev2",
+    "rsev2_head_only",
+    "rsev2_equal_weight",
+    "rsev2_top1",
+    "rsev2_top4",
+    "rsev2_top8",
+    "rsev2_all"
+  ],
+  "models": [
+    "qwen2_vl"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false,
+  "gpu_workers": null
+}

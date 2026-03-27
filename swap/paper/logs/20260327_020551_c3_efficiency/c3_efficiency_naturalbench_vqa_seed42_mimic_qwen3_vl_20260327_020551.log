@@ -1,0 +1,44 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen3_vl dataset=general_custom method=mimic evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_naturalbench_vqa_seed42_mimic_qwen3_vl_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<03:14,  3.84it/s]Loading weights:   0%|          | 2/750 [00:00<03:43,  3.34it/s]Loading weights:   1%|          | 8/750 [00:01<01:35,  7.75it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:10, 67.16it/s]Loading weights:  15%|█▌        | 115/750 [00:01<00:05, 112.87it/s]Loading weights:  18%|█▊        | 136/750 [00:02<00:07, 83.03it/s] Loading weights:  24%|██▎       | 177/750 [00:02<00:04, 119.74it/s]Loading weights:  26%|██▋       | 198/750 [00:02<00:04, 125.77it/s]Loading weights:  29%|██▉       | 218/750 [00:02<00:05, 106.16it/s]Loading weights:  31%|███       | 234/750 [00:02<00:04, 103.37it/s]Loading weights:  34%|███▍      | 258/750 [00:02<00:03, 125.49it/s]Loading weights:  37%|███▋      | 275/750 [00:03<00:03, 125.13it/s]Loading weights:  39%|███▉      | 291/750 [00:03<00:04, 111.40it/s]Loading weights:  41%|████      | 305/750 [00:03<00:03, 116.82it/s]Loading weights:  43%|████▎     | 319/750 [00:03<00:03, 118.92it/s]Loading weights:  44%|████▍     | 333/750 [00:03<00:06, 65.98it/s] Loading weights:  51%|█████     | 380/750 [00:04<00:03, 107.81it/s]Loading weights:  75%|███████▌  | 563/750 [00:04<00:00, 372.72it/s]Loading weights:  95%|█████████▌| 715/750 [00:04<00:00, 575.61it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 169.26it/s]
+Error executing job with overrides: ['model=qwen3_vl', 'dataset=general_custom', 'method=mimic', 'evaluator=raw', 'dataset.name=naturalbench_vqa', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/train_subset.jsonl', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/val_subset.jsonl', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency', 'run.run_name=c3_efficiency_naturalbench_vqa_seed42_mimic_qwen3_vl_20260327_020551', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 651, in fit
+    query_outputs, shifted_attn_outputs = self._record_attention_outputs(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/mimic.py", line 512, in _record_attention_outputs
+    self.model.model(**inputs, labels=labels, use_cache=False)
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1882, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1830, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 843, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1541, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.36 GiB. GPU 0 has a total capacity of 94.97 GiB of which 2.41 GiB is free. Including non-PyTorch memory, this process has 92.56 GiB memory in use. Of the allocated memory 91.36 GiB is allocated by PyTorch, and 554.77 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

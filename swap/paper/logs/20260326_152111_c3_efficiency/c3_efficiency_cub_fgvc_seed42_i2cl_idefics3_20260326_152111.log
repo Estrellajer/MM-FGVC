@@ -1,0 +1,23 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=i2cl evaluator=raw dataset.name=cub dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/cub_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/cub_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_cub_fgvc_seed42_i2cl_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:32,  7.84it/s]Loading weights:   0%|          | 3/729 [00:00<01:14,  9.76it/s]Loading weights:   1%|          | 6/729 [00:00<00:50, 14.39it/s]Loading weights:   4%|▍         | 28/729 [00:00<00:09, 74.78it/s]Loading weights:   6%|▌         | 41/729 [00:00<00:07, 87.85it/s]Loading weights:   7%|▋         | 52/729 [00:00<00:07, 85.62it/s]Loading weights:   9%|▊         | 63/729 [00:01<00:13, 48.35it/s]Loading weights:  15%|█▍        | 108/729 [00:01<00:07, 84.70it/s]Loading weights:  22%|██▏       | 158/729 [00:01<00:03, 143.21it/s]Loading weights:  24%|██▍       | 178/729 [00:01<00:04, 130.23it/s]Loading weights:  27%|██▋       | 195/729 [00:02<00:08, 64.98it/s] Loading weights:  39%|███▊      | 281/729 [00:02<00:03, 148.32it/s]Loading weights:  43%|████▎     | 316/729 [00:02<00:02, 167.97it/s]Loading weights:  71%|███████   | 519/729 [00:02<00:00, 450.76it/s]Loading weights:  97%|█████████▋| 707/729 [00:03<00:00, 705.38it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 237.83it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=i2cl', 'evaluator=raw', 'dataset.name=cub', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/cub_fgvc/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/cub_fgvc/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_cub_fgvc_seed42_i2cl_idefics3_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 695, in fit
+    demo_latents.append(self._capture_demo_latent(train_data[demo_index], rng))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 599, in _capture_demo_latent
+    output_dict.setdefault(layer_idx, {})[module_key] = self._select_token_feature(recorded[module_name], rng)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/i2cl.py", line 559, in _select_token_feature
+    raise ValueError(f"I2CL expected hidden states with shape [1, T, D], got {tuple(tensor.shape)}")
+ValueError: I2CL expected hidden states with shape [1, T, D], got (13, 676, 1152)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

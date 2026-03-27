@@ -1,0 +1,273 @@
+{
+  "model": "qwen3_vl",
+  "dataset": "eurosat",
+  "method": "sav",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.84,
+    "correct": 84.0,
+    "total": 100.0,
+    "label_order": [
+      "Annual Crop Land",
+      "Forest",
+      "Herbaceous Vegetation Land",
+      "Highway or Road",
+      "Industrial Buildings",
+      "Pasture Land",
+      "Permanent Crop Land",
+      "Residential Buildings",
+      "River",
+      "Sea or Lake"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Annual Crop Land",
+        "Forest",
+        "Herbaceous Vegetation Land",
+        "Highway or Road",
+        "Industrial Buildings",
+        "Pasture Land",
+        "Permanent Crop Land",
+        "Residential Buildings",
+        "River",
+        "Sea or Lake"
+      ],
+      "matrix": [
+        [
+          8,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          8,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      ]
+    },
+    "per_class": {
+      "Annual Crop Land": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "support": 10.0,
+        "predicted": 8.0,
+        "true_positive": 8.0,
+        "false_positive": 0.0,
+        "false_negative": 2.0
+      },
+      "Forest": {
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631577,
+        "support": 10.0,
+        "predicted": 9.0,
+        "true_positive": 7.0,
+        "false_positive": 2.0,
+        "false_negative": 3.0
+      },
+      "Herbaceous Vegetation Land": {
+        "precision": 0.6428571428571429,
+        "recall": 0.9,
+        "f1": 0.75,
+        "support": 10.0,
+        "predicted": 14.0,
+        "true_positive": 9.0,
+        "false_positive": 5.0,
+        "false_negative": 1.0
+      },
+      "Highway or Road": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578948,
+        "support": 10.0,
+        "predicted": 9.0,
+        "true_positive": 8.0,
+        "false_positive": 1.0,
+        "false_negative": 2.0
+      },
+      "Industrial Buildings": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "support": 10.0,
+        "predicted": 10.0,
+        "true_positive": 9.0,
+        "false_positive": 1.0,
+        "false_negative": 1.0
+      },
+      "Pasture Land": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333,
+        "support": 10.0,
+        "predicted": 14.0,
+        "true_positive": 10.0,
+        "false_positive": 4.0,
+        "false_negative": 0.0
+      },
+      "Permanent Crop Land": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578948,
+        "support": 10.0,
+        "predicted": 9.0,
+        "true_positive": 8.0,
+        "false_positive": 1.0,
+        "false_negative": 2.0
+      },
+      "Residential Buildings": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526316,
+        "support": 10.0,
+        "predicted": 9.0,
+        "true_positive": 9.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "River": {
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777777,
+        "support": 10.0,
+        "predicted": 8.0,
+        "true_positive": 7.0,
+        "false_positive": 1.0,
+        "false_negative": 3.0
+      },
+      "Sea or Lake": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "support": 10.0,
+        "predicted": 10.0,
+        "true_positive": 9.0,
+        "false_positive": 1.0,
+        "false_negative": 1.0
+      }
+    },
+    "macro_precision": 0.8587698412698412,
+    "macro_recall": 0.8400000000000001,
+    "macro_f1": 0.841842105263158,
+    "balanced_accuracy": 0.8400000000000001
+  },
+  "timings": {
+    "fit_time_sec": 14.015927439555526,
+    "predict_time_sec": 4.916063973680139,
+    "total_time_sec": 18.931991413235664,
+    "num_eval_samples": 100,
+    "avg_predict_time_sec": 0.04916063973680138
+  }
+}

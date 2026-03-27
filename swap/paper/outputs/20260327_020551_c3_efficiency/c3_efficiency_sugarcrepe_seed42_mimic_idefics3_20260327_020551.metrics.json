@@ -1,0 +1,66 @@
+{
+  "model": "idefics3",
+  "dataset": "sugarcrepe",
+  "method": "mimic",
+  "evaluator": "pair",
+  "metrics": {
+    "metric": "pair_accuracy",
+    "pair_accuracy": 0.6,
+    "pair_correct": 12.0,
+    "pair_total": 20.0,
+    "raw_accuracy": 0.8,
+    "label_order": [
+      "Yes",
+      "No"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Yes",
+        "No"
+      ],
+      "matrix": [
+        [
+          18,
+          2
+        ],
+        [
+          6,
+          14
+        ]
+      ]
+    },
+    "per_class": {
+      "Yes": {
+        "precision": 0.75,
+        "recall": 0.9,
+        "f1": 0.8181818181818182,
+        "support": 20.0,
+        "predicted": 24.0,
+        "true_positive": 18.0,
+        "false_positive": 6.0,
+        "false_negative": 2.0
+      },
+      "No": {
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777777,
+        "support": 20.0,
+        "predicted": 16.0,
+        "true_positive": 14.0,
+        "false_positive": 2.0,
+        "false_negative": 6.0
+      }
+    },
+    "macro_precision": 0.8125,
+    "macro_recall": 0.8,
+    "macro_f1": 0.797979797979798,
+    "balanced_accuracy": 0.8
+  },
+  "timings": {
+    "fit_time_sec": 94.18544710241258,
+    "predict_time_sec": 20.82971760444343,
+    "total_time_sec": 115.01516470685601,
+    "num_eval_samples": 40,
+    "avg_predict_time_sec": 0.5207429401110858
+  }
+}

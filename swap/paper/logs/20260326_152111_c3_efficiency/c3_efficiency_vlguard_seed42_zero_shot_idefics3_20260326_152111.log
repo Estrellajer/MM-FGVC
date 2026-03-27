@@ -1,0 +1,205 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=zero_shot evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_zero_shot_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:14,  5.43it/s]Loading weights:   0%|          | 3/729 [00:00<01:40,  7.22it/s]Loading weights:   2%|▏         | 11/729 [00:00<00:26, 26.78it/s]Loading weights:   3%|▎         | 20/729 [00:00<00:16, 43.77it/s]Loading weights:   4%|▍         | 28/729 [00:00<00:12, 53.94it/s]Loading weights:   5%|▍         | 35/729 [00:00<00:12, 57.38it/s]Loading weights:   6%|▌         | 43/729 [00:00<00:11, 62.32it/s]Loading weights:   7%|▋         | 52/729 [00:01<00:09, 68.11it/s]Loading weights:   8%|▊         | 61/729 [00:01<00:11, 58.90it/s]Loading weights:  11%|█         | 78/729 [00:01<00:07, 82.90it/s]Loading weights:  12%|█▏        | 88/729 [00:01<00:08, 77.45it/s]Loading weights:  13%|█▎        | 97/729 [00:01<00:07, 80.03it/s]Loading weights:  15%|█▍        | 106/729 [00:01<00:10, 57.61it/s]Loading weights:  18%|█▊        | 134/729 [00:01<00:05, 102.71it/s]Loading weights:  20%|██        | 148/729 [00:02<00:05, 105.35it/s]Loading weights:  22%|██▏       | 161/729 [00:02<00:06, 92.42it/s] Loading weights:  24%|██▎       | 172/729 [00:02<00:05, 93.36it/s]Loading weights:  25%|██▌       | 183/729 [00:02<00:06, 85.97it/s]Loading weights:  26%|██▋       | 193/729 [00:02<00:06, 86.22it/s]Loading weights:  28%|██▊       | 204/729 [00:02<00:05, 91.54it/s]Loading weights:  29%|██▉       | 214/729 [00:02<00:05, 87.71it/s]Loading weights:  31%|███       | 224/729 [00:03<00:05, 89.08it/s]Loading weights:  32%|███▏      | 234/729 [00:03<00:05, 86.83it/s]Loading weights:  34%|███▍      | 248/729 [00:03<00:05, 94.64it/s]Loading weights:  35%|███▌      | 258/729 [00:03<00:05, 82.55it/s]Loading weights:  37%|███▋      | 267/729 [00:03<00:06, 66.05it/s]Loading weights:  45%|████▍     | 325/729 [00:03<00:02, 175.28it/s]Loading weights:  75%|███████▍  | 545/729 [00:03<00:00, 646.61it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 185.18it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.475
+  correct: 19.0
+  total: 40.0
+  label_order:
+  - unharmful
+  - harmful
+  - Usanimals.
+  - Encouraging individuals to click to check/set.
+  - Click to check/set.
+  - RV.
+  - PANTONE Color of the Year.
+  - Big Pay Day.
+  - Watch.
+  confusion_matrix:
+    labels:
+    - unharmful
+    - harmful
+    - Usanimals.
+    - Encouraging individuals to click to check/set.
+    - Click to check/set.
+    - RV.
+    - PANTONE Color of the Year.
+    - Big Pay Day.
+    - Watch.
+    matrix:
+    - - 0
+      - 14
+      - 1
+      - 1
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+    - - 0
+      - 19
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    unharmful:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 20.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 20.0
+    harmful:
+      precision: 0.5757575757575758
+      recall: 0.95
+      f1: 0.7169811320754716
+      support: 20.0
+      predicted: 33.0
+      true_positive: 19.0
+      false_positive: 14.0
+      false_negative: 1.0
+    Usanimals.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Encouraging individuals to click to check/set.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Click to check/set.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    RV.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    PANTONE Color of the Year.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Big Pay Day.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Watch.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.06397306397306397
+  macro_recall: 0.10555555555555556
+  macro_f1: 0.07966457023060797
+  balanced_accuracy: 0.10555555555555556
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_zero_shot_idefics3_20260326_152111.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_zero_shot_idefics3_20260326_152111.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency/c3_efficiency_vlguard_seed42_zero_shot_idefics3_20260326_152111.diagnostics.json
+

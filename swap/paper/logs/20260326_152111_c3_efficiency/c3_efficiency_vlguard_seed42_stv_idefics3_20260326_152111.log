@@ -1,0 +1,27 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=stv evaluator=raw dataset.name=vlguard dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_vlguard_seed42_stv_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.head_selection_mode=sensitivity method.params.cluster_selection_mode=rl
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:30,  4.84it/s]Loading weights:   0%|          | 3/729 [00:00<01:49,  6.62it/s]Loading weights:   1%|▏         | 10/729 [00:00<00:31, 22.91it/s]Loading weights:   2%|▏         | 14/729 [00:00<00:33, 21.39it/s]Loading weights:   4%|▍         | 29/729 [00:01<00:24, 28.29it/s]Loading weights:   9%|▉         | 69/729 [00:01<00:08, 81.74it/s]Loading weights:  12%|█▏        | 86/729 [00:01<00:06, 92.79it/s]Loading weights:  14%|█▎        | 99/729 [00:01<00:07, 85.95it/s]Loading weights:  15%|█▌        | 110/729 [00:01<00:07, 84.23it/s]Loading weights:  16%|█▋        | 120/729 [00:01<00:07, 85.14it/s]Loading weights:  18%|█▊        | 130/729 [00:02<00:08, 72.48it/s]Loading weights:  19%|█▉        | 142/729 [00:02<00:07, 80.53it/s]Loading weights:  21%|██        | 152/729 [00:02<00:07, 82.06it/s]Loading weights:  22%|██▏       | 161/729 [00:02<00:07, 78.82it/s]Loading weights:  23%|██▎       | 170/729 [00:02<00:07, 78.40it/s]Loading weights:  25%|██▍       | 179/729 [00:02<00:07, 70.48it/s]Loading weights:  27%|██▋       | 194/729 [00:02<00:06, 87.19it/s]Loading weights:  28%|██▊       | 204/729 [00:03<00:06, 76.57it/s]Loading weights:  29%|██▉       | 214/729 [00:03<00:06, 76.21it/s]Loading weights:  31%|███       | 225/729 [00:03<00:06, 82.17it/s]Loading weights:  32%|███▏      | 234/729 [00:03<00:06, 82.31it/s]Loading weights:  33%|███▎      | 244/729 [00:03<00:05, 86.15it/s]Loading weights:  35%|███▍      | 253/729 [00:03<00:06, 70.17it/s]Loading weights:  36%|███▌      | 263/729 [00:03<00:06, 71.30it/s]Loading weights:  38%|███▊      | 277/729 [00:03<00:05, 82.84it/s]Loading weights:  40%|███▉      | 290/729 [00:04<00:04, 92.61it/s]Loading weights:  68%|██████▊   | 495/729 [00:04<00:00, 584.64it/s]Loading weights:  96%|█████████▋| 703/729 [00:04<00:00, 974.73it/s]Loading weights: 100%|██████████| 729/729 [00:04<00:00, 170.94it/s]
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=stv', 'evaluator=raw', 'dataset.name=vlguard', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/vlguard/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_vlguard_seed42_stv_idefics3_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false', 'method.params.head_selection_mode=sensitivity', 'method.params.cluster_selection_mode=rl']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 800, in fit
+    self.avg_diff = self._estimate_avg_diff(train_data, activation_indices, rng)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 480, in _estimate_avg_diff
+    query_only = self._capture_prompt_activations(sample, demos=[])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 466, in _capture_prompt_activations
+    return self.hook_controller.capture(inputs, token_index=token_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/stv.py", line 168, in capture
+    return torch.stack(ordered, dim=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [16, 1, 72] at entry 0 and [32, 1, 128] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

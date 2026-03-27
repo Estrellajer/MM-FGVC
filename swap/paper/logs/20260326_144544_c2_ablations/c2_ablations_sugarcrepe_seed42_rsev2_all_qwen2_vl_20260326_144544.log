@@ -1,0 +1,52 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=rsev2 evaluator=pair dataset.name=sugarcrepe dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/sugarcrepe/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_144544_c2_ablations/seed_42/sugarcrepe/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations run.run_name=c2_ablations_sugarcrepe_seed42_rsev2_all_qwen2_vl_20260326_144544 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.component_top_k=0
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:13,  3.77it/s]Loading weights:   0%|          | 2/730 [00:00<03:23,  3.59it/s]Loading weights:   1%|▏         | 10/730 [00:00<00:34, 21.11it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:20, 35.22it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:12, 55.55it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:09, 70.75it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:08, 81.62it/s]Loading weights:   9%|▉         | 66/730 [00:01<00:07, 86.16it/s]Loading weights:  10%|█         | 76/730 [00:01<00:07, 83.96it/s]Loading weights:  12%|█▏        | 90/730 [00:01<00:07, 80.02it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:05, 110.67it/s]Loading weights:  17%|█▋        | 125/730 [00:01<00:05, 107.92it/s]Loading weights:  19%|█▉        | 137/730 [00:01<00:05, 106.07it/s]Loading weights:  20%|██        | 149/730 [00:02<00:05, 104.40it/s]Loading weights:  22%|██▏       | 161/730 [00:02<00:08, 65.62it/s] Loading weights:  27%|██▋       | 198/730 [00:02<00:04, 114.48it/s]Loading weights:  29%|██▉       | 213/730 [00:02<00:04, 116.41it/s]Loading weights:  31%|███       | 227/730 [00:02<00:04, 116.16it/s]Loading weights:  33%|███▎      | 241/730 [00:02<00:05, 95.42it/s] Loading weights:  35%|███▌      | 256/730 [00:03<00:06, 70.81it/s]Loading weights:  40%|████      | 294/730 [00:03<00:03, 119.81it/s]Loading weights:  43%|████▎     | 312/730 [00:03<00:03, 125.21it/s]Loading weights:  45%|████▌     | 329/730 [00:03<00:03, 119.30it/s]Loading weights:  53%|█████▎    | 389/730 [00:03<00:01, 217.51it/s]Loading weights:  66%|██████▌   | 483/730 [00:03<00:00, 379.17it/s]Loading weights:  80%|████████  | 586/730 [00:04<00:00, 535.19it/s]Loading weights:  94%|█████████▍| 686/730 [00:04<00:00, 654.58it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 175.52it/s]
+metrics:
+  metric: pair_accuracy
+  pair_accuracy: 0.55
+  pair_correct: 11.0
+  pair_total: 20.0
+  raw_accuracy: 0.775
+  label_order:
+  - 'Yes'
+  - 'No'
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    matrix:
+    - - 18
+      - 2
+    - - 7
+      - 13
+  per_class:
+    'Yes':
+      precision: 0.72
+      recall: 0.9
+      f1: 0.7999999999999999
+      support: 20.0
+      predicted: 25.0
+      true_positive: 18.0
+      false_positive: 7.0
+      false_negative: 2.0
+    'No':
+      precision: 0.8666666666666667
+      recall: 0.65
+      f1: 0.7428571428571429
+      support: 20.0
+      predicted: 15.0
+      true_positive: 13.0
+      false_positive: 2.0
+      false_negative: 7.0
+  macro_precision: 0.7933333333333333
+  macro_recall: 0.775
+  macro_f1: 0.7714285714285714
+  balanced_accuracy: 0.775
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_sugarcrepe_seed42_rsev2_all_qwen2_vl_20260326_144544.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_sugarcrepe_seed42_rsev2_all_qwen2_vl_20260326_144544.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260326_144544_c2_ablations/c2_ablations_sugarcrepe_seed42_rsev2_all_qwen2_vl_20260326_144544.diagnostics.json
+

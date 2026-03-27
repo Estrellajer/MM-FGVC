@@ -1,0 +1,27 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=sav evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency run.run_name=c3_efficiency_eurosat_fgvc_seed42_sav_idefics3_20260326_152111 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:46,  6.83it/s]Loading weights:   0%|          | 3/729 [00:00<01:21,  8.85it/s]Loading weights:   2%|▏         | 14/729 [00:00<00:18, 38.06it/s]Loading weights:   3%|▎         | 24/729 [00:00<00:13, 50.60it/s]Loading weights:   6%|▌         | 41/729 [00:00<00:08, 79.22it/s]Loading weights:   7%|▋         | 51/729 [00:00<00:08, 82.09it/s]Loading weights:   8%|▊         | 61/729 [00:00<00:08, 81.84it/s]Loading weights:  10%|█         | 73/729 [00:01<00:07, 90.77it/s]Loading weights:  12%|█▏        | 86/729 [00:01<00:06, 98.44it/s]Loading weights:  13%|█▎        | 97/729 [00:01<00:07, 89.78it/s]Loading weights:  15%|█▍        | 108/729 [00:01<00:06, 92.57it/s]Loading weights:  17%|█▋        | 122/729 [00:01<00:06, 98.83it/s]Loading weights:  18%|█▊        | 133/729 [00:01<00:06, 94.84it/s]Loading weights:  20%|██        | 146/729 [00:01<00:05, 103.31it/s]Loading weights:  22%|██▏       | 158/729 [00:01<00:05, 104.89it/s]Loading weights:  23%|██▎       | 169/729 [00:02<00:05, 94.59it/s] Loading weights:  25%|██▍       | 181/729 [00:02<00:05, 100.30it/s]Loading weights:  27%|██▋       | 194/729 [00:02<00:05, 103.63it/s]Loading weights:  28%|██▊       | 205/729 [00:02<00:05, 93.64it/s] Loading weights:  29%|██▉       | 215/729 [00:02<00:05, 92.50it/s]Loading weights:  31%|███       | 227/729 [00:02<00:05, 98.99it/s]Loading weights:  33%|███▎      | 238/729 [00:02<00:04, 100.41it/s]Loading weights:  34%|███▍      | 249/729 [00:02<00:05, 91.40it/s] Loading weights:  36%|███▌      | 259/729 [00:03<00:05, 89.42it/s]Loading weights:  37%|███▋      | 269/729 [00:03<00:05, 89.88it/s]Loading weights:  38%|███▊      | 279/729 [00:03<00:04, 91.73it/s]Loading weights:  40%|███▉      | 289/729 [00:03<00:04, 93.71it/s]Loading weights:  67%|██████▋   | 485/729 [00:03<00:00, 616.58it/s]Loading weights:  96%|█████████▋| 702/729 [00:03<00:00, 1059.79it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 206.61it/s] 
+Error executing job with overrides: ['model=idefics3', 'dataset=general_custom', 'method=sav', 'evaluator=raw', 'dataset.name=eurosat', 'dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json', 'dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260326_152111_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json', 'run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260326_152111_c3_efficiency', 'run.run_name=c3_efficiency_eurosat_fgvc_seed42_sav_idefics3_20260326_152111', 'run.progress_bar=false', 'run.save_predictions=false', 'run.seed=42', 'method.params.progress_bar=false']
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/main.py", line 9, in main
+    result = run_experiment(cfg)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/runner.py", line 150, in run_experiment
+    method.fit(train_data)
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 325, in fit
+    all_class_acts, str_to_int, int_to_str = self._compute_class_activations(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 159, in _compute_class_activations
+    head_act = self._extract_selected_head_activations(item, selected_heads)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 142, in _extract_selected_head_activations
+    all_head_acts = self._extract_all_head_activations(sample)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/src/methods/sav.py", line 135, in _extract_all_head_activations
+    return torch.stack(layer_acts, dim=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [32, 36] at entry 0 and [32, 128] at entry 1
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

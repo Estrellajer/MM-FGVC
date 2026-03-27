@@ -1,0 +1,84 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=idefics3 dataset=general_custom method=sav evaluator=raw dataset.name=naturalbench_vqa dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/train_subset.jsonl dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/naturalbench_vqa/val_subset.jsonl run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency run.run_name=c3_efficiency_naturalbench_vqa_seed42_sav_idefics3_20260327_020551 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:34,  7.70it/s]Loading weights:   0%|          | 3/729 [00:00<01:16,  9.52it/s]Loading weights:   1%|          | 5/729 [00:00<02:37,  4.61it/s]Loading weights:  11%|█         | 78/729 [00:01<00:08, 74.89it/s]Loading weights:  18%|█▊        | 133/729 [00:01<00:06, 96.08it/s]Loading weights:  26%|██▌       | 186/729 [00:02<00:04, 128.02it/s]Loading weights:  29%|██▉       | 212/729 [00:02<00:03, 140.77it/s]Loading weights:  31%|███▏      | 229/729 [00:02<00:05, 99.38it/s] Loading weights:  37%|███▋      | 267/729 [00:02<00:04, 108.17it/s]Loading weights:  68%|██████▊   | 497/729 [00:02<00:00, 385.11it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 240.12it/s]
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.65
+  correct: 26.0
+  total: 40.0
+  label_order:
+  - 'Yes'
+  - 'No'
+  - A
+  - B
+  confusion_matrix:
+    labels:
+    - 'Yes'
+    - 'No'
+    - A
+    - B
+    matrix:
+    - - 6
+      - 2
+      - 0
+      - 0
+    - - 3
+      - 5
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 6
+      - 6
+    - - 0
+      - 0
+      - 3
+      - 9
+  per_class:
+    'Yes':
+      precision: 0.6666666666666666
+      recall: 0.75
+      f1: 0.7058823529411765
+      support: 8.0
+      predicted: 9.0
+      true_positive: 6.0
+      false_positive: 3.0
+      false_negative: 2.0
+    'No':
+      precision: 0.7142857142857143
+      recall: 0.625
+      f1: 0.6666666666666666
+      support: 8.0
+      predicted: 7.0
+      true_positive: 5.0
+      false_positive: 2.0
+      false_negative: 3.0
+    A:
+      precision: 0.6666666666666666
+      recall: 0.5
+      f1: 0.5714285714285715
+      support: 12.0
+      predicted: 9.0
+      true_positive: 6.0
+      false_positive: 3.0
+      false_negative: 6.0
+    B:
+      precision: 0.6
+      recall: 0.75
+      f1: 0.6666666666666665
+      support: 12.0
+      predicted: 15.0
+      true_positive: 9.0
+      false_positive: 6.0
+      false_negative: 3.0
+  macro_precision: 0.6619047619047619
+  macro_recall: 0.65625
+  macro_f1: 0.6526610644257703
+  balanced_accuracy: 0.65625
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_naturalbench_vqa_seed42_sav_idefics3_20260327_020551.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_naturalbench_vqa_seed42_sav_idefics3_20260327_020551.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260327_020551_c3_efficiency/c3_efficiency_naturalbench_vqa_seed42_sav_idefics3_20260327_020551.diagnostics.json
+
