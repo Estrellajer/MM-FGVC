@@ -1,0 +1,20 @@
+{
+  "method": "stv",
+  "question_id": 3,
+  "label": "Annual Crop Land",
+  "analysis_answer_text": "Annual Crop Land",
+  "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_473.jpg",
+  "normal_bundle": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat/write_failure/stv/raw/000_stv_q3.normal.pt",
+  "steered_bundle": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat/write_failure/stv/raw/000_stv_q3.steered.pt",
+  "query_token_indices": [
+    58,
+    59,
+    60
+  ],
+  "image_token_indices": [
+    15,
+    16,
+    17,
+    18
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/stv/1485_occluded.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/stv/1485_occluded.png"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. samoyed C. great pyrenees D. wheaten terrier",
+    "label": "great pyrenees",
+    "question_id": 1485,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/stv/1182_occluded.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/stv/1182_occluded.png"
+    ],
+    "question": "What type of animal is in the image?\nA. english cocker spaniel B. great pyrenees C. wheaten terrier D. pug",
+    "label": "english cocker spaniel",
+    "question_id": 1182,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/stv/1984_occluded.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/stv/1984_occluded.png"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. english cocker spaniel C. chihuahua D. Maine Coon",
+    "label": "Maine Coon",
+    "question_id": 1984,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "D"
+    }
+  }
+]

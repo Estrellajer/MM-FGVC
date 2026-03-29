@@ -1,0 +1,84 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "pets_fgvc",
+  "method": "i2cl",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.6666666666666666,
+    "correct": 2.0,
+    "total": 3.0,
+    "label_order": [
+      "Maine Coon",
+      "Siamese",
+      "The animal in the image is a cat."
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Maine Coon",
+        "Siamese",
+        "The animal in the image is a cat."
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "Maine Coon": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "support": 2.0,
+        "predicted": 1.0,
+        "true_positive": 1.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "Siamese": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1.0,
+        "predicted": 1.0,
+        "true_positive": 1.0,
+        "false_positive": 0.0,
+        "false_negative": 0.0
+      },
+      "The animal in the image is a cat.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.6666666666666666,
+    "macro_recall": 0.5,
+    "macro_f1": 0.5555555555555555,
+    "balanced_accuracy": 0.5
+  },
+  "timings": {
+    "fit_time_sec": 6.085967877879739,
+    "predict_time_sec": 1.3125361204147339,
+    "total_time_sec": 7.398503998294473,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 0.43751204013824463
+  }
+}

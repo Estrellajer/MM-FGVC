@@ -1,0 +1,166 @@
+{
+  "write_failure_analysis": {
+    "enabled": true,
+    "method": "stv",
+    "dump_dir": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv",
+    "raw_dir": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw",
+    "num_analyzed_samples": 3,
+    "query_last_k": 3,
+    "answer_source": "label",
+    "summary": {
+      "visual_attention_ratio_normal": 0.06589663773775101,
+      "visual_attention_ratio_steered": 0.0658819650610288,
+      "visual_attention_ratio_drop_percent": 0.02994565263326629,
+      "normalized_attention_entropy_normal": 0.3876836895942688,
+      "normalized_attention_entropy_steered": 0.3877276877562205,
+      "representation_cosine_similarity": 0.9999971191088358,
+      "query_hidden_l2_ratio": 0.0004762723595680048,
+      "task_vector_to_hidden_norm_ratio": 0.0007706983985068897,
+      "normal_accuracy": 0.3333333333333333,
+      "steered_accuracy": 0.3333333333333333
+    },
+    "samples": [
+      {
+        "question_id": 1485,
+        "label": "great pyrenees",
+        "normal_prediction": "The animal in the image is a dog.",
+        "steered_prediction": "Let's analyze the image step by step:\n\n1. The animal has has a",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "great pyrenees",
+        "visual_attention_ratio_normal": 0.07111629843711853,
+        "visual_attention_ratio_steered": 0.07104834169149399,
+        "visual_attention_ratio_drop_percent": 0.09555720294501831,
+        "normalized_attention_entropy_normal": 0.379220187664032,
+        "normalized_attention_entropy_steered": 0.37913402915000916,
+        "representation_cosine_similarity": 0.9999972581863403,
+        "query_hidden_l2_ratio": 0.00047470422578044236,
+        "task_vector_to_hidden_norm_ratio": 0.0008060914115048945,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/000_stv_q1485.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/000_stv_q1485.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/000_stv_q1485.meta.json"
+        }
+      },
+      {
+        "question_id": 1182,
+        "label": "english cocker spaniel",
+        "normal_prediction": "Let's analyze the image step by step:\n\n1. The animal in the image",
+        "steered_prediction": "Let's analyze the image step by step:\n\n1. The animal in the image",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "english cocker spaniel",
+        "visual_attention_ratio_normal": 0.07542926073074341,
+        "visual_attention_ratio_steered": 0.07549452781677246,
+        "visual_attention_ratio_drop_percent": -0.0865275430207832,
+        "normalized_attention_entropy_normal": 0.3726885914802551,
+        "normalized_attention_entropy_steered": 0.3728049099445343,
+        "representation_cosine_similarity": 0.9999966621398926,
+        "query_hidden_l2_ratio": 0.0005122958682477474,
+        "task_vector_to_hidden_norm_ratio": 0.0008068213355727494,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/001_stv_q1182.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/001_stv_q1182.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/001_stv_q1182.meta.json"
+        }
+      },
+      {
+        "question_id": 1984,
+        "label": "Maine Coon",
+        "normal_prediction": "Maine Coon",
+        "steered_prediction": "Maine Coon",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "Maine Coon",
+        "visual_attention_ratio_normal": 0.05114435404539108,
+        "visual_attention_ratio_steered": 0.051103025674819946,
+        "visual_attention_ratio_drop_percent": 0.08080729797556377,
+        "normalized_attention_entropy_normal": 0.4111422896385193,
+        "normalized_attention_entropy_steered": 0.41124412417411804,
+        "representation_cosine_similarity": 0.9999974370002747,
+        "query_hidden_l2_ratio": 0.00044181698467582464,
+        "task_vector_to_hidden_norm_ratio": 0.0006991824484430254,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/002_stv_q1984.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/002_stv_q1984.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/002_stv_q1984.meta.json"
+        }
+      }
+    ],
+    "raw_samples": [
+      {
+        "question_id": 1485,
+        "label": "great pyrenees",
+        "normal_prediction": "The animal in the image is a dog.",
+        "steered_prediction": "Let's analyze the image step by step:\n\n1. The animal has has a",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "great pyrenees",
+        "visual_attention_ratio_normal": 0.07111629843711853,
+        "visual_attention_ratio_steered": 0.07104834169149399,
+        "visual_attention_ratio_drop_percent": 0.09555720294501831,
+        "normalized_attention_entropy_normal": 0.379220187664032,
+        "normalized_attention_entropy_steered": 0.37913402915000916,
+        "representation_cosine_similarity": 0.9999972581863403,
+        "query_hidden_l2_ratio": 0.00047470422578044236,
+        "task_vector_to_hidden_norm_ratio": 0.0008060914115048945,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/000_stv_q1485.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/000_stv_q1485.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/000_stv_q1485.meta.json"
+        }
+      },
+      {
+        "question_id": 1182,
+        "label": "english cocker spaniel",
+        "normal_prediction": "Let's analyze the image step by step:\n\n1. The animal in the image",
+        "steered_prediction": "Let's analyze the image step by step:\n\n1. The animal in the image",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "english cocker spaniel",
+        "visual_attention_ratio_normal": 0.07542926073074341,
+        "visual_attention_ratio_steered": 0.07549452781677246,
+        "visual_attention_ratio_drop_percent": -0.0865275430207832,
+        "normalized_attention_entropy_normal": 0.3726885914802551,
+        "normalized_attention_entropy_steered": 0.3728049099445343,
+        "representation_cosine_similarity": 0.9999966621398926,
+        "query_hidden_l2_ratio": 0.0005122958682477474,
+        "task_vector_to_hidden_norm_ratio": 0.0008068213355727494,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/001_stv_q1182.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/001_stv_q1182.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/001_stv_q1182.meta.json"
+        }
+      },
+      {
+        "question_id": 1984,
+        "label": "Maine Coon",
+        "normal_prediction": "Maine Coon",
+        "steered_prediction": "Maine Coon",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "Maine Coon",
+        "visual_attention_ratio_normal": 0.05114435404539108,
+        "visual_attention_ratio_steered": 0.051103025674819946,
+        "visual_attention_ratio_drop_percent": 0.08080729797556377,
+        "normalized_attention_entropy_normal": 0.4111422896385193,
+        "normalized_attention_entropy_steered": 0.41124412417411804,
+        "representation_cosine_similarity": 0.9999974370002747,
+        "query_hidden_l2_ratio": 0.00044181698467582464,
+        "task_vector_to_hidden_norm_ratio": 0.0006991824484430254,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/002_stv_q1984.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/002_stv_q1984.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/stv/raw/002_stv_q1984.meta.json"
+        }
+      }
+    ]
+  },
+  "timings": {
+    "fit_time_sec": 15.72443899139762,
+    "predict_time_sec": 4.929300621151924,
+    "total_time_sec": 20.653739612549543,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 1.6431002070506413
+  }
+}

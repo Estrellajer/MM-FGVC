@@ -1,0 +1,244 @@
+{
+  "targeted_selection": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/targeted_replay_selection.json",
+  "timestamp": "20260329_023433",
+  "dataset_name": "pets_fgvc",
+  "dataset_label": "Pets",
+  "methods": [
+    "stv",
+    "i2cl",
+    "mimic"
+  ],
+  "variants": [
+    "original",
+    "occluded",
+    "shuffled",
+    "wrong_class"
+  ],
+  "replays": {
+    "stv": {
+      "original": {
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_stv_qwen2_vl_20260329_022144.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_stv_qwen2_vl_20260329_022144.metrics.json",
+        "summary": {
+          "accuracy": 0.3333333333333333,
+          "prediction_flip_rate": 0.0,
+          "label_retention_rate": 0.3333333333333333,
+          "num_samples": 3
+        }
+      },
+      "occluded": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/stv/occluded.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_occluded_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_occluded_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_occluded_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.3333333333333333,
+          "prediction_flip_rate": 0.0,
+          "label_retention_rate": 0.3333333333333333,
+          "num_samples": 3
+        }
+      },
+      "shuffled": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/stv/shuffled.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_shuffled_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_shuffled_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_shuffled_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.0,
+          "prediction_flip_rate": 1.0,
+          "label_retention_rate": 0.0,
+          "num_samples": 3
+        }
+      },
+      "wrong_class": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/stv/wrong_class.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_wrong_class_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_wrong_class_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_stv_wrong_class_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.0,
+          "prediction_flip_rate": 0.6666666666666666,
+          "label_retention_rate": 0.0,
+          "num_samples": 3
+        }
+      }
+    },
+    "i2cl": {
+      "original": {
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_i2cl_qwen2_vl_20260329_022144.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_i2cl_qwen2_vl_20260329_022144.metrics.json",
+        "summary": {
+          "accuracy": 0.6666666666666666,
+          "prediction_flip_rate": 0.0,
+          "label_retention_rate": 0.6666666666666666,
+          "num_samples": 3
+        }
+      },
+      "occluded": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/i2cl/occluded.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433.log",
+        "summary": {
+          "accuracy": 1.0,
+          "prediction_flip_rate": 0.3333333333333333,
+          "label_retention_rate": 1.0,
+          "num_samples": 3
+        }
+      },
+      "shuffled": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/i2cl/shuffled.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_shuffled_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_shuffled_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_shuffled_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.6666666666666666,
+          "prediction_flip_rate": 0.3333333333333333,
+          "label_retention_rate": 0.6666666666666666,
+          "num_samples": 3
+        }
+      },
+      "wrong_class": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/i2cl/wrong_class.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.0,
+          "prediction_flip_rate": 1.0,
+          "label_retention_rate": 0.0,
+          "num_samples": 3
+        }
+      }
+    },
+    "mimic": {
+      "original": {
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_mimic_qwen2_vl_20260329_022144.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_mimic_qwen2_vl_20260329_022144.metrics.json",
+        "summary": {
+          "accuracy": 0.6666666666666666,
+          "prediction_flip_rate": 0.0,
+          "label_retention_rate": 0.6666666666666666,
+          "num_samples": 3
+        }
+      },
+      "occluded": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/mimic/occluded.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.3333333333333333,
+          "prediction_flip_rate": 0.3333333333333333,
+          "label_retention_rate": 0.3333333333333333,
+          "num_samples": 3
+        }
+      },
+      "shuffled": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/mimic/shuffled.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_shuffled_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_shuffled_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_shuffled_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.0,
+          "prediction_flip_rate": 0.6666666666666666,
+          "label_retention_rate": 0.0,
+          "num_samples": 3
+        }
+      },
+      "wrong_class": {
+        "subset_path": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/mimic/wrong_class.json",
+        "predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433.predictions.jsonl",
+        "metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433.metrics.json",
+        "log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433.log",
+        "summary": {
+          "accuracy": 0.0,
+          "prediction_flip_rate": 1.0,
+          "label_retention_rate": 0.0,
+          "num_samples": 3
+        }
+      }
+    }
+  },
+  "figure_path": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_counterfactual_pets_fgvc_20260329_023433.png",
+  "summary": {
+    "stv": {
+      "original": {
+        "accuracy": 0.3333333333333333,
+        "prediction_flip_rate": 0.0,
+        "label_retention_rate": 0.3333333333333333,
+        "num_samples": 3
+      },
+      "occluded": {
+        "accuracy": 0.3333333333333333,
+        "prediction_flip_rate": 0.0,
+        "label_retention_rate": 0.3333333333333333,
+        "num_samples": 3
+      },
+      "shuffled": {
+        "accuracy": 0.0,
+        "prediction_flip_rate": 1.0,
+        "label_retention_rate": 0.0,
+        "num_samples": 3
+      },
+      "wrong_class": {
+        "accuracy": 0.0,
+        "prediction_flip_rate": 0.6666666666666666,
+        "label_retention_rate": 0.0,
+        "num_samples": 3
+      }
+    },
+    "i2cl": {
+      "original": {
+        "accuracy": 0.6666666666666666,
+        "prediction_flip_rate": 0.0,
+        "label_retention_rate": 0.6666666666666666,
+        "num_samples": 3
+      },
+      "occluded": {
+        "accuracy": 1.0,
+        "prediction_flip_rate": 0.3333333333333333,
+        "label_retention_rate": 1.0,
+        "num_samples": 3
+      },
+      "shuffled": {
+        "accuracy": 0.6666666666666666,
+        "prediction_flip_rate": 0.3333333333333333,
+        "label_retention_rate": 0.6666666666666666,
+        "num_samples": 3
+      },
+      "wrong_class": {
+        "accuracy": 0.0,
+        "prediction_flip_rate": 1.0,
+        "label_retention_rate": 0.0,
+        "num_samples": 3
+      }
+    },
+    "mimic": {
+      "original": {
+        "accuracy": 0.6666666666666666,
+        "prediction_flip_rate": 0.0,
+        "label_retention_rate": 0.6666666666666666,
+        "num_samples": 3
+      },
+      "occluded": {
+        "accuracy": 0.3333333333333333,
+        "prediction_flip_rate": 0.3333333333333333,
+        "label_retention_rate": 0.3333333333333333,
+        "num_samples": 3
+      },
+      "shuffled": {
+        "accuracy": 0.0,
+        "prediction_flip_rate": 0.6666666666666666,
+        "label_retention_rate": 0.0,
+        "num_samples": 3
+      },
+      "wrong_class": {
+        "accuracy": 0.0,
+        "prediction_flip_rate": 1.0,
+        "label_retention_rate": 0.0,
+        "num_samples": 3
+      }
+    }
+  }
+}

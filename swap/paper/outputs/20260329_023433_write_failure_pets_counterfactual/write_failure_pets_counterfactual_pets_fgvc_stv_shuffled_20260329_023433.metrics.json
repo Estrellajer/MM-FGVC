@@ -1,0 +1,153 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "pets_fgvc",
+  "method": "stv",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 3.0,
+    "label_order": [
+      "great pyrenees",
+      "english cocker spaniel",
+      "Maine Coon",
+      "Let's analyze the image step by step:\n\n1. The image shows a close",
+      "Let's analyze the image step by step:\n\n1. The animal has has curly",
+      "The animal in the image is a cat. Therefore, the correct answer is:"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "great pyrenees",
+        "english cocker spaniel",
+        "Maine Coon",
+        "Let's analyze the image step by step:\n\n1. The image shows a close",
+        "Let's analyze the image step by step:\n\n1. The animal has has curly",
+        "The animal in the image is a cat. Therefore, the correct answer is:"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "great pyrenees": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "english cocker spaniel": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "Maine Coon": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "Let's analyze the image step by step:\n\n1. The image shows a close": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "Let's analyze the image step by step:\n\n1. The animal has has curly": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The animal in the image is a cat. Therefore, the correct answer is:": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 15.040178271010518,
+    "predict_time_sec": 2.0970568507909775,
+    "total_time_sec": 17.137235121801496,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 0.6990189502636591
+  }
+}

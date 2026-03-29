@@ -1,0 +1,842 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. great pyrenees B. keeshond C. american pit bull terrier D. leonberger",
+    "label": "leonberger",
+    "question_id": 1883,
+    "split": null,
+    "extra": {
+      "class_id": 20,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. chihuahua B. newfoundland C. samoyed D. Abyssinian",
+    "label": "chihuahua",
+    "question_id": 986,
+    "split": null,
+    "extra": {
+      "class_id": 11,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. newfoundland B. boxer C. Sphynx D. pomeranian",
+    "label": "newfoundland",
+    "question_id": 2184,
+    "split": null,
+    "extra": {
+      "class_id": 23,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_200.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_200.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. Ragdoll C. boxer D. Bengal",
+    "label": "staffordshire bull terrier",
+    "question_id": 3380,
+    "split": null,
+    "extra": {
+      "class_id": 35,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/english_cocker_spaniel_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/english_cocker_spaniel_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Egyptian Mau B. boxer C. english cocker spaniel D. shiba inu",
+    "label": "english cocker spaniel",
+    "question_id": 1186,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Ragdoll_205.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Ragdoll_205.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. havanese B. Ragdoll C. american pit bull terrier D. Persian",
+    "label": "Ragdoll",
+    "question_id": 2583,
+    "split": null,
+    "extra": {
+      "class_id": 27,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/keeshond_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/keeshond_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. english cocker spaniel B. keeshond C. Egyptian Mau D. Bombay",
+    "label": "keeshond",
+    "question_id": 1783,
+    "split": null,
+    "extra": {
+      "class_id": 19,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Birman B. Russian Blue C. chihuahua D. Abyssinian",
+    "label": "chihuahua",
+    "question_id": 989,
+    "split": null,
+    "extra": {
+      "class_id": 11,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Bombay_204.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Bombay_204.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Maine Coon B. scottish terrier C. pomeranian D. Bombay",
+    "label": "Bombay",
+    "question_id": 701,
+    "split": null,
+    "extra": {
+      "class_id": 8,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. leonberger C. British Shorthair D. Bombay",
+    "label": "leonberger",
+    "question_id": 1884,
+    "split": null,
+    "extra": {
+      "class_id": 20,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/beagle_198.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/beagle_198.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. beagle C. english setter D. Abyssinian",
+    "label": "beagle",
+    "question_id": 401,
+    "split": null,
+    "extra": {
+      "class_id": 5,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/japanese_chin_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/japanese_chin_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. japanese chin B. american pit bull terrier C. wheaten terrier D. Egyptian Mau",
+    "label": "japanese chin",
+    "question_id": 1685,
+    "split": null,
+    "extra": {
+      "class_id": 18,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/english_cocker_spaniel_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/english_cocker_spaniel_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. english cocker spaniel B. great pyrenees C. wheaten terrier D. pug",
+    "label": "english cocker spaniel",
+    "question_id": 1182,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/miniature_pinscher_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/miniature_pinscher_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Bombay B. miniature pinscher C. basset hound D. staffordshire bull terrier",
+    "label": "miniature pinscher",
+    "question_id": 2083,
+    "split": null,
+    "extra": {
+      "class_id": 22,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Maine_Coon_231.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Maine_Coon_231.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. english cocker spaniel C. chihuahua D. Maine Coon",
+    "label": "Maine Coon",
+    "question_id": 1984,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. samoyed C. great pyrenees D. wheaten terrier",
+    "label": "great pyrenees",
+    "question_id": 1485,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. chihuahua B. english setter C. Siamese D. pug",
+    "label": "chihuahua",
+    "question_id": 985,
+    "split": null,
+    "extra": {
+      "class_id": 11,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/yorkshire_terrier_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/yorkshire_terrier_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. samoyed B. Russian Blue C. yorkshire terrier D. basset hound",
+    "label": "yorkshire terrier",
+    "question_id": 3571,
+    "split": null,
+    "extra": {
+      "class_id": 37,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_212.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_212.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. chihuahua B. english cocker spaniel C. yorkshire terrier D. British Shorthair",
+    "label": "British Shorthair",
+    "question_id": 885,
+    "split": null,
+    "extra": {
+      "class_id": 10,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/keeshond_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/keeshond_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. german shorthaired B. basset hound C. keeshond D. British Shorthair",
+    "label": "keeshond",
+    "question_id": 1785,
+    "split": null,
+    "extra": {
+      "class_id": 19,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/scottish_terrier_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/scottish_terrier_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. miniature pinscher B. Maine Coon C. american bulldog D. scottish terrier",
+    "label": "scottish terrier",
+    "question_id": 2981,
+    "split": null,
+    "extra": {
+      "class_id": 31,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Bombay_201.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Bombay_201.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Bombay B. beagle C. american bulldog D. saint bernard",
+    "label": "Bombay",
+    "question_id": 699,
+    "split": null,
+    "extra": {
+      "class_id": 8,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/scottish_terrier_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/scottish_terrier_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. beagle B. scottish terrier C. miniature pinscher D. Birman",
+    "label": "scottish terrier",
+    "question_id": 2985,
+    "split": null,
+    "extra": {
+      "class_id": 31,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/japanese_chin_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/japanese_chin_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Bombay B. japanese chin C. yorkshire terrier D. keeshond",
+    "label": "japanese chin",
+    "question_id": 1684,
+    "split": null,
+    "extra": {
+      "class_id": 18,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. great pyrenees B. Ragdoll C. chihuahua D. Bombay",
+    "label": "great pyrenees",
+    "question_id": 1482,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/yorkshire_terrier_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/yorkshire_terrier_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. newfoundland B. saint bernard C. yorkshire terrier D. pug",
+    "label": "yorkshire terrier",
+    "question_id": 3569,
+    "split": null,
+    "extra": {
+      "class_id": 37,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Maine_Coon_222.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Maine_Coon_222.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Abyssinian B. Maine Coon C. keeshond D. Russian Blue",
+    "label": "Maine Coon",
+    "question_id": 1982,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Ragdoll_208.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Ragdoll_208.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. miniature pinscher B. beagle C. Ragdoll D. great pyrenees",
+    "label": "Ragdoll",
+    "question_id": 2584,
+    "split": null,
+    "extra": {
+      "class_id": 27,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Siamese_218.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Siamese_218.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. British Shorthair B. samoyed C. Siamese D. Abyssinian",
+    "label": "Siamese",
+    "question_id": 3184,
+    "split": null,
+    "extra": {
+      "class_id": 33,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/beagle_196.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/beagle_196.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. basset hound C. beagle D. chihuahua",
+    "label": "beagle",
+    "question_id": 399,
+    "split": null,
+    "extra": {
+      "class_id": 5,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/english_setter_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/english_setter_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. english setter B. beagle C. miniature pinscher D. Abyssinian",
+    "label": "english setter",
+    "question_id": 1284,
+    "split": null,
+    "extra": {
+      "class_id": 14,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/english_setter_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/english_setter_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. scottish terrier B. beagle C. Birman D. english setter",
+    "label": "english setter",
+    "question_id": 1286,
+    "split": null,
+    "extra": {
+      "class_id": 14,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/wheaten_terrier_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/wheaten_terrier_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. german shorthaired B. wheaten terrier C. Ragdoll D. chihuahua",
+    "label": "wheaten terrier",
+    "question_id": 3471,
+    "split": null,
+    "extra": {
+      "class_id": 36,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Sphynx_212.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Sphynx_212.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Sphynx B. american pit bull terrier C. Maine Coon D. pug",
+    "label": "Sphynx",
+    "question_id": 3282,
+    "split": null,
+    "extra": {
+      "class_id": 34,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Maine_Coon_227.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Maine_Coon_227.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Maine Coon B. wheaten terrier C. newfoundland D. english setter",
+    "label": "Maine Coon",
+    "question_id": 1983,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Sphynx_211.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Sphynx_211.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. havanese B. boxer C. Persian D. Sphynx",
+    "label": "Sphynx",
+    "question_id": 3281,
+    "split": null,
+    "extra": {
+      "class_id": 34,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Ragdoll_204.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Ragdoll_204.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. german shorthaired B. Persian C. basset hound D. Ragdoll",
+    "label": "Ragdoll",
+    "question_id": 2582,
+    "split": null,
+    "extra": {
+      "class_id": 27,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/english_setter_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/english_setter_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. miniature pinscher B. english setter C. newfoundland D. Ragdoll",
+    "label": "english setter",
+    "question_id": 1283,
+    "split": null,
+    "extra": {
+      "class_id": 14,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_193.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_193.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. samoyed B. pug C. newfoundland D. english cocker spaniel",
+    "label": "newfoundland",
+    "question_id": 2183,
+    "split": null,
+    "extra": {
+      "class_id": 23,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. samoyed B. japanese chin C. Maine Coon D. great pyrenees",
+    "label": "great pyrenees",
+    "question_id": 1483,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/wheaten_terrier_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/wheaten_terrier_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. wheaten terrier B. Persian C. shiba inu D. Abyssinian",
+    "label": "wheaten terrier",
+    "question_id": 3472,
+    "split": null,
+    "extra": {
+      "class_id": 36,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. beagle B. Egyptian Mau C. newfoundland D. leonberger",
+    "label": "newfoundland",
+    "question_id": 2185,
+    "split": null,
+    "extra": {
+      "class_id": 23,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/keeshond_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/keeshond_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Abyssinian B. Egyptian Mau C. keeshond D. american pit bull terrier",
+    "label": "keeshond",
+    "question_id": 1782,
+    "split": null,
+    "extra": {
+      "class_id": 19,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Siamese_216.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Siamese_216.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. British Shorthair B. english setter C. newfoundland D. Siamese",
+    "label": "Siamese",
+    "question_id": 3183,
+    "split": null,
+    "extra": {
+      "class_id": 33,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_218.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_218.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Maine Coon B. yorkshire terrier C. Persian D. British Shorthair",
+    "label": "British Shorthair",
+    "question_id": 887,
+    "split": null,
+    "extra": {
+      "class_id": 10,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Sphynx_20.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Sphynx_20.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. german shorthaired B. great pyrenees C. english setter D. Sphynx",
+    "label": "Sphynx",
+    "question_id": 3280,
+    "split": null,
+    "extra": {
+      "class_id": 34,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/english_cocker_spaniel_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/english_cocker_spaniel_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. english cocker spaniel B. boxer C. yorkshire terrier D. samoyed",
+    "label": "english cocker spaniel",
+    "question_id": 1185,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_21.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_21.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. Sphynx C. Birman D. japanese chin",
+    "label": "staffordshire bull terrier",
+    "question_id": 3384,
+    "split": null,
+    "extra": {
+      "class_id": 35,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Bombay_202.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Bombay_202.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. leonberger B. Bombay C. pomeranian D. Sphynx",
+    "label": "Bombay",
+    "question_id": 700,
+    "split": null,
+    "extra": {
+      "class_id": 8,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/wheaten_terrier_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/wheaten_terrier_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. shiba inu B. wheaten terrier C. pug D. english cocker spaniel",
+    "label": "wheaten terrier",
+    "question_id": 3473,
+    "split": null,
+    "extra": {
+      "class_id": 36,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_21.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_21.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. japanese chin B. miniature pinscher C. wheaten terrier D. British Shorthair",
+    "label": "British Shorthair",
+    "question_id": 888,
+    "split": null,
+    "extra": {
+      "class_id": 10,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_20.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_20.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. saint bernard B. staffordshire bull terrier C. yorkshire terrier D. Persian",
+    "label": "staffordshire bull terrier",
+    "question_id": 3383,
+    "split": null,
+    "extra": {
+      "class_id": 35,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/scottish_terrier_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/scottish_terrier_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. chihuahua B. Ragdoll C. scottish terrier D. Sphynx",
+    "label": "scottish terrier",
+    "question_id": 2982,
+    "split": null,
+    "extra": {
+      "class_id": 31,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/beagle_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/beagle_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. havanese B. keeshond C. german shorthaired D. beagle",
+    "label": "beagle",
+    "question_id": 398,
+    "split": null,
+    "extra": {
+      "class_id": 5,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/miniature_pinscher_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/miniature_pinscher_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. miniature pinscher B. leonberger C. keeshond D. Bengal",
+    "label": "miniature pinscher",
+    "question_id": 2085,
+    "split": null,
+    "extra": {
+      "class_id": 22,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/Siamese_210.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/Siamese_210.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Russian Blue B. Maine Coon C. beagle D. Siamese",
+    "label": "Siamese",
+    "question_id": 3182,
+    "split": null,
+    "extra": {
+      "class_id": 33,
+      "answer": "D"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/japanese_chin_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/japanese_chin_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. great pyrenees B. english setter C. japanese chin D. staffordshire bull terrier",
+    "label": "japanese chin",
+    "question_id": 1683,
+    "split": null,
+    "extra": {
+      "class_id": 18,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/miniature_pinscher_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/miniature_pinscher_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. german shorthaired B. miniature pinscher C. havanese D. samoyed",
+    "label": "miniature pinscher",
+    "question_id": 2084,
+    "split": null,
+    "extra": {
+      "class_id": 22,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_191.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_191.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. leonberger B. Egyptian Mau C. scottish terrier D. german shorthaired",
+    "label": "leonberger",
+    "question_id": 1881,
+    "split": null,
+    "extra": {
+      "class_id": 20,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/yorkshire_terrier_195.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/yorkshire_terrier_195.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Persian B. beagle C. yorkshire terrier D. english cocker spaniel",
+    "label": "yorkshire terrier",
+    "question_id": 3573,
+    "split": null,
+    "extra": {
+      "class_id": 37,
+      "answer": "C"
+    }
+  }
+]

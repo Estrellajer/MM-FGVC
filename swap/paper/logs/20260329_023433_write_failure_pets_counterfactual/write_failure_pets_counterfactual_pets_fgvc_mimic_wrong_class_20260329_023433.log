@@ -1,0 +1,104 @@
+# command=/root/autodl-tmp/FGVC/.venv/bin/python /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=mimic evaluator=raw dataset.name=pets_fgvc dataset.train_path=swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/pets_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/mimic/wrong_class.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual run.run_name=write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433 run.seed=42 run.progress_bar=false method.params.progress_bar=false +model.model_args.attn_implementation=eager method.params.max_steps=32
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:41,  3.30it/s]Loading weights:   0%|          | 2/730 [00:00<03:33,  3.41it/s]Loading weights:   1%|          | 6/730 [00:00<01:04, 11.17it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:20, 34.43it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:13, 51.35it/s]Loading weights:   6%|▌         | 42/730 [00:01<00:11, 60.97it/s]Loading weights:   7%|▋         | 53/730 [00:01<00:09, 71.35it/s]Loading weights:   9%|▉         | 64/730 [00:01<00:08, 78.71it/s]Loading weights:  10%|█         | 76/730 [00:01<00:07, 83.51it/s]Loading weights:  12%|█▏        | 86/730 [00:01<00:07, 81.82it/s]Loading weights:  13%|█▎        | 95/730 [00:01<00:07, 79.95it/s]Loading weights:  14%|█▍        | 104/730 [00:01<00:08, 77.15it/s]Loading weights:  15%|█▌        | 112/730 [00:02<00:12, 49.26it/s]Loading weights:  20%|█▉        | 144/730 [00:02<00:05, 99.85it/s]Loading weights:  22%|██▏       | 158/730 [00:02<00:05, 103.27it/s]Loading weights:  24%|██▎       | 172/730 [00:02<00:06, 81.18it/s] Loading weights:  25%|██▌       | 186/730 [00:02<00:06, 87.21it/s]Loading weights:  27%|██▋       | 198/730 [00:02<00:05, 88.72it/s]Loading weights:  29%|██▊       | 209/730 [00:03<00:05, 89.34it/s]Loading weights:  30%|███       | 220/730 [00:03<00:05, 93.55it/s]Loading weights:  32%|███▏      | 232/730 [00:03<00:05, 86.47it/s]Loading weights:  33%|███▎      | 242/730 [00:03<00:05, 84.05it/s]Loading weights:  35%|███▌      | 256/730 [00:03<00:05, 94.30it/s]Loading weights:  37%|███▋      | 268/730 [00:03<00:04, 96.07it/s]Loading weights:  38%|███▊      | 278/730 [00:03<00:05, 85.38it/s]Loading weights:  40%|████      | 292/730 [00:03<00:04, 93.88it/s]Loading weights:  41%|████▏     | 302/730 [00:04<00:07, 60.95it/s]Loading weights:  45%|████▌     | 329/730 [00:04<00:04, 97.07it/s]Loading weights:  52%|█████▏    | 383/730 [00:04<00:01, 187.07it/s]Loading weights:  68%|██████▊   | 499/730 [00:04<00:00, 404.25it/s]Loading weights:  83%|████████▎ | 607/730 [00:04<00:00, 565.03it/s]Loading weights:  97%|█████████▋| 707/730 [00:04<00:00, 673.29it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 151.39it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 3.0
+  label_order:
+  - great pyrenees
+  - leonberger
+  - British Shorthair
+  - A. pug
+  - The animal in the image is a dog.
+  confusion_matrix:
+    labels:
+    - great pyrenees
+    - leonberger
+    - British Shorthair
+    - A. pug
+    - The animal in the image is a dog.
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    great pyrenees:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    leonberger:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    British Shorthair:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    A. pug:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The animal in the image is a dog.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_wrong_class_20260329_023433.diagnostics.json
+

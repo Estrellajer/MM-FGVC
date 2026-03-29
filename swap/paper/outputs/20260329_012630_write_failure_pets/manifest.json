@@ -1,0 +1,18 @@
+{
+  "suite_name": "write_failure_pets",
+  "timestamp": "20260329_012630",
+  "model": "qwen2_vl",
+  "dataset_name": "pets_fgvc",
+  "dataset_label": "Pets",
+  "seed": 42,
+  "train_path": "swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/pets_fgvc/train_subset.json",
+  "source_val_path": "swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/pets_fgvc/val_subset.json",
+  "analysis_val_path": "/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_012630_write_failure_pets/pets_fgvc/val_balanced.json",
+  "analysis_val_size": 60,
+  "methods": [
+    "stv",
+    "i2cl",
+    "mimic"
+  ],
+  "answer_source": "label"
+}

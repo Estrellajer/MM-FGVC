@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_192.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/chihuahua_192.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. samoyed C. great pyrenees D. wheaten terrier",
+    "label": "great pyrenees",
+    "question_id": 1485,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/newfoundland_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. english cocker spaniel B. great pyrenees C. wheaten terrier D. pug",
+    "label": "english cocker spaniel",
+    "question_id": 1182,
+    "split": null,
+    "extra": {
+      "class_id": 13,
+      "answer": "A"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_200.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/staffordshire_bull_terrier_200.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. english cocker spaniel C. chihuahua D. Maine Coon",
+    "label": "Maine Coon",
+    "question_id": 1984,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "D"
+    }
+  }
+]

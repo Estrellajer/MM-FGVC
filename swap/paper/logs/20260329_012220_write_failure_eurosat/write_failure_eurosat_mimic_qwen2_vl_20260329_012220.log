@@ -1,0 +1,676 @@
+# command=/root/autodl-tmp/FGVC/.venv/bin/python /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=mimic evaluator=raw dataset.name=eurosat_fgvc dataset.train_path=swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_012220_write_failure_eurosat/cub_fgvc/val_balanced.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat run.run_name=write_failure_eurosat_mimic_qwen2_vl_20260329_012220 run.seed=42 run.progress_bar=false method.params.progress_bar=false +model.model_args.attn_implementation=eager method.params.write_failure_dump_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat/write_failure/mimic method.params.write_failure_max_samples=30 method.params.write_failure_heatmap_samples=3 method.params.write_failure_query_last_k=3 method.params.write_failure_answer_source=label method.params.max_steps=32
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:07,  5.71it/s]Loading weights:   0%|          | 2/730 [00:00<02:21,  5.16it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:16, 42.99it/s]Loading weights:   3%|▎         | 22/730 [00:00<00:15, 45.50it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:10, 67.89it/s]Loading weights:  10%|█         | 76/730 [00:00<00:05, 126.19it/s]Loading weights:  12%|█▏        | 91/730 [00:01<00:05, 119.93it/s]Loading weights:  15%|█▍        | 108/730 [00:01<00:04, 131.87it/s]Loading weights:  17%|█▋        | 124/730 [00:01<00:04, 124.94it/s]Loading weights:  19%|█▉        | 138/730 [00:01<00:04, 122.34it/s]Loading weights:  21%|██▏       | 156/730 [00:01<00:04, 136.27it/s]Loading weights:  24%|██▎       | 172/730 [00:01<00:04, 120.70it/s]Loading weights:  26%|██▋       | 192/730 [00:01<00:03, 138.20it/s]Loading weights:  28%|██▊       | 208/730 [00:01<00:03, 137.47it/s]Loading weights:  31%|███       | 223/730 [00:02<00:04, 126.68it/s]Loading weights:  33%|███▎      | 244/730 [00:02<00:03, 139.69it/s]Loading weights:  35%|███▌      | 259/730 [00:02<00:03, 129.55it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 135.38it/s]Loading weights:  40%|████      | 294/730 [00:02<00:03, 132.67it/s]Loading weights:  43%|████▎     | 314/730 [00:02<00:02, 149.53it/s]Loading weights:  45%|████▌     | 330/730 [00:02<00:03, 131.33it/s]Loading weights:  65%|██████▌   | 477/730 [00:02<00:00, 460.01it/s]Loading weights:  87%|████████▋ | 635/730 [00:03<00:00, 748.74it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 231.75it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.3
+  correct: 9.0
+  total: 30.0
+  label_order:
+  - Annual Crop Land
+  - Pasture Land
+  - Residential Buildings
+  - River
+  - Forest
+  - Sea or Lake
+  - Industrial Buildings
+  - Highway or Road
+  - Herbaceous Vegetation Land
+  - Permanent Crop Land
+  - To determine the type of remote sensing image, we need to analyze the features
+    visible
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a dense'
+  - The given image is a satellite image, which is a type of remote sensing image
+  - To determine the type of remote sensing image, let's analyze the image step by
+  - The given image is a Landsat image, which is a type of remote sensing
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a linear'
+  - 'Let''s analyze the image step by step:
+
+
+    1. The image shows a large'
+  - To determine the type of remote sensing image, we need to analyze the characteristics
+    of
+  - The given image is a satellite or aerial photograph of a large area of land.
+  - The given image is a satellite image of a city or industrial area. The buildings
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Pasture Land
+    - Residential Buildings
+    - River
+    - Forest
+    - Sea or Lake
+    - Industrial Buildings
+    - Highway or Road
+    - Herbaceous Vegetation Land
+    - Permanent Crop Land
+    - To determine the type of remote sensing image, we need to analyze the features
+      visible
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a dense'
+    - The given image is a satellite image, which is a type of remote sensing image
+    - To determine the type of remote sensing image, let's analyze the image step
+      by
+    - The given image is a Landsat image, which is a type of remote sensing
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a linear'
+    - 'Let''s analyze the image step by step:
+
+
+      1. The image shows a large'
+    - To determine the type of remote sensing image, we need to analyze the characteristics
+      of
+    - The given image is a satellite or aerial photograph of a large area of land.
+    - The given image is a satellite image of a city or industrial area. The buildings
+    matrix:
+    - - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 1
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 3
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    Annual Crop Land:
+      precision: 1.0
+      recall: 0.3333333333333333
+      f1: 0.5
+      support: 3.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Pasture Land:
+      precision: 1.0
+      recall: 0.3333333333333333
+      f1: 0.5
+      support: 3.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Residential Buildings:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 3.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 3.0
+    River:
+      precision: 0.75
+      recall: 1.0
+      f1: 0.8571428571428571
+      support: 3.0
+      predicted: 4.0
+      true_positive: 3.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Forest:
+      precision: 0.5
+      recall: 0.3333333333333333
+      f1: 0.4
+      support: 3.0
+      predicted: 2.0
+      true_positive: 1.0
+      false_positive: 1.0
+      false_negative: 2.0
+    Sea or Lake:
+      precision: 0.6666666666666666
+      recall: 0.6666666666666666
+      f1: 0.6666666666666666
+      support: 3.0
+      predicted: 3.0
+      true_positive: 2.0
+      false_positive: 1.0
+      false_negative: 1.0
+    Industrial Buildings:
+      precision: 1.0
+      recall: 0.3333333333333333
+      f1: 0.5
+      support: 3.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Highway or Road:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 3.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 3.0
+    Herbaceous Vegetation Land:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 3.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 3.0
+    Permanent Crop Land:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 3.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 3.0
+    To determine the type of remote sensing image, we need to analyze the features visible:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 4.0
+      true_positive: 0.0
+      false_positive: 4.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a dense'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The given image is a satellite image, which is a type of remote sensing image:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    To determine the type of remote sensing image, let's analyze the image step by:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The given image is a Landsat image, which is a type of remote sensing:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a linear'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The image shows a large'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 3.0
+      true_positive: 0.0
+      false_positive: 3.0
+      false_negative: 0.0
+    To determine the type of remote sensing image, we need to analyze the characteristics of:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 2.0
+      true_positive: 0.0
+      false_positive: 2.0
+      false_negative: 0.0
+    The given image is a satellite or aerial photograph of a large area of land.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The given image is a satellite image of a city or industrial area. The buildings:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.24583333333333335
+  macro_recall: 0.15
+  macro_f1: 0.17119047619047617
+  balanced_accuracy: 0.15
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat/write_failure_eurosat_mimic_qwen2_vl_20260329_012220.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat/write_failure_eurosat_mimic_qwen2_vl_20260329_012220.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012220_write_failure_eurosat/write_failure_eurosat_mimic_qwen2_vl_20260329_012220.diagnostics.json
+

@@ -1,0 +1,105 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "eurosat",
+  "method": "mimic",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 3.0,
+    "label_order": [
+      "Annual Crop Land",
+      "D. Sea or",
+      "A. Annual Crop",
+      "D. Permanent Crop"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Annual Crop Land",
+        "D. Sea or",
+        "A. Annual Crop",
+        "D. Permanent Crop"
+      ],
+      "matrix": [
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "Annual Crop Land": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 3.0
+      },
+      "D. Sea or": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "A. Annual Crop": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "D. Permanent Crop": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 1.1166911907494068,
+    "predict_time_sec": 1.2568405885249376,
+    "total_time_sec": 2.3735317792743444,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 0.4189468628416459
+  }
+}

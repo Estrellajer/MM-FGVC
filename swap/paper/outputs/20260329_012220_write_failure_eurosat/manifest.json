@@ -1,0 +1,18 @@
+{
+  "suite_name": "write_failure_eurosat",
+  "timestamp": "20260329_012220",
+  "model": "qwen2_vl",
+  "dataset_name": "eurosat_fgvc",
+  "dataset_label": "EuroSAT",
+  "seed": 42,
+  "train_path": "swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/train_subset.json",
+  "source_val_path": "swap/paper/subsets/20260327_020551_c3_efficiency/seed_42/eurosat_fgvc/val_subset.json",
+  "analysis_val_path": "/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_012220_write_failure_eurosat/cub_fgvc/val_balanced.json",
+  "analysis_val_size": 30,
+  "methods": [
+    "stv",
+    "i2cl",
+    "mimic"
+  ],
+  "answer_source": "label"
+}

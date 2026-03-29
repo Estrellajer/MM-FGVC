@@ -20,3 +20,8 @@ params:
   do_sample: false
   temperature: 0.0
   progress_bar: true
+  write_failure_dump_dir: null
+  write_failure_max_samples: 0
+  write_failure_heatmap_samples: 2
+  write_failure_query_last_k: 3
+  write_failure_answer_source: label

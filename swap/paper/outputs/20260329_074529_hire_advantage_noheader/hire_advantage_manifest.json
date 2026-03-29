@@ -1,0 +1,30 @@
+{
+  "source_output_root": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012630_write_failure_pets",
+  "common_subset": "/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_012630_write_failure_pets/pets_fgvc/val_balanced.json",
+  "hire_method": "keco",
+  "hire_metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_074529_hire_advantage_noheader/hire_advantage_pets_fgvc_keco_qwen2_vl_20260329_074529.metrics.json",
+  "hire_log": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_074529_hire_advantage_noheader/hire_advantage_pets_fgvc_keco_qwen2_vl_20260329_074529.log",
+  "figure_path": "/root/autodl-tmp/FGVC/swap/paper/figures/hire_advantage_noheader_pets_fgvc_20260329_074529.png",
+  "stats": {
+    "stv": {
+      "accuracy": 0.7666666666666667,
+      "drift": 0.00036717526333328955,
+      "norm_ratio": 0.0007724400211979325
+    },
+    "i2cl": {
+      "accuracy": 0.7666666666666667,
+      "drift": 0.011947004031389952,
+      "norm_ratio": 0.3061426560084025
+    },
+    "mimic": {
+      "accuracy": 0.7666666666666667,
+      "drift": 0.019107921545704207,
+      "norm_ratio": 0.007339899575648208
+    },
+    "keco": {
+      "accuracy": 0.9833333333333333,
+      "drift": 0.0,
+      "norm_ratio": 0.0
+    }
+  }
+}

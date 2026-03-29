@@ -1,0 +1,16 @@
+{
+  "source_output_root": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012630_write_failure_pets",
+  "targeted_selection": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/targeted_replay_selection.json",
+  "dataset_name": "pets_fgvc",
+  "dataset_label": "Pets",
+  "methods": [
+    "stv",
+    "i2cl",
+    "mimic"
+  ],
+  "figures": {
+    "hidden_drift": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_compare_pets_fgvc_hidden_drift_20260329_023135.png",
+    "norm_mismatch": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_compare_pets_fgvc_norm_mismatch_20260329_023135.png",
+    "attention_concentration": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_compare_pets_fgvc_attention_concentration_20260329_023135.png"
+  }
+}

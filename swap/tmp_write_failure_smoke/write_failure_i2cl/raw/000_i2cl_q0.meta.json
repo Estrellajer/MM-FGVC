@@ -1,0 +1,19 @@
+{
+  "method": "i2cl",
+  "question_id": 0,
+  "label": "Annual Crop Land",
+  "analysis_answer_text": "Annual Crop Land",
+  "image": "/root/autodl-tmp/FGVC/Data/Eurosat/2750/AnnualCrop/AnnualCrop_1048.jpg",
+  "normal_bundle": "swap/tmp_write_failure_smoke/write_failure_i2cl/raw/000_i2cl_q0.normal.pt",
+  "steered_bundle": "swap/tmp_write_failure_smoke/write_failure_i2cl/raw/000_i2cl_q0.steered.pt",
+  "query_token_indices": [
+    67,
+    68
+  ],
+  "image_token_indices": [
+    15,
+    16,
+    17,
+    18
+  ]
+}

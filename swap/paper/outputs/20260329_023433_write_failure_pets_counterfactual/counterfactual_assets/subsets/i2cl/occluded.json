@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/i2cl/1982_occluded.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/i2cl/1982_occluded.png"
+    ],
+    "question": "What type of animal is in the image?\nA. Abyssinian B. Maine Coon C. keeshond D. Russian Blue",
+    "label": "Maine Coon",
+    "question_id": 1982,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/i2cl/3184_occluded.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/i2cl/3184_occluded.png"
+    ],
+    "question": "What type of animal is in the image?\nA. British Shorthair B. samoyed C. Siamese D. Abyssinian",
+    "label": "Siamese",
+    "question_id": 3184,
+    "split": null,
+    "extra": {
+      "class_id": 33,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/i2cl/1984_occluded.png",
+    "images": [
+      "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/images/i2cl/1984_occluded.png"
+    ],
+    "question": "What type of animal is in the image?\nA. staffordshire bull terrier B. english cocker spaniel C. chihuahua D. Maine Coon",
+    "label": "Maine Coon",
+    "question_id": 1984,
+    "split": null,
+    "extra": {
+      "class_id": 21,
+      "answer": "D"
+    }
+  }
+]

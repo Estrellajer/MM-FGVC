@@ -1,0 +1,113 @@
+# command=/root/autodl-tmp/FGVC/.venv/bin/python /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=pets_fgvc dataset.train_path=swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/pets_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/i2cl/wrong_class.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual run.run_name=write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433 run.seed=42 run.progress_bar=false method.params.progress_bar=false +model.model_args.attn_implementation=eager method.params.max_steps=48
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:17,  3.68it/s]Loading weights:   0%|          | 2/730 [00:00<03:25,  3.54it/s]Loading weights:   1%|          | 6/730 [00:00<01:03, 11.44it/s]Loading weights:   1%|          | 8/730 [00:00<00:57, 12.66it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:12, 55.54it/s]Loading weights:   6%|▌         | 42/730 [00:01<00:09, 69.92it/s]Loading weights:   7%|▋         | 54/730 [00:01<00:17, 38.02it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:05, 112.37it/s]Loading weights:  18%|█▊        | 133/730 [00:03<00:20, 28.86it/s] Loading weights:  56%|█████▋    | 411/730 [00:04<00:01, 167.55it/s]Loading weights:  72%|███████▏  | 523/730 [00:04<00:00, 231.38it/s]Loading weights:  87%|████████▋ | 632/730 [00:04<00:00, 306.37it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 168.08it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.0
+  correct: 0.0
+  total: 3.0
+  label_order:
+  - Maine Coon
+  - Siamese
+  - 'Let''s analyze the image step by step:
+
+
+    1. The animal has has a'
+  - The animal in the image is a dog.
+  - staffordshire bull terrier
+  confusion_matrix:
+    labels:
+    - Maine Coon
+    - Siamese
+    - 'Let''s analyze the image step by step:
+
+
+      1. The animal has has a'
+    - The animal in the image is a dog.
+    - staffordshire bull terrier
+    matrix:
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    Maine Coon:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 2.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Siamese:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    ? 'Let''s analyze the image step by step:
+
+
+      1. The animal has has a'
+    : precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The animal in the image is a dog.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    staffordshire bull terrier:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.0
+  macro_recall: 0.0
+  macro_f1: 0.0
+  balanced_accuracy: 0.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_wrong_class_20260329_023433.diagnostics.json
+

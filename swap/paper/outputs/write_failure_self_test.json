@@ -1,0 +1,142 @@
+{
+  "summary": {
+    "supports_write_failure_claim": true,
+    "interpretation": "Steered prediction tokens allocate less attention mass to image tokens than the normal run."
+  },
+  "attention": {
+    "query_token_indices": [
+      5,
+      4
+    ],
+    "num_layers_compared": 4,
+    "num_heads_compared": 3,
+    "num_image_tokens": 8,
+    "visual_attention_ratio_normal": 0.9762401580810547,
+    "visual_attention_ratio_steered": 0.03379632160067558,
+    "visual_attention_ratio_drop": 0.9424438364803791,
+    "visual_attention_ratio_drop_percent": 96.53811397524281,
+    "attention_entropy_normal": 2.196964979171753,
+    "attention_entropy_steered": 2.6126115322113037,
+    "normalized_attention_entropy_normal": 0.7333648800849915,
+    "normalized_attention_entropy_steered": 0.8721110820770264,
+    "conditional_image_entropy_normal": 0.9999809861183167,
+    "conditional_image_entropy_steered": 0.9999809861183167,
+    "attention_js_divergence": 0.5653477907180786,
+    "attention_total_variation": 0.94244384765625,
+    "per_layer_visual_attention_ratio_normal": [
+      0.9760834574699402,
+      0.976191520690918,
+      0.9761843681335449,
+      0.9765012264251709
+    ],
+    "per_layer_visual_attention_ratio_steered": [
+      0.03379008546471596,
+      0.03379436954855919,
+      0.03379407525062561,
+      0.03380676731467247
+    ],
+    "image_attention_profile_normal": [
+      0.1218281015753746,
+      0.12204273790121078,
+      0.12213679403066635,
+      0.12194327265024185,
+      0.12198686599731445,
+      0.12225522845983505,
+      0.12207627296447754,
+      0.12197089195251465
+    ],
+    "image_attention_profile_steered": [
+      0.004217550158500671,
+      0.004224975127726793,
+      0.0042282333597540855,
+      0.004221538081765175,
+      0.004223048221319914,
+      0.004232336301356554,
+      0.004226145800203085,
+      0.004222496412694454
+    ],
+    "image_attention_profile_delta": [
+      -0.11761055141687393,
+      -0.11781775951385498,
+      -0.11790855973958969,
+      -0.11772173643112183,
+      -0.11776381731033325,
+      -0.11802288889884949,
+      -0.11785012483596802,
+      -0.11774839460849762
+    ]
+  },
+  "hidden_state": {
+    "hidden_size": 16,
+    "query_token_indices": [
+      19,
+      18
+    ],
+    "representation_cosine_similarity": 0.7796975374221802,
+    "query_hidden_l2_distance": 2.4000000953674316,
+    "query_hidden_l2_ratio": 0.6615166068077087,
+    "token_norm_normal": {
+      "mean": 3.9048972129821777,
+      "std": 0.7405403852462769,
+      "min": 2.0607173442840576,
+      "max": 6.179928302764893
+    },
+    "token_norm_steered": {
+      "mean": 4.011054039001465,
+      "std": 0.8468695878982544,
+      "min": 2.0607173442840576,
+      "max": 6.492654800415039
+    },
+    "token_hidden_drift_norm": {
+      "mean": 0.4906276762485504,
+      "std": 1.0363025665283203,
+      "min": 0.0,
+      "max": 4.8000006675720215
+    },
+    "image_token_norm_normal": {
+      "mean": 4.079668998718262,
+      "std": 0.6517371535301208,
+      "min": 2.6588497161865234,
+      "max": 5.429851055145264
+    },
+    "image_token_norm_steered": {
+      "mean": 4.073423385620117,
+      "std": 0.6269511580467224,
+      "min": 2.689220428466797,
+      "max": 5.573424339294434
+    },
+    "image_token_hidden_drift_ratio": 0.1535833477973938,
+    "text_token_norm_normal": {
+      "mean": 3.7883834838867188,
+      "std": 0.7725846171379089,
+      "min": 2.0607173442840576,
+      "max": 6.179928302764893
+    },
+    "text_token_norm_steered": {
+      "mean": 3.969475507736206,
+      "std": 0.9638186097145081,
+      "min": 2.0607173442840576,
+      "max": 6.492654800415039
+    },
+    "text_token_hidden_drift_ratio": 0.10558593273162842
+  },
+  "norm_mismatch": {
+    "hidden_token_norm_mean": 3.9048972129821777,
+    "hidden_token_norm_std": 0.7405403852462769,
+    "image_token_norm_mean": 4.079668998718262,
+    "text_token_norm_mean": 3.7883834838867188,
+    "task_vector_available": true,
+    "task_vector_num_leaf_tensors": 1,
+    "task_vector_num_vectors": 1,
+    "task_vector_norm": {
+      "mean": 3.4777097702026367,
+      "std": 0.0,
+      "min": 3.4777097702026367,
+      "max": 3.4777097702026367
+    },
+    "task_vector_to_hidden_norm_ratio": 0.8906021118164062,
+    "task_vector_comparable_to_hidden": true,
+    "task_vector_to_image_token_norm_ratio": 0.8524489998817444,
+    "task_vector_to_text_token_norm_ratio": 0.9179930686950684
+  }
+}

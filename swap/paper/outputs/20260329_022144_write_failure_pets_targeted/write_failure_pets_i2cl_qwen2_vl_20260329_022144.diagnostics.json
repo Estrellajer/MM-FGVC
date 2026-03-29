@@ -1,0 +1,166 @@
+{
+  "write_failure_analysis": {
+    "enabled": true,
+    "method": "i2cl",
+    "dump_dir": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl",
+    "raw_dir": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw",
+    "num_analyzed_samples": 3,
+    "query_last_k": 3,
+    "answer_source": "label",
+    "summary": {
+      "visual_attention_ratio_normal": 0.05650699883699417,
+      "visual_attention_ratio_steered": 0.05623572195569674,
+      "visual_attention_ratio_drop_percent": 0.47841444728337756,
+      "normalized_attention_entropy_normal": 0.4129188060760498,
+      "normalized_attention_entropy_steered": 0.41205591956774396,
+      "representation_cosine_similarity": 0.9993474086125692,
+      "query_hidden_l2_ratio": 0.012216174354155859,
+      "task_vector_to_hidden_norm_ratio": 0.27488898237546283,
+      "normal_accuracy": 1.0,
+      "steered_accuracy": 0.6666666666666666
+    },
+    "samples": [
+      {
+        "question_id": 1982,
+        "label": "Maine Coon",
+        "normal_prediction": "Maine Coon",
+        "steered_prediction": "The image shows a cat. Therefore, the the correct answer is:\n\nB.",
+        "normal_correct": true,
+        "steered_correct": false,
+        "analysis_answer_text": "Maine Coon",
+        "visual_attention_ratio_normal": 0.0555279403924942,
+        "visual_attention_ratio_steered": 0.055214181542396545,
+        "visual_attention_ratio_drop_percent": 0.5650467996469531,
+        "normalized_attention_entropy_normal": 0.4111170172691345,
+        "normalized_attention_entropy_steered": 0.4101601541042328,
+        "representation_cosine_similarity": 0.9995591640472412,
+        "query_hidden_l2_ratio": 0.010565664619207382,
+        "task_vector_to_hidden_norm_ratio": 0.2777995467185974,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/000_i2cl_q1982.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/000_i2cl_q1982.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/000_i2cl_q1982.meta.json"
+        }
+      },
+      {
+        "question_id": 3184,
+        "label": "Siamese",
+        "normal_prediction": "Siamese",
+        "steered_prediction": "Siamese",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "Siamese",
+        "visual_attention_ratio_normal": 0.06284870207309723,
+        "visual_attention_ratio_steered": 0.0625532865524292,
+        "visual_attention_ratio_drop_percent": 0.47004235715869175,
+        "normalized_attention_entropy_normal": 0.4164971113204956,
+        "normalized_attention_entropy_steered": 0.4155718684196472,
+        "representation_cosine_similarity": 0.9991750717163086,
+        "query_hidden_l2_ratio": 0.013469504192471504,
+        "task_vector_to_hidden_norm_ratio": 0.26975905895233154,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/001_i2cl_q3184.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/001_i2cl_q3184.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/001_i2cl_q3184.meta.json"
+        }
+      },
+      {
+        "question_id": 1984,
+        "label": "Maine Coon",
+        "normal_prediction": "Maine Coon",
+        "steered_prediction": "Maine Coon",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "Maine Coon",
+        "visual_attention_ratio_normal": 0.05114435404539108,
+        "visual_attention_ratio_steered": 0.05093969777226448,
+        "visual_attention_ratio_drop_percent": 0.40015418504448774,
+        "normalized_attention_entropy_normal": 0.4111422896385193,
+        "normalized_attention_entropy_steered": 0.4104357361793518,
+        "representation_cosine_similarity": 0.9993079900741577,
+        "query_hidden_l2_ratio": 0.012613354250788689,
+        "task_vector_to_hidden_norm_ratio": 0.2771083414554596,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/002_i2cl_q1984.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/002_i2cl_q1984.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/002_i2cl_q1984.meta.json"
+        }
+      }
+    ],
+    "raw_samples": [
+      {
+        "question_id": 1982,
+        "label": "Maine Coon",
+        "normal_prediction": "Maine Coon",
+        "steered_prediction": "The image shows a cat. Therefore, the the correct answer is:\n\nB.",
+        "normal_correct": true,
+        "steered_correct": false,
+        "analysis_answer_text": "Maine Coon",
+        "visual_attention_ratio_normal": 0.0555279403924942,
+        "visual_attention_ratio_steered": 0.055214181542396545,
+        "visual_attention_ratio_drop_percent": 0.5650467996469531,
+        "normalized_attention_entropy_normal": 0.4111170172691345,
+        "normalized_attention_entropy_steered": 0.4101601541042328,
+        "representation_cosine_similarity": 0.9995591640472412,
+        "query_hidden_l2_ratio": 0.010565664619207382,
+        "task_vector_to_hidden_norm_ratio": 0.2777995467185974,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/000_i2cl_q1982.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/000_i2cl_q1982.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/000_i2cl_q1982.meta.json"
+        }
+      },
+      {
+        "question_id": 3184,
+        "label": "Siamese",
+        "normal_prediction": "Siamese",
+        "steered_prediction": "Siamese",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "Siamese",
+        "visual_attention_ratio_normal": 0.06284870207309723,
+        "visual_attention_ratio_steered": 0.0625532865524292,
+        "visual_attention_ratio_drop_percent": 0.47004235715869175,
+        "normalized_attention_entropy_normal": 0.4164971113204956,
+        "normalized_attention_entropy_steered": 0.4155718684196472,
+        "representation_cosine_similarity": 0.9991750717163086,
+        "query_hidden_l2_ratio": 0.013469504192471504,
+        "task_vector_to_hidden_norm_ratio": 0.26975905895233154,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/001_i2cl_q3184.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/001_i2cl_q3184.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/001_i2cl_q3184.meta.json"
+        }
+      },
+      {
+        "question_id": 1984,
+        "label": "Maine Coon",
+        "normal_prediction": "Maine Coon",
+        "steered_prediction": "Maine Coon",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "Maine Coon",
+        "visual_attention_ratio_normal": 0.05114435404539108,
+        "visual_attention_ratio_steered": 0.05093969777226448,
+        "visual_attention_ratio_drop_percent": 0.40015418504448774,
+        "normalized_attention_entropy_normal": 0.4111422896385193,
+        "normalized_attention_entropy_steered": 0.4104357361793518,
+        "representation_cosine_similarity": 0.9993079900741577,
+        "query_hidden_l2_ratio": 0.012613354250788689,
+        "task_vector_to_hidden_norm_ratio": 0.2771083414554596,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/002_i2cl_q1984.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/002_i2cl_q1984.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/i2cl/raw/002_i2cl_q1984.meta.json"
+        }
+      }
+    ]
+  },
+  "timings": {
+    "fit_time_sec": 6.297529619187117,
+    "predict_time_sec": 3.5600722432136536,
+    "total_time_sec": 9.85760186240077,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 1.1866907477378845
+  }
+}

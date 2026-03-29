@@ -1,0 +1,50 @@
+# command=/root/autodl-tmp/FGVC/.venv/bin/python /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=pets_fgvc dataset.train_path=swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/pets_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/i2cl/occluded.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual run.run_name=write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433 run.seed=42 run.progress_bar=false method.params.progress_bar=false +model.model_args.attn_implementation=eager method.params.max_steps=48
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:15,  3.73it/s]Loading weights:   0%|          | 2/730 [00:00<03:23,  3.58it/s]Loading weights:   1%|          | 5/730 [00:00<01:17,  9.35it/s]Loading weights:   2%|▏         | 18/730 [00:00<00:19, 35.94it/s]Loading weights:   4%|▍         | 30/730 [00:00<00:13, 51.66it/s]Loading weights:   6%|▌         | 42/730 [00:01<00:10, 63.07it/s]Loading weights:   7%|▋         | 53/730 [00:01<00:09, 72.72it/s]Loading weights:   9%|▉         | 65/730 [00:01<00:08, 79.79it/s]Loading weights:  10%|█         | 74/730 [00:01<00:12, 51.98it/s]Loading weights:  15%|█▌        | 112/730 [00:01<00:05, 108.48it/s]Loading weights:  17%|█▋        | 127/730 [00:01<00:06, 97.61it/s] Loading weights:  19%|█▉        | 140/730 [00:02<00:07, 79.18it/s]Loading weights:  22%|██▏       | 159/730 [00:02<00:05, 97.12it/s]Loading weights:  24%|██▎       | 173/730 [00:02<00:06, 91.97it/s]Loading weights:  27%|██▋       | 196/730 [00:02<00:04, 113.62it/s]Loading weights:  29%|██▉       | 210/730 [00:02<00:05, 96.05it/s] Loading weights:  30%|███       | 222/730 [00:02<00:05, 93.66it/s]Loading weights:  32%|███▏      | 234/730 [00:03<00:05, 94.80it/s]Loading weights:  34%|███▎      | 246/730 [00:03<00:04, 98.95it/s]Loading weights:  35%|███▌      | 257/730 [00:03<00:04, 100.19it/s]Loading weights:  37%|███▋      | 268/730 [00:03<00:04, 100.99it/s]Loading weights:  38%|███▊      | 279/730 [00:03<00:06, 69.22it/s] Loading weights:  42%|████▏     | 306/730 [00:03<00:04, 104.73it/s]Loading weights:  44%|████▎     | 319/730 [00:03<00:03, 106.51it/s]Loading weights:  45%|████▌     | 332/730 [00:04<00:03, 105.72it/s]Loading weights:  59%|█████▉    | 430/730 [00:04<00:00, 311.76it/s]Loading weights:  74%|███████▎  | 537/730 [00:04<00:00, 500.22it/s]Loading weights:  89%|████████▊ | 647/730 [00:04<00:00, 652.62it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 163.24it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 1.0
+  correct: 3.0
+  total: 3.0
+  label_order:
+  - Maine Coon
+  - Siamese
+  confusion_matrix:
+    labels:
+    - Maine Coon
+    - Siamese
+    matrix:
+    - - 2
+      - 0
+    - - 0
+      - 1
+  per_class:
+    Maine Coon:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 2.0
+      predicted: 2.0
+      true_positive: 2.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Siamese:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 1.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 0.0
+  macro_precision: 1.0
+  macro_recall: 1.0
+  macro_f1: 1.0
+  balanced_accuracy: 1.0
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_i2cl_occluded_20260329_023433.diagnostics.json
+

@@ -1,0 +1,149 @@
+{
+  "source_output_root": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012630_write_failure_pets",
+  "timestamp": "20260329_022144",
+  "dataset_name": "pets_fgvc",
+  "dataset_label": "Pets",
+  "model": "qwen2_vl",
+  "score_mode": "combined",
+  "top_k": 3,
+  "methods": [
+    "stv",
+    "i2cl",
+    "mimic"
+  ],
+  "answer_source": "label",
+  "replays": {
+    "stv": {
+      "source_diagnostics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012630_write_failure_pets/write_failure_pets_stv_qwen2_vl_20260329_012630.diagnostics.json",
+      "selected_samples": [
+        {
+          "question_id": "1485",
+          "label": "great pyrenees",
+          "score": 0.10905718728808884,
+          "visual_attention_ratio_drop_percent": 0.09555720294501831,
+          "normalized_attention_entropy_normal": 0.379220187664032,
+          "normalized_attention_entropy_steered": 0.37913402915000916,
+          "representation_cosine_similarity": 0.9999972581863403,
+          "query_hidden_l2_ratio": 0.00047470422578044236,
+          "task_vector_to_hidden_norm_ratio": 0.0008060914115048945
+        },
+        {
+          "question_id": "1182",
+          "label": "english cocker spaniel",
+          "score": 0.10344924113654926,
+          "visual_attention_ratio_drop_percent": -0.0865275430207832,
+          "normalized_attention_entropy_normal": 0.3726885914802551,
+          "normalized_attention_entropy_steered": 0.3728049099445343,
+          "representation_cosine_similarity": 0.9999966621398926,
+          "query_hidden_l2_ratio": 0.0005122958682477474,
+          "task_vector_to_hidden_norm_ratio": 0.0008068213355727494
+        },
+        {
+          "question_id": "1984",
+          "label": "Maine Coon",
+          "score": 0.0955370713684646,
+          "visual_attention_ratio_drop_percent": 0.08080729797556377,
+          "normalized_attention_entropy_normal": 0.4111422896385193,
+          "normalized_attention_entropy_steered": 0.41124412417411804,
+          "representation_cosine_similarity": 0.9999974370002747,
+          "query_hidden_l2_ratio": 0.00044181698467582464,
+          "task_vector_to_hidden_norm_ratio": 0.0006991824484430254
+        }
+      ],
+      "subset_path": "/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_022144_write_failure_pets_targeted/pets_fgvc/stv_top3.json",
+      "replay_diagnostics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_stv_qwen2_vl_20260329_022144.diagnostics.json",
+      "replay_metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_stv_qwen2_vl_20260329_022144.metrics.json",
+      "replay_predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_stv_qwen2_vl_20260329_022144.predictions.jsonl",
+      "log_path": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_022144_write_failure_pets_targeted/write_failure_pets_stv_qwen2_vl_20260329_022144.log",
+      "figure_path": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_targeted_pets_stv_20260329_022144.png"
+    },
+    "i2cl": {
+      "source_diagnostics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012630_write_failure_pets/write_failure_pets_i2cl_qwen2_vl_20260329_012630.diagnostics.json",
+      "selected_samples": [
+        {
+          "question_id": "1982",
+          "label": "Maine Coon",
+          "score": 0.7884315599671398,
+          "visual_attention_ratio_drop_percent": 0.5650467996469531,
+          "normalized_attention_entropy_normal": 0.4111170172691345,
+          "normalized_attention_entropy_steered": 0.4101601541042328,
+          "representation_cosine_similarity": 0.9995591640472412,
+          "query_hidden_l2_ratio": 0.010565664619207382,
+          "task_vector_to_hidden_norm_ratio": 0.2777995467185974
+        },
+        {
+          "question_id": "3184",
+          "label": "Siamese",
+          "score": 0.738508103352816,
+          "visual_attention_ratio_drop_percent": 0.47004235715869175,
+          "normalized_attention_entropy_normal": 0.4164971113204956,
+          "normalized_attention_entropy_steered": 0.4155718684196472,
+          "representation_cosine_similarity": 0.9991750717163086,
+          "query_hidden_l2_ratio": 0.013469504192471504,
+          "task_vector_to_hidden_norm_ratio": 0.26975905895233154
+        },
+        {
+          "question_id": "1984",
+          "label": "Maine Coon",
+          "score": 0.6315435697612369,
+          "visual_attention_ratio_drop_percent": 0.40015418504448774,
+          "normalized_attention_entropy_normal": 0.4111422896385193,
+          "normalized_attention_entropy_steered": 0.4104357361793518,
+          "representation_cosine_similarity": 0.9993079900741577,
+          "query_hidden_l2_ratio": 0.012613354250788689,
+          "task_vector_to_hidden_norm_ratio": 0.2771083414554596
+        }
+      ],
+      "subset_path": "/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_022144_write_failure_pets_targeted/pets_fgvc/i2cl_top3.json",
+      "replay_diagnostics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_i2cl_qwen2_vl_20260329_022144.diagnostics.json",
+      "replay_metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_i2cl_qwen2_vl_20260329_022144.metrics.json",
+      "replay_predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_i2cl_qwen2_vl_20260329_022144.predictions.jsonl",
+      "log_path": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_022144_write_failure_pets_targeted/write_failure_pets_i2cl_qwen2_vl_20260329_022144.log",
+      "figure_path": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_targeted_pets_i2cl_20260329_022144.png"
+    },
+    "mimic": {
+      "source_diagnostics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_012630_write_failure_pets/write_failure_pets_mimic_qwen2_vl_20260329_012630.diagnostics.json",
+      "selected_samples": [
+        {
+          "question_id": "1485",
+          "label": "great pyrenees",
+          "score": 5.022868312425299,
+          "visual_attention_ratio_drop_percent": -4.194092697925253,
+          "normalized_attention_entropy_normal": 0.379220187664032,
+          "normalized_attention_entropy_steered": 0.3845066726207733,
+          "representation_cosine_similarity": 0.9979737997055054,
+          "query_hidden_l2_ratio": 0.019881710410118103,
+          "task_vector_to_hidden_norm_ratio": 0.007659662514925003
+        },
+        {
+          "question_id": "1884",
+          "label": "leonberger",
+          "score": 4.786541164146271,
+          "visual_attention_ratio_drop_percent": -3.943627812193242,
+          "normalized_attention_entropy_normal": 0.3608457148075104,
+          "normalized_attention_entropy_steered": 0.3663690388202667,
+          "representation_cosine_similarity": 0.9981139898300171,
+          "query_hidden_l2_ratio": 0.019628044217824936,
+          "task_vector_to_hidden_norm_ratio": 0.0077039883472025394
+        },
+        {
+          "question_id": "887",
+          "label": "British Shorthair",
+          "score": 4.769948120648758,
+          "visual_attention_ratio_drop_percent": -4.035709868605034,
+          "normalized_attention_entropy_normal": 0.4001895487308502,
+          "normalized_attention_entropy_steered": 0.4049730598926544,
+          "representation_cosine_similarity": 0.9984644055366516,
+          "query_hidden_l2_ratio": 0.01791074126958847,
+          "task_vector_to_hidden_norm_ratio": 0.0067159514874219894
+        }
+      ],
+      "subset_path": "/root/autodl-tmp/FGVC/swap/paper/subsets/20260329_022144_write_failure_pets_targeted/pets_fgvc/mimic_top3.json",
+      "replay_diagnostics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_mimic_qwen2_vl_20260329_022144.diagnostics.json",
+      "replay_metrics": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_mimic_qwen2_vl_20260329_022144.metrics.json",
+      "replay_predictions": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure_pets_mimic_qwen2_vl_20260329_022144.predictions.jsonl",
+      "log_path": "/root/autodl-tmp/FGVC/swap/paper/logs/20260329_022144_write_failure_pets_targeted/write_failure_pets_mimic_qwen2_vl_20260329_022144.log",
+      "figure_path": "/root/autodl-tmp/FGVC/swap/paper/figures/write_failure_pets_targeted_pets_mimic_20260329_022144.png"
+    }
+  }
+}

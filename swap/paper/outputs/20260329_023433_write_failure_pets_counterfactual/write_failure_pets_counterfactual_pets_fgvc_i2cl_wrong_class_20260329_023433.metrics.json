@@ -1,0 +1,128 @@
+{
+  "model": "qwen2_vl",
+  "dataset": "pets_fgvc",
+  "method": "i2cl",
+  "evaluator": "raw",
+  "metrics": {
+    "metric": "raw_accuracy",
+    "accuracy": 0.0,
+    "correct": 0.0,
+    "total": 3.0,
+    "label_order": [
+      "Maine Coon",
+      "Siamese",
+      "Let's analyze the image step by step:\n\n1. The animal has has a",
+      "The animal in the image is a dog.",
+      "staffordshire bull terrier"
+    ],
+    "confusion_matrix": {
+      "labels": [
+        "Maine Coon",
+        "Siamese",
+        "Let's analyze the image step by step:\n\n1. The animal has has a",
+        "The animal in the image is a dog.",
+        "staffordshire bull terrier"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_class": {
+      "Maine Coon": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 2.0
+      },
+      "Siamese": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1.0,
+        "predicted": 0.0,
+        "true_positive": 0.0,
+        "false_positive": 0.0,
+        "false_negative": 1.0
+      },
+      "Let's analyze the image step by step:\n\n1. The animal has has a": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "The animal in the image is a dog.": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      },
+      "staffordshire bull terrier": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0.0,
+        "predicted": 1.0,
+        "true_positive": 0.0,
+        "false_positive": 1.0,
+        "false_negative": 0.0
+      }
+    },
+    "macro_precision": 0.0,
+    "macro_recall": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0
+  },
+  "timings": {
+    "fit_time_sec": 5.972968440502882,
+    "predict_time_sec": 1.5843664519488811,
+    "total_time_sec": 7.557334892451763,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 0.5281221506496271
+  }
+}

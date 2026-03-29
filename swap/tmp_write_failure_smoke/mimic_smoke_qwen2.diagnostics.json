@@ -1,0 +1,78 @@
+{
+  "write_failure_analysis": {
+    "enabled": true,
+    "method": "mimic",
+    "dump_dir": "swap/tmp_write_failure_smoke/write_failure_mimic",
+    "raw_dir": "swap/tmp_write_failure_smoke/write_failure_mimic/raw",
+    "num_analyzed_samples": 1,
+    "query_last_k": 2,
+    "answer_source": "label",
+    "summary": {
+      "visual_attention_ratio_normal": 0.013748818077147007,
+      "visual_attention_ratio_steered": 0.013766021467745304,
+      "visual_attention_ratio_drop_percent": -0.12512632359935164,
+      "normalized_attention_entropy_normal": 0.4727106988430023,
+      "normalized_attention_entropy_steered": 0.4725545048713684,
+      "representation_cosine_similarity": 0.9999688267707825,
+      "query_hidden_l2_ratio": 0.0019447073573246598,
+      "task_vector_to_hidden_norm_ratio": 0.0008151016663759947,
+      "normal_accuracy": 0.0,
+      "steered_accuracy": 0.0
+    },
+    "samples": [
+      {
+        "question_id": 0,
+        "label": "Annual Crop Land",
+        "normal_prediction": "D. Sea or",
+        "steered_prediction": "D. Sea or",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "Annual Crop Land",
+        "visual_attention_ratio_normal": 0.013748818077147007,
+        "visual_attention_ratio_steered": 0.013766021467745304,
+        "visual_attention_ratio_drop_percent": -0.12512632359935164,
+        "normalized_attention_entropy_normal": 0.4727106988430023,
+        "normalized_attention_entropy_steered": 0.4725545048713684,
+        "representation_cosine_similarity": 0.9999688267707825,
+        "query_hidden_l2_ratio": 0.0019447073573246598,
+        "task_vector_to_hidden_norm_ratio": 0.0008151016663759947,
+        "raw_bundle_paths": {
+          "normal": "swap/tmp_write_failure_smoke/write_failure_mimic/raw/000_mimic_q0.normal.pt",
+          "steered": "swap/tmp_write_failure_smoke/write_failure_mimic/raw/000_mimic_q0.steered.pt",
+          "meta": "swap/tmp_write_failure_smoke/write_failure_mimic/raw/000_mimic_q0.meta.json"
+        }
+      }
+    ],
+    "raw_samples": [
+      {
+        "question_id": 0,
+        "label": "Annual Crop Land",
+        "normal_prediction": "D. Sea or",
+        "steered_prediction": "D. Sea or",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "Annual Crop Land",
+        "visual_attention_ratio_normal": 0.013748818077147007,
+        "visual_attention_ratio_steered": 0.013766021467745304,
+        "visual_attention_ratio_drop_percent": -0.12512632359935164,
+        "normalized_attention_entropy_normal": 0.4727106988430023,
+        "normalized_attention_entropy_steered": 0.4725545048713684,
+        "representation_cosine_similarity": 0.9999688267707825,
+        "query_hidden_l2_ratio": 0.0019447073573246598,
+        "task_vector_to_hidden_norm_ratio": 0.0008151016663759947,
+        "raw_bundle_paths": {
+          "normal": "swap/tmp_write_failure_smoke/write_failure_mimic/raw/000_mimic_q0.normal.pt",
+          "steered": "swap/tmp_write_failure_smoke/write_failure_mimic/raw/000_mimic_q0.steered.pt",
+          "meta": "swap/tmp_write_failure_smoke/write_failure_mimic/raw/000_mimic_q0.meta.json"
+        }
+      }
+    ]
+  },
+  "timings": {
+    "fit_time_sec": 1.1166911907494068,
+    "predict_time_sec": 1.2568405885249376,
+    "total_time_sec": 2.3735317792743444,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 0.4189468628416459
+  }
+}

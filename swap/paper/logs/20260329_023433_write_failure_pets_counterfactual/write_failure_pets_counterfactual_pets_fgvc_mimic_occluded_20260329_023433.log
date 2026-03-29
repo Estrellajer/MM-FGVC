@@ -1,0 +1,104 @@
+# command=/root/autodl-tmp/FGVC/.venv/bin/python /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=mimic evaluator=raw dataset.name=pets_fgvc dataset.train_path=swap/paper/subsets/20260327_020651_c4_cross_model/seed_42/pets_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/counterfactual_assets/subsets/mimic/occluded.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual run.run_name=write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433 run.seed=42 run.progress_bar=false method.params.progress_bar=false +model.model_args.attn_implementation=eager method.params.max_steps=32
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<03:15,  3.72it/s]Loading weights:   0%|          | 2/730 [00:00<03:24,  3.56it/s]Loading weights:   1%|          | 6/730 [00:00<01:02, 11.55it/s]Loading weights:   2%|▏         | 15/730 [00:01<01:23,  8.61it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:05, 108.92it/s]Loading weights:  22%|██▏       | 164/730 [00:02<00:07, 79.92it/s] Loading weights:  29%|██▉       | 210/730 [00:02<00:04, 109.65it/s]Loading weights:  32%|███▏      | 235/730 [00:03<00:04, 108.16it/s]Loading weights:  35%|███▍      | 255/730 [00:03<00:04, 103.32it/s]Loading weights:  37%|███▋      | 272/730 [00:03<00:04, 106.82it/s]Loading weights:  39%|███▉      | 288/730 [00:03<00:03, 110.65it/s]Loading weights:  42%|████▏     | 303/730 [00:03<00:04, 93.50it/s] Loading weights:  44%|████▎     | 318/730 [00:03<00:04, 101.82it/s]Loading weights:  45%|████▌     | 331/730 [00:03<00:03, 102.11it/s]Loading weights:  59%|█████▉    | 431/730 [00:04<00:01, 283.22it/s]Loading weights:  74%|███████▍  | 539/730 [00:04<00:00, 460.84it/s]Loading weights:  89%|████████▉ | 650/730 [00:04<00:00, 617.75it/s]Loading weights: 100%|██████████| 730/730 [00:04<00:00, 166.01it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.3333333333333333
+  correct: 1.0
+  total: 3.0
+  label_order:
+  - great pyrenees
+  - leonberger
+  - British Shorthair
+  - The animal in the image is a dog.
+  - The animal in the image is a cat.
+  confusion_matrix:
+    labels:
+    - great pyrenees
+    - leonberger
+    - British Shorthair
+    - The animal in the image is a dog.
+    - The animal in the image is a cat.
+    matrix:
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    great pyrenees:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    leonberger:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 1.0
+      predicted: 1.0
+      true_positive: 1.0
+      false_positive: 0.0
+      false_negative: 0.0
+    British Shorthair:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 1.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 1.0
+    The animal in the image is a dog.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    The animal in the image is a cat.:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.2
+  macro_recall: 0.2
+  macro_f1: 0.2
+  balanced_accuracy: 0.2
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260329_023433_write_failure_pets_counterfactual/write_failure_pets_counterfactual_pets_fgvc_mimic_occluded_20260329_023433.diagnostics.json
+

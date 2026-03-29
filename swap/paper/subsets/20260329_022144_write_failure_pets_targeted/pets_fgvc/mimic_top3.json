@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/great_pyrenees_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. samoyed C. great pyrenees D. wheaten terrier",
+    "label": "great pyrenees",
+    "question_id": 1485,
+    "split": null,
+    "extra": {
+      "class_id": 16,
+      "answer": "C"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_194.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/leonberger_194.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. pug B. leonberger C. British Shorthair D. Bombay",
+    "label": "leonberger",
+    "question_id": 1884,
+    "split": null,
+    "extra": {
+      "class_id": 20,
+      "answer": "B"
+    }
+  },
+  {
+    "image": "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_218.jpg",
+    "images": [
+      "/root/autodl-tmp/FGVC/Data/Pets/images/British_Shorthair_218.jpg"
+    ],
+    "question": "What type of animal is in the image?\nA. Maine Coon B. yorkshire terrier C. Persian D. British Shorthair",
+    "label": "British Shorthair",
+    "question_id": 887,
+    "split": null,
+    "extra": {
+      "class_id": 10,
+      "answer": "D"
+    }
+  }
+]

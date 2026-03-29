@@ -3,7 +3,7 @@ from __future__ import annotations
 import random
 import re
 from dataclasses import dataclass
-from typing import Dict, List, Sequence
+from typing import Any, Dict, List, Sequence
 
 import torch
 import torch.nn as nn
@@ -13,6 +13,7 @@ from tqdm import tqdm
 
 from ..data import build_prompt
 from .base import MethodBase
+from .write_failure import WriteFailureRecorder
 
 
 @dataclass(frozen=True)
@@ -212,6 +213,11 @@ class I2CLMethod(MethodBase):
         do_sample: bool = False,
         temperature: float = 0.0,
         progress_bar: bool = True,
+        write_failure_dump_dir: str | None = None,
+        write_failure_max_samples: int = 0,
+        write_failure_heatmap_samples: int = 2,
+        write_failure_query_last_k: int = 3,
+        write_failure_answer_source: str = "label",
     ):
         super().__init__(model=model, dataset_name=dataset_name, label_space=label_space)
 
@@ -270,6 +276,15 @@ class I2CLMethod(MethodBase):
         self.demo_indices: List[int] = []
         self.context_vector_dict: Dict[int, Dict[str, torch.Tensor]] = {}
         self._fitted = False
+        self._predict_calls = 0
+        self.write_failure_recorder = WriteFailureRecorder(
+            method_name="i2cl",
+            dump_dir=write_failure_dump_dir,
+            max_samples=write_failure_max_samples,
+            heatmap_samples=write_failure_heatmap_samples,
+            query_last_k=write_failure_query_last_k,
+            answer_source=write_failure_answer_source,
+        )
 
     @staticmethod
     def _normalize_modules(modules) -> List[str]:
@@ -450,6 +465,7 @@ class I2CLMethod(MethodBase):
         demos: Sequence[Dict],
         query: Dict,
         include_answer: bool,
+        answer_text: str | None = None,
     ) -> tuple[List[Dict], List[Image.Image]]:
         conversation: List[Dict] = []
         flat_images: List[Image.Image] = []
@@ -464,7 +480,8 @@ class I2CLMethod(MethodBase):
         conversation.append(query_user)
         flat_images.extend(query_images)
         if include_answer:
-            conversation.append({"role": "assistant", "content": [{"type": "text", "text": str(query["label"])}]})
+            answer_value = str(query["label"]) if answer_text is None else str(answer_text)
+            conversation.append({"role": "assistant", "content": [{"type": "text", "text": answer_value}]})
 
         return conversation, flat_images
 
@@ -751,9 +768,139 @@ class I2CLMethod(MethodBase):
         outputs = self.model.processor.batch_decode(generated_ids, skip_special_tokens=True)
         return outputs[0] if outputs else ""
 
+    def _generate_without_context(self, sample: Dict) -> str:
+        conversation, flat_images = self._build_conversation([], sample, include_answer=False)
+        inputs = self._prepare_inputs(conversation, flat_images, add_generation_prompt=True)
+        prompt_len = int(inputs["input_ids"].shape[-1])
+
+        generated_ids = self.model.model.generate(
+            **inputs,
+            max_new_tokens=self.max_new_tokens,
+            do_sample=self.do_sample,
+            temperature=self.temperature,
+            use_cache=False,
+        )
+        generated_ids = generated_ids[:, prompt_len:]
+        outputs = self.model.processor.batch_decode(generated_ids, skip_special_tokens=True)
+        return outputs[0] if outputs else ""
+
+    def _prepare_write_failure_inputs(
+        self,
+        sample: Dict,
+        answer_text: str,
+    ):
+        prompt_conversation, prompt_images = self._build_conversation([], sample, include_answer=False)
+        full_conversation, full_images = self._build_conversation(
+            [],
+            sample,
+            include_answer=True,
+            answer_text=answer_text,
+        )
+        prompt_inputs = self._prepare_inputs(prompt_conversation, prompt_images, add_generation_prompt=True)
+        full_inputs = self._prepare_inputs(full_conversation, full_images, add_generation_prompt=False)
+        return prompt_inputs, full_inputs
+
+    def _run_write_failure_forward(self, full_inputs, *, steered: bool):
+        if steered:
+            self.injector.enable(self.context_vector_dict, train_mode=False)
+        try:
+            with torch.no_grad():
+                outputs = self.model.model(
+                    **full_inputs,
+                    use_cache=False,
+                    output_attentions=True,
+                    output_hidden_states=True,
+                    return_dict=True,
+                )
+        finally:
+            if steered:
+                self.injector.disable()
+
+        if (
+            outputs.attentions is None
+            or not outputs.attentions
+            or outputs.attentions[0] is None
+        ):
+            raise RuntimeError(
+                "I2CL write-failure analysis requires real attention tensors. "
+                "Run with model.model_args.attn_implementation=eager."
+            )
+        return outputs
+
+    def _get_write_failure_task_vector(self) -> Dict[str, Any]:
+        return {
+            "context_vector": {
+                int(layer_idx): {
+                    str(module_name): tensor.detach().to(device="cpu", dtype=torch.float32)
+                    for module_name, tensor in module_dict.items()
+                }
+                for layer_idx, module_dict in self.context_vector_dict.items()
+            },
+            "strength_params": [
+                parameter.detach().to(device="cpu", dtype=torch.float32)
+                for parameter in self.injector.strength_params
+            ],
+        }
+
+    def _maybe_record_write_failure(
+        self,
+        sample: Dict,
+        *,
+        sample_index: int,
+        steered_raw_output: str,
+        steered_prediction: str,
+    ) -> None:
+        if not self.write_failure_recorder.should_record():
+            return
+
+        normal_raw_output = self._generate_without_context(sample)
+        normal_prediction = self._match_label(normal_raw_output)
+        answer_text = self.write_failure_recorder.choose_answer_text(
+            sample,
+            normal_prediction=normal_prediction,
+            steered_prediction=steered_prediction,
+        )
+        prompt_inputs, full_inputs = self._prepare_write_failure_inputs(sample, answer_text)
+        prompt_len = int(prompt_inputs["input_ids"].shape[-1])
+        normal_outputs = self._run_write_failure_forward(full_inputs, steered=False)
+        steered_outputs = self._run_write_failure_forward(full_inputs, steered=True)
+
+        self.write_failure_recorder.record_pair(
+            sample=sample,
+            sample_index=sample_index,
+            full_inputs=full_inputs,
+            prompt_len=prompt_len,
+            normal_outputs=normal_outputs,
+            steered_outputs=steered_outputs,
+            task_vector_obj=self._get_write_failure_task_vector(),
+            analysis_answer_text=answer_text,
+            normal_raw_output=normal_raw_output,
+            steered_raw_output=steered_raw_output,
+            normal_prediction=normal_prediction,
+            steered_prediction=steered_prediction,
+            processor=self.model.processor,
+        )
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
     def predict(self, sample: Dict) -> str:
         if not self._fitted:
             raise RuntimeError("I2CL method is not fitted. Call fit(train_data) first.")
 
+        sample_index = self._predict_calls
+        self._predict_calls += 1
+
         raw = self._generate_with_context(sample)
-        return self._match_label(raw)
+        prediction = self._match_label(raw)
+        self._maybe_record_write_failure(
+            sample,
+            sample_index=sample_index,
+            steered_raw_output=raw,
+            steered_prediction=prediction,
+        )
+        return prediction
+
+    def export_diagnostics(self) -> Dict:
+        return {
+            "write_failure_analysis": self.write_failure_recorder.export(),
+        }

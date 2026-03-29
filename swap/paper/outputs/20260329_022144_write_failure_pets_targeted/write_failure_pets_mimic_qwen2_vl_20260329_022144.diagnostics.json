@@ -1,0 +1,166 @@
+{
+  "write_failure_analysis": {
+    "enabled": true,
+    "method": "mimic",
+    "dump_dir": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic",
+    "raw_dir": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw",
+    "num_analyzed_samples": 3,
+    "query_last_k": 3,
+    "answer_source": "label",
+    "summary": {
+      "visual_attention_ratio_normal": 0.06891510511438052,
+      "visual_attention_ratio_steered": 0.07171117762724559,
+      "visual_attention_ratio_drop_percent": -4.0578101262411765,
+      "normalized_attention_entropy_normal": 0.38008515040079754,
+      "normalized_attention_entropy_steered": 0.38528292377789813,
+      "representation_cosine_similarity": 0.998184065024058,
+      "query_hidden_l2_ratio": 0.01914016529917717,
+      "task_vector_to_hidden_norm_ratio": 0.007359867449849844,
+      "normal_accuracy": 0.6666666666666666,
+      "steered_accuracy": 0.6666666666666666
+    },
+    "samples": [
+      {
+        "question_id": 1485,
+        "label": "great pyrenees",
+        "normal_prediction": "The animal in the image is a dog.",
+        "steered_prediction": "The animal in the image is a dog.",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "great pyrenees",
+        "visual_attention_ratio_normal": 0.07111629843711853,
+        "visual_attention_ratio_steered": 0.07409898191690445,
+        "visual_attention_ratio_drop_percent": -4.194092697925253,
+        "normalized_attention_entropy_normal": 0.379220187664032,
+        "normalized_attention_entropy_steered": 0.3845066726207733,
+        "representation_cosine_similarity": 0.9979737997055054,
+        "query_hidden_l2_ratio": 0.019881710410118103,
+        "task_vector_to_hidden_norm_ratio": 0.007659662514925003,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/000_mimic_q1485.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/000_mimic_q1485.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/000_mimic_q1485.meta.json"
+        }
+      },
+      {
+        "question_id": 1884,
+        "label": "leonberger",
+        "normal_prediction": "leonberger",
+        "steered_prediction": "leonberger",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "leonberger",
+        "visual_attention_ratio_normal": 0.07391186058521271,
+        "visual_attention_ratio_steered": 0.07682666927576065,
+        "visual_attention_ratio_drop_percent": -3.943627812193242,
+        "normalized_attention_entropy_normal": 0.3608457148075104,
+        "normalized_attention_entropy_steered": 0.3663690388202667,
+        "representation_cosine_similarity": 0.9981139898300171,
+        "query_hidden_l2_ratio": 0.019628044217824936,
+        "task_vector_to_hidden_norm_ratio": 0.0077039883472025394,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/001_mimic_q1884.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/001_mimic_q1884.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/001_mimic_q1884.meta.json"
+        }
+      },
+      {
+        "question_id": 887,
+        "label": "British Shorthair",
+        "normal_prediction": "British Shorthair",
+        "steered_prediction": "British Shorthair",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "British Shorthair",
+        "visual_attention_ratio_normal": 0.06171715632081032,
+        "visual_attention_ratio_steered": 0.06420788168907166,
+        "visual_attention_ratio_drop_percent": -4.035709868605034,
+        "normalized_attention_entropy_normal": 0.4001895487308502,
+        "normalized_attention_entropy_steered": 0.4049730598926544,
+        "representation_cosine_similarity": 0.9984644055366516,
+        "query_hidden_l2_ratio": 0.01791074126958847,
+        "task_vector_to_hidden_norm_ratio": 0.0067159514874219894,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/002_mimic_q887.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/002_mimic_q887.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/002_mimic_q887.meta.json"
+        }
+      }
+    ],
+    "raw_samples": [
+      {
+        "question_id": 1485,
+        "label": "great pyrenees",
+        "normal_prediction": "The animal in the image is a dog.",
+        "steered_prediction": "The animal in the image is a dog.",
+        "normal_correct": false,
+        "steered_correct": false,
+        "analysis_answer_text": "great pyrenees",
+        "visual_attention_ratio_normal": 0.07111629843711853,
+        "visual_attention_ratio_steered": 0.07409898191690445,
+        "visual_attention_ratio_drop_percent": -4.194092697925253,
+        "normalized_attention_entropy_normal": 0.379220187664032,
+        "normalized_attention_entropy_steered": 0.3845066726207733,
+        "representation_cosine_similarity": 0.9979737997055054,
+        "query_hidden_l2_ratio": 0.019881710410118103,
+        "task_vector_to_hidden_norm_ratio": 0.007659662514925003,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/000_mimic_q1485.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/000_mimic_q1485.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/000_mimic_q1485.meta.json"
+        }
+      },
+      {
+        "question_id": 1884,
+        "label": "leonberger",
+        "normal_prediction": "leonberger",
+        "steered_prediction": "leonberger",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "leonberger",
+        "visual_attention_ratio_normal": 0.07391186058521271,
+        "visual_attention_ratio_steered": 0.07682666927576065,
+        "visual_attention_ratio_drop_percent": -3.943627812193242,
+        "normalized_attention_entropy_normal": 0.3608457148075104,
+        "normalized_attention_entropy_steered": 0.3663690388202667,
+        "representation_cosine_similarity": 0.9981139898300171,
+        "query_hidden_l2_ratio": 0.019628044217824936,
+        "task_vector_to_hidden_norm_ratio": 0.0077039883472025394,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/001_mimic_q1884.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/001_mimic_q1884.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/001_mimic_q1884.meta.json"
+        }
+      },
+      {
+        "question_id": 887,
+        "label": "British Shorthair",
+        "normal_prediction": "British Shorthair",
+        "steered_prediction": "British Shorthair",
+        "normal_correct": true,
+        "steered_correct": true,
+        "analysis_answer_text": "British Shorthair",
+        "visual_attention_ratio_normal": 0.06171715632081032,
+        "visual_attention_ratio_steered": 0.06420788168907166,
+        "visual_attention_ratio_drop_percent": -4.035709868605034,
+        "normalized_attention_entropy_normal": 0.4001895487308502,
+        "normalized_attention_entropy_steered": 0.4049730598926544,
+        "representation_cosine_similarity": 0.9984644055366516,
+        "query_hidden_l2_ratio": 0.01791074126958847,
+        "task_vector_to_hidden_norm_ratio": 0.0067159514874219894,
+        "raw_bundle_paths": {
+          "normal": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/002_mimic_q887.normal.pt",
+          "steered": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/002_mimic_q887.steered.pt",
+          "meta": "/root/autodl-tmp/FGVC/swap/paper/outputs/20260329_022144_write_failure_pets_targeted/write_failure/mimic/raw/002_mimic_q887.meta.json"
+        }
+      }
+    ]
+  },
+  "timings": {
+    "fit_time_sec": 11.3604881092906,
+    "predict_time_sec": 3.1367904730141163,
+    "total_time_sec": 14.497278582304716,
+    "num_eval_samples": 3,
+    "avg_predict_time_sec": 1.0455968243380387
+  }
+}
