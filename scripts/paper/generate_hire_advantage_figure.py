@@ -26,6 +26,20 @@ ALL_METHODS = ["stv", "i2cl", "mimic", READ_METHOD]
 LABELS = {"stv": "STV", "i2cl": "I2CL", "mimic": "MimIC", READ_METHOD: "HIRE"}
 COLORS = {"stv": "#4c78a8", "i2cl": "#f58518", "mimic": "#54a24b", READ_METHOD: "#1b1f3b"}
 
+plt.rcParams.update(
+    {
+        "font.size": 15,
+        "axes.titlesize": 18,
+        "axes.labelsize": 16,
+        "xtick.labelsize": 14,
+        "ytick.labelsize": 14,
+        "legend.fontsize": 13,
+        "axes.titleweight": "semibold",
+        "axes.labelweight": "semibold",
+        "font.weight": "semibold",
+    }
+)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate a HIRE-vs-write comparison figure on the same analysis subset.")
@@ -33,6 +47,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--timestamp", default=datetime.now(UTC).strftime("%Y%m%d_%H%M%S"))
     parser.add_argument("--suite-name", default="hire_advantage")
     parser.add_argument("--hire-method", default="keco")
+    parser.add_argument("--hire-metrics", default=None, help="Optional existing HIRE metrics.json to reuse instead of rerunning.")
+    parser.add_argument("--hire-log", default=None, help="Optional existing HIRE log path.")
     parser.add_argument(
         "--runner-python",
         default=str(PROJECT_ROOT / ".venv" / "bin" / "python"),
@@ -121,42 +137,66 @@ def run_hire_eval(
 
 
 def save_figure(figure_path: Path, stats: dict[str, dict[str, float]]) -> None:
-    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.1), dpi=180)
+    fig, axes = plt.subplots(2, 2, figsize=(14.5, 8.8), dpi=220)
+    ax_acc = axes[0, 0]
+    ax_drift = axes[0, 1]
+    ax_norm = axes[1, 0]
+    ax_scatter = axes[1, 1]
 
     methods = ALL_METHODS
     xs = np.arange(len(methods))
     colors = [COLORS[method] for method in methods]
 
     acc_values = [stats[method]["accuracy"] for method in methods]
-    axes[0].bar(xs, acc_values, color=colors)
-    axes[0].set_xticks(xs)
-    axes[0].set_xticklabels([LABELS[method] for method in methods])
-    axes[0].set_ylim(0.0, 1.02)
-    axes[0].set_ylabel("Accuracy")
-    axes[0].set_title("Accuracy on the same balanced subset")
-    axes[0].grid(alpha=0.25, axis="y")
+    ax_acc.bar(xs, acc_values, color=colors)
+    ax_acc.set_xticks(xs)
+    ax_acc.set_xticklabels([LABELS[method] for method in methods])
+    ax_acc.set_ylim(0.0, 1.02)
+    ax_acc.set_ylabel("Accuracy")
+    ax_acc.set_title("Accuracy on the same balanced subset")
+    ax_acc.grid(alpha=0.25, axis="y")
+    ax_acc.tick_params(axis="both", pad=4)
+    for label in ax_acc.get_xticklabels() + ax_acc.get_yticklabels():
+        label.set_fontweight("semibold")
 
     drift_values = [stats[method]["drift"] for method in methods]
-    axes[1].bar(xs, drift_values, color=colors)
-    axes[1].set_xticks(xs)
-    axes[1].set_xticklabels([LABELS[method] for method in methods])
-    axes[1].set_ylabel("Median query hidden drift")
-    axes[1].set_title("Internal interference")
-    axes[1].grid(alpha=0.25, axis="y")
+    ax_drift.bar(xs, drift_values, color=colors)
+    ax_drift.set_xticks(xs)
+    ax_drift.set_xticklabels([LABELS[method] for method in methods])
+    ax_drift.set_ylabel("Median query hidden drift")
+    ax_drift.set_title("Internal interference")
+    ax_drift.grid(alpha=0.25, axis="y")
+    ax_drift.tick_params(axis="both", pad=4)
+    for label in ax_drift.get_xticklabels() + ax_drift.get_yticklabels():
+        label.set_fontweight("semibold")
 
-    max_norm = max(max(stats[method]["norm_ratio"] for method in methods), 1e-6)
+    norm_values = [stats[method]["norm_ratio"] for method in methods]
+    ax_norm.bar(xs, norm_values, color=colors)
+    ax_norm.set_xticks(xs)
+    ax_norm.set_xticklabels([LABELS[method] for method in methods])
+    ax_norm.set_ylabel("Task vector / hidden norm")
+    ax_norm.set_title("Write magnitude")
+    ax_norm.grid(alpha=0.25, axis="y")
+    ax_norm.tick_params(axis="both", pad=4)
+    for label in ax_norm.get_xticklabels() + ax_norm.get_yticklabels():
+        label.set_fontweight("semibold")
+
+    max_norm = max(max(norm_values), 1e-6)
     for method in methods:
         x = stats[method]["drift"]
         y = stats[method]["accuracy"]
         size = 90 + 360 * (stats[method]["norm_ratio"] / max_norm)
-        axes[2].scatter([x], [y], s=size, color=COLORS[method], alpha=0.9, edgecolors="black", linewidths=0.4)
-        axes[2].text(x + 0.00035, y, LABELS[method], fontsize=9, va="center")
-    axes[2].set_xlim(-0.0005, max(0.022, max(drift_values) * 1.18))
-    axes[2].set_ylim(0.55, 1.02)
-    axes[2].set_xlabel("Median query hidden drift")
-    axes[2].set_ylabel("Accuracy")
-    axes[2].set_title("Accuracy vs interference")
-    axes[2].grid(alpha=0.25)
+        ax_scatter.scatter([x], [y], s=size, color=COLORS[method], alpha=0.9, edgecolors="black", linewidths=0.4)
+        ax_scatter.text(x + 0.00045, y, LABELS[method], fontsize=14, va="center")
+    ax_scatter.set_xlim(-0.0005, max(0.022, max(drift_values) * 1.18))
+    ax_scatter.set_ylim(0.55, 1.02)
+    ax_scatter.set_xlabel("Median query hidden drift")
+    ax_scatter.set_ylabel("Accuracy")
+    ax_scatter.set_title("Accuracy vs interference")
+    ax_scatter.grid(alpha=0.25)
+    ax_scatter.tick_params(axis="both", pad=4)
+    for label in ax_scatter.get_xticklabels() + ax_scatter.get_yticklabels():
+        label.set_fontweight("semibold")
 
     fig.tight_layout()
     figure_path.parent.mkdir(parents=True, exist_ok=True)
@@ -177,14 +217,18 @@ def main() -> None:
     output_root.mkdir(parents=True, exist_ok=True)
     log_root.mkdir(parents=True, exist_ok=True)
 
-    hire_metrics_path, hire_log_path = run_hire_eval(
-        manifest=source_manifest,
-        hire_method=args.hire_method,
-        output_root=output_root,
-        log_root=log_root,
-        timestamp=args.timestamp,
-        runner_python=args.runner_python,
-    )
+    if args.hire_metrics:
+        hire_metrics_path = Path(args.hire_metrics).expanduser().resolve()
+        hire_log_path = Path(args.hire_log).expanduser().resolve() if args.hire_log else None
+    else:
+        hire_metrics_path, hire_log_path = run_hire_eval(
+            manifest=source_manifest,
+            hire_method=args.hire_method,
+            output_root=output_root,
+            log_root=log_root,
+            timestamp=args.timestamp,
+            runner_python=args.runner_python,
+        )
     hire_metrics = load_json(hire_metrics_path)
     write_stats[READ_METHOD] = {
         "accuracy": float(((hire_metrics.get("metrics") or {}).get("accuracy")) or 0.0),
@@ -200,7 +244,7 @@ def main() -> None:
         "common_subset": str(source_manifest["analysis_val_path"]),
         "hire_method": args.hire_method,
         "hire_metrics": str(hire_metrics_path),
-        "hire_log": str(hire_log_path),
+        "hire_log": (str(hire_log_path) if hire_log_path is not None else None),
         "figure_path": str(figure_path),
         "stats": write_stats,
     }

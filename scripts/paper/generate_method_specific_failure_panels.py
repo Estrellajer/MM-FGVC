@@ -27,6 +27,21 @@ METHODS = ["stv", "i2cl", "mimic"]
 METHOD_LABELS = {"stv": "STV", "i2cl": "I2CL", "mimic": "MimIC"}
 METHOD_COLORS = {"stv": "#4c78a8", "i2cl": "#f58518", "mimic": "#54a24b"}
 NEUTRAL = "#d0d0d0"
+ANNOTATION_SIZE = 16
+
+plt.rcParams.update(
+    {
+        "font.size": 15,
+        "axes.titlesize": 18,
+        "axes.labelsize": 16,
+        "xtick.labelsize": 14,
+        "ytick.labelsize": 14,
+        "legend.fontsize": 13,
+        "axes.titleweight": "semibold",
+        "axes.labelweight": "semibold",
+        "font.weight": "semibold",
+    }
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -230,8 +245,8 @@ def build_delta_overlay(sample: dict[str, Any]) -> tuple[np.ndarray, str]:
         signed=True,
     )
     title = (
-        f"Top targeted sample: {sample.get('label', '')}\n"
-        f"ratio drop = {float(sample.get('visual_attention_ratio_drop_percent') or 0.0):.2f}%"
+        f"Target: {sample.get('label', '')}\n"
+        f"drop = {float(sample.get('visual_attention_ratio_drop_percent') or 0.0):.2f}%"
     )
     return overlay, title
 
@@ -247,6 +262,9 @@ def plot_bar(ax, values: list[float], *, highlight: str, title: str, ylabel: str
     ax.set_title(title)
     ax.set_ylabel(ylabel)
     ax.grid(alpha=0.25, axis="y")
+    ax.tick_params(axis="both", pad=4)
+    for label in ax.get_xticklabels() + ax.get_yticklabels():
+        label.set_fontweight("semibold")
 
 
 def plot_accuracy_delta(ax, source_data: dict[str, dict[str, Any]], *, highlight: str) -> None:
@@ -260,6 +278,9 @@ def plot_accuracy_delta(ax, source_data: dict[str, dict[str, Any]], *, highlight
     ax.set_title("Accuracy change after write")
     ax.set_ylabel("steered acc - normal acc")
     ax.grid(alpha=0.25, axis="y")
+    ax.tick_params(axis="both", pad=4)
+    for label in ax.get_xticklabels() + ax.get_yticklabels():
+        label.set_fontweight("semibold")
 
 
 def plot_box_strip(
@@ -305,6 +326,9 @@ def plot_box_strip(
     ax.set_title(title)
     ax.set_ylabel(ylabel)
     ax.grid(alpha=0.25, axis="y")
+    ax.tick_params(axis="both", pad=4)
+    for label in ax.get_xticklabels() + ax.get_yticklabels():
+        label.set_fontweight("semibold")
 
 
 def plot_scatter_norm_vs_drift(ax, source_data: dict[str, dict[str, Any]], *, highlight: str, title: str) -> None:
@@ -325,10 +349,17 @@ def plot_scatter_norm_vs_drift(ax, source_data: dict[str, dict[str, Any]], *, hi
     ax.set_ylabel("query hidden drift")
     ax.grid(alpha=0.25)
     ax.legend(frameon=False, fontsize=8, loc="lower right")
+    ax.tick_params(axis="both", pad=4)
+    legend = ax.get_legend()
+    if legend is not None:
+        for text in legend.get_texts():
+            text.set_fontweight("semibold")
+    for label in ax.get_xticklabels() + ax.get_yticklabels():
+        label.set_fontweight("semibold")
 
 
 def save_stv_panel(figure_path: Path, *, dataset_label: str, source_data: dict[str, dict[str, Any]]) -> None:
-    fig = plt.figure(figsize=(12, 7), dpi=180)
+    fig = plt.figure(figsize=(14.5, 8.8), dpi=220)
     gs = fig.add_gridspec(2, 2, hspace=0.32, wspace=0.28)
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
@@ -373,7 +404,7 @@ def save_stv_panel(figure_path: Path, *, dataset_label: str, source_data: dict[s
 
 
 def save_i2cl_panel(figure_path: Path, *, dataset_label: str, source_data: dict[str, dict[str, Any]]) -> None:
-    fig = plt.figure(figsize=(12, 7), dpi=180)
+    fig = plt.figure(figsize=(14.5, 8.8), dpi=220)
     gs = fig.add_gridspec(2, 2, hspace=0.32, wspace=0.28)
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
@@ -419,8 +450,8 @@ def save_mimic_panel(
     source_data: dict[str, dict[str, Any]],
     targeted_diagnostics: Path,
 ) -> None:
-    fig = plt.figure(figsize=(12, 7), dpi=180)
-    gs = fig.add_gridspec(2, 2, hspace=0.34, wspace=0.30)
+    fig = plt.figure(figsize=(14.5, 9.2), dpi=220)
+    gs = fig.add_gridspec(2, 2, hspace=0.42, wspace=0.30)
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
     ax3 = fig.add_subplot(gs[1, 0])
@@ -439,11 +470,14 @@ def save_mimic_panel(
     vmax = max(float(np.percentile(heatmap, 98.0)), 1e-6)
     image = ax2.imshow(heatmap, aspect="auto", cmap="magma", vmin=0.0, vmax=vmax)
     ax2.set_title("Layer-wise hidden drift")
-    ax2.set_xlabel("Layer")
     ax2.set_yticks([0, 1, 2])
     ax2.set_yticklabels(["Image", "Text", "Query"])
     ax2.set_xticks(np.linspace(0, heatmap.shape[1] - 1, 5, dtype=int))
-    fig.colorbar(image, ax=ax2, fraction=0.046, pad=0.04)
+    colorbar = fig.colorbar(image, ax=ax2, fraction=0.046, pad=0.04)
+    for label in ax2.get_xticklabels() + ax2.get_yticklabels():
+        label.set_fontweight("semibold")
+    for label in colorbar.ax.get_yticklabels():
+        label.set_fontweight("semibold")
 
     xs, normal_curve, steered_curve = mimic_attention_concentration(targeted_diagnostics)
     uniform = np.full_like(xs, 1.0 / max(xs.size, 1), dtype=np.float32)
@@ -454,19 +488,36 @@ def save_mimic_panel(
     ax3.set_xlabel("Sorted image patches")
     ax3.set_ylabel("attention mass")
     ax3.grid(alpha=0.25)
-    ax3.legend(frameon=False, fontsize=8, loc="upper right")
+    ax3.legend(frameon=False, fontsize=13, loc="upper right")
+    legend = ax3.get_legend()
+    if legend is not None:
+        for text in legend.get_texts():
+            text.set_fontweight("semibold")
+    for label in ax3.get_xticklabels() + ax3.get_yticklabels():
+        label.set_fontweight("semibold")
 
     sample = strongest_sample(targeted_diagnostics)
     if sample is not None:
         overlay, overlay_title = build_delta_overlay(sample)
         ax4.imshow(overlay)
-        ax4.set_title(overlay_title)
         ax4.text(
-            0.0,
-            -0.08,
+            0.5,
+            1.04,
+            overlay_title,
+            transform=ax4.transAxes,
+            ha="center",
+            va="bottom",
+            fontsize=ANNOTATION_SIZE,
+            fontweight="semibold",
+        )
+        ax4.text(
+            0.5,
+            -0.16,
             "delta overlay is contrast-rescaled for visibility",
             transform=ax4.transAxes,
-            fontsize=8,
+            fontsize=ANNOTATION_SIZE,
+            fontweight="semibold",
+            ha="center",
             va="top",
         )
     ax4.axis("off")
