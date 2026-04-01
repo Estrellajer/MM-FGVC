@@ -1,0 +1,326 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=keco evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122632_fgvc_baselines/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122632_fgvc_baselines/seed_42/eurosat_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines run.run_name=fgvc_baselines_eurosat_fgvc_seed42_keco_qwen2_vl_20260401_122632 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<01:59,  6.12it/s]Loading weights:   0%|          | 2/730 [00:00<02:18,  5.26it/s]Loading weights:   2%|▏         | 16/730 [00:00<00:16, 43.16it/s]Loading weights:   4%|▍         | 29/730 [00:00<00:11, 63.57it/s]Loading weights:   6%|▌         | 42/730 [00:00<00:08, 76.68it/s]Loading weights:   8%|▊         | 55/730 [00:00<00:07, 90.42it/s]Loading weights:  10%|▉         | 70/730 [00:00<00:06, 105.37it/s]Loading weights:  12%|█▏        | 84/730 [00:01<00:05, 113.29it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:05, 119.34it/s]Loading weights:  15%|█▌        | 113/730 [00:01<00:05, 106.95it/s]Loading weights:  19%|█▊        | 136/730 [00:01<00:04, 130.63it/s]Loading weights:  21%|██        | 150/730 [00:01<00:04, 118.74it/s]Loading weights:  23%|██▎       | 168/730 [00:01<00:04, 131.86it/s]Loading weights:  25%|██▌       | 184/730 [00:01<00:04, 117.56it/s]Loading weights:  28%|██▊       | 204/730 [00:01<00:03, 135.30it/s]Loading weights:  30%|███       | 220/730 [00:02<00:03, 134.65it/s]Loading weights:  32%|███▏      | 235/730 [00:02<00:03, 124.42it/s]Loading weights:  35%|███▍      | 252/730 [00:02<00:03, 134.28it/s]Loading weights:  37%|███▋      | 268/730 [00:02<00:03, 135.23it/s]Loading weights:  39%|███▊      | 282/730 [00:02<00:03, 122.03it/s]Loading weights:  41%|████      | 298/730 [00:02<00:03, 131.00it/s]Loading weights:  43%|████▎     | 316/730 [00:02<00:03, 136.63it/s]Loading weights:  45%|████▌     | 330/730 [00:02<00:03, 120.97it/s]Loading weights:  63%|██████▎   | 459/730 [00:03<00:00, 411.02it/s]Loading weights:  82%|████████▏ | 597/730 [00:03<00:00, 658.28it/s]Loading weights:  99%|█████████▉| 726/730 [00:03<00:00, 827.87it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 221.33it/s]
+[2026-04-01 20:27:32,991][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/openai/clip-vit-large-patch14-336/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+[2026-04-01 20:27:33,331][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/openai/clip-vit-large-patch14-336/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-04-01 20:27:33,467][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/clip-vit-large-patch14-336/ce19dc912ca5cd21c8a653c79e251e808ccabcd1/preprocessor_config.json "HTTP/1.1 200 OK"
+[2026-04-01 20:27:33,822][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/openai/clip-vit-large-patch14-336/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-04-01 20:27:33,824][huggingface_hub.utils._http][WARNING] - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-04-01 20:27:33,958][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/openai/clip-vit-large-patch14-336/ce19dc912ca5cd21c8a653c79e251e808ccabcd1/tokenizer_config.json "HTTP/1.1 200 OK"
+The image processor of type `CLIPImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/590 [00:00<?, ?it/s]Loading weights: 100%|██████████| 590/590 [00:00<00:00, 75460.13it/s]
+[1mCLIPModel LOAD REPORT[0m from: openai/clip-vit-large-patch14-336
+Key                                  | Status     |  | 
+-------------------------------------+------------+--+-
+text_model.embeddings.position_ids   | UNEXPECTED |  | 
+vision_model.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Exception in thread Thread-auto_conversion:
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/http_proxy.py", line 343, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/root/miniconda3/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/safetensors_conversion.py", line 117, in auto_conversion
+    raise e
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/safetensors_conversion.py", line 96, in auto_conversion
+    sha = get_conversion_pr_reference(api, pretrained_model_name_or_path, **cached_file_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/transformers/safetensors_conversion.py", line 60, in get_conversion_pr_reference
+    private = api.model_info(model_id).private
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 2939, in model_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/root/miniconda3/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/root/autodl-tmp/FGVC/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.83
+  correct: 83.0
+  total: 100.0
+  label_order:
+  - Annual Crop Land
+  - Forest
+  - Herbaceous Vegetation Land
+  - Highway or Road
+  - Industrial Buildings
+  - Pasture Land
+  - Permanent Crop Land
+  - Residential Buildings
+  - River
+  - Sea or Lake
+  confusion_matrix:
+    labels:
+    - Annual Crop Land
+    - Forest
+    - Herbaceous Vegetation Land
+    - Highway or Road
+    - Industrial Buildings
+    - Pasture Land
+    - Permanent Crop Land
+    - Residential Buildings
+    - River
+    - Sea or Lake
+    matrix:
+    - - 8
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 9
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 1
+      - 8
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 8
+      - 0
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 9
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 7
+      - 0
+      - 0
+      - 1
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 8
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 0
+      - 8
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 10
+      - 0
+    - - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 8
+  per_class:
+    Annual Crop Land:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 10.0
+      predicted: 8.0
+      true_positive: 8.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Forest:
+      precision: 0.9
+      recall: 0.9
+      f1: 0.9
+      support: 10.0
+      predicted: 10.0
+      true_positive: 9.0
+      false_positive: 1.0
+      false_negative: 1.0
+    Herbaceous Vegetation Land:
+      precision: 0.8
+      recall: 0.8
+      f1: 0.8000000000000002
+      support: 10.0
+      predicted: 10.0
+      true_positive: 8.0
+      false_positive: 2.0
+      false_negative: 2.0
+    Highway or Road:
+      precision: 0.6666666666666666
+      recall: 0.8
+      f1: 0.7272727272727272
+      support: 10.0
+      predicted: 12.0
+      true_positive: 8.0
+      false_positive: 4.0
+      false_negative: 2.0
+    Industrial Buildings:
+      precision: 1.0
+      recall: 0.9
+      f1: 0.9473684210526316
+      support: 10.0
+      predicted: 9.0
+      true_positive: 9.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Pasture Land:
+      precision: 0.875
+      recall: 0.7
+      f1: 0.7777777777777777
+      support: 10.0
+      predicted: 8.0
+      true_positive: 7.0
+      false_positive: 1.0
+      false_negative: 3.0
+    Permanent Crop Land:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 10.0
+      predicted: 8.0
+      true_positive: 8.0
+      false_positive: 0.0
+      false_negative: 2.0
+    Residential Buildings:
+      precision: 0.8888888888888888
+      recall: 0.8
+      f1: 0.8421052631578948
+      support: 10.0
+      predicted: 9.0
+      true_positive: 8.0
+      false_positive: 1.0
+      false_negative: 2.0
+    River:
+      precision: 0.625
+      recall: 1.0
+      f1: 0.7692307692307693
+      support: 10.0
+      predicted: 16.0
+      true_positive: 10.0
+      false_positive: 6.0
+      false_negative: 0.0
+    Sea or Lake:
+      precision: 0.8
+      recall: 0.8
+      f1: 0.8000000000000002
+      support: 10.0
+      predicted: 10.0
+      true_positive: 8.0
+      false_positive: 2.0
+      false_negative: 2.0
+  macro_precision: 0.8555555555555555
+  macro_recall: 0.8300000000000001
+  macro_f1: 0.8341532736269579
+  balanced_accuracy: 0.8300000000000001
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_eurosat_fgvc_seed42_keco_qwen2_vl_20260401_122632.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_eurosat_fgvc_seed42_keco_qwen2_vl_20260401_122632.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_eurosat_fgvc_seed42_keco_qwen2_vl_20260401_122632.diagnostics.json
+

@@ -1,0 +1,752 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=stv evaluator=raw dataset.name=pets dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122632_fgvc_baselines/seed_42/pets_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122632_fgvc_baselines/seed_42/pets_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines run.run_name=fgvc_baselines_pets_fgvc_seed42_stv_qwen2_vl_20260401_122632 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false method.params.head_selection_mode=sensitivity method.params.cluster_selection_mode=rl
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<02:01,  6.00it/s]Loading weights:   0%|          | 2/730 [00:00<02:20,  5.20it/s]Loading weights:   2%|▏         | 11/730 [00:00<00:23, 30.95it/s]Loading weights:   4%|▍         | 28/730 [00:00<00:11, 58.79it/s]Loading weights:   7%|▋         | 48/730 [00:00<00:07, 94.13it/s]Loading weights:   9%|▉         | 64/730 [00:00<00:06, 106.05it/s]Loading weights:  11%|█         | 77/730 [00:01<00:06, 97.80it/s] Loading weights:  13%|█▎        | 95/730 [00:01<00:05, 112.37it/s]Loading weights:  15%|█▌        | 110/730 [00:01<00:05, 117.22it/s]Loading weights:  17%|█▋        | 126/730 [00:01<00:04, 121.36it/s]Loading weights:  20%|██        | 148/730 [00:01<00:04, 140.06it/s]Loading weights:  22%|██▏       | 163/730 [00:01<00:04, 128.35it/s]Loading weights:  25%|██▍       | 180/730 [00:01<00:03, 138.12it/s]Loading weights:  27%|██▋       | 196/730 [00:01<00:03, 139.30it/s]Loading weights:  29%|██▉       | 211/730 [00:02<00:04, 126.67it/s]Loading weights:  32%|███▏      | 230/730 [00:02<00:03, 142.53it/s]Loading weights:  34%|███▎      | 245/730 [00:02<00:03, 129.98it/s]Loading weights:  35%|███▌      | 259/730 [00:02<00:03, 125.69it/s]Loading weights:  38%|███▊      | 278/730 [00:02<00:03, 142.08it/s]Loading weights:  40%|████      | 293/730 [00:02<00:03, 130.38it/s]Loading weights:  42%|████▏     | 307/730 [00:02<00:03, 106.22it/s]Loading weights:  45%|████▌     | 329/730 [00:02<00:03, 131.37it/s]Loading weights:  67%|██████▋   | 487/730 [00:03<00:00, 483.35it/s]Loading weights:  87%|████████▋ | 635/730 [00:03<00:00, 739.16it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 228.37it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.94
+  correct: 94.0
+  total: 100.0
+  label_order:
+  - beagle
+  - Bombay
+  - British Shorthair
+  - chihuahua
+  - english cocker spaniel
+  - english setter
+  - great pyrenees
+  - japanese chin
+  - keeshond
+  - leonberger
+  - Maine Coon
+  - miniature pinscher
+  - newfoundland
+  - Ragdoll
+  - scottish terrier
+  - Siamese
+  - Sphynx
+  - staffordshire bull terrier
+  - wheaten terrier
+  - yorkshire terrier
+  - A. Saint Bernard
+  - D. Persian
+  confusion_matrix:
+    labels:
+    - beagle
+    - Bombay
+    - British Shorthair
+    - chihuahua
+    - english cocker spaniel
+    - english setter
+    - great pyrenees
+    - japanese chin
+    - keeshond
+    - leonberger
+    - Maine Coon
+    - miniature pinscher
+    - newfoundland
+    - Ragdoll
+    - scottish terrier
+    - Siamese
+    - Sphynx
+    - staffordshire bull terrier
+    - wheaten terrier
+    - yorkshire terrier
+    - A. Saint Bernard
+    - D. Persian
+    matrix:
+    - - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 3
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    beagle:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Bombay:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    British Shorthair:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    chihuahua:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    english cocker spaniel:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    english setter:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    great pyrenees:
+      precision: 1.0
+      recall: 0.6
+      f1: 0.7499999999999999
+      support: 5.0
+      predicted: 3.0
+      true_positive: 3.0
+      false_positive: 0.0
+      false_negative: 2.0
+    japanese chin:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    keeshond:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    leonberger:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Maine Coon:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    miniature pinscher:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    newfoundland:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Ragdoll:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    scottish terrier:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Siamese:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Sphynx:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    staffordshire bull terrier:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    wheaten terrier:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    yorkshire terrier:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    A. Saint Bernard:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    D. Persian:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.8787878787878788
+  macro_recall: 0.8545454545454546
+  macro_f1: 0.8609963269054177
+  balanced_accuracy: 0.8545454545454546
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_pets_fgvc_seed42_stv_qwen2_vl_20260401_122632.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_pets_fgvc_seed42_stv_qwen2_vl_20260401_122632.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_pets_fgvc_seed42_stv_qwen2_vl_20260401_122632.diagnostics.json
+

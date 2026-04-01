@@ -1,0 +1,9 @@
+name: ridge_probe
+fit_on_train: true
+params:
+  feature_level: layer
+  feature_index: -1
+  normalize_features: true
+  ridge_lambda: 1.0
+  fit_bias: true
+  progress_bar: true

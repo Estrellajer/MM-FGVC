@@ -1,0 +1,4 @@
+# worker=main
+# CUDA_VISIBLE_DEVICES=inherit
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=zero_shot evaluator=raw dataset.name=eurosat dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122549_fgvc_baselines/seed_42/eurosat_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122549_fgvc_baselines/seed_42/eurosat_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122549_fgvc_baselines run.run_name=fgvc_baselines_eurosat_fgvc_seed42_zero_shot_qwen2_vl_20260401_122549 run.progress_bar=false run.save_predictions=false run.seed=42
+

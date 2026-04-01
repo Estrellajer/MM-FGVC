@@ -180,6 +180,8 @@ METHOD_SPECS=(
   "zero_shot|Zero-shot|zero_shot|"
   "keco|KeCO|keco|"
   "sav|SAV|sav|"
+  "whitened_ncm|Whitened NCM|whitened_ncm|"
+  "ridge_probe|Ridge Probe|ridge_probe|"
   "mimic|MimIC|mimic|"
   "i2cl|I2CL|i2cl|"
   "stv|STV|stv|method.params.head_selection_mode=sensitivity;method.params.cluster_selection_mode=rl"

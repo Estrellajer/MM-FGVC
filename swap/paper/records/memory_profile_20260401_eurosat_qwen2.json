@@ -1,0 +1,46 @@
+[
+  {
+    "method": "zero_shot",
+    "fit_time_sec": 0.0002105124294757843,
+    "predict_time_sec": 10.711968624964356,
+    "avg_predict_ms": 107.11968624964356,
+    "fit_peak_alloc_gb": 15.443892002105713,
+    "fit_peak_reserved_gb": 15.4453125,
+    "pred_peak_alloc_gb": 15.46524429321289,
+    "pred_peak_reserved_gb": 15.474609375,
+    "num_eval_samples": 100
+  },
+  {
+    "method": "sav",
+    "fit_time_sec": 9.412987887859344,
+    "predict_time_sec": 3.6212564073503017,
+    "avg_predict_ms": 36.21256407350302,
+    "fit_peak_alloc_gb": 15.493532180786133,
+    "fit_peak_reserved_gb": 15.513671875,
+    "pred_peak_alloc_gb": 15.488945007324219,
+    "pred_peak_reserved_gb": 15.513671875,
+    "num_eval_samples": 100
+  },
+  {
+    "method": "rsev2",
+    "fit_time_sec": 4.161733791232109,
+    "predict_time_sec": 5.6334422044456005,
+    "avg_predict_ms": 56.334422044456005,
+    "fit_peak_alloc_gb": 15.524883270263672,
+    "fit_peak_reserved_gb": 15.5625,
+    "pred_peak_alloc_gb": 15.524883270263672,
+    "pred_peak_reserved_gb": 15.5625,
+    "num_eval_samples": 100
+  },
+  {
+    "method": "keco",
+    "fit_time_sec": 8.61995754763484,
+    "predict_time_sec": 9.092253206297755,
+    "avg_predict_ms": 90.92253206297755,
+    "fit_peak_alloc_gb": 17.339540481567383,
+    "fit_peak_reserved_gb": 17.478515625,
+    "pred_peak_alloc_gb": 17.097228527069092,
+    "pred_peak_reserved_gb": 17.49609375,
+    "num_eval_samples": 100
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "suite_name": "fgvc_review_simple",
+  "timestamp": "20260401_151500",
+  "task_ids": [
+    "eurosat_fgvc",
+    "pets_fgvc",
+    "cub_fgvc"
+  ],
+  "method_ids": [
+    "whitened_ncm",
+    "ridge_probe"
+  ],
+  "models": [
+    "qwen2_vl"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false,
+  "gpu_workers": null
+}

@@ -1,0 +1,19 @@
+{
+  "feature_level": "layer",
+  "feature_index": -1,
+  "resolved_component_index": 27,
+  "feature_dim": 3584,
+  "train_sample_count": 175,
+  "num_classes": 35,
+  "train_accuracy": 1.0,
+  "normalize_features": true,
+  "ridge_lambda": 1.0,
+  "fit_bias": true,
+  "timings": {
+    "fit_time_sec": 10.975884968414903,
+    "predict_time_sec": 3.8737957067787647,
+    "total_time_sec": 14.849680675193667,
+    "num_eval_samples": 70,
+    "avg_predict_time_sec": 0.055339938668268064
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "method": "keco",
+  "mode": "offline",
+  "embedding_model_name": "openai/clip-vit-large-patch14-336",
+  "embedding_device": "cuda:0",
+  "support_per_class": 2,
+  "num_shots": 2,
+  "num_choices": 4,
+  "selection_strategy": "cosine",
+  "sample_method": "random",
+  "target_select": "least_similarity",
+  "alpha": 0.2,
+  "offline_epochs": 10,
+  "offline_batch_size": 32,
+  "train_size": 100,
+  "support_size": 40,
+  "pool_size": 60,
+  "per_class_support_counts": {
+    "Bombay": 2,
+    "British Shorthair": 2,
+    "Maine Coon": 2,
+    "Ragdoll": 2,
+    "Siamese": 2,
+    "Sphynx": 2,
+    "beagle": 2,
+    "chihuahua": 2,
+    "english cocker spaniel": 2,
+    "english setter": 2,
+    "great pyrenees": 2,
+    "japanese chin": 2,
+    "keeshond": 2,
+    "leonberger": 2,
+    "miniature pinscher": 2,
+    "newfoundland": 2,
+    "scottish terrier": 2,
+    "staffordshire bull terrier": 2,
+    "wheaten terrier": 2,
+    "yorkshire terrier": 2
+  },
+  "eval_summary": {
+    "predictions": 100,
+    "parse_failures": 0
+  },
+  "timings": {
+    "fit_time_sec": 10.879846097901464,
+    "predict_time_sec": 14.785571750253439,
+    "total_time_sec": 25.665417848154902,
+    "num_eval_samples": 100,
+    "avg_predict_time_sec": 0.1478557175025344
+  }
+}

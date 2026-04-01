@@ -366,6 +366,18 @@ TASK_SPECS: dict[str, TaskSpec] = {
 METHOD_SPECS: dict[str, MethodSpec] = {
     "zero_shot": MethodSpec("zero_shot", "Zero-shot", "zero_shot"),
     "sav": MethodSpec("sav", "SAV", "sav"),
+    "whitened_ncm": MethodSpec(
+        "whitened_ncm",
+        "Whitened NCM",
+        "whitened_ncm",
+        supported_datasets=CLASSIFICATION_DATASETS,
+    ),
+    "ridge_probe": MethodSpec(
+        "ridge_probe",
+        "Ridge Probe",
+        "ridge_probe",
+        supported_datasets=CLASSIFICATION_DATASETS,
+    ),
     "keco": MethodSpec("keco", "KeCO", "keco", supported_datasets=CLASSIFICATION_DATASETS),
     "rse": MethodSpec("rse", "RSE", "rse"),
     "rse_zscore": MethodSpec(
@@ -528,6 +540,7 @@ METHOD_GROUPS: dict[str, tuple[str, ...]] = {
     ),
     "efficiency": ("zero_shot", "sav", "rsev2", "mimic", "i2cl", "stv"),
     "fgvc_baselines": ("zero_shot", "keco", "sav", "rse", "rsev2", "stv", "i2cl", "mimic"),
+    "fgvc_review_simple": ("zero_shot", "sav", "whitened_ncm", "ridge_probe", "rsev2"),
 }
 
 

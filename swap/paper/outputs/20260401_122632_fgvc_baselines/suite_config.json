@@ -1,0 +1,29 @@
+{
+  "suite_name": "fgvc_baselines",
+  "timestamp": "20260401_122632",
+  "task_ids": [
+    "eurosat_fgvc",
+    "pets_fgvc",
+    "cub_fgvc"
+  ],
+  "method_ids": [
+    "zero_shot",
+    "keco",
+    "sav",
+    "rse",
+    "rsev2",
+    "stv",
+    "i2cl",
+    "mimic"
+  ],
+  "models": [
+    "qwen2_vl"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false,
+  "gpu_workers": [
+    "0"
+  ]
+}

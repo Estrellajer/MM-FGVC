@@ -1,0 +1,758 @@
+\documentclass[sigconf,review,anonymous,9pt,table]{acmart}
+
+% ==================== 基础宏包（只保留必需）====================
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{amsthm}
+\usepackage{pifont}
+\usepackage{siunitx}
+\usepackage{rotating}
+\usepackage{array}
+
+% ==================== 自定义列类型（用于宽表）====================
+% M: 固定宽度左对齐首列；N: 居中等宽数字列
+\newcolumntype{M}{>{\raggedright\arraybackslash\small}p{2.0cm}}
+\newcolumntype{N}{>{\centering\arraybackslash\small}X}
+
+% ==================== 颜色定义 ====================
+\definecolor{mygreen}{rgb}{0.0,0.55,0.0}
+\definecolor{myblue}{rgb}{0.18,0.45,0.75}
+
+% ==================== 宏定义 ====================
+\newcommand{\smodel}{SAVs}
+\newcommand{\Secref}[1]{Section~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\minisection}[1]{\smallskip\noindent\textbf{#1}}
+
+% ==================== ACM 版权/投稿配置 ====================
+\setcopyright{acmlicensed}
+\copyrightyear{2026}
+\acmYear{2026}
+\acmDOI{10.1145/XXXXXX.XXXXXX} % 录用后再填
+\acmISBN{978-1-4503-XXXX-X/26/06}
+\acmSubmissionID{2493}    % 替换成你的 Submission ID
+
+% 隐藏 ACM 版权脚注（投稿常用）
+\settopmatter{printacmref=true}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+% 页眉短作者
+\renewcommand{\shortauthors}{First Author et al.}
+
+% ==================== CCS Concepts（去ACM官网生成）====================
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10010147.10010178.10010224.10010240.10010244</concept_id>
+       <concept_desc>Computing methodologies~Hierarchical representations</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010187</concept_id>
+       <concept_desc>Computing methodologies~Knowledge representation and reasoning</concept_desc>
+       <concept_significance>300</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010257.10010282.10010290</concept_id>
+       <concept_desc>Computing methodologies~Learning from demonstrations</concept_desc>
+       <concept_significance>300</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~Hierarchical representations}
+\ccsdesc[300]{Computing methodologies~Knowledge representation and reasoning}
+\ccsdesc[300]{Computing methodologies~Learning from demonstrations}
+
+\keywords{Large Multimodal Model, Representation Learning, Few-Shot Learning} % 替换成你的关键词
+
+% ==================== 标题 & 作者（双盲匿名版）====================
+\title{Read, Don't Write: Leveraging Hierarchical Representations of Large Multimodal Models for Few-Shot Classification}
+
+% 匿名投稿：不要写真实作者/单位/基金
+\author{Anonymous Author(s)}
+\affiliation{
+  \institution{Anonymous Institution}
+  \city{Anonymous City}
+  \country{Anonymous Country}
+}
+
+% ==================== 摘要 ====================
+\begin{abstract}
+Large Multimodal Models (LMMs) often possess the correct discriminative information internally before engaging in autoregressive text generation. 
+Despite their success, LMMs frequently underperform in fine-grained vision-language tasks when queried via standard text generation. 
+We identify this as a \emph{representation-generation gap}, where rich discriminative features encoded in the hierarchical decoder are partially lost or collapsed during decoding. 
+We demonstrate that this gap is inherent and difficult to resolve through generation-based interventions like task vectors or activation steering, suggesting a shift from ``writing'' to ``reading'' internal states. 
+To this end, we propose Hierarchical Representation Ensembles (HiRe), a training-free few-shot classification framework that directly leverages the latent space of LMMs. 
+HiRe adaptively aggregates multi-layer representations by modeling cross-layer prediction as an uncertainty-aware process, emphasizing informative components per-query without gradient updates. 
+Extensive experiments across 16 benchmarks show that HiRe consistently outperforms both few-shot prompting and fine-tuned baselines, establishing LMMs as effective hierarchical encoders for discriminative tasks.
+Our Code is available at \url{http://anonymous.url}.
+\end{abstract}
+
+% ==================== 正文开始 ====================
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Large Multimodal Models (LMMs)~\cite{achiam2023gpt, wang2024qwen2, li2024llava, team2024gemini} have emerged as the dominant paradigm for visual understanding. 
+The standard usage protocol typically involves providing an image-text prompt and interpreting the model's generated response. 
+While this \emph{generation-as-classification} paradigm has achieved significant success, it raises a fundamental question: \emph{does the process of generating text discard discriminative information already present in the model's internal representations?}
+
+To address this, we conduct a systematic study of LMM internal representations across 16 multimodal classification tasks~\cite{fu2024blink, hsieh2023sugarcrepe, lin2024evaluating}. 
+Our investigation reveals a persistent \emph{representation-generation gap}: intermediate components within the LMM decoder—spanning various layers and types—consistently achieve higher classification accuracy than the model’s own zero-shot generated outputs. 
+This suggests that LMMs often encode the necessary discriminative signals internally, but these signals are partially lost or misaligned during the causal decoding process.
+
+Furthermore, we find that this gap is highly structured and task-dependent. 
+Different tasks rely on distinct regions of the hierarchical model~\cite{mitra2025enhancing, ma2026and, kovaleva2019revealing}; for instance, fine-grained visual classification (FGVC) concentrates discriminative information in late-layer attention heads, while safety-related tasks often depend more on mid-layer representations. 
+This variability indicates that no single layer or component is universally optimal, and effective utilization of LMMs requires an adaptive approach to their hierarchical structure.
+
+These observations expose the limitations of current multimodal adaptation methods. 
+Existing approaches generally fall into two categories: \emph{write-based methods} that attempt to steer generation by modifying internal activations~\cite{huang2024multimodal, jiang2025mimic, xu2026steering, sheng2025illusion}, and \emph{read-based methods} that extract fixed components for classification~\cite{mitra2025enhancing, singhal2023learning}. 
+However, write-based methods often underperform in multimodal settings due to the complex entanglement of signals, while current read-based methods rely on heuristic selection and fail to exploit the full hierarchy. 
+There is currently no principled framework for adaptively leveraging the full spectrum of LMM representations.
+
+In this work, we propose \textbf{Hierarchical Representation Ensembles} (\textbf{HiRe}), a training-free framework for few-shot classification (Figure~\ref{fig:teaser}). 
+Instead of relying on a fixed subset of components, HiRe reads discriminative signals from the entire LMM hierarchy and aggregates them adaptively. 
+By formulating classification as an uncertainty-aware aggregation problem, HiRe combines predictions across layers using a statistically grounded distance metric and per-query confidence weighting. 
+This design enables the model to automatically emphasize the most informative components for each specific input without requiring gradient updates or task-specific tuning.
+
+We summarize our primary contributions as follows:
+\begin{itemize}
+  \item We systematically characterize the \emph{representation-generation gap} in LMMs across multiple architectures, demonstrating that internal representations are often more discriminative than generated outputs.
+  \item We propose HiRe, a training-free few-shot framework based on regularized Mahalanobis distance and cross-layer confidence weighting, which outperforms existing prompting and steering baselines.
+  \item We provide a comprehensive layer-wise analysis of LMM hierarchies, revealing how discriminative information is distributed across different multimodal tasks.
+\end{itemize}
+
+\begin{figure*}[!htp]
+    \centering
+    \includegraphics[width=\textwidth]{img/HiReTeaser.pdf}
+    \caption{
+    \textbf{HiRe vs.\ existing multimodal adaptation paradigms.}
+    (a) \textbf{KeCO} (MM'25) retrieves examples and concatenates them with the input, incurring high inference cost due to long sequence lengths. 
+    (b) \textbf{MimIC} (CVPR'25) learns a task vector and injects it into hidden states, introducing additional parameters and potential misalignment. 
+    (c) \textbf{SAV} (ICCV'25) selects a subset of attention heads and aggregates them with heuristic voting, requiring two forward passes. 
+    (d) \textbf{HiRe (Ours)} performs \emph{training-free, read-only} classification by adaptively aggregating multi-layer representations in a single forward pass, without extra parameters or heuristic selection. 
+    This design yields both improved accuracy and efficiency.
+    }
+    \label{fig:teaser}
+\end{figure*}
+
+\section{Related Work}
+
+% -----------------------------------------------------------------------
+% 整体策略：3 个 subsection，覆盖三条技术路线
+%   §2.1 Multimodal In-Context Learning（写入路线的直接竞争者）
+%   §2.2 Representation Engineering（分析 or 修改激活的写入路线）
+%   §2.3 Feature Probing & Prototype Classification（读取路线 baseline）
+% 每节结构：(1) 共同范式 → (2) 代表方法 → (3) 与本文的技术区分
+% -----------------------------------------------------------------------
+
+% -----------------------------------------------------------------------
+% §2.1：Activation Steering and Interventional Adaptation
+% -----------------------------------------------------------------------
+\subsection{Activation Steering and Interventional Adaptation}
+
+Current paradigms for adapting Large Multimodal Models (LMMs) predominantly rely on \textit{activation steering}, where internal representations are explicitly modified to guide model behavior. Rooted in \textit{Representation Engineering (RepE)}~\cite{zou2023representation, dafnis2025test}, these methods extract task-specific vectors and inject them into the model's forward pass.
+For instance, Sensitivity-Aware Task Vectors (STV)~\cite{ma2026and} identify task-relevant attention heads via sensitivity analysis, while MimIC~\cite{jiang2025mimic} employs a lightweight auxiliary module to simulate input-dependent effects.
+Recent works like I2CL~\cite{li2025implicit}, Huang et al.~\cite{huang2024multimodal}, and Xu et al.~\cite{xu2026steering} further propose a unified view of In-Context Learning (ICL) as implicit representation manipulation, extracting latent task vectors from both MHA and MLP residual streams.
+Despite their technical diversity, these approaches share a fundamental assumption: adapting LMMs requires \textit{writing into} or intervening on intermediate activations to alter the final autoregressive generation.
+
+However, this \textit{"write-based"} paradigm fails on dense multimodal classification~\cite{doveh2024towards}. Unlike text-only models, LMM decoders carry entangled cross-modal features. We show in \S\ref{sec:analysis} that latent shifts corrupt these features, disrupting discriminative capabilities before generation begins.
+Rather than steering activations to force the correct text output, HiRe establishes that the better path is strictly \textit{"read-based"}: bypassing the flawed generation bottleneck and classifying directly from the LMM's unperturbed, rich hierarchical representations.
+
+\subsection{Internal Feature Probing and Hierarchical Classification}
+
+Instead of forcing a correct text output through steering, \textit{feature probing}~\cite{alain2016understanding,meng2022locating,belinkov2022probing} seeks to "read" the latent knowledge already encoded in pre-trained representations. 
+In the context of vision-language models, contrastive encoders like CLIP~\cite{radford2021learning} and SigCLIP~\cite{zhai2023sigmoid} provide strong off-the-shelf features for zero-shot and few-shot classification via nearest-centroid matching in the joint embedding space. 
+However, as these models lack the generative reasoning and multimodal in-context understanding of decoder-only LMMs, recent efforts such as SAV~\cite{mitra2025enhancing} transition this idea to LMMs by extracting per-attention-head representations and aggregating their cosine-distance predictions.
+
+HiRe generalizes this probing paradigm by addressing three core limitations of prior work. 
+First, while SAV operates exclusively at the attention-head level, HiRe probes the \textit{full decoder hierarchy}---including MLP outputs and intermediate residual layers---to capture the complementary discriminative signals distributed across the model's internal computation pathways. 
+Second, unlike prior methods that use a fixed cosine metric regardless of feature geometry, we employ a \textit{Regularized Mahalanobis distance} to explicitly model the complex covariance structures (e.g., superposition~\cite{elhage2022toy}) inherent in LMM layers. 
+Finally, HiRe replaces hard component selection with a query-adaptive weighting scheme that calculates a per-query confidence margin, ensuring superior robustness across diverse tasks without task-specific training, extra forward passes, or the need for a secondary prototype bank.
+This unified framework improves classification accuracy while offering a more computationally efficient solution for real-time multimodal adaptation.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{img/HiReFramework.pdf}
+    \caption{The overall framework of our proposed method. Given the input image and corresponding multimodal context, our approach effectively aligns the in-context information directly during the internal feature extraction process. Unlike previous paradigms that necessitate external retrieval sequences mapping, learning additional adapter task vectors, or performing dual-forward feature selection, our architecture seamlessly integrates context-aware adaptations in a \textbf{single forward pass}. Furthermore, the entire process avoids introducing any \textbf{extra parameters}, achieving a highly efficient and elegant solution for Multimodal In-Context Learning.}
+    \label{fig:framework}
+\end{figure*}
+
+\section{Method}
+
+HiRe is a training-free framework that classifies directly in the internal representation space of a Large Multimodal Model, bypassing text generation entirely. As illustrated in Figure~\ref{fig:framework}, it consists of three components: (1)~\emph{Multi-Level Representation Extraction}, which captures hierarchical decoder features via a single forward pass; (2)~\emph{Regularized Mahalanobis Classification}, which constructs a statistically grounded nearest-centroid classifier per component; and (3)~\emph{Confidence-Weighted Aggregation}, which combines per-component predictions through a query-adaptive weighting scheme. We first establish the problem setting, then detail each component in turn.
+% -----------------------------------------------------------------------
+% 方法章节整体结构：
+%   §3.1 Preliminaries（问题定义 + LMM 内部结构）
+%   §3.2 Multi-Level Representation Extraction（1 次 forward pass，4L 个组件）
+%   §3.3 Regularized Mahalanobis Classification（公式 1：距离度量）
+%   §3.4 Per-Query Confidence-Weighted Aggregation（公式 2：加权集成）
+%   §3.5 Theoretical Analysis（放在方法末尾作为一个子节）
+% 理由：Theoretical 单独成节便于审稿人快速定位，且内容较完整；
+%        若篇幅紧张可合并入 §3.3/§3.4 末尾的 "Remark" 形式。
+% -----------------------------------------------------------------------
+
+% -----------------------------------------------------------------------
+% §3.1 Preliminaries
+%   - 问题定义：LMM f，support set S，query x*，目标预测 y* ∈ {1,...,K}
+%   - LMM 标准用法：generation-as-classification（parse(f.generate(x*))）
+%   - LMM 内部结构：L 层 decoder，每层含 self-attention（H heads）+ MLP
+%   - 定义 4 个 representation level（head / attn / mlp / layer）
+%   - 所有表征取 last token position
+% -----------------------------------------------------------------------
+\subsection{Preliminaries}
+
+Let $f$ be a Large Multimodal Model with $L$ decoder layers, and let $\mathcal{S} = \{(x_i, y_i)\}_{i=1}^N$ be a few-shot support set where each $x_i$ is an image–text pair and $y_i \in \{1, \ldots, K\}$ is its class label. Given a query sample $x^*$, the goal is to predict its label $y^* \in \{1, \ldots, K\}$. The standard approach treats $f$ as a text generator: $\hat{y} = \text{parse}(f.\text{generate}(x^*))$, reducing classification to prompt engineering and output parsing. HiRe instead bypasses generation and classifies directly in $f$'s internal representation space.
+
+Each decoder layer $l \in \{1, \ldots, L\}$ contains a multi-head self-attention module (with $H$ heads of dimension $d_{\text{head}}$) and a feed-forward (MLP) module. We define four representation levels at each layer, capturing complementary aspects of the model's internal computation. The \emph{head-level} representation $\mathbf{z}^{\text{head}}_l$ is the concatenated per-head activation before the output projection $W_O$, of dimension $H \cdot d_{\text{head}}$. The \emph{attention-level} representation $\mathbf{z}^{\text{attn}}_l$ is the full self-attention module output, of dimension $d_{\text{model}}$. The \emph{MLP-level} representation $\mathbf{z}^{\text{mlp}}_l$ is the feed-forward module output, also of dimension $d_{\text{model}}$. The \emph{layer-level} representation $\mathbf{z}^{\text{layer}}_l$ is the full decoder block output after residual addition, of dimension $d_{\text{model}}$. All representations are extracted at the last token position. We index each representation component by a tuple $(r, l)$ where $r \in \{\text{head, attn, mlp, layer}\}$ and $l \in \{1, \ldots, L\}$, yielding $4L$ components in total.
+
+% -----------------------------------------------------------------------
+% §3.2 Multi-Level Representation Extraction
+%   动机：标准 forward pass 已经计算了全部中间激活，无需额外计算
+%   设计：通过 hook 机制同步捕获所有 (r, l) 的 last-token 表征
+%   关键信息：只需 1 次 forward pass，不需要生成 token
+% -----------------------------------------------------------------------
+\subsection{Multi-Level Representation Extraction}
+\label{sec:extraction}
+
+As shown in §\ref{sec:heatmap}, the most discriminative representation level varies by task type: FGVC tasks favor late-layer attention heads, safety tasks favor mid-layer MLP outputs, and visual reasoning tasks draw on early-to-mid residual streams.
+Prior methods such as SAV~\cite{mitra2025enhancing} probe only attention-head activations and rely on accuracy-based head selection, thereby missing the complementary discriminative structure in MLP and residual-stream components.
+Activation-steering approaches~\cite{li2025implicit,jiang2025mimic,ma2026and} attempt to sidestep this by modifying features directly, but as we show in §\ref{sec:analysis}, such interventions corrupt the entangled visual–linguistic signals in multimodal decoders and fail systematically.
+The principled alternative is to \emph{read} all four representation levels simultaneously—an operation that incurs no additional computation, since every intermediate activation is already produced as a byproduct of a standard forward pass.
+
+Accordingly, HiRe replaces autoregressive generation with a single deterministic forward pass instrumented with lightweight hooks that collect all $4L$ component representations at the last token position. Formally, given any input $x$, we collect:
+\begin{equation}
+  \mathcal{Z}(x) = \bigl\{ \mathbf{z}_l^r(x) \;\big|\; r \in \{\text{head}, \text{attn}, \text{mlp}, \text{layer}\},\; l \in \{1, \ldots, L\} \bigr\}.
+\end{equation}
+The same procedure is applied to every support sample in $\mathcal{S}$ and to the query $x^*$.
+No generation step, gradient computation, or additional forward pass is required.
+Note that by the Data Processing Inequality~\cite{cover2006elements}, any intermediate representation $\mathbf{z}_l^r$ satisfies $I(X;\,\mathbf{z}_l^r) \geq I(X;\, Y_{\text{gen}})$, where $Y_{\text{gen}}$ is the parsed generation output. While this provides a formal lower bound on the amount of information about $X$ present at each component, we explicitly acknowledge that it does not guarantee this information is readily accessible via a simple linear classifier. Nevertheless, it strongly motivates probing these dense continuous representations rather than relying solely on the discretely decoded text.
+
+\begin{proposition}[\textbf{Representation-Generation Gap}]
+\label{prop:dpi}
+Let $X$ be the input multimodal context and $Y_{gen}$ be the generated text. For any intermediate representation $\mathbf{z}_l^r$ in the LMM hierarchy, the Data Processing Inequality implies $I(X; \mathbf{z}_l^r) \geq I(X; Y_{gen})$, indicating that the internal state preserves at least as much mutual information about the input as the generated output, motivating a shift toward representation reading.
+\end{proposition}
+
+% -----------------------------------------------------------------------
+% §3.3 Regularized Mahalanobis Classification
+%   动机：cosine similarity 忽略特征间相关性和 scale 差异，不同层的特征分布差异极大
+%   设计：
+%     (1) 每个类计算 centroid μ_c^(r,l)
+%     (2) 计算 pooled covariance + Ledoit-Wolf shrinkage → Σ_reg
+%     (3) 分类得分 = 负 Mahalanobis 距离
+%   优势：统一处理了 scale calibration / covariance / regularization，无需调参
+% -----------------------------------------------------------------------
+\subsection{Regularized Mahalanobis Classification}
+
+The $4L$ representation components extracted in §\ref{sec:extraction} live in geometrically heterogeneous spaces: residual-stream features span a high-dimensional isotropic regime, while individual attention-head outputs are low-rank and highly correlated~\cite{elhage2021mathematical}, and MLP activations exhibit strong inter-neuron correlations due to superposition~\cite{elhage2022toy}.
+A distance metric that ignores this geometry will produce miscalibrated nearest-centroid scores.
+The Mahalanobis distance is the natural choice: under a Gaussian class-conditional model with shared covariance, it is equivalent to LDA and Bayes-optimal among linear classifiers (Proposition~\ref{prop:mahal}).
+In the few-shot regime, the pooled covariance must further be regularized to remain well-conditioned; we apply Ledoit-Wolf analytical shrinkage~\cite{ledoit2004well}, which provides a closed-form optimal estimator without introducing additional hyperparameters (see §\ref{sec:ablation} for ablation).
+
+For each component $(r, l)$ and class $c$, we compute the class centroid $\boldsymbol{\mu}_c^{(r,l)} = \frac{1}{|\mathcal{S}_c|} \sum_{(x, y) \in \mathcal{S}_c} \mathbf{z}_l^r(x)$. 
+In the few-shot regime, we estimate the regularized pooled covariance $\boldsymbol{\Sigma}_{\text{reg}}^{(r,l)}$ via Ledoit-Wolf analytical shrinkage~\cite{ledoit2004well}:
+\begin{equation}
+  \boldsymbol{\Sigma}_{\text{reg}}^{(r,l)} = (1 - \alpha^*) \,\hat{\boldsymbol{\Sigma}}_{\text{p}}^{(r,l)} + \alpha^* \cdot \frac{\operatorname{tr}(\hat{\boldsymbol{\Sigma}}_{\text{p}}^{(r,l)})}{d} \,\mathbf{I},
+  \label{eq:sigma_reg}
+\end{equation}
+where $\hat{\boldsymbol{\Sigma}}_{\text{p}}^{(r,l)}$ is the pooled within-class covariance and $\alpha^* \in [0, 1]$ is the optimal shrinkage coefficient determined analytically from the support set. 
+The classification score for query $x^*$ under component $(r, l)$ is then:
+\begin{equation}
+  s_c^{(r,l)}(x^*) = -\tfrac{1}{2} \bigl(\mathbf{z}_l^r(x^*) - \boldsymbol{\mu}_c^{(r,l)}\bigr)^\top \!\bigl(\boldsymbol{\Sigma}_{\text{reg}}^{(r,l)}\bigr)^{-1} \bigl(\mathbf{z}_l^r(x^*) - \boldsymbol{\mu}_c^{(r,l)}\bigr).
+  \label{eq:mahal}
+\end{equation}
+
+\begin{proposition}[\textbf{Optimality of Mahalanobis Probing}]
+\label{prop:mahal}
+Under a Gaussian class-conditional model $P(\mathbf{z}|y=c) = \mathcal{N}(\boldsymbol{\mu}_c, \boldsymbol{\Sigma})$ with a shared covariance matrix $\boldsymbol{\Sigma}$, the nearest-centroid classifier using Mahalanobis distance is equivalent to Linear Discriminant Analysis (LDA) and achieves the minimum Bayes error rate among all linear classifiers.
+\end{proposition}
+
+This formulation jointly addresses scale calibration, inter-neuron correlation modeling, and analytical shrinkage, enabling optimal linear separation in the heterogeneous LMM latent space without hyperparameter tuning.
+
+% -----------------------------------------------------------------------
+% §3.4 Per-Query Confidence-Weighted Aggregation
+%   动机：不同组件对不同 query 的判别力差异很大，hard top-k 忽略了 per-query 变化
+%   设计：
+%     (1) margin = max_c score - second_max_c score（类别间间隔）
+%     (2) weight = max(margin, 0)（负 margin 置零，低置信自动降权）
+%     (3) 最终预测 = argmax_c Σ_{r,l} w^(r,l) · s_c^(r,l)
+%   优势：无需 top-k 超参，低置信组件自动权重为零，高置信组件主导决策
+% -----------------------------------------------------------------------
+\subsection{Per-Query Confidence-Weighted Aggregation}
+
+Even among highly discriminative components, not every component is equally useful for every query: a component that performs well on the support set may assign near-uniform class scores for a particular test input, contributing noise rather than signal.
+Prior methods such as SAV~\cite{mitra2025enhancing} address this with hard top-$k$ selection—retaining only the globally best-performing components by support-set accuracy—but this fixes the active set across all queries, ignoring per-instance variability.
+We instead let each component's own output determine its influence on a per-query basis: a component with a large margin between its top-two class scores is confident and should dominate, while a low-margin component should be suppressed automatically.
+
+Formally, for each component $(r, l)$ and query $x^*$, we define the \emph{prediction margin}:
+\begin{equation}
+  m^{(r,l)}(x^*) = \max_c \, s_c^{(r,l)}(x^*) - \max_{c' \neq \hat{c}^{(r,l)}} s_{c'}^{(r,l)}(x^*),
+  \label{eq:margin}
+\end{equation}
+where $\hat{c}^{(r,l)} = \arg\max_c s_c^{(r,l)}(x^*)$ is the top prediction of component $(r, l)$.
+The per-query component weight is defined as:
+\begin{equation}
+  w^{(r,l)}(x^*) = \max\!\bigl(m^{(r,l)}(x^*),\; 0\bigr).
+  \label{eq:weight}
+\end{equation}
+This margin-based weighting also gracefully mitigates potential inter-component calibration issues. Since aggregating raw scores across heterogeneous layers (each with its own covariance and dimensionality) could bias the ensemble toward components with naturally larger scales, the margin dynamically acts as a per-query temperature alignment. High-variance layers that produce identically large but uniform scores will yield a small margin, preventing them from improperly dominating the un-normalized output.
+
+We define the \emph{active proportion} $p(x^*) = \frac{1}{4L} \sum_{r,l} \mathbb{I}[w^{(r,l)}(x^*) > 0]$ as the fraction of components participating in the decision for a given query $x^*$. 
+This adaptive selection ensures that only components with positive discriminative evidence contribute to the final ensemble. Formally, this mechanism implements a parameter-free \textbf{Soft Mixture-of-Experts (MoE)} (see supplementary material for details), where the prediction margin $m^{(r,l)}$ acts as a closed-form gating function that dynamically filters non-informative layers per-query.
+
+The final prediction aggregates all components weighted by their confidence:
+\begin{equation}
+  \hat{y}^* = \arg\max_c \sum_{r,\,l} w^{(r,l)}(x^*) \cdot s_c^{(r,l)}(x^*).
+  \label{eq:final}
+\end{equation}
+By construction, any component for which the top-scoring class is only marginally preferred receives a weight of zero and is automatically excluded, eliminating the need for heuristic top-$k$ selection. This allows the model to adapt its effective ensemble size—and thus its active proportion $p(x^*)$—to the difficulty of each instance without any task-specific tuning.
+In essence, this formulation acts as a dynamic denoising mechanism that suppresses uninformative "experts" per-query, while preserving the geometric properties of the unperturbed latent space.
+
+% -----------------------------------------------------------------------
+% Table: Main results – 3 backbones × 8 rows × 16 tasks (+ 5 reference)
+%   Methods per backbone: Model | 4-shot ICL | STV | MimIC | I2CL | LoRA | SAV | HRP
+%   Reference rows (gray): CLIP, SigLIP, GPT-4o†, LLaVA-1.5, InstructBLIP
+%   ±std from 3 seeds (42/43/44); bold=best in block, underline=second
+% -----------------------------------------------------------------------
+\begin{table*}[t]
+\centering
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l
+  c c
+  c c c c c
+  c c c c
+  c c c c c
+  @{}}
+\toprule
+\multirow{3}{*}{\textbf{Method}}
+& \multicolumn{11}{c}{\textbf{Image-Text Tasks}}
+& \multicolumn{5}{c}{\textbf{Image-Only Tasks}} \\
+\cmidrule(lr){2-12}\cmidrule(lr){13-17}
+& \multicolumn{2}{c}{\textbf{Safety}}
+& \multicolumn{5}{c}{\textbf{VQA}}
+& \multicolumn{4}{c}{\textbf{I-T Retrieval}}
+& \multicolumn{5}{c}{\textbf{Classification}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-8}\cmidrule(lr){9-12}\cmidrule(lr){13-17}
+& \rotatebox{90}{\textbf{MHalu}}
+& \rotatebox{90}{\textbf{VLGuard}}
+& \rotatebox{90}{\textbf{BLINK}}
+& \rotatebox{90}{\textbf{VizWiz}}
+& \rotatebox{90}{\textbf{NB (T)}}
+& \rotatebox{90}{\textbf{NB (I)}}
+& \rotatebox{90}{\textbf{NB (G)}}
+& \rotatebox{90}{\textbf{NB-r (T)}}
+& \rotatebox{90}{\textbf{NB-r (I)}}
+& \rotatebox{90}{\textbf{NB-r (G)}}
+& \rotatebox{90}{\textbf{SC}}
+& \rotatebox{90}{\textbf{EuroSAT}}
+& \rotatebox{90}{\textbf{Pets}}
+& \rotatebox{90}{\textbf{ImageNet}}
+& \rotatebox{90}{\textbf{Flower}}
+& \rotatebox{90}{\textbf{CUB}} \\
+\midrule
+%% ---- Reference models (gray, no few-shot) ----
+\cellcolor{gray!15}CLIP
+  & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}--
+  & \cellcolor{gray!15}41.8 & \cellcolor{gray!15}45.0 & \cellcolor{gray!15}23.2 & \cellcolor{gray!15}35.3
+  & \cellcolor{gray!15}64.0 & \cellcolor{gray!15}88.1 & \cellcolor{gray!15}96.1 & \cellcolor{gray!15}92.8 & \cellcolor{gray!15}97.8 \\
+\cellcolor{gray!15}SigLIP
+  & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}-- & \cellcolor{gray!15}--
+  & \cellcolor{gray!15}54.5 & \cellcolor{gray!15}54.9 & \cellcolor{gray!15}31.2 & \cellcolor{gray!15}42.7
+  & \cellcolor{gray!15}63.9 & \cellcolor{gray!15}98.3 & \cellcolor{gray!15}97.6 & \cellcolor{gray!15}95.8 & \cellcolor{gray!15}98.4 \\
+\cellcolor{gray!15}GPT-4o$^\dagger$
+  & \cellcolor{gray!15}39.4 & \cellcolor{gray!15}45.7 & \cellcolor{gray!15}59.0 & \cellcolor{gray!15}58.1 & \cellcolor{gray!15}64.6 & \cellcolor{gray!15}66.4 & \cellcolor{gray!15}39.6
+  & \cellcolor{gray!15}65.0 & \cellcolor{gray!15}67.0 & \cellcolor{gray!15}40.5 & \cellcolor{gray!15}48.3
+  & \cellcolor{gray!15}70.5 & \cellcolor{gray!15}98.3 & \cellcolor{gray!15}98.3 & \cellcolor{gray!15}99.0 & \cellcolor{gray!15}99.3 \\
+\cellcolor{gray!15}LLaVA-1.5
+  & \cellcolor{gray!15}44.3 & \cellcolor{gray!15}31.0 & \cellcolor{gray!15}38.0 & \cellcolor{gray!15}50.0 & \cellcolor{gray!15}37.7 & \cellcolor{gray!15}43.8 & \cellcolor{gray!15}12.7
+  & \cellcolor{gray!15}36.7 & \cellcolor{gray!15}42.7 & \cellcolor{gray!15}12.2 & \cellcolor{gray!15}24.9
+  & \cellcolor{gray!15}26.3 & \cellcolor{gray!15}43.0 & \cellcolor{gray!15}20.6 & \cellcolor{gray!15}51.8 & \cellcolor{gray!15}49.0 \\
+\cellcolor{gray!15}InstructBLIP
+  & \cellcolor{gray!15}44.0 & \cellcolor{gray!15}18.5 & \cellcolor{gray!15}38.7 & \cellcolor{gray!15}34.5 & \cellcolor{gray!15}20.2 & \cellcolor{gray!15}24.2 & \cellcolor{gray!15}4.0
+  & \cellcolor{gray!15}19.5 & \cellcolor{gray!15}21.3 & \cellcolor{gray!15}1.1 & \cellcolor{gray!15}4.7
+  & \cellcolor{gray!15}20.4 & \cellcolor{gray!15}56.0 & \cellcolor{gray!15}11.0 & \cellcolor{gray!15}18.2 & \cellcolor{gray!15}33.8 \\
+\midrule
+%% ===============================================================
+%% Backbone 1: Qwen2-VL-7B
+%% ===============================================================
+\textbf{Qwen2-VL-7B}
+  & 24.0\textsuperscript{\,$\pm$1.2} & 73.1\textsuperscript{\,$\pm$2.1} & 43.3\textsuperscript{\,$\pm$1.8} & 0.0\textsuperscript{\,$\pm$0.0} & 53.8\textsuperscript{\,$\pm$2.3} & 56.6\textsuperscript{\,$\pm$2.5} & 28.5\textsuperscript{\,$\pm$1.9}
+  & 60.2\textsuperscript{\,$\pm$2.4} & 61.9\textsuperscript{\,$\pm$2.2} & 35.6\textsuperscript{\,$\pm$1.7} & \underline{41.7}\textsuperscript{\,$\pm$2.0}
+  & 54.7\textsuperscript{\,$\pm$2.8} & 92.6\textsuperscript{\,$\pm$1.4} & 84.4\textsuperscript{\,$\pm$1.9} & 93.7\textsuperscript{\,$\pm$1.2} & 62.5\textsuperscript{\,$\pm$2.6} \\
++ 4-shot ICL
+  & 40.4\textsuperscript{\,$\pm$2.8} & 52.9\textsuperscript{\,$\pm$3.2} & 37.6\textsuperscript{\,$\pm$2.4} & 12.3\textsuperscript{\,$\pm$3.1} & 38.2\textsuperscript{\,$\pm$3.0} & 41.3\textsuperscript{\,$\pm$2.9} & 15.2\textsuperscript{\,$\pm$2.3}
+  & 42.4\textsuperscript{\,$\pm$3.5} & 45.6\textsuperscript{\,$\pm$3.2} & 22.7\textsuperscript{\,$\pm$2.8} & 25.2\textsuperscript{\,$\pm$2.7}
+  & 29.4\textsuperscript{\,$\pm$3.8} & 43.5\textsuperscript{\,$\pm$4.1} & 43.8\textsuperscript{\,$\pm$3.6} & 59.4\textsuperscript{\,$\pm$3.3} & 48.4\textsuperscript{\,$\pm$3.9} \\
++ STV~\cite{ma2026and}
+  & 22.8\textsuperscript{\,$\pm$2.5} & 71.4\textsuperscript{\,$\pm$2.8} & 42.1\textsuperscript{\,$\pm$2.2} & 0.0\textsuperscript{\,$\pm$0.0} & 52.4\textsuperscript{\,$\pm$2.6} & 55.1\textsuperscript{\,$\pm$2.7} & 27.3\textsuperscript{\,$\pm$2.1}
+  & 59.0\textsuperscript{\,$\pm$2.7} & 60.5\textsuperscript{\,$\pm$2.5} & 34.2\textsuperscript{\,$\pm$2.0} & 40.3\textsuperscript{\,$\pm$2.3}
+  & 53.2\textsuperscript{\,$\pm$3.1} & 91.4\textsuperscript{\,$\pm$1.8} & 83.1\textsuperscript{\,$\pm$2.2} & 92.5\textsuperscript{\,$\pm$1.5} & 61.0\textsuperscript{\,$\pm$2.9} \\
++ MimIC~\cite{jiang2025mimic}
+  & 23.5\textsuperscript{\,$\pm$2.3} & 72.3\textsuperscript{\,$\pm$2.6} & 42.8\textsuperscript{\,$\pm$2.0} & 2.1\textsuperscript{\,$\pm$1.8} & 53.1\textsuperscript{\,$\pm$2.4} & 55.8\textsuperscript{\,$\pm$2.5} & 27.9\textsuperscript{\,$\pm$2.0}
+  & 59.6\textsuperscript{\,$\pm$2.5} & 61.2\textsuperscript{\,$\pm$2.3} & 34.8\textsuperscript{\,$\pm$1.9} & 41.0\textsuperscript{\,$\pm$2.2}
+  & 54.0\textsuperscript{\,$\pm$2.9} & 92.0\textsuperscript{\,$\pm$1.6} & 83.8\textsuperscript{\,$\pm$2.1} & 93.2\textsuperscript{\,$\pm$1.4} & 61.8\textsuperscript{\,$\pm$2.7} \\
++ I2CL~\cite{li2025implicit}
+  & 23.1\textsuperscript{\,$\pm$2.6} & 71.9\textsuperscript{\,$\pm$2.9} & 41.5\textsuperscript{\,$\pm$2.3} & 0.0\textsuperscript{\,$\pm$0.0} & 52.7\textsuperscript{\,$\pm$2.5} & 55.4\textsuperscript{\,$\pm$2.6} & 27.1\textsuperscript{\,$\pm$2.2}
+  & 58.4\textsuperscript{\,$\pm$2.8} & 59.9\textsuperscript{\,$\pm$2.6} & 33.5\textsuperscript{\,$\pm$2.1} & 39.6\textsuperscript{\,$\pm$2.4}
+  & 52.5\textsuperscript{\,$\pm$3.2} & 90.8\textsuperscript{\,$\pm$1.9} & 82.4\textsuperscript{\,$\pm$2.3} & 91.8\textsuperscript{\,$\pm$1.6} & 60.2\textsuperscript{\,$\pm$3.0} \\
++ LoRA~\cite{hu2022lora}
+  & 84.0\textsuperscript{\,$\pm$2.3} & 89.4\textsuperscript{\,$\pm$1.9} & 46.6\textsuperscript{\,$\pm$2.0} & 64.8\textsuperscript{\,$\pm$2.8} & 55.8\textsuperscript{\,$\pm$2.2} & 57.9\textsuperscript{\,$\pm$2.1} & 31.2\textsuperscript{\,$\pm$2.0}
+  & 66.1\textsuperscript{\,$\pm$2.4} & 67.2\textsuperscript{\,$\pm$2.3} & 39.3\textsuperscript{\,$\pm$1.9} & 37.8\textsuperscript{\,$\pm$2.2}
+  & \underline{73.4}\textsuperscript{\,$\pm$2.7} & \underline{96.8}\textsuperscript{\,$\pm$1.4} & 94.6\textsuperscript{\,$\pm$1.7} & 95.8\textsuperscript{\,$\pm$1.3} & \underline{91.5}\textsuperscript{\,$\pm$2.6} \\
++ SAV~\cite{mitra2025enhancing}
+  & \underline{85.1}\textsuperscript{\,$\pm$2.4} & \underline{94.2}\textsuperscript{\,$\pm$1.8} & \underline{47.2}\textsuperscript{\,$\pm$2.1} & \underline{68.3}\textsuperscript{\,$\pm$3.0} & \underline{57.6}\textsuperscript{\,$\pm$2.4} & \underline{60.9}\textsuperscript{\,$\pm$2.2} & \underline{32.3}\textsuperscript{\,$\pm$2.0}
+  & \underline{70.0}\textsuperscript{\,$\pm$2.8} & \underline{71.0}\textsuperscript{\,$\pm$2.6} & \underline{42.5}\textsuperscript{\,$\pm$2.3} & \underline{41.7}\textsuperscript{\,$\pm$2.5}
+  & 72.8\textsuperscript{\,$\pm$3.1} & 96.5\textsuperscript{\,$\pm$1.5} & \underline{95.3}\textsuperscript{\,$\pm$1.8} & \underline{96.7}\textsuperscript{\,$\pm$1.3} & 76.8\textsuperscript{\,$\pm$2.9} \\
+\cellcolor{myblue!8}\textbf{+ HiRe (Ours)}
+  & \cellcolor{myblue!8}\textbf{87.3}\textsuperscript{\,$\pm$2.1} & \cellcolor{myblue!8}\textbf{98.0}\textsuperscript{\,$\pm$1.1} & \cellcolor{myblue!8}\textbf{50.1}\textsuperscript{\,$\pm$1.9} & \cellcolor{myblue!8}\textbf{70.2}\textsuperscript{\,$\pm$2.7} & \cellcolor{myblue!8}\textbf{59.8}\textsuperscript{\,$\pm$2.1} & \cellcolor{myblue!8}\textbf{62.7}\textsuperscript{\,$\pm$2.0} & \cellcolor{myblue!8}\textbf{34.6}\textsuperscript{\,$\pm$1.8}
+  & \cellcolor{myblue!8}\textbf{80.0}\textsuperscript{\,$\pm$2.2} & \cellcolor{myblue!8}\textbf{80.0}\textsuperscript{\,$\pm$2.1} & \cellcolor{myblue!8}\textbf{47.3}\textsuperscript{\,$\pm$2.0} & \cellcolor{myblue!8}\textbf{56.7}\textsuperscript{\,$\pm$2.3}
+  & \cellcolor{myblue!8}\textbf{77.5}\textsuperscript{\,$\pm$2.8} & \cellcolor{myblue!8}\textbf{99.4}\textsuperscript{\,$\pm$0.6} & \cellcolor{myblue!8}\textbf{97.3}\textsuperscript{\,$\pm$1.2} & \cellcolor{myblue!8}\textbf{99.4}\textsuperscript{\,$\pm$0.7} & \cellcolor{myblue!8}\textbf{92.7}\textsuperscript{\,$\pm$1.6} \\
+\textcolor{mygreen}{\textit{vs.~Model}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+63.3}} & \multicolumn{1}{l}{\textcolor{mygreen}{+24.9}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+70.2}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.0}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.1}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.1}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+19.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+18.1}} & \multicolumn{1}{l}{\textcolor{mygreen}{+11.7}} & \multicolumn{1}{l}{\textcolor{mygreen}{+15.0}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+22.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+12.9}} & \multicolumn{1}{l}{\textcolor{mygreen}{+5.7}} & \multicolumn{1}{l}{\textcolor{mygreen}{+30.2}} \\
+\midrule
+%% ===============================================================
+%% Backbone 2: Qwen3-VL-8B
+%% ===============================================================
+\textbf{Qwen3-VL-8B}
+  & 26.5\textsuperscript{\,$\pm$1.4} & 75.8\textsuperscript{\,$\pm$2.0} & 46.1\textsuperscript{\,$\pm$1.9} & 0.0\textsuperscript{\,$\pm$0.0} & 55.2\textsuperscript{\,$\pm$2.1} & 58.0\textsuperscript{\,$\pm$2.3} & 30.1\textsuperscript{\,$\pm$1.8}
+  & 62.8\textsuperscript{\,$\pm$2.3} & 64.5\textsuperscript{\,$\pm$2.1} & 37.9\textsuperscript{\,$\pm$1.9} & 44.2\textsuperscript{\,$\pm$2.1}
+  & 57.3\textsuperscript{\,$\pm$2.7} & 93.8\textsuperscript{\,$\pm$1.3} & 85.9\textsuperscript{\,$\pm$1.7} & 94.5\textsuperscript{\,$\pm$1.1} & 66.2\textsuperscript{\,$\pm$2.5} \\
++ 4-shot ICL
+  & 43.1\textsuperscript{\,$\pm$2.9} & 55.4\textsuperscript{\,$\pm$3.1} & 39.8\textsuperscript{\,$\pm$2.5} & 14.0\textsuperscript{\,$\pm$3.2} & 40.5\textsuperscript{\,$\pm$2.8} & 43.7\textsuperscript{\,$\pm$2.7} & 17.3\textsuperscript{\,$\pm$2.4}
+  & 44.9\textsuperscript{\,$\pm$3.3} & 47.8\textsuperscript{\,$\pm$3.0} & 24.5\textsuperscript{\,$\pm$2.9} & 27.6\textsuperscript{\,$\pm$2.8}
+  & 32.1\textsuperscript{\,$\pm$3.6} & 46.2\textsuperscript{\,$\pm$3.9} & 46.3\textsuperscript{\,$\pm$3.4} & 62.0\textsuperscript{\,$\pm$3.1} & 51.7\textsuperscript{\,$\pm$3.7} \\
++ STV~\cite{ma2026and}
+  & 25.2\textsuperscript{\,$\pm$2.6} & 74.3\textsuperscript{\,$\pm$2.5} & 44.8\textsuperscript{\,$\pm$2.2} & 0.0\textsuperscript{\,$\pm$0.0} & 54.0\textsuperscript{\,$\pm$2.4} & 56.6\textsuperscript{\,$\pm$2.5} & 28.8\textsuperscript{\,$\pm$2.0}
+  & 61.5\textsuperscript{\,$\pm$2.5} & 63.1\textsuperscript{\,$\pm$2.3} & 36.5\textsuperscript{\,$\pm$1.9} & 43.0\textsuperscript{\,$\pm$2.3}
+  & 56.0\textsuperscript{\,$\pm$2.9} & 92.5\textsuperscript{\,$\pm$1.5} & 84.6\textsuperscript{\,$\pm$1.9} & 93.2\textsuperscript{\,$\pm$1.3} & 64.8\textsuperscript{\,$\pm$2.7} \\
++ MimIC~\cite{jiang2025mimic}
+  & 25.9\textsuperscript{\,$\pm$2.4} & 75.1\textsuperscript{\,$\pm$2.3} & 45.4\textsuperscript{\,$\pm$2.1} & 2.8\textsuperscript{\,$\pm$2.0} & 54.6\textsuperscript{\,$\pm$2.3} & 57.3\textsuperscript{\,$\pm$2.4} & 29.4\textsuperscript{\,$\pm$1.9}
+  & 62.1\textsuperscript{\,$\pm$2.4} & 63.8\textsuperscript{\,$\pm$2.2} & 37.1\textsuperscript{\,$\pm$1.8} & 43.7\textsuperscript{\,$\pm$2.2}
+  & 56.8\textsuperscript{\,$\pm$2.8} & 93.1\textsuperscript{\,$\pm$1.4} & 85.3\textsuperscript{\,$\pm$1.8} & 93.9\textsuperscript{\,$\pm$1.2} & 65.5\textsuperscript{\,$\pm$2.6} \\
++ I2CL~\cite{li2025implicit}
+  & 25.4\textsuperscript{\,$\pm$2.7} & 74.6\textsuperscript{\,$\pm$2.7} & 44.2\textsuperscript{\,$\pm$2.3} & 0.0\textsuperscript{\,$\pm$0.0} & 53.5\textsuperscript{\,$\pm$2.5} & 56.9\textsuperscript{\,$\pm$2.6} & 28.4\textsuperscript{\,$\pm$2.1}
+  & 61.0\textsuperscript{\,$\pm$2.6} & 62.6\textsuperscript{\,$\pm$2.4} & 36.0\textsuperscript{\,$\pm$2.0} & 42.4\textsuperscript{\,$\pm$2.4}
+  & 55.4\textsuperscript{\,$\pm$3.0} & 91.9\textsuperscript{\,$\pm$1.6} & 84.0\textsuperscript{\,$\pm$2.0} & 92.6\textsuperscript{\,$\pm$1.4} & 64.0\textsuperscript{\,$\pm$2.8} \\
++ LoRA~\cite{hu2022lora}
+  & 86.2\textsuperscript{\,$\pm$2.1} & 92.1\textsuperscript{\,$\pm$1.7} & 48.1\textsuperscript{\,$\pm$1.9} & 67.4\textsuperscript{\,$\pm$2.6} & 58.3\textsuperscript{\,$\pm$2.0} & 60.1\textsuperscript{\,$\pm$1.9} & 33.7\textsuperscript{\,$\pm$1.8}
+  & 68.1\textsuperscript{\,$\pm$2.2} & 69.0\textsuperscript{\,$\pm$2.1} & 41.7\textsuperscript{\,$\pm$1.9} & 41.4\textsuperscript{\,$\pm$2.1}
+  & \underline{76.7}\textsuperscript{\,$\pm$2.5} & \underline{98.1}\textsuperscript{\,$\pm$1.2} & \underline{96.9}\textsuperscript{\,$\pm$1.5} & \underline{98.3}\textsuperscript{\,$\pm$1.1} & \textbf{96.8}\textsuperscript{\,$\pm$2.3} \\
++ SAV~\cite{mitra2025enhancing}
+  & \underline{86.9}\textsuperscript{\,$\pm$2.2} & \underline{95.1}\textsuperscript{\,$\pm$1.6} & \underline{49.5}\textsuperscript{\,$\pm$2.0} & \underline{72.4}\textsuperscript{\,$\pm$2.8} & \underline{60.3}\textsuperscript{\,$\pm$2.2} & \underline{63.8}\textsuperscript{\,$\pm$2.1} & \underline{34.7}\textsuperscript{\,$\pm$1.9}
+  & \underline{73.5}\textsuperscript{\,$\pm$2.6} & \underline{74.3}\textsuperscript{\,$\pm$2.5} & \underline{45.2}\textsuperscript{\,$\pm$2.2} & \underline{44.8}\textsuperscript{\,$\pm$2.4}
+  & 75.4\textsuperscript{\,$\pm$2.9} & 97.2\textsuperscript{\,$\pm$1.3} & 96.5\textsuperscript{\,$\pm$1.6} & 97.3\textsuperscript{\,$\pm$1.2} & 80.1\textsuperscript{\,$\pm$2.7} \\
+\cellcolor{myblue!8}\textbf{+ HiRe (Ours)}
+  & \cellcolor{myblue!8}\textbf{88.5}\textsuperscript{\,$\pm$1.9} & \cellcolor{myblue!8}\textbf{98.5}\textsuperscript{\,$\pm$1.0} & \cellcolor{myblue!8}\textbf{52.4}\textsuperscript{\,$\pm$1.8} & \cellcolor{myblue!8}\textbf{73.8}\textsuperscript{\,$\pm$2.5} & \cellcolor{myblue!8}\textbf{62.1}\textsuperscript{\,$\pm$1.9} & \cellcolor{myblue!8}\textbf{65.4}\textsuperscript{\,$\pm$1.8} & \cellcolor{myblue!8}\textbf{36.5}\textsuperscript{\,$\pm$1.7}
+  & \cellcolor{myblue!8}\textbf{82.6}\textsuperscript{\,$\pm$2.0} & \cellcolor{myblue!8}\textbf{83.2}\textsuperscript{\,$\pm$1.9} & \cellcolor{myblue!8}\textbf{49.7}\textsuperscript{\,$\pm$1.8} & \cellcolor{myblue!8}\textbf{59.4}\textsuperscript{\,$\pm$2.1}
+  & \cellcolor{myblue!8}\textbf{80.1}\textsuperscript{\,$\pm$2.5} & \cellcolor{myblue!8}\textbf{99.7}\textsuperscript{\,$\pm$0.5} & \cellcolor{myblue!8}\textbf{98.2}\textsuperscript{\,$\pm$1.1} & \cellcolor{myblue!8}\textbf{99.6}\textsuperscript{\,$\pm$0.5} & \cellcolor{myblue!8}\underline{95.3}\textsuperscript{\,$\pm$1.4} \\
+\textcolor{mygreen}{\textit{vs.~Model}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+62.0}} & \multicolumn{1}{l}{\textcolor{mygreen}{+22.7}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.3}} & \multicolumn{1}{l}{\textcolor{mygreen}{+73.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.9}} & \multicolumn{1}{l}{\textcolor{mygreen}{+7.4}} & \multicolumn{1}{l}{\textcolor{mygreen}{+6.4}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+19.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+18.7}} & \multicolumn{1}{l}{\textcolor{mygreen}{+11.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+15.2}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+22.8}} & \multicolumn{1}{l}{\textcolor{mygreen}{+5.9}} & \multicolumn{1}{l}{\textcolor{mygreen}{+12.3}} & \multicolumn{1}{l}{\textcolor{mygreen}{+5.1}} & \multicolumn{1}{l}{\textcolor{mygreen}{+29.1}} \\
+\midrule
+%% ===============================================================
+%% Backbone 3: Idefics3-8B
+%% ===============================================================
+\textbf{Idefics3-8B}
+  & 20.8\textsuperscript{\,$\pm$1.8} & 58.3\textsuperscript{\,$\pm$2.8} & 37.5\textsuperscript{\,$\pm$2.2} & 0.0\textsuperscript{\,$\pm$0.0} & 44.7\textsuperscript{\,$\pm$2.5} & 47.2\textsuperscript{\,$\pm$2.4} & 22.1\textsuperscript{\,$\pm$2.0}
+  & 49.5\textsuperscript{\,$\pm$2.7} & 51.3\textsuperscript{\,$\pm$2.6} & 28.4\textsuperscript{\,$\pm$2.1} & 32.6\textsuperscript{\,$\pm$2.3}
+  & 38.9\textsuperscript{\,$\pm$3.2} & 74.5\textsuperscript{\,$\pm$2.5} & 67.2\textsuperscript{\,$\pm$2.7} & 81.4\textsuperscript{\,$\pm$2.0} & 44.8\textsuperscript{\,$\pm$3.1} \\
++ 4-shot ICL
+  & 33.2\textsuperscript{\,$\pm$3.3} & 44.6\textsuperscript{\,$\pm$3.8} & 31.2\textsuperscript{\,$\pm$2.9} & 8.5\textsuperscript{\,$\pm$3.5} & 31.4\textsuperscript{\,$\pm$3.2} & 34.8\textsuperscript{\,$\pm$3.1} & 11.7\textsuperscript{\,$\pm$2.6}
+  & 36.2\textsuperscript{\,$\pm$3.9} & 38.5\textsuperscript{\,$\pm$3.7} & 18.3\textsuperscript{\,$\pm$3.2} & 20.4\textsuperscript{\,$\pm$3.0}
+  & 22.7\textsuperscript{\,$\pm$4.1} & 36.8\textsuperscript{\,$\pm$4.5} & 37.5\textsuperscript{\,$\pm$4.0} & 52.1\textsuperscript{\,$\pm$3.6} & 38.9\textsuperscript{\,$\pm$4.3} \\
++ STV~\cite{ma2026and}
+  & 19.5\textsuperscript{\,$\pm$2.8} & 56.9\textsuperscript{\,$\pm$3.1} & 36.2\textsuperscript{\,$\pm$2.6} & 0.0\textsuperscript{\,$\pm$0.0} & 43.4\textsuperscript{\,$\pm$2.8} & 45.8\textsuperscript{\,$\pm$2.7} & 21.0\textsuperscript{\,$\pm$2.3}
+  & 48.2\textsuperscript{\,$\pm$3.0} & 50.0\textsuperscript{\,$\pm$2.9} & 27.1\textsuperscript{\,$\pm$2.4} & 31.3\textsuperscript{\,$\pm$2.6}
+  & 37.6\textsuperscript{\,$\pm$3.5} & 73.2\textsuperscript{\,$\pm$2.8} & 65.9\textsuperscript{\,$\pm$3.0} & 80.1\textsuperscript{\,$\pm$2.3} & 43.5\textsuperscript{\,$\pm$3.4} \\
++ MimIC~\cite{jiang2025mimic}
+  & 20.2\textsuperscript{\,$\pm$2.6} & 57.6\textsuperscript{\,$\pm$3.0} & 36.8\textsuperscript{\,$\pm$2.5} & 2.4\textsuperscript{\,$\pm$2.1} & 44.0\textsuperscript{\,$\pm$2.7} & 46.5\textsuperscript{\,$\pm$2.6} & 21.6\textsuperscript{\,$\pm$2.2}
+  & 48.8\textsuperscript{\,$\pm$2.9} & 50.6\textsuperscript{\,$\pm$2.8} & 27.7\textsuperscript{\,$\pm$2.3} & 31.9\textsuperscript{\,$\pm$2.5}
+  & 38.2\textsuperscript{\,$\pm$3.4} & 73.8\textsuperscript{\,$\pm$2.7} & 66.5\textsuperscript{\,$\pm$2.9} & 80.8\textsuperscript{\,$\pm$2.2} & 44.1\textsuperscript{\,$\pm$3.3} \\
++ I2CL~\cite{li2025implicit}
+  & 19.8\textsuperscript{\,$\pm$2.9} & 57.2\textsuperscript{\,$\pm$3.2} & 35.6\textsuperscript{\,$\pm$2.7} & 0.0\textsuperscript{\,$\pm$0.0} & 43.1\textsuperscript{\,$\pm$2.9} & 45.5\textsuperscript{\,$\pm$2.8} & 20.7\textsuperscript{\,$\pm$2.4}
+  & 47.6\textsuperscript{\,$\pm$3.1} & 49.4\textsuperscript{\,$\pm$3.0} & 26.5\textsuperscript{\,$\pm$2.5} & 30.7\textsuperscript{\,$\pm$2.7}
+  & 37.0\textsuperscript{\,$\pm$3.6} & 72.6\textsuperscript{\,$\pm$2.9} & 65.3\textsuperscript{\,$\pm$3.1} & 79.5\textsuperscript{\,$\pm$2.4} & 42.8\textsuperscript{\,$\pm$3.5} \\
++ LoRA~\cite{hu2022lora}
+  & 65.9\textsuperscript{\,$\pm$2.7} & 79.8\textsuperscript{\,$\pm$2.2} & 40.5\textsuperscript{\,$\pm$2.3} & \underline{58.7}\textsuperscript{\,$\pm$2.9} & 49.5\textsuperscript{\,$\pm$2.5} & 51.0\textsuperscript{\,$\pm$2.4} & 26.2\textsuperscript{\,$\pm$2.2}
+  & 56.0\textsuperscript{\,$\pm$2.8} & 57.4\textsuperscript{\,$\pm$2.7} & 32.4\textsuperscript{\,$\pm$2.4} & 33.8\textsuperscript{\,$\pm$2.6}
+  & 57.9\textsuperscript{\,$\pm$3.0} & 82.4\textsuperscript{\,$\pm$2.1} & 73.1\textsuperscript{\,$\pm$2.4} & 84.7\textsuperscript{\,$\pm$1.9} & \underline{68.4}\textsuperscript{\,$\pm$3.1} \\
++ SAV~\cite{mitra2025enhancing}
+  & \underline{74.8}\textsuperscript{\,$\pm$2.8} & \underline{87.5}\textsuperscript{\,$\pm$2.1} & \underline{42.3}\textsuperscript{\,$\pm$2.4} & 56.4\textsuperscript{\,$\pm$3.3} & \underline{51.8}\textsuperscript{\,$\pm$2.7} & \underline{54.6}\textsuperscript{\,$\pm$2.5} & \underline{27.9}\textsuperscript{\,$\pm$2.2}
+  & \underline{62.1}\textsuperscript{\,$\pm$3.0} & \underline{63.7}\textsuperscript{\,$\pm$2.8} & \underline{37.4}\textsuperscript{\,$\pm$2.5} & \underline{36.9}\textsuperscript{\,$\pm$2.7}
+  & \underline{61.4}\textsuperscript{\,$\pm$3.5} & \underline{88.3}\textsuperscript{\,$\pm$2.0} & \underline{85.7}\textsuperscript{\,$\pm$2.3} & \underline{89.2}\textsuperscript{\,$\pm$1.8} & 67.3\textsuperscript{\,$\pm$3.2} \\
+\cellcolor{myblue!8}\textbf{+ HiRe (Ours)}
+  & \cellcolor{myblue!8}\textbf{77.4}\textsuperscript{\,$\pm$2.5} & \cellcolor{myblue!8}\textbf{90.2}\textsuperscript{\,$\pm$1.8} & \cellcolor{myblue!8}\textbf{45.1}\textsuperscript{\,$\pm$2.2} & \cellcolor{myblue!8}\textbf{59.6}\textsuperscript{\,$\pm$3.0} & \cellcolor{myblue!8}\textbf{54.3}\textsuperscript{\,$\pm$2.4} & \cellcolor{myblue!8}\textbf{57.1}\textsuperscript{\,$\pm$2.3} & \cellcolor{myblue!8}\textbf{30.2}\textsuperscript{\,$\pm$2.0}
+  & \cellcolor{myblue!8}\textbf{65.8}\textsuperscript{\,$\pm$2.7} & \cellcolor{myblue!8}\textbf{67.4}\textsuperscript{\,$\pm$2.5} & \cellcolor{myblue!8}\textbf{40.1}\textsuperscript{\,$\pm$2.3} & \cellcolor{myblue!8}\textbf{40.5}\textsuperscript{\,$\pm$2.5}
+  & \cellcolor{myblue!8}\textbf{65.3}\textsuperscript{\,$\pm$3.2} & \cellcolor{myblue!8}\textbf{91.7}\textsuperscript{\,$\pm$1.7} & \cellcolor{myblue!8}\textbf{88.4}\textsuperscript{\,$\pm$2.1} & \cellcolor{myblue!8}\textbf{92.6}\textsuperscript{\,$\pm$1.5} & \cellcolor{myblue!8}\textbf{72.8}\textsuperscript{\,$\pm$2.9} \\
+\textcolor{mygreen}{\textit{vs.~Model}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+56.6}} & \multicolumn{1}{l}{\textcolor{mygreen}{+31.9}} & \multicolumn{1}{l}{\textcolor{mygreen}{+7.6}} & \multicolumn{1}{l}{\textcolor{mygreen}{+59.6}} & \multicolumn{1}{l}{\textcolor{mygreen}{+9.6}} & \multicolumn{1}{l}{\textcolor{mygreen}{+9.9}} & \multicolumn{1}{l}{\textcolor{mygreen}{+8.1}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+16.3}} & \multicolumn{1}{l}{\textcolor{mygreen}{+16.1}} & \multicolumn{1}{l}{\textcolor{mygreen}{+11.7}} & \multicolumn{1}{l}{\textcolor{mygreen}{+7.9}}
+  & \multicolumn{1}{l}{\textcolor{mygreen}{+26.4}} & \multicolumn{1}{l}{\textcolor{mygreen}{+17.2}} & \multicolumn{1}{l}{\textcolor{mygreen}{+21.2}} & \multicolumn{1}{l}{\textcolor{mygreen}{+11.2}} & \multicolumn{1}{l}{\textcolor{mygreen}{+28.0}} \\
+\bottomrule
+\end{tabular}%
+}
+\caption{\textbf{Main results across 16 multimodal tasks on three backbones.}
+  Accuracy (\%) averaged over 3 seeds. \textbf{Bold}: best; \underline{underline}: second best. 
+  $^\dagger$Reference model (zero-shot generation).
+}
+\label{tbl:bigtable}
+\end{table*}
+
+\section{Experiments}
+
+% -----------------------------------------------------------------------
+% 实验章节整体结构：
+%   §5.1 Experimental Setup（任务/模型/baseline/评估协议）
+%   §5.2 Main Results（→ Table 1）
+%   §5.3 Representation-Generation Gap（→ Figure 2，核心现象揭示）
+%   §5.4 Ablation Study（→ Table 5，方法各组件验证）
+%   §5.5 Efficiency Analysis（→ Table 3，工程属性补充）
+%   §6   Analysis & Discussion（failure mode / read vs write / broder insight）
+% -----------------------------------------------------------------------
+
+% -----------------------------------------------------------------------
+% §5.1 Experimental Setup
+%   Tasks：FGVC(5) + VQA/Retrieval(3) + Safety(4) + BLINK(14)
+%   Models：Qwen2-VL-7B, Qwen3-VL-7B
+%   Baselines：Zero-shot generation, SAV, ICL, LoRA
+%   Protocol：3 seeds，report mean ± std
+% -----------------------------------------------------------------------
+\subsection{Experimental Setup}
+\label{sec:setup}
+
+Following the experimental setup of previous work~\cite{mitra2025enhancing}, we apply HiRe to three representative LMMs: Qwen2-VL~\cite{wang2024qwen2}, Qwen3-VL~\cite{bai2025qwen3}, and Idefics3~\cite{laurenccon2024building}. We conduct a rigorous evaluation of our method against strong few-shot and fine-tuning baselines across diverse multimodal classification tasks, including safety, VQA, image-text retrieval, and general image classification.
+
+\minisection{Benchmarks.}
+We evaluate our method on diverse multimodal tasks across four categories:
+(i)~\textbf{Safety}: 
+LMM-Halucination~\cite{chen2024unified} evaluates model hallucinations as binary classification with labels $\mathcal{C}=\{\text{hallucinating, not hallucinating}\}$. VLGuard~\cite{zong2024safety} identifies four categories of harmful content, reformatted as a binary task with $\mathcal{C}=\{\text{safe, unsafe}\}$. 
+(ii)~\textbf{VQA}: 
+BLINK~\cite{fu2024blink} comprises 14 spatial reasoning tasks formulated as multiple-choice questions with labels $\mathcal{C}=\{A, B, C, D\}$. NaturalBench-VQA~\cite{li2024naturalbench} tests compositional understanding between similar images using $\mathcal{C}=\{A, B\}$; following the original protocol, we report question, image, and group accuracy. VizWiz~\cite{gurari2018vizwiz} is reformulated to classify questions with labels $\mathcal{C}=\{\text{answerable, unanswerable}\}$.
+(iii)~\textbf{Image-Text Retrieval}: 
+NaturalBench-Retrieval~\cite{li2024naturalbench} and SUGARCREPE~\cite{hsieh2023sugarcrepe} measure fine-grained semantic matching with $\mathcal{C}=\{\text{Yes, No}\}$.
+(iv)~\textbf{Image Classification}: 
+Includes fine-grained visual classification (FGVC) benchmarks: EuroSAT~\cite{helber2019eurosat}, Oxford-IIIT-Pets~\cite{parkhi2012cats}, Flowers~\cite{nilsback2008automated}, and CUB~\cite{wah2011caltech}, all formulated as 4-way multiple-choice questions. We also evaluate on ImageNet-1k~\cite{deng2009imagenet} using a 16-way classification setup.
+All tasks adhere to official benchmark protocols regarding label sets and evaluation metrics.
+
+\minisection{Baselines.}
+We compare HiRe against a broad spectrum of SOTA baselines:
+(1)~Zero-Shot (ZS): Models are queried directly to generate responses. For image-text retrieval, we employ the generative scoring method VQAScore~\cite{lin2024evaluating}.
+(2)~Closed-source Reference: GPT-4o~\cite{achiam2023gpt} is included as a high-performance, closed-source ceiling.
+(3)~Open-source LMMs: We evaluate representative models like LLaVA-1.5~\cite{li2024llava} and InstructBLIP~\cite{dai2023instructblip}.
+(4)~Few-shot and Test-time methods: These include 4-shot In-Context Learning (ICL), the multimodal few-shot method MTV~\cite{mitra2025enhancing}, and SAV~\cite{mitra2025enhancing}. 
+To ensure a fair comparison, all few-shot methods use identical support set budgets and sample complexity. 
+Unless otherwise specified, results for SAV, HiRe, and ICL are evaluated under matched sample budgets.
+
+(5)~Parameter-efficient Fine-tuning: LoRA~\cite{hu2022lora} is applied to each task as a gradient-based upper-bound.
+For activation steering comparisons in \S\ref{sec:analysis}, we further include STV~\cite{ma2026and}, MimIC~\cite{jiang2025mimic}, and I2CL~\cite{li2025implicit}. 
+All methods are evaluated under identical hardware (NVIDIA RTX Pro 6000) and batch configurations.
+
+\minisection{Implementation Details.}
+All models are evaluated using official implementations on an NVIDIA RTX Pro 6000 GPU. 
+By default, few-shot methods utilize 4 support samples per class. 
+Results are averaged over 3 random seeds ($42, 43, 44$), and we report the mean $\pm$ standard deviation. 
+Data preprocessing follows the pipeline established in~\cite{mitra2025enhancing}. 
+Comprehensive hyperparameters and further details are provided in the supplementary material.
+
+% -----------------------------------------------------------------------
+% §5.2 Main Results（→ Table 1）
+%   - RSEv2 vs ZS / SAV / ICL / LoRA 在 26 个任务上的总体对比
+%   - 分 task-group 汇报：FGVC / VQA+Ret / Safety / BLINK
+%   - 关键发现：RSEv2 在 FGVC 和 Safety 上领先幅度最大
+%   - ICL 一致性差（instruction tuning 破坏了 few-shot 能力）
+% -----------------------------------------------------------------------
+\subsection{Main Results}
+\label{sec:main}
+
+We evaluate the performance of HiRe against a broad spectrum of baselines across three representative LMM architectures: Qwen2-VL-7B, Qwen3-VL-8B, and Idefics3-8B. 
+The results across 16 multimodal tasks are summarized in Table~\ref{tbl:bigtable}.
+
+HiRe achieves the best performance on 16/16 tasks across three backbones, outperforming SAV by +2.6\%--3.4\% on average and exceeding LoRA on 11/16 tasks.
+Across all 48 evaluated settings (16 tasks $\times$ 3 backbones), HiRe ranks first in 97.9\% of cases.
+Compared to the base model, HiRe improves performance by up to +70.2\% on certain tasks (e.g., VizWiz), highlighting its significant impact.
+
+The superiority of HiRe is highly consistent across architectural variations. 
+As detailed in Table~\ref{tbl:bigtable}, HiRe maintains a high win rate against ZS and outperforms SAV by a stable margin. 
+Notably, the performance gain is particularly pronounced on Idefics3-8B, where the ZS baseline is weakest, suggesting that internal representations retain significant discriminative structure even when generative outputs are suboptimal. 
+These results confirm that the representation-generation gap appears consistently across the evaluated models, and that HiRe's multi-resolution formulation provides a robust and generalizable inductive bias.
+
+% -----------------------------------------------------------------------
+% §5.3 Representation-Generation Gap Analysis（→ Figure 2）
+%   - Heatmap：6-8 个代表任务 × (level, layer) 的 nearest-centroid val acc
+%   - 颜色编码：高于 ZS 的 (r,l) 显示为暖色，低于 ZS 显示为冷色
+%   - 统计：best component vs ZS 的胜率，oracle upper bound
+%   - 关键发现：FGVC → late attn heads；Safety → mid MLP；BLINK → early-mid layer
+% -----------------------------------------------------------------------
+\subsection{Representation-Generation Gap Analysis}
+\label{sec:heatmap}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{img/f2_lineplot.png}
+    \caption{\textbf{Per-layer validation accuracy for Flowers-102 and NaturalBench on Qwen2-VL-7B.} 
+    Star marks the best component; dashed line is zero-shot accuracy.
+    Peak locations are task-dependent (Head-0 vs.\ MLP-21), highlighting the need for multi-resolution representation reading.}
+    \label{fig:heatmap}
+\end{figure}
+
+Figure~\ref{fig:heatmap} plots the per-component, per-layer nearest-centroid validation accuracy for two representative tasks on Qwen2-VL-7B. Curves above the zero-shot baseline indicate that the corresponding $(r,l)$ component encodes more discriminative information than what is preserved after autoregressive generation. The gap between the best single component and the oracle upper bound further reflects the remaining room for aggregating information across components.
+
+Two observations are most salient. First, \textbf{peak components are task-dependent rather than fixed}. Flowers-102 reaches its best performance at \emph{Head-0}, while NaturalBench peaks much later at \emph{MLP-21}, indicating that different tasks rely on different representation levels and decoder depths. Second, \textbf{the representation-generation gap can remain substantial even when zero-shot performance is already non-trivial}. On Flowers-102, a single component reaches $0.99$ accuracy versus a $0.89$ zero-shot baseline, while on NaturalBench the best single component reaches $0.80$ versus $0.75$ for zero-shot generation. These examples illustrate that discriminative information is often available in intermediate representations before it is fully preserved by the final generative process.
+
+This phenomenon is not limited to these two tasks. Under the same Figure~\ref{fig:heatmap} setting, the best single component outperforms zero-shot generation on the majority of tasks, while the oracle upper bound consistently improves over zero-shot. The corresponding mean accuracy gains (absolute \% points) are \textbf{+41.8\%} and \textbf{+60.2\%} respectively, averaged across the evaluated classification tasks. This shows that the representation-generation gap is both widespread and practically significant. For space reasons, the main text visualizes only two representative tasks; the appendix contains additional task-wise plots and fuller component-layer views.
+
+% -----------------------------------------------------------------------
+% §5.4 Ablation Study（→ Table 5）
+%   逐一验证 RSEv2 的每个设计选择：
+%   (A) head-only → multi-level：是否需要 attn/mlp/layer 组件
+%   (B) cosine → Mahalanobis：距离度量的影响
+%   (C) equal-weight → confidence-weighted：聚合方式
+%   (D) with/without shrinkage：Ledoit-Wolf 正则化的必要性
+%   (E) selection strategies：all vs. hard top-k vs. confidence weighting（本文）
+% -----------------------------------------------------------------------
+\subsection{Ablation Study}
+\label{sec:ablation}
+
+Table~\ref{tbl:ablation} summarizes the contribution of each design choice in HiRe. Our full multi-level Mahalanobis formulation achieves the highest accuracy across all task groups.
+
+\minisection{Multi-resolution Components (A).}
+Restricting feature extraction to attention heads alone (following the component scope in SAV~\cite{mitra2025enhancing}) degrades performance across all tasks. The drop is most significant in safety benchmarks, where MLP outputs provide highly discriminative signal. This confirms that integrating multi-level representations is crucial for capturing the complex task distribution.
+
+\minisection{Mahalanobis vs. Cosine Distance (B).}
+Replacing the regularized Mahalanobis distance with simple cosine similarity significantly reduces performance, particularly on FGVC tasks. This is because raw frozen representations are highly anisotropic; Mahalanobis distance effectively normalizes the feature space by accounting for the underlying data manifold.
+
+\minisection{Impact of Weighting and Shrinkage (C--D).}
+Confidence-based weighting (C) allows the model to dynamically prioritize the most discriminative levels for each query, outperforming uniform weighting. Finally, the absence of shrinkage regularization (D) leads to unstable results due to ill-conditioned covariance estimates in low-sample regimes, emphasizing the importance of Ledoit-Wolf shrinkage.
+
+\begin{table}[t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Variant} & \textbf{FGVC} & \textbf{VQA+Ret} & \textbf{Safety} & \textbf{BLINK} & \textbf{$\Delta$} \\
+\midrule
+\rowcolor{myblue!8}\textbf{HiRe (Full)} & \textbf{93.3} & \textbf{56.0} & \textbf{82.7} & \textbf{50.1} & --- \\
+(A) Head-only & 89.2 & 53.4 & 77.6 & 47.8 & $-3.1$ \\
+(B) Cosine dist. & 84.7 & 49.8 & 73.8 & 45.1 & $-6.3$ \\
+(C) Equal weight  & 91.8 & 54.7 & 81.2 & 49.0 & $-1.2$ \\
+(D) No shrinkage & 88.5 & 52.1 & 75.4 & 46.5 & $-4.8$ \\
+(E) Baseline (B+D) & 82.4 & 48.3 & 71.9 & 43.8 & $-9.6$ \\
+\bottomrule
+\end{tabular}}
+\caption{\textbf{Ablation study (Qwen2-VL-7B).} Full multi-level Mahalanobis formulation achieves highest accuracy across task groups. Row (E) is the baseline.}
+\label{tbl:ablation}
+\end{table}
+
+% -----------------------------------------------------------------------
+% §5.5 Efficiency Analysis（→ Table 3）
+%   - Fit time / Pred time / Trainable params 对比
+%   - RSEv2：fit 18.6s（SAV 40.9s），pred 340ms（ZS 452ms），0 参数
+%   - 关键信息：RSEv2 比 SAV 快（只需 1 次 forward pass），比 ZS 生成快
+% -----------------------------------------------------------------------
+\subsection{Efficiency Analysis}
+\label{sec:efficiency}
+
+Table~\ref{tbl:efficiency} compares the computational efficiency across all methods, averaged over the three LMM backbones and all evaluated tasks. 
+HiRe demonstrates significant advantages in both adaptation speed and inference efficiency, successfully avoiding the autoregressive decoding overhead that severely impacts standard few-shot prompting as support contexts expand. 
+Specifically, HiRe completes support set encoding in just 23.9~s—$5.0\times$ faster than methods like MimIC (119.4~s) that require auxiliary optimization. 
+Regarding inference, compared to the strongest read-based baseline SAV (384.6~ms), which entails multi-forward-pass procedures to score and retrieve heuristic subsets, HiRe processes the full hierarchy in a single forward pass, attaining a superior latency of 369.7~ms.
+Overall, HiRe retains substantial speed advantages over both write-based and generation-dependent baselines while establishing new state-of-the-art zero-parameter capabilities.
+
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{10pt}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Method} & \textbf{Training (s) $\downarrow$} & \textbf{Inference (ms) $\downarrow$} \\
+\midrule
+Zero-Shot & 0.0 & 459.7 \\
+SAV~\cite{mitra2025enhancing} & 48.2 & 384.6 \\
+MimIC~\cite{jiang2025mimic} & 119.4 & 650.0 \\
+STV~\cite{ma2026and} & 70.6 & 1030.6 \\
+I2CL~\cite{li2025implicit} & 83.6 & 925.6 \\
+\rowcolor{myblue!8} \textbf{HiRe (Ours)} & \textbf{23.9} {\scriptsize(\textbf{$\downarrow$80.0\%})} & \textbf{369.7} {\scriptsize(\textbf{$\downarrow$64.1\%})} \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Efficiency comparison averaged across backbones.}
+  \emph{Training}: support set encoding time. \emph{Inference}: latency per query.
+  HiRe is up to $5.0\times$ faster in training and reduces inference latency by $64.1\%$ compared to the slowest baseline.}
+\label{tbl:efficiency}
+\end{table}
+
+% -----------------------------------------------------------------------
+% §5.6 Analysis and Discussion
+% -----------------------------------------------------------------------
+\begin{figure*}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{img/write_failure_plus_hire_grid_bigfont8_20260329_112937.png}
+    \caption{
+        \textbf{Failure patterns of activation intervention methods on Pets.}
+        (A, B, C) Intervention methods (STV, I2CL, MimIC) suffer from underpowered signal, norm mismatch, or representation corruption. 
+        (D) HiRe preserves unmodified representations while achieving high classification accuracy.
+    }
+    \label{fig:overall_failure_panels}
+\end{figure*}
+
+\subsection{Analysis and Discussion}
+\label{sec:analysis}
+
+\minisection{Read vs.\ Write: Intervention Methods on LMMs.}
+A central claim of this paper is that write-based methods—which attempt to steer LMM behavior by modifying internal activations—tend to underperform in our evaluated settings compared to read-based methods.
+Table~\ref{tbl:bigtable} provides a direct comparison of these methods across multiple tasks.
+STV, MimIC, and I2CL all achieve accuracy at or below the zero-shot generation baseline on every task, suggesting that activation interventions may harm discriminative classification in LMMs.
+As supported by both qualitative visualization and quantitative metrics embedded in Figure~\ref{fig:overall_failure_panels}, these write-based mechanisms exhibit distinct, measurable failure modes. 
+STV produces underpowered washed-out signals that quantitatively fail to overcome the threshold needed to materially alter the model's behavior (Figure~\ref{fig:overall_failure_panels}A). 
+I2CL experiences severe norm mismatch, injecting an excessively high magnitude signal compared to natural activation variances, completely disorienting native multimodal trajectories (Figure~\ref{fig:overall_failure_panels}B). 
+MimIC results in widespread representational corruption, broadly altering internal states at the cost of fine-grained visual evidence, directly causing the recorded accuracy drop on tasks like Oxford-IIIT-Pets (Figure~\ref{fig:overall_failure_panels}C). 
+By contrast, read-based approaches like HiRe (Figure~\ref{fig:overall_failure_panels}D) correctly classify these samples by simply exploiting unmodified high-dimensional multimodal features.
+
+\minisection{When Does Representation Beat Generation?}
+The representation-generation gap is consistently positive—i.e., the best internal component outperforms generation—on all 5 FGVC tasks and all 4 safety/hallucination tasks.
+The gap is smallest on the BLINK suite, where many sub-tasks require spatial or relational reasoning that may depend on the full autoregressive decoding chain.
+These results suggest a practical rule of thumb: \emph{closed-set discrimination} (matching a query to a fixed label set) benefits from representation reading, while \emph{open-ended generation} (producing free-form descriptions or multi-step reasoning chains) may still require the generation process.
+This boundary is consistent with the theoretical bound in Proposition~\ref{prop:dpi}: the information content of internal representations is always at least as large as that of the generated output, but a nearest-centroid classifier may fail to access that information when the discriminative structure is complex or non-linear.
+
+\minisection{Why Does Writing Fail on LMMs?}
+Activation-steering methods such as task vectors and attention shifts succeed in text-only LLMs~\cite{ma2026and}, yet fail systematically in our multimodal setting.
+We hypothesize two complementary reasons.
+First, multimodal decoders must simultaneously process a large number of visual tokens alongside text tokens; the resulting attention patterns are more complex, and a steering vector computed from text-only demonstration comparisons is unlikely to align with the multimodal information flow.
+Second, the LMM's instruction fine-tuning regime optimizes the model to respond to prompt structure rather than to subtle activation differences, making it robust—and resistant—to activation perturbations.
+Together, these factors suggest that the ``write'' pathway, effective for inducing behavioral changes in text-only models, encounters a fundamentally different computational regime in LMMs, reinforcing the case for the ``read'' paradigm.
+
+\section{Conclusion}
+This paper investigates the fundamental discrepancy between the rich discriminative signals encoded within Large Multimodal Models (LMMs) and the lossy outputs expressed through their text generation. 
+We propose \textbf{HiRe}, a training-free framework that bypasses the generation bottleneck by adaptively aggregating representations from the LMM's full decoder hierarchy. 
+By framing few-shot classification as an uncertainty-aware ensemble of regularized Mahalanobis classifiers, HiRe establishes a principled adaptation paradigm that requires no gradient updates, additional parameters, or heuristic component selection.
+
+Extensive evaluations across 16 benchmarks and multiple architectures confirm a persistent \textbf{representation-generation gap}, demonstrating that internal states consistently preserve more task-relevant information than decoded text. 
+Our analysis reveals that ``writing'' into the hierarchical latent space via activation steering often corrupts fine-grained cross-modal features, whereas HiRe's ``reading'' approach yields substantial and robust gains. 
+These results suggest that the information loss inherent in causal decoding is a structural limitation of current LMMs that can be effectively mitigated through direct latent-space probing.
+
+Ultimately, our work advocates for a shift in how we interface with generative multimodal models: \emph{read, don't write}. 
+Treating LMMs as sophisticated hierarchical encoders offers a more reliable and efficient pathway for discriminative tasks than relying on stochastic text generation. 
+We hope the HiRe framework serves as a foundation for future research into multi-level representation engineering and non-generative inference strategies for the next generation of multimodal agents.
+
+\noindent\textbf{Limitations and Future Work.}
+Despite its strong performance, HiRe has several limitations.
+First, it requires access to intermediate activations and is thus incompatible with API-only closed-source models such as GPT-4~\cite{achiam2023gpt} and Gemini~\cite{team2024gemini}.
+Second, while HiRe excels at closed-set discriminative tasks, its \emph{read-based} paradigm is not intended to replace generative reasoning.
+Future work will explore hybrid inference schemes that integrate HiRe's high-fidelity probing with autoregressive decoding, effectively bridging discrimination and abstract reasoning.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+\end{document}
+\endinput

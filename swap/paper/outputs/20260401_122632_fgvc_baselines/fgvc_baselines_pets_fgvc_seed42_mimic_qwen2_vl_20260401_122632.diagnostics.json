@@ -1,0 +1,13 @@
+{
+  "write_failure_analysis": {
+    "enabled": false,
+    "num_analyzed_samples": 0
+  },
+  "timings": {
+    "fit_time_sec": 23.612315664067864,
+    "predict_time_sec": 22.005108593031764,
+    "total_time_sec": 45.61742425709963,
+    "num_eval_samples": 100,
+    "avg_predict_time_sec": 0.22005108593031764
+  }
+}

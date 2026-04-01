@@ -1,4 +1,5 @@
 from .base import MethodBase
+from .frozen_feature import RidgeProbeMethod, WhitenedNCMMethod
 from .i2cl import I2CLMethod
 from .keco import KecoMethod
 from .mimic import MimICMethod
@@ -13,6 +14,8 @@ METHOD_REGISTRY = {
     "sav": SAVMethod,
     "rse": RSEMethod,
     "rsev2": RSEV2Method,
+    "whitened_ncm": WhitenedNCMMethod,
+    "ridge_probe": RidgeProbeMethod,
     "keco": KecoMethod,
     "i2cl": I2CLMethod,
     "mimic": MimICMethod,
@@ -32,6 +35,8 @@ def build_method(method_name: str, **kwargs) -> MethodBase:
 
 __all__ = [
     "MethodBase",
+    "RidgeProbeMethod",
+    "WhitenedNCMMethod",
     "I2CLMethod",
     "KecoMethod",
     "MimICMethod",

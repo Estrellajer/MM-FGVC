@@ -1,0 +1,1118 @@
+# worker=worker_1
+# CUDA_VISIBLE_DEVICES=0
+# command=/root/autodl-tmp/FGVC/.venv/bin/python3 /root/autodl-tmp/FGVC/main.py model=qwen2_vl dataset=general_custom method=i2cl evaluator=raw dataset.name=cub dataset.train_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122632_fgvc_baselines/seed_42/cub_fgvc/train_subset.json dataset.val_path=/root/autodl-tmp/FGVC/swap/paper/subsets/20260401_122632_fgvc_baselines/seed_42/cub_fgvc/val_subset.json run.output_dir=/root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines run.run_name=fgvc_baselines_cub_fgvc_seed42_i2cl_qwen2_vl_20260401_122632 run.progress_bar=false run.save_predictions=false run.seed=42 method.params.progress_bar=false
+
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:00<05:05,  2.38it/s]Loading weights:   2%|▏         | 17/730 [00:00<00:19, 37.42it/s]Loading weights:   5%|▍         | 33/730 [00:00<00:10, 66.81it/s]Loading weights:   7%|▋         | 51/730 [00:00<00:07, 95.82it/s]Loading weights:   9%|▉         | 65/730 [00:00<00:06, 95.71it/s]Loading weights:  11%|█         | 78/730 [00:01<00:06, 96.36it/s]Loading weights:  14%|█▎        | 100/730 [00:01<00:05, 121.74it/s]Loading weights:  16%|█▌        | 114/730 [00:01<00:05, 115.39it/s]Loading weights:  18%|█▊        | 131/730 [00:01<00:04, 128.68it/s]Loading weights:  20%|█▉        | 145/730 [00:01<00:05, 111.49it/s]Loading weights:  22%|██▏       | 161/730 [00:01<00:05, 108.80it/s]Loading weights:  25%|██▌       | 186/730 [00:01<00:04, 131.85it/s]Loading weights:  28%|██▊       | 204/730 [00:01<00:03, 141.35it/s]Loading weights:  30%|███       | 220/730 [00:02<00:03, 136.23it/s]Loading weights:  32%|███▏      | 235/730 [00:02<00:04, 122.67it/s]Loading weights:  34%|███▍      | 250/730 [00:02<00:03, 129.18it/s]Loading weights:  36%|███▌      | 264/730 [00:02<00:03, 130.69it/s]Loading weights:  38%|███▊      | 280/730 [00:02<00:03, 131.16it/s]Loading weights:  40%|████      | 294/730 [00:02<00:03, 116.96it/s]Loading weights:  42%|████▏     | 307/730 [00:03<00:05, 82.66it/s] Loading weights:  65%|██████▌   | 477/730 [00:03<00:00, 398.32it/s]Loading weights:  85%|████████▌ | 623/730 [00:03<00:00, 628.37it/s]Loading weights: 100%|██████████| 730/730 [00:03<00:00, 220.75it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+metrics:
+  metric: raw_accuracy
+  accuracy: 0.91
+  correct: 91.0
+  total: 100.0
+  label_order:
+  - American Crow
+  - Baltimore Oriole
+  - Bank Swallow
+  - Bewick Wren
+  - Black throated Sparrow
+  - Cedar Waxwing
+  - Chipping Sparrow
+  - Chuck will Widow
+  - Common Tern
+  - Frigatebird
+  - Golden winged Warbler
+  - Herring Gull
+  - Ivory Gull
+  - Pied Kingfisher
+  - Pileated Woodpecker
+  - Purple Finch
+  - Rock Wren
+  - Scott Oriole
+  - Summer Tanager
+  - Western Meadowlark
+  - D. Cliff Swallow
+  - B. Loggerhead Shrike
+  - B. Shiny Cowbird
+  - D. Sayornis
+  - D. Swainson Warbler
+  - C. Hooded Warbler
+  - D. Western Gull
+  - A. Rose breasted Grosbeak
+  confusion_matrix:
+    labels:
+    - American Crow
+    - Baltimore Oriole
+    - Bank Swallow
+    - Bewick Wren
+    - Black throated Sparrow
+    - Cedar Waxwing
+    - Chipping Sparrow
+    - Chuck will Widow
+    - Common Tern
+    - Frigatebird
+    - Golden winged Warbler
+    - Herring Gull
+    - Ivory Gull
+    - Pied Kingfisher
+    - Pileated Woodpecker
+    - Purple Finch
+    - Rock Wren
+    - Scott Oriole
+    - Summer Tanager
+    - Western Meadowlark
+    - D. Cliff Swallow
+    - B. Loggerhead Shrike
+    - B. Shiny Cowbird
+    - D. Sayornis
+    - D. Swainson Warbler
+    - C. Hooded Warbler
+    - D. Western Gull
+    - A. Rose breasted Grosbeak
+    matrix:
+    - - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 4
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 1
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 5
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  per_class:
+    American Crow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Baltimore Oriole:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Bank Swallow:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Bewick Wren:
+      precision: 0.8333333333333334
+      recall: 1.0
+      f1: 0.9090909090909091
+      support: 5.0
+      predicted: 6.0
+      true_positive: 5.0
+      false_positive: 1.0
+      false_negative: 0.0
+    Black throated Sparrow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Cedar Waxwing:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Chipping Sparrow:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Chuck will Widow:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 5.0
+      predicted: 0.0
+      true_positive: 0.0
+      false_positive: 0.0
+      false_negative: 5.0
+    Common Tern:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Frigatebird:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Golden winged Warbler:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Herring Gull:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Ivory Gull:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Pied Kingfisher:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Pileated Woodpecker:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Purple Finch:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Rock Wren:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Scott Oriole:
+      precision: 1.0
+      recall: 0.8
+      f1: 0.888888888888889
+      support: 5.0
+      predicted: 4.0
+      true_positive: 4.0
+      false_positive: 0.0
+      false_negative: 1.0
+    Summer Tanager:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    Western Meadowlark:
+      precision: 1.0
+      recall: 1.0
+      f1: 1.0
+      support: 5.0
+      predicted: 5.0
+      true_positive: 5.0
+      false_positive: 0.0
+      false_negative: 0.0
+    D. Cliff Swallow:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    B. Loggerhead Shrike:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    B. Shiny Cowbird:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    D. Sayornis:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    D. Swainson Warbler:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    C. Hooded Warbler:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    D. Western Gull:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+    A. Rose breasted Grosbeak:
+      precision: 0.0
+      recall: 0.0
+      f1: 0.0
+      support: 0.0
+      predicted: 1.0
+      true_positive: 0.0
+      false_positive: 1.0
+      false_negative: 0.0
+  macro_precision: 0.6726190476190476
+  macro_recall: 0.65
+  macro_f1: 0.6594516594516594
+  balanced_accuracy: 0.65
+saved:
+  metrics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_cub_fgvc_seed42_i2cl_qwen2_vl_20260401_122632.metrics.json
+  predictions: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_cub_fgvc_seed42_i2cl_qwen2_vl_20260401_122632.predictions.jsonl
+  diagnostics: /root/autodl-tmp/FGVC/swap/paper/outputs/20260401_122632_fgvc_baselines/fgvc_baselines_cub_fgvc_seed42_i2cl_qwen2_vl_20260401_122632.diagnostics.json
+

@@ -1,0 +1,10 @@
+name: whitened_ncm
+fit_on_train: true
+params:
+  feature_level: layer
+  feature_index: -1
+  normalize_features: true
+  covariance_shrinkage: auto
+  shrinkage_alpha: 0.1
+  covariance_floor: 0.000001
+  progress_bar: true

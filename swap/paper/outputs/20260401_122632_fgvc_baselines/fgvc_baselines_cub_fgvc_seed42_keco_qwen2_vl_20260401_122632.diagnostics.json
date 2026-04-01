@@ -1,0 +1,51 @@
+{
+  "method": "keco",
+  "mode": "offline",
+  "embedding_model_name": "openai/clip-vit-large-patch14-336",
+  "embedding_device": "cuda:0",
+  "support_per_class": 2,
+  "num_shots": 2,
+  "num_choices": 4,
+  "selection_strategy": "cosine",
+  "sample_method": "random",
+  "target_select": "least_similarity",
+  "alpha": 0.2,
+  "offline_epochs": 10,
+  "offline_batch_size": 32,
+  "train_size": 100,
+  "support_size": 40,
+  "pool_size": 60,
+  "per_class_support_counts": {
+    "American Crow": 2,
+    "Baltimore Oriole": 2,
+    "Bank Swallow": 2,
+    "Bewick Wren": 2,
+    "Black throated Sparrow": 2,
+    "Cedar Waxwing": 2,
+    "Chipping Sparrow": 2,
+    "Chuck will Widow": 2,
+    "Common Tern": 2,
+    "Frigatebird": 2,
+    "Golden winged Warbler": 2,
+    "Herring Gull": 2,
+    "Ivory Gull": 2,
+    "Pied Kingfisher": 2,
+    "Pileated Woodpecker": 2,
+    "Purple Finch": 2,
+    "Rock Wren": 2,
+    "Scott Oriole": 2,
+    "Summer Tanager": 2,
+    "Western Meadowlark": 2
+  },
+  "eval_summary": {
+    "predictions": 100,
+    "parse_failures": 0
+  },
+  "timings": {
+    "fit_time_sec": 9.409572444856167,
+    "predict_time_sec": 15.947866754606366,
+    "total_time_sec": 25.357439199462533,
+    "num_eval_samples": 100,
+    "avg_predict_time_sec": 0.15947866754606366
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "feature_level": "layer",
+  "feature_index": -1,
+  "resolved_component_index": 27,
+  "feature_dim": 3584,
+  "train_sample_count": 175,
+  "num_classes": 35,
+  "train_accuracy": 1.0,
+  "normalize_features": true,
+  "covariance_shrinkage": "auto",
+  "shrinkage_alpha": 0.1,
+  "effective_shrinkage_alpha": 0.9534450651769087,
+  "covariance_floor": 1e-06,
+  "timings": {
+    "fit_time_sec": 13.37124726548791,
+    "predict_time_sec": 4.634194700047374,
+    "total_time_sec": 18.005441965535283,
+    "num_eval_samples": 70,
+    "avg_predict_time_sec": 0.0662027814292482
+  }
+}

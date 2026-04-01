@@ -1,0 +1,19 @@
+{
+  "suite_name": "smoke_review_baselines",
+  "timestamp": "",
+  "task_ids": [
+    "pets_small"
+  ],
+  "method_ids": [
+    "whitened_ncm",
+    "ridge_probe"
+  ],
+  "models": [
+    "qwen2_vl"
+  ],
+  "seeds": [
+    42
+  ],
+  "save_predictions": false,
+  "gpu_workers": null
+}

@@ -1,0 +1,41 @@
+{
+  "method": "keco",
+  "mode": "offline",
+  "embedding_model_name": "openai/clip-vit-large-patch14-336",
+  "embedding_device": "cuda:0",
+  "support_per_class": 2,
+  "num_shots": 2,
+  "num_choices": 4,
+  "selection_strategy": "cosine",
+  "sample_method": "random",
+  "target_select": "least_similarity",
+  "alpha": 0.2,
+  "offline_epochs": 10,
+  "offline_batch_size": 32,
+  "train_size": 100,
+  "support_size": 20,
+  "pool_size": 80,
+  "per_class_support_counts": {
+    "Annual Crop Land": 2,
+    "Forest": 2,
+    "Herbaceous Vegetation Land": 2,
+    "Highway or Road": 2,
+    "Industrial Buildings": 2,
+    "Pasture Land": 2,
+    "Permanent Crop Land": 2,
+    "Residential Buildings": 2,
+    "River": 2,
+    "Sea or Lake": 2
+  },
+  "eval_summary": {
+    "predictions": 100,
+    "parse_failures": 0
+  },
+  "timings": {
+    "fit_time_sec": 10.47296386770904,
+    "predict_time_sec": 9.795670738443732,
+    "total_time_sec": 20.268634606152773,
+    "num_eval_samples": 100,
+    "avg_predict_time_sec": 0.09795670738443732
+  }
+}
